@@ -1,0 +1,54 @@
+/* Importar las tipografías corporativas de Privyde */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap'); /* Mantener temporalmente para transición */
+
+/* TODO: Reemplazar con las fuentes oficiales ConthraxSb y Panton cuando estén disponibles */
+/* @import url('path/to/ConthraxSb.css'); */
+/* @import url('path/to/Panton.css'); */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+    /* Variables de color Privyde */
+    --privyde-black: #000000;
+    --privyde-white: #FFFFFF;
+  }
+  
+  html, body, #root {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+body {
+  /* Usar Panton como tipografía secundaria por defecto */
+  font-family: 'Inter', system-ui, -apple-system, sans-serif; /* Temporal hasta tener Panton */
+  /* font-family: 'Panton', system-ui, -apple-system, sans-serif; */
+  line-height: 1.5;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  width: 100%;
+  color: var(--privyde-black);
+  background-color: var(--privyde-white);
+}
+
+/* Clases utilitarias para las tipografías Privyde */
+.font-conthrax {
+  font-family: 'Inter', sans-serif; /* Temporal hasta tener ConthraxSb */
+  /* font-family: 'ConthraxSb', sans-serif; */
+  font-weight: 600;
+}
+
+.font-panton {
+  font-family: 'Inter', sans-serif; /* Temporal hasta tener Panton */
+  /* font-family: 'Panton', sans-serif; */
+} 
