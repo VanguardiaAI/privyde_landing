@@ -716,29 +716,29 @@ const SupportChat: React.FC = () => {
       return (
         <div
           className="flex flex-col items-center justify-center p-4 bg-gray-100 rounded-lg mb-4"
-          data-oid="u7gvw6p"
+          data-oid="yrdojhg"
         >
           <AlertCircle
             className="text-black mb-2"
             size={24}
-            data-oid="xmt:ghv"
+            data-oid="oy5shtf"
           />
 
-          <p className="text-sm text-center text-gray-700" data-oid="ut4emdy">
+          <p className="text-sm text-center text-gray-700" data-oid="zdo:snn">
             {conversationStatus === "nonexistent"
               ? "La conversación anterior ya no existe."
               : "La conversación anterior ha sido cerrada."}
           </p>
           <p
             className="text-sm text-center text-gray-700 mt-1"
-            data-oid="o695n6-"
+            data-oid="i6ziw0p"
           >
             Por favor inicia una nueva conversación.
           </p>
           <button
             onClick={resetConversation}
             className="mt-3 px-4 py-2 bg-black text-white rounded-md hover:bg-gray-800 text-sm"
-            data-oid="9tu6l76"
+            data-oid="w9qpb2z"
           >
             Iniciar nueva conversación
           </button>
@@ -749,15 +749,15 @@ const SupportChat: React.FC = () => {
   };
 
   return (
-    <div className="fixed bottom-6 right-6 z-50" data-oid="s8tlmic">
+    <div className="fixed bottom-6 right-6 z-50" data-oid="psmgyc9">
       {/* Botón para abrir el chat */}
       <button
         onClick={toggleChat}
         className="bg-black hover:bg-gray-800 text-white p-4 rounded-full shadow-lg flex items-center justify-center relative"
         aria-label="Soporte"
-        data-oid="uzn5lw0"
+        data-oid="nwe641h"
       >
-        <MessageSquare size={24} data-oid="xdmtts." />
+        <MessageSquare size={24} data-oid="y3ibe:z" />
         {/* Indicador de estado del socket */}
         <span
           className={`absolute -top-1 -right-1 w-3 h-3 rounded-full border border-white ${
@@ -768,7 +768,7 @@ const SupportChat: React.FC = () => {
                 : "bg-gray-1000"
           }`}
           aria-label={`Estado de conexión: ${socketStatus}`}
-          data-oid="up82cj7"
+          data-oid="htbx883"
         ></span>
       </button>
 
@@ -778,47 +778,47 @@ const SupportChat: React.FC = () => {
           ref={chatContainerRef}
           className="absolute bottom-16 right-0 w-80 sm:w-96 bg-white rounded-lg shadow-xl overflow-hidden flex flex-col"
           style={{ height: "480px", maxHeight: "calc(100vh - 100px)" }}
-          data-oid="ster8pe"
+          data-oid="4szyng9"
         >
           {/* Cabecera del chat */}
           <div
             className="bg-black text-white p-3 flex justify-between items-center"
-            data-oid=":sezrnc"
+            data-oid="rj7pq7-"
           >
-            <h3 className="font-semibold" data-oid="euk9vn2">
+            <h3 className="font-semibold" data-oid="4_066_k">
               Soporte Privyde
             </h3>
             <button
               onClick={toggleChat}
               className="text-white hover:text-gray-200"
               aria-label="Cerrar chat"
-              data-oid="q5345mn"
+              data-oid="q5wkoi6"
             >
-              <X size={18} data-oid="xv9z-2q" />
+              <X size={18} data-oid="7pthl1k" />
             </button>
           </div>
 
           {/* Contenido del chat */}
           <div
             className="flex-1 p-4 overflow-y-auto bg-gray-50"
-            data-oid="o-h979m"
+            data-oid="cetiyk0"
           >
             {renderConversationStatus()}
 
             {!conversationStarted ? (
               // Formulario inicial para obtener nombre y email
-              <div className="flex flex-col space-y-4" data-oid="-4izxjj">
-                <p className="text-gray-700" data-oid="c:1-hfl">
+              <div className="flex flex-col space-y-4" data-oid="d4z7u7r">
+                <p className="text-gray-700" data-oid="iho_l85">
                   Para iniciar una conversación con nuestro equipo de soporte,
                   por favor proporciona los siguientes datos:
                 </p>
 
-                <div className="space-y-3" data-oid="yrpc5n-">
-                  <div data-oid=":pqduz-">
+                <div className="space-y-3" data-oid="1tcg8_u">
+                  <div data-oid="p3jpm5n">
                     <label
                       htmlFor="name"
                       className="block text-sm font-medium text-gray-700 mb-1"
-                      data-oid="ikx7lwb"
+                      data-oid="7jhitfs"
                     >
                       Nombre
                     </label>
@@ -829,15 +829,15 @@ const SupportChat: React.FC = () => {
                       onChange={(e) => setName(e.target.value)}
                       className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-red-500 focus:border-gray-500"
                       placeholder="Tu nombre"
-                      data-oid="w_hky80"
+                      data-oid="am.2i.d"
                     />
                   </div>
 
-                  <div data-oid="yzlsa65">
+                  <div data-oid="m.:w.ce">
                     <label
                       htmlFor="email"
                       className="block text-sm font-medium text-gray-700 mb-1"
-                      data-oid="jwph73j"
+                      data-oid="atjnzeo"
                     >
                       Email
                     </label>
@@ -848,13 +848,13 @@ const SupportChat: React.FC = () => {
                       onChange={(e) => setEmail(e.target.value)}
                       className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-red-500 focus:border-gray-500"
                       placeholder="tu@email.com"
-                      data-oid="wlbjh75"
+                      data-oid="hvgm13_"
                     />
                   </div>
                 </div>
 
                 {error && (
-                  <p className="text-black text-sm" data-oid="pvlmvcq">
+                  <p className="text-black text-sm" data-oid="as082:.">
                     {error}
                   </p>
                 )}
@@ -867,17 +867,17 @@ const SupportChat: React.FC = () => {
                       ? "bg-black hover:bg-gray-800"
                       : "bg-gray-400 cursor-not-allowed"
                   }`}
-                  data-oid="a31giyt"
+                  data-oid="ihfrvoj"
                 >
                   {isLoading ? (
                     <span
                       className="flex items-center justify-center"
-                      data-oid="o33x3.0"
+                      data-oid="spewt.7"
                     >
                       <Loader2
                         size={18}
                         className="animate-spin mr-2"
-                        data-oid="jkhy2pg"
+                        data-oid="gu9go4w"
                       />
                       Iniciando...
                     </span>
@@ -888,16 +888,16 @@ const SupportChat: React.FC = () => {
               </div>
             ) : (
               // Mensajes de la conversación
-              <div className="space-y-4" data-oid="zrijn5w">
+              <div className="space-y-4" data-oid="24iaw6x">
                 {isLoading && messages.length === 0 ? (
                   <div
                     className="flex justify-center items-center h-full"
-                    data-oid="qip5bwx"
+                    data-oid="cy84.p_"
                   >
                     <Loader2
                       size={24}
                       className="animate-spin text-gray-600"
-                      data-oid="27por8w"
+                      data-oid="7ragq2e"
                     />
                   </div>
                 ) : (
@@ -908,7 +908,7 @@ const SupportChat: React.FC = () => {
                         className={`flex ${
                           msg.sender.isAdmin ? "justify-start" : "justify-end"
                         }`}
-                        data-oid="uem._a4"
+                        data-oid="qgct.-n"
                       >
                         <div
                           className={`max-w-[75%] rounded-lg px-4 py-2 ${
@@ -920,28 +920,28 @@ const SupportChat: React.FC = () => {
                                   ? "bg-red-300 text-white border border-gray-500" // Estilo para mensajes con error
                                   : "bg-black text-white"
                           }`}
-                          data-oid="76th1l2"
+                          data-oid="si81mq2"
                         >
                           <div
                             className="flex justify-between items-center mb-1"
-                            data-oid="hoyv.-g"
+                            data-oid="9nz8j7x"
                           >
                             <span
                               className="text-xs font-semibold"
-                              data-oid="f8pvy7e"
+                              data-oid="4.tdyfg"
                             >
                               {msg.sender.isAdmin ? "Soporte Privyde" : "Tú"}
                             </span>
                             <div
                               className="flex items-center ml-2"
-                              data-oid="keie3qa"
+                              data-oid="nmh7701"
                             >
                               {msg.pending && (
                                 <Loader2
                                   size={10}
                                   className="animate-spin mr-1"
                                   aria-label="Enviando..."
-                                  data-oid="1psi4ci"
+                                  data-oid="kfvkb_3"
                                 />
                               )}
                               {msg.error && (
@@ -949,12 +949,12 @@ const SupportChat: React.FC = () => {
                                   size={10}
                                   className="text-gray-800 mr-1"
                                   aria-label="Error al enviar"
-                                  data-oid="ridn1f_"
+                                  data-oid="n7kgbij"
                                 />
                               )}
                               <span
                                 className="text-xs opacity-75"
-                                data-oid="aa7glxv"
+                                data-oid="w8e3q-u"
                               >
                                 {formatTime(msg.timestamp)}
                               </span>
@@ -962,19 +962,19 @@ const SupportChat: React.FC = () => {
                           </div>
                           <p
                             className="text-sm whitespace-pre-wrap break-words"
-                            data-oid="ouw:3jh"
+                            data-oid=".u12fwk"
                           >
                             {msg.message}
                           </p>
                           {msg.error && (
                             <div
                               className="mt-1 flex justify-end"
-                              data-oid="saz3orm"
+                              data-oid=".50qpa2"
                             >
                               <button
                                 onClick={() => sendMessage()}
                                 className="text-xs text-gray-800 bg-white bg-opacity-30 rounded px-2 py-0.5"
-                                data-oid="8nwrwd0"
+                                data-oid="9kw-3ts"
                               >
                                 Reintentar
                               </button>
@@ -985,7 +985,7 @@ const SupportChat: React.FC = () => {
                     ))}
 
                     {/* Elemento invisible para scroll */}
-                    <div ref={messagesEndRef} data-oid="-qyp4lu" />
+                    <div ref={messagesEndRef} data-oid="_ti7b.b" />
                   </>
                 )}
               </div>
@@ -996,14 +996,14 @@ const SupportChat: React.FC = () => {
           {conversationStarted && conversationStatus === "active" && (
             <div
               className="border-t border-gray-200 p-3 bg-white"
-              data-oid="o1bfsq-"
+              data-oid="r6w9h0r"
             >
               {error && (
-                <p className="text-black text-xs mb-1" data-oid="5imv4xw">
+                <p className="text-black text-xs mb-1" data-oid="z36r.sg">
                   {error}
                 </p>
               )}
-              <div className="flex items-center space-x-2" data-oid="aqs5ixi">
+              <div className="flex items-center space-x-2" data-oid="tzga4qw">
                 <input
                   type="text"
                   value={newMessage}
@@ -1011,7 +1011,7 @@ const SupportChat: React.FC = () => {
                   onKeyPress={handleKeyPress}
                   placeholder="Escribe tu mensaje..."
                   className="flex-1 px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-red-500 focus:border-gray-500"
-                  data-oid="xik12v9"
+                  data-oid="5kf5:7s"
                 />
 
                 <button
@@ -1022,9 +1022,9 @@ const SupportChat: React.FC = () => {
                       ? "bg-black hover:bg-gray-800 text-white"
                       : "bg-gray-300 text-gray-500 cursor-not-allowed"
                   }`}
-                  data-oid=".znq-d9"
+                  data-oid="40yg738"
                 >
-                  <Send size={18} data-oid="g1hr:qn" />
+                  <Send size={18} data-oid="uz5motr" />
                 </button>
               </div>
             </div>

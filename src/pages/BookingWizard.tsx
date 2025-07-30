@@ -237,14 +237,14 @@ export default function BookingWizard() {
       return (
         <div
           className="flex items-center justify-center min-h-[300px]"
-          data-oid="6nfpd:u"
+          data-oid=".plgmh7"
         >
           <Loader2
             className="h-8 w-8 animate-spin text-primary"
-            data-oid=".g9:v1g"
+            data-oid="vgywdkz"
           />
 
-          <span className="ml-2 text-lg" data-oid="qookiio">
+          <span className="ml-2 text-lg" data-oid="75jzezg">
             Cargando información de la reserva...
           </span>
         </div>
@@ -254,17 +254,17 @@ export default function BookingWizard() {
     if (error) {
       console.log("RenderCurrentStep: Mostrando Error:", error);
       return (
-        <Card className="max-w-3xl mx-auto mt-8" data-oid="ex_iwjd">
-          <CardContent className="pt-6 text-center" data-oid="0v99ip7">
+        <Card className="max-w-3xl mx-auto mt-8" data-oid="3v7:n_r">
+          <CardContent className="pt-6 text-center" data-oid="q5xpkwl">
             <AlertCircle
               className="h-12 w-12 text-black mx-auto mb-4"
-              data-oid="4si.p6:"
+              data-oid="x8w3a6_"
             />
 
-            <h2 className="text-xl font-bold text-gray-600" data-oid="nbps6ur">
+            <h2 className="text-xl font-bold text-gray-600" data-oid="8st0i_c">
               Error al cargar la sesión
             </h2>
-            <p className="mt-2 text-gray-600" data-oid="c5or.p_">
+            <p className="mt-2 text-gray-600" data-oid="xkq8jbk">
               {error}
             </p>
             <button
@@ -277,7 +277,7 @@ export default function BookingWizard() {
                 // Por ahora, un reload es lo más simple si el error es persistente en la carga inicial.
                 window.location.reload();
               }}
-              data-oid="8j0v4x5"
+              data-oid="xwezmts"
             >
               Reintentar
             </button>
@@ -293,24 +293,24 @@ export default function BookingWizard() {
         session,
       );
       return (
-        <Card className="max-w-3xl mx-auto mt-8" data-oid="ob0uujx">
-          <CardContent className="pt-6 text-center" data-oid="gcyqaa6">
+        <Card className="max-w-3xl mx-auto mt-8" data-oid="up20r71">
+          <CardContent className="pt-6 text-center" data-oid="52hesf8">
             <AlertCircle
               className="h-12 w-12 text-gray-500 mx-auto mb-4"
-              data-oid="jrasy5l"
+              data-oid="ha-xhwz"
             />
 
-            <h2 className="text-xl font-bold text-gray-600" data-oid="4lw2km2">
+            <h2 className="text-xl font-bold text-gray-600" data-oid="dm50a0o">
               Datos de la reserva no disponibles
             </h2>
-            <p className="mt-2 text-gray-600" data-oid="382m3x0">
+            <p className="mt-2 text-gray-600" data-oid="g78qs_-">
               No se pudieron cargar completamente los detalles de la reserva.
               Esto puede ser un problema temporal.
             </p>
             <button
               className="mt-6 px-4 py-2 bg-primary text-white rounded-md hover:bg-primary/90"
               onClick={() => window.location.reload()}
-              data-oid="3b_q9f8"
+              data-oid="l57cl:2"
             >
               Recargar Página
             </button>
@@ -340,7 +340,7 @@ export default function BookingWizard() {
             onComplete={(data: BookingSession["booking_data"]) =>
               updateSession(data, "passenger_details")
             }
-            data-oid="8-6epyu"
+            data-oid="wly4dy0"
           />
         );
 
@@ -351,7 +351,7 @@ export default function BookingWizard() {
             onComplete={(data: BookingSession["booking_data"]) =>
               updateSession(data, "payment")
             }
-            data-oid="jg1.s1n"
+            data-oid="xzg.ei6"
           />
         );
 
@@ -362,7 +362,7 @@ export default function BookingWizard() {
             onComplete={(data: BookingSession["booking_data"]) =>
               updateSession(data, "payment_confirmation")
             }
-            data-oid="xtf9h1j"
+            data-oid="nh5ohqv"
           />
         );
 
@@ -370,7 +370,7 @@ export default function BookingWizard() {
         return (
           <PaymentConfirmationStep
             sessionData={sessionDataWithId}
-            data-oid="h7rn95b"
+            data-oid="m-e1b4r"
           />
         );
 
@@ -379,16 +379,16 @@ export default function BookingWizard() {
           `RenderCurrentStep: Paso desconocido: '${session.current_step}'.`,
         );
         return (
-          <div className="text-center py-8" data-oid="kkui8wk">
+          <div className="text-center py-8" data-oid="c:edaee">
             <AlertCircle
               className="h-12 w-12 text-black mx-auto mb-4"
-              data-oid="d6acx5-"
+              data-oid="5d9sjhu"
             />
 
-            <h2 className="text-xl font-bold text-gray-600" data-oid="xli9vki">
+            <h2 className="text-xl font-bold text-gray-600" data-oid="b6_favg">
               Paso no reconocido
             </h2>
-            <p className="mt-2 text-gray-600" data-oid="f91njok">
+            <p className="mt-2 text-gray-600" data-oid="y6:r6wa">
               El sistema encontró un paso inesperado: {session.current_step}
             </p>
           </div>
@@ -403,19 +403,19 @@ export default function BookingWizard() {
         <NavHeader
           menuOpen={menuOpen}
           setMenuOpen={setMenuOpen}
-          data-oid="n2sz8y_"
+          data-oid="modk54h"
         />
 
         <div
           className="flex items-center justify-center min-h-[500px]"
-          data-oid="b1m.0ko"
+          data-oid="ry.qvc0"
         >
           <Loader2
             className="h-8 w-8 animate-spin text-primary"
-            data-oid="fzfh:6j"
+            data-oid="up83pou"
           />
 
-          <span className="ml-2 text-lg" data-oid="h0tjwuk">
+          <span className="ml-2 text-lg" data-oid="huyjc7n">
             Cargando...
           </span>
         </div>
@@ -430,25 +430,25 @@ export default function BookingWizard() {
         <NavHeader
           menuOpen={menuOpen}
           setMenuOpen={setMenuOpen}
-          data-oid="hznugmi"
+          data-oid="q-ex_r4"
         />
 
-        <Card className="max-w-3xl mx-auto mt-8" data-oid="g:7lw-5">
-          <CardContent className="pt-6" data-oid="61q3tz0">
-            <div className="text-center" data-oid="md4bipl">
+        <Card className="max-w-3xl mx-auto mt-8" data-oid="e8:nasv">
+          <CardContent className="pt-6" data-oid="pv:51t-">
+            <div className="text-center" data-oid="m:nmxe_">
               <h2
                 className="text-xl font-bold text-gray-600"
-                data-oid="cdhffa5"
+                data-oid="q5g6v_w"
               >
                 Error
               </h2>
-              <p className="mt-2" data-oid="m210r8q">
+              <p className="mt-2" data-oid=":wefalo">
                 {error}
               </p>
               <button
                 className="mt-4 px-4 py-2 bg-primary text-white rounded-md"
                 onClick={() => navigate("/")}
-                data-oid="9a6h2kp"
+                data-oid="tq44kba"
               >
                 Volver al inicio
               </button>
@@ -464,26 +464,26 @@ export default function BookingWizard() {
       <NavHeader
         menuOpen={menuOpen}
         setMenuOpen={setMenuOpen}
-        data-oid="4f9hl-w"
+        data-oid="fpjw43y"
       />
 
-      <div className="container max-w-7xl mx-auto py-8 px-4" data-oid="u1tjdci">
+      <div className="container max-w-7xl mx-auto py-8 px-4" data-oid="zbt2upd">
         {/* Wizard header con los pasos */}
         {session && session.current_step && (
-          <div className="mb-8" data-oid="m2cg733">
+          <div className="mb-8" data-oid="p_8xadh">
             <div
               className="flex items-center justify-center"
-              data-oid=".th0czm"
+              data-oid="orsavvp"
             >
-              <div className="w-full max-w-4xl" data-oid="e0rtb:4">
-                <div className="relative" data-oid="fg5gwl4">
+              <div className="w-full max-w-4xl" data-oid="uoa84t6">
+                <div className="relative" data-oid="yx1r38i">
                   <div
                     className="absolute left-0 top-1/2 transform -translate-y-1/2 w-full h-1 bg-gray-200"
-                    data-oid="ghajhsy"
+                    data-oid="qaux0lo"
                   ></div>
                   <div
                     className="relative flex justify-between"
-                    data-oid="9r:quq3"
+                    data-oid="20_0lsl"
                   >
                     {[
                       "Tipo de coche",
@@ -506,7 +506,7 @@ export default function BookingWizard() {
                         <div
                           key={step}
                           className={`flex flex-col items-center ${isActive ? "text-black" : isCompleted ? "text-black" : "text-gray-400"}`}
-                          data-oid=".97cu3q"
+                          data-oid="6o.7gp9"
                         >
                           <div
                             className={`w-8 h-8 rounded-full flex items-center justify-center z-10 ${
@@ -516,13 +516,13 @@ export default function BookingWizard() {
                                   ? "bg-black text-white"
                                   : "bg-gray-100 text-gray-400"
                             }`}
-                            data-oid="qtqjm1t"
+                            data-oid="-1eat0d"
                           >
                             {isCompleted ? "✓" : index + 1}
                           </div>
                           <span
                             className="mt-2 text-sm font-medium"
-                            data-oid="wzs.ngw"
+                            data-oid="w-0j-y6"
                           >
                             {step}
                           </span>
@@ -537,7 +537,7 @@ export default function BookingWizard() {
         )}
 
         {/* Contenido del paso actual */}
-        <div className="mt-8" data-oid="d5lea-9">
+        <div className="mt-8" data-oid="r-05siu">
           {renderCurrentStep()}
         </div>
       </div>
@@ -556,56 +556,56 @@ function NavHeader({
   return (
     <header
       className="bg-white border-b border-gray-200 py-3 px-4 sticky top-0 z-50"
-      data-oid="asbv:cu"
+      data-oid="cmeazvl"
     >
       <div
         className="container mx-auto flex justify-between items-center"
-        data-oid="wa:9fmz"
+        data-oid="lq3pph1"
       >
         {/* Logo */}
-        <div className="font-bold text-xl" data-oid="82ft77c">
+        <div className="font-bold text-xl" data-oid="fjohf78">
           PRIVYDE
         </div>
 
         {/* Menú de hamburguesa */}
-        <div className="relative" data-oid="pv23cni">
+        <div className="relative" data-oid="y_kco7u">
           <button
             className="p-1 rounded-full hover:bg-gray-100"
             onClick={() => setMenuOpen(!menuOpen)}
-            data-oid="hrplz1e"
+            data-oid="ojxe:jr"
           >
-            <Menu size={24} data-oid="z-tlvnk" />
+            <Menu size={24} data-oid="-c2h.wo" />
           </button>
 
           {/* Dropdown menu */}
           {menuOpen && (
             <div
               className="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg border border-gray-200"
-              data-oid="vqmuaxq"
+              data-oid="7-op4kq"
             >
-              <div className="py-1" data-oid="6e4.je7">
+              <div className="py-1" data-oid="jsoovlw">
                 <a
                   href="#"
                   className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 flex items-center"
-                  data-oid="388q3qa"
+                  data-oid="tdxsolt"
                 >
-                  <User size={16} className="mr-2" data-oid="hb17pp-" />
+                  <User size={16} className="mr-2" data-oid="cj8ng7r" />
                   Pablo
                 </a>
                 <a
                   href="#"
                   className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 flex items-center"
-                  data-oid="9yj:li2"
+                  data-oid="8nv9m:y"
                 >
-                  <HelpCircle size={16} className="mr-2" data-oid="z6r0-mv" />
+                  <HelpCircle size={16} className="mr-2" data-oid="n_c0.1w" />
                   Ayuda
                 </a>
                 <a
                   href="#"
                   className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 flex items-center"
-                  data-oid="zsditlz"
+                  data-oid="hsmxz4y"
                 >
-                  <Globe size={16} className="mr-2" data-oid="wbjm1ab" />
+                  <Globe size={16} className="mr-2" data-oid="zv-rajq" />
                   Español
                 </a>
               </div>

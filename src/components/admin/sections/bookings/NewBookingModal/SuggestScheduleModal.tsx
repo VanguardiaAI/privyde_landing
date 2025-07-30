@@ -209,56 +209,56 @@ const SuggestScheduleModal: React.FC<SuggestScheduleModalProps> = ({
   return (
     <div
       className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50"
-      data-oid="wqz-7vu"
+      data-oid="0-32xjb"
     >
       <div
         className="bg-white rounded-lg shadow-xl max-w-2xl w-full mx-4 max-h-[90vh] overflow-y-auto"
-        data-oid="x7cc64_"
+        data-oid="lio.9gb"
       >
         {/* Header */}
         <div
           className="flex justify-between items-center p-6 border-b border-gray-200"
-          data-oid="ouqbeza"
+          data-oid="3wwhpxi"
         >
           <h2
             className="text-xl font-semibold text-gray-800"
-            data-oid=".u9w7v-"
+            data-oid="k1-t.72"
           >
             Sugerir Horario Alternativo
           </h2>
           <button
             onClick={onClose}
             className="text-gray-400 hover:text-gray-600 transition-colors"
-            data-oid="8cet0fp"
+            data-oid="6ea28uh"
           >
-            <X className="h-6 w-6" data-oid="l.vi2w:" />
+            <X className="h-6 w-6" data-oid="3gg8js-" />
           </button>
         </div>
 
         {/* Content */}
-        <div className="p-6 space-y-6" data-oid="a.e93f0">
+        <div className="p-6 space-y-6" data-oid="y49vf88">
           {/* Vehicle and Trip Info */}
           <div
             className="grid grid-cols-1 md:grid-cols-2 gap-4"
-            data-oid="efw35ia"
+            data-oid="u1ho-.q"
           >
-            <div className="p-4 bg-gray-100 rounded-lg" data-oid="m.ptzh.">
-              <h3 className="font-medium text-gray-800 mb-2" data-oid="7c9emln">
+            <div className="p-4 bg-gray-100 rounded-lg" data-oid="zo.f72b">
+              <h3 className="font-medium text-gray-800 mb-2" data-oid="xqc:tto">
                 Vehículo
               </h3>
-              <div className="text-sm space-y-1" data-oid="w_4rh-s">
-                <div data-oid="uua_qzx">
-                  <strong data-oid="r_vgqgd">Modelo:</strong>{" "}
+              <div className="text-sm space-y-1" data-oid="7pg0u.j">
+                <div data-oid="v_7fn_w">
+                  <strong data-oid="rryp_fu">Modelo:</strong>{" "}
                   {vehicle.vehicle_data?.model || vehicle.model || "N/A"}
                 </div>
-                <div data-oid="ytsdyn.">
-                  <strong data-oid="ceb6w2-">Conductor:</strong>{" "}
+                <div data-oid="hfdwzl2">
+                  <strong data-oid="0564jn.">Conductor:</strong>{" "}
                   {vehicle.vehicle_data?.driver?.name ||
                     vehicle.driver_name ||
                     "N/A"}
                 </div>
-                <div data-oid="qu069.m">
-                  <strong data-oid="vox5251">Tipo:</strong>{" "}
+                <div data-oid="k4m7y:2">
+                  <strong data-oid="xxffalb">Tipo:</strong>{" "}
                   {vehicle.availability_type === "fixed_zone"
                     ? "Zona Fija"
                     : "Ruta Flexible"}
@@ -266,29 +266,29 @@ const SuggestScheduleModal: React.FC<SuggestScheduleModalProps> = ({
               </div>
             </div>
 
-            <div className="p-4 bg-amber-50 rounded-lg" data-oid="27g-z3o">
-              <h3 className="font-medium text-gray-800 mb-2" data-oid="t:4:zc.">
+            <div className="p-4 bg-amber-50 rounded-lg" data-oid="kllwr5:">
+              <h3 className="font-medium text-gray-800 mb-2" data-oid="0wdw3:y">
                 Viaje Original
               </h3>
-              <div className="text-sm space-y-1" data-oid="-wkbegg">
-                <div className="flex items-center" data-oid="9vf2q84">
-                  <Calendar className="h-4 w-4 mr-2" data-oid=":7jurln" />
-                  <span data-oid="ow9kydu">
-                    <strong data-oid="br0n7jl">Fecha:</strong>{" "}
+              <div className="text-sm space-y-1" data-oid="mxafjdn">
+                <div className="flex items-center" data-oid="dwuqj6n">
+                  <Calendar className="h-4 w-4 mr-2" data-oid="axfwbus" />
+                  <span data-oid="4ub7ami">
+                    <strong data-oid="dk9hemb">Fecha:</strong>{" "}
                     {originalPickupDate}
                   </span>
                 </div>
-                <div className="flex items-center" data-oid="3ik4ub6">
-                  <MapPin className="h-4 w-4 mr-2" data-oid="k0:ea0p" />
-                  <span data-oid="wum_m0g">
-                    <strong data-oid="y_q5r90">Origen:</strong> {pickupLocation}
+                <div className="flex items-center" data-oid="92yko5n">
+                  <MapPin className="h-4 w-4 mr-2" data-oid="-k1rc4-" />
+                  <span data-oid="oiqjzk8">
+                    <strong data-oid="s_vng-l">Origen:</strong> {pickupLocation}
                   </span>
                 </div>
                 {dropoffLocation && (
-                  <div className="flex items-center" data-oid="-3yp.3w">
-                    <MapPin className="h-4 w-4 mr-2" data-oid="u_o9hcw" />
-                    <span data-oid="-uj7km7">
-                      <strong data-oid="t00py2u">Destino:</strong>{" "}
+                  <div className="flex items-center" data-oid="mu0nzti">
+                    <MapPin className="h-4 w-4 mr-2" data-oid="vbpocjq" />
+                    <span data-oid="0v8pm8-">
+                      <strong data-oid="e45hw3t">Destino:</strong>{" "}
                       {dropoffLocation}
                     </span>
                   </div>
@@ -299,43 +299,43 @@ const SuggestScheduleModal: React.FC<SuggestScheduleModalProps> = ({
 
           {/* Client Info */}
           {isLoadingClient ? (
-            <div className="p-4 bg-gray-50 rounded-lg" data-oid="b5c5b.d">
-              <div className="animate-pulse" data-oid="d_-xb4h">
+            <div className="p-4 bg-gray-50 rounded-lg" data-oid="40wztwd">
+              <div className="animate-pulse" data-oid="-7btokd">
                 Cargando información del cliente...
               </div>
             </div>
           ) : clientInfo ? (
-            <div className="p-4 bg-green-50 rounded-lg" data-oid="7re2__f">
-              <h3 className="font-medium text-gray-800 mb-2" data-oid="z8jpkdi">
+            <div className="p-4 bg-green-50 rounded-lg" data-oid="wbxgh3.">
+              <h3 className="font-medium text-gray-800 mb-2" data-oid="xpe_c5g">
                 Cliente
               </h3>
-              <div className="text-sm space-y-1" data-oid="_rhaq:r">
-                <div className="flex items-center" data-oid="o:3-8:k">
-                  <User className="h-4 w-4 mr-2" data-oid="t9vo7g1" />
-                  <span data-oid="thmu:zk">
-                    <strong data-oid="b7m15-s">Nombre:</strong>{" "}
+              <div className="text-sm space-y-1" data-oid="h.q-uok">
+                <div className="flex items-center" data-oid="eo5wpb5">
+                  <User className="h-4 w-4 mr-2" data-oid="ismmsdw" />
+                  <span data-oid="92rxc9o">
+                    <strong data-oid="1w.cobq">Nombre:</strong>{" "}
                     {clientInfo.name}
                   </span>
                 </div>
-                <div className="flex items-center" data-oid="350ml1w">
-                  <Phone className="h-4 w-4 mr-2" data-oid="zd:n1gb" />
-                  <span data-oid="dl-60:p">
-                    <strong data-oid="v2zsh37">Teléfono:</strong>{" "}
+                <div className="flex items-center" data-oid="s---rmn">
+                  <Phone className="h-4 w-4 mr-2" data-oid="ssf1:v-" />
+                  <span data-oid="4_uk.gv">
+                    <strong data-oid="ypkrgww">Teléfono:</strong>{" "}
                     {clientInfo.phone}
                   </span>
                 </div>
-                <div className="flex items-center" data-oid="hvu4pjz">
-                  <Mail className="h-4 w-4 mr-2" data-oid="vcpq5.o" />
-                  <span data-oid="9o5aarc">
-                    <strong data-oid="rizu.nz">Email:</strong>{" "}
+                <div className="flex items-center" data-oid="sgs0g03">
+                  <Mail className="h-4 w-4 mr-2" data-oid="54_x6:7" />
+                  <span data-oid="ukztx2i">
+                    <strong data-oid="omsy5e0">Email:</strong>{" "}
                     {clientInfo.email}
                   </span>
                 </div>
               </div>
             </div>
           ) : (
-            <div className="p-4 bg-yellow-50 rounded-lg" data-oid="pvdz-sk">
-              <p className="text-sm text-yellow-800" data-oid="a7:vt_b">
+            <div className="p-4 bg-yellow-50 rounded-lg" data-oid="gp3-_93">
+              <p className="text-sm text-yellow-800" data-oid="ulfzlw4">
                 ℹ️ Para mejores resultados, asegúrate de que el cliente esté
                 registrado en el sistema.
               </p>
@@ -343,10 +343,10 @@ const SuggestScheduleModal: React.FC<SuggestScheduleModalProps> = ({
           )}
 
           {/* Reason for unavailability */}
-          <div data-oid="v-gvwwg">
+          <div data-oid="ve931jr">
             <label
               className="block text-sm font-medium text-gray-700 mb-2"
-              data-oid="rmxcedq"
+              data-oid="v6ducl8"
             >
               Motivo de no disponibilidad
             </label>
@@ -356,39 +356,39 @@ const SuggestScheduleModal: React.FC<SuggestScheduleModalProps> = ({
               onChange={(e) => setReason(e.target.value)}
               className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
               placeholder="Ej: En otro viaje programado"
-              data-oid="p389:w7"
+              data-oid="uc14:m5"
             />
           </div>
 
           {/* Alternative time slots */}
           {alternativeSlots.length > 0 && (
-            <div data-oid="0zat_qv">
+            <div data-oid="pd9idib">
               <label
                 className="block text-sm font-medium text-gray-700 mb-2"
-                data-oid="b0hsrco"
+                data-oid="bdgrnob"
               >
                 Horarios alternativos disponibles
               </label>
-              <div className="flex flex-wrap gap-2" data-oid="zf:vx0s">
+              <div className="flex flex-wrap gap-2" data-oid=":evi1wr">
                 {selectedSlots.map((slot) => (
                   <div
                     key={slot}
                     className="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm flex items-center"
-                    data-oid="nn-:5k9"
+                    data-oid="ypmka3s"
                   >
-                    <Clock className="h-3 w-3 mr-1.5" data-oid="bqi_8w5" />
+                    <Clock className="h-3 w-3 mr-1.5" data-oid="x1icdan" />
                     {slot}
                     <button
                       onClick={() => handleSlotToggle(slot)}
                       className="ml-2 text-gray-500 hover:text-gray-700"
-                      data-oid="._q-hby"
+                      data-oid="mhfgnk6"
                     >
-                      <X className="h-3 w-3" data-oid="1mol0qa" />
+                      <X className="h-3 w-3" data-oid="cyjdl2f" />
                     </button>
                   </div>
                 ))}
               </div>
-              <p className="text-xs text-gray-500 mt-2" data-oid="angcxau">
+              <p className="text-xs text-gray-500 mt-2" data-oid="brmzg39">
                 Se han preseleccionado automáticamente los primeros 3 horarios.
                 Puedes modificar la selección.
               </p>
@@ -398,12 +398,12 @@ const SuggestScheduleModal: React.FC<SuggestScheduleModalProps> = ({
           {/* Custom date/time suggestion */}
           <div
             className="grid grid-cols-1 md:grid-cols-2 gap-4"
-            data-oid="468qma1"
+            data-oid="f00fw2_"
           >
-            <div data-oid="6xb565-">
+            <div data-oid=".5:95gi">
               <label
                 className="block text-sm font-medium text-gray-700 mb-2"
-                data-oid="yir0d.7"
+                data-oid="jtevudu"
               >
                 Fecha específica (opcional)
               </label>
@@ -412,13 +412,13 @@ const SuggestScheduleModal: React.FC<SuggestScheduleModalProps> = ({
                 value={suggestedDate}
                 onChange={(e) => setSuggestedDate(e.target.value)}
                 className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                data-oid="wdkvflc"
+                data-oid="qfd65la"
               />
             </div>
-            <div data-oid="ds6tba2">
+            <div data-oid="4686wce">
               <label
                 className="block text-sm font-medium text-gray-700 mb-2"
-                data-oid="df.21ap"
+                data-oid="67ldrw_"
               >
                 Hora específica (opcional)
               </label>
@@ -427,16 +427,16 @@ const SuggestScheduleModal: React.FC<SuggestScheduleModalProps> = ({
                 value={suggestedTime}
                 onChange={(e) => setSuggestedTime(e.target.value)}
                 className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                data-oid="whch:lr"
+                data-oid="5do0zrz"
               />
             </div>
           </div>
 
           {/* Contact method */}
-          <div data-oid=".:50n3h">
+          <div data-oid="qzp-db7">
             <label
               className="block text-sm font-medium text-gray-700 mb-2"
-              data-oid="6l4003l"
+              data-oid="hb7xq68"
             >
               Método de contacto preferido
             </label>
@@ -444,28 +444,28 @@ const SuggestScheduleModal: React.FC<SuggestScheduleModalProps> = ({
               value={contactMethod}
               onChange={(e) => setContactMethod(e.target.value)}
               className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-              data-oid="p3fo_aj"
+              data-oid="v9:khr7"
             >
-              <option value="whatsapp" data-oid="qxcdd.4">
+              <option value="whatsapp" data-oid="_wyy28s">
                 WhatsApp
               </option>
-              <option value="email" data-oid="mts7672">
+              <option value="email" data-oid="c94yk57">
                 Email
               </option>
-              <option value="phone" data-oid="ou.imop">
+              <option value="phone" data-oid="rzc9yvg">
                 Llamada telefónica
               </option>
-              <option value="sms" data-oid="hjguloa">
+              <option value="sms" data-oid="p:k3q7r">
                 SMS
               </option>
             </select>
           </div>
 
           {/* Custom message */}
-          <div data-oid="-rz58kn">
+          <div data-oid="sm46l1o">
             <label
               className="block text-sm font-medium text-gray-700 mb-2"
-              data-oid="atklw_s"
+              data-oid="heh06ys"
             >
               Mensaje personalizado
             </label>
@@ -475,25 +475,25 @@ const SuggestScheduleModal: React.FC<SuggestScheduleModalProps> = ({
               rows={4}
               className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
               placeholder="Personaliza el mensaje que se enviará al cliente..."
-              data-oid="584_uk:"
+              data-oid="l8e8.u_"
             />
           </div>
 
           {/* Preview */}
-          <div className="bg-gray-50 p-4 rounded-lg" data-oid="2_d0a1r">
-            <h4 className="font-medium text-gray-800 mb-2" data-oid="fa4ay.g">
+          <div className="bg-gray-50 p-4 rounded-lg" data-oid="fx_sgok">
+            <h4 className="font-medium text-gray-800 mb-2" data-oid="23g90jp">
               Vista previa del mensaje
             </h4>
             <div
               className="text-sm text-gray-600 whitespace-pre-wrap"
-              data-oid="zkmhcu_"
+              data-oid="c.kxnoq"
             >
               {customMessage}
 
               {selectedSlots.length > 0 && (
                 <>
                   {"\n\n"}📅{" "}
-                  <strong data-oid="-5ggc7k">Horarios disponibles:</strong>
+                  <strong data-oid="c04:xey">Horarios disponibles:</strong>
                   {selectedSlots.map((slot) => `\n• ${slot}`).join("")}
                 </>
               )}
@@ -501,7 +501,7 @@ const SuggestScheduleModal: React.FC<SuggestScheduleModalProps> = ({
               {suggestedDate && suggestedTime && (
                 <>
                   {"\n\n"}⭐{" "}
-                  <strong data-oid="nr5-0aw">Sugerencia específica:</strong>{" "}
+                  <strong data-oid="zpc4rav">Sugerencia específica:</strong>{" "}
                   {suggestedDate} a las {suggestedTime}
                 </>
               )}
@@ -512,12 +512,12 @@ const SuggestScheduleModal: React.FC<SuggestScheduleModalProps> = ({
         {/* Footer */}
         <div
           className="flex justify-between items-center p-6 border-t border-gray-200 bg-gray-50"
-          data-oid="ng:_e.2"
+          data-oid="z.6.:f0"
         >
           <button
             onClick={onClose}
             className="px-4 py-2 text-gray-600 hover:text-gray-800 transition-colors"
-            data-oid="-.8ecc9"
+            data-oid="bhxw-sg"
           >
             Cancelar
           </button>
@@ -526,19 +526,19 @@ const SuggestScheduleModal: React.FC<SuggestScheduleModalProps> = ({
             onClick={handleSubmitSuggestion}
             disabled={isSubmitting || selectedSlots.length === 0}
             className="bg-black hover:bg-gray-800 disabled:opacity-50"
-            data-oid="ibanc2-"
+            data-oid="76xyzw2"
           >
             {isSubmitting ? (
               <>
                 <div
                   className="animate-spin h-4 w-4 mr-2 border-2 border-white border-t-transparent rounded-full"
-                  data-oid="_u965j7"
+                  data-oid=".s.25hj"
                 ></div>
                 Enviando...
               </>
             ) : (
               <>
-                <Send className="h-4 w-4 mr-2" data-oid="5_wb5o0" />
+                <Send className="h-4 w-4 mr-2" data-oid="1113ep1" />
                 Enviar Sugerencia
               </>
             )}

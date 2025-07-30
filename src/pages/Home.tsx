@@ -1,4 +1,4 @@
-import { ShieldCheck, CarFront, Leaf } from "lucide-react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "@/components/ui/image";
 import BookingForm from "@/components/booking-form";
 import DownloadSection from "@/components/download-section";
@@ -7,596 +7,1149 @@ import Footer from "@/components/Footer";
 import SupportChat from "@/components/SupportChat";
 import "../styles/privyde.css";
 import { Link } from "react-router-dom";
+import { useState, useEffect, useRef } from "react";
 
 const servicesData = [
   {
     id: 0,
-    title: "Viajes de ciudad a ciudad",
+    title: "Servicio de coche de larga distancia",
     description:
-      "Servicio de coche de larga distancia con chófer para viajes entre ciudades con tarifas fijas y todo incluido.",
-    imageUrl: "/images/city2city.jpeg",
+      "Conectamos ciudades con el máximo confort. Chóferes profesionales para trayectos largos con total tranquilidad.",
+    imageUrl: "/images/services/Servicio -Coche de larga distancia.webp",
     linkText: "Más información",
     linkHref: "/city-to-city",
   },
   {
     id: 1,
-    title: "Traslados al aeropuerto",
+    title: "Traslados en aeropuertos",
     description:
-      "Con el tiempo de espera adicional y el seguimiento de los vuelos en caso de retrasos, nuestro servicio está optimizado para hacer que cada traslado al aeropuerto sea una brisa.",
-    imageUrl: "/images/airport.jpeg",
+      "Servicio de traslado premium desde y hacia el aeropuerto. Monitoreo de vuelos en tiempo real.",
+    imageUrl: "/images/services/Servicio-Traslado en Aeropuertos.webp",
     linkText: "Más información",
     linkHref: "/airport-transfers",
   },
   {
     id: 2,
-    title: "Alquiler por horas y día completo",
+    title: "Alquiler por horas",
     description:
-      "Si quieres reservar o contratar a un chófer por horas o un día completo, elige uno de nuestros servicios a medida y disfruta de una flexibilidad total, fiable y cómoda.",
-    imageUrl: "/images/hours.jpeg",
+      "Nuestro servicio por horas está pensado para quienes necesitan un chófer que los espere y acompañe durante varias paradas o jornadas completas.",
+    imageUrl: "/images/services/Servicio - Alquiler de Choferes.webp",
     linkText: "Más información",
     linkHref: "/hourly-hire",
   },
   {
     id: 3,
-    title: "Servicios para bodas y eventos especiales",
+    title: "Eventos especiales",
     description:
-      "Elegancia y confort para sus celebraciones más importantes, con vehículos de lujo y atención personalizada.",
-    imageUrl: "/images/weddings.jpeg",
+      "El día de tu boda merece un transporte que esté a la altura. Vehículos de lujo y chóferes que entienden la importancia del momento.",
+    imageUrl: "/images/services/Servicios - Eventos especiales.webp",
     linkText: "Más información",
     linkHref: "/special-events",
   },
   {
     id: 4,
-    title: "Servicios de limusinas",
-    description:
-      "Lujo y estilo para sus momentos inolvidables. Disfrute de una experiencia única en nuestras limusinas.",
-    imageUrl: "/images/limo.jpeg",
-    linkText: "Más información",
-    linkHref: "/limousine-service",
-  },
-  {
-    id: 5,
-    title: "Jets privados",
-    description:
-      "Viajes exclusivos y personalizados con la máxima privacidad, eficiencia y confort aéreo.",
-    imageUrl: "/images/jet.png",
-    linkText: "Más información",
-    linkHref: "/private-jets",
-  },
-  {
-    id: 6,
     title: "Traslados corporativos VIP",
     description:
-      "Soluciones de transporte ejecutivo para profesionales y empresas, enfocadas en la puntualidad y discreción.",
-    imageUrl: "/images/corporative.png",
+      "Transporte ejecutivo diseñado para profesionales que valoran la puntualidad, discreción y comodidad en cada trayecto.",
+    imageUrl: "/images/services/Servicios - Traslados Corporativos VIP.webp",
     linkText: "Más información",
     linkHref: "/corporate-transfers",
   },
   {
-    id: 7,
-    title: "Servicios de seguridad ejecutiva discreta",
+    id: 5,
+    title: "Seguridad ejecutiva",
     description:
-      "Protección y tranquilidad con nuestros profesionales de seguridad altamente capacitados y discretos.",
-    imageUrl: "/images/security.png",
+      "Protección discreta y profesional. Escoltas capacitados para garantizar tu seguridad sin comprometer tu privacidad.",
+    imageUrl: "/images/services/Servicio - Seguridad Ejecutiva.webp",
     linkText: "Más información",
     linkHref: "/security-services",
   },
 ];
 
-const majorCitiesData = [
+
+
+
+const testimonialsData = [
   {
     id: 1,
-    name: "New York",
-    description: "21 rutas hacia/desde esta ciudad",
-    imageUrl: "/images/newyork.jpg", // Placeholder
+    name: "Renata V.",
+    image: "https://i.pravatar.cc/150?img=1",
+    text: "Me hizo viajar seguro y sin estrés. Desde que uso Privyde, sé que están bien cuidados.",
+    rating: 5
   },
   {
     id: 2,
-    name: "London",
-    description: "25 rutas hacia/desde esta ciudad",
-    imageUrl:
-      "https://images.unsplash.com/photo-1505761671935-60b3a7427bad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80", // Placeholder
+    name: "Marcelo A.",
+    image: "https://i.pravatar.cc/150?img=3",
+    text: "Con Privyde tengo protección y puntualidad garantizadas. La opción de escolta me da tranquilidad en cada traslado.",
+    rating: 5
   },
   {
     id: 3,
-    name: "Paris",
-    description: "16 rutas hacia/desde esta ciudad",
-    imageUrl:
-      "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80", // Placeholder
-  },
-  {
-    id: 4,
-    name: "Dubai",
-    description: "15 rutas hacia/desde esta ciudad",
-    imageUrl: "/images/dubai.jpg", // Placeholder
-  },
-];
-
-const majorRoutesData = [
-  {
-    id: 1,
-    from: "New York",
-    to: "Philadelphia",
-    duration: "1h 50m",
-    distance: "59 mi",
-  },
-  {
-    id: 2,
-    from: "London",
-    to: "Oxford",
-    duration: "1h 45m",
-    distance: "96 km",
-  },
-  { id: 3, from: "Paris", to: "Reims", duration: "2h 15m", distance: "145 km" },
-  {
-    id: 4,
-    from: "Dubai",
-    to: "Abu Dhabi",
-    duration: "1h 15m",
-    distance: "136 km",
-  },
-  {
-    id: 5,
-    from: "New York",
-    to: "East Hampton",
-    duration: "2h 30m",
-    distance: "68 mi",
-  },
-  {
-    id: 6,
-    from: "Manchester",
-    to: "Liverpool",
-    duration: "1h",
-    distance: "57 km",
-  },
-  {
-    id: 7,
-    from: "Nice",
-    to: "Saint Tropez",
-    duration: "1h 40m",
-    distance: "112 km",
-  },
-  {
-    id: 8,
-    from: "Brisbane",
-    to: "Gold Coast",
-    duration: "1h",
-    distance: "79 km",
-  },
-];
-
-const featureData = [
-  {
-    icon: ShieldCheck,
-    title: "Viaje seguro y protegido",
-    description:
-      "Viaje con confianza sabiendo que su seguridad es nuestra prioridad número uno. Los rigurosos estándares de salud y limpieza completan un servicio de primera clase.",
-  },
-  {
-    icon: CarFront,
-    title: "Soluciones para viajes privados",
-    description:
-      "Descubra nuestros servicios integrales de viajes: trayectos de larga distancia, ida o vuelta, por horas, traslados al aeropuerto, y mucho más.",
-  },
-  {
-    icon: Leaf,
-    title: "Viaje sostenible",
-    description:
-      "Todos nuestro trayectos son neutros en emisiones de carbono, como parte de nuestro programa global de compensación de emisiones de carbono iniciado en 2017, el primero de la industria.",
-  },
+    name: "Lorenzo D.",
+    image: "https://i.pravatar.cc/150?img=8",
+    text: "En cada viaje a Europa, Privyde me ofrece el mismo nivel de seguridad y discreción que en casa.",
+    rating: 5
+  }
 ];
 
 export default function Home() {
+  const [currentServiceSlide, setCurrentServiceSlide] = useState(0);
+  const [currentTestimonialSlide, setCurrentTestimonialSlide] = useState(0);
+  const [visibleBenefit, setVisibleBenefit] = useState<number | null>(null);
+  const [clickedBenefit, setClickedBenefit] = useState<number | null>(null);
+  const benefitRefs = useRef<(HTMLDivElement | null)[]>([]);
+
+  const handleNextService = () => {
+    setCurrentServiceSlide((prev) => (prev + 1) % servicesData.length);
+  };
+
+  const handlePrevService = () => {
+    setCurrentServiceSlide((prev) => (prev - 1 + servicesData.length) % servicesData.length);
+  };
+
+  // Intersection Observer for benefits scroll animation
+  useEffect(() => {
+    const observers: IntersectionObserver[] = [];
+    let intersectionRatios: Map<number, number> = new Map();
+    let lastUpdateTime = 0;
+    let updateTimeout: NodeJS.Timeout | null = null;
+    
+    const updateVisibleBenefit = (newIndex: number | null) => {
+      const now = Date.now();
+      const timeSinceLastUpdate = now - lastUpdateTime;
+      
+      // Clear any pending update
+      if (updateTimeout) {
+        clearTimeout(updateTimeout);
+        updateTimeout = null;
+      }
+      
+      // If we just updated recently, delay this update slightly
+      if (timeSinceLastUpdate < 100) {
+        updateTimeout = setTimeout(() => {
+          lastUpdateTime = Date.now();
+          setVisibleBenefit(newIndex);
+        }, 100 - timeSinceLastUpdate);
+      } else {
+        lastUpdateTime = now;
+        setVisibleBenefit(newIndex);
+      }
+    };
+    
+    benefitRefs.current.forEach((ref, index) => {
+      if (ref) {
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting && entry.intersectionRatio > 0.3) {
+                intersectionRatios.set(index, entry.intersectionRatio);
+              } else {
+                intersectionRatios.delete(index);
+              }
+            });
+            
+            // Find the benefit with the highest intersection ratio
+            let maxRatio = 0;
+            let selectedIndex: number | null = null;
+            
+            intersectionRatios.forEach((ratio, idx) => {
+              if (ratio > maxRatio) {
+                maxRatio = ratio;
+                selectedIndex = idx;
+              }
+            });
+            
+            // Add small hysteresis to prevent flickering
+            const currentVisible = visibleBenefit;
+            if (currentVisible !== null && selectedIndex !== null && currentVisible !== selectedIndex) {
+              const currentRatio = intersectionRatios.get(currentVisible) || 0;
+              const selectedRatio = intersectionRatios.get(selectedIndex) || 0;
+              
+              // Only require a small difference to change (5%)
+              if (selectedRatio - currentRatio < 0.05) {
+                return;
+              }
+            }
+            
+            updateVisibleBenefit(selectedIndex);
+          },
+          {
+            threshold: [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1],
+            rootMargin: "-20% 0px -20% 0px"
+          }
+        );
+        
+        observer.observe(ref);
+        observers.push(observer);
+      }
+    });
+
+    return () => {
+      if (updateTimeout) {
+        clearTimeout(updateTimeout);
+      }
+      observers.forEach((observer) => observer.disconnect());
+    };
+  }, [visibleBenefit]);
+
+  // Auto-advance Services slider on mobile
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentServiceSlide((prev) => (prev + 1) % servicesData.length);
+    }, 5000); // Change every 5 seconds
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
-    <main className="min-h-screen w-full overflow-x-hidden" data-oid="x9g4zem">
+    <main className="min-h-screen w-full overflow-x-hidden" data-oid="1-ud.ut">
       {/* Navigation */}
-      <Navbar data-oid="113-ne6" />
+      <Navbar data-oid="7wtpkco" />
 
-      {/* Hero Section */}
-      <div className="flex flex-col w-full" data-oid="k0gwhtq">
-        {/* Title Bar */}
-        <div className="title-bar relative" data-oid="ap6x8g4">
-          <div className="container mx-auto px-4 max-w-6xl" data-oid="a7jtzd9">
-            <h1 className="text-3xl font-bold text-black" data-oid="0k0zeii">
-              Su servicio global de chóferes
-            </h1>
-          </div>
-        </div>
-
-        {/* Image Container */}
-        <div className="hero-container relative" data-oid="16tnzo-">
+      {/* Hero Section - Desktop */}
+      <div className="hidden lg:flex flex-col w-full" data-oid="jy:n-tp">
+        <div
+          className="hero-container relative"
+          data-oid="q54zzv_"
+          key="olk-mneH"
+        >
           {/* Background Image */}
-          <div className="full-size-background" data-oid=".a69fd7">
-            <Image
-              src="/images/hero2.png"
-              alt="Servicio de chóferes"
-              fill
-              className="object-cover object-center"
-              priority
-              sizes="100vw"
-              data-oid="420qdwz"
+          <div className="full-size-background" data-oid="64x6tn6">
+            <img
+              className="w-full h-full object-cover"
+              data-oid="x_a.lnz"
+              src="/images/Banner inicio.webp"
+              alt="Banner inicio.webp"
+              key="olk-oyVg"
+            />
+            {/* Black gradient overlay at bottom */}
+            <div 
+              className="absolute inset-x-0 bottom-0 h-48 bg-gradient-to-t from-black via-black/60 to-transparent pointer-events-none"
+              style={{ zIndex: 10 }}
             />
           </div>
 
           {/* Booking Widget - Solo visible en pantallas grandes (lg) */}
           <div
             className="booking-widget-container-overlay hidden lg:block"
-            data-oid="vlh0jmw"
+            data-oid="_sf4p77"
           >
-            <BookingForm data-oid="cn487u7" />
+            {/* Título y subtítulo */}
+            <div className="booking-title-container">
+              <h1 className="booking-title">SOLICITA TU VIAJE</h1>
+              <p className="booking-subtitle">Estás a un clic de viajar mejor</p>
+            </div>
+            
+            {/* Formulario de reserva */}
+            <div className="booking-form-wrapper">
+              <BookingForm data-oid="9q8:r8_" />
+            </div>
           </div>
         </div>
       </div>
 
-      {/* Booking Widget - Solo visible en tablets y móviles (fuera del hero) */}
-      <div
-        className="lg:hidden mx-auto px-4 mb-8 mt-6 relative z-30 max-w-6xl"
-        data-oid="c-dtilc"
-      >
-        <div
-          className="rounded-xl overflow-hidden"
-          style={{
-            boxShadow:
-              "0 0 8px rgba(255, 255, 255, 0.2), 0 0 4px rgba(255, 255, 255, 0.1), 0 6px 10px rgba(0, 0, 0, 0.15)",
-          }}
-          data-oid="t7hq4mz"
-        >
-          <BookingForm data-oid="gxf91mm" />
+      {/* Hero Section - Mobile */}
+      <div className="lg:hidden flex flex-col w-full">
+        {/* Hero Image Container */}
+        <div className="relative w-full bg-black" style={{ height: '70vh', minHeight: '500px', maxHeight: '600px' }}>
+          <img
+            className="w-full h-full object-cover object-center"
+            src="/images/Banner inicio.webp"
+            alt="Banner inicio.webp"
+          />
+          {/* Black gradient overlay at bottom for better text readability */}
+          <div className="absolute inset-x-0 bottom-0 h-64 bg-gradient-to-t from-black via-black/70 to-transparent" />
+          {/* Solid black overlay at very bottom to ensure no gaps */}
+          <div className="absolute inset-x-0 bottom-0 h-2 bg-black" />
+          
+          {/* Title Overlay at bottom */}
+          <div className="absolute bottom-0 left-0 right-0 pb-6 px-4">
+            <div className="text-center">
+              <h1 className="font-bold text-3xl sm:text-4xl mb-1 text-white" 
+                  style={{ 
+                    fontFamily: 'CONTHRAX-SB, sans-serif', 
+                    letterSpacing: '0.05em', 
+                    textTransform: 'uppercase',
+                    textShadow: '2px 2px 4px rgba(0, 0, 0, 0.8)'
+                  }}>
+                SOLICITA TU VIAJE
+              </h1>
+              <p className="text-base sm:text-lg text-white" 
+                 style={{ 
+                   fontFamily: 'Panton, sans-serif',
+                   textShadow: '1px 1px 3px rgba(0, 0, 0, 0.8)'
+                 }}>
+                Estás a un clic de viajar mejor
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        {/* Booking Form Below Image - Black background section */}
+        <div className="bg-black w-full -mt-1">
+          <div className="mx-auto px-8 sm:px-12 w-full max-w-4xl pt-10 pb-6">
+            <div className="bg-white rounded-xl overflow-hidden shadow-2xl">
+              <BookingForm data-oid="acct:ti" />
+            </div>
+          </div>
         </div>
       </div>
 
-      {/* Download Section - Ocupa toda la pantalla */}
-      <DownloadSection data-oid="ippkfez" />
+      {/* Download Section - Desktop */}
+      <div className="hidden lg:block">
+        <DownloadSection data-oid="a7-6ogm" />
+      </div>
+
+      {/* Mobile Text Section - Same content as DownloadSection but without grid background */}
+      <div className="lg:hidden bg-black text-white pt-4 pb-16 px-6 -mt-px">
+        <div className="max-w-3xl mx-auto text-center">
+          <p className="text-sm mb-8 leading-relaxed" style={{ fontFamily: 'Panton, sans-serif' }}>
+            <span className="font-bold">Privyde</span> es la experiencia de transporte premium que combina choferes profesionales, 
+            protección personalizada y vehículos de lujo para quienes valoran mucho más que llegar: 
+            Buscan confianza, estilo, y excelencia
+          </p>
+          <h1 className="text-3xl font-bold mb-3 uppercase tracking-wider" 
+              style={{ fontFamily: 'CONTHRAX-SB, sans-serif' }}>
+            SOLICITA TU VIAJE
+          </h1>
+          <p className="text-lg mb-10" style={{ fontFamily: 'Panton, sans-serif' }}>
+            Descubre la experiencia privyde
+          </p>
+          {/* White separator line */}
+          <div className="w-full h-px bg-white/50 mt-12"></div>
+        </div>
+      </div>
 
       {/* Sustainability Partners & Services Section */}
-      <section className="py-12 md:py-20 bg-white" data-oid="locucf2">
-        <div className="container mx-auto px-4 max-w-6xl" data-oid="43_wg62">
-          {/* Nuestros Servicios Title */}
+      <section className="py-12 md:py-20 pb-64 md:pb-80 bg-black -mt-px border-t border-black" data-oid="lpxmfw6">
+        <div className="container mx-auto px-4 max-w-6xl" data-oid="14-b:c4">
+          {/* Servicios Title */}
           <h2
-            className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-10 md:mb-16"
-            data-oid="b5x4mhj"
+            className="text-3xl md:text-4xl font-bold text-center text-white mb-10 md:mb-16"
+            data-oid="xg-8vm0"
+            style={{ fontFamily: 'CONTHRAX-SB, sans-serif', textTransform: 'uppercase', letterSpacing: '0.05em' }}
           >
-            Nuestros servicios
+            Servicios
           </h2>
 
-          {/* Service Cards Grid */}
-          <div
-            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8"
-            data-oid="mexmzwz"
-          >
-            {servicesData.map((service) => (
-              <div
-                key={service.id}
-                className="bg-white rounded-lg shadow-md overflow-hidden flex flex-col transition-shadow hover:shadow-xl"
-                data-oid="w7jf7n_"
-              >
-                <div className="relative h-48 w-full" data-oid="e1jdks:">
+          {/* Mobile Service Slider */}
+          <div className="md:hidden relative">
+            {/* Services Container with smooth transitions */}
+            <div className="relative aspect-[4/5] mx-auto max-w-sm overflow-hidden rounded-2xl">
+              {servicesData.map((service, index) => (
+                <div
+                  key={service.id}
+                  className={`absolute inset-0 transition-opacity duration-1000 ${
+                    index === currentServiceSlide ? 'opacity-100' : 'opacity-0'
+                  }`}
+                >
                   <Image
                     src={service.imageUrl}
                     alt={service.title}
                     fill
                     className="object-cover"
-                    data-oid="yveyax8"
                   />
-
-                  {/* {service.isNew && (
-                  <span className="absolute top-3 right-3 bg-gray-600 text-white text-xs font-semibold px-2.5 py-1 rounded">
-                    NUEVO
-                  </span>
-                  )} */}
-                </div>
-                <div className="p-5 flex flex-col flex-grow" data-oid="ytdrse8">
-                  <h3
-                    className="text-lg font-semibold text-gray-900 mb-2"
-                    data-oid="8_bgxkv"
-                  >
-                    {service.title}
-                  </h3>
-                  <p
-                    className="text-gray-600 text-sm mb-4 flex-grow"
-                    data-oid="yab.0dw"
-                  >
-                    {service.description}
-                  </p>
-                  <Link
-                    to={service.linkHref || "#"}
-                    className="text-gray-600 hover:text-blue-700 font-medium self-start mt-auto"
-                    data-oid="szzqivr"
-                  >
-                    {service.linkText}
-                  </Link>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* City Routes Section */}
-      <section className="py-12 md:py-20 bg-gray-50" data-oid="3cwu0mh">
-        <div className="container mx-auto px-4 max-w-6xl" data-oid="274hbak">
-          <h2
-            className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12 md:mb-16"
-            data-oid=".f0sgr8"
-          >
-            Rutas entre ciudades
-          </h2>
-
-          {/* Principales ciudades */}
-          <div className="mb-12 md:mb-16" data-oid="-hdxwlv">
-            <div
-              className="flex justify-between items-center mb-6 md:mb-8"
-              data-oid="-_1b-hu"
-            >
-              <h3
-                className="text-2xl font-semibold text-gray-700"
-                data-oid="28hnoir"
-              >
-                Principales ciudades
-              </h3>
-              <a
-                href="#"
-                className="text-gray-600 hover:text-blue-700 font-medium"
-                data-oid="69y_89w"
-              >
-                Ver todo
-              </a>
-            </div>
-            <div
-              className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8"
-              data-oid="fcv5urm"
-            >
-              {majorCitiesData.map((city) => (
-                <div
-                  key={city.id}
-                  className="bg-white rounded-lg shadow-md overflow-hidden transition-shadow hover:shadow-xl"
-                  data-oid="o79uf70"
-                >
-                  <div className="relative h-40 w-full" data-oid="6:4ofpr">
-                    {" "}
-                    {/* Ajusta la altura según tus imágenes */}
-                    <Image
-                      src={city.imageUrl}
-                      alt={city.name}
-                      fill
-                      className="object-cover"
-                      data-oid=":c1_29f"
-                    />
-                  </div>
-                  <div className="p-4" data-oid="o95g1av">
-                    <h4
-                      className="text-lg font-semibold text-gray-900 mb-1"
-                      data-oid="y5m6zo7"
-                    >
-                      {city.name}
-                    </h4>
-                    <p className="text-gray-600 text-sm" data-oid="9uxctsu">
-                      {city.description}
-                    </p>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
+                  <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+                    <h3 className="text-xl font-bold mb-2">{service.title}</h3>
+                    <p className="text-sm text-white/80 line-clamp-3">{service.description}</p>
                   </div>
                 </div>
               ))}
             </div>
-          </div>
 
-          {/* Principales rutas */}
-          <div className="mb-12 md:mb-16" data-oid="uh3hzqh">
-            <div
-              className="flex justify-between items-center mb-6 md:mb-8"
-              data-oid="qhgv.la"
+            {/* Navigation Arrows */}
+            <button 
+              onClick={handlePrevService}
+              className="absolute left-2 top-1/2 -translate-y-1/2 bg-white/20 backdrop-blur-sm p-2 rounded-full"
             >
-              <h3
-                className="text-2xl font-semibold text-gray-700"
-                data-oid="ebq40l9"
-              >
-                Principales rutas
-              </h3>
-              <a
-                href="#"
-                className="text-gray-600 hover:text-blue-700 font-medium"
-                data-oid="p-cgkw4"
-              >
-                Ver todo
-              </a>
-            </div>
-            <div
-              className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6"
-              data-oid="6ggmvvf"
+              <ChevronLeft className="w-6 h-6 text-white" />
+            </button>
+            <button 
+              onClick={handleNextService}
+              className="absolute right-2 top-1/2 -translate-y-1/2 bg-white/20 backdrop-blur-sm p-2 rounded-full"
             >
-              {majorRoutesData.map((route) => (
-                <div
-                  key={route.id}
-                  className="bg-white rounded-lg shadow-sm p-4 border border-gray-200 hover:shadow-md transition-shadow"
-                  data-oid="fyj5r6r"
-                >
-                  <div
-                    className="flex items-center justify-between mb-1"
-                    data-oid="_7yfum9"
-                  >
-                    <span
-                      className="font-semibold text-gray-800"
-                      data-oid="x:hb4_i"
-                    >
-                      {route.from}
-                    </span>
-                    <span className="text-gray-500 mx-2" data-oid="98kzpxr">
-                      →
-                    </span>{" "}
-                    {/* Flecha derecha */}
-                    <span
-                      className="font-semibold text-gray-800"
-                      data-oid="yl2wi5a"
-                    >
-                      {route.to}
-                    </span>
-                  </div>
-                  <p className="text-gray-600 text-sm" data-oid="wh2tkxg">
-                    {route.duration} &nbsp;&nbsp; {route.distance}
-                  </p>
-                </div>
+              <ChevronRight className="w-6 h-6 text-white" />
+            </button>
+
+            {/* Dots Indicator */}
+            <div className="flex justify-center gap-2 mt-6">
+              {servicesData.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => setCurrentServiceSlide(index)}
+                  className={`w-2 h-2 rounded-full transition-all ${
+                    index === currentServiceSlide ? 'bg-white w-6' : 'bg-white/40'
+                  }`}
+                />
               ))}
             </div>
           </div>
 
-          {/* CTA Bar */}
+          {/* Desktop Service Cards Grid - 6 square images */}
           <div
-            className="bg-white rounded-lg shadow-md p-6 md:p-8 flex flex-col md:flex-row justify-between items-center"
-            data-oid="8jvs0_k"
+            className="hidden md:grid grid-cols-2 md:grid-cols-3 gap-0"
+            data-oid="vstr2vl"
           >
-            <div data-oid="dj4w-t0">
-              <h4
-                className="text-lg font-semibold text-gray-800 mb-1"
-                data-oid="ky41uc."
-              >
-                ¿Tiene en mente ruta?
-              </h4>
-              <p className="text-gray-600" data-oid="i98jsw0">
-                Introduzca sus destinos ideales para ver el precio.
-              </p>
-            </div>
+            {/* Card 1 - Servicio de coche de larga distancia */}
             <Link
               to="/city-to-city"
-              className="mt-4 md:mt-0 bg-black hover:bg-gray-800 text-white font-semibold py-3 px-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-150 ease-in-out"
-              data-oid="7.5:l7m"
+              className="relative aspect-square overflow-hidden group"
             >
-              Reservar un viaje de ciudad a ciudad
+              <Image
+                src="/images/services/Servicio -Coche de larga distancia.webp"
+                alt="Servicio de coche de larga distancia"
+                fill
+                className="object-cover transition-transform duration-300 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-black/50 group-hover:bg-black/60 transition-colors duration-300" />
+              <div className="absolute inset-0 flex items-center justify-center p-6">
+                <h3 className="text-white text-xl md:text-2xl font-bold text-center">
+                  Servicio de coche de larga distancia
+                </h3>
+              </div>
+              {/* Hover card with description */}
+              <div className="absolute inset-0 bg-white flex flex-col items-center justify-center p-6 transform translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out">
+                <h3 className="text-black text-xl md:text-2xl font-bold text-center mb-4">
+                  Viajes cómodos y seguros
+                </h3>
+                <p className="text-black text-sm md:text-base text-center mb-6">
+                  Conectamos ciudades con el máximo confort. Chóferes profesionales para trayectos largos con total tranquilidad.
+                </p>
+                <button className="bg-black text-white px-6 py-2 rounded-md hover:bg-gray-800 transition-colors font-medium">
+                  Ver más
+                </button>
+              </div>
+            </Link>
+
+            {/* Card 2 - Traslados en aeropuertos */}
+            <Link
+              to="/airport-transfers"
+              className="relative aspect-square overflow-hidden group"
+            >
+              <Image
+                src="/images/services/Servicio-Traslado en Aeropuertos.webp"
+                alt="Traslados en aeropuertos"
+                fill
+                className="object-cover transition-transform duration-300 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-black/50 group-hover:bg-black/60 transition-colors duration-300" />
+              <div className="absolute inset-0 flex items-center justify-center p-6">
+                <h3 className="text-white text-xl md:text-2xl font-bold text-center">
+                  Traslados en aeropuertos
+                </h3>
+              </div>
+              {/* Hover card with description */}
+              <div className="absolute inset-0 bg-white flex flex-col items-center justify-center p-6 transform translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out">
+                <h3 className="text-black text-xl md:text-2xl font-bold text-center mb-4">
+                  Puntualidad garantizada
+                </h3>
+                <p className="text-black text-sm md:text-base text-center mb-6">
+                  Servicio de traslado premium desde y hacia el aeropuerto. Monitoreo de vuelos en tiempo real.
+                </p>
+                <button className="bg-black text-white px-6 py-2 rounded-md hover:bg-gray-800 transition-colors font-medium">
+                  Ver más
+                </button>
+              </div>
+            </Link>
+
+            {/* Card 3 - Alquiler de chóferes */}
+            <Link
+              to="/hourly-hire"
+              className="relative aspect-square overflow-hidden group"
+            >
+              <Image
+                src="/images/services/Servicio - Alquiler de Choferes.webp"
+                alt="Alquiler de chóferes"
+                fill
+                className="object-cover transition-transform duration-300 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-black/50 group-hover:bg-black/60 transition-colors duration-300" />
+              <div className="absolute inset-0 flex items-center justify-center p-6">
+                <h3 className="text-white text-xl md:text-2xl font-bold text-center">
+                  Alquiler por horas
+                </h3>
+              </div>
+              {/* Hover card with description */}
+              <div className="absolute inset-0 bg-white flex flex-col items-center justify-center p-6 transform translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out">
+                <h3 className="text-black text-xl md:text-2xl font-bold text-center mb-4">
+                  Flexibilidad sin perder estilo
+                </h3>
+                <p className="text-black text-sm md:text-base text-center mb-6">
+                  Nuestro servicio por horas está pensado para quienes necesitan un chófer que los espere y acompañe durante varias paradas o jornadas completas.
+                </p>
+                <button className="bg-black text-white px-6 py-2 rounded-md hover:bg-gray-800 transition-colors font-medium">
+                  Ver más
+                </button>
+              </div>
+            </Link>
+
+            {/* Card 4 - Eventos especiales */}
+            <Link
+              to="/special-events"
+              className="relative aspect-square overflow-hidden group"
+            >
+              <Image
+                src="/images/services/Servicios - Eventos especiales.webp"
+                alt="Eventos especiales"
+                fill
+                className="object-cover transition-transform duration-300 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-black/50 group-hover:bg-black/60 transition-colors duration-300" />
+              <div className="absolute inset-0 flex items-center justify-center p-6">
+                <h3 className="text-white text-xl md:text-2xl font-bold text-center">
+                  Eventos especiales
+                </h3>
+              </div>
+              {/* Hover card with description */}
+              <div className="absolute inset-0 bg-white flex flex-col items-center justify-center p-6 transform translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out">
+                <h3 className="text-black text-xl md:text-2xl font-bold text-center mb-4">
+                  Momentos inolvidables
+                </h3>
+                <p className="text-black text-sm md:text-base text-center mb-6">
+                  Bodas, galas, conciertos. Hacemos de tu evento especial una experiencia de lujo desde el primer momento.
+                </p>
+                <button className="bg-black text-white px-6 py-2 rounded-md hover:bg-gray-800 transition-colors font-medium">
+                  Ver más
+                </button>
+              </div>
+            </Link>
+
+            {/* Card 5 - Traslados corporativos */}
+            <Link
+              to="/corporate-transfers"
+              className="relative aspect-square overflow-hidden group"
+            >
+              <Image
+                src="/images/services/Servicios - Traslados Corporativos VIP.webp"
+                alt="Traslados corporativos VIP"
+                fill
+                className="object-cover transition-transform duration-300 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-black/50 group-hover:bg-black/60 transition-colors duration-300" />
+              <div className="absolute inset-0 flex items-center justify-center p-6">
+                <h3 className="text-white text-xl md:text-2xl font-bold text-center">
+                  Traslados corporativos VIP
+                </h3>
+              </div>
+              {/* Hover card with description */}
+              <div className="absolute inset-0 bg-white flex flex-col items-center justify-center p-6 transform translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out">
+                <h3 className="text-black text-xl md:text-2xl font-bold text-center mb-4">
+                  Imagen profesional
+                </h3>
+                <p className="text-black text-sm md:text-base text-center mb-6">
+                  Servicio ejecutivo para empresas. Discreción, puntualidad y confort para tus reuniones de negocios.
+                </p>
+                <button className="bg-black text-white px-6 py-2 rounded-md hover:bg-gray-800 transition-colors font-medium">
+                  Ver más
+                </button>
+              </div>
+            </Link>
+
+            {/* Card 6 - Seguridad ejecutiva */}
+            <Link
+              to="/security-services"
+              className="relative aspect-square overflow-hidden group"
+            >
+              <Image
+                src="/images/services/Servicio - Seguridad Ejecutiva.webp"
+                alt="Seguridad ejecutiva"
+                fill
+                className="object-cover transition-transform duration-300 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-black/50 group-hover:bg-black/60 transition-colors duration-300" />
+              <div className="absolute inset-0 flex items-center justify-center p-6">
+                <h3 className="text-white text-xl md:text-2xl font-bold text-center">
+                  Seguridad ejecutiva discreta
+                </h3>
+              </div>
+              {/* Hover card with description */}
+              <div className="absolute inset-0 bg-white flex flex-col items-center justify-center p-6 transform translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out">
+                <h3 className="text-black text-xl md:text-2xl font-bold text-center mb-4">
+                  Protección personalizada
+                </h3>
+                <p className="text-black text-sm md:text-base text-center mb-6">
+                  Chóferes con entrenamiento en seguridad. Vehículos blindados disponibles. Tu seguridad es nuestra prioridad.
+                </p>
+                <button className="bg-black text-white px-6 py-2 rounded-md hover:bg-gray-800 transition-colors font-medium">
+                  Ver más
+                </button>
+              </div>
             </Link>
           </div>
         </div>
       </section>
 
-      {/* Features, Quote & New Download App Section */}
-      <section className="py-12 md:py-20 bg-white" data-oid="oq:uh:w">
-        <div className="container mx-auto px-4 max-w-6xl" data-oid="uhg4:3t">
-          {/* Features - CORREGIDO */}
-          <div
-            className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-6 mb-16 md:mb-24"
-            data-oid="xo02y4z"
-          >
-            {featureData.map((feature, index) => {
-              const IconComponent = feature.icon;
-              return (
-                <div
-                  key={index}
-                  className="border border-gray-200 rounded-lg p-6 flex flex-col text-left"
-                  data-oid="ej7e5x2"
-                >
-                  <div className="flex items-center mb-3" data-oid="73cwron">
-                    <IconComponent
-                      className="h-7 w-7 text-black mr-3 flex-shrink-0"
-                      data-oid="frlvlc-"
-                    />
-
-                    <h3
-                      className="text-lg font-semibold text-gray-800"
-                      data-oid="ig8g_57"
-                    >
-                      {feature.title}
-                    </h3>
-                  </div>
-                  <p
-                    className="text-gray-600 text-sm leading-relaxed"
-                    data-oid="a.:rb8k"
-                  >
-                    {feature.description}
-                  </p>
+      {/* Benefits Image Divider */}
+      <div className="relative">
+        {/* Image positioned between sections */}
+        <div className="absolute inset-x-0 top-0 transform -translate-y-1/2">
+          <div className="container mx-auto px-4 max-w-6xl">
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+              <div className="relative h-[300px] md:h-[400px]">
+                <Image
+                  src="/images/benefits/Inicio-Beneficios.webp"
+                  alt="Beneficios de elegir Privyde"
+                  fill
+                  className="object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
+                <div className="absolute inset-0 flex items-end justify-center pb-8 md:pb-12">
+                  <h2 className="text-3xl md:text-5xl font-bold text-white text-center uppercase tracking-wider"
+                      style={{ fontFamily: 'CONTHRAX-SB, sans-serif' }}>
+                    Beneficios de elegir Privyde
+                  </h2>
                 </div>
-              );
-            })}
+              </div>
+            </div>
           </div>
+        </div>
+      </div>
 
-          {/* Quote */}
-          <div
-            className="text-center mb-16 md:mb-24 max-w-3xl mx-auto"
-            data-oid="akkrsfa"
-          >
-            <h2
-              className="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-800 leading-tight"
-              data-oid="6j:q2c0"
-            >
-              "New chauffeur-hailing service seeks to challenge Uber, Lyft in
-              city rides"
-            </h2>
-            <p className="mt-6 text-lg text-gray-600" data-oid="j619g87">
-              The Wall Street Journal
-            </p>
-          </div>
+      {/* Benefits Section */}
+      <section className="bg-white pt-64 md:pt-80 pb-16 md:pb-24">
+        {/* Content */}
+        <div className="container mx-auto px-4 max-w-6xl">
 
-          {/* New Download App Section - COMO EN LA IMAGEN */}
-          <div
-            className="flex flex-col md:flex-row items-center"
-            data-oid="q9f_20c"
-          >
-            {/* Left Column: Text & Badges */}
-            <div
-              className="md:w-1/2 text-left mb-10 md:mb-0 md:pr-10"
-              data-oid="dkiofdn"
-            >
-              <h2
-                className="text-3xl font-bold text-gray-800 mb-4"
-                data-oid="0y.hisc"
-              >
-                Descargue la aplicación
-              </h2>
-              <p className="text-gray-600 mb-6" data-oid="p6o-s4y">
-                Reserve, cambie o cancele fácilmente los viajes sobre la marcha.
-                Piense en ello como tener la tranquilidad al alcance de la mano.
-              </p>
-              <div className="flex space-x-3" data-oid="_1oqlif">
-                {/* Corregidas las rutas de las imágenes */}
-                <a
-                  href="#"
-                  className="hover:opacity-80 transition-opacity"
-                  data-oid="2kjo3sy"
-                >
-                  <Image
-                    src="/appstore.png"
-                    alt="Download on the App Store"
-                    width={130}
-                    height={40}
-                    data-oid="ymk_ee."
-                  />
-                </a>
-                <a
-                  href="#"
-                  className="hover:opacity-80 transition-opacity"
-                  data-oid="b898d4u"
-                >
-                  <Image
-                    src="/googleplay.png"
-                    alt="Get it on Google Play"
-                    width={130}
-                    height={40}
-                    data-oid="2rdq4yv"
-                  />
-                </a>
+          {/* Benefits icons - Desktop version (horizontal) */}
+          <div className="hidden md:flex flex-wrap justify-center items-center gap-4 md:gap-8 mb-12">
+            {/* Icon 1 - Protection */}
+            <div className="relative group">
+              <img 
+                src="/images/benefits/Iconos_Mesa de trabajo 1.svg" 
+                alt="Protección integral"
+                className="w-20 h-20 md:w-24 md:h-24 cursor-pointer transition-transform hover:scale-110"
+              />
+              {/* Hover dialog */}
+              <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-10">
+                <div className="bg-black text-white p-3 rounded-lg shadow-xl w-64">
+                  <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-2">
+                    <div className="w-0 h-0 border-l-[8px] border-l-transparent border-r-[8px] border-r-transparent border-b-[8px] border-b-black"></div>
+                  </div>
+                  <h4 className="font-semibold mb-1 text-sm">Protección integral en todo momento</h4>
+                  <p className="text-xs leading-relaxed">Viaja respaldado por choferes verificados, monitoreo constante, seguros incluidos y opcional de escoltas privados certificados.</p>
+                </div>
               </div>
             </div>
 
-            {/* Right Column: Phone Image */}
-            <div
-              className="md:w-1/2 flex justify-center md:justify-end"
-              data-oid="hmjp5gh"
-            >
-              {/* Reemplazar con tu imagen real del teléfono */}
-              <Image
-                src="https://via.placeholder.com/300x600.png?text=App+Screenshot"
-                alt="Aplicación móvil"
-                width={300}
-                height={600}
-                className="object-contain max-h-[500px]" // Ajusta max-h según necesites
-                data-oid="dgqlwou"
+            {/* Connecting lines */}
+            <div className="hidden md:block w-16 h-0.5 bg-gray-300"></div>
+
+            {/* Icon 2 - Personalized attention */}
+            <div className="relative group">
+              <img 
+                src="/images/benefits/Iconos-02.svg" 
+                alt="Atención personalizada"
+                className="w-20 h-20 md:w-24 md:h-24 cursor-pointer transition-transform hover:scale-110"
               />
+              {/* Hover dialog */}
+              <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-10">
+                <div className="bg-black text-white p-3 rounded-lg shadow-xl w-64">
+                  <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-2">
+                    <div className="w-0 h-0 border-l-[8px] border-l-transparent border-r-[8px] border-r-transparent border-b-[8px] border-b-black"></div>
+                  </div>
+                  <h4 className="font-semibold mb-1 text-sm">Atención personalizada, sin importar el lugar</h4>
+                  <p className="text-xs leading-relaxed">Choferes que te conocen, asistencia desde la puerta y servicio humano. Nos adaptamos a tus necesidades en todo momento.</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Connecting lines */}
+            <div className="hidden md:block w-16 h-0.5 bg-gray-300"></div>
+
+            {/* Icon 3 - Premium fleet */}
+            <div className="relative group">
+              <img 
+                src="/images/benefits/Iconos-03.svg" 
+                alt="Flota premium"
+                className="w-20 h-20 md:w-24 md:h-24 cursor-pointer transition-transform hover:scale-110"
+              />
+              {/* Hover dialog */}
+              <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-10">
+                <div className="bg-black text-white p-3 rounded-lg shadow-xl w-64">
+                  <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-2">
+                    <div className="w-0 h-0 border-l-[8px] border-l-transparent border-r-[8px] border-r-transparent border-b-[8px] border-b-black"></div>
+                  </div>
+                  <h4 className="font-semibold mb-1 text-sm">Flota premium para cada ocasión</h4>
+                  <p className="text-xs leading-relaxed">SUVs, sedanes ejecutivos, vans de lujo o autos eléctricos. Mantenemos cada unidad impecable, moderna y equipada para que tu viaje refleje tu estilo.</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Connecting lines */}
+            <div className="hidden md:block w-16 h-0.5 bg-gray-300"></div>
+
+            {/* Icon 4 - Technology */}
+            <div className="relative group">
+              <img 
+                src="/images/benefits/Iconos-04.svg" 
+                alt="Tecnología intuitiva"
+                className="w-20 h-20 md:w-24 md:h-24 cursor-pointer transition-transform hover:scale-110"
+              />
+              {/* Hover dialog */}
+              <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-10">
+                <div className="bg-black text-white p-3 rounded-lg shadow-xl w-64">
+                  <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-2">
+                    <div className="w-0 h-0 border-l-[8px] border-l-transparent border-r-[8px] border-r-transparent border-b-[8px] border-b-black"></div>
+                  </div>
+                  <h4 className="font-semibold mb-1 text-sm">Tecnología intuitiva, control total</h4>
+                  <p className="text-xs leading-relaxed">Solicita, programa y monitorea todo desde la app. Puedes elegir horarios, ubicaciones, servicios complementarios y recibir soporte en tiempo real.</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Connecting lines */}
+            <div className="hidden md:block w-16 h-0.5 bg-gray-300"></div>
+
+            {/* Icon 5 - International */}
+            <div className="relative group">
+              <img 
+                src="/images/benefits/Iconos-05.svg" 
+                alt="Presencia internacional"
+                className="w-20 h-20 md:w-24 md:h-24 cursor-pointer transition-transform hover:scale-110"
+              />
+              {/* Hover dialog */}
+              <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-10">
+                <div className="bg-black text-white p-3 rounded-lg shadow-xl w-64">
+                  <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-2">
+                    <div className="w-0 h-0 border-l-[8px] border-l-transparent border-r-[8px] border-r-transparent border-b-[8px] border-b-black"></div>
+                  </div>
+                  <h4 className="font-semibold mb-1 text-sm">Presencia internacional</h4>
+                  <p className="text-xs leading-relaxed">Privyde está disponible en las principales ciudades del mundo. Viaja con el mismo nivel de seguridad y excelencia sin importar el destino.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Benefits icons - Mobile version (vertical with click reveal) */}
+          <div className="md:hidden space-y-8 mb-12">
+            {/* Icon 1 - Protection */}
+            <div className="flex flex-col items-center text-center">
+              <button
+                onClick={() => setClickedBenefit(clickedBenefit === 0 ? null : 0)}
+                className="focus:outline-none"
+              >
+                <img 
+                  src="/images/benefits/Iconos_Mesa de trabajo 1.svg" 
+                  alt="Protección integral"
+                  className="w-40 h-40 mb-4 cursor-pointer transition-transform active:scale-95"
+                />
+              </button>
+              {/* Dialog that appears on click */}
+              <div className={`transition-all duration-500 ${
+                clickedBenefit === 0 
+                  ? 'max-h-96 opacity-100' 
+                  : 'max-h-0 opacity-0 overflow-hidden'
+              }`}>
+                <div className="mt-2 relative">
+                  <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 z-10">
+                    <div className="w-0 h-0 border-l-[10px] border-l-transparent border-r-[10px] border-r-transparent border-b-[10px] border-b-black"></div>
+                  </div>
+                  <div className="bg-black text-white p-4 rounded-lg shadow-xl w-72 mx-auto mt-1">
+                    <h4 className="font-semibold mb-2 text-base">Protección integral en todo momento</h4>
+                    <p className="text-sm leading-relaxed">Viaja respaldado por choferes verificados, monitoreo constante, seguros incluidos y opcional de escoltas privados certificados.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Icon 2 - Personalized attention */}
+            <div className="flex flex-col items-center text-center">
+              <button
+                onClick={() => setClickedBenefit(clickedBenefit === 1 ? null : 1)}
+                className="focus:outline-none"
+              >
+                <img 
+                  src="/images/benefits/Iconos-02.svg" 
+                  alt="Atención personalizada"
+                  className="w-40 h-40 mb-4 cursor-pointer transition-transform active:scale-95"
+                />
+              </button>
+              {/* Dialog that appears on click */}
+              <div className={`transition-all duration-500 ${
+                clickedBenefit === 1 
+                  ? 'max-h-96 opacity-100' 
+                  : 'max-h-0 opacity-0 overflow-hidden'
+              }`}>
+                <div className="mt-2 relative">
+                  <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 z-10">
+                    <div className="w-0 h-0 border-l-[10px] border-l-transparent border-r-[10px] border-r-transparent border-b-[10px] border-b-black"></div>
+                  </div>
+                  <div className="bg-black text-white p-4 rounded-lg shadow-xl w-72 mx-auto mt-1">
+                    <h4 className="font-semibold mb-2 text-base">Atención personalizada, sin importar el lugar</h4>
+                    <p className="text-sm leading-relaxed">Choferes que te conocen, asistencia desde la puerta y servicio humano. Nos adaptamos a tus necesidades en todo momento.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Icon 3 - Premium fleet */}
+            <div className="flex flex-col items-center text-center">
+              <button
+                onClick={() => setClickedBenefit(clickedBenefit === 2 ? null : 2)}
+                className="focus:outline-none"
+              >
+                <img 
+                  src="/images/benefits/Iconos-03.svg" 
+                  alt="Flota premium"
+                  className="w-40 h-40 mb-4 cursor-pointer transition-transform active:scale-95"
+                />
+              </button>
+              {/* Dialog that appears on click */}
+              <div className={`transition-all duration-500 ${
+                clickedBenefit === 2 
+                  ? 'max-h-96 opacity-100' 
+                  : 'max-h-0 opacity-0 overflow-hidden'
+              }`}>
+                <div className="mt-2 relative">
+                  <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 z-10">
+                    <div className="w-0 h-0 border-l-[10px] border-l-transparent border-r-[10px] border-r-transparent border-b-[10px] border-b-black"></div>
+                  </div>
+                  <div className="bg-black text-white p-4 rounded-lg shadow-xl w-72 mx-auto mt-1">
+                    <h4 className="font-semibold mb-2 text-base">Flota premium para cada ocasión</h4>
+                    <p className="text-sm leading-relaxed">SUVs, sedanes ejecutivos, vans de lujo o autos eléctricos. Mantenemos cada unidad impecable, moderna y equipada para que tu viaje refleje tu estilo.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Icon 4 - Technology */}
+            <div className="flex flex-col items-center text-center">
+              <button
+                onClick={() => setClickedBenefit(clickedBenefit === 3 ? null : 3)}
+                className="focus:outline-none"
+              >
+                <img 
+                  src="/images/benefits/Iconos-04.svg" 
+                  alt="Tecnología intuitiva"
+                  className="w-40 h-40 mb-4 cursor-pointer transition-transform active:scale-95"
+                />
+              </button>
+              {/* Dialog that appears on click */}
+              <div className={`transition-all duration-500 ${
+                clickedBenefit === 3 
+                  ? 'max-h-96 opacity-100' 
+                  : 'max-h-0 opacity-0 overflow-hidden'
+              }`}>
+                <div className="mt-2 relative">
+                  <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 z-10">
+                    <div className="w-0 h-0 border-l-[10px] border-l-transparent border-r-[10px] border-r-transparent border-b-[10px] border-b-black"></div>
+                  </div>
+                  <div className="bg-black text-white p-4 rounded-lg shadow-xl w-72 mx-auto mt-1">
+                    <h4 className="font-semibold mb-2 text-base">Tecnología intuitiva, control total</h4>
+                    <p className="text-sm leading-relaxed">Solicita, programa y monitorea todo desde la app. Puedes elegir horarios, ubicaciones, servicios complementarios y recibir soporte en tiempo real.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Icon 5 - International */}
+            <div className="flex flex-col items-center text-center">
+              <button
+                onClick={() => setClickedBenefit(clickedBenefit === 4 ? null : 4)}
+                className="focus:outline-none"
+              >
+                <img 
+                  src="/images/benefits/Iconos-05.svg" 
+                  alt="Presencia internacional"
+                  className="w-40 h-40 mb-4 cursor-pointer transition-transform active:scale-95"
+                />
+              </button>
+              {/* Dialog that appears on click */}
+              <div className={`transition-all duration-500 ${
+                clickedBenefit === 4 
+                  ? 'max-h-96 opacity-100' 
+                  : 'max-h-0 opacity-0 overflow-hidden'
+              }`}>
+                <div className="mt-2 relative">
+                  <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 z-10">
+                    <div className="w-0 h-0 border-l-[10px] border-l-transparent border-r-[10px] border-r-transparent border-b-[10px] border-b-black"></div>
+                  </div>
+                  <div className="bg-black text-white p-4 rounded-lg shadow-xl w-72 mx-auto mt-1">
+                    <h4 className="font-semibold mb-2 text-base">Presencia internacional</h4>
+                    <p className="text-sm leading-relaxed">Privyde está disponible en las principales ciudades del mundo. Viaja con el mismo nivel de seguridad y excelencia sin importar el destino.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Call to action */}
+          <div className="text-center">
+            <h3 className="text-3xl md:text-4xl font-bold uppercase tracking-wider mb-8"
+                style={{ fontFamily: 'CONTHRAX-SB, sans-serif' }}>
+              Solicita tu chofer ahora
+            </h3>
+          </div>
+        </div>
+      </section>
+
+      {/* How it works Section */}
+      <section className="bg-black py-16 md:py-24 pb-64 md:pb-80">
+        <div className="container mx-auto px-4 max-w-5xl">
+          {/* Title */}
+          <div className="text-center mb-12">
+            <h2 className="text-4xl md:text-5xl font-bold text-white uppercase tracking-wider mb-4"
+                style={{ fontFamily: 'CONTHRAX-SB, sans-serif' }}>
+              Cómo funciona
+            </h2>
+            <p className="text-lg text-white/80">
+              Tu experiencia en 4 pasos simples
+            </p>
+          </div>
+
+          {/* Steps */}
+          <div className="space-y-4 mb-16 max-w-5xl mx-auto">
+            {/* Step 1 - Left aligned */}
+            <div className="flex justify-center md:justify-start">
+              <div className="bg-neutral-800 py-2 px-2 md:py-3 md:px-3 flex items-center gap-2 md:gap-3 max-w-3xl w-full md:ml-0">
+                <div className="text-7xl md:text-8xl font-bold text-white flex items-center mt-1" 
+                     style={{ fontFamily: 'Panton, sans-serif', lineHeight: '1' }}>
+                  01
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-lg md:text-xl font-bold text-white mb-1">
+                    Reserva sencilla
+                  </h3>
+                  <p className="text-white/60 text-sm">
+                    Selecciona tipo de servicio, fecha, destino y si deseas agregar seguridad privada.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Step 2 - Slightly right */}
+            <div className="flex justify-center md:justify-start md:ml-20">
+              <div className="bg-neutral-800 py-2 px-2 md:py-3 md:px-3 flex items-center gap-2 md:gap-3 max-w-3xl w-full">
+                <div className="text-7xl md:text-8xl font-bold text-white flex items-center mt-1" 
+                     style={{ fontFamily: 'Panton, sans-serif', lineHeight: '1' }}>
+                  02
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-lg md:text-xl font-bold text-white mb-1">
+                    Confirmación inmediata
+                  </h3>
+                  <p className="text-white/60 text-sm">
+                    Recibe datos del chofer, vehículo, horario estimado y enlace para seguimiento.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Step 3 - More right */}
+            <div className="flex justify-center md:justify-start md:ml-40">
+              <div className="bg-neutral-800 py-2 px-2 md:py-3 md:px-3 flex items-center gap-2 md:gap-3 max-w-3xl w-full">
+                <div className="text-7xl md:text-8xl font-bold text-white flex items-center mt-1" 
+                     style={{ fontFamily: 'Panton, sans-serif', lineHeight: '1' }}>
+                  03
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-lg md:text-xl font-bold text-white mb-1">
+                    Recepción puntual
+                  </h3>
+                  <p className="text-white/60 text-sm">
+                    Tu chofer te espera en el punto acordado con identificación visible y atención personalizada.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Step 4 - Right aligned */}
+            <div className="flex justify-center md:justify-end">
+              <div className="bg-neutral-800 py-2 px-2 md:py-3 md:px-3 flex items-center gap-2 md:gap-3 max-w-3xl w-full">
+                <div className="text-7xl md:text-8xl font-bold text-white flex items-center mt-1" 
+                     style={{ fontFamily: 'Panton, sans-serif', lineHeight: '1' }}>
+                  04
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-lg md:text-xl font-bold text-white mb-1">
+                    Disfruta el trayecto
+                  </h3>
+                  <p className="text-white/60 text-sm">
+                    Relájate mientras cuidamos cada detalle: seguridad, confort, puntualidad y silencio.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Download CTA */}
+          <div className="text-center">
+            <p className="text-xl text-white mb-6">
+              Descarga la app y vive la experiencia
+            </p>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+              <a href="#" className="hover:opacity-80 transition-opacity">
+                <Image
+                  src="/appstore.png"
+                  alt="Download on the App Store"
+                  width={150}
+                  height={50}
+                />
+              </a>
+              <a href="#" className="hover:opacity-80 transition-opacity">
+                <Image
+                  src="/googleplay.png"
+                  alt="Get it on Google Play"
+                  width={150}
+                  height={50}
+                />
+              </a>
             </div>
           </div>
         </div>
       </section>
 
+      {/* Client Experience Image Divider */}
+      <div className="relative">
+        {/* Image positioned between sections */}
+        <div className="absolute inset-x-0 top-0 transform -translate-y-1/2">
+          <div className="container mx-auto px-4 max-w-6xl">
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+              <div className="relative h-[300px] md:h-[400px]">
+                <Image
+                  src="/images/Inicio-Experiecia del Cliente.webp"
+                  alt="Experiencia del cliente"
+                  fill
+                  className="object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
+                <div className="absolute inset-0 flex items-end justify-center pb-8 md:pb-12">
+                  <h2 className="text-3xl md:text-5xl font-bold text-white text-center uppercase tracking-wider"
+                      style={{ fontFamily: 'CONTHRAX-SB, sans-serif' }}>
+                    Experiencia del cliente
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Client Experience Section */}
+      <section className="bg-gray-50 pt-64 md:pt-80 pb-24 md:pb-32 overflow-hidden">
+        <div className="container mx-auto px-4 max-w-7xl">
+          {/* Desktop Testimonials Carousel */}
+          <div className="hidden md:block">
+            <div className="relative flex items-center py-12">
+              {/* Navigation arrow left */}
+              <button className="absolute left-0 z-20 -translate-x-4 md:-translate-x-12">
+                <ChevronLeft className="w-8 h-8 text-gray-400 hover:text-gray-600 transition-colors" />
+              </button>
+
+              <div className="flex gap-6 overflow-x-auto snap-x snap-mandatory mx-12" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
+                {testimonialsData.map((testimonial, index) => (
+                  <div key={testimonial.id} className={`${index === 1 ? 'min-w-[340px] md:min-w-[360px] pt-16' : 'min-w-[300px] md:min-w-[320px] pt-14'} snap-center`}>
+                    <div className={`relative ${index === 1 ? 'transform scale-105' : ''}`}>
+                      <div className={`${index === 1 ? 'w-24 h-24' : 'w-20 h-20'} rounded-full border-2 border-black bg-gray-300 mx-auto absolute left-1/2 transform -translate-x-1/2 ${index === 1 ? '-top-12' : '-top-10'} z-10 overflow-hidden`}>
+                        <img 
+                          src={testimonial.image} 
+                          alt={testimonial.name}
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                      <div className={`bg-white rounded-3xl ${index === 1 ? 'pt-14 pb-5 px-8' : 'pt-12 pb-4 px-6'} border-2 border-black text-center`}>
+                        <h4 className={`font-bold ${index === 1 ? 'text-xl' : 'text-lg'} mb-1`}>{testimonial.name}</h4>
+                        <p className="text-gray-600 text-sm leading-relaxed mb-3">
+                          "{testimonial.text}"
+                        </p>
+                        <div className="flex justify-center text-black">
+                          {"★★★★★".split("").map((star, i) => (
+                            <span key={i} className={index === 1 ? 'text-lg' : 'text-base'}>{star}</span>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              {/* Navigation arrow right */}
+              <button className="absolute right-0 z-20 translate-x-4 md:translate-x-12">
+                <ChevronRight className="w-8 h-8 text-gray-400 hover:text-gray-600 transition-colors" />
+              </button>
+            </div>
+          </div>
+
+          {/* Mobile Testimonials Slider */}
+          <div className="md:hidden">
+            <div className="relative px-8">
+              {/* Current Testimonial */}
+              <div className="pt-16 pb-8">
+                <div className="relative max-w-sm mx-auto">
+                  <div className="w-24 h-24 rounded-full border-2 border-black bg-gray-300 mx-auto absolute left-1/2 transform -translate-x-1/2 -top-12 z-10 overflow-hidden">
+                    <img 
+                      src={testimonialsData[currentTestimonialSlide].image} 
+                      alt={testimonialsData[currentTestimonialSlide].name}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div className="bg-white rounded-3xl pt-14 pb-5 px-8 border-2 border-black text-center">
+                    <h4 className="font-bold text-xl mb-1">{testimonialsData[currentTestimonialSlide].name}</h4>
+                    <p className="text-gray-600 text-sm leading-relaxed mb-3">
+                      "{testimonialsData[currentTestimonialSlide].text}"
+                    </p>
+                    <div className="flex justify-center text-black">
+                      {"★★★★★".split("").map((star, i) => (
+                        <span key={i} className="text-lg">{star}</span>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Navigation Arrows */}
+              <button 
+                onClick={() => setCurrentTestimonialSlide((prev) => (prev - 1 + testimonialsData.length) % testimonialsData.length)}
+                className="absolute left-0 top-1/2 -translate-y-1/2 bg-white/80 backdrop-blur-sm p-2 rounded-full shadow-lg"
+              >
+                <ChevronLeft className="w-6 h-6 text-gray-700" />
+              </button>
+              <button 
+                onClick={() => setCurrentTestimonialSlide((prev) => (prev + 1) % testimonialsData.length)}
+                className="absolute right-0 top-1/2 -translate-y-1/2 bg-white/80 backdrop-blur-sm p-2 rounded-full shadow-lg"
+              >
+                <ChevronRight className="w-6 h-6 text-gray-700" />
+              </button>
+
+              {/* Dots Indicator */}
+              <div className="flex justify-center gap-2 mt-4">
+                {testimonialsData.map((_, index) => (
+                  <button
+                    key={index}
+                    onClick={() => setCurrentTestimonialSlide(index)}
+                    className={`w-2 h-2 rounded-full transition-all ${
+                      index === currentTestimonialSlide ? 'bg-black w-6' : 'bg-gray-400'
+                    }`}
+                  />
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Phone Mockup Overlap - Positioned for Footer */}
+      <div className="relative hidden lg:block">
+        <div className="absolute right-0 bottom-0 transform translate-y-2/3 z-30">
+          <div className="relative w-[700px] xl:w-[800px] 2xl:w-[900px]">
+            <Image
+              src="/images/smartphone_14_pro_31.webp"
+              alt="Privyde App"
+              width={900}
+              height={1800}
+              className="w-full h-auto"
+            />
+          </div>
+        </div>
+      </div>
+
       {/* Footer */}
-      <Footer data-oid="se3p1ld" />
+      <Footer data-oid="e28.kz1" />
 
       {/* Support Chat */}
-      <SupportChat data-oid="omotin." />
+      <SupportChat data-oid=".lvmbn_" />
     </main>
   );
 }

@@ -15,18 +15,18 @@ import { useId } from "react";
 function Component() {
   const id = useId();
   return (
-    <Dialog data-oid="6zzzq5u">
-      <DialogTrigger asChild data-oid=":.i4im7">
-        <Button variant="outline" data-oid="8z0hja6">
+    <Dialog data-oid="mkotz8a">
+      <DialogTrigger asChild data-oid="elcwq7_">
+        <Button variant="outline" data-oid=":g6xgcw">
           Sign in
         </Button>
       </DialogTrigger>
-      <DialogContent data-oid="1xq.7x7">
-        <div className="flex flex-col items-center gap-2" data-oid="puwofu9">
+      <DialogContent data-oid="llv71si">
+        <div className="flex flex-col items-center gap-2" data-oid="9wutx7v">
           <div
             className="flex size-11 shrink-0 items-center justify-center rounded-full border border-border"
             aria-hidden="true"
-            data-oid="eme1muo"
+            data-oid="mi1aw8d"
           >
             <svg
               className="stroke-zinc-800 dark:stroke-zinc-100"
@@ -35,7 +35,7 @@ function Component() {
               height="20"
               viewBox="0 0 32 32"
               aria-hidden="true"
-              data-oid=":tu_m0m"
+              data-oid="3q210uc"
             >
               <circle
                 cx="16"
@@ -43,24 +43,24 @@ function Component() {
                 r="12"
                 fill="none"
                 strokeWidth="8"
-                data-oid="r_kd-pd"
+                data-oid="..gmej_"
               />
             </svg>
           </div>
-          <DialogHeader data-oid="nqy2g:9">
-            <DialogTitle className="sm:text-center" data-oid="3jfxlng">
+          <DialogHeader data-oid="kmcps3k">
+            <DialogTitle className="sm:text-center" data-oid="5cd5d.n">
               Welcome back
             </DialogTitle>
-            <DialogDescription className="sm:text-center" data-oid="mcia6d:">
+            <DialogDescription className="sm:text-center" data-oid="2yk2jsf">
               Enter your credentials to login to your account.
             </DialogDescription>
           </DialogHeader>
         </div>
 
-        <form className="space-y-5" data-oid="e5qx73t">
-          <div className="space-y-4" data-oid="-jvfdm6">
-            <div className="space-y-2" data-oid="kuka0lj">
-              <Label htmlFor={`${id}-email`} data-oid="kllmjfo">
+        <form className="space-y-5" data-oid="mtr.b.e">
+          <div className="space-y-4" data-oid="3vl2wq-">
+            <div className="space-y-2" data-oid="av0xiia">
+              <Label htmlFor={`${id}-email`} data-oid="x-eepom">
                 Email
               </Label>
               <Input
@@ -68,11 +68,11 @@ function Component() {
                 placeholder="hi@yourcompany.com"
                 type="email"
                 required
-                data-oid="gnaf:xb"
+                data-oid="iiak7n-"
               />
             </div>
-            <div className="space-y-2" data-oid="97-y-0e">
-              <Label htmlFor={`${id}-password`} data-oid="44ipd-_">
+            <div className="space-y-2" data-oid="y76kopa">
+              <Label htmlFor={`${id}-password`} data-oid="50blieo">
                 Password
               </Label>
               <Input
@@ -80,17 +80,17 @@ function Component() {
                 placeholder="Enter your password"
                 type="password"
                 required
-                data-oid="_r83-x-"
+                data-oid="55xmec9"
               />
             </div>
           </div>
-          <div className="flex justify-between gap-2" data-oid="4wetqat">
-            <div className="flex items-center gap-2" data-oid="fwcbity">
-              <Checkbox id={`${id}-remember`} data-oid="hwx2_8u" />
+          <div className="flex justify-between gap-2" data-oid="ffq.3:1">
+            <div className="flex items-center gap-2" data-oid="22ggvwc">
+              <Checkbox id={`${id}-remember`} data-oid="d9.pl0d" />
               <Label
                 htmlFor={`${id}-remember`}
                 className="font-normal text-muted-foreground"
-                data-oid="o8z3a6_"
+                data-oid="vzt4a2l"
               >
                 Remember me
               </Label>
@@ -98,26 +98,26 @@ function Component() {
             <a
               className="text-sm underline hover:no-underline"
               href="#"
-              data-oid="7uazkbm"
+              data-oid="pkb5p6o"
             >
               Forgot password?
             </a>
           </div>
-          <Button type="button" className="w-full" data-oid="_d2jo94">
+          <Button type="button" className="w-full" data-oid="74b6z8b">
             Sign in
           </Button>
         </form>
 
         <div
           className="flex items-center gap-3 before:h-px before:flex-1 before:bg-border after:h-px after:flex-1 after:bg-border"
-          data-oid="l7nxdaq"
+          data-oid="2a862n6"
         >
-          <span className="text-xs text-muted-foreground" data-oid="_-2r.t.">
+          <span className="text-xs text-muted-foreground" data-oid="g81f.b_">
             Or
           </span>
         </div>
 
-        <Button variant="outline" data-oid="9r7n:ik">
+        <Button variant="outline" data-oid="5lx6m3s">
           Login with Google
         </Button>
       </DialogContent>

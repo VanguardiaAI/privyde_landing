@@ -67,30 +67,30 @@ export default function LoginPage() {
   };
 
   return (
-    <div className="flex flex-col min-h-screen" data-oid="rqkw-nv">
-      <Navbar data-oid="_jc6ei6" />
+    <div className="flex flex-col min-h-screen" data-oid="l3c2gzo">
+      <Navbar data-oid="puk6mau" />
 
-      <main className="flex-1 bg-white pb-16" data-oid="e409n9o">
+      <main className="flex-1 bg-white pb-16" data-oid="gywdr:6">
         <div
           className="w-full max-w-md mx-auto py-12 md:py-16 px-4"
-          data-oid="0krvtkd"
+          data-oid="jdj6n21"
         >
           <h1
             className="text-3xl font-bold text-center mb-8"
-            data-oid="7ka-h1:"
+            data-oid="9:peie4"
           >
             Iniciar sesión
           </h1>
 
           <Card
             className="w-full shadow-lg bg-white rounded-xl overflow-hidden border-0 relative z-20"
-            data-oid="j74_ors"
+            data-oid="h9mi.tj"
           >
-            <CardContent className="p-6" data-oid="dcazkuk">
+            <CardContent className="p-6" data-oid="o4rmcl6">
               {error && (
                 <div
                   className="bg-gray-100 p-3 rounded border border-gray-200 text-gray-600 text-sm mb-4"
-                  data-oid="_gvknpr"
+                  data-oid="crrq2.s"
                 >
                   {error}
                 </div>
@@ -99,21 +99,21 @@ export default function LoginPage() {
               <form
                 className="space-y-4"
                 onSubmit={handleSubmit}
-                data-oid="726p6l5"
+                data-oid="svk7zld"
               >
-                <div className="relative" data-oid="2-e84hy">
+                <div className="relative" data-oid="sb-isia">
                   <Mail
                     className="absolute left-3 top-4 h-5 w-5 text-gray-400"
-                    data-oid="t7uv.u4"
+                    data-oid="myr.81n"
                   />
 
                   <div
                     className="flex flex-col pl-10 pt-1 border rounded-md h-[52px] focus-within:border-black hover:border-gray-400 bg-gray-50"
-                    data-oid="qb7bw3c"
+                    data-oid="fzkcv55"
                   >
                     <Label
                       className="mb-0 text-left text-xs"
-                      data-oid="0d:v34a"
+                      data-oid="f2ysd6g"
                     >
                       Email
                     </Label>
@@ -124,24 +124,24 @@ export default function LoginPage() {
                       required
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
-                      data-oid="s:qwfsv"
+                      data-oid="hlwppd5"
                     />
                   </div>
                 </div>
 
-                <div className="relative" data-oid="b4ylju8">
+                <div className="relative" data-oid="77b_4a2">
                   <Lock
                     className="absolute left-3 top-4 h-5 w-5 text-gray-400"
-                    data-oid="ozj5.s1"
+                    data-oid="ll9vr-r"
                   />
 
                   <div
                     className="flex flex-col pl-10 pt-1 border rounded-md h-[52px] focus-within:border-black hover:border-gray-400 bg-gray-50"
-                    data-oid="9iexyd7"
+                    data-oid="1p__k8k"
                   >
                     <Label
                       className="mb-0 text-left text-xs"
-                      data-oid="-exi6uq"
+                      data-oid="2o.euu8"
                     >
                       Contraseña
                     </Label>
@@ -152,18 +152,18 @@ export default function LoginPage() {
                       required
                       value={password}
                       onChange={(e) => setPassword(e.target.value)}
-                      data-oid="egwf_gz"
+                      data-oid=":x60p5i"
                     />
                   </div>
                 </div>
 
                 <div
                   className="flex justify-between items-center"
-                  data-oid="n73.p6e"
+                  data-oid="u6-:-b4"
                 >
                   <div
                     className="flex items-center space-x-2"
-                    data-oid="jrn:7a8"
+                    data-oid="kn_4tb2"
                   >
                     <Checkbox
                       id="remember"
@@ -171,13 +171,13 @@ export default function LoginPage() {
                       onCheckedChange={(checked) =>
                         setRememberMe(checked === true)
                       }
-                      data-oid="y4a7ikp"
+                      data-oid="2r12pur"
                     />
 
                     <label
                       htmlFor="remember"
                       className="text-sm text-gray-500 font-medium"
-                      data-oid="48tp2rl"
+                      data-oid="o6x4mjd"
                     >
                       Recordarme
                     </label>
@@ -185,7 +185,7 @@ export default function LoginPage() {
                   <a
                     href="#"
                     className="text-sm text-primary underline"
-                    data-oid="5.9xqxx"
+                    data-oid="xiu4n-5"
                   >
                     ¿Olvidaste tu contraseña?
                   </a>
@@ -195,7 +195,7 @@ export default function LoginPage() {
                   type="submit"
                   className="w-full h-12 bg-primary hover:bg-primary/90 select-button text-base"
                   disabled={isLoading}
-                  data-oid="z8exz8l"
+                  data-oid="g14w7_t"
                 >
                   {isLoading ? "Iniciando sesión..." : "Iniciar sesión"}
                 </Button>
@@ -203,21 +203,21 @@ export default function LoginPage() {
 
               <div
                 className="flex items-center gap-3 py-4 before:h-px before:flex-1 before:bg-border after:h-px after:flex-1 after:bg-border"
-                data-oid="vgrht5v"
+                data-oid="nh40of7"
               >
                 <span
                   className="text-xs text-muted-foreground"
-                  data-oid="0_t3mu_"
+                  data-oid="chfl7-."
                 >
                   O
                 </span>
               </div>
 
-              <div className="flex justify-center" data-oid="kexyjp.">
+              <div className="flex justify-center" data-oid="be80k8y">
                 <GoogleLogin
                   onSuccess={handleGoogleLogin}
                   onError={() => alert("Error al iniciar sesión con Google")}
-                  data-oid="csl9wk:"
+                  data-oid="0y.mzg2"
                 />
               </div>
             </CardContent>
@@ -225,7 +225,7 @@ export default function LoginPage() {
         </div>
       </main>
 
-      <Footer data-oid="m5h484_" />
+      <Footer data-oid="y4m9f6s" />
     </div>
   );
 }

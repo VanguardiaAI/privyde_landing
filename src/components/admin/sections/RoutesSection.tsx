@@ -908,14 +908,14 @@ const RoutesSection = () => {
     return (
       <div
         className="flex flex-col items-center justify-center h-[70vh]"
-        data-oid=":6kc.ci"
+        data-oid="m90qysa"
       >
         <Loader2
           className="h-12 w-12 text-black animate-spin mb-4"
-          data-oid="_jnkdzw"
+          data-oid="5ks:bpy"
         />
 
-        <h2 className="text-xl font-medium text-gray-600" data-oid="pj24_f4">
+        <h2 className="text-xl font-medium text-gray-600" data-oid="gutasrh">
           Cargando datos...
         </h2>
       </div>
@@ -926,14 +926,14 @@ const RoutesSection = () => {
     return (
       <div
         className="flex flex-col items-center justify-center h-[70vh]"
-        data-oid="247fmd-"
+        data-oid="i59rm6s"
       >
         <AlertTriangle
           className="h-12 w-12 text-black mb-4"
-          data-oid="lsagcqx"
+          data-oid="vzxog4y"
         />
 
-        <h2 className="text-xl font-medium text-gray-600" data-oid="t5.na57">
+        <h2 className="text-xl font-medium text-gray-600" data-oid="rvv5dp.">
           {error}
         </h2>
         <Button
@@ -941,7 +941,7 @@ const RoutesSection = () => {
             activeTab === "fixed" ? fetchFixedRoutes() : fetchFlexibleZones()
           }
           className="mt-4 bg-black hover:bg-gray-800 text-white"
-          data-oid=":4splwe"
+          data-oid="q.5d0x9"
         >
           Reintentar
         </Button>
@@ -950,9 +950,9 @@ const RoutesSection = () => {
   }
 
   return (
-    <div className="space-y-6" data-oid="xilqei9">
-      <div className="flex justify-between items-center" data-oid="bkklz-7">
-        <h1 className="text-2xl font-bold text-gray-800" data-oid="f.2_0ao">
+    <div className="space-y-6" data-oid="v4cdfhw">
+      <div className="flex justify-between items-center" data-oid="efr7h_e">
+        <h1 className="text-2xl font-bold text-gray-800" data-oid="9tz-o-.">
           Gestión de Rutas
         </h1>
       </div>
@@ -966,28 +966,28 @@ const RoutesSection = () => {
           setQuery("");
         }}
         className="w-full"
-        data-oid="0:.olhh"
+        data-oid="hnhmktx"
       >
-        <TabsList className="grid w-full grid-cols-2 mb-6" data-oid=".jiufk0">
+        <TabsList className="grid w-full grid-cols-2 mb-6" data-oid="3e7sk9_">
           <TabsTrigger
             value="fixed"
             className="text-base py-3"
-            data-oid="3ytz-11"
+            data-oid="kudzd:a"
           >
-            <Map className="h-4 w-4 mr-2" data-oid="g9srpm4" />
+            <Map className="h-4 w-4 mr-2" data-oid="7:nqlrm" />
             Rutas Fijas
           </TabsTrigger>
           <TabsTrigger
             value="flexible"
             className="text-base py-3"
-            data-oid="q6up:zh"
+            data-oid="nkox5zq"
           >
-            <Map className="h-4 w-4 mr-2" data-oid="76pce7_" />
+            <Map className="h-4 w-4 mr-2" data-oid="1fft-jz" />
             Rutas Flexibles
           </TabsTrigger>
         </TabsList>
 
-        <TabsContent value="fixed" data-oid="6prq-3t">
+        <TabsContent value="fixed" data-oid=":ykjhc6">
           <FixedRoutesTab
             routes={fixedRoutes}
             searchQuery={searchQuery}
@@ -996,11 +996,11 @@ const RoutesSection = () => {
             onUpdateRoute={updateFixedRoute}
             onDeleteRoute={deleteFixedRoute}
             onToggleStatus={toggleFixedRouteStatus}
-            data-oid="p.bqfzp"
+            data-oid=".13p205"
           />
         </TabsContent>
 
-        <TabsContent value="flexible" data-oid="jx-3ekb">
+        <TabsContent value="flexible" data-oid="31yx-qj">
           <FlexibleRoutesTab
             zones={flexibleZones}
             searchQuery={searchQuery}
@@ -1009,7 +1009,7 @@ const RoutesSection = () => {
             onUpdateZone={updateFlexibleZone}
             onDeleteZone={deleteFlexibleZone}
             onToggleStatus={toggleFlexibleZoneStatus}
-            data-oid="r_xx2x3"
+            data-oid="1_g4zde"
           />
         </TabsContent>
       </Tabs>

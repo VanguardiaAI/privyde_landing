@@ -506,54 +506,54 @@ const CollaboratorsSection = () => {
   // Renderizar la vista de detalles o la tabla
   if (isCollaboratorDetailsViewOpen && selectedCollaboratorForDetails) {
     return (
-      <div className="space-y-6" data-oid="ov.z9r8">
+      <div className="space-y-6" data-oid="1b--a7x">
         {/* Cabecera mejorada */}
         <div
           className="bg-white border-b shadow-md py-5 px-6 sticky top-0 z-10"
-          data-oid="ayv727l"
+          data-oid="13e_y42"
         >
-          <div className="flex justify-between items-center" data-oid="xshv0qn">
-            <div className="flex items-center space-x-4" data-oid="f2b-4_q">
+          <div className="flex justify-between items-center" data-oid="w74mvpp">
+            <div className="flex items-center space-x-4" data-oid="53m69l6">
               <div
                 className="h-14 w-14 rounded-full overflow-hidden shadow-md border-2 border-gray-100"
-                data-oid=".5w9mbi"
+                data-oid="85y_48r"
               >
                 <img
                   src={selectedCollaboratorForDetails.logo}
                   alt={selectedCollaboratorForDetails.name}
                   className="h-full w-full object-cover"
-                  data-oid=":4ozm4."
+                  data-oid="3kbzco1"
                 />
               </div>
-              <div className="flex flex-col" data-oid="r:luryr">
+              <div className="flex flex-col" data-oid="azxrywf">
                 <h2
                   className="text-2xl font-bold text-gray-800"
-                  data-oid="-ol4wkn"
+                  data-oid="2mi.y6q"
                 >
                   {selectedCollaboratorForDetails.name}
                   <span
                     className="ml-3 text-sm font-medium px-3 py-1 rounded-full bg-gray-200 text-blue-700 inline-flex items-center"
-                    data-oid="-_gfhpu"
+                    data-oid="w1vqiro"
                   >
                     {selectedCollaboratorForDetails.type === "company"
                       ? "Empresa"
                       : "Particular"}
                   </span>
                 </h2>
-                <p className="text-gray-500 text-sm" data-oid="_49mph8">
+                <p className="text-gray-500 text-sm" data-oid="8arw947">
                   ID: {selectedCollaboratorForDetails.id}
                 </p>
               </div>
             </div>
-            <div className="flex space-x-2" data-oid="b8-d644">
+            <div className="flex space-x-2" data-oid="p-6-b2g">
               {!isEditing ? (
                 <Button
                   variant="outline"
                   onClick={handleStartEditing}
                   className="flex items-center hover:bg-gray-100 transition-colors border-gray-300"
-                  data-oid="ju9fnxu"
+                  data-oid="xbrecnk"
                 >
-                  <Edit className="h-4 w-4 mr-2" data-oid="n0jzjgf" />
+                  <Edit className="h-4 w-4 mr-2" data-oid="n_5:5y3" />
                   Editar
                 </Button>
               ) : (
@@ -562,9 +562,9 @@ const CollaboratorsSection = () => {
                     variant="outline"
                     onClick={handleCancelEdit}
                     className="flex items-center hover:bg-gray-100 transition-colors border-gray-300"
-                    data-oid=".cnj4jq"
+                    data-oid="akxw7i5"
                   >
-                    <X className="h-4 w-4 mr-2" data-oid="2-.oal6" />
+                    <X className="h-4 w-4 mr-2" data-oid="x:byym0" />
                     Cancelar
                   </Button>
                   <Button
@@ -572,15 +572,15 @@ const CollaboratorsSection = () => {
                     onClick={handleSaveChanges}
                     disabled={isSaving}
                     className="flex items-center bg-black hover:bg-gray-800 transition-colors"
-                    data-oid="t:_:f19"
+                    data-oid="96jrid0"
                   >
                     {isSaving ? (
                       <RefreshCw
                         className="h-4 w-4 mr-2 animate-spin"
-                        data-oid="z442g5z"
+                        data-oid="p0q3rzk"
                       />
                     ) : (
-                      <Save className="h-4 w-4 mr-2" data-oid="q.y14nf" />
+                      <Save className="h-4 w-4 mr-2" data-oid="tge09y6" />
                     )}
                     Guardar
                   </Button>
@@ -591,57 +591,57 @@ const CollaboratorsSection = () => {
                 size="icon"
                 onClick={handleCloseCollaboratorDetails}
                 className="hover:bg-gray-100 transition-colors"
-                data-oid="9pf:gz."
+                data-oid="uj17zq9"
               >
-                <X className="h-5 w-5" data-oid="z3m3w3v" />
+                <X className="h-5 w-5" data-oid="dyvn.5x" />
               </Button>
             </div>
           </div>
         </div>
 
         {/* Contenido principal */}
-        <div className="px-6 space-y-8" data-oid="xyq9:fd">
+        <div className="px-6 space-y-8" data-oid="vqpjnu2">
           {/* Información del colaborador */}
           <Card
             className="shadow-lg hover:shadow-xl transition-shadow overflow-hidden border-0 rounded-xl"
-            data-oid="6544up_"
+            data-oid="tg5g5mc"
           >
             <CardHeader
               className="bg-gradient-to-r from-gray-50 to-gray-100 border-b py-5"
-              data-oid="5:llm61"
+              data-oid="j33b-f3"
             >
               <CardTitle
                 className="text-lg text-gray-800 flex items-center"
-                data-oid="7sfa6v_"
+                data-oid="6b47c9q"
               >
                 <span
                   className="bg-gray-200 p-1.5 rounded-md text-gray-700 mr-3"
-                  data-oid="xm.h1ss"
+                  data-oid="9awv5td"
                 >
-                  <FileText className="h-5 w-5" data-oid="btrwdbo" />
+                  <FileText className="h-5 w-5" data-oid="74sf43." />
                 </span>
                 Información del Colaborador
               </CardTitle>
             </CardHeader>
-            <CardContent className="p-0" data-oid="qjvw80d">
+            <CardContent className="p-0" data-oid="nt5aot_">
               <div
                 className="flex flex-col md:flex-row md:space-x-6 p-6"
-                data-oid="0ulpn-g"
+                data-oid="ify6:-o"
               >
                 <div
                   className="md:w-1/3 flex flex-col items-center mb-6 md:mb-0"
-                  data-oid="s4hdto:"
+                  data-oid="sjvq056"
                 >
-                  <div className="relative mb-5" data-oid="wfabdg1">
+                  <div className="relative mb-5" data-oid="us:rqpo">
                     <div
                       className="absolute inset-0 bg-gradient-to-r from-red-50 to-amber-50 rounded-full blur-md opacity-50"
-                      data-oid="z2c__05"
+                      data-oid="0shdc6b"
                     ></div>
                     <img
                       src={selectedCollaboratorForDetails.logo}
                       alt={selectedCollaboratorForDetails.name}
                       className="h-36 w-36 rounded-full object-cover border-4 border-white shadow-md relative z-10"
-                      data-oid="tf-d:no"
+                      data-oid="4f5sp50"
                     />
                   </div>
 
@@ -649,13 +649,13 @@ const CollaboratorsSection = () => {
                     <>
                       <h3
                         className="text-xl font-semibold text-center mb-2"
-                        data-oid="jndflrx"
+                        data-oid=":6vp:p."
                       >
                         {selectedCollaboratorForDetails.name}
                       </h3>
                       <div
                         className="flex items-center mt-1 text-amber-500 mb-3"
-                        data-oid="g-.63:m"
+                        data-oid="m-0slc-"
                       >
                         {[...Array(5)].map((_, i) => (
                           <span
@@ -666,14 +666,14 @@ const CollaboratorsSection = () => {
                                 ? ""
                                 : "text-gray-300"
                             }
-                            data-oid="-455naq"
+                            data-oid="3u_j-.-"
                           >
                             ★
                           </span>
                         ))}
                         <span
                           className="ml-1 text-gray-600 text-sm"
-                          data-oid="ny1n.m7"
+                          data-oid="bnzqmgt"
                         >
                           ({selectedCollaboratorForDetails.rating.toFixed(1)})
                         </span>
@@ -687,7 +687,7 @@ const CollaboratorsSection = () => {
                               ? "bg-gray-100 text-gray-800 border border-gray-200"
                               : "bg-amber-100 text-amber-800 border border-amber-200"
                         }`}
-                        data-oid="l_:vq:2"
+                        data-oid="8b-of2b"
                       >
                         <span
                           className={`inline-block h-2 w-2 rounded-full mr-2 ${
@@ -698,7 +698,7 @@ const CollaboratorsSection = () => {
                                 ? "bg-gray-500"
                                 : "bg-amber-500"
                           }`}
-                          data-oid="ikk4rl0"
+                          data-oid="qf2o4:m"
                         ></span>
                         {selectedCollaboratorForDetails.status === "active"
                           ? "Activo"
@@ -708,17 +708,17 @@ const CollaboratorsSection = () => {
                       </span>
                       <div
                         className="mt-4 px-4 py-4 bg-gray-50 rounded-lg border border-gray-100 shadow-sm w-full"
-                        data-oid="u1ps_c6"
+                        data-oid="xm4exn7"
                       >
                         <div
                           className="text-sm font-medium text-gray-600 mb-2"
-                          data-oid=".a541el"
+                          data-oid="oxd18uf"
                         >
                           Tipo de colaborador
                         </div>
                         <div
                           className="text-lg font-medium text-center"
-                          data-oid=".9jepqh"
+                          data-oid="-fe_zz0"
                         >
                           {selectedCollaboratorForDetails.type === "company"
                             ? "Empresa"
@@ -727,11 +727,11 @@ const CollaboratorsSection = () => {
                       </div>
                     </>
                   ) : (
-                    <div className="w-full space-y-4" data-oid="fyc55lp">
-                      <div data-oid="jjan_9a">
+                    <div className="w-full space-y-4" data-oid="ogk530a">
+                      <div data-oid="h_2hey6">
                         <label
                           className="text-sm font-medium text-gray-500"
-                          data-oid="k3hp3pg"
+                          data-oid="t.t6.0k"
                         >
                           Nombre
                         </label>
@@ -740,13 +740,13 @@ const CollaboratorsSection = () => {
                           value={formData.name || ""}
                           onChange={handleInputChange}
                           className="mt-1"
-                          data-oid="xwz_kyh"
+                          data-oid="iqb-bpy"
                         />
                       </div>
-                      <div data-oid="8tk:eb9">
+                      <div data-oid="-814wh3">
                         <label
                           className="text-sm font-medium text-gray-500"
-                          data-oid="0i0h.md"
+                          data-oid="ttzbk:y"
                         >
                           Estado
                         </label>
@@ -755,31 +755,31 @@ const CollaboratorsSection = () => {
                           onValueChange={(value) =>
                             setFormData({ ...formData, status: value })
                           }
-                          data-oid=".ix_uvk"
+                          data-oid="lmrmtmo"
                         >
-                          <SelectTrigger className="w-full" data-oid="mn:5hbm">
+                          <SelectTrigger className="w-full" data-oid="jwde06.">
                             <SelectValue
                               placeholder="Seleccionar estado"
-                              data-oid="6.zq1_k"
+                              data-oid="pdkgqk1"
                             />
                           </SelectTrigger>
-                          <SelectContent data-oid="w_48u16">
-                            <SelectItem value="active" data-oid="aksx45o">
+                          <SelectContent data-oid="k0g.795">
+                            <SelectItem value="active" data-oid="ub8zaa6">
                               Activo
                             </SelectItem>
-                            <SelectItem value="inactive" data-oid="lj3o.7o">
+                            <SelectItem value="inactive" data-oid=".imzakj">
                               Inactivo
                             </SelectItem>
-                            <SelectItem value="pending" data-oid="9bjws5r">
+                            <SelectItem value="pending" data-oid="d9u4r_1">
                               Pendiente
                             </SelectItem>
                           </SelectContent>
                         </Select>
                       </div>
-                      <div data-oid="r2iqnqp">
+                      <div data-oid="yis21du">
                         <label
                           className="text-sm font-medium text-gray-500"
-                          data-oid="_ilnnrl"
+                          data-oid="ij_0m85"
                         >
                           Tipo
                         </label>
@@ -788,19 +788,19 @@ const CollaboratorsSection = () => {
                           onValueChange={(value) =>
                             setFormData({ ...formData, type: value })
                           }
-                          data-oid="jlq0t8-"
+                          data-oid="shaguv0"
                         >
-                          <SelectTrigger className="w-full" data-oid="twc:28z">
+                          <SelectTrigger className="w-full" data-oid="62aec.9">
                             <SelectValue
                               placeholder="Seleccionar tipo"
-                              data-oid="8xn:9-."
+                              data-oid="_9-8cxt"
                             />
                           </SelectTrigger>
-                          <SelectContent data-oid="9ygpjq9">
-                            <SelectItem value="company" data-oid="oe_4-9-">
+                          <SelectContent data-oid="8zpicir">
+                            <SelectItem value="company" data-oid="-8_th4z">
                               Empresa
                             </SelectItem>
-                            <SelectItem value="individual" data-oid="-ru7xak">
+                            <SelectItem value="individual" data-oid="ce-q2uy">
                               Particular
                             </SelectItem>
                           </SelectContent>
@@ -810,94 +810,94 @@ const CollaboratorsSection = () => {
                   )}
                 </div>
 
-                <div className="md:w-2/3" data-oid="al.doex">
+                <div className="md:w-2/3" data-oid="5mb3lot">
                   <div
                     className="grid grid-cols-1 md:grid-cols-2 gap-6"
-                    data-oid=".u4w_4_"
+                    data-oid="611o7.h"
                   >
                     <div
                       className="bg-white rounded-lg border border-gray-100 shadow-sm p-5"
-                      data-oid="8hx6fsr"
+                      data-oid="yme5fzi"
                     >
                       <h4
                         className="text-sm font-semibold text-gray-600 uppercase tracking-wider mb-4 flex items-center"
-                        data-oid="ghox_r8"
+                        data-oid="3cigvgh"
                       >
                         <Mail
                           className="h-4 w-4 mr-2 text-black"
-                          data-oid="2tuwp24"
+                          data-oid="atbl3u9"
                         />
                         Información de contacto
                       </h4>
                       {!isEditing ? (
-                        <div className="space-y-3" data-oid="930_q3f">
-                          <div className="flex items-center" data-oid="32w0_1x">
+                        <div className="space-y-3" data-oid="uo5xtuc">
+                          <div className="flex items-center" data-oid="f:r12xs">
                             <div
                               className="w-28 text-sm text-gray-500"
-                              data-oid="0d3jlgb"
+                              data-oid="jfnufsg"
                             >
                               Contacto:
                             </div>
-                            <div className="font-medium" data-oid="hjcmfbp">
+                            <div className="font-medium" data-oid="i93n737">
                               {selectedCollaboratorForDetails.contactName}
                             </div>
                           </div>
-                          <div className="flex items-center" data-oid="hrz1iqp">
+                          <div className="flex items-center" data-oid="qoeztr-">
                             <div
                               className="w-28 text-sm text-gray-500"
-                              data-oid="hr_ps9i"
+                              data-oid="p21h.ze"
                             >
                               Email:
                             </div>
                             <div
                               className="font-medium text-gray-600"
-                              data-oid="18u3z0r"
+                              data-oid="fa2lzgm"
                             >
                               {selectedCollaboratorForDetails.contactEmail}
                             </div>
                           </div>
-                          <div className="flex items-center" data-oid="cvzehei">
+                          <div className="flex items-center" data-oid="0b99.0q">
                             <div
                               className="w-28 text-sm text-gray-500"
-                              data-oid="-o6l1j4"
+                              data-oid="z8mnann"
                             >
                               Teléfono:
                             </div>
-                            <div className="font-medium" data-oid="xiba:-n">
+                            <div className="font-medium" data-oid="ec1qeta">
                               {selectedCollaboratorForDetails.contactPhone}
                             </div>
                           </div>
-                          <div className="flex" data-oid="7gg40w7">
+                          <div className="flex" data-oid="856v44p">
                             <div
                               className="w-28 text-sm text-gray-500"
-                              data-oid="f4g2r36"
+                              data-oid="32f8xyy"
                             >
                               Dirección:
                             </div>
-                            <div className="font-medium" data-oid="4:qzzzm">
+                            <div className="font-medium" data-oid="ee1u1yv">
                               {selectedCollaboratorForDetails.address},{" "}
                               {selectedCollaboratorForDetails.postalCode}
                             </div>
                           </div>
-                          <div className="flex items-center" data-oid="tg50ghn">
+                          <div className="flex items-center" data-oid="atfglz7">
                             <div
                               className="w-28 text-sm text-gray-500"
-                              data-oid="t-s8uaj"
+                              data-oid="__zs.6n"
                             >
                               Ubicación:
                             </div>
-                            <div className="font-medium" data-oid="38r3_qd">
+                            <div className="font-medium" data-oid="twkh:_h">
                               {selectedCollaboratorForDetails.city},{" "}
                               {selectedCollaboratorForDetails.country}
                             </div>
                           </div>
                         </div>
                       ) : (
-                        <div className="space-y-3" data-oid="4og5z9o">
-                          <div data-oid="7:.vwq4">
+                        <div className="space-y-3" data-oid="s:cv-c_">
+                          <div data-oid="sp03ghr">
                             <label
                               className="text-sm text-gray-500"
-                              data-oid="lypikyw"
+                              data-oid="bb.30pr"
                             >
                               Contacto
                             </label>
@@ -906,13 +906,13 @@ const CollaboratorsSection = () => {
                               value={formData.contactName || ""}
                               onChange={handleInputChange}
                               className="mt-1"
-                              data-oid="mbf6jlh"
+                              data-oid="o8vtjp5"
                             />
                           </div>
-                          <div data-oid="getehwr">
+                          <div data-oid="7z_rp7b">
                             <label
                               className="text-sm text-gray-500"
-                              data-oid="dh:lsvd"
+                              data-oid="s6q.jyd"
                             >
                               Email
                             </label>
@@ -921,13 +921,13 @@ const CollaboratorsSection = () => {
                               value={formData.contactEmail || ""}
                               onChange={handleInputChange}
                               className="mt-1"
-                              data-oid="4jrlhhr"
+                              data-oid="l.oz3i8"
                             />
                           </div>
-                          <div data-oid="2c5kznd">
+                          <div data-oid="pox-dij">
                             <label
                               className="text-sm text-gray-500"
-                              data-oid="w7379bz"
+                              data-oid="675-l12"
                             >
                               Teléfono
                             </label>
@@ -936,13 +936,13 @@ const CollaboratorsSection = () => {
                               value={formData.contactPhone || ""}
                               onChange={handleInputChange}
                               className="mt-1"
-                              data-oid="tozvo3p"
+                              data-oid=":fzvvgl"
                             />
                           </div>
-                          <div data-oid="610xf-3">
+                          <div data-oid="rigusqq">
                             <label
                               className="text-sm text-gray-500"
-                              data-oid="mpdpywh"
+                              data-oid="z_x1zjh"
                             >
                               Dirección
                             </label>
@@ -951,17 +951,17 @@ const CollaboratorsSection = () => {
                               value={formData.address || ""}
                               onChange={handleInputChange}
                               className="mt-1"
-                              data-oid="5ji12iu"
+                              data-oid="m3o43mx"
                             />
                           </div>
                           <div
                             className="grid grid-cols-2 gap-2"
-                            data-oid="f34a:ot"
+                            data-oid="hjjq:.0"
                           >
-                            <div data-oid="_19vu:s">
+                            <div data-oid="prlokgj">
                               <label
                                 className="text-sm text-gray-500"
-                                data-oid="zy14frk"
+                                data-oid="wc50z2u"
                               >
                                 Código Postal
                               </label>
@@ -970,13 +970,13 @@ const CollaboratorsSection = () => {
                                 value={formData.postalCode || ""}
                                 onChange={handleInputChange}
                                 className="mt-1"
-                                data-oid="ouql7m8"
+                                data-oid="t7hv_yp"
                               />
                             </div>
-                            <div data-oid="t3__jd0">
+                            <div data-oid="r8w734x">
                               <label
                                 className="text-sm text-gray-500"
-                                data-oid="n5-b7_z"
+                                data-oid="8pwrj35"
                               >
                                 Ciudad
                               </label>
@@ -985,14 +985,14 @@ const CollaboratorsSection = () => {
                                 value={formData.city || ""}
                                 onChange={handleInputChange}
                                 className="mt-1"
-                                data-oid="fqdfp5n"
+                                data-oid="zb_0aq_"
                               />
                             </div>
                           </div>
-                          <div data-oid="29b3t-s">
+                          <div data-oid="fa.up0y">
                             <label
                               className="text-sm text-gray-500"
-                              data-oid="9n29z1p"
+                              data-oid="kvpdj2f"
                             >
                               País
                             </label>
@@ -1001,7 +1001,7 @@ const CollaboratorsSection = () => {
                               value={formData.country || ""}
                               onChange={handleInputChange}
                               className="mt-1"
-                              data-oid="5.pqvyp"
+                              data-oid="ubgi8n1"
                             />
                           </div>
                         </div>
@@ -1010,83 +1010,83 @@ const CollaboratorsSection = () => {
 
                     <div
                       className="bg-white rounded-lg border border-gray-100 shadow-sm p-5"
-                      data-oid="hj5y99s"
+                      data-oid="0xcuztw"
                     >
                       <h4
                         className="text-sm font-semibold text-gray-600 uppercase tracking-wider mb-4 flex items-center"
-                        data-oid="ag15_ah"
+                        data-oid="pt.6md:"
                       >
                         <FileText
                           className="h-4 w-4 mr-2 text-black"
-                          data-oid="h8tnpcr"
+                          data-oid="fg3bgkz"
                         />
                         Información fiscal
                       </h4>
                       {!isEditing ? (
-                        <div className="space-y-3" data-oid="5zva:4p">
-                          <div className="flex items-center" data-oid="zz7rg6u">
+                        <div className="space-y-3" data-oid="bds-c:v">
+                          <div className="flex items-center" data-oid="r.b5:n3">
                             <div
                               className="w-28 text-sm text-gray-500"
-                              data-oid="w6v.9fz"
+                              data-oid="a.od6g:"
                             >
                               CIF/NIF:
                             </div>
-                            <div className="font-medium" data-oid="46qqsz9">
+                            <div className="font-medium" data-oid="l_k65im">
                               {selectedCollaboratorForDetails.taxId}
                             </div>
                           </div>
-                          <div className="flex items-center" data-oid="ds95vus">
+                          <div className="flex items-center" data-oid="fn7unen">
                             <div
                               className="w-28 text-sm text-gray-500"
-                              data-oid="k3xmt76"
+                              data-oid="bldx:kl"
                             >
                               Fecha inicio:
                             </div>
-                            <div className="font-medium" data-oid="ih15wfp">
+                            <div className="font-medium" data-oid="s0nhzou">
                               {new Date(
                                 selectedCollaboratorForDetails.startDate,
                               ).toLocaleDateString()}
                             </div>
                           </div>
-                          <div className="flex items-center" data-oid="9wagv86">
+                          <div className="flex items-center" data-oid="7ra6cdq">
                             <div
                               className="w-28 text-sm text-gray-500"
-                              data-oid="p8637z7"
+                              data-oid="wlf2q4a"
                             >
                               Comisión:
                             </div>
                             <div
                               className="font-medium text-green-600"
-                              data-oid="ch.-_6n"
+                              data-oid="u5q8xle"
                             >
                               {selectedCollaboratorForDetails.commissionRate}%
                             </div>
                           </div>
-                          <div className="flex items-center" data-oid="iq:zntc">
+                          <div className="flex items-center" data-oid="ik9hv15">
                             <div
                               className="w-28 text-sm text-gray-500"
-                              data-oid="pkag.bt"
+                              data-oid="77w26yc"
                             >
                               Pago:
                             </div>
-                            <div className="font-medium" data-oid="gu4el58">
+                            <div className="font-medium" data-oid="hvrru8a">
                               {selectedCollaboratorForDetails.paymentTerms}
                             </div>
                           </div>
                           {selectedCollaboratorForDetails.bankAccount && (
                             <div
                               className="flex items-center"
-                              data-oid="lhdural"
+                              data-oid="d7_.bvy"
                             >
                               <div
                                 className="w-28 text-sm text-gray-500"
-                                data-oid="nulq8qr"
+                                data-oid="r7pzeyd"
                               >
                                 Cuenta:
                               </div>
                               <div
                                 className="font-medium text-gray-700 font-mono text-sm tracking-wide"
-                                data-oid="19sa3zy"
+                                data-oid="kb.vssm"
                               >
                                 {selectedCollaboratorForDetails.bankAccount}
                               </div>
@@ -1094,11 +1094,11 @@ const CollaboratorsSection = () => {
                           )}
                         </div>
                       ) : (
-                        <div className="space-y-3" data-oid="nqxisz6">
-                          <div data-oid="9ghsol8">
+                        <div className="space-y-3" data-oid="dgz.xpq">
+                          <div data-oid="4jj49:.">
                             <label
                               className="text-sm text-gray-500"
-                              data-oid="gg5_v:k"
+                              data-oid="vhm1afd"
                             >
                               CIF/NIF
                             </label>
@@ -1107,13 +1107,13 @@ const CollaboratorsSection = () => {
                               value={formData.taxId || ""}
                               onChange={handleInputChange}
                               className="mt-1"
-                              data-oid="l5p_jw3"
+                              data-oid="jhnwaom"
                             />
                           </div>
-                          <div data-oid="c2l4uk2">
+                          <div data-oid=":4hmru0">
                             <label
                               className="text-sm text-gray-500"
-                              data-oid=".gemj_t"
+                              data-oid="c6ryr-q"
                             >
                               Fecha de inicio
                             </label>
@@ -1123,13 +1123,13 @@ const CollaboratorsSection = () => {
                               value={formData.startDate || ""}
                               onChange={handleInputChange}
                               className="mt-1"
-                              data-oid="0xebds2"
+                              data-oid="d-k9nkn"
                             />
                           </div>
-                          <div data-oid="v9eqf7y">
+                          <div data-oid="a-kkujs">
                             <label
                               className="text-sm text-gray-500"
-                              data-oid="qawvld1"
+                              data-oid="7_jbgz."
                             >
                               Comisión (%)
                             </label>
@@ -1139,13 +1139,13 @@ const CollaboratorsSection = () => {
                               value={formData.commissionRate || ""}
                               onChange={handleInputChange}
                               className="mt-1"
-                              data-oid="n3p6zm2"
+                              data-oid="lma:e37"
                             />
                           </div>
-                          <div data-oid="8vs:sik">
+                          <div data-oid="mkmeg:h">
                             <label
                               className="text-sm text-gray-500"
-                              data-oid=".b5vjga"
+                              data-oid="mkh3-bs"
                             >
                               Términos de pago
                             </label>
@@ -1154,13 +1154,13 @@ const CollaboratorsSection = () => {
                               value={formData.paymentTerms || ""}
                               onChange={handleInputChange}
                               className="mt-1"
-                              data-oid="6szvaok"
+                              data-oid="a2.3.:k"
                             />
                           </div>
-                          <div data-oid="bpattud">
+                          <div data-oid="-:n6.uh">
                             <label
                               className="text-sm text-gray-500"
-                              data-oid="ns_lv0:"
+                              data-oid="jiaez.g"
                             >
                               Cuenta bancaria
                             </label>
@@ -1169,7 +1169,7 @@ const CollaboratorsSection = () => {
                               value={formData.bankAccount || ""}
                               onChange={handleInputChange}
                               className="mt-1"
-                              data-oid="itwhb63"
+                              data-oid="697zk1j"
                             />
                           </div>
                         </div>
@@ -1179,37 +1179,37 @@ const CollaboratorsSection = () => {
 
                   <div
                     className="mt-6 bg-white rounded-lg border border-gray-100 shadow-sm p-5"
-                    data-oid="v.:qy_a"
+                    data-oid="vm5.k8y"
                   >
                     <h4
                       className="text-sm font-semibold text-gray-600 uppercase tracking-wider mb-4 flex items-center"
-                      data-oid="5jgstoj"
+                      data-oid="h3r6kx3"
                     >
                       <MapPin
                         className="h-4 w-4 mr-2 text-black"
-                        data-oid="6h.ffqn"
+                        data-oid="rty0u5_"
                       />
                       Zonas y Especialidades
                     </h4>
                     {!isEditing ? (
                       <>
-                        <div className="mb-4" data-oid="1y5yzwf">
+                        <div className="mb-4" data-oid="lxnyh5i">
                           <p
                             className="text-sm font-medium mb-2 text-gray-600"
-                            data-oid="5fh8.ib"
+                            data-oid="vp2d5hw"
                           >
                             Zonas de servicio:
                           </p>
                           <div
                             className="flex flex-wrap gap-2"
-                            data-oid="3g-9q33"
+                            data-oid="hoizst."
                           >
                             {selectedCollaboratorForDetails.serviceAreas.map(
                               (area) => (
                                 <span
                                   key={area}
                                   className="px-3 py-1 bg-gray-100 text-blue-700 border border-blue-100 text-sm rounded-full shadow-sm"
-                                  data-oid=".8fzvls"
+                                  data-oid="f79fckt"
                                 >
                                   {area}
                                 </span>
@@ -1217,23 +1217,23 @@ const CollaboratorsSection = () => {
                             )}
                           </div>
                         </div>
-                        <div className="mb-4" data-oid="53q54_x">
+                        <div className="mb-4" data-oid="5ilk7l5">
                           <p
                             className="text-sm font-medium mb-2 text-gray-600"
-                            data-oid="gqds6pn"
+                            data-oid="-q5xg1t"
                           >
                             Especialidades:
                           </p>
                           <div
                             className="flex flex-wrap gap-2"
-                            data-oid="lzjvay_"
+                            data-oid="r-16w.k"
                           >
                             {selectedCollaboratorForDetails.specialties.map(
                               (specialty) => (
                                 <span
                                   key={specialty}
                                   className="px-3 py-1 bg-purple-50 text-purple-700 border border-purple-100 text-sm rounded-full shadow-sm"
-                                  data-oid="2g7obpd"
+                                  data-oid="423f5ef"
                                 >
                                   {specialty}
                                 </span>
@@ -1241,23 +1241,23 @@ const CollaboratorsSection = () => {
                             )}
                           </div>
                         </div>
-                        <div data-oid="szwjchb">
+                        <div data-oid="_5e8-gv">
                           <p
                             className="text-sm font-medium mb-2 text-gray-600"
-                            data-oid="n6h1ux6"
+                            data-oid="248_.5d"
                           >
                             Certificaciones:
                           </p>
                           <div
                             className="flex flex-wrap gap-2"
-                            data-oid="b97cqqt"
+                            data-oid="99840y-"
                           >
                             {selectedCollaboratorForDetails.certifications.map(
                               (cert) => (
                                 <span
                                   key={cert}
                                   className="px-3 py-1 bg-green-50 text-green-700 border border-green-100 text-sm rounded-full shadow-sm"
-                                  data-oid="8:hb48d"
+                                  data-oid="69x043."
                                 >
                                   {cert}
                                 </span>
@@ -1267,11 +1267,11 @@ const CollaboratorsSection = () => {
                         </div>
                       </>
                     ) : (
-                      <div className="space-y-4" data-oid=".t:r:bb">
-                        <div data-oid="l:8adx6">
+                      <div className="space-y-4" data-oid="jasne7s">
+                        <div data-oid="vog4dso">
                           <label
                             className="text-sm text-gray-500"
-                            data-oid="5v18qth"
+                            data-oid="as8xq3f"
                           >
                             Zonas de servicio (separadas por comas)
                           </label>
@@ -1290,13 +1290,13 @@ const CollaboratorsSection = () => {
                               setFormData({ ...formData, serviceAreas: areas });
                             }}
                             className="mt-1"
-                            data-oid="kmu64u7"
+                            data-oid=":o:wryc"
                           />
                         </div>
-                        <div data-oid="4ya-286">
+                        <div data-oid="045y24u">
                           <label
                             className="text-sm text-gray-500"
-                            data-oid="e9z4eb:"
+                            data-oid="wl:.px9"
                           >
                             Especialidades (separadas por comas)
                           </label>
@@ -1318,13 +1318,13 @@ const CollaboratorsSection = () => {
                               });
                             }}
                             className="mt-1"
-                            data-oid="r8euo4t"
+                            data-oid="36f2bmf"
                           />
                         </div>
-                        <div data-oid="h75qtbt">
+                        <div data-oid="19umitk">
                           <label
                             className="text-sm text-gray-500"
-                            data-oid="j8dkdv1"
+                            data-oid="4n17egk"
                           >
                             Certificaciones (separadas por comas)
                           </label>
@@ -1346,7 +1346,7 @@ const CollaboratorsSection = () => {
                               });
                             }}
                             className="mt-1"
-                            data-oid="q3-o5s5"
+                            data-oid="s32i6_q"
                           />
                         </div>
                       </div>
@@ -1358,19 +1358,19 @@ const CollaboratorsSection = () => {
               {!isEditing && (
                 <div
                   className="grid grid-cols-1 md:grid-cols-2 gap-6 p-6 pt-0"
-                  data-oid=".l_ouki"
+                  data-oid="49syo31"
                 >
                   <div
                     className="bg-white rounded-lg border border-gray-100 shadow-sm p-5"
-                    data-oid=".u1:0jb"
+                    data-oid="xe29-ze"
                   >
                     <h4
                       className="text-sm font-semibold text-gray-600 uppercase tracking-wider mb-4 flex items-center"
-                      data-oid="wv4n1b1"
+                      data-oid="1yfrx13"
                     >
                       <User
                         className="h-4 w-4 mr-2 text-black"
-                        data-oid="rodd_kw"
+                        data-oid="94pxwz9"
                       />
                       Chóferes asociados
                     </h4>
@@ -1378,16 +1378,16 @@ const CollaboratorsSection = () => {
                     0 ? (
                       <div
                         className="grid grid-cols-1 gap-2"
-                        data-oid="00jc0fq"
+                        data-oid="794y-mx"
                       >
                         {loadingDrivers ? (
                           <div
                             className="bg-gray-50 rounded-lg border border-gray-100 p-4 flex items-center justify-center"
-                            data-oid="wwvtrsc"
+                            data-oid="5erjo::"
                           >
                             <p
                               className="text-sm text-gray-500"
-                              data-oid="1mzyv-p"
+                              data-oid="zdq_umg"
                             >
                               Cargando chóferes...
                             </p>
@@ -1397,46 +1397,46 @@ const CollaboratorsSection = () => {
                             <div
                               key={driver.id}
                               className="flex items-center p-2 border border-gray-100 rounded-lg bg-gray-50 hover:bg-gray-100 transition-colors"
-                              data-oid="9pg..es"
+                              data-oid="x5wbg74"
                             >
                               <div
                                 className="w-10 h-10 flex-shrink-0 mr-3"
-                                data-oid="6.b6p2p"
+                                data-oid="lai93z9"
                               >
                                 {driver.photo ? (
                                   <img
                                     src={driver.photo}
                                     alt={driver.name}
                                     className="w-10 h-10 rounded-full object-cover"
-                                    data-oid="mlx55al"
+                                    data-oid="u.-709o"
                                   />
                                 ) : (
                                   <div
                                     className="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center text-gray-600 font-medium"
-                                    data-oid="8114kgs"
+                                    data-oid="vruusz4"
                                   >
                                     <User
                                       className="h-5 w-5"
-                                      data-oid="iuj_qxx"
+                                      data-oid="if-rafc"
                                     />
                                   </div>
                                 )}
                               </div>
-                              <div className="flex-1" data-oid="ule1jxd">
+                              <div className="flex-1" data-oid="558-z4a">
                                 <p
                                   className="text-sm font-medium"
-                                  data-oid="1yq9.cq"
+                                  data-oid="g4riwyj"
                                 >
                                   {driver.name}
                                 </p>
                                 <div
                                   className="flex flex-wrap gap-2 mt-1"
-                                  data-oid="hm82xjx"
+                                  data-oid="ijmyqzg"
                                 >
                                   {driver.email && (
                                     <p
                                       className="text-xs text-gray-500"
-                                      data-oid="e10aj_b"
+                                      data-oid="tk49k_."
                                     >
                                       {driver.email}
                                     </p>
@@ -1444,7 +1444,7 @@ const CollaboratorsSection = () => {
                                   {driver.phone && (
                                     <p
                                       className="text-xs text-gray-500"
-                                      data-oid="8le80kn"
+                                      data-oid="7u2exg."
                                     >
                                       {driver.phone}
                                     </p>
@@ -1452,12 +1452,12 @@ const CollaboratorsSection = () => {
                                 </div>
                                 <div
                                   className="flex items-center gap-2 mt-1"
-                                  data-oid="-atu_62"
+                                  data-oid="li4w17x"
                                 >
                                   {driver.specialty && (
                                     <span
                                       className="px-2 py-0.5 bg-purple-50 text-purple-700 text-xs rounded-full"
-                                      data-oid="7o8p4.g"
+                                      data-oid="-sp3-im"
                                     >
                                       {driver.specialty}
                                     </span>
@@ -1465,7 +1465,7 @@ const CollaboratorsSection = () => {
                                   {driver.city && (
                                     <span
                                       className="px-2 py-0.5 bg-gray-100 text-blue-700 text-xs rounded-full"
-                                      data-oid="ui7qcn2"
+                                      data-oid="h_6gych"
                                     >
                                       {driver.city}
                                     </span>
@@ -1478,7 +1478,7 @@ const CollaboratorsSection = () => {
                                           ? "bg-gray-50 text-gray-700"
                                           : "bg-amber-50 text-amber-700"
                                     }`}
-                                    data-oid="exrkqcx"
+                                    data-oid="oa:v04o"
                                   >
                                     {driver.status === "active"
                                       ? "Activo"
@@ -1493,11 +1493,11 @@ const CollaboratorsSection = () => {
                         ) : (
                           <div
                             className="bg-gray-50 rounded-lg border border-gray-100 p-4 flex items-center justify-center"
-                            data-oid="m39p3q3"
+                            data-oid="hqt_:bu"
                           >
                             <p
                               className="text-sm text-gray-500"
-                              data-oid=".t1:._t"
+                              data-oid="8z0ci5u"
                             >
                               No se encontraron datos de los chóferes
                             </p>
@@ -1507,9 +1507,9 @@ const CollaboratorsSection = () => {
                     ) : (
                       <div
                         className="bg-gray-50 rounded-lg border border-gray-100 p-4 flex items-center justify-center"
-                        data-oid="jg734q-"
+                        data-oid="24dithx"
                       >
-                        <p className="text-sm text-gray-500" data-oid="rm_hox9">
+                        <p className="text-sm text-gray-500" data-oid="ovvz27o">
                           No hay chóferes asociados
                         </p>
                       </div>
@@ -1518,15 +1518,15 @@ const CollaboratorsSection = () => {
 
                   <div
                     className="bg-white rounded-lg border border-gray-100 shadow-sm p-5"
-                    data-oid="-j0oco8"
+                    data-oid="4v5ete1"
                   >
                     <h4
                       className="text-sm font-semibold text-gray-600 uppercase tracking-wider mb-4 flex items-center"
-                      data-oid="9phi6bl"
+                      data-oid="vn2r7z-"
                     >
                       <Car
                         className="h-4 w-4 mr-2 text-black"
-                        data-oid="5dkrt2y"
+                        data-oid="qj6zdxr"
                       />
                       Vehículos asociados
                     </h4>
@@ -1534,16 +1534,16 @@ const CollaboratorsSection = () => {
                     0 ? (
                       <div
                         className="grid grid-cols-1 gap-2"
-                        data-oid="2-3p.y4"
+                        data-oid="9f0oejw"
                       >
                         {loadingVehicles ? (
                           <div
                             className="bg-gray-50 rounded-lg border border-gray-100 p-4 flex items-center justify-center"
-                            data-oid="y3-6yej"
+                            data-oid="wf:feli"
                           >
                             <p
                               className="text-sm text-gray-500"
-                              data-oid="yts67uk"
+                              data-oid="ihpnn.0"
                             >
                               Cargando vehículos...
                             </p>
@@ -1553,52 +1553,52 @@ const CollaboratorsSection = () => {
                             <div
                               key={vehicle.id}
                               className="flex items-center p-2 border border-gray-100 rounded-lg bg-gray-50 hover:bg-gray-100 transition-colors"
-                              data-oid="sw5c6cd"
+                              data-oid="0eu2b-3"
                             >
                               <div
                                 className="w-12 h-12 flex-shrink-0 mr-3"
-                                data-oid="pd:tnb3"
+                                data-oid="h9_6l7r"
                               >
                                 {vehicle.image ? (
                                   <img
                                     src={vehicle.image}
                                     alt={`${vehicle.brand} ${vehicle.model}`}
                                     className="w-12 h-12 rounded-md object-cover"
-                                    data-oid="wenu7re"
+                                    data-oid="ct-68y."
                                   />
                                 ) : (
                                   <div
                                     className="h-12 w-12 bg-gray-200 rounded-md flex items-center justify-center text-gray-600"
-                                    data-oid="2zf:vkk"
+                                    data-oid="trun1:g"
                                   >
                                     <Car
                                       className="h-6 w-6"
-                                      data-oid="xq_k04n"
+                                      data-oid="nqdi6p2"
                                     />
                                   </div>
                                 )}
                               </div>
-                              <div className="flex-1" data-oid="7pfi5zf">
+                              <div className="flex-1" data-oid="qrq2a.8">
                                 <p
                                   className="text-sm font-medium"
-                                  data-oid="d:o3qsl"
+                                  data-oid="g60p:ek"
                                 >
                                   {vehicle.brand} {vehicle.model}
                                 </p>
                                 <div
                                   className="flex flex-wrap gap-2 mt-1"
-                                  data-oid="_8lgpvg"
+                                  data-oid="6w0682x"
                                 >
                                   <p
                                     className="text-xs text-gray-500"
-                                    data-oid="kv608uz"
+                                    data-oid="oetnnv2"
                                   >
                                     {vehicle.licensePlate}
                                   </p>
                                   {vehicle.year && (
                                     <p
                                       className="text-xs text-gray-500"
-                                      data-oid="y1oisma"
+                                      data-oid="hnbgbgo"
                                     >
                                       {vehicle.year}
                                     </p>
@@ -1606,7 +1606,7 @@ const CollaboratorsSection = () => {
                                   {vehicle.color && (
                                     <p
                                       className="text-xs text-gray-500"
-                                      data-oid="zfe_zol"
+                                      data-oid="vgzy5fs"
                                     >
                                       {vehicle.color}
                                     </p>
@@ -1614,18 +1614,18 @@ const CollaboratorsSection = () => {
                                 </div>
                                 <div
                                   className="flex items-center gap-2 mt-1"
-                                  data-oid="yn9vq_."
+                                  data-oid="qk:s65o"
                                 >
                                   <span
                                     className="px-2 py-0.5 bg-gray-100 text-blue-700 text-xs rounded-full"
-                                    data-oid="-9o2.ag"
+                                    data-oid="9jkg-ac"
                                   >
                                     {vehicle.type.charAt(0).toUpperCase() +
                                       vehicle.type.slice(1)}
                                   </span>
                                   <span
                                     className="px-2 py-0.5 bg-purple-50 text-purple-700 text-xs rounded-full"
-                                    data-oid="-qxpmwq"
+                                    data-oid="45k5b2q"
                                   >
                                     {vehicle.category.charAt(0).toUpperCase() +
                                       vehicle.category
@@ -1638,7 +1638,7 @@ const CollaboratorsSection = () => {
                                         ? "bg-green-50 text-green-700"
                                         : "bg-gray-100 text-gray-700"
                                     }`}
-                                    data-oid="_p3:dcd"
+                                    data-oid="jg9_odr"
                                   >
                                     {vehicle.available
                                       ? "Disponible"
@@ -1651,11 +1651,11 @@ const CollaboratorsSection = () => {
                         ) : (
                           <div
                             className="bg-gray-50 rounded-lg border border-gray-100 p-4 flex items-center justify-center"
-                            data-oid="1mhgpt7"
+                            data-oid="2dvgmb2"
                           >
                             <p
                               className="text-sm text-gray-500"
-                              data-oid="jo5rc5b"
+                              data-oid="0:.mncx"
                             >
                               No se encontraron datos de los vehículos
                             </p>
@@ -1665,9 +1665,9 @@ const CollaboratorsSection = () => {
                     ) : (
                       <div
                         className="bg-gray-50 rounded-lg border border-gray-100 p-4 flex items-center justify-center"
-                        data-oid="sr00otm"
+                        data-oid="c.y-0oo"
                       >
-                        <p className="text-sm text-gray-500" data-oid="cwo.eia">
+                        <p className="text-sm text-gray-500" data-oid="4vq7jhe">
                           No hay vehículos asociados
                         </p>
                       </div>
@@ -1676,27 +1676,27 @@ const CollaboratorsSection = () => {
                 </div>
               )}
 
-              <div className="p-6 pt-0" data-oid="h3kv2vp">
+              <div className="p-6 pt-0" data-oid="lp_-u9i">
                 <div
                   className="bg-white rounded-lg border border-gray-100 shadow-sm p-5"
-                  data-oid="eqi5a6b"
+                  data-oid="a09725g"
                 >
                   <h4
                     className="text-sm font-semibold text-gray-600 uppercase tracking-wider mb-4 flex items-center"
-                    data-oid="av92bz1"
+                    data-oid="rbphcps"
                   >
                     <FileText
                       className="h-4 w-4 mr-2 text-black"
-                      data-oid=".-srpo_"
+                      data-oid="::b048:"
                     />
                     Notas
                   </h4>
                   {!isEditing ? (
                     <div
                       className="bg-gray-50 p-4 rounded-lg border border-gray-100"
-                      data-oid="q0z13zm"
+                      data-oid="tp5c63k"
                     >
-                      <p className="text-sm" data-oid=":rsyf-8">
+                      <p className="text-sm" data-oid="if38ej7">
                         {selectedCollaboratorForDetails.notes || "Sin notas"}
                       </p>
                     </div>
@@ -1707,7 +1707,7 @@ const CollaboratorsSection = () => {
                       onChange={handleInputChange}
                       className="mt-1"
                       rows={4}
-                      data-oid="y4qdrp."
+                      data-oid="vkr4n1_"
                     />
                   )}
                 </div>
@@ -1721,9 +1721,9 @@ const CollaboratorsSection = () => {
 
   // Vista de la tabla (cuando no se está viendo un colaborador específico)
   return (
-    <div className="space-y-6" data-oid="61w6gxw">
-      <div className="flex justify-between items-center" data-oid="pxb2x_c">
-        <h1 className="text-2xl font-bold text-gray-800" data-oid="ijv3au_">
+    <div className="space-y-6" data-oid="upw44kd">
+      <div className="flex justify-between items-center" data-oid="bfcc4wn">
+        <h1 className="text-2xl font-bold text-gray-800" data-oid="98:kaqn">
           Gestión de Colaboradores
         </h1>
         {!showCollaboratorForm && (
@@ -1733,22 +1733,22 @@ const CollaboratorsSection = () => {
               setShowCollaboratorForm(true);
             }}
             className="flex items-center px-4 py-2 bg-black text-white rounded-lg hover:bg-gray-800 transition-colors"
-            data-oid=".v5-1k4"
+            data-oid="nj5:2rm"
           >
-            <PlusCircle size={18} className="mr-2" data-oid="c0lli5-" />
+            <PlusCircle size={18} className="mr-2" data-oid="fd3dac5" />
             Añadir Colaborador
           </Button>
         )}
       </div>
 
       {showCollaboratorForm ? (
-        <Card className="shadow-md" data-oid="lwedw05">
-          <CardHeader className="border-b bg-gray-50" data-oid="mgac7q_">
-            <CardTitle data-oid="wfdl7n_">
+        <Card className="shadow-md" data-oid="ll.mucp">
+          <CardHeader className="border-b bg-gray-50" data-oid="v3zvh4z">
+            <CardTitle data-oid="vkr04mf">
               {editingCollaborator ? "Editar" : "Añadir"} Colaborador
             </CardTitle>
           </CardHeader>
-          <CardContent className="p-6" data-oid="clh9v7i">
+          <CardContent className="p-6" data-oid="nfd:ug8">
             <form
               onSubmit={(e) => {
                 e.preventDefault();
@@ -1803,24 +1803,24 @@ const CollaboratorsSection = () => {
                 handleCollaboratorSubmit(data);
               }}
               className="space-y-6"
-              data-oid=":9rx25t"
+              data-oid="m8zpjfe"
             >
               {/* Información básica */}
-              <div data-oid="5:952hp">
+              <div data-oid="xqpsa4q">
                 <h3
                   className="text-lg font-medium border-b pb-2 mb-4"
-                  data-oid="uuxo-44"
+                  data-oid="ss.e1y5"
                 >
                   Información básica
                 </h3>
                 <div
                   className="grid grid-cols-1 md:grid-cols-2 gap-4"
-                  data-oid="tnqt4ib"
+                  data-oid="el2ii8f"
                 >
-                  <div data-oid="y01uf6a">
+                  <div data-oid="iswwn3h">
                     <label
                       className="block text-sm font-medium text-gray-700 mb-1"
-                      data-oid="fmaf9wc"
+                      data-oid="0ld0xxr"
                     >
                       Nombre del colaborador*
                     </label>
@@ -1828,13 +1828,13 @@ const CollaboratorsSection = () => {
                       name="name"
                       defaultValue={editingCollaborator?.name || ""}
                       required
-                      data-oid="kd-e_m2"
+                      data-oid="sb9dgs5"
                     />
                   </div>
-                  <div data-oid="qs:42b1">
+                  <div data-oid="ne2.uoz">
                     <label
                       className="block text-sm font-medium text-gray-700 mb-1"
-                      data-oid="m5m9p53"
+                      data-oid="pl_gabh"
                     >
                       URL del Logo
                     </label>
@@ -1842,63 +1842,63 @@ const CollaboratorsSection = () => {
                       name="logo"
                       defaultValue={editingCollaborator?.logo || ""}
                       placeholder="https://example.com/logo.jpg"
-                      data-oid="xwuzy1f"
+                      data-oid="ca.vqj7"
                     />
                   </div>
-                  <div data-oid=":np95o5">
+                  <div data-oid="z70fq4:">
                     <label
                       className="block text-sm font-medium text-gray-700 mb-1"
-                      data-oid="ajfz7tu"
+                      data-oid="6cuwz5-"
                     >
                       Tipo de colaborador*
                     </label>
                     <Select
                       name="type"
                       defaultValue={editingCollaborator?.type || "company"}
-                      data-oid="7sv_o0j"
+                      data-oid="scpyad5"
                     >
-                      <SelectTrigger data-oid="t1ijv27">
+                      <SelectTrigger data-oid="6jhp:::">
                         <SelectValue
                           placeholder="Seleccionar tipo"
-                          data-oid="25aap0d"
+                          data-oid="vvldzpr"
                         />
                       </SelectTrigger>
-                      <SelectContent data-oid="yi7mapc">
-                        <SelectItem value="company" data-oid="vkvoeoj">
+                      <SelectContent data-oid="uqyu7s2">
+                        <SelectItem value="company" data-oid="dahitph">
                           Empresa
                         </SelectItem>
-                        <SelectItem value="individual" data-oid="_ve6azp">
+                        <SelectItem value="individual" data-oid="4.d2m-6">
                           Particular
                         </SelectItem>
                       </SelectContent>
                     </Select>
                   </div>
-                  <div data-oid="r0zjb-o">
+                  <div data-oid="n460i81">
                     <label
                       className="block text-sm font-medium text-gray-700 mb-1"
-                      data-oid=":xdt1wn"
+                      data-oid="p1:7uj5"
                     >
                       Estado*
                     </label>
                     <Select
                       name="status"
                       defaultValue={editingCollaborator?.status || "active"}
-                      data-oid="dw818b5"
+                      data-oid="jpvk_m:"
                     >
-                      <SelectTrigger data-oid="u9anpl-">
+                      <SelectTrigger data-oid="b_.gyz8">
                         <SelectValue
                           placeholder="Seleccionar estado"
-                          data-oid="bbxnogz"
+                          data-oid="h32rafd"
                         />
                       </SelectTrigger>
-                      <SelectContent data-oid=":0oejba">
-                        <SelectItem value="active" data-oid="gi0v_qi">
+                      <SelectContent data-oid="ja9wnba">
+                        <SelectItem value="active" data-oid="::32c_h">
                           Activo
                         </SelectItem>
-                        <SelectItem value="inactive" data-oid=":uk0buo">
+                        <SelectItem value="inactive" data-oid="pds--00">
                           Inactivo
                         </SelectItem>
-                        <SelectItem value="pending" data-oid="7get-5v">
+                        <SelectItem value="pending" data-oid="a.ruxgh">
                           Pendiente
                         </SelectItem>
                       </SelectContent>
@@ -1908,21 +1908,21 @@ const CollaboratorsSection = () => {
               </div>
 
               {/* Información de contacto */}
-              <div data-oid="dm1pg7r">
+              <div data-oid="im94lt_">
                 <h3
                   className="text-lg font-medium border-b pb-2 mb-4"
-                  data-oid="ufap-31"
+                  data-oid="6u3lp86"
                 >
                   Información de contacto
                 </h3>
                 <div
                   className="grid grid-cols-1 md:grid-cols-2 gap-4"
-                  data-oid="_zl.nz7"
+                  data-oid="b4bsfyu"
                 >
-                  <div data-oid="b-yhivm">
+                  <div data-oid="d9070ni">
                     <label
                       className="block text-sm font-medium text-gray-700 mb-1"
-                      data-oid=".c.nv3t"
+                      data-oid="8ulo28h"
                     >
                       Nombre de contacto*
                     </label>
@@ -1930,13 +1930,13 @@ const CollaboratorsSection = () => {
                       name="contactName"
                       defaultValue={editingCollaborator?.contactName || ""}
                       required
-                      data-oid="b4l5n.n"
+                      data-oid=".zv_644"
                     />
                   </div>
-                  <div data-oid="tf2_:z8">
+                  <div data-oid="8qe6qif">
                     <label
                       className="block text-sm font-medium text-gray-700 mb-1"
-                      data-oid="tx2rotm"
+                      data-oid="r427-wi"
                     >
                       Email de contacto*
                     </label>
@@ -1945,13 +1945,13 @@ const CollaboratorsSection = () => {
                       name="contactEmail"
                       defaultValue={editingCollaborator?.contactEmail || ""}
                       required
-                      data-oid="ao_3rxy"
+                      data-oid="jtv8zon"
                     />
                   </div>
-                  <div data-oid="c16vew1">
+                  <div data-oid="_:-.xda">
                     <label
                       className="block text-sm font-medium text-gray-700 mb-1"
-                      data-oid="7x7sj:r"
+                      data-oid="rb7rh7s"
                     >
                       Teléfono de contacto*
                     </label>
@@ -1959,80 +1959,80 @@ const CollaboratorsSection = () => {
                       name="contactPhone"
                       defaultValue={editingCollaborator?.contactPhone || ""}
                       required
-                      data-oid="8ttkw:a"
+                      data-oid="enrnh.w"
                     />
                   </div>
-                  <div className="md:col-span-2" data-oid="wy0h0lb">
+                  <div className="md:col-span-2" data-oid="t43je2j">
                     <label
                       className="block text-sm font-medium text-gray-700 mb-1"
-                      data-oid="to3q3:0"
+                      data-oid="vhsbfa."
                     >
                       Dirección
                     </label>
                     <Input
                       name="address"
                       defaultValue={editingCollaborator?.address || ""}
-                      data-oid="pcr9dyc"
+                      data-oid="t20:y5n"
                     />
                   </div>
-                  <div data-oid="2rfa_u8">
+                  <div data-oid="g-mdmtd">
                     <label
                       className="block text-sm font-medium text-gray-700 mb-1"
-                      data-oid="in4he67"
+                      data-oid="fza5.a4"
                     >
                       Código Postal
                     </label>
                     <Input
                       name="postalCode"
                       defaultValue={editingCollaborator?.postalCode || ""}
-                      data-oid="441jwxi"
+                      data-oid="sa73o3p"
                     />
                   </div>
-                  <div data-oid="fma5iy5">
+                  <div data-oid="tvupjx8">
                     <label
                       className="block text-sm font-medium text-gray-700 mb-1"
-                      data-oid="4vx929_"
+                      data-oid="xjua:15"
                     >
                       Ciudad
                     </label>
                     <Input
                       name="city"
                       defaultValue={editingCollaborator?.city || ""}
-                      data-oid="acp_-j-"
+                      data-oid="uurw0de"
                     />
                   </div>
-                  <div data-oid="bvx36mt">
+                  <div data-oid="tjmd2t_">
                     <label
                       className="block text-sm font-medium text-gray-700 mb-1"
-                      data-oid=".8e042v"
+                      data-oid="95wp.m5"
                     >
                       País
                     </label>
                     <Input
                       name="country"
                       defaultValue={editingCollaborator?.country || ""}
-                      data-oid="y24-103"
+                      data-oid="jyb9.8m"
                     />
                   </div>
                 </div>
               </div>
 
               {/* Información fiscal y contractual */}
-              <div data-oid="qibcno9">
+              <div data-oid="wu-rjxx">
                 <h3
                   className="text-lg font-medium border-b pb-2 mb-4"
-                  data-oid="io1.4:2"
+                  data-oid="u4s:pfv"
                 >
                   Información fiscal y contractual
                 </h3>
                 <div
                   className="grid grid-cols-1 md:grid-cols-2 gap-4"
-                  data-oid="5.bmcsl"
+                  data-oid="zpm7ag6"
                 >
-                  <div data-oid="c::o2v3">
+                  <div data-oid="phpub4x">
                     <label
                       className="block text-sm font-medium text-gray-700 mb-1"
-                      data-oid="2:d7kd1"
+                      data-oid="0v6ga_:"
                     >
                       CIF/NIF*
                     </label>
@@ -2040,13 +2040,13 @@ const CollaboratorsSection = () => {
                       name="taxId"
                       defaultValue={editingCollaborator?.taxId || ""}
                       required
-                      data-oid="o5msf.g"
+                      data-oid="ey6qkz9"
                     />
                   </div>
-                  <div data-oid="0whebfm">
+                  <div data-oid="v1qa9-u">
                     <label
                       className="block text-sm font-medium text-gray-700 mb-1"
-                      data-oid="w5w1u4q"
+                      data-oid="gpq2ov7"
                     >
                       Fecha de inicio*
                     </label>
@@ -2058,13 +2058,13 @@ const CollaboratorsSection = () => {
                         new Date().toISOString().split("T")[0]
                       }
                       required
-                      data-oid="qoi2c-_"
+                      data-oid="9mcx-do"
                     />
                   </div>
-                  <div data-oid=".1tgprp">
+                  <div data-oid="7:vr1aa">
                     <label
                       className="block text-sm font-medium text-gray-700 mb-1"
-                      data-oid="3zr6.rx"
+                      data-oid="lnfl75z"
                     >
                       Comisión (%)*
                     </label>
@@ -2073,13 +2073,13 @@ const CollaboratorsSection = () => {
                       name="commissionRate"
                       defaultValue={editingCollaborator?.commissionRate || 10}
                       required
-                      data-oid="d5ho2py"
+                      data-oid="7kmtker"
                     />
                   </div>
-                  <div data-oid="3wv6q6q">
+                  <div data-oid="r4.orvd">
                     <label
                       className="block text-sm font-medium text-gray-700 mb-1"
-                      data-oid="f17l_4r"
+                      data-oid="1:vh28s"
                     >
                       Términos de pago
                     </label>
@@ -2087,13 +2087,13 @@ const CollaboratorsSection = () => {
                       name="paymentTerms"
                       defaultValue={editingCollaborator?.paymentTerms || ""}
                       placeholder="Ej: Pago mensual, 30 días"
-                      data-oid="jayr4xg"
+                      data-oid="lpsf0:a"
                     />
                   </div>
-                  <div className="md:col-span-2" data-oid=":pnhcge">
+                  <div className="md:col-span-2" data-oid="ivwcwu9">
                     <label
                       className="block text-sm font-medium text-gray-700 mb-1"
-                      data-oid="gjlb58o"
+                      data-oid="fc2nn6b"
                     >
                       Cuenta bancaria
                     </label>
@@ -2101,25 +2101,25 @@ const CollaboratorsSection = () => {
                       name="bankAccount"
                       defaultValue={editingCollaborator?.bankAccount || ""}
                       placeholder="ES12 1234 5678 9012 3456 7890"
-                      data-oid="zntmwsu"
+                      data-oid="h::9mxl"
                     />
                   </div>
                 </div>
               </div>
 
               {/* Zonas, especialidades y certificaciones */}
-              <div data-oid="kecmtqt">
+              <div data-oid="9:buxu9">
                 <h3
                   className="text-lg font-medium border-b pb-2 mb-4"
-                  data-oid="af0fyf7"
+                  data-oid=":i2gv_p"
                 >
                   Zonas y especialidades
                 </h3>
-                <div className="grid grid-cols-1 gap-4" data-oid="5bj.jyn">
-                  <div data-oid="w88:fza">
+                <div className="grid grid-cols-1 gap-4" data-oid="vlsst:.">
+                  <div data-oid="fna82px">
                     <label
                       className="block text-sm font-medium text-gray-700 mb-1"
-                      data-oid="jzy_m8a"
+                      data-oid="n91sl-e"
                     >
                       Zonas de servicio (separadas por comas)
                     </label>
@@ -2131,20 +2131,20 @@ const CollaboratorsSection = () => {
                           : ""
                       }
                       placeholder="Madrid, Barcelona, Sevilla"
-                      data-oid="98j4xil"
+                      data-oid="-xr1hdr"
                     />
 
                     <p
                       className="text-xs text-gray-500 mt-1"
-                      data-oid="3js5tmb"
+                      data-oid="r5y_t-m"
                     >
                       Indica las zonas geográficas donde opera el colaborador
                     </p>
                   </div>
-                  <div data-oid="pns5uj_">
+                  <div data-oid="9fwp9p0">
                     <label
                       className="block text-sm font-medium text-gray-700 mb-1"
-                      data-oid="lnrt5nk"
+                      data-oid="z9li66f"
                     >
                       Especialidades (separadas por comas)
                     </label>
@@ -2156,20 +2156,20 @@ const CollaboratorsSection = () => {
                           : ""
                       }
                       placeholder="Bodas, Eventos corporativos, Traslados aeropuerto"
-                      data-oid=".b4evjw"
+                      data-oid="st-v2a4"
                     />
 
                     <p
                       className="text-xs text-gray-500 mt-1"
-                      data-oid="9e4yebv"
+                      data-oid="7:40ern"
                     >
                       Tipo de servicios que ofrece el colaborador
                     </p>
                   </div>
-                  <div data-oid="zxzn8fu">
+                  <div data-oid="w3l9-q9">
                     <label
                       className="block text-sm font-medium text-gray-700 mb-1"
-                      data-oid="rwwcjpo"
+                      data-oid="f.-ioaf"
                     >
                       Certificaciones (separadas por comas)
                     </label>
@@ -2181,12 +2181,12 @@ const CollaboratorsSection = () => {
                           : ""
                       }
                       placeholder="ISO 9001, Licencia VTC"
-                      data-oid="44-80uf"
+                      data-oid="te6m8dn"
                     />
 
                     <p
                       className="text-xs text-gray-500 mt-1"
-                      data-oid="hqn8h.p"
+                      data-oid="8bqctjl"
                     >
                       Permisos y certificaciones que posee el colaborador
                     </p>
@@ -2195,17 +2195,17 @@ const CollaboratorsSection = () => {
               </div>
 
               {/* Notas adicionales */}
-              <div data-oid="jyeg1oi">
+              <div data-oid="ix2yjid">
                 <h3
                   className="text-lg font-medium border-b pb-2 mb-4"
-                  data-oid="3jcu5d6"
+                  data-oid="3gxj395"
                 >
                   Información adicional
                 </h3>
-                <div data-oid="_gvk61a">
+                <div data-oid="zn7v.ur">
                   <label
                     className="block text-sm font-medium text-gray-700 mb-1"
-                    data-oid="3xrf5c4"
+                    data-oid=".20_ut."
                   >
                     Notas
                   </label>
@@ -2214,7 +2214,7 @@ const CollaboratorsSection = () => {
                     defaultValue={editingCollaborator?.notes || ""}
                     placeholder="Información adicional sobre el colaborador"
                     rows={4}
-                    data-oid="3x8bb80"
+                    data-oid="j-kom3h"
                   />
                 </div>
               </div>
@@ -2222,7 +2222,7 @@ const CollaboratorsSection = () => {
               {/* Botones de acción */}
               <div
                 className="flex justify-end mt-6 space-x-3"
-                data-oid="wmad1jy"
+                data-oid="3z:ql.:"
               >
                 <Button
                   type="button"
@@ -2231,14 +2231,14 @@ const CollaboratorsSection = () => {
                     setEditingCollaborator(null);
                   }}
                   variant="outline"
-                  data-oid="mm_016u"
+                  data-oid="dcvusr:"
                 >
                   Cancelar
                 </Button>
                 <Button
                   type="submit"
                   className="bg-black hover:bg-gray-800"
-                  data-oid="rm5rctt"
+                  data-oid="2f5.ezh"
                 >
                   {editingCollaborator ? "Actualizar" : "Crear"} Colaborador
                 </Button>
@@ -2249,18 +2249,18 @@ const CollaboratorsSection = () => {
       ) : (
         <>
           {/* Filtros y búsqueda */}
-          <Card data-oid="bf7xhbp">
-            <CardContent className="pt-6" data-oid="dpk4evl">
+          <Card data-oid="ok-yblo">
+            <CardContent className="pt-6" data-oid="rfkp5st">
               <div
                 className="flex flex-col md:flex-row md:items-center space-y-4 md:space-y-0 md:space-x-4"
-                data-oid="26b47kt"
+                data-oid="za2pj2n"
               >
-                <div className="flex-1" data-oid="wxhbyu7">
-                  <div className="relative" data-oid="jmypzed">
+                <div className="flex-1" data-oid="shvvm4n">
+                  <div className="relative" data-oid="ozakw:i">
                     <Search
                       className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"
                       size={18}
-                      data-oid="5rhnjh-"
+                      data-oid="khq7ce-"
                     />
 
                     <input
@@ -2269,37 +2269,37 @@ const CollaboratorsSection = () => {
                       className="flex h-9 w-full rounded-md border border-input bg-background px-3 pl-10 py-1 text-sm shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-0 focus-visible:ring-offset-0 disabled:cursor-not-allowed disabled:opacity-50"
                       value={searchQuery}
                       onChange={handleSearchChange}
-                      data-oid="259audz"
+                      data-oid="5h50xa2"
                     />
                   </div>
                 </div>
                 <div
                   className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4"
-                  data-oid="38a.r0k"
+                  data-oid="0m1sx-b"
                 >
                   <Select
                     defaultValue="all"
                     value={typeFilter}
                     onValueChange={handleTypeFilterChange}
-                    data-oid="0t7:-ft"
+                    data-oid="6hrzb0t"
                   >
                     <SelectTrigger
                       className="w-full md:w-[150px]"
-                      data-oid="y3tm-3c"
+                      data-oid="9z5_9jq"
                     >
                       <SelectValue
                         placeholder="Tipo de colaborador"
-                        data-oid="ljdw_e_"
+                        data-oid="8:257ub"
                       />
                     </SelectTrigger>
-                    <SelectContent data-oid="e.-qzga">
-                      <SelectItem value="all" data-oid="8vp4zhr">
+                    <SelectContent data-oid="k-orl4g">
+                      <SelectItem value="all" data-oid="sbu39pq">
                         Todos los tipos
                       </SelectItem>
-                      <SelectItem value="company" data-oid="q:7zyft">
+                      <SelectItem value="company" data-oid="2wxu.15">
                         Empresas
                       </SelectItem>
-                      <SelectItem value="individual" data-oid="rgy7d2:">
+                      <SelectItem value="individual" data-oid="s7puln_">
                         Particulares
                       </SelectItem>
                     </SelectContent>
@@ -2308,25 +2308,25 @@ const CollaboratorsSection = () => {
                     defaultValue="all"
                     value={statusFilter}
                     onValueChange={handleStatusFilterChange}
-                    data-oid="qxr565m"
+                    data-oid=".oddjhh"
                   >
                     <SelectTrigger
                       className="w-full md:w-[150px]"
-                      data-oid="77w50xi"
+                      data-oid="wdw7-q9"
                     >
-                      <SelectValue placeholder="Estado" data-oid="z74otvu" />
+                      <SelectValue placeholder="Estado" data-oid="3891wka" />
                     </SelectTrigger>
-                    <SelectContent data-oid="-qmcax9">
-                      <SelectItem value="all" data-oid="10l.00n">
+                    <SelectContent data-oid="jvvvmzc">
+                      <SelectItem value="all" data-oid="k:mz2tj">
                         Todos los estados
                       </SelectItem>
-                      <SelectItem value="active" data-oid="ekx:8tp">
+                      <SelectItem value="active" data-oid="8q1-xws">
                         Activos
                       </SelectItem>
-                      <SelectItem value="inactive" data-oid="zgq_vk0">
+                      <SelectItem value="inactive" data-oid="wdz0l9l">
                         Inactivos
                       </SelectItem>
-                      <SelectItem value="pending" data-oid="md2fsdc">
+                      <SelectItem value="pending" data-oid="e3.sm.y">
                         Pendientes
                       </SelectItem>
                     </SelectContent>
@@ -2337,45 +2337,45 @@ const CollaboratorsSection = () => {
           </Card>
 
           {/* Tabla de colaboradores */}
-          <Card data-oid="cytkgy9">
-            <CardContent className="p-0" data-oid="pstf1b-">
-              <div className="overflow-x-auto" data-oid="0:le.6d">
-                <table className="w-full" data-oid="7ta7n1e">
-                  <thead data-oid=".s83qwx">
-                    <tr className="bg-gray-50 border-b" data-oid="xbdpba.">
+          <Card data-oid="ovjj3_z">
+            <CardContent className="p-0" data-oid="qggfw.o">
+              <div className="overflow-x-auto" data-oid="oufq7s.">
+                <table className="w-full" data-oid="1xtdtxy">
+                  <thead data-oid="nd-19z0">
+                    <tr className="bg-gray-50 border-b" data-oid="57.oycm">
                       <th
                         className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                        data-oid="ly69l25"
+                        data-oid="9c5y4xc"
                       >
                         Colaborador
                       </th>
                       <th
                         className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                        data-oid="dhnlp6s"
+                        data-oid="xjqnzg0"
                       >
                         Contacto
                       </th>
                       <th
                         className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                        data-oid="f.5i.e5"
+                        data-oid="z:-wspn"
                       >
                         Ubicación
                       </th>
                       <th
                         className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                        data-oid="z4xso2b"
+                        data-oid="h-ot5vg"
                       >
                         Comisión
                       </th>
                       <th
                         className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                        data-oid="_lgn.9o"
+                        data-oid="xfpddch"
                       >
                         Estado
                       </th>
                       <th
                         className="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider"
-                        data-oid="r13er:u"
+                        data-oid=".z_2q3x"
                       >
                         Acciones
                       </th>
@@ -2383,7 +2383,7 @@ const CollaboratorsSection = () => {
                   </thead>
                   <tbody
                     className="bg-white divide-y divide-gray-200"
-                    data-oid="i29l1_o"
+                    data-oid="7t1h587"
                   >
                     {collaborators.map((collaborator) => (
                       <tr
@@ -2392,22 +2392,22 @@ const CollaboratorsSection = () => {
                         onClick={() =>
                           handleViewCollaboratorDetails(collaborator)
                         }
-                        data-oid="y5bu2qe"
+                        data-oid="12q8kl0"
                       >
                         <td
                           className="px-6 py-4 whitespace-nowrap"
-                          data-oid="_5d_i48"
+                          data-oid="n4-7cw:"
                         >
-                          <div className="flex items-center" data-oid="z-o0fj1">
+                          <div className="flex items-center" data-oid="uf45h-m">
                             <div
                               className="flex-shrink-0 h-10 w-10 relative"
-                              data-oid="xjxss4l"
+                              data-oid="44wo6db"
                             >
                               <img
                                 className="h-10 w-10 rounded-full object-cover border-2 border-gray-100"
                                 src={collaborator.logo}
                                 alt={collaborator.name}
-                                data-oid="97xsgox"
+                                data-oid="67zk1_y"
                               />
 
                               <div
@@ -2416,31 +2416,31 @@ const CollaboratorsSection = () => {
                                     ? "bg-gray-200 text-gray-600 border border-blue-200"
                                     : "bg-amber-100 text-amber-600 border border-amber-200"
                                 }`}
-                                data-oid="4l9bvf2"
+                                data-oid="z_.4xyd"
                               >
                                 {collaborator.type === "company" ? (
                                   <Building
                                     className="h-3.5 w-3.5"
-                                    data-oid="257f-hf"
+                                    data-oid="w5b5rn2"
                                   />
                                 ) : (
                                   <Briefcase
                                     className="h-3.5 w-3.5"
-                                    data-oid="yg8d3oh"
+                                    data-oid=".xvpnkk"
                                   />
                                 )}
                               </div>
                             </div>
-                            <div className="ml-4" data-oid="b0hcqvq">
+                            <div className="ml-4" data-oid="w6egyga">
                               <div
                                 className="text-sm font-medium text-gray-900"
-                                data-oid="qi8hvjy"
+                                data-oid="iiag9pl"
                               >
                                 {collaborator.name}
                               </div>
                               <div
                                 className="text-xs text-gray-500 mt-1 flex items-center"
-                                data-oid="nhgq10z"
+                                data-oid="-bakovl"
                               >
                                 <span
                                   className={`px-2 py-0.5 rounded-sm text-xs font-medium inline-flex items-center ${
@@ -2448,7 +2448,7 @@ const CollaboratorsSection = () => {
                                       ? "bg-gray-100 text-blue-700"
                                       : "bg-amber-50 text-amber-700"
                                   }`}
-                                  data-oid="092ir94"
+                                  data-oid="cnn1k3g"
                                 >
                                   {collaborator.type === "company"
                                     ? "Empresa"
@@ -2460,64 +2460,64 @@ const CollaboratorsSection = () => {
                         </td>
                         <td
                           className="px-6 py-4 whitespace-nowrap"
-                          data-oid="wircplm"
+                          data-oid="68z30yy"
                         >
                           <div
                             className="text-sm text-gray-900"
-                            data-oid="hevq.ow"
+                            data-oid="qncjw8p"
                           >
                             {collaborator.contactName}
                           </div>
                           <div
                             className="text-sm text-gray-500"
-                            data-oid="6tnz5ro"
+                            data-oid="nww4yqy"
                           >
                             {collaborator.contactEmail}
                           </div>
                           <div
                             className="text-sm text-gray-500"
-                            data-oid="4s-8t_s"
+                            data-oid="cad94l0"
                           >
                             {collaborator.contactPhone}
                           </div>
                         </td>
                         <td
                           className="px-6 py-4 whitespace-nowrap"
-                          data-oid="9hg02_s"
+                          data-oid="2q-ifo4"
                         >
                           <div
                             className="text-sm text-gray-900"
-                            data-oid="_7afx24"
+                            data-oid="a8wy8d2"
                           >
                             {collaborator.city}
                           </div>
                           <div
                             className="text-sm text-gray-500"
-                            data-oid="a-bd.31"
+                            data-oid="fb.06pr"
                           >
                             {collaborator.country}
                           </div>
                         </td>
                         <td
                           className="px-6 py-4 whitespace-nowrap"
-                          data-oid="dg29rl."
+                          data-oid="s2qoxoj"
                         >
                           <div
                             className="text-sm text-gray-900"
-                            data-oid=".vnxr:r"
+                            data-oid="27b7ln8"
                           >
                             {collaborator.commissionRate}%
                           </div>
                           <div
                             className="text-sm text-gray-500"
-                            data-oid="nx-48c."
+                            data-oid="w497344"
                           >
                             {collaborator.paymentTerms}
                           </div>
                         </td>
                         <td
                           className="px-6 py-4 whitespace-nowrap"
-                          data-oid="fxxxo:u"
+                          data-oid="n5e:v6r"
                         >
                           <span
                             className={`px-2 py-1 inline-flex text-xs leading-5 font-semibold rounded-full ${
@@ -2527,7 +2527,7 @@ const CollaboratorsSection = () => {
                                   ? "bg-gray-100 text-gray-800"
                                   : "bg-gray-200 text-yellow-800"
                             }`}
-                            data-oid="0anzi.m"
+                            data-oid=":_vngqk"
                           >
                             <span
                               className={`h-1.5 w-1.5 rounded-full mr-1.5 mt-0.5 ${
@@ -2537,7 +2537,7 @@ const CollaboratorsSection = () => {
                                     ? "bg-gray-600"
                                     : "bg-yellow-600"
                               }`}
-                              data-oid="xh68pqc"
+                              data-oid="knffp.h"
                             ></span>
                             {collaborator.status === "active"
                               ? "Activo"
@@ -2548,7 +2548,7 @@ const CollaboratorsSection = () => {
                         </td>
                         <td
                           className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium"
-                          data-oid="rg-_ik6"
+                          data-oid="4hh.2eq"
                         >
                           <Button
                             variant="outline"
@@ -2557,9 +2557,9 @@ const CollaboratorsSection = () => {
                               handleDeleteCollaborator(e, collaborator.id)
                             }
                             className="text-gray-600 border-gray-200 hover:bg-gray-100"
-                            data-oid="6jlr1o2"
+                            data-oid="h9vupcn"
                           >
-                            <Trash2 size={16} data-oid="9ixcde:" />
+                            <Trash2 size={16} data-oid="cl6buqq" />
                           </Button>
                         </td>
                       </tr>
@@ -2568,8 +2568,8 @@ const CollaboratorsSection = () => {
                 </table>
 
                 {collaborators.length === 0 && (
-                  <div className="py-10 text-center" data-oid="8ysjaoa">
-                    <p className="text-gray-500" data-oid="ox9nl04">
+                  <div className="py-10 text-center" data-oid="vkulsl2">
+                    <p className="text-gray-500" data-oid="foe2s8w">
                       No se encontraron colaboradores
                     </p>
                   </div>

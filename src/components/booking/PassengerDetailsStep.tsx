@@ -249,17 +249,17 @@ export default function PassengerDetailsStep({
   // Mostrar mensaje de carga mientras se inicializa
   if (!initializedData && !error) {
     return (
-      <Card className="max-w-3xl mx-auto shadow-sm" data-oid="kjg_soh">
+      <Card className="max-w-3xl mx-auto shadow-sm" data-oid="kw0oxv2">
         <CardContent
           className="p-6 flex justify-center items-center"
-          data-oid="w6h7zus"
+          data-oid="jfbm22j"
         >
           <Loader2
             className="h-10 w-10 animate-spin text-primary mr-4"
-            data-oid="s2:c7jb"
+            data-oid=":dvt0lz"
           />
 
-          <p className="text-gray-600" data-oid="c0tbhg2">
+          <p className="text-gray-600" data-oid=":2n8iuh">
             Cargando datos de la sesión...
           </p>
         </CardContent>
@@ -270,23 +270,23 @@ export default function PassengerDetailsStep({
   // Mostrar mensaje de error si hay problemas con los datos
   if (error) {
     return (
-      <Card className="max-w-3xl mx-auto shadow-sm" data-oid=":ztoodx">
-        <CardContent className="p-6 text-center" data-oid="a.80otk">
+      <Card className="max-w-3xl mx-auto shadow-sm" data-oid="yyln0fs">
+        <CardContent className="p-6 text-center" data-oid="mxyjusa">
           <AlertCircle
             className="h-10 w-10 text-black mx-auto mb-4"
-            data-oid="y91ygkc"
+            data-oid="ckp9h4f"
           />
 
-          <h3 className="font-semibold text-lg mb-2" data-oid="c8wh5vu">
+          <h3 className="font-semibold text-lg mb-2" data-oid="f80xvjw">
             Error de datos
           </h3>
-          <p className="text-gray-600 mb-4" data-oid="sz0yedq">
+          <p className="text-gray-600 mb-4" data-oid="urh-n8w">
             {error}
           </p>
           <button
             onClick={() => window.location.reload()}
             className="px-4 py-2 bg-primary text-white rounded-md hover:bg-primary/90"
-            data-oid="zp89796"
+            data-oid=".dobg1."
           >
             Intentar de nuevo
           </button>
@@ -303,42 +303,42 @@ export default function PassengerDetailsStep({
   };
 
   return (
-    <Card className="max-w-3xl mx-auto shadow-sm" data-oid="1lgsr89">
-      <CardContent className="p-0" data-oid="3f7onjy">
+    <Card className="max-w-3xl mx-auto shadow-sm" data-oid="w22yzte">
+      <CardContent className="p-0" data-oid="i.h7:fv">
         {/* Resumen de la reserva */}
         <div
           className="bg-gray-50 p-4 rounded-t-lg border-b"
-          data-oid="t0xq0.9"
+          data-oid="o:kw4mv"
         >
-          <div className="mb-1" data-oid="btp6q02">
-            <p className="text-sm font-medium" data-oid="7o8uviy">
+          <div className="mb-1" data-oid="5pj91ru">
+            <p className="text-sm font-medium" data-oid="xswx1m-">
               {formatDate(initializedData?.date || "")} a las{" "}
               {initializedData?.time || ""} (CEST)
             </p>
           </div>
-          <div className="flex items-center gap-1 mb-1" data-oid="4di.92p">
-            <p className="text-sm text-gray-600" data-oid="gqys121">
+          <div className="flex items-center gap-1 mb-1" data-oid="m7jtyrg">
+            <p className="text-sm text-gray-600" data-oid="jk6xc8d">
               {initializedData?.from?.description || "Punto de recogida"}
             </p>
             {initializedData.tripType === "ida" && (
               <>
-                <span className="text-xs" data-oid="7t4d.qh">
+                <span className="text-xs" data-oid="0:.z3-n">
                   →
                 </span>
-                <p className="text-sm text-gray-600" data-oid="q:l-zd.">
+                <p className="text-sm text-gray-600" data-oid="juu.m52">
                   {initializedData?.to?.description || "Destino"}
                 </p>
               </>
             )}
             {initializedData.tripType === "horas" && (
-              <p className="text-sm text-gray-600 ml-2" data-oid="twueheb">
+              <p className="text-sm text-gray-600 ml-2" data-oid="ras3rh-">
                 ({initializedData?.duration || "2 horas"})
               </p>
             )}
           </div>
           {initializedData.tripType === "ida" && estimatedArrival && (
-            <div className="text-xs text-gray-500" data-oid="c7kjsh_">
-              <p data-oid="3-y5b-w">
+            <div className="text-xs text-gray-500" data-oid="g3v4b1o">
+              <p data-oid="-m06l6y">
                 Hora aproximada de llegada a las {estimatedArrival} (GMT+2) •{" "}
                 {distance} km
               </p>
@@ -346,15 +346,15 @@ export default function PassengerDetailsStep({
           )}
         </div>
 
-        <form onSubmit={handleSubmit} className="p-6" data-oid=":8ecce-">
+        <form onSubmit={handleSubmit} className="p-6" data-oid="4:ch_53">
           {/* Seleccione para quién realiza la reserva */}
-          <div className="mb-6" data-oid=".skk519">
-            <h2 className="text-lg font-semibold mb-4" data-oid="o:mmix0">
+          <div className="mb-6" data-oid="1xgpy9v">
+            <h2 className="text-lg font-semibold mb-4" data-oid="u:u31ep">
               Seleccione para quién realiza la reserva
             </h2>
-            <div className="border rounded-md" data-oid="e7xofq_">
-              <div className="p-4 border-b" data-oid="e1_c0w2">
-                <div className="flex items-center space-x-2" data-oid="zhwaopx">
+            <div className="border rounded-md" data-oid="gabhy:v">
+              <div className="p-4 border-b" data-oid="e_2bm-z">
+                <div className="flex items-center space-x-2" data-oid="ow-2e8i">
                   <input
                     type="radio"
                     id="reserve-self"
@@ -363,20 +363,20 @@ export default function PassengerDetailsStep({
                     checked={bookingFor === "self"}
                     onChange={() => setBookingFor("self")}
                     className="h-4 w-4 text-gray-600 border-gray-300 focus:ring-0 focus:ring-offset-0"
-                    data-oid="ig0:irs"
+                    data-oid="pz4643g"
                   />
 
                   <label
                     htmlFor="reserve-self"
                     className="text-sm font-medium cursor-pointer"
-                    data-oid=":tuywlt"
+                    data-oid="miciii4"
                   >
                     Reservar para mí
                   </label>
                 </div>
               </div>
-              <div className="p-4" data-oid="tst::p.">
-                <div className="flex items-center space-x-2" data-oid="sq4335f">
+              <div className="p-4" data-oid="v65zivp">
+                <div className="flex items-center space-x-2" data-oid="s.7-c.p">
                   <input
                     type="radio"
                     id="reserve-other"
@@ -385,13 +385,13 @@ export default function PassengerDetailsStep({
                     checked={bookingFor === "other"}
                     onChange={() => setBookingFor("other")}
                     className="h-4 w-4 text-gray-600 border-gray-300 focus:ring-0 focus:ring-offset-0"
-                    data-oid="l4i41lq"
+                    data-oid="e4hufdx"
                   />
 
                   <label
                     htmlFor="reserve-other"
                     className="text-sm font-medium cursor-pointer"
-                    data-oid="ptg4fvb"
+                    data-oid="s16wxa-"
                   >
                     Reservar para otra persona
                   </label>
@@ -401,17 +401,17 @@ export default function PassengerDetailsStep({
           </div>
 
           {/* Detalles del viaje */}
-          <div className="mb-6" data-oid="m7s6wh4">
-            <h2 className="text-lg font-semibold mb-4" data-oid="ol4u6sm">
+          <div className="mb-6" data-oid="lwjip2g">
+            <h2 className="text-lg font-semibold mb-4" data-oid="cwl2zk.">
               Detalles del viaje
             </h2>
 
             {/* Vuelo (opcional) */}
-            <div className="mb-4" data-oid="j:aonf:">
+            <div className="mb-4" data-oid="cek.rez">
               <label
                 htmlFor="flight-number"
                 className="block text-sm font-medium mb-1"
-                data-oid="e8s6p1h"
+                data-oid="9wa.gle"
               >
                 Número de vuelo (opcional)
               </label>
@@ -421,25 +421,25 @@ export default function PassengerDetailsStep({
                 value={flightNumber}
                 onChange={(e) => setFlightNumber(e.target.value)}
                 className="w-full"
-                data-oid="1ebxq1q"
+                data-oid="w0dd8jc"
               />
 
-              <p className="text-xs text-gray-500 mt-1" data-oid="wvhbyyu">
+              <p className="text-xs text-gray-500 mt-1" data-oid="cta.4wu">
                 Para vuelos, le enviaremos información actualizada si su vuelo
                 se retrasa.
               </p>
             </div>
 
             {/* Cartel de recogida */}
-            <div className="mb-4" data-oid="7hr.hxd">
+            <div className="mb-4" data-oid="nbk2ic6">
               <label
                 htmlFor="pickup-sign"
                 className="block text-sm font-medium mb-1"
-                data-oid=".c80gn:"
+                data-oid="cjeqo1n"
               >
                 Cartel de recogida{" "}
                 {bookingFor === "other" && (
-                  <span className="text-black" data-oid="2-8n264">
+                  <span className="text-black" data-oid="ra.w77b">
                     *
                   </span>
                 )}
@@ -451,21 +451,21 @@ export default function PassengerDetailsStep({
                 onChange={(e) => setPickupSign(e.target.value)}
                 className="w-full"
                 required={bookingFor === "other"}
-                data-oid="ogyedvh"
+                data-oid="l0jvf4n"
               />
 
-              <p className="text-xs text-gray-500 mt-1" data-oid="2vv15vp">
+              <p className="text-xs text-gray-500 mt-1" data-oid="sjs.zia">
                 El conductor llevará un cartel con este nombre para
                 identificarle.
               </p>
             </div>
 
             {/* Notas adicionales */}
-            <div className="mb-4" data-oid="tetuont">
+            <div className="mb-4" data-oid="53hkhfc">
               <label
                 htmlFor="notes"
                 className="block text-sm font-medium mb-1"
-                data-oid="o14vhyw"
+                data-oid="8afpg08"
               >
                 Notas adicionales (opcional)
               </label>
@@ -475,16 +475,16 @@ export default function PassengerDetailsStep({
                 value={notes}
                 onChange={(e) => setNotes(e.target.value)}
                 className="w-full min-h-[100px]"
-                data-oid="c9r.9dg"
+                data-oid="ul_5f5."
               />
             </div>
 
             {/* Referencia (opcional) */}
-            <div data-oid="g20bu63">
+            <div data-oid="gdm7s9o">
               <label
                 htmlFor="reference"
                 className="block text-sm font-medium mb-1"
-                data-oid="z2-r99f"
+                data-oid="83_chkg"
               >
                 Referencia (opcional)
               </label>
@@ -494,10 +494,10 @@ export default function PassengerDetailsStep({
                 value={reference}
                 onChange={(e) => setReference(e.target.value)}
                 className="w-full"
-                data-oid="0_24qr:"
+                data-oid="_18qqfp"
               />
 
-              <p className="text-xs text-gray-500 mt-1" data-oid="frph0jv">
+              <p className="text-xs text-gray-500 mt-1" data-oid="e6.0r3x">
                 Esta referencia se incluirá en su recibo para facilitar el
                 seguimiento.
               </p>
@@ -512,19 +512,19 @@ export default function PassengerDetailsStep({
               background: "#000000",
             }}
             disabled={loading}
-            data-oid="29n3266"
+            data-oid="ofueodp"
           >
             {loading ? (
               <div
                 className="flex items-center justify-center"
-                data-oid="kcjh8rk"
+                data-oid="-dhv_mf"
               >
                 <Loader2
                   className="h-5 w-5 animate-spin mr-2"
-                  data-oid="ilii-zp"
+                  data-oid="0cw.pw2"
                 />
 
-                <span data-oid="ccogqyb">Procesando...</span>
+                <span data-oid="jird82f">Procesando...</span>
               </div>
             ) : (
               "Continuar al pago"
@@ -534,15 +534,15 @@ export default function PassengerDetailsStep({
           {error && (
             <div
               className="mt-4 p-3 bg-gray-100 rounded-md border border-gray-200 text-gray-700 text-sm"
-              data-oid="gfos6:_"
+              data-oid="lt-2qp3"
             >
-              <div className="flex" data-oid="f2nc2e:">
+              <div className="flex" data-oid="fb-:o-2">
                 <AlertCircle
                   className="h-5 w-5 mr-2 flex-shrink-0"
-                  data-oid="k4ap4fi"
+                  data-oid="x.46b-0"
                 />
 
-                <span data-oid="ee5qd.7">{error}</span>
+                <span data-oid="2scx6j2">{error}</span>
               </div>
             </div>
           )}

@@ -123,16 +123,16 @@ const StatCard = ({
 }) => (
   <div
     className="bg-white rounded-xl shadow-md p-6 flex items-center"
-    data-oid=":vu:zjn"
+    data-oid="-s:ul86"
   >
-    <div className={`p-4 rounded-xl ${color} mr-4`} data-oid="r-hd2tj">
+    <div className={`p-4 rounded-xl ${color} mr-4`} data-oid="mortesx">
       {icon}
     </div>
-    <div data-oid="ns8uk4x">
-      <h3 className="text-sm text-gray-500" data-oid="bc95us6">
+    <div data-oid=":lb_hl7">
+      <h3 className="text-sm text-gray-500" data-oid="sygk4fh">
         {title}
       </h3>
-      <p className="text-2xl font-bold" data-oid="r42ch77">
+      <p className="text-2xl font-bold" data-oid="-0wxczx">
         {value}
       </p>
     </div>
@@ -199,78 +199,78 @@ export default function AdminPage() {
     {
       id: "dashboard",
       label: "Dashboard",
-      icon: <Home size={20} data-oid="c61-hto" />,
+      icon: <Home size={20} data-oid="mvy5--y" />,
     },
     {
       id: "users",
       label: "Usuarios",
-      icon: <Users size={20} data-oid="_.9blfn" />,
+      icon: <Users size={20} data-oid="_iugh5m" />,
     },
     {
       id: "collaborators",
       label: "Colaboradores",
-      icon: <Users size={20} data-oid="cqut_nz" />,
+      icon: <Users size={20} data-oid="d1-58xf" />,
     },
     {
       id: "drivers",
       label: "Chóferes",
-      icon: <Users size={20} data-oid=".dqrsyp" />,
+      icon: <Users size={20} data-oid="c2wmz0-" />,
     },
     {
       id: "vehicles",
       label: "Vehículos",
-      icon: <Car size={20} data-oid="j67:-j." />,
+      icon: <Car size={20} data-oid="zkot4f9" />,
     },
     {
       id: "routes",
       label: "Rutas",
-      icon: <Pin size={20} data-oid="04vqykd" />,
+      icon: <Pin size={20} data-oid="0grefl7" />,
     },
     {
       id: "bookings",
       label: "Reservas",
-      icon: <CalendarClock size={20} data-oid="9j75m_l" />,
+      icon: <CalendarClock size={20} data-oid="b-o54:3" />,
     },
     {
       id: "support",
       label: "Soporte",
-      icon: <MessageSquare size={20} data-oid="komcqvp" />,
+      icon: <MessageSquare size={20} data-oid=".2a4ltb" />,
     },
     {
       id: "blog",
       label: "Blog",
-      icon: <FileText size={20} data-oid=".p6jg3j" />,
+      icon: <FileText size={20} data-oid="dz:_5ef" />,
     },
     {
       id: "stats",
       label: "Estadísticas",
-      icon: <BarChart2 size={20} data-oid="c03at.8" />,
+      icon: <BarChart2 size={20} data-oid="rjso5r9" />,
     },
     {
       id: "settings",
       label: "Configuración",
-      icon: <Settings size={20} data-oid="edl6z9s" />,
+      icon: <Settings size={20} data-oid="9m_36ub" />,
     },
   ];
 
   return (
-    <div className="flex h-screen bg-gray-100" data-oid="yjbo65d">
+    <div className="flex h-screen bg-gray-100" data-oid="8.nis_t">
       {/* Sidebar - Versión escritorio */}
       <div
         className="hidden md:flex flex-col w-64 border-r bg-white"
-        data-oid="7lp02ng"
+        data-oid="f2d6n5s"
       >
-        <div className="p-5 border-b" data-oid="66kaub7">
-          <h1 className="text-xl font-bold text-gray-800" data-oid="64-l0po">
+        <div className="p-5 border-b" data-oid="ne4zvt9">
+          <h1 className="text-xl font-bold text-gray-800" data-oid="_6ncg3u">
             Panel Admin
           </h1>
-          <p className="text-sm text-gray-500 mt-1" data-oid="tj.6-36">
+          <p className="text-sm text-gray-500 mt-1" data-oid="yq_hta4">
             Privyde Transport
           </p>
         </div>
 
-        <div className="flex-1 overflow-y-auto py-4" data-oid="m9-ye59">
-          <nav className="px-2 space-y-1" data-oid="cm_.9rl">
+        <div className="flex-1 overflow-y-auto py-4" data-oid="lngi1vm">
+          <nav className="px-2 space-y-1" data-oid="awml-i4">
             {sidebarItems.map((item) => (
               <button
                 key={item.id}
@@ -280,9 +280,9 @@ export default function AdminPage() {
                     : "text-gray-700 hover:bg-gray-100"
                 }`}
                 onClick={() => setActiveSection(item.id)}
-                data-oid="nvp5b9_"
+                data-oid="ovsxn2-"
               >
-                <span className="mr-3" data-oid="29.x7am">
+                <span className="mr-3" data-oid="gapu4h.">
                   {item.icon}
                 </span>
                 {item.label}
@@ -291,13 +291,13 @@ export default function AdminPage() {
           </nav>
         </div>
 
-        <div className="p-4 border-t" data-oid="lbf1q9-">
+        <div className="p-4 border-t" data-oid="68_4vwx">
           <button
             onClick={handleLogout}
             className="w-full flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-lg"
-            data-oid="-yrk2wp"
+            data-oid="g.u5hzg"
           >
-            <LogOut size={20} className="mr-3" data-oid="j4.71dx" />
+            <LogOut size={20} className="mr-3" data-oid="r76mzva" />
             Cerrar sesión
           </button>
         </div>
@@ -306,30 +306,30 @@ export default function AdminPage() {
       {/* Sidebar móvil */}
       <div
         className={`md:hidden fixed inset-0 z-50 bg-gray-800 bg-opacity-50 transition-opacity ${menuOpen ? "opacity-100" : "opacity-0 pointer-events-none"}`}
-        data-oid="2jx1yic"
+        data-oid=":ilatk3"
       >
         <div
           className={`fixed inset-y-0 left-0 w-64 bg-white transition-transform transform ${menuOpen ? "translate-x-0" : "-translate-x-full"}`}
-          data-oid="fez3rip"
+          data-oid="fo8mdg:"
         >
           <div
             className="p-5 border-b flex justify-between items-center"
-            data-oid="yas.d7v"
+            data-oid="peenpe."
           >
-            <h1 className="text-xl font-bold text-gray-800" data-oid="wc7eafq">
+            <h1 className="text-xl font-bold text-gray-800" data-oid="y.ojg-j">
               Panel Admin
             </h1>
             <button
               onClick={() => setMenuOpen(false)}
               className="text-gray-500"
-              data-oid="kclahwe"
+              data-oid="vorkl:j"
             >
-              <X size={24} data-oid="tlwgqxu" />
+              <X size={24} data-oid="z31zj-x" />
             </button>
           </div>
 
-          <div className="flex-1 overflow-y-auto py-4" data-oid="f1.xq48">
-            <nav className="px-2 space-y-1" data-oid="80.n5_d">
+          <div className="flex-1 overflow-y-auto py-4" data-oid="nb3em-d">
+            <nav className="px-2 space-y-1" data-oid="gxr99:3">
               {sidebarItems.map((item) => (
                 <button
                   key={item.id}
@@ -342,9 +342,9 @@ export default function AdminPage() {
                     setActiveSection(item.id);
                     setMenuOpen(false);
                   }}
-                  data-oid="qgzmuqf"
+                  data-oid="4f1e_t2"
                 >
-                  <span className="mr-3" data-oid="cd7_-j4">
+                  <span className="mr-3" data-oid="j0ktreu">
                     {item.icon}
                   </span>
                   {item.label}
@@ -353,13 +353,13 @@ export default function AdminPage() {
             </nav>
           </div>
 
-          <div className="p-4 border-t" data-oid="mcn671n">
+          <div className="p-4 border-t" data-oid="j6o4e-x">
             <button
               onClick={handleLogout}
               className="w-full flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-lg"
-              data-oid="2bghu0h"
+              data-oid="68t2g26"
             >
-              <LogOut size={20} className="mr-3" data-oid="dhyo.go" />
+              <LogOut size={20} className="mr-3" data-oid="j8e1g1:" />
               Cerrar sesión
             </button>
           </div>
@@ -367,24 +367,24 @@ export default function AdminPage() {
       </div>
 
       {/* Contenido principal */}
-      <div className="flex-1 flex flex-col overflow-hidden" data-oid="y-yg1fq">
+      <div className="flex-1 flex flex-col overflow-hidden" data-oid=":-2im2t">
         {/* Header */}
         <header
           className="bg-white border-b py-4 px-6 flex items-center justify-between"
-          data-oid="a233pd3"
+          data-oid="c5rs36r"
         >
           {/* Left side - Mobile menu toggle + Section title */}
-          <div className="flex items-center" data-oid="8pv3jm3">
+          <div className="flex items-center" data-oid="rbqa3m8">
             <button
               className="md:hidden mr-4 text-gray-500"
               onClick={() => setMenuOpen(true)}
-              data-oid="qk46e9o"
+              data-oid="fdysava"
             >
-              <Menu size={24} data-oid="h34g:9h" />
+              <Menu size={24} data-oid="-.6mesm" />
             </button>
             <h2
               className="text-xl font-semibold text-gray-800 capitalize"
-              data-oid="sydswwz"
+              data-oid="tpvulpc"
             >
               {sidebarItems.find((item) => item.id === activeSection)?.label ||
                 "Dashboard"}
@@ -392,52 +392,52 @@ export default function AdminPage() {
           </div>
 
           {/* Right side - Actions */}
-          <div className="flex items-center space-x-4" data-oid="9oj:lka">
+          <div className="flex items-center space-x-4" data-oid="p7j:x2t">
             {/* Search */}
             <div
               className="hidden md:flex items-center relative"
-              data-oid="_mn_cgr"
+              data-oid="f1kl0u_"
             >
               <input
                 type="text"
                 placeholder="Buscar..."
                 className="pl-9 pr-4 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-1 focus:ring-red-500 w-64"
-                data-oid="7.9rqh4"
+                data-oid="mm-kd1u"
               />
 
               <Search
                 className="w-4 h-4 text-gray-400 absolute left-3"
-                data-oid="2nhuw:z"
+                data-oid="m.jvi8a"
               />
             </div>
 
             {/* Notifications */}
             <NotificationsMenu
               onSelectSupportConversation={handleSelectSupportConversation}
-              data-oid="vry3trd"
+              data-oid="xl70g9g"
             />
 
             {/* User dropdown */}
-            <div className="relative" data-oid="g7n9avt">
+            <div className="relative" data-oid="uku3lg_">
               <button
                 className="flex items-center text-gray-700 focus:outline-none"
-                data-oid="b_ozewh"
+                data-oid="4xm46-3"
               >
                 <div
                   className="w-8 h-8 rounded-full bg-gray-200 flex items-center justify-center text-gray-600 mr-2"
-                  data-oid="3qjt-rk"
+                  data-oid="2rlxlkv"
                 >
                   {user?.name?.charAt(0) || "A"}
                 </div>
                 <span
                   className="hidden md:block text-sm mr-1"
-                  data-oid="34k.d0l"
+                  data-oid=".cjutpr"
                 >
                   {user?.name || "Admin"}
                 </span>
                 <ChevronDown
                   className="w-4 h-4 text-gray-500"
-                  data-oid="39x6hez"
+                  data-oid="273xfgc"
                 />
               </button>
             </div>
@@ -447,25 +447,25 @@ export default function AdminPage() {
         {/* Contenido dinámico según la sección activa */}
         <main
           className="flex-1 overflow-y-auto bg-gray-100 p-4 md:p-6"
-          data-oid="3gehrl4"
+          data-oid=":-8lc80"
         >
           {activeSection === "dashboard" && (
-            <div className="space-y-6" data-oid="t8wdyjb">
+            <div className="space-y-6" data-oid="upntf.o">
               <div
                 className="flex justify-between items-center"
-                data-oid="66fh.71"
+                data-oid="rkv8un7"
               >
                 <h1
                   className="text-2xl font-bold text-gray-800"
-                  data-oid="yu-7adp"
+                  data-oid=":ndsq30"
                 >
                   Dashboard
                 </h1>
                 <button
                   className="flex items-center px-4 py-2 bg-black text-white rounded-lg hover:bg-gray-800 transition-colors"
-                  data-oid="uliaqdd"
+                  data-oid="2jh6bzc"
                 >
-                  <PlusCircle size={18} className="mr-2" data-oid=":mp-m6o" />
+                  <PlusCircle size={18} className="mr-2" data-oid="7q:gv:n" />
                   Nueva acción
                 </button>
               </div>
@@ -473,7 +473,7 @@ export default function AdminPage() {
               {/* Tarjetas de estadísticas */}
               <div
                 className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
-                data-oid="u.mt04_"
+                data-oid="qqwkfu5"
               >
                 <StatCard
                   title="Usuarios activos"
@@ -482,11 +482,11 @@ export default function AdminPage() {
                     <Users
                       size={24}
                       className="text-black"
-                      data-oid="y_5xxg4"
+                      data-oid="iapqk8p"
                     />
                   }
                   color="bg-gray-100"
-                  data-oid="jd8.1xq"
+                  data-oid="inqkuqu"
                 />
 
                 <StatCard
@@ -496,11 +496,11 @@ export default function AdminPage() {
                     <CalendarClock
                       size={24}
                       className="text-gray-600"
-                      data-oid="o224lld"
+                      data-oid="fo:hncr"
                     />
                   }
                   color="bg-green-50"
-                  data-oid="vl9ubsh"
+                  data-oid="fsy0861"
                 />
 
                 <StatCard
@@ -510,11 +510,11 @@ export default function AdminPage() {
                     <Car
                       size={24}
                       className="text-gray-500"
-                      data-oid="l6uai94"
+                      data-oid="nss66se"
                     />
                   }
                   color="bg-purple-50"
-                  data-oid="uc3othk"
+                  data-oid="24hr3my"
                 />
 
                 <StatCard
@@ -524,73 +524,73 @@ export default function AdminPage() {
                     <BarChart2
                       size={24}
                       className="text-amber-500"
-                      data-oid="splj00:"
+                      data-oid="m1d46ei"
                     />
                   }
                   color="bg-amber-50"
-                  data-oid="m2jgo.3"
+                  data-oid="o-ld970"
                 />
               </div>
 
               {/* Secciones principales */}
               <div
                 className="grid grid-cols-1 lg:grid-cols-3 gap-6"
-                data-oid="fubzd3h"
+                data-oid="-wd336-"
               >
                 {/* Últimas reservas */}
                 <div
                   className="lg:col-span-2 bg-white rounded-xl shadow-md p-6"
-                  data-oid="bklomiu"
+                  data-oid="2-c6r.g"
                 >
                   <div
                     className="flex justify-between items-center mb-4"
-                    data-oid="tl_fnum"
+                    data-oid="n-a-qk1"
                   >
                     <h2
                       className="text-lg font-semibold text-gray-800"
-                      data-oid="cpfja6k"
+                      data-oid="mwdukkd"
                     >
                       Últimas reservas
                     </h2>
                     <button
                       className="text-sm text-gray-600 hover:text-gray-700"
-                      data-oid="2-93beo"
+                      data-oid="-pocigi"
                     >
                       Ver todas
                     </button>
                   </div>
 
-                  <div className="overflow-x-auto" data-oid="vwrakin">
-                    <table className="w-full" data-oid="6w.iwn3">
-                      <thead data-oid="6-rabkm">
-                        <tr className="border-b" data-oid="-gx0bk7">
+                  <div className="overflow-x-auto" data-oid="1kspr85">
+                    <table className="w-full" data-oid="r3n-i5o">
+                      <thead data-oid="xqnoa7s">
+                        <tr className="border-b" data-oid="odemecr">
                           <th
                             className="py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                            data-oid="chl7gg6"
+                            data-oid="_:ola-4"
                           >
                             ID
                           </th>
                           <th
                             className="py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                            data-oid="ce6xppx"
+                            data-oid="ayvxh26"
                           >
                             Cliente
                           </th>
                           <th
                             className="py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                            data-oid="szdd2ob"
+                            data-oid="lm6tv46"
                           >
                             Destino
                           </th>
                           <th
                             className="py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                            data-oid="3ts18:z"
+                            data-oid="gt6tk8b"
                           >
                             Fecha
                           </th>
                           <th
                             className="py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                            data-oid="whl5c.p"
+                            data-oid="9tad2od"
                           >
                             Estado
                           </th>
@@ -598,39 +598,39 @@ export default function AdminPage() {
                       </thead>
                       <tbody
                         className="divide-y divide-gray-200"
-                        data-oid="_cw9dj8"
+                        data-oid="uva-it0"
                       >
                         {[1, 2, 3, 4, 5].map((i) => (
                           <tr
                             key={i}
                             className="hover:bg-gray-50"
-                            data-oid="hlf6fpd"
+                            data-oid="-f31z00"
                           >
                             <td
                               className="py-4 text-sm text-gray-500"
-                              data-oid="s2jf32_"
+                              data-oid="l4eeayc"
                             >
                               OP-{1000 + i}
                             </td>
                             <td
                               className="py-4 text-sm text-gray-900"
-                              data-oid="eft3mw5"
+                              data-oid="::v5z3k"
                             >
                               Cliente {i}
                             </td>
                             <td
                               className="py-4 text-sm text-gray-500"
-                              data-oid=".fpux:x"
+                              data-oid="dyrg.-b"
                             >
                               Madrid
                             </td>
                             <td
                               className="py-4 text-sm text-gray-500"
-                              data-oid="0j.8qvm"
+                              data-oid="t581rcs"
                             >
                               23/06/2024
                             </td>
-                            <td className="py-4" data-oid="w-ut8n8">
+                            <td className="py-4" data-oid="f8mpm_e">
                               <span
                                 className={`px-2 py-1 text-xs rounded-full ${
                                   i % 3 === 0
@@ -639,7 +639,7 @@ export default function AdminPage() {
                                       ? "bg-gray-200 text-green-800"
                                       : "bg-gray-200 text-blue-800"
                                 }`}
-                                data-oid=":cney1t"
+                                data-oid="x-0hfov"
                               >
                                 {i % 3 === 0
                                   ? "Pendiente"
@@ -658,54 +658,54 @@ export default function AdminPage() {
                 {/* Actividad reciente */}
                 <div
                   className="bg-white rounded-xl shadow-md p-6"
-                  data-oid="s68bc82"
+                  data-oid="09-:t:t"
                 >
                   <div
                     className="flex justify-between items-center mb-4"
-                    data-oid="anu44fc"
+                    data-oid="lbglg_2"
                   >
                     <h2
                       className="text-lg font-semibold text-gray-800"
-                      data-oid="35dtu7i"
+                      data-oid="38409mk"
                     >
                       Actividad reciente
                     </h2>
                     <button
                       className="text-sm text-gray-600 hover:text-gray-700"
-                      data-oid="g-hiwug"
+                      data-oid="k7_9r99"
                     >
                       Ver todo
                     </button>
                   </div>
 
-                  <div className="space-y-5" data-oid="87n-w-e">
+                  <div className="space-y-5" data-oid="77i67pi">
                     {[
                       {
-                        icon: <Users size={16} data-oid="9e4f6rq" />,
+                        icon: <Users size={16} data-oid="wz-sxkz" />,
                         text: "Nuevo usuario registrado",
                         time: "Hace 5 min",
                         color: "bg-gray-200 text-gray-600",
                       },
                       {
-                        icon: <Car size={16} data-oid="zj5n3rb" />,
+                        icon: <Car size={16} data-oid="zket0gw" />,
                         text: "Reserva completada #OP-1005",
                         time: "Hace 30 min",
                         color: "bg-gray-200 text-green-600",
                       },
                       {
-                        icon: <MessageSquare size={16} data-oid="1g.kel9" />,
+                        icon: <MessageSquare size={16} data-oid="4rd4z-." />,
                         text: "Nuevo mensaje de soporte",
                         time: "Hace 1 hora",
                         color: "bg-amber-100 text-amber-600",
                       },
                       {
-                        icon: <Settings size={16} data-oid="eombv-3" />,
+                        icon: <Settings size={16} data-oid="wdnqgzc" />,
                         text: "Mantenimiento programado",
                         time: "Hace 2 horas",
                         color: "bg-gray-200 text-purple-600",
                       },
                       {
-                        icon: <Users size={16} data-oid="_uif8ep" />,
+                        icon: <Users size={16} data-oid="s9cvswn" />,
                         text: "Nueva empresa registrada",
                         time: "Hace 3 horas",
                         color: "bg-gray-200 text-indigo-600",
@@ -714,24 +714,24 @@ export default function AdminPage() {
                       <div
                         key={i}
                         className="flex items-start"
-                        data-oid="e_veni0"
+                        data-oid="8fnjz2g"
                       >
                         <div
                           className={`p-2 rounded-full ${item.color} mr-3 flex-shrink-0`}
-                          data-oid="em6n_1i"
+                          data-oid="..vcqpu"
                         >
                           {item.icon}
                         </div>
-                        <div data-oid="4bm3h2o">
+                        <div data-oid="0qx-uxj">
                           <p
                             className="text-sm text-gray-900"
-                            data-oid="l.q_9ov"
+                            data-oid="d826fl."
                           >
                             {item.text}
                           </p>
                           <p
                             className="text-xs text-gray-500"
-                            data-oid=".c2yolx"
+                            data-oid="_9c35ia"
                           >
                             {item.time}
                           </p>
@@ -745,62 +745,62 @@ export default function AdminPage() {
           )}
 
           {activeSection === "vehicles" && (
-            <VehiclesSection data-oid="5pyn-d_" />
+            <VehiclesSection data-oid="rmy5.5p" />
           )}
 
-          {activeSection === "drivers" && <DriversSection data-oid="52-k473" />}
+          {activeSection === "drivers" && <DriversSection data-oid="t8was0-" />}
 
           {activeSection === "collaborators" && (
-            <CollaboratorsSection data-oid="6.w_m25" />
+            <CollaboratorsSection data-oid="bxv132w" />
           )}
 
           {activeSection === "bookings" && (
-            <BookingsSection data-oid="s3q6ihd" />
+            <BookingsSection data-oid="68uu91o" />
           )}
 
-          {activeSection === "routes" && <RoutesSection data-oid="n_z6h49" />}
+          {activeSection === "routes" && <RoutesSection data-oid="0agzt-_" />}
 
-          {activeSection === "stats" && <StatsSection data-oid="qmeq924" />}
+          {activeSection === "stats" && <StatsSection data-oid="0j6tbvh" />}
 
           {activeSection === "users" && (
-            <div data-oid="tsj-ovu">
-              <UsersManager data-oid="n48n7ke" />
+            <div data-oid="7unwtpr">
+              <UsersManager data-oid="_2m1:iw" />
             </div>
           )}
 
           {activeSection === "support" && (
             <SupportSection
               selectedConversationId={selectedConversationId}
-              data-oid="qaiw4o6"
+              data-oid="uw8t.ly"
             />
           )}
 
-          {activeSection === "blog" && <BlogSection data-oid="l-a6xww" />}
+          {activeSection === "blog" && <BlogSection data-oid="0.ihuyg" />}
 
           {activeSection === "settings" && (
             <div
               className="flex flex-col items-center justify-center h-full"
-              data-oid="ji8rk74"
+              data-oid="4oh9yz5"
             >
               <div
                 className="bg-white shadow-lg rounded-xl p-8 max-w-xl w-full text-center"
-                data-oid="fc6tu36"
+                data-oid="xlxwgpz"
               >
                 <h2
                   className="text-2xl font-bold text-gray-800 mb-4"
-                  data-oid="nb:9qqz"
+                  data-oid="h-7tbdg"
                 >
                   Sección {activeSection}
                 </h2>
-                <p className="text-gray-600 mb-6" data-oid="o9x9k67">
+                <p className="text-gray-600 mb-6" data-oid="g_ug:m1">
                   Esta sección está en desarrollo. Aquí se implementará la
                   gestión de {activeSection}.
                 </p>
                 <button
                   className="inline-flex items-center px-4 py-2 bg-black text-white rounded-lg hover:bg-gray-800 transition-colors"
-                  data-oid="x7x8duv"
+                  data-oid="rilqqyx"
                 >
-                  <PlusCircle size={18} className="mr-2" data-oid="ny7g19:" />
+                  <PlusCircle size={18} className="mr-2" data-oid="9vymeq-" />
                   Continuar desarrollo
                 </button>
               </div>

@@ -9,7 +9,7 @@ export const TagList = ({ tags, size = "md" }: TagListProps) => {
   const isSmall = size === "sm";
 
   return (
-    <div className="flex flex-wrap gap-2" data-oid="0-wuz33">
+    <div className="flex flex-wrap gap-2" data-oid="2fg1djg">
       {tags.map((tag, idx) => (
         <Link
           key={idx}
@@ -19,7 +19,7 @@ export const TagList = ({ tags, size = "md" }: TagListProps) => {
             ${isSmall ? "px-2 py-0.5 text-xs" : "px-3 py-1 text-sm"}
             rounded-full
           `}
-          data-oid="o7:idbc"
+          data-oid="rqkspih"
         >
           #{tag}
         </Link>

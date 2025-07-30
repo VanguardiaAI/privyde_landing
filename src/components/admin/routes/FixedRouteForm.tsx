@@ -801,7 +801,7 @@ const FixedRouteForm = ({
     ];
 
     return (
-      <div className="flex flex-wrap gap-2" data-oid="fcerdjx">
+      <div className="flex flex-wrap gap-2" data-oid="bs7rsnf">
         {days.map((day) => (
           <div
             key={day}
@@ -814,7 +814,7 @@ const FixedRouteForm = ({
                   : "bg-gray-100 text-gray-600 border border-gray-200 hover:bg-gray-200"
               }
             `}
-            data-oid=".o.pgee"
+            data-oid="ntub2k-"
           >
             {day}
           </div>
@@ -824,56 +824,56 @@ const FixedRouteForm = ({
   };
 
   return (
-    <div data-oid="bx2hfwe">
-      <Card className="shadow-md overflow-hidden" data-oid="zo01f59">
-        <CardContent className="p-6" data-oid="zj2::.j">
+    <div data-oid="g77fa:9">
+      <Card className="shadow-md overflow-hidden" data-oid="l7p6w:9">
+        <CardContent className="p-6" data-oid="9d34mp5">
           <div
             className="flex justify-between items-center mb-6"
-            data-oid="m98w.7u"
+            data-oid=".goyqic"
           >
-            <h2 className="text-2xl font-semibold" data-oid="avyt18r">
+            <h2 className="text-2xl font-semibold" data-oid="4ugqyeh">
               {editMode ? "Editar Ruta Fija" : "Nueva Ruta Fija"}
             </h2>
-            <div className="flex space-x-2" data-oid="0kafwwi">
+            <div className="flex space-x-2" data-oid="zo:css4">
               <Button
                 variant="outline"
                 onClick={onCancel}
                 disabled={loading}
                 className="flex items-center"
-                data-oid="f0bsf87"
+                data-oid="mx4q4he"
               >
-                <X className="h-4 w-4 mr-2" data-oid="0pvl5i:" />
+                <X className="h-4 w-4 mr-2" data-oid="wvv36rz" />
                 Cancelar
               </Button>
               <Button
                 onClick={handleSubmit}
                 disabled={loading}
                 className="flex items-center bg-black hover:bg-gray-800"
-                data-oid="9lwxytk"
+                data-oid="9e7bew."
               >
                 {loading ? (
                   <Loader2
                     className="h-4 w-4 mr-2 animate-spin"
-                    data-oid="2nvw_k."
+                    data-oid="zawity6"
                   />
                 ) : (
-                  <Save className="h-4 w-4 mr-2" data-oid="t1b-e2-" />
+                  <Save className="h-4 w-4 mr-2" data-oid="19s1.qm" />
                 )}
                 {editMode ? "Actualizar" : "Guardar"}
               </Button>
             </div>
           </div>
 
-          <form className="space-y-6" data-oid="vz_a0xg">
+          <form className="space-y-6" data-oid="y-ge48-">
             {/* Selección de colaborador */}
-            <div className="mb-6" data-oid="uygjka6">
-              <Label className="font-medium text-base" data-oid="kee00lc">
+            <div className="mb-6" data-oid="..a3.37">
+              <Label className="font-medium text-base" data-oid="ijjn6mb">
                 Seleccionar Colaborador
               </Label>
-              <div className="relative mt-1" data-oid="qjxevqj">
+              <div className="relative mt-1" data-oid="8n.llc1">
                 <Building
                   className="absolute left-3 top-3 h-4 w-4 text-gray-500"
-                  data-oid="-ir:cqt"
+                  data-oid="32vfvnw"
                 />
 
                 <Select
@@ -883,24 +883,24 @@ const FixedRouteForm = ({
                       handleSelectChange("collaboratorId", value);
                     }
                   }}
-                  data-oid="5z4bvrc"
+                  data-oid="ous7laz"
                 >
-                  <SelectTrigger className="pl-10" data-oid="m6u96xr">
+                  <SelectTrigger className="pl-10" data-oid="66x4o:2">
                     <SelectValue
                       placeholder={
                         loadingCollaborators
                           ? "Cargando colaboradores..."
                           : "Seleccionar colaborador"
                       }
-                      data-oid="5.0v6ip"
+                      data-oid="_nf:8s2"
                     />
                   </SelectTrigger>
-                  <SelectContent data-oid="_prb2ei">
+                  <SelectContent data-oid="k9o0y1o">
                     {collaborators.map((collaborator) => (
                       <SelectItem
                         key={collaborator.id}
                         value={collaborator.id}
-                        data-oid="76yu4pa"
+                        data-oid="lu:l0c:"
                       >
                         {collaborator.name} ({collaborator.country})
                       </SelectItem>
@@ -911,8 +911,8 @@ const FixedRouteForm = ({
             </div>
 
             {/* Nombre de la ruta */}
-            <div data-oid="guzt_tt">
-              <Label htmlFor="name" data-oid="1pmyrrw">
+            <div data-oid="v:5835l">
+              <Label htmlFor="name" data-oid=":wxr6rv">
                 Nombre de la Ruta
               </Label>
               <Input
@@ -922,17 +922,17 @@ const FixedRouteForm = ({
                 onChange={handleInputChange}
                 placeholder="El nombre se generará automáticamente"
                 className="mt-1"
-                data-oid="we42q9j"
+                data-oid="kvc329n"
               />
             </div>
 
             {/* Origen y Destino con Google Places Autocomplete */}
             <div
               className="grid grid-cols-1 md:grid-cols-2 gap-6"
-              data-oid="bq4:xd."
+              data-oid="1s.7ku1"
             >
-              <div data-oid="kfwdeki">
-                <Label htmlFor="origin" data-oid="2om6wn.">
+              <div data-oid=".6fv-0q">
+                <Label htmlFor="origin" data-oid="hsesr4h">
                   Origen
                 </Label>
                 <GooglePlacesAutocomplete
@@ -942,11 +942,11 @@ const FixedRouteForm = ({
                   onChange={handleOriginSelect}
                   onSelect={handleOriginDetails}
                   className="mt-1"
-                  data-oid="8j0wm11"
+                  data-oid="8t4:krl"
                 />
               </div>
-              <div data-oid="soqa:7q">
-                <Label htmlFor="destination" data-oid="6ij5b_-">
+              <div data-oid="v7bcmn7">
+                <Label htmlFor="destination" data-oid="g0fz67j">
                   Destino
                 </Label>
                 <GooglePlacesAutocomplete
@@ -956,7 +956,7 @@ const FixedRouteForm = ({
                   onChange={handleDestinationSelect}
                   onSelect={handleDestinationDetails}
                   className="mt-1"
-                  data-oid="526u78q"
+                  data-oid="9unu3th"
                 />
 
                 {selectedOrigin &&
@@ -967,11 +967,11 @@ const FixedRouteForm = ({
                     formValues.destination.place_id && (
                     <div
                       className="flex items-center mt-2 text-black text-sm"
-                      data-oid="ud4ue07"
+                      data-oid="5q1lu94"
                     >
                       <AlertTriangle
                         className="h-4 w-4 mr-1"
-                        data-oid="c3o46wa"
+                        data-oid="ujd5b7."
                       />
                       El origen y destino no pueden ser iguales
                     </div>
@@ -980,56 +980,56 @@ const FixedRouteForm = ({
             </div>
 
             {/* Vehículos disponibles */}
-            <div data-oid="-vd1k9g">
-              <h3 className="text-lg font-medium mb-3" data-oid="mbxhok9">
+            <div data-oid="5r6325e">
+              <h3 className="text-lg font-medium mb-3" data-oid="himtk4d">
                 Vehículos Disponibles
               </h3>
               {!formValues.collaboratorId ? (
                 <div
                   className="flex items-center justify-center p-4 border border-dashed rounded-md bg-gray-50"
-                  data-oid="naz_p.w"
+                  data-oid="qgep_p9"
                 >
                   <Info
                     className="h-5 w-5 text-gray-400 mr-2"
-                    data-oid="rspr:pd"
+                    data-oid="8:gzc.s"
                   />
 
-                  <span className="text-gray-500" data-oid="8ks0pt0">
+                  <span className="text-gray-500" data-oid="r-d.28z">
                     Seleccione un colaborador para ver vehículos disponibles
                   </span>
                 </div>
               ) : loadingVehicles ? (
                 <div
                   className="flex items-center justify-center p-6"
-                  data-oid="1u-kze5"
+                  data-oid="tozx:hu"
                 >
                   <Loader2
                     className="h-6 w-6 text-black animate-spin"
-                    data-oid="a-n:h_q"
+                    data-oid="6a8.te9"
                   />
 
-                  <span className="ml-2" data-oid="8qjlu0o">
+                  <span className="ml-2" data-oid="ovo128h">
                     Cargando vehículos...
                   </span>
                 </div>
               ) : vehicles.length === 0 ? (
                 <div
                   className="flex items-center justify-center p-4 border border-dashed rounded-md bg-gray-50"
-                  data-oid="64pr7c0"
+                  data-oid="cp_x9i0"
                 >
                   <Info
                     className="h-5 w-5 text-gray-400 mr-2"
-                    data-oid="mizqn7z"
+                    data-oid="fhiy99w"
                   />
 
-                  <span className="text-gray-500" data-oid="s2x254-">
+                  <span className="text-gray-500" data-oid="528pqu0">
                     No hay vehículos disponibles para este colaborador
                   </span>
                 </div>
               ) : (
                 <div
                   className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-2"
-                  data-oid="firskp_"
+                  data-oid="jb_kymy"
                 >
                   {vehicles.map((vehicle) => (
                     <div
@@ -1043,53 +1043,53 @@ const FixedRouteForm = ({
                         }
                       `}
                       onClick={() => handleVehicleToggle(vehicle.id)}
-                      data-oid="69yuclm"
+                      data-oid="7f_m814"
                     >
-                      <div className="flex-shrink-0" data-oid="cv9x9dw">
+                      <div className="flex-shrink-0" data-oid="t5b_cf8">
                         {vehicle.imageUrl ? (
                           <img
                             src={vehicle.imageUrl}
                             alt={vehicle.model}
                             className="h-12 w-12 rounded-md object-cover"
-                            data-oid="yqef.qj"
+                            data-oid="j_0k5o4"
                           />
                         ) : (
                           <div
                             className="h-12 w-12 rounded-md bg-gray-200 flex items-center justify-center"
-                            data-oid="rrayz4n"
+                            data-oid="hataz0j"
                           >
                             <Car
                               className="h-6 w-6 text-gray-500"
-                              data-oid="lxxqn43"
+                              data-oid="f4gc6qb"
                             />
                           </div>
                         )}
                       </div>
-                      <div className="ml-3 flex-1" data-oid="y:0ho8b">
-                        <div className="font-medium" data-oid="vhdb6ov">
+                      <div className="ml-3 flex-1" data-oid="aex5i.l">
+                        <div className="font-medium" data-oid="9r8b89r">
                           {vehicle.model}
                         </div>
                         <div
                           className="text-sm text-gray-500"
-                          data-oid="kdsmgmf"
+                          data-oid="96y0qaj"
                         >
                           {vehicle.licensePlate}
                         </div>
                         {vehicle.driver && (
                           <div
                             className="text-xs text-gray-500 mt-1"
-                            data-oid="qsec5u4"
+                            data-oid="-wcf8ph"
                           >
                             <User
                               className="h-3 w-3 inline mr-1"
-                              data-oid="392uu7g"
+                              data-oid="em5hqtd"
                             />
 
                             {vehicle.driver.name}
                           </div>
                         )}
                       </div>
-                      <div className="flex-shrink-0 ml-2" data-oid="uhoatxx">
+                      <div className="flex-shrink-0 ml-2" data-oid="l:3iz83">
                         <Checkbox
                           checked={formValues.vehicleIds.includes(vehicle.id)}
                           onCheckedChange={(
@@ -1102,7 +1102,7 @@ const FixedRouteForm = ({
                             e.stopPropagation();
                             handleVehicleToggle(vehicle.id);
                           }}
-                          data-oid="0-d1ikq"
+                          data-oid="zmd9g14"
                         />
                       </div>
                     </div>
@@ -1112,22 +1112,22 @@ const FixedRouteForm = ({
             </div>
 
             {/* Precios */}
-            <div data-oid="wipk9iy">
-              <h3 className="text-lg font-medium mb-3" data-oid="u:st8ki">
+            <div data-oid="k_7r6ab">
+              <h3 className="text-lg font-medium mb-3" data-oid="dxk1l0:">
                 Precios
               </h3>
               <div
                 className="grid grid-cols-1 md:grid-cols-3 gap-6"
-                data-oid="_mdotrp"
+                data-oid="dz2l87e"
               >
-                <div data-oid=":58fler">
-                  <Label htmlFor="standard" data-oid="et7an:b">
+                <div data-oid="db8v5fa">
+                  <Label htmlFor="standard" data-oid="a:syroa">
                     Precio Estándar
                   </Label>
-                  <div className="relative mt-1" data-oid="vphup4w">
+                  <div className="relative mt-1" data-oid="izonfz6">
                     <DollarSign
                       className="absolute left-3 top-3 h-4 w-4 text-gray-500"
-                      data-oid="9q:2u2d"
+                      data-oid="mjwbj.t"
                     />
 
                     <Input
@@ -1138,18 +1138,18 @@ const FixedRouteForm = ({
                       onChange={handlePriceChange}
                       placeholder="0"
                       className="pl-10"
-                      data-oid="dd4haz1"
+                      data-oid="e3emjlz"
                     />
                   </div>
                 </div>
-                <div data-oid="ap.u:2w">
-                  <Label htmlFor="night" data-oid="qp48r4q">
+                <div data-oid="9faj8jk">
+                  <Label htmlFor="night" data-oid="8ygtsso">
                     Precio Nocturno
                   </Label>
-                  <div className="relative mt-1" data-oid="0lz6k29">
+                  <div className="relative mt-1" data-oid="gpyi8_8">
                     <DollarSign
                       className="absolute left-3 top-3 h-4 w-4 text-gray-500"
-                      data-oid="g3hcelf"
+                      data-oid="m953bd5"
                     />
 
                     <Input
@@ -1160,18 +1160,18 @@ const FixedRouteForm = ({
                       onChange={handlePriceChange}
                       placeholder="0"
                       className="pl-10"
-                      data-oid="o0e:9h_"
+                      data-oid="do67d-5"
                     />
                   </div>
                 </div>
-                <div data-oid="7tx:poe">
-                  <Label htmlFor="holiday" data-oid="np-h9xj">
+                <div data-oid="yomcb2l">
+                  <Label htmlFor="holiday" data-oid="epc9v4s">
                     Precio Día Festivo
                   </Label>
-                  <div className="relative mt-1" data-oid="poy9954">
+                  <div className="relative mt-1" data-oid="lxz:j46">
                     <DollarSign
                       className="absolute left-3 top-3 h-4 w-4 text-gray-500"
-                      data-oid="b15am6j"
+                      data-oid="u.2mn_g"
                     />
 
                     <Input
@@ -1182,13 +1182,13 @@ const FixedRouteForm = ({
                       onChange={handlePriceChange}
                       placeholder="0"
                       className="pl-10"
-                      data-oid="5:q_942"
+                      data-oid="ohzjs7x"
                     />
                   </div>
                 </div>
               </div>
-              <div className="mt-3" data-oid="2vf4.:c">
-                <Label htmlFor="currency" data-oid="dz_zjv5">
+              <div className="mt-3" data-oid="fu6k81h">
+                <Label htmlFor="currency" data-oid="batgyzg">
                   Moneda
                 </Label>
                 <Select
@@ -1196,22 +1196,22 @@ const FixedRouteForm = ({
                   onValueChange={(value) =>
                     handleSelectChange("currency", value)
                   }
-                  data-oid="wj9qeq0"
+                  data-oid="4_6q0b:"
                 >
-                  <SelectTrigger data-oid="syc0-8n">
+                  <SelectTrigger data-oid="9ru3ktr">
                     <SelectValue
                       placeholder="Seleccionar moneda"
-                      data-oid="bwyts8o"
+                      data-oid="7_jdh3o"
                     />
                   </SelectTrigger>
-                  <SelectContent data-oid="ijiqeju">
-                    <SelectItem value="MXN" data-oid="xa4s.45">
+                  <SelectContent data-oid="ogoju84">
+                    <SelectItem value="MXN" data-oid="18k0tvj">
                       MXN - Peso Mexicano
                     </SelectItem>
-                    <SelectItem value="USD" data-oid="tt5f-sr">
+                    <SelectItem value="USD" data-oid="t.z_wht">
                       USD - Dólar Estadounidense
                     </SelectItem>
-                    <SelectItem value="EUR" data-oid="gx_hprj">
+                    <SelectItem value="EUR" data-oid="38f-hg8">
                       EUR - Euro
                     </SelectItem>
                   </SelectContent>
@@ -1220,21 +1220,21 @@ const FixedRouteForm = ({
             </div>
 
             {/* Disponibilidad: Días y Horarios (combinados) */}
-            <div data-oid="w-ogf65">
-              <h3 className="text-lg font-medium mb-3" data-oid="tr9g5-m">
+            <div data-oid="o4ov-66">
+              <h3 className="text-lg font-medium mb-3" data-oid=".odowrf">
                 Disponibilidad
               </h3>
 
               {/* Días disponibles */}
-              <div className="mb-4" data-oid="7g1ns7z">
+              <div className="mb-4" data-oid="0sa_3tw">
                 <div
                   className="flex justify-between items-center mb-2"
-                  data-oid="0.hzek:"
+                  data-oid="baeyf33"
                 >
                   <Label
                     htmlFor="days"
                     className="text-sm text-gray-600"
-                    data-oid="4kphqu_"
+                    data-oid="397487j"
                   >
                     Días Disponibles
                   </Label>
@@ -1243,15 +1243,15 @@ const FixedRouteForm = ({
               </div>
 
               {/* Horarios */}
-              <div data-oid="bbk4k8k">
+              <div data-oid="-szwsfe">
                 <div
                   className="flex justify-between items-center mb-2"
-                  data-oid="0r69_u9"
+                  data-oid="tpaacbf"
                 >
                   <Label
                     htmlFor="timeSlots"
                     className="text-sm text-gray-600"
-                    data-oid="chmltwr"
+                    data-oid="gwehw0o"
                   >
                     Horarios Disponibles
                   </Label>
@@ -1261,26 +1261,26 @@ const FixedRouteForm = ({
                     size="sm"
                     onClick={addTimeSlot}
                     className="flex items-center h-8"
-                    data-oid="8lm8txc"
+                    data-oid="rul_o7k"
                   >
-                    <PlusCircle className="h-4 w-4 mr-1" data-oid="ujs8qnd" />
+                    <PlusCircle className="h-4 w-4 mr-1" data-oid="9l3z8lk" />
                     Añadir
                   </Button>
                 </div>
                 <div
                   className="grid grid-cols-1 md:grid-cols-2 gap-2"
-                  data-oid="bbpl1_z"
+                  data-oid="84nbhif"
                 >
                   {formValues.timeSlots.map((timeSlot, index) => (
                     <div
                       key={index}
                       className="flex items-center space-x-2"
-                      data-oid="xalg5r-"
+                      data-oid="rx7gkku"
                     >
-                      <div className="relative flex-1" data-oid="7zf.:n5">
+                      <div className="relative flex-1" data-oid="cbk.6ou">
                         <Clock
                           className="absolute left-3 top-3 h-4 w-4 text-gray-500"
-                          data-oid="334swy_"
+                          data-oid="9bbcos2"
                         />
 
                         <Input
@@ -1290,7 +1290,7 @@ const FixedRouteForm = ({
                           }
                           placeholder="Ej: 08:00-12:00"
                           className="pl-10"
-                          data-oid="tsy2s_n"
+                          data-oid="fgpx9qy"
                         />
                       </div>
                       {formValues.timeSlots.length > 1 && (
@@ -1300,9 +1300,9 @@ const FixedRouteForm = ({
                           size="icon"
                           onClick={() => removeTimeSlot(index)}
                           className="text-black hover:bg-gray-100 hover:text-gray-600"
-                          data-oid="453vggk"
+                          data-oid="_.rtnjo"
                         >
-                          <MinusCircle className="h-5 w-5" data-oid="g8f46h4" />
+                          <MinusCircle className="h-5 w-5" data-oid="5x-idl:" />
                         </Button>
                       )}
                     </div>
@@ -1312,33 +1312,33 @@ const FixedRouteForm = ({
             </div>
 
             {/* Estado de la ruta */}
-            <div data-oid="k42d2az">
-              <h3 className="text-lg font-medium mb-3" data-oid="2xari6:">
+            <div data-oid="o..kugz">
+              <h3 className="text-lg font-medium mb-3" data-oid="qnqub:r">
                 Estado
               </h3>
-              <div className="flex items-center space-x-4" data-oid="vhi:u4g">
-                <Label htmlFor="status" data-oid="z.ug12x">
+              <div className="flex items-center space-x-4" data-oid="xivx3x4">
+                <Label htmlFor="status" data-oid="135yy_.">
                   Estado de la ruta:
                 </Label>
                 <Select
                   value={formValues.status}
                   onValueChange={(value) => handleSelectChange("status", value)}
-                  data-oid="zqnoqcl"
+                  data-oid="g:anlc_"
                 >
-                  <SelectTrigger className="w-40" data-oid="_xqe24x">
+                  <SelectTrigger className="w-40" data-oid="2nb5u.4">
                     <SelectValue
                       placeholder="Seleccionar estado"
-                      data-oid="0wkfpmv"
+                      data-oid="8_b73i2"
                     />
                   </SelectTrigger>
-                  <SelectContent data-oid="kwizqqd">
-                    <SelectItem value="active" data-oid="5k4wg1l">
+                  <SelectContent data-oid="2:jka7y">
+                    <SelectItem value="active" data-oid="stf:z6g">
                       Activa
                     </SelectItem>
-                    <SelectItem value="inactive" data-oid="0gda41d">
+                    <SelectItem value="inactive" data-oid="hf6mhjl">
                       Inactiva
                     </SelectItem>
-                    <SelectItem value="draft" data-oid="exx1oes">
+                    <SelectItem value="draft" data-oid="_p.puu5">
                       Borrador
                     </SelectItem>
                   </SelectContent>
@@ -1347,8 +1347,8 @@ const FixedRouteForm = ({
             </div>
 
             {/* Notas o descripción */}
-            <div data-oid="_h95mvr">
-              <Label htmlFor="description" data-oid="3bb56yc">
+            <div data-oid=".-vcnx8">
+              <Label htmlFor="description" data-oid="mp_d6y:">
                 Notas o Descripción (opcional)
               </Label>
               <Textarea
@@ -1359,7 +1359,7 @@ const FixedRouteForm = ({
                 placeholder="Añade notas o detalles adicionales sobre esta ruta..."
                 rows={3}
                 className="mt-1"
-                data-oid="ovmljyd"
+                data-oid="42j7-07"
               />
             </div>
           </form>

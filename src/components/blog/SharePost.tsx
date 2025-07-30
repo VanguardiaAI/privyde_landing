@@ -29,25 +29,25 @@ export const SharePost = ({
   const shareLinks = [
     {
       name: "Facebook",
-      icon: <FacebookIcon size={18} data-oid="t0t9vad" />,
+      icon: <FacebookIcon size={18} data-oid="uhk1ulo" />,
       url: `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`,
       color: "bg-[#4267B2] hover:bg-[#3b5998]",
     },
     {
       name: "Twitter",
-      icon: <TwitterIcon size={18} data-oid="6:kt.y." />,
+      icon: <TwitterIcon size={18} data-oid="ie1dgtg" />,
       url: `https://twitter.com/intent/tweet?url=${encodedUrl}&text=${encodedTitle}`,
       color: "bg-[#1DA1F2] hover:bg-[#1a91da]",
     },
     {
       name: "LinkedIn",
-      icon: <LinkedinIcon size={18} data-oid="ejo_k_6" />,
+      icon: <LinkedinIcon size={18} data-oid="qykm1gc" />,
       url: `https://www.linkedin.com/sharing/share-offsite/?url=${encodedUrl}`,
       color: "bg-[#0A66C2] hover:bg-[#0a5cb3]",
     },
     {
       name: "Email",
-      icon: <MailIcon size={18} data-oid="roxjxcp" />,
+      icon: <MailIcon size={18} data-oid="y9zqoj1" />,
       url: `mailto:?subject=${encodedTitle}&body=${encodedDescription}%0A%0A${encodedUrl}`,
       color: "bg-gray-600 hover:bg-gray-700",
     },
@@ -72,15 +72,15 @@ export const SharePost = ({
   };
 
   return (
-    <div className={`flex flex-col gap-4 ${className}`} data-oid="jdcw5pr">
-      <div className="flex items-center gap-2" data-oid="0:wm02o">
-        <Share2Icon size={20} className="text-gray-500" data-oid="n.wn50." />
-        <h3 className="font-medium" data-oid=".2pgrdn">
+    <div className={`flex flex-col gap-4 ${className}`} data-oid="45z46ae">
+      <div className="flex items-center gap-2" data-oid="cs:ina1">
+        <Share2Icon size={20} className="text-gray-500" data-oid="t7t2rx3" />
+        <h3 className="font-medium" data-oid="john7.f">
           Compartir este artículo
         </h3>
       </div>
 
-      <div className="flex flex-wrap gap-2" data-oid="dl22m4x">
+      <div className="flex flex-wrap gap-2" data-oid="d2pnphy">
         {shareLinks.map((link) => (
           <Button
             key={link.name}
@@ -89,7 +89,7 @@ export const SharePost = ({
             className={`${link.color} text-white rounded-full`}
             onClick={() => window.open(link.url, "_blank")}
             aria-label={`Compartir en ${link.name}`}
-            data-oid="6qz7n-a"
+            data-oid="xaw_9dz"
           >
             {link.icon}
           </Button>
@@ -101,9 +101,9 @@ export const SharePost = ({
           className="rounded-full"
           onClick={copyToClipboard}
           aria-label="Copiar enlace"
-          data-oid="0slmifa"
+          data-oid="rf25axi"
         >
-          <Link2Icon size={18} data-oid="fd9ym85" />
+          <Link2Icon size={18} data-oid="rc-fajz" />
         </Button>
       </div>
     </div>

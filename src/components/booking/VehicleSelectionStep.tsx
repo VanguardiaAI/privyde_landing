@@ -49,17 +49,17 @@ export default function VehicleSelectionStep({
   // Verificar que sessionData no sea undefined o null
   if (!sessionData) {
     return (
-      <Card className="max-w-3xl mx-auto shadow-sm" data-oid="cpzowrl">
-        <CardContent className="p-6 text-center" data-oid="26.ndub">
+      <Card className="max-w-3xl mx-auto shadow-sm" data-oid="b16e.vt">
+        <CardContent className="p-6 text-center" data-oid="r3p21hv">
           <AlertCircle
             className="h-10 w-10 text-black mx-auto mb-4"
-            data-oid="l1mnrzb"
+            data-oid="g9tsch4"
           />
 
-          <h3 className="font-semibold text-lg mb-2" data-oid="q6lr96b">
+          <h3 className="font-semibold text-lg mb-2" data-oid="ho8kupn">
             Error de datos
           </h3>
-          <p className="text-gray-600 mb-4" data-oid="so44l77">
+          <p className="text-gray-600 mb-4" data-oid="sqvi38i">
             No se han podido cargar los datos de la sesión
           </p>
         </CardContent>
@@ -122,14 +122,14 @@ export default function VehicleSelectionStep({
     return (
       <div
         className="flex items-center justify-center min-h-[300px]"
-        data-oid="x.j._5d"
+        data-oid="hl-.73j"
       >
         <Loader2
           className="h-8 w-8 animate-spin text-gray-700"
-          data-oid="tqvtymb"
+          data-oid="l:rrpf:"
         />
 
-        <span className="ml-2 text-lg" data-oid="4cmoyue">
+        <span className="ml-2 text-lg" data-oid="0naquqw">
           gando opciones de vehículos...
         </span>
       </div>
@@ -139,17 +139,17 @@ export default function VehicleSelectionStep({
   // Si hay un error
   if (error) {
     return (
-      <div className="text-center py-8" data-oid="l.l20ze">
-        <h3 className="text-lg font-medium text-gray-600" data-oid="02980:g">
+      <div className="text-center py-8" data-oid="p02o71c">
+        <h3 className="text-lg font-medium text-gray-600" data-oid="bz1q.jx">
           Error
         </h3>
-        <p className="mt-2" data-oid="pk8ske3">
+        <p className="mt-2" data-oid="t3:hcx1">
           {error}
         </p>
         <button
           className="mt-4 px-4 py-2 bg-gray-800 text-white rounded-md"
           onClick={() => window.location.reload()}
-          data-oid="bd5w:p5"
+          data-oid="evj9hr6"
         >
           Reintentar
         </button>
@@ -159,47 +159,47 @@ export default function VehicleSelectionStep({
 
   // Mostrar opciones de vehículos
   return (
-    <Card className="max-w-3xl mx-auto shadow-sm" data-oid="qimrx_4">
-      <CardContent className="p-0" data-oid="gq7p56d">
+    <Card className="max-w-3xl mx-auto shadow-sm" data-oid="_fhu10z">
+      <CardContent className="p-0" data-oid="rq9lwba">
         {/* Detalles del viaje */}
         <div
           className="bg-gray-50 p-4 rounded-t-lg border-b"
-          data-oid="a-4uwzv"
+          data-oid="tenlon-"
         >
-          <div className="mb-1" data-oid="lw6pi.k">
-            <p className="text-sm font-medium" data-oid=".3.g2c_">
+          <div className="mb-1" data-oid="v6gjrwb">
+            <p className="text-sm font-medium" data-oid="863dlgd">
               sáb, may 10, 2025 a las 10:32 a. m. (CEST)
             </p>
           </div>
-          <div className="flex items-center gap-1 mb-1" data-oid="0k9wwfm">
-            <p className="text-sm text-gray-600" data-oid=":7yzygl">
+          <div className="flex items-center gap-1 mb-1" data-oid="vnjw18x">
+            <p className="text-sm text-gray-600" data-oid="e6a:psj">
               {sessionData.from.description}
             </p>
             {sessionData.tripType === "ida" && sessionData.to && (
               <>
-                <span className="text-xs" data-oid="jt2fz.7">
+                <span className="text-xs" data-oid="pgkfyjn">
                   →
                 </span>
-                <p className="text-sm text-gray-600" data-oid="tz.gnn9">
+                <p className="text-sm text-gray-600" data-oid="lcmlysb">
                   {sessionData.to.description}
                 </p>
               </>
             )}
           </div>
-          <div className="text-xs text-gray-500" data-oid="a7bob1p">
-            <p data-oid="d_2v6:t">
+          <div className="text-xs text-gray-500" data-oid="b0hi:mi">
+            <p data-oid="vkcos:f">
               Hora aproximada de llegada a las 11:07 AM (GMT+2) • 39.8 km
             </p>
           </div>
         </div>
 
-        <div className="p-6" data-oid=":713ah6">
-          <h2 className="text-lg font-semibold mb-6" data-oid="yty7bbk">
+        <div className="p-6" data-oid="x17bx3l">
+          <h2 className="text-lg font-semibold mb-6" data-oid="65wtzlz">
             Selecciona tu vehículo
           </h2>
 
           {/* Lista de vehículos */}
-          <div className="space-y-4 mb-6" data-oid="ujemj92">
+          <div className="space-y-4 mb-6" data-oid="joe5hih">
             {vehicles.map((vehicle) => (
               <div
                 key={vehicle.id}
@@ -209,54 +209,54 @@ export default function VehicleSelectionStep({
                     : "border-gray-200"
                 }`}
                 onClick={() => handleVehicleSelect(vehicle.id)}
-                data-oid="z_zsa9m"
+                data-oid="z6uoz3i"
               >
                 <div
                   className="p-4 grid grid-cols-1 md:grid-cols-3 items-center"
-                  data-oid="xb71sir"
+                  data-oid=".90qbei"
                 >
                   {/* Imagen del vehículo */}
-                  <div className="flex justify-center" data-oid="_5:oi0n">
+                  <div className="flex justify-center" data-oid="ma0p25w">
                     <img
                       src={vehicle.image || "/images/cars/default.png"}
                       alt={vehicle.name}
                       className="h-24 object-contain"
-                      data-oid="14w1diz"
+                      data-oid="cxo8.tx"
                     />
                   </div>
 
                   {/* Detalles del vehículo */}
-                  <div className="col-span-1 md:col-span-1" data-oid="65qr05f">
-                    <h3 className="font-bold" data-oid="m-335lj">
+                  <div className="col-span-1 md:col-span-1" data-oid="-ewboqa">
+                    <h3 className="font-bold" data-oid="p2c-obh">
                       {vehicle.name}
                     </h3>
                     <p
                       className="text-sm text-gray-600 mt-1"
-                      data-oid="s7:aqh6"
+                      data-oid="bas3pcw"
                     >
                       {vehicle.description}
                     </p>
                     <div
                       className="flex items-center mt-2 space-x-4"
-                      data-oid="y68zv0o"
+                      data-oid="8qo_8hf"
                     >
                       <div
                         className="flex items-center text-sm text-gray-600"
-                        data-oid="j_zkw4_"
+                        data-oid=".bkpjyg"
                       >
-                        <Users className="h-4 w-4 mr-1" data-oid="ny62rul" />
-                        <span data-oid="h4hhu0l">{vehicle.capacity}</span>
+                        <Users className="h-4 w-4 mr-1" data-oid="5by2ypb" />
+                        <span data-oid="mka0fbv">{vehicle.capacity}</span>
                       </div>
                       <div
                         className="flex items-center text-sm text-gray-600"
-                        data-oid="9x4xat2"
+                        data-oid="k6t0khm"
                       >
                         <Briefcase
                           className="h-4 w-4 mr-1"
-                          data-oid="hqo7v3z"
+                          data-oid="d7uk6ra"
                         />
 
-                        <span data-oid="noa7mmm">{vehicle.luggage}</span>
+                        <span data-oid="5d4um0n">{vehicle.luggage}</span>
                       </div>
                     </div>
                   </div>
@@ -264,18 +264,18 @@ export default function VehicleSelectionStep({
                   {/* Precio y selección */}
                   <div
                     className="flex flex-col items-end justify-center mt-3 md:mt-0"
-                    data-oid="xr50u:z"
+                    data-oid="o59et95"
                   >
-                    <div className="text-xl font-bold" data-oid="fbh0r-d">
+                    <div className="text-xl font-bold" data-oid="rtg2740">
                       {vehicle.price.toFixed(2)} €
                     </div>
 
                     {selectedVehicle === vehicle.id && (
                       <div
                         className="mt-2 flex items-center text-sm text-gray-700 font-medium"
-                        data-oid="m1y_9d-"
+                        data-oid="t1vvx2c"
                       >
-                        <Check className="h-4 w-4 mr-1" data-oid="c5zhp6r" />
+                        <Check className="h-4 w-4 mr-1" data-oid="tmizuim" />
                         Seleccionado
                       </div>
                     )}
@@ -286,46 +286,46 @@ export default function VehicleSelectionStep({
           </div>
 
           {/* Información adicional */}
-          <div className="bg-gray-50 p-4 rounded-md mb-6" data-oid="d3cag4s">
-            <h4 className="font-medium mb-2" data-oid="h:-8e96">
+          <div className="bg-gray-50 p-4 rounded-md mb-6" data-oid="dysuzik">
+            <h4 className="font-medium mb-2" data-oid="lkenudp">
               Todas las clases incluyen:
             </h4>
-            <ul className="text-sm space-y-1" data-oid="am7vvy5">
-              <li className="flex items-start" data-oid="82.-l9_">
+            <ul className="text-sm space-y-1" data-oid="yrl9j7z">
+              <li className="flex items-start" data-oid="3mynwmt">
                 <Check
                   className="h-4 w-4 text-gray-700 mr-2 mt-0.5"
-                  data-oid="5:xwsge"
+                  data-oid="2uf1wfq"
                 />
 
-                <span data-oid="u8g456f">
+                <span data-oid="cp7_b::">
                   Cancelación gratuita hasta 1 hora antes de la recogida
                 </span>
               </li>
-              <li className="flex items-start" data-oid="5aecj0z">
+              <li className="flex items-start" data-oid="3xlsk.q">
                 <Check
                   className="h-4 w-4 text-gray-700 mr-2 mt-0.5"
-                  data-oid="8hsn3q9"
+                  data-oid="9dr6-uy"
                 />
 
-                <span data-oid="maoc8ci">
+                <span data-oid="mj12o-g">
                   Gratis 60 minutos de tiempo de espera
                 </span>
               </li>
-              <li className="flex items-start" data-oid="4t3_hvm">
+              <li className="flex items-start" data-oid="cf41uaf">
                 <Check
                   className="h-4 w-4 text-gray-700 mr-2 mt-0.5"
-                  data-oid="mid8:g2"
+                  data-oid="5.:55kq"
                 />
 
-                <span data-oid="qda0h00">Conocer y saludar</span>
+                <span data-oid="z3d7pcs">Conocer y saludar</span>
               </li>
-              <li className="flex items-start" data-oid="7h9f:9p">
+              <li className="flex items-start" data-oid="5:jnalb">
                 <Check
                   className="h-4 w-4 text-gray-700 mr-2 mt-0.5"
-                  data-oid="ao5h.ia"
+                  data-oid="2h3n3u8"
                 />
 
-                <span data-oid="radhlue">Botella de agua de cortesía</span>
+                <span data-oid="_.cq246">Botella de agua de cortesía</span>
               </li>
             </ul>
           </div>
@@ -338,7 +338,7 @@ export default function VehicleSelectionStep({
             }}
             disabled={!selectedVehicle}
             onClick={handleContinue}
-            data-oid="ag74a4o"
+            data-oid="kmf4055"
           >
             {!selectedVehicle ? "Selecciona un vehículo" : "Continuar"}
           </button>

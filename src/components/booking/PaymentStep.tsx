@@ -286,17 +286,17 @@ export default function PaymentStep({
       return (
         <div
           className="bg-gray-100 p-6 rounded-md text-center"
-          data-oid="_f9v66v"
+          data-oid="m2721s7"
         >
           <AlertCircle
             className="h-10 w-10 text-black mx-auto mb-4"
-            data-oid="_en09x_"
+            data-oid="00q0ssy"
           />
 
-          <h3 className="font-semibold text-lg mb-2" data-oid="743vu9r">
+          <h3 className="font-semibold text-lg mb-2" data-oid="sn15_bi">
             Error de configuración
           </h3>
-          <p className="text-gray-600 mb-4" data-oid="6:nqh2g">
+          <p className="text-gray-600 mb-4" data-oid="0q7de7a">
             No se ha configurado correctamente la clave de Stripe. Por favor,
             contacte al soporte técnico.
           </p>
@@ -318,7 +318,7 @@ export default function PaymentStep({
               },
             },
           }}
-          data-oid="x1y5::u"
+          data-oid="pglg1gu"
         >
           <CheckoutForm
             sessionData={{
@@ -362,7 +362,7 @@ export default function PaymentStep({
               console.log("PaymentStep: Llamando a onComplete con:", finalData);
               onComplete(finalData);
             }}
-            data-oid="yqvkwfj"
+            data-oid="a:o91eo"
           />
         </Elements>
       );
@@ -372,14 +372,14 @@ export default function PaymentStep({
       return (
         <div
           className="flex justify-center items-center py-12"
-          data-oid="umktrjq"
+          data-oid="1tfk1q3"
         >
           <Loader2
             className="h-8 w-8 animate-spin text-primary"
-            data-oid="c:rpoka"
+            data-oid="sq5pfgh"
           />
 
-          <span className="ml-2 text-gray-600" data-oid="ghb0.gp">
+          <span className="ml-2 text-gray-600" data-oid="0opoyug">
             Preparando opciones de pago...
           </span>
         </div>
@@ -390,17 +390,17 @@ export default function PaymentStep({
       return (
         <div
           className="bg-gray-100 p-6 rounded-md text-center"
-          data-oid=".dxmw--"
+          data-oid="21_845i"
         >
           <AlertCircle
             className="h-10 w-10 text-black mx-auto mb-4"
-            data-oid="3rg452f"
+            data-oid="owbslbf"
           />
 
-          <h3 className="font-semibold text-lg mb-2" data-oid="dvvd189">
+          <h3 className="font-semibold text-lg mb-2" data-oid=".ab69x1">
             Error al inicializar el pago
           </h3>
-          <p className="text-gray-600 mb-4" data-oid="g8p:6lh">
+          <p className="text-gray-600 mb-4" data-oid="merutwi">
             {stripeError}
           </p>
           <button
@@ -412,7 +412,7 @@ export default function PaymentStep({
               )
             }
             className="py-2 px-4 bg-primary text-white rounded-md hover:bg-primary/90"
-            data-oid="clw49si"
+            data-oid="o-4szgf"
           >
             Reintentar
           </button>
@@ -423,14 +423,14 @@ export default function PaymentStep({
     return (
       <div
         className="flex justify-center items-center py-12"
-        data-oid="i:cbu1b"
+        data-oid="wooviby"
       >
         <Loader2
           className="h-8 w-8 animate-spin text-primary"
-          data-oid="4tx5vex"
+          data-oid="kwi2ymf"
         />
 
-        <span className="ml-2 text-gray-600" data-oid="2ci89ps">
+        <span className="ml-2 text-gray-600" data-oid="c0tav54">
           Preparando opciones de pago...
         </span>
       </div>
@@ -440,17 +440,17 @@ export default function PaymentStep({
   // Si no hay datos cargados aún, mostrar mensaje de error
   if (isLoading && !initializedData) {
     return (
-      <Card className="max-w-3xl mx-auto shadow-sm" data-oid="z7rbt_9">
+      <Card className="max-w-3xl mx-auto shadow-sm" data-oid="a0uod1_">
         <CardContent
           className="p-6 flex justify-center items-center"
-          data-oid="_-k:8.k"
+          data-oid="dp_1m6b"
         >
           <Loader2
             className="h-10 w-10 animate-spin text-primary mr-4"
-            data-oid="c4uyg60"
+            data-oid="7:528ab"
           />
 
-          <p className="text-gray-600" data-oid="gxtop4:">
+          <p className="text-gray-600" data-oid="z_he2tr">
             Cargando datos de la sesión...
           </p>
         </CardContent>
@@ -461,17 +461,17 @@ export default function PaymentStep({
   // Si aún no hay datos inicializados después de cargar, mostrar error
   if (!initializedData && !isLoading) {
     return (
-      <Card className="max-w-3xl mx-auto shadow-sm" data-oid="e7g53wb">
-        <CardContent className="p-6 text-center" data-oid="wtrowoh">
+      <Card className="max-w-3xl mx-auto shadow-sm" data-oid="xel1o02">
+        <CardContent className="p-6 text-center" data-oid="r4th-tm">
           <AlertCircle
             className="h-10 w-10 text-black mx-auto mb-4"
-            data-oid="1tzc-96"
+            data-oid="a3c8ukk"
           />
 
-          <h3 className="font-semibold text-lg mb-2" data-oid="8fwe2_1">
+          <h3 className="font-semibold text-lg mb-2" data-oid="zy1xn0f">
             Error de datos
           </h3>
-          <p className="text-gray-600 mb-4" data-oid=".otvp8b">
+          <p className="text-gray-600 mb-4" data-oid=":l0ny9z">
             No se han podido cargar los datos de la sesión
           </p>
         </CardContent>
@@ -482,24 +482,24 @@ export default function PaymentStep({
   // Si faltan datos del vehículo, mostrar error específico
   if (missingVehicleData) {
     return (
-      <Card className="max-w-3xl mx-auto shadow-sm" data-oid="x_s1_gd">
-        <CardContent className="p-6 text-center" data-oid=".ntp.z-">
+      <Card className="max-w-3xl mx-auto shadow-sm" data-oid="d11untj">
+        <CardContent className="p-6 text-center" data-oid="vdt_otc">
           <AlertCircle
             className="h-10 w-10 text-black mx-auto mb-4"
-            data-oid="8txv7_r"
+            data-oid="ro375e:"
           />
 
-          <h3 className="font-semibold text-lg mb-2" data-oid="abd_jig">
+          <h3 className="font-semibold text-lg mb-2" data-oid="8xn:1.r">
             Datos de vehículo incompletos
           </h3>
-          <p className="text-gray-600 mb-4" data-oid="c.viklc">
+          <p className="text-gray-600 mb-4" data-oid="zt:dc26">
             No se ha seleccionado un vehículo válido. Por favor, vuelva al paso
             anterior.
           </p>
           <button
             onClick={() => window.history.back()}
             className="px-4 py-2 bg-primary text-white rounded-md hover:bg-primary/90"
-            data-oid=":kd2-sy"
+            data-oid="9uig7k4"
           >
             Volver atrás
           </button>
@@ -515,41 +515,41 @@ export default function PaymentStep({
   const tripTime = initializedData?.time || "";
 
   return (
-    <Card className="max-w-3xl mx-auto shadow-sm" data-oid="4phqjnu">
-      <CardContent className="p-0" data-oid="i4_n_lf">
+    <Card className="max-w-3xl mx-auto shadow-sm" data-oid="._7ybg2">
+      <CardContent className="p-0" data-oid="_hep58a">
         {/* Resumen de la reserva */}
         <div
           className="bg-gray-50 p-4 rounded-t-lg border-b"
-          data-oid="e:z1ayf"
+          data-oid="jd84iuj"
         >
-          <div className="mb-1" data-oid="e_0wq_y">
-            <p className="text-sm font-medium" data-oid=":3tjvs6">
+          <div className="mb-1" data-oid="vsnxljx">
+            <p className="text-sm font-medium" data-oid="rslsr9w">
               {tripDate} a las {tripTime} (CEST)
             </p>
           </div>
-          <div className="flex items-center gap-1 mb-1" data-oid="zezj7x7">
-            <p className="text-sm text-gray-600" data-oid="126iz8.">
+          <div className="flex items-center gap-1 mb-1" data-oid="jp77_b1">
+            <p className="text-sm text-gray-600" data-oid="uf9oatm">
               {originName}
             </p>
             {initializedData.tripType === "ida" && (
               <>
-                <span className="text-xs" data-oid="eg7yduq">
+                <span className="text-xs" data-oid="ez9seyc">
                   →
                 </span>
-                <p className="text-sm text-gray-600" data-oid="f4l68k2">
+                <p className="text-sm text-gray-600" data-oid="x_5hyds">
                   {destinationName}
                 </p>
               </>
             )}
             {initializedData.tripType === "horas" && (
-              <p className="text-sm text-gray-600 ml-2" data-oid="6ll2-f6">
+              <p className="text-sm text-gray-600 ml-2" data-oid="s.m7u3g">
                 ({initializedData?.duration || "2 horas"})
               </p>
             )}
           </div>
           {initializedData.tripType === "ida" && estimatedArrival && (
-            <div className="text-xs text-gray-500" data-oid="_o4h.v-">
-              <p data-oid="6g61z46">
+            <div className="text-xs text-gray-500" data-oid="5xp1_xy">
+              <p data-oid="m:gkj:_">
                 Hora aproximada de llegada a las {estimatedArrival} (GMT+2) •{" "}
                 {distance} km
               </p>
@@ -557,74 +557,74 @@ export default function PaymentStep({
           )}
         </div>
 
-        <div className="p-6" data-oid="vpan2ei">
+        <div className="p-6" data-oid="puonopx">
           {renderStripeElements()}
 
           {priceBreakdown && (
             <div
               className="mt-6 border-t border-gray-200 pt-4"
-              data-oid="efuk5v7"
+              data-oid="bdm_n76"
             >
-              <h3 className="font-semibold mb-3" data-oid="fssr77k">
+              <h3 className="font-semibold mb-3" data-oid="s237lb:">
                 Desglose del precio
               </h3>
-              <div className="space-y-2" data-oid="1.rcyoy">
+              <div className="space-y-2" data-oid="la:6p:o">
                 {priceBreakdown.base_fare > 0 && (
-                  <div className="flex justify-between" data-oid="r3lc2ga">
-                    <span className="text-sm" data-oid="x20y7pk">
+                  <div className="flex justify-between" data-oid="av_e_9n">
+                    <span className="text-sm" data-oid="s:0en0l">
                       Tarifa base
                     </span>
-                    <span className="text-sm" data-oid="w2:qtvs">
+                    <span className="text-sm" data-oid=":vtxx9l">
                       {priceBreakdown.base_fare.toFixed(2)} €
                     </span>
                   </div>
                 )}
                 {priceBreakdown.distance_charge > 0 && (
-                  <div className="flex justify-between" data-oid="1a46bqv">
-                    <span className="text-sm" data-oid="c:rrnfp">
+                  <div className="flex justify-between" data-oid="hn44flk">
+                    <span className="text-sm" data-oid="lxzeeox">
                       Cargo por distancia
                     </span>
-                    <span className="text-sm" data-oid="n88a0ca">
+                    <span className="text-sm" data-oid="9dx8tm5">
                       {priceBreakdown.distance_charge.toFixed(2)} €
                     </span>
                   </div>
                 )}
                 {priceBreakdown.time_charge > 0 && (
-                  <div className="flex justify-between" data-oid="9g5nerv">
-                    <span className="text-sm" data-oid="aqk4m0s">
+                  <div className="flex justify-between" data-oid="lto-a-5">
+                    <span className="text-sm" data-oid="_5vw55m">
                       Cargo por tiempo
                     </span>
-                    <span className="text-sm" data-oid=".k7agld">
+                    <span className="text-sm" data-oid="1z-78o1">
                       {priceBreakdown.time_charge.toFixed(2)} €
                     </span>
                   </div>
                 )}
                 {priceBreakdown.extras > 0 && (
-                  <div className="flex justify-between" data-oid="4uzwsdz">
-                    <span className="text-sm" data-oid="u::l:wi">
+                  <div className="flex justify-between" data-oid="2704nfe">
+                    <span className="text-sm" data-oid="0pjnxfw">
                       Extras
                     </span>
-                    <span className="text-sm" data-oid=":23_owb">
+                    <span className="text-sm" data-oid="7z6vf:-">
                       {priceBreakdown.extras.toFixed(2)} €
                     </span>
                   </div>
                 )}
                 {priceBreakdown.surcharges > 0 && (
-                  <div className="flex justify-between" data-oid="pyz-4o9">
-                    <span className="text-sm" data-oid="p_6y:8k">
+                  <div className="flex justify-between" data-oid="nrc.mbc">
+                    <span className="text-sm" data-oid="ggaoyxu">
                       Recargo ({priceBreakdown.surcharge_reason})
                     </span>
-                    <span className="text-sm" data-oid="01r89po">
+                    <span className="text-sm" data-oid="71c.s5j">
                       {priceBreakdown.surcharges.toFixed(2)} €
                     </span>
                   </div>
                 )}
                 {priceBreakdown.tax > 0 && (
-                  <div className="flex justify-between" data-oid="yn4wn2p">
-                    <span className="text-sm" data-oid="mpb1mfy">
+                  <div className="flex justify-between" data-oid="67d2.kf">
+                    <span className="text-sm" data-oid=":k26jc7">
                       IVA ({priceBreakdown.tax_rate}%)
                     </span>
-                    <span className="text-sm" data-oid=":x5kjif">
+                    <span className="text-sm" data-oid="7-3j2br">
                       {priceBreakdown.tax.toFixed(2)} €
                     </span>
                   </div>

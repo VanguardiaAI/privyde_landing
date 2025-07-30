@@ -10,19 +10,19 @@ const BookingsTable = ({
   return (
     <div
       className="bg-white rounded-xl shadow-md overflow-hidden"
-      data-oid="tdq0rad"
+      data-oid="28hp2ms"
     >
-      <div className="px-6 py-4 border-b border-gray-200" data-oid="pzzklbl">
-        <div className="flex space-x-4" data-oid="ko.vhv2">
+      <div className="px-6 py-4 border-b border-gray-200" data-oid="nboxx7g">
+        <div className="flex space-x-4" data-oid="jdwfp2b">
           <button
             className="text-sm px-3 py-2 font-medium text-gray-600 border-b-2 border-red-600"
-            data-oid=".z3l1rn"
+            data-oid="58lw8y9"
           >
             Reservas activas (23)
           </button>
           <button
             className="text-sm px-3 py-2 text-gray-500 hover:text-gray-700"
-            data-oid="lv_wtor"
+            data-oid="gkrrfis"
           >
             Historial (152)
           </button>
@@ -30,84 +30,84 @@ const BookingsTable = ({
       </div>
 
       {/* Tabla de reservas */}
-      <div className="overflow-x-auto" data-oid="812sdfv">
-        <table className="w-full" data-oid="udwrv8-">
-          <thead className="bg-gray-50" data-oid="z1pb_av">
-            <tr data-oid="eff-rxs">
+      <div className="overflow-x-auto" data-oid="nz4nhlb">
+        <table className="w-full" data-oid="i9ztn.y">
+          <thead className="bg-gray-50" data-oid="i_dheuc">
+            <tr data-oid="gxkowdf">
               <th
                 className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                data-oid="ubwr5mr"
+                data-oid="2p2oyyu"
               >
                 ID / Cliente
               </th>
               <th
                 className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                data-oid="imuffxu"
+                data-oid="aox7bls"
               >
                 Fecha y Hora
               </th>
               <th
                 className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                data-oid="r7kh5z2"
+                data-oid="98w0ba2"
               >
                 Ruta
               </th>
               <th
                 className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                data-oid="rjra_15"
+                data-oid="ob183gs"
               >
                 Tipo
               </th>
               <th
                 className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                data-oid="bqr03s-"
+                data-oid="ztblykf"
               >
                 Vehículo / Conductor
               </th>
               <th
                 className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                data-oid="wjt8wkr"
+                data-oid="-masy:k"
               >
                 Estado
               </th>
               <th
                 className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                data-oid="74afxje"
+                data-oid="o:7vypf"
               >
                 Precio
               </th>
               <th
                 className="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider"
-                data-oid="rrwv75c"
+                data-oid="09epseg"
               >
                 Acciones
               </th>
             </tr>
           </thead>
-          <tbody className="divide-y divide-gray-200" data-oid="48kh_20">
+          <tbody className="divide-y divide-gray-200" data-oid="9zh2768">
             {bookingsData.map((booking, index) => (
               <tr
                 key={index}
                 className={`hover:bg-gray-50 ${booking.hasIncident ? "bg-gray-100" : ""}`}
-                data-oid="h:3fwit"
+                data-oid="1n96pgc"
               >
-                <td className="px-6 py-4 whitespace-nowrap" data-oid="gn50cus">
-                  <div className="flex items-center" data-oid="wj51hdy">
-                    <div data-oid="acx-5ke">
+                <td className="px-6 py-4 whitespace-nowrap" data-oid="27svqo7">
+                  <div className="flex items-center" data-oid="35w5djt">
+                    <div data-oid="s2uexm4">
                       <div
                         className="text-sm font-medium text-gray-900"
-                        data-oid="yh5pouv"
+                        data-oid="lvwfdl2"
                       >
                         {booking.id}
                       </div>
-                      <div className="text-sm text-gray-500" data-oid="a..0k-x">
+                      <div className="text-sm text-gray-500" data-oid="tzmucgh">
                         {booking.clientName}
                       </div>
                     </div>
                     {booking.hasIncident && (
                       <span
                         className="ml-2 flex-shrink-0 inline-block px-2 py-0.5 text-xs font-medium rounded-full bg-gray-200 text-gray-800"
-                        data-oid="y34.cig"
+                        data-oid="ru_usgc"
                       >
                         {booking.incidentType === "delay"
                           ? "Retraso"
@@ -118,18 +118,18 @@ const BookingsTable = ({
                     )}
                   </div>
                 </td>
-                <td className="px-6 py-4 whitespace-nowrap" data-oid="0crqa4-">
-                  <div className="text-sm text-gray-900" data-oid="mb9b1s2">
+                <td className="px-6 py-4 whitespace-nowrap" data-oid="y:c--h5">
+                  <div className="text-sm text-gray-900" data-oid="plewdl9">
                     {booking.date}
                   </div>
                 </td>
-                <td className="px-6 py-4" data-oid="uvyhcp6">
-                  <div className="text-sm text-gray-900" data-oid=".y02nfl">
+                <td className="px-6 py-4" data-oid="m5t-zeg">
+                  <div className="text-sm text-gray-900" data-oid="x11cvp1">
                     {booking.fromTo}
                   </div>
                 </td>
-                <td className="px-6 py-3 whitespace-nowrap" data-oid="26vzd8j">
-                  <div className="text-sm text-gray-900" data-oid="e7g7q_a">
+                <td className="px-6 py-3 whitespace-nowrap" data-oid="z6v0f:z">
+                  <div className="text-sm text-gray-900" data-oid="_d6s:4s">
                     {booking.type === "one_way"
                       ? "Un trayecto"
                       : booking.type === "round_trip"
@@ -139,15 +139,15 @@ const BookingsTable = ({
                           : "Día completo"}
                   </div>
                 </td>
-                <td className="px-6 py-4 whitespace-nowrap" data-oid="_x29kk_">
-                  <div className="text-sm text-gray-900" data-oid="4unt6t.">
+                <td className="px-6 py-4 whitespace-nowrap" data-oid="3ten9oc">
+                  <div className="text-sm text-gray-900" data-oid="wse2l9n">
                     {booking.vehicle}
                   </div>
-                  <div className="text-sm text-gray-500" data-oid="3z.16z.">
+                  <div className="text-sm text-gray-500" data-oid="z.l2qgc">
                     {booking.driver}
                   </div>
                 </td>
-                <td className="px-6 py-4 whitespace-nowrap" data-oid="qac6ebv">
+                <td className="px-6 py-4 whitespace-nowrap" data-oid="rliar1c">
                   <span
                     className={`px-2 py-1 inline-flex text-xs leading-5 font-semibold rounded-full 
                     ${
@@ -163,7 +163,7 @@ const BookingsTable = ({
                                 ? "bg-gray-200 text-gray-800"
                                 : "bg-gray-200 text-purple-800"
                     }`}
-                    data-oid="og5t5r2"
+                    data-oid="g94i5pj"
                   >
                     {booking.status === "pending"
                       ? "Pendiente"
@@ -178,34 +178,34 @@ const BookingsTable = ({
                               : "No show"}
                   </span>
                 </td>
-                <td className="px-6 py-4 whitespace-nowrap" data-oid="-mqp7fe">
+                <td className="px-6 py-4 whitespace-nowrap" data-oid="dqvkm9w">
                   <div
                     className="text-sm font-medium text-gray-900"
-                    data-oid="zmu:la-"
+                    data-oid="jcd5ehm"
                   >
                     {booking.price}
                   </div>
                 </td>
                 <td
                   className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium"
-                  data-oid="a-wc5tr"
+                  data-oid="1io9j9k"
                 >
                   <button
                     onClick={() => handleViewBookingDetails(booking)}
                     className="text-indigo-600 hover:text-indigo-900 mr-3"
-                    data-oid="saxmv9v"
+                    data-oid="y:7r7u7"
                   >
                     Ver
                   </button>
                   <button
                     className="text-gray-600 hover:text-blue-900 mr-3"
-                    data-oid="d0f.r0s"
+                    data-oid="n3zqr1l"
                   >
                     Editar
                   </button>
                   <button
                     className="text-gray-600 hover:text-red-900"
-                    data-oid="aghwi9h"
+                    data-oid="91gr41."
                   >
                     Cancelar
                   </button>
@@ -219,57 +219,57 @@ const BookingsTable = ({
       {/* Paginación */}
       <div
         className="px-6 py-4 flex items-center justify-between border-t border-gray-200"
-        data-oid="ol6apzh"
+        data-oid="w:spy1s"
       >
         <div
           className="flex-1 flex justify-between sm:hidden"
-          data-oid="ni3rlum"
+          data-oid="p_cheqc"
         >
           <button
             className="relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50"
-            data-oid="s_7x791"
+            data-oid="wr1u_ax"
           >
             Anterior
           </button>
           <button
             className="ml-3 relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50"
-            data-oid="d2q6x-3"
+            data-oid="w06xfxh"
           >
             Siguiente
           </button>
         </div>
         <div
           className="hidden sm:flex-1 sm:flex sm:items-center sm:justify-between"
-          data-oid="9drdm8g"
+          data-oid="-9f39cr"
         >
-          <div data-oid=".19gnyb">
-            <p className="text-sm text-gray-700" data-oid="fa3m53t">
+          <div data-oid="rqyjm4q">
+            <p className="text-sm text-gray-700" data-oid="sjan0jf">
               Mostrando{" "}
-              <span className="font-medium" data-oid="zv:px_j">
+              <span className="font-medium" data-oid="l53rihi">
                 1
               </span>{" "}
               a{" "}
-              <span className="font-medium" data-oid="421nl3:">
+              <span className="font-medium" data-oid="rt1783s">
                 6
               </span>{" "}
               de{" "}
-              <span className="font-medium" data-oid="pai:y:1">
+              <span className="font-medium" data-oid="65w1s:0">
                 23
               </span>{" "}
               resultados
             </p>
           </div>
-          <div data-oid="8h6cfbq">
+          <div data-oid="wxg-d0b">
             <nav
               className="relative z-0 inline-flex rounded-md shadow-sm -space-x-px"
               aria-label="Pagination"
-              data-oid="1fgye79"
+              data-oid="tjj60ps"
             >
               <button
                 className="relative inline-flex items-center px-2 py-2 rounded-l-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50"
-                data-oid="x:5aby4"
+                data-oid="s2ay.rj"
               >
-                <span className="sr-only" data-oid="m2v872i">
+                <span className="sr-only" data-oid="g_y1lpy">
                   Anterior
                 </span>
                 <svg
@@ -278,39 +278,39 @@ const BookingsTable = ({
                   viewBox="0 0 20 20"
                   fill="currentColor"
                   aria-hidden="true"
-                  data-oid="0zp9jua"
+                  data-oid="c55l1te"
                 >
                   <path
                     fillRule="evenodd"
                     d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
                     clipRule="evenodd"
-                    data-oid="qnks50a"
+                    data-oid="j7tb:q7"
                   />
                 </svg>
               </button>
               <button
                 className="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50"
-                data-oid="a:8h62f"
+                data-oid="_2m_v8x"
               >
                 1
               </button>
               <button
                 className="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50"
-                data-oid="7esi_51"
+                data-oid="6yzv4xn"
               >
                 2
               </button>
               <button
                 className="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-gray-100 text-sm font-medium text-gray-600 hover:bg-gray-200"
-                data-oid="3w9nwmt"
+                data-oid="-oz.bhe"
               >
                 3
               </button>
               <button
                 className="relative inline-flex items-center px-2 py-2 rounded-r-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50"
-                data-oid="8-qpkns"
+                data-oid="wu9afis"
               >
-                <span className="sr-only" data-oid="-y4zcxh">
+                <span className="sr-only" data-oid="_oyaw5a">
                   Siguiente
                 </span>
                 <svg
@@ -319,13 +319,13 @@ const BookingsTable = ({
                   viewBox="0 0 20 20"
                   fill="currentColor"
                   aria-hidden="true"
-                  data-oid="17nmsg2"
+                  data-oid="p0qa8l4"
                 >
                   <path
                     fillRule="evenodd"
                     d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
                     clipRule="evenodd"
-                    data-oid="s8x-iom"
+                    data-oid="2._h174"
                   />
                 </svg>
               </button>

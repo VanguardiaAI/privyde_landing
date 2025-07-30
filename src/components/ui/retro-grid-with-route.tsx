@@ -14,12 +14,12 @@ export function RetroGridWithRoute({
         className,
       )}
       style={{ "--grid-angle": `${angle}deg` } as React.CSSProperties}
-      data-oid="a3xx0g8"
+      data-oid="7bv2g.x"
     >
       {/* Grid animado */}
       <div
         className="absolute inset-0 [transform:rotateX(var(--grid-angle))]"
-        data-oid="7wvy:o6"
+        data-oid="4j8q-vw"
       >
         <div
           className={cn(
@@ -29,14 +29,14 @@ export function RetroGridWithRoute({
             "dark:[background-image:linear-gradient(to_right,rgba(255,255,255,0.25)_1px,transparent_0),linear-gradient(to_bottom,rgba(255,255,255,0.25)_1px,transparent_0)]",
           )}
           style={{ opacity: 0.7 }}
-          data-oid="md4-1aj"
+          data-oid="zmsv7.9"
         />
       </div>
 
       {/* Gradiente de fondo solo oscuro */}
       <div
         className="absolute inset-0 bg-gradient-to-t from-black to-transparent to-90%"
-        data-oid="zynk2wu"
+        data-oid="q.896l_"
       />
 
       {/* Línea de ruta naranja */}
@@ -45,7 +45,7 @@ export function RetroGridWithRoute({
         viewBox="0 0 800 300"
         fill="none"
         style={{ opacity: 0.95 }}
-        data-oid="xu.7sih"
+        data-oid="mz-_314"
       >
         <polyline
           points="0,50 300,200 500,100 650,150"
@@ -54,7 +54,7 @@ export function RetroGridWithRoute({
           fill="none"
           strokeLinejoin="round"
           style={{ filter: "drop-shadow(0 0 10px #000000aa)" }}
-          data-oid="j6bvh-o"
+          data-oid="v:_ylc7"
         />
 
         <circle
@@ -63,10 +63,10 @@ export function RetroGridWithRoute({
           r="16"
           fill="#000000"
           opacity="0.5"
-          data-oid="cv246.5"
+          data-oid="87mtnzw"
         />
 
-        <circle cx="650" cy="150" r="8" fill="#000000" data-oid="_4g4hup" />
+        <circle cx="650" cy="150" r="8" fill="#000000" data-oid="729ov.6" />
       </svg>
     </div>
   );

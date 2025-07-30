@@ -57,24 +57,24 @@ function Login() {
   };
 
   return (
-    <Dialog open={open} onOpenChange={handleOpenChange} data-oid=":9i-s69">
-      <DialogTrigger asChild data-oid=":9t7:m0">
-        <Button variant="outline" data-oid=".y54zru">
+    <Dialog open={open} onOpenChange={handleOpenChange} data-oid="k-2kxi5">
+      <DialogTrigger asChild data-oid="ytgywxv">
+        <Button variant="outline" data-oid="6pl02:-">
           Iniciar sesión
         </Button>
       </DialogTrigger>
       <DialogContent
         className="bg-white border-border shadow-lg"
-        data-oid="j-s_4y3"
+        data-oid="7cekpwi"
       >
         <div
           className="flex flex-col items-center gap-4 pb-2"
-          data-oid="su-09:v"
+          data-oid="d.s983u"
         >
           <div
             className="flex size-12 shrink-0 items-center justify-center rounded-full border border-border bg-background"
             aria-hidden="true"
-            data-oid="0klbyyf"
+            data-oid="l1yxenl"
           >
             <svg
               className="stroke-primary"
@@ -83,7 +83,7 @@ function Login() {
               height="22"
               viewBox="0 0 32 32"
               aria-hidden="true"
-              data-oid="4cs-j:_"
+              data-oid="pd8bwjl"
             >
               <circle
                 cx="16"
@@ -91,18 +91,18 @@ function Login() {
                 r="12"
                 fill="none"
                 strokeWidth="8"
-                data-oid="rqomhum"
+                data-oid="cqozu:8"
               />
             </svg>
           </div>
-          <DialogHeader className="space-y-2" data-oid="1i-7k.l">
+          <DialogHeader className="space-y-2" data-oid="3pa9q8g">
             <DialogTitle
               className="text-center text-xl font-bold"
-              data-oid="h065ajc"
+              data-oid=":er7aoz"
             >
               Bienvenido de nuevo
             </DialogTitle>
-            <DialogDescription className="text-center" data-oid="xgznnb4">
+            <DialogDescription className="text-center" data-oid="c:2z5l.">
               Introduce tus credenciales para acceder a tu cuenta.
             </DialogDescription>
           </DialogHeader>
@@ -111,7 +111,7 @@ function Login() {
         {error && (
           <div
             className="bg-gray-100 p-2 rounded border border-gray-200 text-gray-600 text-sm mb-4"
-            data-oid="vo7e2y-"
+            data-oid="uvd87f1"
           >
             {error}
           </div>
@@ -120,14 +120,14 @@ function Login() {
         <form
           className="space-y-5 py-2"
           onSubmit={handleSubmit}
-          data-oid="p_c_uby"
+          data-oid=".b89wzv"
         >
-          <div className="space-y-4" data-oid="dw:.32:">
-            <div className="space-y-2" data-oid="j11yyul">
+          <div className="space-y-4" data-oid="eeh4.sv">
+            <div className="space-y-2" data-oid="7et.0kh">
               <Label
                 htmlFor={`${id}-email`}
                 className="text-foreground"
-                data-oid="k7:vrja"
+                data-oid="xyzo6o2"
               >
                 Email
               </Label>
@@ -139,14 +139,14 @@ function Login() {
                 className="border-input bg-background"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                data-oid="sagxd6_"
+                data-oid="354c3zx"
               />
             </div>
-            <div className="space-y-2" data-oid="3_956nt">
+            <div className="space-y-2" data-oid="6evfs53">
               <Label
                 htmlFor={`${id}-password`}
                 className="text-foreground"
-                data-oid="4_9sgde"
+                data-oid="naaso-g"
               >
                 Contraseña
               </Label>
@@ -158,23 +158,23 @@ function Login() {
                 className="border-input bg-background"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                data-oid="s.asiu-"
+                data-oid="h-71obk"
               />
             </div>
           </div>
-          <div className="flex justify-between gap-2" data-oid="4fc9u4k">
-            <div className="flex items-center gap-2" data-oid="vzrb.vo">
+          <div className="flex justify-between gap-2" data-oid="kbwg5ie">
+            <div className="flex items-center gap-2" data-oid="s.39qqy">
               <Checkbox
                 id={`${id}-remember`}
                 checked={rememberMe}
                 onCheckedChange={(checked) => setRememberMe(checked === true)}
-                data-oid="lrx2hx7"
+                data-oid="h-zjq1a"
               />
 
               <Label
                 htmlFor={`${id}-remember`}
                 className="font-normal text-muted-foreground"
-                data-oid="fj0o9:w"
+                data-oid="l:m9zgz"
               >
                 Recuérdame
               </Label>
@@ -182,7 +182,7 @@ function Login() {
             <a
               className="text-sm text-primary underline hover:no-underline"
               href="#"
-              data-oid="fx.7d.8"
+              data-oid="3f15xiu"
             >
               ¿Olvidaste tu contraseña?
             </a>
@@ -191,7 +191,7 @@ function Login() {
             type="submit"
             className="w-full bg-primary hover:bg-primary/90"
             disabled={isLoading}
-            data-oid=".bv2_yu"
+            data-oid="8dvs0uu"
           >
             {isLoading ? "Iniciando sesión..." : "Iniciar sesión"}
           </Button>
@@ -199,16 +199,16 @@ function Login() {
 
         <div
           className="flex items-center gap-3 py-2 before:h-px before:flex-1 before:bg-border after:h-px after:flex-1 after:bg-border"
-          data-oid="71h50:1"
+          data-oid="e.upp79"
         >
-          <span className="text-xs text-muted-foreground" data-oid="mjd1-81">
+          <span className="text-xs text-muted-foreground" data-oid="zvtfj8l">
             O
           </span>
         </div>
         <GoogleLogin
           onSuccess={handleGoogleLogin}
           onError={() => alert("Error al iniciar sesión con Google")}
-          data-oid="rmi3u6v"
+          data-oid="3sv29pa"
         />
       </DialogContent>
     </Dialog>

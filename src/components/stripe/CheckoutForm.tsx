@@ -78,14 +78,14 @@ export default function CheckoutForm({
     return (
       <div
         className="flex justify-center items-center py-12"
-        data-oid="7qtwrh_"
+        data-oid="qse8:vi"
       >
         <Loader2
           className="h-8 w-8 animate-spin text-primary"
-          data-oid="68vhtyj"
+          data-oid="ss-6r9v"
         />
 
-        <span className="ml-2 text-gray-600" data-oid=".cmm4_1">
+        <span className="ml-2 text-gray-600" data-oid="pfzqeo8">
           Cargando opciones de pago...
         </span>
       </div>
@@ -96,12 +96,12 @@ export default function CheckoutForm({
   const totalPrice = sessionData?.payment?.amount || 0;
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-6" data-oid="yuwxy0_">
-      <h2 className="text-lg font-semibold mb-4" data-oid="clmib_e">
+    <form onSubmit={handleSubmit} className="space-y-6" data-oid="9d4z2sy">
+      <h2 className="text-lg font-semibold mb-4" data-oid="dk6sxx:">
         Detalles del pago
       </h2>
 
-      <div className="space-y-6" data-oid="bj7go4_">
+      <div className="space-y-6" data-oid="jd2152:">
         <PaymentElement
           options={{
             layout: {
@@ -109,21 +109,21 @@ export default function CheckoutForm({
               defaultCollapsed: false,
             },
           }}
-          data-oid="-hyxmp-"
+          data-oid=":a40on5"
         />
 
-        <div className="flex items-center space-x-2" data-oid=".siwucx">
+        <div className="flex items-center space-x-2" data-oid="jl2co8j">
           <Checkbox
             id="saveCard"
             checked={saveCard}
             onCheckedChange={(checked) => setSaveCard(checked === true)}
-            data-oid="xnl6lix"
+            data-oid=".9.qvcm"
           />
 
           <label
             htmlFor="saveCard"
             className="text-sm font-medium cursor-pointer"
-            data-oid="99rguv9"
+            data-oid=":1th4og"
           >
             Guarda la tarjeta en tu lista
           </label>
@@ -132,23 +132,23 @@ export default function CheckoutForm({
         {error && (
           <div
             className="bg-gray-100 p-4 rounded-md text-gray-700 text-sm"
-            data-oid="hfzb59v"
+            data-oid="aouetv1"
           >
             {error}
           </div>
         )}
 
-        <div className="space-y-4 mt-6" data-oid="_5npv7c">
+        <div className="space-y-4 mt-6" data-oid="_h91sab">
           <div
             className="bg-gray-50 p-4 rounded-md flex items-start gap-3"
-            data-oid="441ofju"
+            data-oid="9f9zl-u"
           >
             <ShieldCheck
               className="text-gray-700 h-5 w-5 mt-0.5 flex-shrink-0"
-              data-oid="sn41hn2"
+              data-oid="qn9l:1a"
             />
 
-            <p className="text-sm text-gray-600" data-oid="aw84-b-">
+            <p className="text-sm text-gray-600" data-oid="b9g00m_">
               Nuestros servidores están encriptados con TLS/SSL para garantizar
               la seguridad y la privacidad.
             </p>
@@ -156,14 +156,14 @@ export default function CheckoutForm({
 
           <div
             className="bg-gray-50 p-4 rounded-md flex items-start gap-3"
-            data-oid="1phkrpz"
+            data-oid="ou2y3.w"
           >
             <AlertCircle
               className="text-gray-700 h-5 w-5 mt-0.5 flex-shrink-0"
-              data-oid="2mzjwwc"
+              data-oid=":o-k9ro"
             />
 
-            <p className="text-sm text-gray-600" data-oid="mt2v_x:">
+            <p className="text-sm text-gray-600" data-oid="nc89vg8">
               El importe se retendrá de su método de pago seleccionado después
               de la reserva. Sólo le cobraremos una vez que el viaje haya
               finalizado.
@@ -171,21 +171,21 @@ export default function CheckoutForm({
           </div>
         </div>
 
-        <div className="border-t border-gray-200 pt-4 mt-6" data-oid="vsg5qtr">
+        <div className="border-t border-gray-200 pt-4 mt-6" data-oid=".77tcj.">
           <div
             className="flex justify-between items-center mb-4"
-            data-oid="gux5k6s"
+            data-oid="2-8johi"
           >
-            <span className="text-sm font-medium" data-oid="bbkxr5g">
+            <span className="text-sm font-medium" data-oid="c6pdvf6">
               Total
             </span>
-            <span className="text-xl font-bold" data-oid="07jznti">
+            <span className="text-xl font-bold" data-oid="wvs56yw">
               {typeof totalPrice === "number" ? totalPrice.toFixed(2) : "0.00"}{" "}
               €
             </span>
           </div>
 
-          <div className="flex justify-between" data-oid="nskodwx">
+          <div className="flex justify-between" data-oid="sq2a:sx">
             <a
               href="#"
               className="text-sm font-medium underline"
@@ -193,7 +193,7 @@ export default function CheckoutForm({
                 e.preventDefault();
                 window.alert("Términos y condiciones");
               }}
-              data-oid="8sl1bwz"
+              data-oid="--cpom7"
             >
               Ver términos y condiciones
             </a>
@@ -205,16 +205,16 @@ export default function CheckoutForm({
                 background: "#000000",
               }}
               disabled={loading || !stripe || !ready}
-              data-oid="9s8nk36"
+              data-oid="j0x560a"
             >
               {loading ? (
                 <div
                   className="flex justify-center items-center"
-                  data-oid="rpi29mm"
+                  data-oid=".:bgf4x"
                 >
                   <Loader2
                     className="mr-2 h-4 w-4 animate-spin"
-                    data-oid="u8q6z:-"
+                    data-oid="_bsy56m"
                   />
                   Procesando...
                 </div>

@@ -20,14 +20,14 @@ export const SearchBlog = ({
   };
 
   return (
-    <form onSubmit={handleSubmit} className="relative" data-oid="97e1u5k">
+    <form onSubmit={handleSubmit} className="relative" data-oid="byxax6v">
       <Input
         type="text"
         placeholder="Buscar en el blog..."
         value={query}
         onChange={(e) => setQuery(e.target.value)}
         className="pr-12 focus-visible:ring-red-600"
-        data-oid="ih2w1ps"
+        data-oid="nrmk6ra"
       />
 
       <Button
@@ -35,9 +35,9 @@ export const SearchBlog = ({
         size="icon"
         variant="ghost"
         className="absolute right-0 top-0 h-full text-gray-400 hover:text-gray-600"
-        data-oid="pcbu0th"
+        data-oid="lz-h-6h"
       >
-        <Search size={18} data-oid="bylphze" />
+        <Search size={18} data-oid="2g6htq4" />
       </Button>
     </form>
   );

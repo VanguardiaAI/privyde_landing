@@ -616,37 +616,37 @@ const VehicleForm = ({
   };
 
   return (
-    <Card className="w-full" data-oid="qxtduv1">
-      <CardHeader data-oid="qcylgza">
-        <CardTitle data-oid="t649uf0">
+    <Card className="w-full" data-oid="e8i3ln.">
+      <CardHeader data-oid="0y2.psy">
+        <CardTitle data-oid="esu_s3z">
           {editMode ? "Editar Vehículo" : "Añadir Nuevo Vehículo"}
         </CardTitle>
-        <CardDescription data-oid="1b6qv2p">
+        <CardDescription data-oid="k3d2cwj">
           {editMode
             ? "Actualice los detalles del vehículo seleccionado"
             : "Complete el formulario para añadir un nuevo vehículo al sistema"}
         </CardDescription>
       </CardHeader>
 
-      <CardContent data-oid="_-:_4wc">
-        <form onSubmit={handleSubmit} className="space-y-6" data-oid="eazk6c3">
+      <CardContent data-oid="sefo97s">
+        <form onSubmit={handleSubmit} className="space-y-6" data-oid="inv:xyf">
           <div
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
-            data-oid="r5r94h3"
+            data-oid=":1no6hz"
           >
             {/* Información básica */}
-            <div className="space-y-4" data-oid="ed:bhxu">
+            <div className="space-y-4" data-oid="2q14ys-">
               <h3
                 className="text-lg font-medium flex items-center"
-                data-oid="qok3e2s"
+                data-oid="uhhnq9b"
               >
-                <Car className="mr-2 h-5 w-5" data-oid="7f-:e54" />
+                <Car className="mr-2 h-5 w-5" data-oid="zmnk8:d" />
                 Información Básica
               </h3>
 
-              <div className="space-y-3" data-oid="d2-mp-l">
-                <div data-oid="x8ul.6_">
-                  <Label htmlFor="name" data-oid="a3p3t67">
+              <div className="space-y-3" data-oid="pw:6vrn">
+                <div data-oid="-jfr8jb">
+                  <Label htmlFor="name" data-oid="cn8qov:">
                     Nombre del Vehículo
                   </Label>
                   <Input
@@ -656,12 +656,12 @@ const VehicleForm = ({
                     onChange={handleChange}
                     placeholder="Mercedes-Benz Clase S"
                     required
-                    data-oid="bawxno6"
+                    data-oid="n9d9n_o"
                   />
                 </div>
 
-                <div data-oid="rtkcx0w">
-                  <Label htmlFor="licensePlate" data-oid="1cpuxto">
+                <div data-oid="9w:jn_8">
+                  <Label htmlFor="licensePlate" data-oid="q:r19v4">
                     Matrícula
                   </Label>
                   <Input
@@ -671,13 +671,13 @@ const VehicleForm = ({
                     onChange={handleChange}
                     placeholder="1234ABC"
                     required
-                    data-oid="7kn-ibi"
+                    data-oid="arz9r9c"
                   />
                 </div>
 
-                <div className="grid grid-cols-2 gap-4" data-oid="qbwyphw">
-                  <div data-oid="6ur7_15">
-                    <Label htmlFor="type" data-oid="g05wo7c">
+                <div className="grid grid-cols-2 gap-4" data-oid="_t:hu_k">
+                  <div data-oid=".penv_9">
+                    <Label htmlFor="type" data-oid="1c___3:">
                       Tipo
                     </Label>
                     <Select
@@ -685,39 +685,39 @@ const VehicleForm = ({
                       onValueChange={(value) =>
                         handleSelectChange(value, "type")
                       }
-                      data-oid="s3_g8dr"
+                      data-oid="1.t.e67"
                     >
-                      <SelectTrigger data-oid="yit_sq2">
+                      <SelectTrigger data-oid="pc9uj27">
                         <SelectValue
                           placeholder="Seleccionar tipo"
-                          data-oid="cka0i45"
+                          data-oid=".kngv_:"
                         />
                       </SelectTrigger>
-                      <SelectContent data-oid="7bzkjnz">
-                        <SelectItem value="sedan" data-oid="6hj3b3z">
+                      <SelectContent data-oid="0mwd5cr">
+                        <SelectItem value="sedan" data-oid=":eqj7t3">
                           Sedán
                         </SelectItem>
-                        <SelectItem value="suv" data-oid="f4neo4-">
+                        <SelectItem value="suv" data-oid="r2bk8t1">
                           SUV
                         </SelectItem>
-                        <SelectItem value="van" data-oid="okcg-0q">
+                        <SelectItem value="van" data-oid="rer18zx">
                           Van/Minivan
                         </SelectItem>
-                        <SelectItem value="limousine" data-oid="2c915l_">
+                        <SelectItem value="limousine" data-oid="93oro6t">
                           Limusina
                         </SelectItem>
-                        <SelectItem value="helicopter" data-oid="vpmbgjz">
+                        <SelectItem value="helicopter" data-oid="0.1zndr">
                           Helicóptero
                         </SelectItem>
-                        <SelectItem value="jet" data-oid="i2o0z-z">
+                        <SelectItem value="jet" data-oid="8lvl45_">
                           Jet
                         </SelectItem>
                       </SelectContent>
                     </Select>
                   </div>
 
-                  <div data-oid="olfi2k8">
-                    <Label htmlFor="category" data-oid="-aqbn4k">
+                  <div data-oid="_m4bl3z">
+                    <Label htmlFor="category" data-oid="gydt5h1">
                       Categoría
                     </Label>
                     <Select
@@ -725,31 +725,31 @@ const VehicleForm = ({
                       onValueChange={(value) =>
                         handleSelectChange(value, "category")
                       }
-                      data-oid="vxr86wu"
+                      data-oid="730.a9n"
                     >
-                      <SelectTrigger data-oid="9wgbq0i">
+                      <SelectTrigger data-oid="vpwazr:">
                         <SelectValue
                           placeholder="Seleccionar categoría"
-                          data-oid="q-k6zyz"
+                          data-oid="hoak8p6"
                         />
                       </SelectTrigger>
-                      <SelectContent data-oid="98wq7xu">
-                        <SelectItem value="business_class" data-oid="bqh84o-">
+                      <SelectContent data-oid="5nbxitn">
+                        <SelectItem value="business_class" data-oid="aygevxy">
                           Business Class
                         </SelectItem>
-                        <SelectItem value="first_class" data-oid="x5kjkqm">
+                        <SelectItem value="first_class" data-oid="6.__n-j">
                           First Class
                         </SelectItem>
-                        <SelectItem value="business_van" data-oid="l2b-0q8">
+                        <SelectItem value="business_van" data-oid="l_2g6jg">
                           Business Van
                         </SelectItem>
-                        <SelectItem value="armored_class" data-oid="pvlzvs_">
+                        <SelectItem value="armored_class" data-oid=".7.v.fy">
                           Blindado
                         </SelectItem>
-                        <SelectItem value="limousine_class" data-oid="qod7.4y">
+                        <SelectItem value="limousine_class" data-oid="are8y51">
                           Limusina
                         </SelectItem>
-                        <SelectItem value="air_transfer" data-oid="9z:l98r">
+                        <SelectItem value="air_transfer" data-oid="icdw23a">
                           Transporte Aéreo
                         </SelectItem>
                       </SelectContent>
@@ -757,8 +757,8 @@ const VehicleForm = ({
                   </div>
                 </div>
 
-                <div data-oid="vp:vx08">
-                  <Label htmlFor="notes" data-oid="2.1a7xx">
+                <div data-oid="sbc43fv">
+                  <Label htmlFor="notes" data-oid="orhiek-">
                     Descripción/Notas
                   </Label>
                   <Textarea
@@ -769,16 +769,16 @@ const VehicleForm = ({
                     placeholder="Descripción breve del vehículo"
                     className="resize-none"
                     rows={3}
-                    data-oid="abn1v9r"
+                    data-oid="j3bni3."
                   />
                 </div>
 
                 <div
                   className="grid grid-cols-1 md:grid-cols-2 gap-4"
-                  data-oid="lujjp1v"
+                  data-oid="zpk5jn3"
                 >
-                  <div data-oid="dvzi2qe">
-                    <Label htmlFor="details.brand" data-oid="1r1ttbn">
+                  <div data-oid="e7:z:--">
+                    <Label htmlFor="details.brand" data-oid=".i:5upc">
                       Marca
                     </Label>
                     <Input
@@ -787,12 +787,12 @@ const VehicleForm = ({
                       value={formData.details.brand}
                       onChange={handleChange}
                       placeholder="Mercedes-Benz"
-                      data-oid=":c:-j-u"
+                      data-oid="p1:e17v"
                     />
                   </div>
 
-                  <div data-oid="dp7kiss">
-                    <Label htmlFor="details.model" data-oid="uh6azyb">
+                  <div data-oid="k1-_dwy">
+                    <Label htmlFor="details.model" data-oid="29c8nu6">
                       Modelo
                     </Label>
                     <Input
@@ -801,14 +801,14 @@ const VehicleForm = ({
                       value={formData.details.model}
                       onChange={handleChange}
                       placeholder="Clase S"
-                      data-oid="vruo.o-"
+                      data-oid="2h2r7am"
                     />
                   </div>
                 </div>
 
-                <div className="grid grid-cols-3 gap-4" data-oid="9y0nl5m">
-                  <div data-oid="i7jt978">
-                    <Label htmlFor="details.year" data-oid="oah-jk3">
+                <div className="grid grid-cols-3 gap-4" data-oid="3iczo24">
+                  <div data-oid="qeo88jw">
+                    <Label htmlFor="details.year" data-oid="otw:a-b">
                       Año
                     </Label>
                     <Input
@@ -818,12 +818,12 @@ const VehicleForm = ({
                       onChange={handleChange}
                       placeholder="2023"
                       type="number"
-                      data-oid=".qttqop"
+                      data-oid="50pprcy"
                     />
                   </div>
 
-                  <div data-oid="p9gljl7">
-                    <Label htmlFor="details.color" data-oid=":d44s8:">
+                  <div data-oid="p5-_tv:">
+                    <Label htmlFor="details.color" data-oid="axzqyia">
                       Color
                     </Label>
                     <Input
@@ -832,12 +832,12 @@ const VehicleForm = ({
                       value={formData.details.color}
                       onChange={handleChange}
                       placeholder="Negro"
-                      data-oid="mssp.nr"
+                      data-oid=":3m:zz-"
                     />
                   </div>
 
-                  <div data-oid="7j_q5_r">
-                    <Label htmlFor="capacity.passengers" data-oid="-gk:4rz">
+                  <div data-oid="zgsyg73">
+                    <Label htmlFor="capacity.passengers" data-oid="-0zsgy_">
                       Capacidad Pasajeros
                     </Label>
                     <Input
@@ -846,14 +846,14 @@ const VehicleForm = ({
                       value={formData.capacity.passengers.toString()}
                       onChange={handleChange}
                       type="number"
-                      data-oid="ugoan6n"
+                      data-oid="-7-90gw"
                     />
                   </div>
                 </div>
 
-                <div className="grid grid-cols-2 gap-4" data-oid="ebx2-ks">
-                  <div data-oid="fk6c5.n">
-                    <Label htmlFor="capacity.luggage" data-oid="n7d7603">
+                <div className="grid grid-cols-2 gap-4" data-oid="9j5e82v">
+                  <div data-oid="m2ia_wf">
+                    <Label htmlFor="capacity.luggage" data-oid="fuig:7a">
                       Capacidad Equipaje
                     </Label>
                     <Input
@@ -862,14 +862,14 @@ const VehicleForm = ({
                       value={formData.capacity.luggage.toString()}
                       onChange={handleChange}
                       type="number"
-                      data-oid="plc6-5p"
+                      data-oid="vgc.9yq"
                     />
                   </div>
 
-                  <div data-oid="2d6nins">
+                  <div data-oid="8h75zfo">
                     <div
                       className="flex items-center space-x-2 pt-2"
-                      data-oid="94-wbss"
+                      data-oid="9kt9ycz"
                     >
                       <Switch
                         id="details.armored"
@@ -877,10 +877,10 @@ const VehicleForm = ({
                         onCheckedChange={(checked: boolean) =>
                           handleBooleanChange("details.armored", checked)
                         }
-                        data-oid="5iqca9m"
+                        data-oid="ic86jok"
                       />
 
-                      <Label htmlFor="details.armored" data-oid="q5lobgk">
+                      <Label htmlFor="details.armored" data-oid="xxj5vef">
                         Blindado
                       </Label>
                     </div>
@@ -888,8 +888,8 @@ const VehicleForm = ({
                 </div>
 
                 {formData.details.armored && (
-                  <div data-oid="l_2gc9k">
-                    <Label htmlFor="details.armor_level" data-oid="kl2g15h">
+                  <div data-oid="_rtj_48">
+                    <Label htmlFor="details.armor_level" data-oid="9bsujs7">
                       Nivel de Blindaje
                     </Label>
                     <Input
@@ -898,55 +898,55 @@ const VehicleForm = ({
                       value={formData.details.armor_level}
                       onChange={handleChange}
                       placeholder="VR9"
-                      data-oid="c:t:z8q"
+                      data-oid="7gge9k9"
                     />
                   </div>
                 )}
 
-                <div className="space-y-3" data-oid="3xlb9u6">
-                  <Label htmlFor="features" data-oid="jkjl4lz">
+                <div className="space-y-3" data-oid="matm._p">
+                  <Label htmlFor="features" data-oid="xzi5llr">
                     Características/Amenidades
                   </Label>
-                  <div className="flex gap-2" data-oid="k5yi:e9">
+                  <div className="flex gap-2" data-oid="vinhras">
                     <Input
                       id="features-input"
                       value={featuresInput}
                       onChange={(e) => setFeaturesInput(e.target.value)}
                       placeholder="Añadir característica"
                       className="flex-1"
-                      data-oid="ims2xsl"
+                      data-oid="lcl_:t6"
                     />
 
                     <Button
                       type="button"
                       onClick={handleAddFeature}
                       variant="outline"
-                      data-oid="wb:vbc2"
+                      data-oid="sjhs_lo"
                     >
-                      <PlusCircle size={18} data-oid="9k.f.o2" />
+                      <PlusCircle size={18} data-oid="y519-rw" />
                     </Button>
                   </div>
 
                   {formData.details.features.length > 0 && (
                     <div
                       className="mt-2 flex flex-wrap gap-2"
-                      data-oid="s3ab0ya"
+                      data-oid="xvpldnp"
                     >
                       {formData.details.features.map(
                         (feature: string, index: number) => (
                           <div
                             key={index}
                             className="bg-gray-100 px-3 py-1 rounded-full text-sm flex items-center"
-                            data-oid="omql0lb"
+                            data-oid="m3irt99"
                           >
                             {feature}
                             <button
                               type="button"
                               className="ml-2 text-gray-600 hover:text-gray-600"
                               onClick={() => handleRemoveFeature(index)}
-                              data-oid="i1j:me9"
+                              data-oid="lradzfa"
                             >
-                              <X size={14} data-oid="9v62opu" />
+                              <X size={14} data-oid="ihey82_" />
                             </button>
                           </div>
                         ),
@@ -958,18 +958,18 @@ const VehicleForm = ({
             </div>
 
             {/* Propietario e información adicional */}
-            <div className="space-y-4" data-oid="oi2.7k6">
+            <div className="space-y-4" data-oid="uys.6ie">
               <h3
                 className="text-lg font-medium flex items-center"
-                data-oid="_gy8007"
+                data-oid="63f4wr."
               >
-                <User className="mr-2 h-5 w-5" data-oid="esu66dg" />
+                <User className="mr-2 h-5 w-5" data-oid="t:i5:ez" />
                 Propietario y Disponibilidad
               </h3>
 
-              <div className="space-y-3" data-oid="cz5b201">
-                <div data-oid="ml_45q-">
-                  <Label htmlFor="ownerType" data-oid="5929adc">
+              <div className="space-y-3" data-oid="8-2sxll">
+                <div data-oid="zbyoj.i">
+                  <Label htmlFor="ownerType" data-oid=":iwcguq">
                     Tipo de Propietario
                   </Label>
                   <Select
@@ -977,27 +977,27 @@ const VehicleForm = ({
                     onValueChange={(value) =>
                       handleSelectChange(value, "ownerType")
                     }
-                    data-oid="iilm9cp"
+                    data-oid="m47xo0f"
                   >
-                    <SelectTrigger data-oid="ym1p84r">
+                    <SelectTrigger data-oid="n9xew54">
                       <SelectValue
                         placeholder="Seleccionar tipo de propietario"
-                        data-oid="whdbhp:"
+                        data-oid="z3zugep"
                       />
                     </SelectTrigger>
-                    <SelectContent data-oid="t3ow4_w">
-                      <SelectItem value="company" data-oid="wc3jlrx">
+                    <SelectContent data-oid="-c6e.:f">
+                      <SelectItem value="company" data-oid="xx14s5.">
                         Empresa
                       </SelectItem>
-                      <SelectItem value="private_driver" data-oid="fqhabcg">
+                      <SelectItem value="private_driver" data-oid="u:nwjg8">
                         Chófer Privado
                       </SelectItem>
                     </SelectContent>
                   </Select>
                 </div>
 
-                <div data-oid=":i8uf-9">
-                  <Label htmlFor="collaboratorId" data-oid="wpdn2_l">
+                <div data-oid="r79jy7l">
+                  <Label htmlFor="collaboratorId" data-oid="r3ktfky">
                     Seleccionar Colaborador
                   </Label>
                   <Select
@@ -1016,25 +1016,25 @@ const VehicleForm = ({
                       }
                     }}
                     disabled={loadingCollaborators}
-                    data-oid="vldxz0o"
+                    data-oid="leahb02"
                   >
-                    <SelectTrigger data-oid="-v:9:im">
+                    <SelectTrigger data-oid="8hr0p46">
                       <SelectValue
                         placeholder={
                           loadingCollaborators
                             ? "Cargando colaboradores..."
                             : "Seleccionar colaborador"
                         }
-                        data-oid="sm:rv_e"
+                        data-oid="a:stb1j"
                       />
                     </SelectTrigger>
-                    <SelectContent data-oid="g46-00v">
+                    <SelectContent data-oid="pe1tfht">
                       {collaborators.length > 0 ? (
                         collaborators.map((collaborator) => (
                           <SelectItem
                             key={collaborator.id}
                             value={collaborator.id}
-                            data-oid="kx_iub_"
+                            data-oid="d:5bnpw"
                           >
                             {collaborator.name} ({collaborator.type})
                           </SelectItem>
@@ -1043,7 +1043,7 @@ const VehicleForm = ({
                         <SelectItem
                           value="no_collaborators"
                           disabled
-                          data-oid="2e-iv4p"
+                          data-oid="8s7jyio"
                         >
                           No hay colaboradores disponibles
                         </SelectItem>
@@ -1052,8 +1052,8 @@ const VehicleForm = ({
                   </Select>
                 </div>
 
-                <div data-oid="k03qiy-">
-                  <Label className="mb-2 block" data-oid="zfripa4">
+                <div data-oid="f-4tlxw">
+                  <Label className="mb-2 block" data-oid="vyh_r4e">
                     Choferes Asignados
                   </Label>
 
@@ -1066,9 +1066,9 @@ const VehicleForm = ({
                       }
                       setDriverPopoverOpen(open);
                     }}
-                    data-oid="x7p1qc8"
+                    data-oid="3p2b-80"
                   >
-                    <PopoverTrigger asChild data-oid="4vnwssi">
+                    <PopoverTrigger asChild data-oid="j64jn4.">
                       <Button
                         variant="outline"
                         role="combobox"
@@ -1078,33 +1078,33 @@ const VehicleForm = ({
                             "opacity-50 cursor-not-allowed",
                         )}
                         disabled={!formData.collaboratorId || loadingDrivers}
-                        data-oid="bt6dl8a"
+                        data-oid="6eq_5qa"
                       >
                         {formData.associatedDrivers.length > 0
                           ? `${formData.associatedDrivers.length} chofer(es) seleccionado(s)`
                           : "Seleccionar choferes"}
                         <ChevronsUpDown
                           className="ml-2 h-4 w-4 shrink-0 opacity-50"
-                          data-oid="_cdbaqk"
+                          data-oid="pebb3mo"
                         />
                       </Button>
                     </PopoverTrigger>
-                    <PopoverContent className="w-full p-0" data-oid="t1__z8_">
+                    <PopoverContent className="w-full p-0" data-oid="qwnqx7-">
                       {loadingDrivers ? (
-                        <div className="p-4 text-center" data-oid="99o2gve">
+                        <div className="p-4 text-center" data-oid="95c-3pa">
                           <span
                             className="animate-spin inline-block mr-2"
-                            data-oid=".c0d7pd"
+                            data-oid="1xqqo2z"
                           >
                             ⏳
                           </span>
                           Cargando choferes...
                         </div>
                       ) : (
-                        <div className="p-1" data-oid="0qgm0bs">
+                        <div className="p-1" data-oid="trt5f8u">
                           <div
                             className="border-b px-3 py-2"
-                            data-oid="js39ycb"
+                            data-oid="avfosv9"
                           >
                             <input
                               className="w-full border-none bg-transparent outline-none placeholder:text-gray-400"
@@ -1113,21 +1113,21 @@ const VehicleForm = ({
                               onChange={(e) => {
                                 setSearchDriverQuery(e.target.value);
                               }}
-                              data-oid="1c85l28"
+                              data-oid="oiab-cj"
                             />
                           </div>
-                          <ScrollArea className="h-60 py-2" data-oid=":rdtmmx">
+                          <ScrollArea className="h-60 py-2" data-oid="n3:.fci">
                             {filteredDrivers.length === 0 ? (
                               <div
                                 className="py-6 text-center text-sm"
-                                data-oid=":dnaoyz"
+                                data-oid="luniltc"
                               >
                                 {drivers.length === 0
                                   ? "No hay choferes disponibles para este colaborador."
                                   : "No se encontraron choferes con esa búsqueda."}
                               </div>
                             ) : (
-                              <div className="px-1" data-oid="97d341l">
+                              <div className="px-1" data-oid="mghsrk7">
                                 {filteredDrivers.map((driver) => {
                                   const isSelected =
                                     formData.associatedDrivers.includes(
@@ -1169,7 +1169,7 @@ const VehicleForm = ({
                                           associatedDrivers: updatedDrivers,
                                         });
                                       }}
-                                      data-oid="5_6o-so"
+                                      data-oid="netp73r"
                                     >
                                       <Check
                                         className={cn(
@@ -1178,10 +1178,10 @@ const VehicleForm = ({
                                             ? "opacity-100"
                                             : "opacity-0",
                                         )}
-                                        data-oid="j6os6:s"
+                                        data-oid="tagux.r"
                                       />
 
-                                      <span data-oid="z4gysmm">
+                                      <span data-oid="o37dhs4">
                                         {driver.name}
                                       </span>
                                     </button>
@@ -1198,7 +1198,7 @@ const VehicleForm = ({
                   {formData.associatedDrivers.length > 0 && (
                     <div
                       className="mt-3 flex flex-wrap gap-2"
-                      data-oid="qvu.-2k"
+                      data-oid="ux-ks9h"
                     >
                       {formData.associatedDrivers.map((driverId) => {
                         const driverInfo = drivers.find(
@@ -1208,7 +1208,7 @@ const VehicleForm = ({
                           <Badge
                             key={driverId}
                             className="py-1.5 pl-2 pr-1 flex items-center bg-gray-200 text-blue-800 hover:bg-blue-200"
-                            data-oid="gdqtx8f"
+                            data-oid="zzh3r:7"
                           >
                             {driverInfo.name}
                             <button
@@ -1223,9 +1223,9 @@ const VehicleForm = ({
                                     ),
                                 });
                               }}
-                              data-oid="wg:qixt"
+                              data-oid="lbsovb1"
                             >
-                              <X className="h-3 w-3" data-oid=".dbvdg_" />
+                              <X className="h-3 w-3" data-oid="m9e-d7m" />
                             </button>
                           </Badge>
                         ) : null;
@@ -1234,8 +1234,8 @@ const VehicleForm = ({
                   )}
                 </div>
 
-                <div data-oid="2-h9mgq">
-                  <Label htmlFor="ownerCountry" data-oid="9flitce">
+                <div data-oid="14is:4.">
+                  <Label htmlFor="ownerCountry" data-oid="ar8kxwy">
                     País del Propietario
                   </Label>
                   <Select
@@ -1243,50 +1243,50 @@ const VehicleForm = ({
                     onValueChange={(value) =>
                       handleSelectChange(value, "ownerCountry")
                     }
-                    data-oid="nstiw1t"
+                    data-oid="g79r1sh"
                   >
-                    <SelectTrigger data-oid="x-a-ji8">
+                    <SelectTrigger data-oid="tizye9v">
                       <SelectValue
                         placeholder="Seleccionar país"
-                        data-oid="bewsk2:"
+                        data-oid="6z65z80"
                       />
                     </SelectTrigger>
-                    <SelectContent data-oid="6:wci9q">
-                      <SelectItem value="ES" data-oid=":adp:ub">
+                    <SelectContent data-oid=":0thl-x">
+                      <SelectItem value="ES" data-oid="575qm5s">
                         🇪🇸 España
                       </SelectItem>
-                      <SelectItem value="PT" data-oid="cxrtef3">
+                      <SelectItem value="PT" data-oid="zjh__21">
                         🇵🇹 Portugal
                       </SelectItem>
-                      <SelectItem value="FR" data-oid="-8v2ua0">
+                      <SelectItem value="FR" data-oid="cgpf9rd">
                         🇫🇷 Francia
                       </SelectItem>
-                      <SelectItem value="IT" data-oid=".phkdt.">
+                      <SelectItem value="IT" data-oid="t.hplup">
                         🇮🇹 Italia
                       </SelectItem>
-                      <SelectItem value="DE" data-oid="h24oexj">
+                      <SelectItem value="DE" data-oid="zdnsoy7">
                         🇩🇪 Alemania
                       </SelectItem>
-                      <SelectItem value="GB" data-oid="52l-x:a">
+                      <SelectItem value="GB" data-oid="cq.ntfo">
                         🇬🇧 Reino Unido
                       </SelectItem>
                     </SelectContent>
                   </Select>
                 </div>
 
-                <div data-oid="mkygycd">
-                  <Label className="mb-2 block" data-oid="t4x4cvw">
+                <div data-oid=".mtn-y9">
+                  <Label className="mb-2 block" data-oid="f6jsz:-">
                     Tipo de Disponibilidad
                   </Label>
                   <div
                     className="space-y-2 border p-3 rounded-md"
-                    data-oid="a8f0ea."
+                    data-oid="bddyrov"
                   >
                     {availabilityTypes.map((type) => (
                       <div
                         key={type.id}
                         className="flex items-center"
-                        data-oid="sf9_-3j"
+                        data-oid="-xf54-j"
                       >
                         <input
                           type="checkbox"
@@ -1294,13 +1294,13 @@ const VehicleForm = ({
                           checked={formData.availabilityType.includes(type.id)}
                           onChange={() => handleAvailabilityTypeChange(type.id)}
                           className="h-4 w-4 rounded border-gray-300 text-gray-600 focus:ring-red-500"
-                          data-oid="5-5jpu-"
+                          data-oid="hausf0e"
                         />
 
                         <label
                           htmlFor={`availability-${type.id}`}
                           className="ml-2 block text-sm text-gray-900"
-                          data-oid="dudvjge"
+                          data-oid="vgz:3am"
                         >
                           {type.label}
                         </label>
@@ -1309,8 +1309,8 @@ const VehicleForm = ({
                   </div>
                 </div>
 
-                <div data-oid="5_kedxu">
-                  <Label htmlFor="availabilityDetails" data-oid="uja7_sg">
+                <div data-oid="cukfwpf">
+                  <Label htmlFor="availabilityDetails" data-oid="ytb6vt-">
                     Detalles de disponibilidad
                   </Label>
                   <Textarea
@@ -1320,12 +1320,12 @@ const VehicleForm = ({
                     onChange={handleChange}
                     placeholder="Ej: Disponible para Madrid Capital, Recorrido Aeropuerto-Centro, etc."
                     className="resize-none h-20"
-                    data-oid="ndkswc0"
+                    data-oid="ya.jqqo"
                   />
                 </div>
 
-                <div data-oid="csa.s_y">
-                  <Label htmlFor="insurancePolicyNumber" data-oid="-n8yjau">
+                <div data-oid="l8:xs.b">
+                  <Label htmlFor="insurancePolicyNumber" data-oid="ornt8k_">
                     Número de Póliza de Seguro
                   </Label>
                   <Input
@@ -1334,13 +1334,13 @@ const VehicleForm = ({
                     value={formData.insurancePolicyNumber}
                     onChange={handleChange}
                     placeholder="Ej: POL-12345"
-                    data-oid="uc3:yv5"
+                    data-oid="qsfarpd"
                   />
                 </div>
 
-                <div className="grid grid-cols-2 gap-4" data-oid=".h2rof5">
-                  <div data-oid="zw75zms">
-                    <Label htmlFor="lastMaintenanceDate" data-oid="0o-wtwo">
+                <div className="grid grid-cols-2 gap-4" data-oid="tsfge1.">
+                  <div data-oid="vohq.:f">
+                    <Label htmlFor="lastMaintenanceDate" data-oid="0lfrzby">
                       Último Mantenimiento
                     </Label>
                     <Input
@@ -1349,12 +1349,12 @@ const VehicleForm = ({
                       value={formData.lastMaintenanceDate}
                       onChange={handleChange}
                       type="date"
-                      data-oid="j.nv96b"
+                      data-oid="_b.s9b9"
                     />
                   </div>
 
-                  <div data-oid="lcb9tyf">
-                    <Label htmlFor="contractEndDate" data-oid="bmg6qb1">
+                  <div data-oid="lxcplxf">
+                    <Label htmlFor="contractEndDate" data-oid="ub4:h4o">
                       Fin de Contrato
                     </Label>
                     <Input
@@ -1363,7 +1363,7 @@ const VehicleForm = ({
                       value={formData.contractEndDate}
                       onChange={handleChange}
                       type="date"
-                      data-oid="7q31:x_"
+                      data-oid="j2.rex1"
                     />
                   </div>
                 </div>
@@ -1371,19 +1371,19 @@ const VehicleForm = ({
             </div>
 
             {/* Precios e imagen */}
-            <div className="space-y-4" data-oid="tap4d86">
+            <div className="space-y-4" data-oid="9kp9jmh">
               <h3
                 className="text-lg font-medium flex items-center"
-                data-oid="rqy--xp"
+                data-oid="oj2qk3a"
               >
-                <DollarSign className="mr-2 h-5 w-5" data-oid="3hc-72m" />
+                <DollarSign className="mr-2 h-5 w-5" data-oid="e.4wlb5" />
                 Precios y Disponibilidad
               </h3>
 
-              <div className="space-y-3" data-oid="u6pk509">
-                <div className="grid grid-cols-2 gap-4" data-oid="aq3at:h">
-                  <div data-oid="cesxj8l">
-                    <Label htmlFor="pricing.base_fare" data-oid="i3kek0r">
+              <div className="space-y-3" data-oid="l1nmqeo">
+                <div className="grid grid-cols-2 gap-4" data-oid="h0jx5_s">
+                  <div data-oid="b48cpfs">
+                    <Label htmlFor="pricing.base_fare" data-oid="vms32hu">
                       Tarifa Base
                     </Label>
                     <Input
@@ -1394,12 +1394,12 @@ const VehicleForm = ({
                       type="number"
                       min="0"
                       step="0.01"
-                      data-oid="fznzg7j"
+                      data-oid="yrg1rcy"
                     />
                   </div>
 
-                  <div data-oid="z5dgvla">
-                    <Label htmlFor="pricing.currency" data-oid=".ceyjjs">
+                  <div data-oid=".84s3ce">
+                    <Label htmlFor="pricing.currency" data-oid="zpss2z7">
                       Moneda
                     </Label>
                     <Select
@@ -1407,22 +1407,22 @@ const VehicleForm = ({
                       onValueChange={(value) =>
                         handleSelectChange(value, "pricing.currency")
                       }
-                      data-oid="f5i0a0h"
+                      data-oid="7qmu713"
                     >
-                      <SelectTrigger data-oid="ghx_y02">
+                      <SelectTrigger data-oid="ut075d:">
                         <SelectValue
                           placeholder="Seleccionar moneda"
-                          data-oid="0bok8j2"
+                          data-oid="ictuedp"
                         />
                       </SelectTrigger>
-                      <SelectContent data-oid="3m6fy:2">
-                        <SelectItem value="EUR" data-oid="7sptn76">
+                      <SelectContent data-oid="xl2n307">
+                        <SelectItem value="EUR" data-oid="lfvw3cz">
                           EUR - Euro
                         </SelectItem>
-                        <SelectItem value="USD" data-oid="2r-ndns">
+                        <SelectItem value="USD" data-oid="ebde6fj">
                           USD - Dólar
                         </SelectItem>
-                        <SelectItem value="GBP" data-oid="4mn.urf">
+                        <SelectItem value="GBP" data-oid="5vvhdt0">
                           GBP - Libra
                         </SelectItem>
                       </SelectContent>
@@ -1430,9 +1430,9 @@ const VehicleForm = ({
                   </div>
                 </div>
 
-                <div className="grid grid-cols-2 gap-4" data-oid="i0ol9.a">
-                  <div data-oid="vg_s5ej">
-                    <Label htmlFor="pricing.per_km" data-oid="bsi6dyf">
+                <div className="grid grid-cols-2 gap-4" data-oid="sl0-cq8">
+                  <div data-oid="_m6cvg3">
+                    <Label htmlFor="pricing.per_km" data-oid="cpuy.ak">
                       Precio por km
                     </Label>
                     <Input
@@ -1443,12 +1443,12 @@ const VehicleForm = ({
                       type="number"
                       min="0"
                       step="0.01"
-                      data-oid="-rniv2:"
+                      data-oid="0jp4_v2"
                     />
                   </div>
 
-                  <div data-oid="ki7o-bx">
-                    <Label htmlFor="pricing.per_hour" data-oid="hmwx9wa">
+                  <div data-oid="pqn..eh">
+                    <Label htmlFor="pricing.per_hour" data-oid="7xc.lxq">
                       Precio por hora
                     </Label>
                     <Input
@@ -1459,13 +1459,13 @@ const VehicleForm = ({
                       type="number"
                       min="0"
                       step="0.01"
-                      data-oid="nfzl_b3"
+                      data-oid="l4hedm7"
                     />
                   </div>
                 </div>
 
-                <div data-oid="jrmd8-v">
-                  <Label htmlFor="availability_radius" data-oid="mpqpjlb">
+                <div data-oid="n8bbge5">
+                  <Label htmlFor="availability_radius" data-oid="554gan_">
                     Radio de disponibilidad (km)
                   </Label>
                   <Input
@@ -1475,13 +1475,13 @@ const VehicleForm = ({
                     onChange={handleChange}
                     type="number"
                     min="1"
-                    data-oid="dkx7e6u"
+                    data-oid=":73lz2a"
                   />
                 </div>
 
                 <div
                   className="flex items-center space-x-2 pt-2"
-                  data-oid="t7bykb:"
+                  data-oid="txkoczd"
                 >
                   <Switch
                     id="available"
@@ -1489,29 +1489,29 @@ const VehicleForm = ({
                     onCheckedChange={(checked: boolean) =>
                       handleBooleanChange("available", checked)
                     }
-                    data-oid="a1dgv:t"
+                    data-oid="oat7s4y"
                   />
 
-                  <Label htmlFor="available" data-oid="jlshe-1">
+                  <Label htmlFor="available" data-oid="6occz.5">
                     Vehículo Disponible
                   </Label>
                 </div>
 
-                <div className="pt-4" data-oid="_swxj-4">
-                  <Label className="mb-2 block" data-oid=":ebx80g">
+                <div className="pt-4" data-oid="9t7ovr2">
+                  <Label className="mb-2 block" data-oid="epl4jve">
                     Imagen del Vehículo
                   </Label>
                   <div
                     className="border border-dashed border-gray-300 rounded-lg p-6 text-center"
-                    data-oid="6gnw5f4"
+                    data-oid="ev07fk:"
                   >
                     {imagePreview ? (
-                      <div className="relative" data-oid="1axm1.o">
+                      <div className="relative" data-oid="o-gp6iz">
                         <img
                           src={imagePreview}
                           alt="Vista previa"
                           className="mx-auto max-h-48 rounded-lg object-cover"
-                          data-oid="k.goiao"
+                          data-oid="knue.dx"
                         />
 
                         <button
@@ -1521,22 +1521,22 @@ const VehicleForm = ({
                             setFormData({ ...formData, image: "" });
                           }}
                           className="absolute -top-2 -right-2 bg-gray-200 text-gray-600 rounded-full p-1"
-                          data-oid="f4___aq"
+                          data-oid="_ror3:v"
                         >
-                          <X size={16} data-oid="_r.j371" />
+                          <X size={16} data-oid="07:8vtn" />
                         </button>
                       </div>
                     ) : (
-                      <div data-oid="d.8pnr-">
+                      <div data-oid="tbmc_6j">
                         <Upload
                           className="mx-auto h-12 w-12 text-gray-400"
-                          data-oid="79d4a9j"
+                          data-oid="-ourh7e"
                         />
 
                         <label
                           htmlFor="image-upload"
                           className="mt-2 cursor-pointer rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 inline-block"
-                          data-oid="eak813p"
+                          data-oid="z803das"
                         >
                           Subir imagen
                         </label>
@@ -1547,12 +1547,12 @@ const VehicleForm = ({
                           className="sr-only"
                           accept="image/*"
                           onChange={handleImageUpload}
-                          data-oid="sgpw_of"
+                          data-oid="bqc0ckf"
                         />
 
                         <p
                           className="mt-2 text-xs text-gray-500"
-                          data-oid="g7x52x:"
+                          data-oid="b9aqg:y"
                         >
                           PNG, JPG, WEBP hasta 10MB
                         </p>
@@ -1564,16 +1564,16 @@ const VehicleForm = ({
             </div>
           </div>
 
-          <div className="flex justify-end space-x-3 pt-4" data-oid="vqkx7yf">
+          <div className="flex justify-end space-x-3 pt-4" data-oid="5361abw">
             <Button
               type="button"
               variant="outline"
               onClick={onCancel}
-              data-oid="jjmr0_l"
+              data-oid="323n9.d"
             >
               Cancelar
             </Button>
-            <Button type="submit" disabled={loading} data-oid="sg-kmu-">
+            <Button type="submit" disabled={loading} data-oid="3b_t27q">
               {loading
                 ? "Guardando..."
                 : editMode

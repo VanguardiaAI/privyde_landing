@@ -42,25 +42,25 @@ export default function TripsPage() {
   ]; */
 
   return (
-    <div className="flex flex-col min-h-screen" data-oid="2pglcq1">
-      <Navbar data-oid="uq1_de8" />
+    <div className="flex flex-col min-h-screen" data-oid="rxowtdk">
+      <Navbar data-oid="pqcr_73" />
 
-      <main className="flex-1 bg-white pb-16" data-oid="9dd8.os">
+      <main className="flex-1 bg-white pb-16" data-oid="qsdz1co">
         <div
           className="container mx-auto px-4 py-8 max-w-5xl"
-          data-oid="f6h77y3"
+          data-oid="cq:sckp"
         >
           <h1
             className="text-3xl font-bold text-gray-800 mb-6"
-            data-oid="2mr-mx8"
+            data-oid="vznmcby"
           >
             Viajes
           </h1>
 
           {/* Tabs */}
-          <div className="border-b border-gray-200 mb-6" data-oid="r3pijsc">
-            <div className="flex justify-between items-end" data-oid="jhwjrj9">
-              <div className="flex" data-oid="6476bcf">
+          <div className="border-b border-gray-200 mb-6" data-oid="jhzack5">
+            <div className="flex justify-between items-end" data-oid="iqu::0r">
+              <div className="flex" data-oid="icvgz5c">
                 <button
                   className={`py-2 px-4 font-medium ${
                     activeTab === "upcoming"
@@ -68,7 +68,7 @@ export default function TripsPage() {
                       : "text-gray-500 hover:text-gray-700"
                   }`}
                   onClick={() => setActiveTab("upcoming")}
-                  data-oid="xid047j"
+                  data-oid="0j7idv5"
                 >
                   Próximamente
                 </button>
@@ -79,7 +79,7 @@ export default function TripsPage() {
                       : "text-gray-500 hover:text-gray-700"
                   }`}
                   onClick={() => setActiveTab("past")}
-                  data-oid="2fbar2z"
+                  data-oid="d7f:dk8"
                 >
                   Pasado
                 </button>
@@ -90,51 +90,51 @@ export default function TripsPage() {
                       : "text-gray-500 hover:text-gray-700"
                   }`}
                   onClick={() => setActiveTab("canceled")}
-                  data-oid="6yzs379"
+                  data-oid="e69_f8j"
                 >
                   Cancelados
                 </button>
               </div>
               <button
                 className="flex items-center text-gray-700 hover:text-black mb-2"
-                data-oid="62:rv0l"
+                data-oid="0m2uhp:"
               >
-                <Download className="w-4 h-4 mr-1" data-oid="h3.iwtr" />
+                <Download className="w-4 h-4 mr-1" data-oid="1bt3_kr" />
                 Exportar
               </button>
             </div>
           </div>
 
           {/* Contador */}
-          <div className="mb-6" data-oid="tilneyu">
-            <div className="text-sm text-gray-600" data-oid="dys.xc5">
+          <div className="mb-6" data-oid="qy3vqf9">
+            <div className="text-sm text-gray-600" data-oid=":d7mxa5">
               0 reservas
             </div>
           </div>
 
           {/* Búsqueda y filtros */}
-          <div className="flex mb-4" data-oid="1-3__v-">
-            <div className="relative flex-grow mr-2" data-oid="3rwm-45">
+          <div className="flex mb-4" data-oid="c5_i-8q">
+            <div className="relative flex-grow mr-2" data-oid="tdmxue.">
               <input
                 type="text"
                 placeholder="Busca por número de reserva, ubicación o nombre"
                 className="w-full p-2 pl-10 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-200"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                data-oid="fpz5qpj"
+                data-oid="vdn.83g"
               />
 
               <Search
                 className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-4 h-4"
-                data-oid="jx4q0y0"
+                data-oid="b:a5v3k"
               />
             </div>
             <button
               className="p-2 border border-gray-300 rounded-md hover:bg-gray-50"
               onClick={toggleFilters}
-              data-oid="7-m2e4p"
+              data-oid="8f..o-d"
             >
-              <Filter className="w-5 h-5 text-gray-500" data-oid="rcax9qx" />
+              <Filter className="w-5 h-5 text-gray-500" data-oid="wb0fjrx" />
             </button>
           </div>
 
@@ -142,13 +142,13 @@ export default function TripsPage() {
           {showFilters && (
             <div
               className="bg-white rounded-lg shadow-md p-6 mb-6"
-              data-oid="sifgrlo"
+              data-oid="fktetyu"
             >
               <div
                 className="flex justify-between items-center mb-4"
-                data-oid="5laigej"
+                data-oid="s6vzu:c"
               >
-                <h3 className="font-medium text-gray-800" data-oid="7_ezn.j">
+                <h3 className="font-medium text-gray-800" data-oid="r24-jtz">
                   Los viajes con filtro
                 </h3>
                 <button
@@ -157,52 +157,52 @@ export default function TripsPage() {
                     setDateFilter("Fechas de inicio y fin");
                     setStatusFilter("Todos");
                   }}
-                  data-oid="0hgvavb"
+                  data-oid="6o:hu3w"
                 >
                   Reajustar
                 </button>
               </div>
 
-              <div className="flex flex-wrap gap-4 mb-6" data-oid="piojog0">
+              <div className="flex flex-wrap gap-4 mb-6" data-oid="j:z-y3.">
                 {/* Filtro de fechas */}
                 <div
                   className="relative w-full md:w-auto md:flex-1"
-                  data-oid="fjvul-o"
+                  data-oid="6u-s_2r"
                 >
                   <div
                     className="text-sm text-gray-600 mb-1"
-                    data-oid="pk2e--r"
+                    data-oid="7ooluug"
                   >
                     Fechas
                   </div>
                   <div
                     className="flex items-center justify-between bg-gray-100 p-2 rounded-md cursor-pointer"
                     onClick={() => setIsDateDropdownOpen(!isDateDropdownOpen)}
-                    data-oid=".et5ksr"
+                    data-oid="fhbx7jg"
                   >
-                    <div className="flex items-center" data-oid=":mghkdm">
+                    <div className="flex items-center" data-oid="d8ril5w">
                       <Calendar
                         className="w-4 h-4 mr-2 text-gray-600"
-                        data-oid="sa.e:33"
+                        data-oid=".8a:jci"
                       />
 
                       <span
                         className="text-sm text-gray-700"
-                        data-oid=".v913nl"
+                        data-oid=".ya5of1"
                       >
                         {dateFilter}
                       </span>
                     </div>
                     <ChevronDown
                       className={`w-4 h-4 text-gray-600 transition-transform ${isDateDropdownOpen ? "rotate-180" : ""}`}
-                      data-oid="xot71o5"
+                      data-oid="mt7fzda"
                     />
                   </div>
 
                   {isDateDropdownOpen && (
                     <div
                       className="absolute z-10 mt-1 w-full bg-white border border-gray-200 rounded-md shadow-md"
-                      data-oid="-fze.9i"
+                      data-oid="6fwfwy:"
                     >
                       <div
                         className="p-2 hover:bg-gray-100 cursor-pointer"
@@ -210,7 +210,7 @@ export default function TripsPage() {
                           setDateFilter("Fechas de inicio y fin");
                           setIsDateDropdownOpen(false);
                         }}
-                        data-oid="f8l2qmz"
+                        data-oid="0w7gnzh"
                       >
                         Fechas de inicio y fin
                       </div>
@@ -220,7 +220,7 @@ export default function TripsPage() {
                           setDateFilter("Últimos 30 días");
                           setIsDateDropdownOpen(false);
                         }}
-                        data-oid="v28d7ke"
+                        data-oid="l2s6:s9"
                       >
                         Últimos 30 días
                       </div>
@@ -230,7 +230,7 @@ export default function TripsPage() {
                           setDateFilter("Últimos 90 días");
                           setIsDateDropdownOpen(false);
                         }}
-                        data-oid="8oh2n_-"
+                        data-oid="lp4jqk2"
                       >
                         Últimos 90 días
                       </div>
@@ -241,11 +241,11 @@ export default function TripsPage() {
                 {/* Filtro de estado */}
                 <div
                   className="relative w-full md:w-auto md:flex-1"
-                  data-oid="-q1uuzg"
+                  data-oid="rlw0gpp"
                 >
                   <div
                     className="text-sm text-gray-600 mb-1"
-                    data-oid="d2hqxxs"
+                    data-oid=":bvpl3-"
                   >
                     Estado
                   </div>
@@ -254,21 +254,21 @@ export default function TripsPage() {
                     onClick={() =>
                       setIsStatusDropdownOpen(!isStatusDropdownOpen)
                     }
-                    data-oid="kx1.jlv"
+                    data-oid="we_n28b"
                   >
-                    <span className="text-sm text-gray-700" data-oid="5.cijc_">
+                    <span className="text-sm text-gray-700" data-oid="7wh5w2-">
                       {statusFilter}
                     </span>
                     <ChevronDown
                       className={`w-4 h-4 text-gray-600 transition-transform ${isStatusDropdownOpen ? "rotate-180" : ""}`}
-                      data-oid="ior2xkr"
+                      data-oid="ns.psdv"
                     />
                   </div>
 
                   {isStatusDropdownOpen && (
                     <div
                       className="absolute z-10 mt-1 w-full bg-white border border-gray-200 rounded-md shadow-md"
-                      data-oid="t7_jp17"
+                      data-oid="4-t15ey"
                     >
                       <div
                         className="p-2 hover:bg-gray-100 cursor-pointer"
@@ -276,7 +276,7 @@ export default function TripsPage() {
                           setStatusFilter("Todos");
                           setIsStatusDropdownOpen(false);
                         }}
-                        data-oid="9z81jfk"
+                        data-oid="0xiy8ex"
                       >
                         Todos
                       </div>
@@ -286,7 +286,7 @@ export default function TripsPage() {
                           setStatusFilter("Confirmado");
                           setIsStatusDropdownOpen(false);
                         }}
-                        data-oid="tsshc4v"
+                        data-oid="3:rcf68"
                       >
                         Confirmado
                       </div>
@@ -296,7 +296,7 @@ export default function TripsPage() {
                           setStatusFilter("Pendiente");
                           setIsStatusDropdownOpen(false);
                         }}
-                        data-oid="a:zkus_"
+                        data-oid="9m_7rl_"
                       >
                         Pendiente
                       </div>
@@ -305,18 +305,18 @@ export default function TripsPage() {
                 </div>
               </div>
 
-              <div className="flex justify-end space-x-2" data-oid="t9n5aa9">
+              <div className="flex justify-end space-x-2" data-oid=".xgq_b.">
                 <button
                   className="px-4 py-2 border border-gray-300 rounded-md text-gray-700 hover:bg-gray-50"
                   onClick={cancelFilters}
-                  data-oid="ho:cku2"
+                  data-oid="6m14vpj"
                 >
                   Cancelar
                 </button>
                 <button
                   className="px-4 py-2 bg-black hover:bg-gray-800 text-white rounded-md transition-all duration-150 ease-in-out"
                   onClick={applyFilters}
-                  data-oid="rzi556u"
+                  data-oid="ymtrtig"
                 >
                   Aplicar
                 </button>
@@ -325,19 +325,19 @@ export default function TripsPage() {
           )}
 
           {/* Contenido según el tab activo */}
-          <div className="mb-8" data-oid="ogkdebz">
-            <div className="text-center py-12" data-oid="q962fim">
+          <div className="mb-8" data-oid="r44b81j">
+            <div className="text-center py-12" data-oid="id8lc6m">
               <h3
                 className="text-xl font-semibold text-gray-800 mb-2"
-                data-oid=":h7qn39"
+                data-oid="f5d7-wc"
               >
                 No hay resultados
               </h3>
-              <p className="text-gray-600 mb-2" data-oid="5f229gp">
+              <p className="text-gray-600 mb-2" data-oid="0tn:_u.">
                 No tienes ningún viaje próximamente que coincida con ese
                 criterio.
               </p>
-              <p className="text-gray-600" data-oid="azx66:k">
+              <p className="text-gray-600" data-oid="ym54--x">
                 Intenta buscar algo más o cambiar los filtros.
               </p>
             </div>
@@ -345,7 +345,7 @@ export default function TripsPage() {
         </div>
       </main>
 
-      <Footer data-oid="-x-qpv9" />
+      <Footer data-oid="_z2r7le" />
     </div>
   );
 }

@@ -92,11 +92,11 @@ const HorizontalBar = ({
 }) => {
   const percentage = (value / maxValue) * 100;
   return (
-    <div className="w-full bg-gray-200 rounded-full h-2.5" data-oid="ia8fei.">
+    <div className="w-full bg-gray-200 rounded-full h-2.5" data-oid="14vc9t-">
       <div
         className="h-2.5 rounded-full"
         style={{ width: `${percentage}%`, backgroundColor: color }}
-        data-oid="-27vdr5"
+        data-oid="4iv:rc2"
       ></div>
     </div>
   );
@@ -116,18 +116,18 @@ const VerticalBar = ({
 }) => {
   const percentage = (value / maxValue) * 100;
   return (
-    <div className="flex flex-col items-center" data-oid="p460t_g">
+    <div className="flex flex-col items-center" data-oid=":16ocmy">
       <div
         className="flex-1 w-16 bg-gray-100 rounded-t-lg relative h-[150px] flex items-end"
-        data-oid="au:_-5a"
+        data-oid="n3:ov3j"
       >
         <div
           className="w-full rounded-t-lg"
           style={{ height: `${percentage}%`, backgroundColor: color }}
-          data-oid="1b0p_.j"
+          data-oid=".fmk5q6"
         ></div>
       </div>
-      <div className="text-xs mt-1 text-gray-600" data-oid="-047.so">
+      <div className="text-xs mt-1 text-gray-600" data-oid="t_y4xcv">
         {label}
       </div>
     </div>
@@ -164,7 +164,7 @@ const DonutSegment: React.FC<DonutSegmentProps> = ({
       strokeDasharray={strokeDasharray}
       strokeDashoffset={-offset}
       transform="rotate(-90 50 50)"
-      data-oid="6k:4r2d"
+      data-oid="sa6sy0k"
     />
   );
 };
@@ -179,12 +179,12 @@ const DonutChart: React.FC<{
   let offset = 0;
 
   return (
-    <div className="relative flex flex-col items-center" data-oid="rycx8xf">
+    <div className="relative flex flex-col items-center" data-oid="wc6je6l">
       <svg
         width={width}
         height={height}
         viewBox="0 0 100 100"
-        data-oid="ago9_ms"
+        data-oid="vysc3_e"
       >
         {data.map((item, index) => {
           const percentage = (item.value / total) * 100;
@@ -196,26 +196,26 @@ const DonutChart: React.FC<{
               offset={offset}
               name={item.name}
               value={item.value}
-              data-oid="bdfud_m"
+              data-oid="owr2tth"
             />
           );
 
           offset += (percentage * 2 * Math.PI * (50 - 20 / 2)) / 100;
           return segment;
         })}
-        <circle cx={50} cy={50} r={30} fill="white" data-oid="0_2cgi1" />
+        <circle cx={50} cy={50} r={30} fill="white" data-oid="i68lkzj" />
       </svg>
 
-      <div className="mt-4" data-oid="znk.l3l">
-        <div className="flex flex-wrap gap-3 justify-center" data-oid="tlkmlps">
+      <div className="mt-4" data-oid=":4dwgpt">
+        <div className="flex flex-wrap gap-3 justify-center" data-oid="lbdqqf_">
           {data.map((item, index) => (
-            <div key={index} className="flex items-center" data-oid="d226mpf">
+            <div key={index} className="flex items-center" data-oid="x3zwgg_">
               <div
                 className="w-3 h-3 rounded-full mr-1"
                 style={{ backgroundColor: item.color }}
-                data-oid="27vr1hq"
+                data-oid="ohxz5z."
               ></div>
-              <span className="text-xs" data-oid="hjr5wp5">
+              <span className="text-xs" data-oid="e1lo_jm">
                 {item.name}: {item.value}%
               </span>
             </div>
@@ -252,37 +252,37 @@ class StatsSection extends React.Component {
     );
 
     return (
-      <div className="space-y-6" data-oid="k_u2t:x">
+      <div className="space-y-6" data-oid="-:kcdrq">
         {/* Header y controles */}
-        <div className="flex justify-between items-center" data-oid="3:.40fl">
-          <div data-oid=":cy7rpf">
-            <h1 className="text-2xl font-bold text-gray-800" data-oid="esr-fee">
+        <div className="flex justify-between items-center" data-oid="v:090nn">
+          <div data-oid="771qhc5">
+            <h1 className="text-2xl font-bold text-gray-800" data-oid="jypg1-y">
               Estadísticas y Análisis
             </h1>
-            <p className="text-sm text-gray-500 mt-1" data-oid="al02-rp">
+            <p className="text-sm text-gray-500 mt-1" data-oid="5z83mj2">
               Monitoriza y analiza el rendimiento de tu negocio
             </p>
           </div>
-          <div className="flex space-x-2" data-oid="xpw5058">
+          <div className="flex space-x-2" data-oid="qdvkm8v">
             <select
               className="rounded-lg border border-gray-300 px-3 py-2 text-sm"
               value={this.state.timeRange}
               onChange={this.handleTimeRangeChange}
-              data-oid="9zecbwr"
+              data-oid="jeo8n05"
             >
-              <option value="week" data-oid="mj.9.l9">
+              <option value="week" data-oid="sc81i_p">
                 Última semana
               </option>
-              <option value="month" data-oid="7-.f.n6">
+              <option value="month" data-oid="xrxbbx:">
                 Último mes
               </option>
-              <option value="quarter" data-oid="u2h_6tz">
+              <option value="quarter" data-oid="s3xmsjb">
                 Último trimestre
               </option>
-              <option value="year" data-oid="fhjgu3w">
+              <option value="year" data-oid="6ev8xme">
                 Último año
               </option>
-              <option value="all" data-oid="2ul97.v">
+              <option value="all" data-oid="r8-.48_">
                 Todo el tiempo
               </option>
             </select>
@@ -290,13 +290,13 @@ class StatsSection extends React.Component {
               variant="outline"
               size="sm"
               className="flex items-center"
-              data-oid="zqva6nf"
+              data-oid="xqbi_ua"
             >
-              <Calendar size={16} className="mr-2" data-oid="5vx:oiz" />
+              <Calendar size={16} className="mr-2" data-oid="8jsnzpg" />
               Personalizar
             </Button>
-            <Button className="bg-black hover:bg-gray-800" data-oid="gozugw8">
-              <BarChart2 size={16} className="mr-2" data-oid="8i7o79r" />
+            <Button className="bg-black hover:bg-gray-800" data-oid="hl0zmz9">
+              <BarChart2 size={16} className="mr-2" data-oid="i-f_6a9" />
               Generar Informe
             </Button>
           </div>
@@ -305,116 +305,116 @@ class StatsSection extends React.Component {
         {/* Tarjetas de resumen */}
         <div
           className="grid grid-cols-1 md:grid-cols-4 gap-4"
-          data-oid="xp0-1lj"
+          data-oid="tncqshf"
         >
-          <Card data-oid="q9auxtt">
-            <CardContent className="p-6" data-oid="a41pbkk">
+          <Card data-oid="1rv_41k">
+            <CardContent className="p-6" data-oid="-ck:dcp">
               <div
                 className="flex justify-between items-start mb-2"
-                data-oid="-7c3l6l"
+                data-oid="dna9ust"
               >
                 <div
                   className="text-xs text-gray-500 uppercase"
-                  data-oid="k_kho2g"
+                  data-oid="wdrh7yl"
                 >
                   Ingresos Totales
                 </div>
                 <DollarSign
                   size={18}
                   className="text-black"
-                  data-oid="ojta:td"
+                  data-oid="g94tr2d"
                 />
               </div>
-              <div className="text-3xl font-bold mt-2" data-oid="mdldon3">
+              <div className="text-3xl font-bold mt-2" data-oid="584837p">
                 268.450€
               </div>
               <div
                 className="text-xs text-gray-600 mt-1 flex items-center"
-                data-oid="r111kfm"
+                data-oid="4uccu1k"
               >
-                <TrendingUp size={14} className="mr-1" data-oid="_2p2z-d" />
+                <TrendingUp size={14} className="mr-1" data-oid="ai6dkdn" />
                 15% respecto al período anterior
               </div>
             </CardContent>
           </Card>
-          <Card data-oid="l0g15o8">
-            <CardContent className="p-6" data-oid="vis3lp:">
+          <Card data-oid="hrh1gg.">
+            <CardContent className="p-6" data-oid="e71be9k">
               <div
                 className="flex justify-between items-start mb-2"
-                data-oid="jeratdt"
+                data-oid="jh6__ue"
               >
                 <div
                   className="text-xs text-gray-500 uppercase"
-                  data-oid="e-x7psy"
+                  data-oid="toz7-h-"
                 >
                   Reservas Completadas
                 </div>
-                <Clock size={18} className="text-black" data-oid=".tly6gh" />
+                <Clock size={18} className="text-black" data-oid="t::jc.-" />
               </div>
-              <div className="text-3xl font-bold mt-2" data-oid="2:.yvnl">
+              <div className="text-3xl font-bold mt-2" data-oid="0r7z3er">
                 1.245
               </div>
               <div
                 className="text-xs text-gray-600 mt-1 flex items-center"
-                data-oid="d5:c03s"
+                data-oid="ce2eu9x"
               >
-                <TrendingUp size={14} className="mr-1" data-oid="081.fk:" />
+                <TrendingUp size={14} className="mr-1" data-oid="miv2kw3" />
                 8% respecto al período anterior
               </div>
             </CardContent>
           </Card>
-          <Card data-oid="8.2mn33">
-            <CardContent className="p-6" data-oid="5cd6t.7">
+          <Card data-oid="mytcxbe">
+            <CardContent className="p-6" data-oid="d8yn7ks">
               <div
                 className="flex justify-between items-start mb-2"
-                data-oid="heii4vb"
+                data-oid="f0u:12c"
               >
                 <div
                   className="text-xs text-gray-500 uppercase"
-                  data-oid="5lrqc50"
+                  data-oid="1bbd:7_"
                 >
                   Satisfacción Media
                 </div>
-                <Star size={18} className="text-amber-500" data-oid="d7sbjx:" />
+                <Star size={18} className="text-amber-500" data-oid="cvw69ow" />
               </div>
-              <div className="text-3xl font-bold mt-2" data-oid="r-t0z0l">
+              <div className="text-3xl font-bold mt-2" data-oid="1tyjvwf">
                 4.8/5
               </div>
               <div
                 className="text-xs text-gray-600 mt-1 flex items-center"
-                data-oid="sww.rhp"
+                data-oid=".ws0q1r"
               >
-                <TrendingUp size={14} className="mr-1" data-oid="i2hx3_-" />
+                <TrendingUp size={14} className="mr-1" data-oid="ocpdbi4" />
                 0.2 respecto al período anterior
               </div>
             </CardContent>
           </Card>
-          <Card data-oid="wz70csw">
-            <CardContent className="p-6" data-oid="o.oust1">
+          <Card data-oid="l6j8wml">
+            <CardContent className="p-6" data-oid="xpx_hxc">
               <div
                 className="flex justify-between items-start mb-2"
-                data-oid="32c.ang"
+                data-oid="4-hd4s_"
               >
                 <div
                   className="text-xs text-gray-500 uppercase"
-                  data-oid="lo4565g"
+                  data-oid="zg5no1a"
                 >
                   Tasa de Cancelación
                 </div>
                 <AlertCircle
                   size={18}
                   className="text-gray-500"
-                  data-oid="mignr1t"
+                  data-oid="lu2o7nf"
                 />
               </div>
-              <div className="text-3xl font-bold mt-2" data-oid="yrtti2p">
+              <div className="text-3xl font-bold mt-2" data-oid="--c69uh">
                 2.3%
               </div>
               <div
                 className="text-xs text-gray-600 mt-1 flex items-center"
-                data-oid="n9-1608"
+                data-oid="v2x6i_y"
               >
-                <ArrowDown size={14} className="mr-1" data-oid="rp.6ojh" />
+                <ArrowDown size={14} className="mr-1" data-oid="of5nr._" />
                 0.5% menos que el período anterior
               </div>
             </CardContent>
@@ -424,37 +424,37 @@ class StatsSection extends React.Component {
         {/* Ingresos mensuales y reservas por tipo */}
         <div
           className="grid grid-cols-1 lg:grid-cols-2 gap-6"
-          data-oid=".c0hx:q"
+          data-oid="7_8z7bt"
         >
-          <Card data-oid="l8kjj3w">
-            <CardHeader data-oid="y5k-s5u">
-              <CardTitle className="flex items-center" data-oid="58jqhsw">
+          <Card data-oid="zgsr5fb">
+            <CardHeader data-oid="u0g.46.">
+              <CardTitle className="flex items-center" data-oid="k6ecmee">
                 <DollarSign
                   size={18}
                   className="mr-2 text-black"
-                  data-oid="-qduy3x"
+                  data-oid=":d0i888"
                 />
                 Ingresos y Beneficios
               </CardTitle>
             </CardHeader>
-            <CardContent data-oid="sj66myh">
+            <CardContent data-oid=":xewl1w">
               <div
                 className="w-full h-[300px] overflow-x-auto"
-                data-oid="n8pmx76"
+                data-oid="h2qoho_"
               >
                 <div
                   className="flex items-end space-x-2 h-full pt-8 pb-10"
-                  data-oid="tp3_eun"
+                  data-oid="4o4usti"
                 >
                   {monthlyRevenueData.map((month, index) => (
                     <div
                       key={index}
                       className="flex flex-col items-center"
-                      data-oid="b2:sfat"
+                      data-oid="x8wetca"
                     >
                       <div
                         className="relative h-[200px] w-16 flex flex-col justify-end"
-                        data-oid="5k9.x.u"
+                        data-oid="h-n4yoa"
                       >
                         {/* Barra de ingresos */}
                         <div
@@ -462,7 +462,7 @@ class StatsSection extends React.Component {
                           style={{
                             height: `${(month.revenue / 40000) * 100}%`,
                           }}
-                          data-oid="10umcp5"
+                          data-oid="ftmpkuu"
                         ></div>
 
                         {/* Barra de beneficios (superpuesta) */}
@@ -471,12 +471,12 @@ class StatsSection extends React.Component {
                           style={{
                             height: `${(month.beneficio / 40000) * 100}%`,
                           }}
-                          data-oid="rs1th1."
+                          data-oid="oowj3_s"
                         ></div>
                       </div>
                       <div
                         className="text-xs mt-2 text-gray-600"
-                        data-oid="tz0.ie3"
+                        data-oid="97h8j3m"
                       >
                         {month.name}
                       </div>
@@ -487,23 +487,23 @@ class StatsSection extends React.Component {
                 {/* Leyenda */}
                 <div
                   className="flex justify-center space-x-4 mt-2"
-                  data-oid="pzx5cmx"
+                  data-oid="jugfzg:"
                 >
-                  <div className="flex items-center" data-oid="rz0r624">
+                  <div className="flex items-center" data-oid="hp95uo.">
                     <div
                       className="w-3 h-3 bg-black opacity-80 mr-1"
-                      data-oid="epie5cd"
+                      data-oid="c-jdw.c"
                     ></div>
-                    <span className="text-xs" data-oid=":ej5qur">
+                    <span className="text-xs" data-oid="90yv056">
                       Ingresos
                     </span>
                   </div>
-                  <div className="flex items-center" data-oid="yt579:r">
+                  <div className="flex items-center" data-oid="fl_08sb">
                     <div
                       className="w-3 h-3 bg-gray-600 opacity-80 mr-1"
-                      data-oid="s45x4e2"
+                      data-oid="fxwn7q2"
                     ></div>
-                    <span className="text-xs" data-oid="kdr806o">
+                    <span className="text-xs" data-oid="22vqkxk">
                       Beneficio
                     </span>
                   </div>
@@ -512,21 +512,21 @@ class StatsSection extends React.Component {
             </CardContent>
           </Card>
 
-          <div className="grid grid-cols-1 gap-6" data-oid="-n:2h0j">
+          <div className="grid grid-cols-1 gap-6" data-oid="vyfvwmw">
             {/* Reservas por tipo */}
-            <Card data-oid="n4wnmo8">
-              <CardHeader data-oid="r-aqd-t">
-                <CardTitle className="flex items-center" data-oid="0etshez">
+            <Card data-oid="t-s9hz0">
+              <CardHeader data-oid="qkgycmb">
+                <CardTitle className="flex items-center" data-oid="ve4cpmw">
                   <Car
                     size={18}
                     className="mr-2 text-black"
-                    data-oid="8vd2ils"
+                    data-oid="rtan8p9"
                   />
                   Reservas por Tipo de Servicio
                 </CardTitle>
               </CardHeader>
-              <CardContent className="flex justify-center" data-oid="bm3c09k">
-                <DonutChart data={bookingsByType} data-oid="4_z6w00" />
+              <CardContent className="flex justify-center" data-oid="8bf9i7j">
+                <DonutChart data={bookingsByType} data-oid="bqdtozs" />
               </CardContent>
             </Card>
           </div>
@@ -535,34 +535,34 @@ class StatsSection extends React.Component {
         {/* Segunda fila de gráficos */}
         <div
           className="grid grid-cols-1 lg:grid-cols-3 gap-6"
-          data-oid="y7lhzua"
+          data-oid="fm.r5rd"
         >
           {/* Uso de vehículos */}
-          <Card data-oid="oakt.hu">
-            <CardHeader data-oid="-t5cx.t">
-              <CardTitle className="flex items-center" data-oid="u4sh58z">
+          <Card data-oid="oge81az">
+            <CardHeader data-oid="lzm6t:a">
+              <CardTitle className="flex items-center" data-oid="dv2itzm">
                 <Car
                   size={18}
                   className="mr-2 text-gray-500"
-                  data-oid="7nml735"
+                  data-oid="vdb8l.k"
                 />
                 Uso de Vehículos por Categoría
               </CardTitle>
             </CardHeader>
-            <CardContent data-oid="vnypexj">
-              <div className="space-y-4" data-oid="vqlktfo">
+            <CardContent data-oid="p5rrv_m">
+              <div className="space-y-4" data-oid="oj86ctw">
                 {vehicleUsage.map((item, index) => (
-                  <div key={index} className="mb-3" data-oid="n7auxxs">
+                  <div key={index} className="mb-3" data-oid="5.k::ju">
                     <div
                       className="flex justify-between items-center mb-1"
-                      data-oid="96pe2:b"
+                      data-oid="76:r3mz"
                     >
-                      <span className="text-sm font-medium" data-oid="pri2xml">
+                      <span className="text-sm font-medium" data-oid="bjjns07">
                         {item.name}
                       </span>
                       <span
                         className="text-sm text-gray-500"
-                        data-oid="uwlnbiq"
+                        data-oid="m-nerf8"
                       >
                         {item.value}%
                       </span>
@@ -571,7 +571,7 @@ class StatsSection extends React.Component {
                       value={item.value}
                       maxValue={maxVehicleUsage}
                       color={item.color}
-                      data-oid="8e0l89g"
+                      data-oid="g3w7np4"
                     />
                   </div>
                 ))}
@@ -580,21 +580,21 @@ class StatsSection extends React.Component {
           </Card>
 
           {/* Reservas diarias */}
-          <Card data-oid="g1:mt04">
-            <CardHeader data-oid="n3jv5y7">
-              <CardTitle className="flex items-center" data-oid=".-04o0w">
+          <Card data-oid="3van90r">
+            <CardHeader data-oid="8-ua-ua">
+              <CardTitle className="flex items-center" data-oid="a-dmtk1">
                 <Calendar
                   size={18}
                   className="mr-2 text-amber-500"
-                  data-oid="u3dzau-"
+                  data-oid="qxo5ev1"
                 />
                 Reservas por Día de la Semana
               </CardTitle>
             </CardHeader>
-            <CardContent data-oid="iy25hbe">
+            <CardContent data-oid="t3l4s3a">
               <div
                 className="flex justify-between items-end h-[210px] pt-5"
-                data-oid="f22p1co"
+                data-oid="u:xvgj6"
               >
                 {dailyBookings.map((day, index) => (
                   <VerticalBar
@@ -603,7 +603,7 @@ class StatsSection extends React.Component {
                     maxValue={maxBookingValue}
                     color="#000000"
                     label={day.name}
-                    data-oid="t0wd.:2"
+                    data-oid="8k0zg0x"
                   />
                 ))}
               </div>
@@ -611,19 +611,19 @@ class StatsSection extends React.Component {
           </Card>
 
           {/* Segmentación de clientes */}
-          <Card data-oid="398c4wv">
-            <CardHeader data-oid="f.0pq3g">
-              <CardTitle className="flex items-center" data-oid="qo2ht_d">
+          <Card data-oid="opgxs3p">
+            <CardHeader data-oid="9z3s0b2">
+              <CardTitle className="flex items-center" data-oid="1-ybsbe">
                 <Users
                   size={18}
                   className="mr-2 text-gray-500"
-                  data-oid="t1fno1j"
+                  data-oid="m:egkb4"
                 />
                 Segmentación de Clientes
               </CardTitle>
             </CardHeader>
-            <CardContent data-oid="gr2smgi">
-              <DonutChart data={clientSegmentation} data-oid=".7fz70e" />
+            <CardContent data-oid=".l587oy">
+              <DonutChart data={clientSegmentation} data-oid="yen:4d8" />
             </CardContent>
           </Card>
         </div>
@@ -631,34 +631,34 @@ class StatsSection extends React.Component {
         {/* Métricas específicas del sector */}
         <div
           className="grid grid-cols-1 lg:grid-cols-2 gap-6"
-          data-oid="-_ybfx:"
+          data-oid="t7ncjzo"
         >
           {/* Rutas más populares */}
-          <Card data-oid="u-jj8v4">
-            <CardHeader data-oid="l79byo3">
-              <CardTitle className="flex items-center" data-oid="2vrx16k">
+          <Card data-oid="1adzxt0">
+            <CardHeader data-oid="tzyj656">
+              <CardTitle className="flex items-center" data-oid="rv9:4yy">
                 <Map
                   size={18}
                   className="mr-2 text-gray-600"
-                  data-oid="1p:3e2k"
+                  data-oid="rhy8909"
                 />
                 Rutas Más Populares
               </CardTitle>
             </CardHeader>
-            <CardContent data-oid="t8u9dli">
-              <div className="space-y-4" data-oid="vqxjlhp">
+            <CardContent data-oid="mzlnyo_">
+              <div className="space-y-4" data-oid="y0o7eu3">
                 {routePopularity.map((route, index) => (
-                  <div key={index} className="mb-3" data-oid="rgf2so2">
+                  <div key={index} className="mb-3" data-oid="oti:2n2">
                     <div
                       className="flex justify-between items-center mb-1"
-                      data-oid="wx.t59h"
+                      data-oid="ppve0s."
                     >
-                      <span className="text-sm font-medium" data-oid="s-80-.y">
+                      <span className="text-sm font-medium" data-oid="3-hib_g">
                         {route.name}
                       </span>
                       <span
                         className="text-sm text-gray-500"
-                        data-oid="ren_4b1"
+                        data-oid="9fi7p0."
                       >
                         {route.value}%
                       </span>
@@ -667,7 +667,7 @@ class StatsSection extends React.Component {
                       value={route.value}
                       maxValue={maxRouteValue}
                       color={route.color}
-                      data-oid="an:kttt"
+                      data-oid="dk7rk_o"
                     />
                   </div>
                 ))}
@@ -676,48 +676,48 @@ class StatsSection extends React.Component {
           </Card>
 
           {/* Rendimiento de conductores */}
-          <Card data-oid="y3f0sb7">
-            <CardHeader data-oid="86mwm5-">
-              <CardTitle className="flex items-center" data-oid="8nla17y">
+          <Card data-oid="mb8souf">
+            <CardHeader data-oid="b:p615x">
+              <CardTitle className="flex items-center" data-oid="x:k2b0q">
                 <Users
                   size={18}
                   className="mr-2 text-black"
-                  data-oid="6pzdigs"
+                  data-oid="-1anytx"
                 />
                 Rendimiento de Conductores
               </CardTitle>
             </CardHeader>
-            <CardContent data-oid="jbnmci5">
-              <div className="space-y-5" data-oid="42lm7by">
+            <CardContent data-oid="jjlu5yb">
+              <div className="space-y-5" data-oid="7d9e0zg">
                 {driverPerformance.map((driver, index) => (
-                  <div key={index} className="mb-4" data-oid="m4x112k">
+                  <div key={index} className="mb-4" data-oid="kz9bsgv">
                     <div
                       className="flex justify-between items-center mb-1"
-                      data-oid="7nwhi6i"
+                      data-oid="7kmp96l"
                     >
-                      <div data-oid="4y5c.3g">
+                      <div data-oid="gopzhz3">
                         <span
                           className="text-sm font-medium"
-                          data-oid="5j:9.ru"
+                          data-oid="upcy309"
                         >
                           {driver.name}
                         </span>
                         <div
                           className="flex items-center mt-1"
-                          data-oid="-wzixfx"
+                          data-oid="w6i7wwi"
                         >
                           <Star
                             size={14}
                             className="text-amber-500 fill-current"
-                            data-oid="roi:usz"
+                            data-oid="23puomn"
                           />
 
-                          <span className="text-xs ml-1" data-oid="fn0nn3m">
+                          <span className="text-xs ml-1" data-oid="1t.tq-:">
                             {driver.rating}
                           </span>
                           <span
                             className="text-xs ml-3 text-gray-500"
-                            data-oid="r-c3bgv"
+                            data-oid="v5uc.gs"
                           >
                             {driver.bookings} viajes
                           </span>
@@ -728,7 +728,7 @@ class StatsSection extends React.Component {
                       value={driver.bookings}
                       maxValue={maxDriverBookings}
                       color="#000000"
-                      data-oid="9sim_3r"
+                      data-oid="lnyx7q9"
                     />
                   </div>
                 ))}
@@ -740,68 +740,68 @@ class StatsSection extends React.Component {
         {/* Métricas adicionales */}
         <div
           className="grid grid-cols-1 md:grid-cols-4 gap-4"
-          data-oid="vhmr6qh"
+          data-oid="igvhzz8"
         >
-          <Card data-oid="kc4gd98">
-            <CardContent className="p-6" data-oid="6eqf01p">
+          <Card data-oid="ku:_w5x">
+            <CardContent className="p-6" data-oid="1-smr37">
               <div
                 className="text-xs text-gray-500 uppercase"
-                data-oid="_tz84_:"
+                data-oid=":7rw2cc"
               >
                 Clientes Premium
               </div>
-              <div className="text-3xl font-bold mt-2" data-oid="i-_eqgv">
+              <div className="text-3xl font-bold mt-2" data-oid="4h3bdpf">
                 68
               </div>
-              <div className="text-xs text-gray-600 mt-1" data-oid="pi2i-nd">
+              <div className="text-xs text-gray-600 mt-1" data-oid="2:salck">
                 ↑ 12% respecto al mes anterior
               </div>
             </CardContent>
           </Card>
-          <Card data-oid="93.a8t_">
-            <CardContent className="p-6" data-oid="5-8.wn3">
+          <Card data-oid="ojay_.k">
+            <CardContent className="p-6" data-oid="1e2:b75">
               <div
                 className="text-xs text-gray-500 uppercase"
-                data-oid="gab2xla"
+                data-oid="3qllt3y"
               >
                 Ocupación Flota
               </div>
-              <div className="text-3xl font-bold mt-2" data-oid="niwmt2_">
+              <div className="text-3xl font-bold mt-2" data-oid="pydsaff">
                 78%
               </div>
-              <div className="text-xs text-gray-600 mt-1" data-oid="4x_:cmg">
+              <div className="text-xs text-gray-600 mt-1" data-oid="hf94ag8">
                 ↑ 5% respecto al mes anterior
               </div>
             </CardContent>
           </Card>
-          <Card data-oid="mxmti7q">
-            <CardContent className="p-6" data-oid="f6ge2-g">
+          <Card data-oid="i:-3kf4">
+            <CardContent className="p-6" data-oid="ylr2qyq">
               <div
                 className="text-xs text-gray-500 uppercase"
-                data-oid="c91cpw3"
+                data-oid="2c4obrh"
               >
                 Tiempo medio espera
               </div>
-              <div className="text-3xl font-bold mt-2" data-oid="6-_.b0u">
+              <div className="text-3xl font-bold mt-2" data-oid="o5bmu7e">
                 4.2 min
               </div>
-              <div className="text-xs text-gray-600 mt-1" data-oid="9iqsf1n">
+              <div className="text-xs text-gray-600 mt-1" data-oid="2nia71c">
                 ↓ 0.8 min respecto al mes anterior
               </div>
             </CardContent>
           </Card>
-          <Card data-oid="kvyfth8">
-            <CardContent className="p-6" data-oid="3:xz_t9">
+          <Card data-oid="xl_9a9p">
+            <CardContent className="p-6" data-oid="84_icg_">
               <div
                 className="text-xs text-gray-500 uppercase"
-                data-oid="-5:cy-j"
+                data-oid="bkt-3iq"
               >
                 Valor medio reserva
               </div>
-              <div className="text-3xl font-bold mt-2" data-oid="xkvl:oy">
+              <div className="text-3xl font-bold mt-2" data-oid="__u4l3f">
                 185€
               </div>
-              <div className="text-xs text-gray-600 mt-1" data-oid="cw115x3">
+              <div className="text-xs text-gray-600 mt-1" data-oid="lci-sdb">
                 ↑ 12€ respecto al mes anterior
               </div>
             </CardContent>

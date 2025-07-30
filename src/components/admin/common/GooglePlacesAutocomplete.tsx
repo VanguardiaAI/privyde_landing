@@ -126,21 +126,21 @@ const GooglePlacesAutocomplete = ({
     <div
       className={`relative ${className}`}
       ref={dropdownRef}
-      data-oid=":9hms2x"
+      data-oid="v:ydu3u"
     >
       <MapPin
         className="absolute left-3 top-3 h-4 w-4 text-gray-500"
-        data-oid="e1o4s4y"
+        data-oid=":qi1yxj"
       />
 
       <div
         className="flex flex-col pl-10 pt-1 border rounded-md h-[52px] focus-within:border-gray-400 hover:border-gray-400 bg-background"
-        data-oid="-bq4li3"
+        data-oid="g:f6-s1"
       >
         {label && (
           <label
             className="text-xs text-gray-500 mb-0 text-left"
-            data-oid="axmh9rk"
+            data-oid="inltj4:"
           >
             {label}
           </label>
@@ -154,7 +154,7 @@ const GooglePlacesAutocomplete = ({
             if (predictions.length > 0) setShowPredictions(true);
           }}
           style={{ boxShadow: "none" }}
-          data-oid="q0g73ed"
+          data-oid="di8nsy2"
         />
       </div>
 
@@ -162,19 +162,19 @@ const GooglePlacesAutocomplete = ({
       {showPredictions && predictions.length > 0 && (
         <div
           className="absolute z-10 mt-1 w-full bg-white border rounded-md shadow-lg max-h-60 overflow-auto"
-          data-oid=":e-gb8b"
+          data-oid="9g-qsm6"
         >
           {predictions.map((prediction) => (
             <div
               key={prediction.place_id}
               className="px-4 py-2 cursor-pointer hover:bg-gray-100"
               onClick={() => handleSelect(prediction)}
-              data-oid="hd42klu"
+              data-oid="l59e0ru"
             >
-              <div className="font-medium" data-oid="e42uhw7">
+              <div className="font-medium" data-oid="ldu.sj-">
                 {prediction.structured_formatting.main_text}
               </div>
-              <div className="text-sm text-gray-500" data-oid="7u7a1lc">
+              <div className="text-sm text-gray-500" data-oid="j-mwrh3">
                 {prediction.structured_formatting.secondary_text}
               </div>
             </div>

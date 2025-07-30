@@ -60,11 +60,11 @@ function PrivateRoute() {
     return (
       <div
         className="flex items-center justify-center h-screen"
-        data-oid="2cm8vfj"
+        data-oid="5e-ephu"
       >
         <div
           className="animate-spin h-8 w-8 border-4 border-primary border-t-transparent rounded-full"
-          data-oid="34b0azz"
+          data-oid="-y9f.uk"
         ></div>
       </div>
     );
@@ -72,16 +72,16 @@ function PrivateRoute() {
 
   // Si no hay usuario, redirigir a login
   if (!user) {
-    return <Navigate to="/login" data-oid=".fep5:v" />;
+    return <Navigate to="/login" data-oid="28yll5p" />;
   }
 
   // Si el usuario existe pero no ha completado su perfil, redirigir a completar perfil
   if (user && user.profile_completed === false) {
-    return <Navigate to="/complete-profile" data-oid="x7p506i" />;
+    return <Navigate to="/complete-profile" data-oid=":3un146" />;
   }
 
   // Si todo está en orden, mostrar el contenido de la ruta
-  return <Outlet data-oid="4m2rq-r" />;
+  return <Outlet data-oid="-i9fwo." />;
 }
 
 // Ruta para usuarios que deben completar su perfil
@@ -101,11 +101,11 @@ function ProfileCompletionRoute() {
     return (
       <div
         className="flex items-center justify-center h-screen"
-        data-oid="605nyl6"
+        data-oid="ssdgf6_"
       >
         <div
           className="animate-spin h-8 w-8 border-4 border-primary border-t-transparent rounded-full"
-          data-oid="6h3sipq"
+          data-oid="90jeavp"
         ></div>
       </div>
     );
@@ -113,16 +113,16 @@ function ProfileCompletionRoute() {
 
   // Si no hay usuario, redirigir a login
   if (!user) {
-    return <Navigate to="/login" data-oid="o9-9mvh" />;
+    return <Navigate to="/login" data-oid="wlbwzyp" />;
   }
 
   // Si el usuario ya completó su perfil, redirigirlo a inicio
   if (user.profile_completed) {
-    return <Navigate to="/" data-oid="4mme5cn" />;
+    return <Navigate to="/" data-oid="dse4n_9" />;
   }
 
   // Si el usuario está logueado pero sin perfil completo, mostrar la página para completarlo
-  return <Outlet data-oid="t-ib9yf" />;
+  return <Outlet data-oid="mm5gd8y" />;
 }
 
 // Componente para rutas exclusivas de administradores
@@ -142,11 +142,11 @@ function AdminRoute() {
     return (
       <div
         className="flex items-center justify-center h-screen"
-        data-oid="dl-vmal"
+        data-oid="iggyg73"
       >
         <div
           className="animate-spin h-8 w-8 border-4 border-primary border-t-transparent rounded-full"
-          data-oid="7w:ti4u"
+          data-oid="u93oxd."
         ></div>
       </div>
     );
@@ -155,14 +155,14 @@ function AdminRoute() {
   // Si no hay usuario o no es administrador, redirigir a la página principal
   if (!user || user.role !== "admin") {
     console.log("Usuario no es admin, redirigiendo a inicio", user);
-    return <Navigate to="/" data-oid="su-q6gz" />;
+    return <Navigate to="/" data-oid="epv9snn" />;
   }
 
   // Para administradores, siempre permitimos acceso al panel de admin independientemente del estado del perfil
   console.log("Usuario admin verificado, mostrando AdminPage", user);
 
   // Si todo está en orden y es un administrador, mostrar el contenido de la ruta
-  return <Outlet data-oid="joatj2b" />;
+  return <Outlet data-oid="g79nrav" />;
 }
 
 function App() {
@@ -172,212 +172,212 @@ function App() {
     "988275836239-hr8p8btrvc1rbb3hcgg37ucgq2vjsbif.apps.googleusercontent.com";
 
   return (
-    <GoogleOAuthProvider clientId={googleClientId} data-oid="o2:tq81">
-      <AuthProvider data-oid="iv1xcfr">
-        <Router data-oid="jhxbumj">
-          <ScrollToTop data-oid="41nrqyc" />
-          <div className="w-full h-full" data-oid="qo_b2xc">
-            <Routes data-oid=":nfr:zn">
+    <GoogleOAuthProvider clientId={googleClientId} data-oid="7yrvgzg">
+      <AuthProvider data-oid="6-01h9v">
+        <Router data-oid="jqc_ifw">
+          <ScrollToTop data-oid="jodyqln" />
+          <div className="w-full h-full" data-oid="qp0s79j">
+            <Routes data-oid="6hkgtlv">
               {/* Rutas públicas */}
               <Route
                 path="/"
-                element={<Home data-oid="li6lcco" />}
-                data-oid=":2s9jod"
+                element={<Home data-oid=".mkj:gj" />}
+                data-oid="igoo_ei"
               />
 
               <Route
                 path="/landing2"
-                element={<Landing2 data-oid="7r-ew4e" />}
-                data-oid=".bxncqk"
+                element={<Landing2 data-oid="_97fmoa" />}
+                data-oid="uou7uty"
               />
 
               <Route
                 path="/login"
-                element={<LoginPage data-oid="633_xee" />}
-                data-oid="lfnjj8q"
+                element={<LoginPage data-oid="5-eqmx3" />}
+                data-oid="rdfug79"
               />
 
               <Route
                 path="/login-companies"
-                element={<LoginCompaniesPage data-oid="pt5xb7q" />}
-                data-oid="flntt.:"
+                element={<LoginCompaniesPage data-oid="x5dbmul" />}
+                data-oid="3tejnlb"
               />
 
               <Route
                 path="/register"
-                element={<RegisterPage data-oid="guxff1-" />}
-                data-oid="__imb1w"
+                element={<RegisterPage data-oid="04lf-um" />}
+                data-oid="lxpdb7d"
               />
 
               <Route
                 path="/register-companies"
-                element={<RegisterCompaniesPage data-oid="_c3hp5t" />}
-                data-oid=".n7fc8h"
+                element={<RegisterCompaniesPage data-oid="tsopf8z" />}
+                data-oid="81wfxlw"
               />
 
               <Route
                 path="/about"
-                element={<AboutUs data-oid="-z:c7zq" />}
-                data-oid="tdpph-9"
+                element={<AboutUs data-oid="42r-us8" />}
+                data-oid="wpf06ul"
               />
 
               <Route
                 path="/drivers"
-                element={<Drivers data-oid="49qqcu0" />}
-                data-oid="lkgwrns"
+                element={<Drivers data-oid="2_6_yp1" />}
+                data-oid="725ehru"
               />
 
               <Route
                 path="/company-overview"
-                element={<CompanyOverview data-oid="c:g9ao." />}
-                data-oid="8fhz6yg"
+                element={<CompanyOverview data-oid="nk_t6t6" />}
+                data-oid="vp0lz5q"
               />
 
               <Route
                 path="/companies"
-                element={<Companies data-oid="dvxfwxp" />}
-                data-oid="lzihj9l"
+                element={<Companies data-oid="6-bc6jv" />}
+                data-oid="3hw6p9n"
               />
 
               <Route
                 path="/travel-agencies"
-                element={<TravelAgencies data-oid="t7th2v6" />}
-                data-oid="ljifi2t"
+                element={<TravelAgencies data-oid="hyt9yb:" />}
+                data-oid="n:wu:ze"
               />
 
               <Route
                 path="/strategic-partnerships"
-                element={<StrategicPartnerships data-oid="vd.uivu" />}
-                data-oid="i7yw4.u"
+                element={<StrategicPartnerships data-oid="5uy4ama" />}
+                data-oid="f78.zx4"
               />
 
               <Route
                 path="/city-to-city"
-                element={<CityToCity data-oid="mwcqnvh" />}
-                data-oid="rsu7s6a"
+                element={<CityToCity data-oid="-eu:-yx" />}
+                data-oid="175:n0l"
               />
 
               <Route
                 path="/airport-transfers"
-                element={<AirportTransfers data-oid="0-0ofgp" />}
-                data-oid="dvfqs6i"
+                element={<AirportTransfers data-oid="4dy4nug" />}
+                data-oid="8dg-p.0"
               />
 
               <Route
                 path="/hourly-hire"
-                element={<HourlyHire data-oid="-ywes2h" />}
-                data-oid="nmbmkvg"
+                element={<HourlyHire data-oid="wi6m1ef" />}
+                data-oid=":3mhohf"
               />
 
               <Route
                 path="/special-events"
-                element={<SpecialEvents data-oid="4g01n1j" />}
-                data-oid="6ko-y8d"
+                element={<SpecialEvents data-oid="j5w8ff2" />}
+                data-oid="pjhc3q3"
               />
 
               <Route
                 path="/limousine-service"
-                element={<LimousineService data-oid="3snv0ts" />}
-                data-oid="468mrsu"
+                element={<LimousineService data-oid="4fm60xh" />}
+                data-oid="yjtwoxt"
               />
 
               <Route
                 path="/private-jets"
-                element={<PrivateJets data-oid="5lqq_40" />}
-                data-oid="q3e5kps"
+                element={<PrivateJets data-oid="23haz-k" />}
+                data-oid="-0l72t6"
               />
 
               <Route
                 path="/corporate-transfers"
-                element={<CorporateTransfers data-oid=":tp91g8" />}
-                data-oid="rc:ee7:"
+                element={<CorporateTransfers data-oid="9o4q67h" />}
+                data-oid="5s9o5-t"
               />
 
               <Route
                 path="/security-services"
-                element={<SecurityServices data-oid="yoieu33" />}
-                data-oid="3iuy:v_"
+                element={<SecurityServices data-oid="krrd.nt" />}
+                data-oid="rgsyc90"
               />
 
               {/* Rutas del Blog */}
               <Route
                 path="/blog"
-                element={<BlogPage data-oid="vpqa_2k" />}
-                data-oid="gt_1nv3"
+                element={<BlogPage data-oid="_gertx6" />}
+                data-oid="z5uozzb"
               />
 
               <Route
                 path="/blog/:slug"
-                element={<BlogPostPage data-oid="-jj:bl8" />}
-                data-oid="pnf.d:u"
+                element={<BlogPostPage data-oid="c_c.gux" />}
+                data-oid="nszcmy0"
               />
 
               <Route
                 path="/blog/categoria/:category"
-                element={<CategoryPage data-oid="h_c5njt" />}
-                data-oid="-v4ptx2"
+                element={<CategoryPage data-oid="s_8xdn1" />}
+                data-oid="p5mtxy6"
               />
 
               <Route
                 path="/blog/tag/:tag"
-                element={<TagPage data-oid="kchtpph" />}
-                data-oid="b.hykz6"
+                element={<TagPage data-oid="2jnrvuz" />}
+                data-oid="650nrox"
               />
 
               {/* Ruta para el wizard de reserva */}
               <Route
                 path="/reserva/:sessionId"
-                element={<BookingWizard data-oid="9d5ig.-" />}
-                data-oid="ackwa8e"
+                element={<BookingWizard data-oid="wb72xh." />}
+                data-oid=".fk.zho"
               />
 
               {/* Ruta para completar perfil */}
               <Route
-                element={<ProfileCompletionRoute data-oid="92_u35g" />}
-                data-oid="svwtnlk"
+                element={<ProfileCompletionRoute data-oid=":.csepc" />}
+                data-oid="b9_yij3"
               >
                 <Route
                   path="/complete-profile"
-                  element={<CompleteProfilePage data-oid="vgf0744" />}
-                  data-oid="da3:n:m"
+                  element={<CompleteProfilePage data-oid="70a_3.g" />}
+                  data-oid="_-5f2d3"
                 />
               </Route>
 
               {/* Rutas protegidas que requieren autenticación y perfil completo */}
               <Route
-                element={<PrivateRoute data-oid="oqfdgbf" />}
-                data-oid="9.vaxn8"
+                element={<PrivateRoute data-oid="r00ppxd" />}
+                data-oid="h0a4teo"
               >
                 <Route
                   path="/trips"
-                  element={<TripsPage data-oid="mtk6pk9" />}
-                  data-oid="n1u.4.3"
+                  element={<TripsPage data-oid="t199-i3" />}
+                  data-oid="lsz4xb4"
                 />
 
                 <Route
                   path="/account"
-                  element={<AccountPage data-oid="yti8z7y" />}
-                  data-oid="odfzz7j"
+                  element={<AccountPage data-oid="q_44t83" />}
+                  data-oid="nvuuz1q"
                 />
               </Route>
 
               {/* Rutas protegidas exclusivas para administradores */}
               <Route
-                element={<AdminRoute data-oid="y9tl.1t" />}
-                data-oid="jdsm22t"
+                element={<AdminRoute data-oid="90ri5tc" />}
+                data-oid="8:f:xmr"
               >
                 <Route
                   path="/admin"
-                  element={<AdminPage data-oid="fqas.a-" />}
-                  data-oid=":7i2f69"
+                  element={<AdminPage data-oid="84_bur:" />}
+                  data-oid="doy_-f."
                 />
               </Route>
 
               {/* Ruta de fallback */}
               <Route
                 path="*"
-                element={<Navigate to="/" data-oid="iiuu_vy" />}
-                data-oid="q28lc0a"
+                element={<Navigate to="/" data-oid="q9:rlua" />}
+                data-oid="usk-a-b"
               />
             </Routes>
           </div>

@@ -58,30 +58,30 @@ const CustomAlertDialog = (props: {
   return (
     <div
       className="fixed inset-0 z-50 flex items-center justify-center"
-      data-oid="-.7mxht"
+      data-oid="_8gt9dt"
     >
       <div
         className="fixed inset-0 bg-black/50"
         onClick={() => onOpenChange(false)}
-        data-oid="toge8vb"
+        data-oid="5o.4_rl"
       ></div>
       <div
         className="relative bg-white p-6 rounded-lg shadow-lg w-full max-w-md"
-        data-oid="pdkbc4p"
+        data-oid="3s5.z90"
       >
-        <div className="mb-4" data-oid="ov3d3tc">
-          <h2 className="text-lg font-semibold" data-oid="9a00jys">
+        <div className="mb-4" data-oid="_ksm1kt">
+          <h2 className="text-lg font-semibold" data-oid="0i3wbq0">
             {title}
           </h2>
-          <p className="text-gray-500 mt-1" data-oid="87_zbjh">
+          <p className="text-gray-500 mt-1" data-oid="afo-s0_">
             {description}
           </p>
         </div>
-        <div className="flex justify-end space-x-2" data-oid="wg7q5f7">
+        <div className="flex justify-end space-x-2" data-oid=".2pn2uu">
           <Button
             variant="outline"
             onClick={() => onOpenChange(false)}
-            data-oid="yqrb895"
+            data-oid="7i0f2d3"
           >
             {cancelText}
           </Button>
@@ -91,7 +91,7 @@ const CustomAlertDialog = (props: {
               onConfirm();
               onOpenChange(false);
             }}
-            data-oid="upyoo_p"
+            data-oid="y1vofxp"
           >
             {confirmText}
           </Button>
@@ -615,17 +615,17 @@ const UsersManager = () => {
     return (
       <div
         className="flex flex-col items-center justify-center h-[70vh]"
-        data-oid="o_5ip6u"
+        data-oid="higyyi7"
       >
         <AlertTriangle
           className="h-12 w-12 text-black mb-4"
-          data-oid="pwzre:t"
+          data-oid="4jh:zhw"
         />
 
-        <h2 className="text-2xl font-bold text-black" data-oid="lniwjql">
+        <h2 className="text-2xl font-bold text-black" data-oid=".orvx5c">
           Error
         </h2>
-        <p className="text-gray-600 mt-2" data-oid="ijgpxh4">
+        <p className="text-gray-600 mt-2" data-oid="oaxuk4f">
           {error}
         </p>
       </div>
@@ -636,14 +636,14 @@ const UsersManager = () => {
     return (
       <div
         className="flex flex-col items-center justify-center h-[70vh]"
-        data-oid=".hdpd12"
+        data-oid="2tc0721"
       >
         <Loader2
           className="h-12 w-12 text-black animate-spin mb-4"
-          data-oid="p7mdc43"
+          data-oid="kaiagc0"
         />
 
-        <h2 className="text-xl font-medium text-gray-600" data-oid="a2kv2u9">
+        <h2 className="text-xl font-medium text-gray-600" data-oid="jopcuke">
           Cargando usuarios...
         </h2>
       </div>
@@ -658,41 +658,41 @@ const UsersManager = () => {
         onClose={handleCloseUserDetails}
         onAssignTag={handleAssignTag}
         onRemoveTag={handleRemoveTag}
-        data-oid="g-27533"
+        data-oid="uh_e733"
       />
     );
   }
 
   // Renderizar la tabla de usuarios
   return (
-    <div className="space-y-6" data-oid="73d5nrr">
-      <div className="flex justify-between items-center" data-oid="3hzmh82">
-        <h1 className="text-2xl font-bold text-gray-800" data-oid="wx43ufb">
+    <div className="space-y-6" data-oid="28l84op">
+      <div className="flex justify-between items-center" data-oid="jbwxeku">
+        <h1 className="text-2xl font-bold text-gray-800" data-oid="_-w_xrf">
           Gestión de Usuarios
         </h1>
         <Button
           onClick={handleAddUser}
           className="flex items-center px-4 py-2 bg-black text-white rounded-lg hover:bg-gray-800 transition-colors"
-          data-oid="7ktfsfs"
+          data-oid="h9qe11t"
         >
-          <Plus size={18} className="mr-2" data-oid="ppf078-" />
+          <Plus size={18} className="mr-2" data-oid="jpa81du" />
           Añadir Usuario
         </Button>
       </div>
 
       {/* Filtros y búsqueda */}
-      <Card data-oid="b7x7.it">
-        <CardContent className="pt-6" data-oid="lyui_eq">
+      <Card data-oid="evc_kva">
+        <CardContent className="pt-6" data-oid="z9z7.a2">
           <div
             className="flex flex-col md:flex-row md:items-center space-y-4 md:space-y-0 md:space-x-4"
-            data-oid="h15qm2o"
+            data-oid="vzbb1tt"
           >
-            <div className="flex-1" data-oid="rr3:7b7">
-              <div className="relative" data-oid="qzt7qgg">
+            <div className="flex-1" data-oid="mmezq3_">
+              <div className="relative" data-oid="blpil6g">
                 <Search
                   className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"
                   size={18}
-                  data-oid="z31l9g:"
+                  data-oid="hvl.1b3"
                 />
 
                 <input
@@ -701,39 +701,39 @@ const UsersManager = () => {
                   className="flex h-9 w-full rounded-md border border-input bg-background px-3 pl-10 py-1 text-sm shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-0 focus-visible:ring-offset-0 disabled:cursor-not-allowed disabled:opacity-50"
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
-                  data-oid="d23_oxu"
+                  data-oid="61-x.:_"
                 />
               </div>
             </div>
             <div
               className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4"
-              data-oid="_ra.1kd"
+              data-oid="6cqr19w"
             >
               <Select
                 value={roleFilter}
                 onValueChange={setRoleFilter}
-                data-oid="cs0rrpq"
+                data-oid=":e1hhmj"
               >
                 <SelectTrigger
                   className="w-full md:w-[150px]"
-                  data-oid="0nn7k_m"
+                  data-oid="n4dd929"
                 >
                   <SelectValue
                     placeholder="Filtrar por rol"
-                    data-oid=":gemtw9"
+                    data-oid="0lg9jdw"
                   />
                 </SelectTrigger>
-                <SelectContent data-oid="zoy3i2j">
-                  <SelectItem value="all" data-oid="2avnf-9">
+                <SelectContent data-oid="sdbzxf5">
+                  <SelectItem value="all" data-oid="b6.7e1r">
                     Todos los roles
                   </SelectItem>
-                  <SelectItem value="admin" data-oid="ujpd6n_">
+                  <SelectItem value="admin" data-oid="207kg-y">
                     Administrador
                   </SelectItem>
-                  <SelectItem value="company" data-oid="6drkh:d">
+                  <SelectItem value="company" data-oid="oa.mwob">
                     Empresa
                   </SelectItem>
-                  <SelectItem value="user" data-oid="ibwt2gg">
+                  <SelectItem value="user" data-oid="cceoixr">
                     Usuario
                   </SelectItem>
                 </SelectContent>
@@ -741,28 +741,28 @@ const UsersManager = () => {
               <Select
                 value={statusFilter}
                 onValueChange={setStatusFilter}
-                data-oid="g3a5i20"
+                data-oid=":2r.arn"
               >
                 <SelectTrigger
                   className="w-full md:w-[150px]"
-                  data-oid="1-4fdd2"
+                  data-oid="oww:xj:"
                 >
                   <SelectValue
                     placeholder="Filtrar por estado"
-                    data-oid="jidplla"
+                    data-oid="emzszg3"
                   />
                 </SelectTrigger>
-                <SelectContent data-oid="m8ihqdx">
-                  <SelectItem value="all" data-oid="ge5385d">
+                <SelectContent data-oid="b:ajsx:">
+                  <SelectItem value="all" data-oid="q5jwtpt">
                     Todos
                   </SelectItem>
-                  <SelectItem value="active" data-oid="ypkx__8">
+                  <SelectItem value="active" data-oid=".fnbsoe">
                     Activo
                   </SelectItem>
-                  <SelectItem value="inactive" data-oid=":goqkqa">
+                  <SelectItem value="inactive" data-oid="3rwslq2">
                     Inactivo
                   </SelectItem>
-                  <SelectItem value="blocked" data-oid="317eum.">
+                  <SelectItem value="blocked" data-oid="5s14uz-">
                     Bloqueado
                   </SelectItem>
                 </SelectContent>
@@ -770,23 +770,23 @@ const UsersManager = () => {
               <Select
                 value={tagFilter}
                 onValueChange={setTagFilter}
-                data-oid="jxqa3-8"
+                data-oid="wah-fd2"
               >
                 <SelectTrigger
                   className="w-full md:w-[180px]"
-                  data-oid="9kydahl"
+                  data-oid="shgez:l"
                 >
                   <SelectValue
                     placeholder="Filtrar por etiqueta"
-                    data-oid="hi38_n3"
+                    data-oid=".3curpx"
                   />
                 </SelectTrigger>
-                <SelectContent data-oid="meulj65">
-                  <SelectItem value="all" data-oid="bdl-3es">
+                <SelectContent data-oid="a5nj_ec">
+                  <SelectItem value="all" data-oid=":8ojmk4">
                     Todas las etiquetas
                   </SelectItem>
                   {allTags.map((tag) => (
-                    <SelectItem key={tag} value={tag} data-oid="shuy39t">
+                    <SelectItem key={tag} value={tag} data-oid="vz36p1h">
                       {tag}
                     </SelectItem>
                   ))}
@@ -800,22 +800,22 @@ const UsersManager = () => {
       {/* Estadísticas rápidas */}
       <div
         className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4"
-        data-oid="kfr2wu4"
+        data-oid="71np18t"
       >
-        <Card data-oid=".gmqefi">
-          <CardContent className="pt-6" data-oid="19:z49u">
-            <div className="flex items-center" data-oid="ea7kuvo">
+        <Card data-oid="e4e_mn0">
+          <CardContent className="pt-6" data-oid="-hycj8:">
+            <div className="flex items-center" data-oid="rs2t7px">
               <div
                 className="p-2 rounded-full bg-gray-200 text-gray-600 mr-4"
-                data-oid="2g.l7c:"
+                data-oid="8meqlg_"
               >
-                <BadgeCheck size={20} data-oid="9_ki6o_" />
+                <BadgeCheck size={20} data-oid="_zpp_m5" />
               </div>
-              <div data-oid="91pqewi">
-                <p className="text-sm text-gray-500" data-oid="8ea4lar">
+              <div data-oid="5h50wci">
+                <p className="text-sm text-gray-500" data-oid="vy0gjcf">
                   Usuarios activos
                 </p>
-                <h3 className="text-2xl font-bold" data-oid="8mlm0ng">
+                <h3 className="text-2xl font-bold" data-oid="s4e8uz5">
                   {
                     users.filter(
                       (u) => u.status === "active" && u.role === "user",
@@ -826,41 +826,41 @@ const UsersManager = () => {
             </div>
           </CardContent>
         </Card>
-        <Card data-oid="gx2owzp">
-          <CardContent className="pt-6" data-oid="r288t5i">
-            <div className="flex items-center" data-oid=".giildb">
+        <Card data-oid="_8e6v7g">
+          <CardContent className="pt-6" data-oid="gb2g1ln">
+            <div className="flex items-center" data-oid="s.saa_s">
               <div
                 className="p-2 rounded-full bg-gray-200 text-indigo-600 mr-4"
-                data-oid="o3oz53f"
+                data-oid="5-hswsv"
               >
                 {" "}
-                <Building2 size={20} data-oid="geyz-iy" />{" "}
+                <Building2 size={20} data-oid="g37-cx1" />{" "}
               </div>
-              <div data-oid="dw4:2mv">
-                <p className="text-sm text-gray-500" data-oid="bhcg1bl">
+              <div data-oid="-_res.0">
+                <p className="text-sm text-gray-500" data-oid="q_n4lm3">
                   Empresas registradas
                 </p>
-                <h3 className="text-2xl font-bold" data-oid="l99u2s-">
+                <h3 className="text-2xl font-bold" data-oid=".6u0tmv">
                   {users.filter((u) => u.role === "company").length}
                 </h3>
               </div>
             </div>
           </CardContent>
         </Card>
-        <Card data-oid="r1o02:-">
-          <CardContent className="pt-6" data-oid="yap7njh">
-            <div className="flex items-center" data-oid="yk5jx00">
+        <Card data-oid="_cs95cy">
+          <CardContent className="pt-6" data-oid="ye4sxxj">
+            <div className="flex items-center" data-oid="_ee91-b">
               <div
                 className="p-2 rounded-full bg-gray-200 text-purple-600 mr-4"
-                data-oid="i2jjaag"
+                data-oid="ddharsr"
               >
-                <BarChart size={20} data-oid="5:yld6n" />
+                <BarChart size={20} data-oid="3472-me" />
               </div>
-              <div data-oid="u9b2r52">
-                <p className="text-sm text-gray-500" data-oid="6dvdinb">
+              <div data-oid="_m-84.i">
+                <p className="text-sm text-gray-500" data-oid="y2g66:o">
                   Gasto promedio
                 </p>
-                <h3 className="text-2xl font-bold" data-oid="5jm:q84">
+                <h3 className="text-2xl font-bold" data-oid="gt-5-8d">
                   {users.length > 0
                     ? `${(users.reduce((acc, user) => acc + (user.totalSpent || 0), 0) / users.length).toFixed(2)}€`
                     : "0€"}
@@ -869,40 +869,40 @@ const UsersManager = () => {
             </div>
           </CardContent>
         </Card>
-        <Card data-oid="7ip.uul">
-          <CardContent className="pt-6" data-oid="v5c:i71">
-            <div className="flex items-center" data-oid="fcb8004">
+        <Card data-oid="sb2u1h:">
+          <CardContent className="pt-6" data-oid="35yr-py">
+            <div className="flex items-center" data-oid="gh44noq">
               <div
                 className="p-2 rounded-full bg-amber-100 text-amber-600 mr-4"
-                data-oid="g1elrs8"
+                data-oid="g35iwzs"
               >
-                <Tag size={20} data-oid="rcvzes5" />
+                <Tag size={20} data-oid="nhfaz0h" />
               </div>
-              <div data-oid="w2r_nx8">
-                <p className="text-sm text-gray-500" data-oid="scbm00p">
+              <div data-oid="1rkz3.n">
+                <p className="text-sm text-gray-500" data-oid=":7gyj6m">
                   Usuarios VIP
                 </p>
-                <h3 className="text-2xl font-bold" data-oid="vv8_3_5">
+                <h3 className="text-2xl font-bold" data-oid="4y2u0sv">
                   {users.filter((u) => u.tags?.includes("VIP")).length}
                 </h3>
               </div>
             </div>
           </CardContent>
         </Card>
-        <Card data-oid="25sep5s">
-          <CardContent className="pt-6" data-oid="fr-_lki">
-            <div className="flex items-center" data-oid="vhsnq9n">
+        <Card data-oid="dq7kg4s">
+          <CardContent className="pt-6" data-oid="rguu8w8">
+            <div className="flex items-center" data-oid="ydli3qg">
               <div
                 className="p-2 rounded-full bg-gray-200 text-gray-600 mr-4"
-                data-oid=".pqqocw"
+                data-oid="4tu5bks"
               >
-                <AlertTriangle size={20} data-oid=".0n-e63" />
+                <AlertTriangle size={20} data-oid="6ivx1gd" />
               </div>
-              <div data-oid="m..tw0l">
-                <p className="text-sm text-gray-500" data-oid="42414nc">
+              <div data-oid="jsza_3o">
+                <p className="text-sm text-gray-500" data-oid="kvbb39x">
                   Usuarios inactivos
                 </p>
-                <h3 className="text-2xl font-bold" data-oid="y_ux1gr">
+                <h3 className="text-2xl font-bold" data-oid="zhh7ccm">
                   {users.filter((u) => u.status === "inactive").length}
                 </h3>
               </div>
@@ -912,51 +912,51 @@ const UsersManager = () => {
       </div>
 
       {/* Tabla de usuarios */}
-      <Card data-oid="3bucz.3">
-        <CardContent className="p-0" data-oid="4hf_uly">
-          <div className="overflow-x-auto" data-oid="b4tg5_d">
-            <table className="w-full" data-oid="slqe:wx">
-              <thead data-oid=":fhfu_4">
-                <tr className="bg-gray-50 border-b" data-oid="77jevfz">
+      <Card data-oid="874cwvv">
+        <CardContent className="p-0" data-oid="wy45wbs">
+          <div className="overflow-x-auto" data-oid="o4syt5m">
+            <table className="w-full" data-oid="1n9yo:.">
+              <thead data-oid="jg_dhyv">
+                <tr className="bg-gray-50 border-b" data-oid="kfoyuhr">
                   <th
                     className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                    data-oid="jo0fdpg"
+                    data-oid="522idg7"
                   >
                     Usuario
                   </th>
                   <th
                     className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                    data-oid="gm_5m6d"
+                    data-oid="r5_g3.x"
                   >
                     Email
                   </th>
                   <th
                     className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                    data-oid="gl4c66c"
+                    data-oid="36gdj3c"
                   >
                     Rol
                   </th>
                   <th
                     className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                    data-oid="eoov5vc"
+                    data-oid="cl7vx1i"
                   >
                     Etiquetas
                   </th>
                   <th
                     className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                    data-oid="mjm56g."
+                    data-oid="j5qcvc6"
                   >
                     Gasto Total
                   </th>
                   <th
                     className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                    data-oid="glr:6mi"
+                    data-oid="x1h93l4"
                   >
                     Estado
                   </th>
                   <th
                     className="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider"
-                    data-oid="zqoqn:z"
+                    data-oid="zxl3l0c"
                   >
                     Acciones
                   </th>
@@ -964,50 +964,50 @@ const UsersManager = () => {
               </thead>
               <tbody
                 className="bg-white divide-y divide-gray-200"
-                data-oid="2r0v.e2"
+                data-oid="kaou:an"
               >
                 {filteredUsers.map((user) => (
                   <tr
                     key={user.id}
                     className="hover:bg-gray-50 cursor-pointer"
                     onClick={() => handleViewUserDetails(user.id)}
-                    data-oid="n4v-w7y"
+                    data-oid="pl3b_ne"
                   >
                     <td
                       className="px-6 py-4 whitespace-nowrap"
-                      data-oid="jb4.kx3"
+                      data-oid="btrgf5s"
                     >
-                      <div className="flex items-center" data-oid="6_c6-2-">
+                      <div className="flex items-center" data-oid="2al0-f7">
                         <div
                           className="h-10 w-10 flex-shrink-0"
-                          data-oid="xykxjub"
+                          data-oid="jte3s3v"
                         >
                           {user.avatar ? (
                             <img
                               className="h-10 w-10 rounded-full"
                               src={user.avatar}
                               alt={user.name}
-                              data-oid="-6ab_1i"
+                              data-oid="v4rq_eb"
                             />
                           ) : (
                             <div
                               className="h-10 w-10 rounded-full bg-gray-200 text-gray-600 flex items-center justify-center font-medium"
-                              data-oid="qxsg8c9"
+                              data-oid="0uh.dgx"
                             >
                               {user.name[0].toUpperCase()}
                             </div>
                           )}
                         </div>
-                        <div className="ml-4" data-oid="v0.4vd9">
+                        <div className="ml-4" data-oid="_qwl7.:">
                           <div
                             className="text-sm font-medium text-gray-900"
-                            data-oid="45x8.i0"
+                            data-oid="g8:7-i5"
                           >
                             {user.name}
                           </div>
                           <div
                             className="text-sm text-gray-500"
-                            data-oid="st.nm:x"
+                            data-oid="bkfopcy"
                           >
                             ID: {user.id}
                           </div>
@@ -1016,13 +1016,13 @@ const UsersManager = () => {
                     </td>
                     <td
                       className="px-6 py-4 whitespace-nowrap text-sm text-gray-500"
-                      data-oid="1nm8og0"
+                      data-oid="cyebjs7"
                     >
                       {user.email}
                     </td>
                     <td
                       className="px-6 py-4 whitespace-nowrap"
-                      data-oid="w_52qx_"
+                      data-oid="rtz4tw3"
                     >
                       <span
                         className={`px-2 py-1 text-xs rounded-full ${
@@ -1032,7 +1032,7 @@ const UsersManager = () => {
                               ? "bg-gray-200 text-blue-800"
                               : "bg-gray-100 text-gray-800"
                         }`}
-                        data-oid="kg9e_88"
+                        data-oid="9ebh4.m"
                       >
                         {user.role === "admin"
                           ? "Administrador"
@@ -1041,14 +1041,14 @@ const UsersManager = () => {
                             : "Usuario"}
                       </span>
                     </td>
-                    <td className="px-6 py-4" data-oid="y_02mkg">
-                      <div className="flex flex-wrap gap-1" data-oid=".xh5bxy">
+                    <td className="px-6 py-4" data-oid="ac0hqlk">
+                      <div className="flex flex-wrap gap-1" data-oid="0b4f42u">
                         {user.tags && user.tags.length > 0 ? (
                           user.tags.slice(0, 2).map((tag, i) => (
                             <span
                               key={i}
                               className="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-gray-100 text-gray-800"
-                              data-oid=":7vwm-f"
+                              data-oid="bx4cc1-"
                             >
                               {tag}
                             </span>
@@ -1056,7 +1056,7 @@ const UsersManager = () => {
                         ) : (
                           <span
                             className="text-gray-400 text-xs"
-                            data-oid="l::1-0j"
+                            data-oid="19my-ew"
                           >
                             Sin etiquetas
                           </span>
@@ -1064,7 +1064,7 @@ const UsersManager = () => {
                         {user.tags && user.tags.length > 2 && (
                           <span
                             className="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-gray-100 text-gray-800"
-                            data-oid="vxjhq_f"
+                            data-oid="9gq.tar"
                           >
                             +{user.tags.length - 2}
                           </span>
@@ -1073,21 +1073,21 @@ const UsersManager = () => {
                     </td>
                     <td
                       className="px-6 py-4 whitespace-nowrap text-sm"
-                      data-oid="veck98e"
+                      data-oid="xrqvqa9"
                     >
                       {user.totalSpent ? (
-                        <span className="font-medium" data-oid=":nb5.z3">
+                        <span className="font-medium" data-oid="8dk1_e_">
                           {user.totalSpent.toFixed(2)}€
                         </span>
                       ) : (
-                        <span className="text-gray-400" data-oid="adrtr_-">
+                        <span className="text-gray-400" data-oid="ya5iu6j">
                           0€
                         </span>
                       )}
                     </td>
                     <td
                       className="px-6 py-4 whitespace-nowrap"
-                      data-oid="1awk5bm"
+                      data-oid="6giq5v_"
                     >
                       <span
                         className={`px-2 py-1 text-xs rounded-full flex items-center w-fit ${
@@ -1097,7 +1097,7 @@ const UsersManager = () => {
                               ? "bg-gray-200 text-gray-800"
                               : "bg-gray-200 text-yellow-800"
                         }`}
-                        data-oid="0-39xen"
+                        data-oid="efxc-i8"
                       >
                         <span
                           className={`h-1.5 w-1.5 rounded-full mr-1.5 ${
@@ -1107,7 +1107,7 @@ const UsersManager = () => {
                                 ? "bg-black"
                                 : "bg-yellow-600"
                           }`}
-                          data-oid="v6kemae"
+                          data-oid="g-0mtv:"
                         ></span>
                         {user.status === "active"
                           ? "Activo"
@@ -1118,11 +1118,11 @@ const UsersManager = () => {
                     </td>
                     <td
                       className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium"
-                      data-oid="fk88zcb"
+                      data-oid="_b2vpcz"
                     >
                       <div
                         className="flex justify-end space-x-2"
-                        data-oid="f6l.rpv"
+                        data-oid="17ab38i"
                       >
                         <Button
                           variant="outline"
@@ -1132,9 +1132,9 @@ const UsersManager = () => {
                             handleDeleteUser(user.id);
                           }}
                           className="text-gray-600 border-gray-200 hover:bg-gray-100"
-                          data-oid="vkz.qrj"
+                          data-oid="vvrdl0z"
                         >
-                          <Trash2 size={16} data-oid="n.ifv7:" />
+                          <Trash2 size={16} data-oid="utbjd7z" />
                         </Button>
                       </div>
                     </td>
@@ -1144,8 +1144,8 @@ const UsersManager = () => {
             </table>
 
             {filteredUsers.length === 0 && (
-              <div className="py-10 text-center" data-oid="7mga7yq">
-                <p className="text-gray-500" data-oid="zt9se3m">
+              <div className="py-10 text-center" data-oid="t19jw82">
+                <p className="text-gray-500" data-oid=":w:b:-z">
                   No se encontraron usuarios que coincidan con los criterios de
                   búsqueda
                 </p>
@@ -1162,24 +1162,24 @@ const UsersManager = () => {
         onConfirm={confirmDelete}
         title="¿Estás seguro?"
         description="Esta acción eliminará permanentemente al usuario. Esta acción no se puede deshacer."
-        data-oid="9r7g4es"
+        data-oid="9tx834x"
       />
 
       {/* Formulario de usuario */}
       <Dialog
         open={userFormOpen}
         onOpenChange={setUserFormOpen}
-        data-oid="rqouppw"
+        data-oid="1h2tfdj"
       >
         <DialogContent
           className="sm:max-w-[600px] max-h-[80vh] overflow-y-auto"
-          data-oid="qx4zf0w"
+          data-oid="appqyr4"
         >
-          <DialogHeader data-oid="pc7a1bn">
-            <DialogTitle data-oid="qkg3rd9">
+          <DialogHeader data-oid="5gw88gy">
+            <DialogTitle data-oid="rbmofnu">
               {editingUser ? "ar Usuario" : "Añadir Usuario"}
             </DialogTitle>
-            <DialogDescription data-oid="5j4k2h9">
+            <DialogDescription data-oid="_yhsqu7">
               {editingUser
                 ? "Actualiza los datos del usuario"
                 : "Completa el formulario para crear un nuevo usuario"}
@@ -1198,18 +1198,18 @@ const UsersManager = () => {
 
               handleUserSubmit(data);
             }}
-            data-oid="mp:t8:v"
+            data-oid="7cc8e:."
           >
-            <div className="grid gap-4 py-4" data-oid="e_z632f">
+            <div className="grid gap-4 py-4" data-oid="0p7w9vx">
               {/* Campos comunes para todos los tipos de usuario */}
               <div
                 className="grid grid-cols-4 items-center gap-4"
-                data-oid="b1:57eq"
+                data-oid="e4vozaf"
               >
                 <label
                   htmlFor="name"
                   className="text-right text-sm"
-                  data-oid="bkrd17w"
+                  data-oid="po6s4.k"
                 >
                   Nombre
                 </label>
@@ -1219,17 +1219,17 @@ const UsersManager = () => {
                   defaultValue={editingUser?.name || ""}
                   className="col-span-3"
                   required
-                  data-oid="q50re1g"
+                  data-oid="3rm2fks"
                 />
               </div>
               <div
                 className="grid grid-cols-4 items-center gap-4"
-                data-oid="sbjum__"
+                data-oid="lhvfxt-"
               >
                 <label
                   htmlFor="email"
                   className="text-right text-sm"
-                  data-oid="9nbld6w"
+                  data-oid="8c3py1i"
                 >
                   Email
                 </label>
@@ -1240,7 +1240,7 @@ const UsersManager = () => {
                   defaultValue={editingUser?.email || ""}
                   className="col-span-3"
                   required
-                  data-oid="ws_291_"
+                  data-oid="j.nr1jj"
                 />
               </div>
 
@@ -1248,12 +1248,12 @@ const UsersManager = () => {
               {!editingUser && (
                 <div
                   className="grid grid-cols-4 items-center gap-4"
-                  data-oid="p01vlpd"
+                  data-oid="gck86va"
                 >
                   <label
                     htmlFor="password"
                     className="text-right text-sm"
-                    data-oid="d5m_n-l"
+                    data-oid="i3y4r2p"
                   >
                     Contraseña
                   </label>
@@ -1262,7 +1262,7 @@ const UsersManager = () => {
                     name="password"
                     type="password"
                     className="col-span-3"
-                    data-oid="tc20dzu"
+                    data-oid="xw1r_wx"
                   />
                 </div>
               )}
@@ -1271,12 +1271,12 @@ const UsersManager = () => {
               {!editingUser && (
                 <div
                   className="grid grid-cols-4 items-center gap-4"
-                  data-oid="tx5epdx"
+                  data-oid="nv6qr62"
                 >
                   <label
                     htmlFor="role"
                     className="text-right text-sm"
-                    data-oid="sj664wd"
+                    data-oid="jaf:hzs"
                   >
                     Rol
                   </label>
@@ -1284,22 +1284,22 @@ const UsersManager = () => {
                     name="role"
                     defaultValue="user"
                     onValueChange={(value) => setNewUserRole(value)}
-                    data-oid=".86rvu5"
+                    data-oid="-looh4a"
                   >
-                    <SelectTrigger className="col-span-3" data-oid="rky3m_p">
+                    <SelectTrigger className="col-span-3" data-oid="ccgb6e4">
                       <SelectValue
                         placeholder="Seleccionar rol"
-                        data-oid="kc9q5lq"
+                        data-oid="p34h:de"
                       />
                     </SelectTrigger>
-                    <SelectContent data-oid="7r1l19:">
-                      <SelectItem value="admin" data-oid="euc3-hh">
+                    <SelectContent data-oid="6u8ol1p">
+                      <SelectItem value="admin" data-oid="5pq4wgu">
                         Administrador
                       </SelectItem>
-                      <SelectItem value="company" data-oid="oqpljq6">
+                      <SelectItem value="company" data-oid="wesfam0">
                         Empresa
                       </SelectItem>
-                      <SelectItem value="user" data-oid="kcofxhm">
+                      <SelectItem value="user" data-oid="6i4ux-q">
                         Usuario
                       </SelectItem>
                     </SelectContent>
@@ -1311,16 +1311,16 @@ const UsersManager = () => {
               {editingUser && (
                 <div
                   className="grid grid-cols-4 items-center gap-4"
-                  data-oid="1:ynam0"
+                  data-oid="e2z9xj:"
                 >
                   <label
                     htmlFor="role"
                     className="text-right text-sm"
-                    data-oid="c5dwktb"
+                    data-oid="i:ji6ni"
                   >
                     Rol
                   </label>
-                  <div className="col-span-3" data-oid="p5hkzwf">
+                  <div className="col-span-3" data-oid="2g0i3-l">
                     <span
                       className={`px-2 py-1 text-xs rounded-full ${
                         editingUser.role === "admin"
@@ -1329,7 +1329,7 @@ const UsersManager = () => {
                             ? "bg-gray-200 text-blue-800"
                             : "bg-gray-100 text-gray-800"
                       }`}
-                      data-oid="cjmqjwt"
+                      data-oid="eatmz6e"
                     >
                       {editingUser.role === "admin"
                         ? "Administrador"
@@ -1341,7 +1341,7 @@ const UsersManager = () => {
                       type="hidden"
                       name="role"
                       value={editingUser.role}
-                      data-oid="thglvd:"
+                      data-oid="kiooalh"
                     />
                   </div>
                 </div>
@@ -1351,34 +1351,34 @@ const UsersManager = () => {
               {editingUser && (
                 <div
                   className="grid grid-cols-4 items-center gap-4"
-                  data-oid="sbwnq8y"
+                  data-oid="1yum04k"
                 >
                   <label
                     htmlFor="status"
                     className="text-right text-sm"
-                    data-oid="fenuyyc"
+                    data-oid="9669ssa"
                   >
                     Estado
                   </label>
                   <Select
                     name="status"
                     defaultValue={editingUser?.status || "active"}
-                    data-oid="k9hggsa"
+                    data-oid="3vpij0:"
                   >
-                    <SelectTrigger className="col-span-3" data-oid="o5qv4bb">
+                    <SelectTrigger className="col-span-3" data-oid="2y80v88">
                       <SelectValue
                         placeholder="Seleccionar estado"
-                        data-oid="0q4f5ov"
+                        data-oid="2xl.m43"
                       />
                     </SelectTrigger>
-                    <SelectContent data-oid="z9sxo7_">
-                      <SelectItem value="active" data-oid="etnmctq">
+                    <SelectContent data-oid="atwdioe">
+                      <SelectItem value="active" data-oid="u777m3.">
                         Activo
                       </SelectItem>
-                      <SelectItem value="inactive" data-oid="qagx2xf">
+                      <SelectItem value="inactive" data-oid="-b1a522">
                         Inactivo
                       </SelectItem>
-                      <SelectItem value="blocked" data-oid="yqvb64:">
+                      <SelectItem value="blocked" data-oid="7omhpwe">
                         Bloqueado
                       </SelectItem>
                     </SelectContent>
@@ -1389,46 +1389,46 @@ const UsersManager = () => {
               {/* Campos específicos para usuarios regulares */}
               {(!editingUser || editingUser.role === "user") && (
                 <>
-                  <div className="mt-4 mb-2" data-oid="-7a:d:x">
-                    <h3 className="text-md font-medium" data-oid="wzd0m8b">
+                  <div className="mt-4 mb-2" data-oid="6nuug:0">
+                    <h3 className="text-md font-medium" data-oid="y.51vu_">
                       Información personal
                     </h3>
-                    <hr className="mt-2" data-oid="qmvu-:5" />
+                    <hr className="mt-2" data-oid="rjqzvsc" />
                   </div>
 
                   <div
                     className="grid grid-cols-4 items-center gap-4"
-                    data-oid="g6ipag8"
+                    data-oid="685y2zv"
                   >
                     <label
                       htmlFor="title"
                       className="text-right text-sm"
-                      data-oid="dokh:vf"
+                      data-oid="2hxid.b"
                     >
                       Título
                     </label>
                     <Select
                       name="title"
                       defaultValue={editingUser?.profile?.title || ""}
-                      data-oid="p:4-p26"
+                      data-oid="p:km2_a"
                     >
-                      <SelectTrigger className="col-span-3" data-oid="jqme5_5">
+                      <SelectTrigger className="col-span-3" data-oid=".iehf-a">
                         <SelectValue
                           placeholder="Seleccionar título"
-                          data-oid="9b6de5n"
+                          data-oid="u6j1chs"
                         />
                       </SelectTrigger>
-                      <SelectContent data-oid="3oa:blz">
-                        <SelectItem value="Mr." data-oid="cciahea">
+                      <SelectContent data-oid="q6z-tdi">
+                        <SelectItem value="Mr." data-oid="4gzqz1y">
                           Sr.
                         </SelectItem>
-                        <SelectItem value="Mrs." data-oid="k_qeqgm">
+                        <SelectItem value="Mrs." data-oid="avor6y6">
                           Sra.
                         </SelectItem>
-                        <SelectItem value="Ms." data-oid="oy1dc9a">
+                        <SelectItem value="Ms." data-oid="4czru3c">
                           Srta.
                         </SelectItem>
-                        <SelectItem value="Dr." data-oid="uhr-jvo">
+                        <SelectItem value="Dr." data-oid="1gsa240">
                           Dr.
                         </SelectItem>
                       </SelectContent>
@@ -1437,12 +1437,12 @@ const UsersManager = () => {
 
                   <div
                     className="grid grid-cols-4 items-center gap-4"
-                    data-oid=":237p6s"
+                    data-oid="es11zmf"
                   >
                     <label
                       htmlFor="first_name"
                       className="text-right text-sm"
-                      data-oid="p0k2nd-"
+                      data-oid="v_3leej"
                     >
                       Nombre
                     </label>
@@ -1451,18 +1451,18 @@ const UsersManager = () => {
                       name="first_name"
                       defaultValue={editingUser?.profile?.first_name || ""}
                       className="col-span-3"
-                      data-oid="sjffdy5"
+                      data-oid="-i-3t6_"
                     />
                   </div>
 
                   <div
                     className="grid grid-cols-4 items-center gap-4"
-                    data-oid="yxf1d2w"
+                    data-oid="h_kvle4"
                   >
                     <label
                       htmlFor="last_name"
                       className="text-right text-sm"
-                      data-oid="x2purs5"
+                      data-oid="wvgst2i"
                     >
                       Apellidos
                     </label>
@@ -1471,18 +1471,18 @@ const UsersManager = () => {
                       name="last_name"
                       defaultValue={editingUser?.profile?.last_name || ""}
                       className="col-span-3"
-                      data-oid="z2r5kbu"
+                      data-oid="8fy:gw_"
                     />
                   </div>
 
                   <div
                     className="grid grid-cols-4 items-center gap-4"
-                    data-oid=":wxj:-t"
+                    data-oid="b_1m66r"
                   >
                     <label
                       htmlFor="country_code"
                       className="text-right text-sm"
-                      data-oid="c5bx.d1"
+                      data-oid="h28hy6e"
                     >
                       Código de país
                     </label>
@@ -1492,18 +1492,18 @@ const UsersManager = () => {
                       placeholder="+34, +52..."
                       defaultValue={editingUser?.profile?.country_code || ""}
                       className="col-span-3"
-                      data-oid="agsao6h"
+                      data-oid="ymdkdgi"
                     />
                   </div>
 
                   <div
                     className="grid grid-cols-4 items-center gap-4"
-                    data-oid="0zr0sn1"
+                    data-oid="bc0m575"
                   >
                     <label
                       htmlFor="phone"
                       className="text-right text-sm"
-                      data-oid=".ub5f.k"
+                      data-oid="lamyd-w"
                     >
                       Teléfono
                     </label>
@@ -1512,18 +1512,18 @@ const UsersManager = () => {
                       name="phone"
                       defaultValue={editingUser?.profile?.phone || ""}
                       className="col-span-3"
-                      data-oid="6p8dke_"
+                      data-oid="654iv.e"
                     />
                   </div>
 
                   <div
                     className="grid grid-cols-4 items-center gap-4"
-                    data-oid="c83ocls"
+                    data-oid="7s7vv2u"
                   >
                     <label
                       htmlFor="address"
                       className="text-right text-sm"
-                      data-oid="fulsf0w"
+                      data-oid="-877xhc"
                     >
                       Dirección
                     </label>
@@ -1532,7 +1532,7 @@ const UsersManager = () => {
                       name="address"
                       defaultValue={editingUser?.profile?.address || ""}
                       className="col-span-3"
-                      data-oid="a3mxbsf"
+                      data-oid="4_::3dh"
                     />
                   </div>
                 </>
@@ -1542,21 +1542,21 @@ const UsersManager = () => {
               {((!editingUser && newUserRole === "company") ||
                 (editingUser && editingUser.role === "company")) && (
                 <>
-                  <div className="mt-4 mb-2" data-oid="l20hjuy">
-                    <h3 className="text-md font-medium" data-oid="z.vk77y">
+                  <div className="mt-4 mb-2" data-oid="lut9lwc">
+                    <h3 className="text-md font-medium" data-oid="pybchhe">
                       Información de la empresa
                     </h3>
-                    <hr className="mt-2" data-oid="f0wbu6:" />
+                    <hr className="mt-2" data-oid="hg_55vi" />
                   </div>
 
                   <div
                     className="grid grid-cols-4 items-center gap-4"
-                    data-oid="iw2ew7c"
+                    data-oid="h36er1v"
                   >
                     <label
                       htmlFor="companyName"
                       className="text-right text-sm"
-                      data-oid="sp._q7p"
+                      data-oid="sd3n72c"
                     >
                       Nombre de la empresa
                     </label>
@@ -1567,18 +1567,18 @@ const UsersManager = () => {
                         editingUser?.company_profile?.companyName || ""
                       }
                       className="col-span-3"
-                      data-oid="2.qglv-"
+                      data-oid="xmhgdn3"
                     />
                   </div>
 
                   <div
                     className="grid grid-cols-4 items-center gap-4"
-                    data-oid="19z1mkp"
+                    data-oid="2aka17r"
                   >
                     <label
                       htmlFor="phoneNumber"
                       className="text-right text-sm"
-                      data-oid="5_is1py"
+                      data-oid="0o:x.q4"
                     >
                       Teléfono de contacto
                     </label>
@@ -1589,18 +1589,18 @@ const UsersManager = () => {
                         editingUser?.company_profile?.phoneNumber || ""
                       }
                       className="col-span-3"
-                      data-oid="opuku.t"
+                      data-oid="j3o2mbt"
                     />
                   </div>
 
                   <div
                     className="grid grid-cols-4 items-center gap-4"
-                    data-oid="4f3vddr"
+                    data-oid="_8elpiv"
                   >
                     <label
                       htmlFor="country"
                       className="text-right text-sm"
-                      data-oid="dobti.l"
+                      data-oid="_xq1rbg"
                     >
                       País
                     </label>
@@ -1609,18 +1609,18 @@ const UsersManager = () => {
                       name="country"
                       defaultValue={editingUser?.company_profile?.country || ""}
                       className="col-span-3"
-                      data-oid="b:23qg7"
+                      data-oid="t1es2aq"
                     />
                   </div>
 
                   <div
                     className="grid grid-cols-4 items-center gap-4"
-                    data-oid="061a0tc"
+                    data-oid="c66ajui"
                   >
                     <label
                       htmlFor="location"
                       className="text-right text-sm"
-                      data-oid="tobohjj"
+                      data-oid="vw:c-wm"
                     >
                       Ubicación
                     </label>
@@ -1631,18 +1631,18 @@ const UsersManager = () => {
                         editingUser?.company_profile?.location || ""
                       }
                       className="col-span-3"
-                      data-oid="wsq2skm"
+                      data-oid="30pf9-z"
                     />
                   </div>
 
                   <div
                     className="grid grid-cols-4 items-center gap-4"
-                    data-oid="che4lzk"
+                    data-oid="pggy1zv"
                   >
                     <label
                       htmlFor="companySize"
                       className="text-right text-sm"
-                      data-oid=":x7g_dq"
+                      data-oid="o55buo:"
                     >
                       Tamaño de la empresa
                     </label>
@@ -1651,31 +1651,31 @@ const UsersManager = () => {
                       defaultValue={
                         editingUser?.company_profile?.companySize || ""
                       }
-                      data-oid="bujmcr6"
+                      data-oid="nsso:he"
                     >
-                      <SelectTrigger className="col-span-3" data-oid="-:n1ccj">
+                      <SelectTrigger className="col-span-3" data-oid="9_z_09k">
                         <SelectValue
                           placeholder="Seleccionar tamaño"
-                          data-oid="e-dnjzz"
+                          data-oid="rwils3j"
                         />
                       </SelectTrigger>
-                      <SelectContent data-oid="m6j4ixt">
-                        <SelectItem value="1-10 empleados" data-oid="5uck9yk">
+                      <SelectContent data-oid="_fgiive">
+                        <SelectItem value="1-10 empleados" data-oid="0fzxct2">
                           1-10 empleados
                         </SelectItem>
-                        <SelectItem value="11-50 empleados" data-oid="cwt.p1b">
+                        <SelectItem value="11-50 empleados" data-oid="t_usf1z">
                           11-50 empleados
                         </SelectItem>
-                        <SelectItem value="51-200 empleados" data-oid="xb0cjd.">
+                        <SelectItem value="51-200 empleados" data-oid="v7y920v">
                           51-200 empleados
                         </SelectItem>
                         <SelectItem
                           value="201-500 empleados"
-                          data-oid="encabiq"
+                          data-oid="mlirrt4"
                         >
                           201-500 empleados
                         </SelectItem>
-                        <SelectItem value="501+ empleados" data-oid="oyj4g80">
+                        <SelectItem value="501+ empleados" data-oid="m4tq_3a">
                           501+ empleados
                         </SelectItem>
                       </SelectContent>
@@ -1684,12 +1684,12 @@ const UsersManager = () => {
 
                   <div
                     className="grid grid-cols-4 items-center gap-4"
-                    data-oid="635v3fw"
+                    data-oid="eayn16b"
                   >
                     <label
                       htmlFor="hearAbout"
                       className="text-right text-sm"
-                      data-oid="f8yg3zs"
+                      data-oid="9.f88l:"
                     >
                       ¿Cómo nos conociste?
                     </label>
@@ -1698,31 +1698,31 @@ const UsersManager = () => {
                       defaultValue={
                         editingUser?.company_profile?.hearAbout || ""
                       }
-                      data-oid="cbgvoee"
+                      data-oid="::6jrq0"
                     >
-                      <SelectTrigger className="col-span-3" data-oid="dg3-r8e">
+                      <SelectTrigger className="col-span-3" data-oid="-chd2xi">
                         <SelectValue
                           placeholder="Seleccionar"
-                          data-oid="xc9liqx"
+                          data-oid="8aaigwi"
                         />
                       </SelectTrigger>
-                      <SelectContent data-oid="k10i6.3">
+                      <SelectContent data-oid="tu7u0b9">
                         <SelectItem
                           value="Búsqueda en Google"
-                          data-oid="29f:1ga"
+                          data-oid="mouk1uj"
                         >
                           Búsqueda en Google
                         </SelectItem>
-                        <SelectItem value="Redes sociales" data-oid="0reo:g.">
+                        <SelectItem value="Redes sociales" data-oid="5ao2:ny">
                           Redes sociales
                         </SelectItem>
-                        <SelectItem value="Recomendación" data-oid=":9gih6b">
+                        <SelectItem value="Recomendación" data-oid="1z6w2oe">
                           Recomendación
                         </SelectItem>
-                        <SelectItem value="Publicidad" data-oid="fi:r.nm">
+                        <SelectItem value="Publicidad" data-oid="ag5jk23">
                           Publicidad
                         </SelectItem>
-                        <SelectItem value="Otros" data-oid="tnf-:ze">
+                        <SelectItem value="Otros" data-oid="gh3d_bm">
                           Otros
                         </SelectItem>
                       </SelectContent>
@@ -1731,12 +1731,12 @@ const UsersManager = () => {
 
                   <div
                     className="grid grid-cols-4 items-center gap-4"
-                    data-oid="35phc2r"
+                    data-oid="1k-laqx"
                   >
                     <label
                       htmlFor="additionalInfo"
                       className="text-right text-sm align-top pt-2"
-                      data-oid="-rcgjxq"
+                      data-oid="i85yc3a"
                     >
                       Información adicional
                     </label>
@@ -1747,25 +1747,25 @@ const UsersManager = () => {
                         editingUser?.company_profile?.additionalInfo || ""
                       }
                       className="col-span-3 min-h-[80px] px-3 py-2 border rounded-md"
-                      data-oid="l0vxga."
+                      data-oid="50obzxl"
                     />
                   </div>
 
-                  <div className="mt-4 mb-2" data-oid="owx__n1">
-                    <h3 className="text-md font-medium" data-oid="gs:101j">
+                  <div className="mt-4 mb-2" data-oid="3x4q6:u">
+                    <h3 className="text-md font-medium" data-oid="mkbhzw5">
                       Información del representante
                     </h3>
-                    <hr className="mt-2" data-oid="c2n:t4-" />
+                    <hr className="mt-2" data-oid=":nfxvky" />
                   </div>
 
                   <div
                     className="grid grid-cols-4 items-center gap-4"
-                    data-oid="lv4oa9t"
+                    data-oid="hbuhnpg"
                   >
                     <label
                       htmlFor="representativeFirstName"
                       className="text-right text-sm"
-                      data-oid=":c44-nr"
+                      data-oid="mksbi-7"
                     >
                       Nombre
                     </label>
@@ -1777,18 +1777,18 @@ const UsersManager = () => {
                           ?.firstName || ""
                       }
                       className="col-span-3"
-                      data-oid="_m_33ks"
+                      data-oid="y1fnd.1"
                     />
                   </div>
 
                   <div
                     className="grid grid-cols-4 items-center gap-4"
-                    data-oid="e3ji77m"
+                    data-oid="qiycx39"
                   >
                     <label
                       htmlFor="representativeLastName"
                       className="text-right text-sm"
-                      data-oid="zd.lnd7"
+                      data-oid=":xxb74s"
                     >
                       Apellidos
                     </label>
@@ -1800,18 +1800,18 @@ const UsersManager = () => {
                           ?.lastName || ""
                       }
                       className="col-span-3"
-                      data-oid="eng1py6"
+                      data-oid="sd8enk6"
                     />
                   </div>
 
                   <div
                     className="grid grid-cols-4 items-center gap-4"
-                    data-oid="ofsxmcx"
+                    data-oid="9p:vlxn"
                   >
                     <label
                       htmlFor="representativeEmail"
                       className="text-right text-sm"
-                      data-oid="ljy2a6n"
+                      data-oid="6msh-s9"
                     >
                       Email de contacto
                     </label>
@@ -1823,17 +1823,17 @@ const UsersManager = () => {
                           ?.email || ""
                       }
                       className="col-span-3"
-                      data-oid="39wco5-"
+                      data-oid="47jfr5-"
                     />
                   </div>
                 </>
               )}
             </div>
-            <DialogFooter data-oid="_l-a1t5">
+            <DialogFooter data-oid="58gq14h">
               {editingUser?.role === "admin" ? (
                 <p
                   className="text-amber-600 text-sm mr-auto"
-                  data-oid="73v:3te"
+                  data-oid="yliavyd"
                 >
                   Los administradores no pueden ser editados
                 </p>
@@ -1841,7 +1841,7 @@ const UsersManager = () => {
               <Button
                 type="submit"
                 disabled={editingUser?.role === "admin"}
-                data-oid="1qa.npt"
+                data-oid="lvxi_aj"
               >
                 {editingUser ? "Guardar Cambios" : "Crear Usuario"}
               </Button>

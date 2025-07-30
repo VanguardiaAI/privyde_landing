@@ -237,13 +237,13 @@ export default function RegisterCompaniesPage() {
 
   return (
     <>
-      <Navbar data-oid="gl8qdlo" />
-      <div className="w-full bg-gray-50 py-12 md:py-20 px-4" data-oid="qzulllb">
-        <div className="max-w-7xl mx-auto" data-oid="x2wywiw">
-          <div className="max-w-3xl mx-auto mb-16" data-oid="ks6rpjk">
+      <Navbar data-oid=".0n1:go" />
+      <div className="w-full bg-gray-50 py-12 md:py-20 px-4" data-oid="o3yd2-f">
+        <div className="max-w-7xl mx-auto" data-oid="j_btwfv">
+          <div className="max-w-3xl mx-auto mb-16" data-oid="-1y0nob">
             <h1
               className="text-3xl font-bold text-center mb-8"
-              data-oid=":kim3sf"
+              data-oid="dofm-un"
             >
               Registro de Empresas
             </h1>
@@ -251,7 +251,7 @@ export default function RegisterCompaniesPage() {
             {isFromCompaniesForm && (
               <div
                 className="bg-green-50 p-4 rounded-lg border border-green-200 text-green-700 mb-6 text-center"
-                data-oid="zustomx"
+                data-oid="1akj_on"
               >
                 Casi has terminado. Completa tu registro de empresa para
                 continuar.
@@ -260,13 +260,13 @@ export default function RegisterCompaniesPage() {
 
             <Card
               className="w-full shadow-lg bg-white rounded-xl overflow-hidden border-0 relative z-20"
-              data-oid=".kqa94a"
+              data-oid="e1wp9w1"
             >
-              <CardContent className="p-6 md:p-8" data-oid="n9og-m8">
+              <CardContent className="p-6 md:p-8" data-oid="6q610q9">
                 {error && (
                   <div
                     className="bg-gray-100 p-3 rounded border border-gray-200 text-gray-600 text-sm mb-6"
-                    data-oid="v-sw92b"
+                    data-oid="wzl1nx0"
                   >
                     {error}
                   </div>
@@ -275,17 +275,17 @@ export default function RegisterCompaniesPage() {
                 <form
                   className="space-y-6"
                   onSubmit={handleSubmit}
-                  data-oid="szcplu2"
+                  data-oid="bk1c83t"
                 >
-                  <div className="space-y-1" data-oid="yrrpglm">
+                  <div className="space-y-1" data-oid="o-fr8b:">
                     <h2
                       className="text-xl font-semibold text-gray-800 flex items-center"
-                      data-oid="sibhmsi"
+                      data-oid="vmo918u"
                     >
-                      <User className="h-5 w-5 mr-2" data-oid="l0:cao1" />
+                      <User className="h-5 w-5 mr-2" data-oid="09brid4" />
                       Información Personal
                     </h2>
-                    <p className="text-sm text-gray-500" data-oid="f:vhadx">
+                    <p className="text-sm text-gray-500" data-oid="6:iv2pp">
                       Datos del representante o administrador de la cuenta
                       empresarial
                     </p>
@@ -293,16 +293,16 @@ export default function RegisterCompaniesPage() {
 
                   <div
                     className="grid grid-cols-1 md:grid-cols-2 gap-4"
-                    data-oid="3jexlwa"
+                    data-oid="b075:cf"
                   >
-                    <div data-oid="cpnhm9i">
+                    <div data-oid="5ip6mcn">
                       <Label
                         htmlFor="firstName"
                         className="block text-sm font-medium text-gray-700 mb-1"
-                        data-oid="2:evife"
+                        data-oid="70oppgk"
                       >
                         Nombre{" "}
-                        <span className="text-black" data-oid="::g26ms">
+                        <span className="text-black" data-oid="rtz_w5l">
                           *
                         </span>
                       </Label>
@@ -312,26 +312,26 @@ export default function RegisterCompaniesPage() {
                         value={formData.firstName}
                         onChange={handleInputChange}
                         className={`w-full ${validationErrors.firstName ? "border-gray-300 focus:border-gray-500 focus:ring-red-500" : ""}`}
-                        data-oid="i7yyjl0"
+                        data-oid="r-7tteo"
                       />
 
                       {validationErrors.firstName && (
                         <p
                           className="mt-1 text-xs text-gray-600"
-                          data-oid="xtycxy7"
+                          data-oid="e9k4sx:"
                         >
                           {validationErrors.firstName}
                         </p>
                       )}
                     </div>
-                    <div data-oid="66sjtib">
+                    <div data-oid="ftxw7lp">
                       <Label
                         htmlFor="lastName"
                         className="block text-sm font-medium text-gray-700 mb-1"
-                        data-oid="rahizy_"
+                        data-oid="5r5_m:9"
                       >
                         Apellido{" "}
-                        <span className="text-black" data-oid="jbs3yde">
+                        <span className="text-black" data-oid="axctcq1">
                           *
                         </span>
                       </Label>
@@ -341,13 +341,13 @@ export default function RegisterCompaniesPage() {
                         value={formData.lastName}
                         onChange={handleInputChange}
                         className={`w-full ${validationErrors.lastName ? "border-gray-300 focus:border-gray-500 focus:ring-red-500" : ""}`}
-                        data-oid="di:g5l."
+                        data-oid="x9l04-h"
                       />
 
                       {validationErrors.lastName && (
                         <p
                           className="mt-1 text-xs text-gray-600"
-                          data-oid="y:xi6s-"
+                          data-oid="tbb.7-_"
                         >
                           {validationErrors.lastName}
                         </p>
@@ -355,22 +355,22 @@ export default function RegisterCompaniesPage() {
                     </div>
                   </div>
 
-                  <div className="space-y-4" data-oid=".tc:.xf">
-                    <div data-oid="9j_vrpz">
+                  <div className="space-y-4" data-oid="hvd-ggf">
+                    <div data-oid="8:b0q6o">
                       <Label
                         htmlFor="email"
                         className="block text-sm font-medium text-gray-700 mb-1"
-                        data-oid="03lkv:."
+                        data-oid="g0fhed4"
                       >
                         Email Corporativo{" "}
-                        <span className="text-black" data-oid="5m11lag">
+                        <span className="text-black" data-oid="9-cbnjc">
                           *
                         </span>
                       </Label>
-                      <div className="relative" data-oid="21zy3uv">
+                      <div className="relative" data-oid="-321fb3">
                         <Mail
                           className="absolute left-3 top-2.5 h-5 w-5 text-gray-400"
-                          data-oid="wrxr84z"
+                          data-oid="0o6nnqq"
                         />
 
                         <Input
@@ -381,34 +381,34 @@ export default function RegisterCompaniesPage() {
                           value={formData.email}
                           onChange={handleInputChange}
                           className={`pl-10 ${validationErrors.email ? "border-gray-300 focus:border-gray-500 focus:ring-red-500" : ""}`}
-                          data-oid="dr.59d2"
+                          data-oid="4j50tl8"
                         />
                       </div>
                       {validationErrors.email && (
                         <p
                           className="mt-1 text-xs text-gray-600"
-                          data-oid="b-f:j-3"
+                          data-oid="g4rcv-:"
                         >
                           {validationErrors.email}
                         </p>
                       )}
                     </div>
 
-                    <div data-oid="i9hs:2s">
+                    <div data-oid="xbd_.3g">
                       <Label
                         htmlFor="password"
                         className="block text-sm font-medium text-gray-700 mb-1"
-                        data-oid="2dl6sc3"
+                        data-oid="va6zgsl"
                       >
                         Contraseña{" "}
-                        <span className="text-black" data-oid="l3e-z31">
+                        <span className="text-black" data-oid="av5_9e2">
                           *
                         </span>
                       </Label>
-                      <div className="relative" data-oid="5inuhnl">
+                      <div className="relative" data-oid="m00rp:m">
                         <Lock
                           className="absolute left-3 top-2.5 h-5 w-5 text-gray-400"
-                          data-oid="ujkjkr2"
+                          data-oid="8awfox2"
                         />
 
                         <Input
@@ -419,34 +419,34 @@ export default function RegisterCompaniesPage() {
                           value={formData.password}
                           onChange={handleInputChange}
                           className={`pl-10 ${validationErrors.password ? "border-gray-300 focus:border-gray-500 focus:ring-red-500" : ""}`}
-                          data-oid="jox.9cp"
+                          data-oid="j7tn58:"
                         />
                       </div>
                       {validationErrors.password && (
                         <p
                           className="mt-1 text-xs text-gray-600"
-                          data-oid="vt-l_t6"
+                          data-oid="0bqf7fu"
                         >
                           {validationErrors.password}
                         </p>
                       )}
                     </div>
 
-                    <div data-oid=".u_0he:">
+                    <div data-oid="z-07p0x">
                       <Label
                         htmlFor="confirmPassword"
                         className="block text-sm font-medium text-gray-700 mb-1"
-                        data-oid="knpnw8g"
+                        data-oid="o1se84e"
                       >
                         Confirmar Contraseña{" "}
-                        <span className="text-black" data-oid="v8mn9wn">
+                        <span className="text-black" data-oid="c::6wxn">
                           *
                         </span>
                       </Label>
-                      <div className="relative" data-oid="ewewnv-">
+                      <div className="relative" data-oid="sifep6h">
                         <Lock
                           className="absolute left-3 top-2.5 h-5 w-5 text-gray-400"
-                          data-oid="8nr7bzq"
+                          data-oid="uey12r5"
                         />
 
                         <Input
@@ -457,13 +457,13 @@ export default function RegisterCompaniesPage() {
                           value={formData.confirmPassword}
                           onChange={handleInputChange}
                           className={`pl-10 ${validationErrors.confirmPassword ? "border-gray-300 focus:border-gray-500 focus:ring-red-500" : ""}`}
-                          data-oid="l3rmx2."
+                          data-oid="82:.z7f"
                         />
                       </div>
                       {validationErrors.confirmPassword && (
                         <p
                           className="mt-1 text-xs text-gray-600"
-                          data-oid="0pbn..m"
+                          data-oid="q14dxez"
                         >
                           {validationErrors.confirmPassword}
                         </p>
@@ -471,27 +471,27 @@ export default function RegisterCompaniesPage() {
                     </div>
                   </div>
 
-                  <div className="space-y-1 pt-4" data-oid="corga_0">
+                  <div className="space-y-1 pt-4" data-oid="og6di_8">
                     <h2
                       className="text-xl font-semibold text-gray-800 flex items-center"
-                      data-oid="csgh0ac"
+                      data-oid="pcvlx7p"
                     >
-                      <Building className="h-5 w-5 mr-2" data-oid="u77marp" />
+                      <Building className="h-5 w-5 mr-2" data-oid="0td2i_c" />
                       Información de la Empresa
                     </h2>
-                    <p className="text-sm text-gray-500" data-oid="j5m_6sw">
+                    <p className="text-sm text-gray-500" data-oid="5lgc1pm">
                       Datos de la empresa para configurar su cuenta corporativa
                     </p>
                   </div>
 
-                  <div data-oid="-bd.yzq">
+                  <div data-oid="ome0mv.">
                     <Label
                       htmlFor="companyName"
                       className="block text-sm font-medium text-gray-700 mb-1"
-                      data-oid="oquks24"
+                      data-oid=".zs97yj"
                     >
                       Nombre de la empresa{" "}
-                      <span className="text-black" data-oid="i.c2-3k">
+                      <span className="text-black" data-oid="ocxrp4y">
                         *
                       </span>
                     </Label>
@@ -501,13 +501,13 @@ export default function RegisterCompaniesPage() {
                       value={formData.companyName}
                       onChange={handleInputChange}
                       className={`w-full ${validationErrors.companyName ? "border-gray-300 focus:border-gray-500 focus:ring-red-500" : ""}`}
-                      data-oid="4x2b0of"
+                      data-oid="szz2hk8"
                     />
 
                     {validationErrors.companyName && (
                       <p
                         className="mt-1 text-xs text-gray-600"
-                        data-oid="jxj131t"
+                        data-oid="-kqkx21"
                       >
                         {validationErrors.companyName}
                       </p>
@@ -516,16 +516,16 @@ export default function RegisterCompaniesPage() {
 
                   <div
                     className="grid grid-cols-1 md:grid-cols-3 gap-4"
-                    data-oid="6-sx2un"
+                    data-oid="msvafnb"
                   >
-                    <div data-oid="5s_c84i">
+                    <div data-oid="ga6zgnc">
                       <Label
                         htmlFor="country"
                         className="block text-sm font-medium text-gray-700 mb-1"
-                        data-oid="rwadoq."
+                        data-oid="bx3y76q"
                       >
                         País{" "}
-                        <span className="text-black" data-oid="cnirmcc">
+                        <span className="text-black" data-oid="t17f..y">
                           *
                         </span>
                       </Label>
@@ -535,27 +535,27 @@ export default function RegisterCompaniesPage() {
                         value={formData.country}
                         onChange={handleInputChange}
                         className="w-full rounded-md border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent"
-                        data-oid=":rv4rqm"
+                        data-oid="zgxre4u"
                       >
-                        <option data-oid="uq9h5r2">España</option>
-                        <option data-oid="6uqyxpp">Estados Unidos</option>
-                        <option data-oid="17vtn0b">México</option>
-                        <option data-oid="znyimmb">Argentina</option>
-                        <option data-oid="az455x5">Colombia</option>
-                        <option data-oid="vj41r-c">Chile</option>
-                        <option data-oid="jq1dweb">Perú</option>
-                        <option data-oid="pp625_g">Otro</option>
+                        <option data-oid="m.u7n5h">España</option>
+                        <option data-oid="uidrch_">Estados Unidos</option>
+                        <option data-oid="7uwno-9">México</option>
+                        <option data-oid="uzanhmk">Argentina</option>
+                        <option data-oid="46i-xli">Colombia</option>
+                        <option data-oid="3s7o0f-">Chile</option>
+                        <option data-oid="6c9xjvn">Perú</option>
+                        <option data-oid="qs6:iu9">Otro</option>
                       </select>
                     </div>
 
-                    <div data-oid="fa6vu8r">
+                    <div data-oid="acx0b0t">
                       <Label
                         htmlFor="phonePrefix"
                         className="block text-sm font-medium text-gray-700 mb-1"
-                        data-oid="_xywsn3"
+                        data-oid="njze2ou"
                       >
                         Prefijo{" "}
-                        <span className="text-black" data-oid="kcyd.ii">
+                        <span className="text-black" data-oid="i3vswn9">
                           *
                         </span>
                       </Label>
@@ -565,33 +565,33 @@ export default function RegisterCompaniesPage() {
                         value={formData.phonePrefix}
                         onChange={handleInputChange}
                         className="w-full rounded-md border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent"
-                        data-oid="9h46xgq"
+                        data-oid="1oe.urt"
                       >
-                        <option data-oid="mckh_ra">+34</option>
-                        <option data-oid="rrcoh25">+1</option>
-                        <option data-oid=":dya0l2">+52</option>
-                        <option data-oid="14hphj2">+54</option>
-                        <option data-oid="3812yv1">+57</option>
-                        <option data-oid="0ihwv57">+56</option>
-                        <option data-oid="ovm4ib:">+51</option>
+                        <option data-oid="i-3x2le">+34</option>
+                        <option data-oid="ign4lm5">+1</option>
+                        <option data-oid="c2-mieo">+52</option>
+                        <option data-oid="r8cz0br">+54</option>
+                        <option data-oid="1tfdi7u">+57</option>
+                        <option data-oid="tf5rs.e">+56</option>
+                        <option data-oid="2kzkkut">+51</option>
                       </select>
                     </div>
 
-                    <div data-oid=".vpfdmt">
+                    <div data-oid="t.ozj0f">
                       <Label
                         htmlFor="phoneNumber"
                         className="block text-sm font-medium text-gray-700 mb-1"
-                        data-oid="2lo3.:u"
+                        data-oid="ilfl3y9"
                       >
                         Número de teléfono{" "}
-                        <span className="text-black" data-oid="kvuei0n">
+                        <span className="text-black" data-oid="wda7dez">
                           *
                         </span>
                       </Label>
-                      <div className="relative" data-oid="drdkwu:">
+                      <div className="relative" data-oid="34zg1j_">
                         <Phone
                           className="absolute left-3 top-2.5 h-5 w-5 text-gray-400"
-                          data-oid="h82k:r5"
+                          data-oid="vjg9zjb"
                         />
 
                         <Input
@@ -602,13 +602,13 @@ export default function RegisterCompaniesPage() {
                           value={formData.phoneNumber}
                           onChange={handleInputChange}
                           className={`pl-10 ${validationErrors.phoneNumber ? "border-gray-300 focus:border-gray-500 focus:ring-red-500" : ""}`}
-                          data-oid="yg_szx7"
+                          data-oid="qb7j:ec"
                         />
                       </div>
                       {validationErrors.phoneNumber && (
                         <p
                           className="mt-1 text-xs text-gray-600"
-                          data-oid="zrhsloi"
+                          data-oid="sjwy_hu"
                         >
                           {validationErrors.phoneNumber}
                         </p>
@@ -616,14 +616,14 @@ export default function RegisterCompaniesPage() {
                     </div>
                   </div>
 
-                  <div data-oid="0g1_y12">
+                  <div data-oid="1i8w4:k">
                     <Label
                       htmlFor="location"
                       className="block text-sm font-medium text-gray-700 mb-1"
-                      data-oid="0m0ir.6"
+                      data-oid="k-u5fod"
                     >
                       Ciudad / Ubicación{" "}
-                      <span className="text-black" data-oid="ymq6m4z">
+                      <span className="text-black" data-oid="ts.-da0">
                         *
                       </span>
                     </Label>
@@ -634,24 +634,24 @@ export default function RegisterCompaniesPage() {
                       value={formData.location}
                       onChange={handleInputChange}
                       className={`w-full ${validationErrors.location ? "border-gray-300 focus:border-gray-500 focus:ring-red-500" : ""}`}
-                      data-oid="uw_xjhu"
+                      data-oid="4hsm36u"
                     />
 
                     {validationErrors.location && (
                       <p
                         className="mt-1 text-xs text-gray-600"
-                        data-oid="tyxgfis"
+                        data-oid="qdlg6m1"
                       >
                         {validationErrors.location}
                       </p>
                     )}
                   </div>
 
-                  <div data-oid="g42qqw.">
+                  <div data-oid="hedf_pc">
                     <Label
                       htmlFor="companySize"
                       className="block text-sm font-medium text-gray-700 mb-1"
-                      data-oid="wo6mj1f"
+                      data-oid="zqx20.1"
                     >
                       Tamaño de la empresa
                     </Label>
@@ -661,22 +661,22 @@ export default function RegisterCompaniesPage() {
                       value={formData.companySize}
                       onChange={handleInputChange}
                       className="w-full rounded-md border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent"
-                      data-oid="_rfid81"
+                      data-oid="e0j.gej"
                     >
-                      <option data-oid="4-16ki3">1-10 empleados</option>
-                      <option data-oid="cwzd207">11-50 empleados</option>
-                      <option data-oid="3kpdpm9">51-200 empleados</option>
-                      <option data-oid="h9smr7q">201-500 empleados</option>
-                      <option data-oid="pzy6p2v">501-1000 empleados</option>
-                      <option data-oid="zw3kmsx">1000+ empleados</option>
+                      <option data-oid="_vdjkl6">1-10 empleados</option>
+                      <option data-oid="wdljij6">11-50 empleados</option>
+                      <option data-oid="yr1h7w-">51-200 empleados</option>
+                      <option data-oid="k2ploa:">201-500 empleados</option>
+                      <option data-oid="r.1n63.">501-1000 empleados</option>
+                      <option data-oid="3oduu:x">1000+ empleados</option>
                     </select>
                   </div>
 
-                  <div data-oid=".ct3ij5">
+                  <div data-oid="15t9jgu">
                     <Label
                       htmlFor="hearAbout"
                       className="block text-sm font-medium text-gray-700 mb-1"
-                      data-oid="j_qunv_"
+                      data-oid="it10an2"
                     >
                       ¿Cómo se enteró de nosotros?
                     </Label>
@@ -686,21 +686,21 @@ export default function RegisterCompaniesPage() {
                       value={formData.hearAbout}
                       onChange={handleInputChange}
                       className="w-full rounded-md border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent"
-                      data-oid="-4k9y6y"
+                      data-oid="e707o8d"
                     >
-                      <option data-oid=".4ol9e_">Búsqueda en Google</option>
-                      <option data-oid="1b-waj-">Redes sociales</option>
-                      <option data-oid="61x96nx">Recomendación</option>
-                      <option data-oid="8xot373">Publicidad</option>
-                      <option data-oid="l_8e3:.">Otro</option>
+                      <option data-oid="95knc14">Búsqueda en Google</option>
+                      <option data-oid="5o5qd7j">Redes sociales</option>
+                      <option data-oid="m0mq_6y">Recomendación</option>
+                      <option data-oid="h2p59x7">Publicidad</option>
+                      <option data-oid="jokxspb">Otro</option>
                     </select>
                   </div>
 
-                  <div data-oid="vldhl1l">
+                  <div data-oid="o47pu-d">
                     <Label
                       htmlFor="additionalInfo"
                       className="block text-sm font-medium text-gray-700 mb-1"
-                      data-oid="l576i_a"
+                      data-oid="d2d2cye"
                     >
                       Información adicional o necesidades específicas
                     </Label>
@@ -712,13 +712,13 @@ export default function RegisterCompaniesPage() {
                       onChange={handleInputChange}
                       placeholder="Descríbanos las necesidades específicas de transporte de su empresa"
                       className="w-full rounded-md border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent"
-                      data-oid="mphsv.t"
+                      data-oid="0nrj-de"
                     />
                   </div>
 
                   <div
                     className="flex items-start space-x-2"
-                    data-oid="ipd0kc8"
+                    data-oid="at:q66f"
                   >
                     <Checkbox
                       id="termsAccepted"
@@ -729,20 +729,20 @@ export default function RegisterCompaniesPage() {
                           ? "border-gray-300 data-[state=checked]:bg-gray-1000"
                           : ""
                       }
-                      data-oid="x6nz9ct"
+                      data-oid="je:exup"
                     />
 
-                    <div data-oid="j959x-p">
+                    <div data-oid=".lar1-c">
                       <label
                         htmlFor="termsAccepted"
                         className={`block text-sm ${validationErrors.termsAccepted ? "text-gray-600" : "text-gray-500"}`}
-                        data-oid="kms6hy."
+                        data-oid="b5z1wr9"
                       >
                         Acepto los{" "}
                         <a
                           href="#"
                           className="text-primary underline"
-                          data-oid="dcnh0la"
+                          data-oid="6hol-o5"
                         >
                           Términos y Condiciones
                         </a>{" "}
@@ -750,18 +750,18 @@ export default function RegisterCompaniesPage() {
                         <a
                           href="#"
                           className="text-primary underline"
-                          data-oid="ot1trp8"
+                          data-oid="ay6tlhj"
                         >
                           Política de Privacidad
                         </a>{" "}
-                        <span className="text-black" data-oid="u0f2_dt">
+                        <span className="text-black" data-oid="kvred6r">
                           *
                         </span>
                       </label>
                       {validationErrors.termsAccepted && (
                         <p
                           className="mt-1 text-xs text-gray-600"
-                          data-oid="_n6h0rx"
+                          data-oid="2hc96sf"
                         >
                           {validationErrors.termsAccepted}
                         </p>
@@ -773,19 +773,19 @@ export default function RegisterCompaniesPage() {
                     type="submit"
                     className="w-full h-12 bg-primary hover:bg-primary/90 select-button text-base"
                     disabled={isLoading}
-                    data-oid=".na784g"
+                    data-oid="x_uyawt"
                   >
                     {isLoading ? "Registrando..." : "Registrarse"}
                   </Button>
                 </form>
 
-                <div className="mt-6 text-center" data-oid="s372th8">
-                  <p className="text-sm text-gray-600" data-oid="-s_qmhv">
+                <div className="mt-6 text-center" data-oid="o21zdvm">
+                  <p className="text-sm text-gray-600" data-oid="0uwzg.x">
                     ¿Ya tienes una cuenta?{" "}
                     <Link
                       to="/login-companies"
                       className="text-primary font-semibold hover:underline"
-                      data-oid="brahai."
+                      data-oid="z8uqo5i"
                     >
                       Inicia sesión
                     </Link>
@@ -794,24 +794,24 @@ export default function RegisterCompaniesPage() {
 
                 <div
                   className="mt-6 p-4 bg-gray-50 rounded-lg border border-gray-100"
-                  data-oid="jl_1jpw"
+                  data-oid="qnfxysz"
                 >
-                  <div className="flex items-start" data-oid="v_c0nqq">
+                  <div className="flex items-start" data-oid=":26c3u5">
                     <Building
                       className="h-5 w-5 text-gray-500 mt-0.5 mr-2 flex-shrink-0"
-                      data-oid="sv2fyg0"
+                      data-oid="s33gdv1"
                     />
 
-                    <div data-oid="d3u-19m">
+                    <div data-oid="m1xgocf">
                       <h3
                         className="text-sm font-medium text-gray-800"
-                        data-oid="aoc2qzt"
+                        data-oid="8ds.tu."
                       >
                         Beneficios para empresas
                       </h3>
                       <p
                         className="text-xs text-gray-600 mt-1"
-                        data-oid="s5020s:"
+                        data-oid="9zl4g_a"
                       >
                         Al registrarse, su empresa tendrá acceso a tarifas
                         corporativas especiales, facturación centralizada, panel
@@ -825,7 +825,7 @@ export default function RegisterCompaniesPage() {
           </div>
         </div>
       </div>
-      <Footer data-oid="0dinlc7" />
+      <Footer data-oid="uhnmf.e" />
     </>
   );
 }

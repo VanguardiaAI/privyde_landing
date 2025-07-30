@@ -526,7 +526,7 @@ const VehiclesSection = () => {
         vehicle={selectedVehicleForDetails}
         onClose={handleCloseVehicleDetails}
         onEdit={handleEditFromDetailsView}
-        data-oid="djhr8s:"
+        data-oid="_dfw7q0"
       />
     );
   }
@@ -535,14 +535,14 @@ const VehiclesSection = () => {
     return (
       <div
         className="flex flex-col items-center justify-center h-[70vh]"
-        data-oid="o4-hopr"
+        data-oid="2cq.r8m"
       >
         <Loader2
           className="h-12 w-12 text-black animate-spin mb-4"
-          data-oid="kdcaygk"
+          data-oid="gmp.x_."
         />
 
-        <h2 className="text-xl font-medium text-gray-600" data-oid="wr6v1sc">
+        <h2 className="text-xl font-medium text-gray-600" data-oid="vsxy2e8">
           Cargando vehículos...
         </h2>
       </div>
@@ -553,20 +553,20 @@ const VehiclesSection = () => {
     return (
       <div
         className="flex flex-col items-center justify-center h-[70vh]"
-        data-oid="sgbunjc"
+        data-oid="1323ltb"
       >
         <AlertTriangle
           className="h-12 w-12 text-black mb-4"
-          data-oid="jijz7d-"
+          data-oid=":ygyhk4"
         />
 
-        <h2 className="text-xl font-medium text-gray-600" data-oid="sm_bnt9">
+        <h2 className="text-xl font-medium text-gray-600" data-oid="_q3-y.t">
           {error}
         </h2>
         <Button
           onClick={fetchVehicles}
           className="mt-4 bg-black hover:bg-gray-800 text-white"
-          data-oid="7m-clr_"
+          data-oid="et84ff5"
         >
           Reintentar
         </Button>
@@ -575,18 +575,18 @@ const VehiclesSection = () => {
   }
 
   return (
-    <div className="space-y-6" data-oid="hoew7nr">
-      <div className="flex justify-between items-center" data-oid="zuyyyqu">
-        <h1 className="text-2xl font-bold text-gray-800" data-oid="fz3u5os">
+    <div className="space-y-6" data-oid="j:fr0m2">
+      <div className="flex justify-between items-center" data-oid="xv_obhm">
+        <h1 className="text-2xl font-bold text-gray-800" data-oid="h6oa53u">
           Gestión de Vehículos
         </h1>
         {!showVehicleForm && (
           <Button
             onClick={handleAddVehicle}
             className="flex items-center px-4 py-2 bg-black text-white rounded-lg hover:bg-gray-800 transition-colors"
-            data-oid="t8cnshe"
+            data-oid="ognis02"
           >
-            <PlusCircle size={18} className="mr-2" data-oid="dn-.klv" />
+            <PlusCircle size={18} className="mr-2" data-oid="ci6gzb3" />
             Añadir Vehículo
           </Button>
         )}
@@ -601,56 +601,56 @@ const VehiclesSection = () => {
             setShowVehicleForm(false);
             setEditingVehicle(null);
           }}
-          data-oid=".vf6nvs"
+          data-oid="xy7fpwq"
         />
       ) : (
-        <div data-oid="72snm6i">
+        <div data-oid="awt7kl3">
           <div
             className="flex justify-between items-center bg-white p-4 rounded-lg shadow-sm mb-4"
-            data-oid="0ou9wab"
+            data-oid="1.6zdef"
           >
-            <div className="relative w-64" data-oid="4rf5f14">
+            <div className="relative w-64" data-oid="4igo1a-">
               <input
                 type="text"
                 placeholder="Buscar vehículos..."
                 className="pl-10 pr-4 py-2 border rounded-lg w-full"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                data-oid="kfobak1"
+                data-oid="x6vhl-j"
               />
 
               <Search
                 className="absolute left-3 top-2.5 text-gray-400"
                 size={18}
-                data-oid="_wlx7az"
+                data-oid="b6cppk1"
               />
             </div>
-            <div className="flex space-x-3" data-oid="qs0zjr_">
+            <div className="flex space-x-3" data-oid="k1pf132">
               <select
                 className="px-3 py-2 border rounded-lg"
                 value={vehicleTypeFilter}
                 onChange={(e) => setVehicleTypeFilter(e.target.value)}
-                data-oid="f673g0i"
+                data-oid="e_5.i:k"
               >
-                <option value="all" data-oid="pfso0cw">
+                <option value="all" data-oid="u3jl4qa">
                   Todos los tipos
                 </option>
-                <option value="sedan" data-oid="f_x4iun">
+                <option value="sedan" data-oid="sro4yu6">
                   Sedán
                 </option>
-                <option value="suv" data-oid="yf12ajq">
+                <option value="suv" data-oid="5n0zi2j">
                   SUV
                 </option>
-                <option value="van" data-oid=":saa7ka">
+                <option value="van" data-oid="5948b31">
                   Van
                 </option>
-                <option value="limousine" data-oid="_dwfxc:">
+                <option value="limousine" data-oid="1ryr-k4">
                   Limusina
                 </option>
-                <option value="helicopter" data-oid="6632bxt">
+                <option value="helicopter" data-oid="ha_edd.">
                   Helicóptero
                 </option>
-                <option value="jet" data-oid="h40vabx">
+                <option value="jet" data-oid=".inn:he">
                   Jet
                 </option>
               </select>
@@ -658,15 +658,15 @@ const VehiclesSection = () => {
                 className="px-3 py-2 border rounded-lg"
                 value={availabilityFilter}
                 onChange={(e) => setAvailabilityFilter(e.target.value)}
-                data-oid=".wzs1f-"
+                data-oid="5nxhqbz"
               >
-                <option value="all" data-oid="x7:ybxr">
+                <option value="all" data-oid="tephnav">
                   Toda disponibilidad
                 </option>
-                <option value="available" data-oid="ir0enxv">
+                <option value="available" data-oid="emhlpwn">
                   Disponibles
                 </option>
-                <option value="unavailable" data-oid="bnjp.c0">
+                <option value="unavailable" data-oid="l:pkb:p">
                   No disponibles
                 </option>
               </select>
@@ -679,7 +679,7 @@ const VehiclesSection = () => {
             onToggleAvailability={handleToggleVehicleAvailability}
             onViewDetails={handleViewVehicleDetails}
             onAssignDriver={handleAssignDriver}
-            data-oid="7-zddhj"
+            data-oid="wouq5::"
           />
         </div>
       )}

@@ -191,50 +191,50 @@ export default function AccountPage() {
   };
 
   return (
-    <div className="flex flex-col min-h-screen" data-oid="mjz.vzt">
-      <Navbar data-oid="uau_5o0" />
+    <div className="flex flex-col min-h-screen" data-oid="qp8vt3_">
+      <Navbar data-oid="_ki1vrs" />
 
-      <main className="flex-1 bg-white pb-16" data-oid="9grv2nq">
+      <main className="flex-1 bg-white pb-16" data-oid="3ee4z7k">
         <div
           className="container mx-auto px-4 py-8 max-w-5xl"
-          data-oid="08hwf-c"
+          data-oid="267yxdn"
         >
           <h1
             className="text-3xl font-bold text-gray-800 mb-6"
-            data-oid="9a2.g2d"
+            data-oid="zc-ndyt"
           >
             Cuenta
           </h1>
-          <p className="text-gray-600 mb-8" data-oid="-_bfyb7">
+          <p className="text-gray-600 mb-8" data-oid="5hz47c2">
             Gestione su información para que Privyde satisfaga sus necesidades.
           </p>
 
           {/* Información personal */}
-          <div className="mb-8" data-oid=".x80q4:">
+          <div className="mb-8" data-oid="jwx28t6">
             <h2
               className="text-xl font-semibold text-gray-800 mb-4"
-              data-oid="woon-w3"
+              data-oid="zcx7dq9"
             >
               Información personal
             </h2>
 
             <div
               className="border border-gray-200 rounded-md overflow-hidden"
-              data-oid="kh19y5v"
+              data-oid="xqrzuxt"
             >
               {/* Nombre */}
               <div
                 className="flex justify-between items-center p-4 border-b border-gray-200"
-                data-oid=".87j9:4"
+                data-oid="5-5i.yl"
               >
-                <div data-oid="g1sbwh3">
+                <div data-oid="mul4:.p">
                   <div
                     className="text-sm text-gray-500 mb-1"
-                    data-oid="qw7-q:l"
+                    data-oid="g_64w70"
                   >
                     Nombre
                   </div>
-                  <div className="font-medium" data-oid=":m09qrd">
+                  <div className="font-medium" data-oid="tq.gm57">
                     {user?.profile?.title || ""}{" "}
                     {user?.profile?.first_name || ""}{" "}
                     {user?.profile?.last_name || ""}
@@ -243,50 +243,50 @@ export default function AccountPage() {
                 <button
                   className="p-2 text-gray-600 hover:text-black"
                   onClick={() => openModal("name")}
-                  data-oid="1ueaj4v"
+                  data-oid="0s4i7ay"
                 >
-                  <Edit className="w-5 h-5" data-oid="q1u.czy" />
+                  <Edit className="w-5 h-5" data-oid=".wtbzt_" />
                 </button>
               </div>
 
               {/* Email */}
               <div
                 className="flex justify-between items-center p-4 border-b border-gray-200"
-                data-oid="2mn:ym6"
+                data-oid="qni.o6y"
               >
-                <div data-oid="p.-i456">
+                <div data-oid="hdybndk">
                   <div
                     className="text-sm text-gray-500 mb-1"
-                    data-oid="vwq7asu"
+                    data-oid="ecw1rrg"
                   >
                     Email
                   </div>
-                  <div className="font-medium" data-oid="g6lqia7">
+                  <div className="font-medium" data-oid="vd82g41">
                     {user?.email}
                   </div>
                 </div>
                 <button
                   className="p-2 text-gray-600 hover:text-black"
                   onClick={() => openModal("email")}
-                  data-oid="_a8-0nb"
+                  data-oid="fbiar2-"
                 >
-                  <Edit className="w-5 h-5" data-oid="jpbg4c:" />
+                  <Edit className="w-5 h-5" data-oid="n784kkw" />
                 </button>
               </div>
 
               {/* Teléfono móvil */}
               <div
                 className="flex justify-between items-center p-4 border-b border-gray-200"
-                data-oid="qyuv5_y"
+                data-oid="16nq3lb"
               >
-                <div data-oid="6r2cbyy">
+                <div data-oid="eydz-p6">
                   <div
                     className="text-sm text-gray-500 mb-1"
-                    data-oid="8ie:quy"
+                    data-oid="ryddwqd"
                   >
                     Teléfono móvil
                   </div>
-                  <div className="font-medium" data-oid="xb2eabi">
+                  <div className="font-medium" data-oid="mvjs2yd">
                     {user?.profile?.country_code || ""}
                     {user?.profile?.phone || ""}
                   </div>
@@ -294,195 +294,195 @@ export default function AccountPage() {
                 <button
                   className="p-2 text-gray-600 hover:text-black"
                   onClick={() => openModal("phone")}
-                  data-oid="yhanru9"
+                  data-oid="b-45:2k"
                 >
-                  <Edit className="w-5 h-5" data-oid="q5x_-8c" />
+                  <Edit className="w-5 h-5" data-oid="kgbq5dr" />
                 </button>
               </div>
 
               {/* Empresa */}
               <div
                 className="flex justify-between items-center p-4 border-b border-gray-200"
-                data-oid="fp471lz"
+                data-oid="b7f6qag"
               >
-                <div data-oid="0r9cg:r">
+                <div data-oid="54ghf17">
                   <div
                     className="text-sm text-gray-500 mb-1"
-                    data-oid="1xa7n-_"
+                    data-oid="rwykzz_"
                   >
                     Empresa
                   </div>
-                  <div className="font-medium" data-oid="ov_pctr">
+                  <div className="font-medium" data-oid="-rr6785">
                     {user?.profile?.company || "—"}
                   </div>
                 </div>
                 <button
                   className="p-2 text-gray-600 hover:text-black"
                   onClick={() => openModal("company")}
-                  data-oid="lzd.9v."
+                  data-oid="y65cz2g"
                 >
-                  <Edit className="w-5 h-5" data-oid="tt6h-pf" />
+                  <Edit className="w-5 h-5" data-oid="di6gh.v" />
                 </button>
               </div>
 
               {/* Dirección */}
               <div
                 className="flex justify-between items-center p-4"
-                data-oid="qr4dbkp"
+                data-oid="z71ba_7"
               >
-                <div data-oid="9g3qs4n">
+                <div data-oid="xs1h7lj">
                   <div
                     className="text-sm text-gray-500 mb-1"
-                    data-oid="sfy2vrt"
+                    data-oid="-ju1puw"
                   >
                     Dirección
                   </div>
-                  <div className="font-medium" data-oid="qi5b73j">
+                  <div className="font-medium" data-oid="6aipxs4">
                     {user?.profile?.address || "—"}
                   </div>
                 </div>
                 <button
                   className="p-2 text-gray-600 hover:text-black"
                   onClick={() => openModal("address")}
-                  data-oid="gd.vbs1"
+                  data-oid="vkga17:"
                 >
-                  <Edit className="w-5 h-5" data-oid="i925:vf" />
+                  <Edit className="w-5 h-5" data-oid="ihj__bi" />
                 </button>
               </div>
             </div>
           </div>
 
           {/* Contraseña */}
-          <div className="mb-8" data-oid="bk39lnj">
+          <div className="mb-8" data-oid="isvonrt">
             <h2
               className="text-xl font-semibold text-gray-800 mb-4"
-              data-oid="dtb7igm"
+              data-oid="oocgrhf"
             >
               Contraseña
             </h2>
 
             <div
               className="border border-gray-200 rounded-md overflow-hidden"
-              data-oid="s9-nh24"
+              data-oid="d8fd96e"
             >
               <div
                 className="flex justify-between items-center p-4"
-                data-oid="w2a6dqe"
+                data-oid="v2uxvek"
               >
-                <div data-oid="aezz5qx">
+                <div data-oid="swvdi2y">
                   <div
                     className="text-sm text-gray-500 mb-1"
-                    data-oid="147yvot"
+                    data-oid="91d.dpj"
                   >
                     Contraseña
                   </div>
-                  <div className="font-medium" data-oid="gmbmt:b">
+                  <div className="font-medium" data-oid="vn-q5uq">
                     ••••••••••••••
                   </div>
                 </div>
                 <button
                   className="p-2 text-gray-600 hover:text-black"
                   onClick={() => openModal("password")}
-                  data-oid="zy_6pr_"
+                  data-oid="xkw8g2n"
                 >
-                  <Edit className="w-5 h-5" data-oid="9x6ap5e" />
+                  <Edit className="w-5 h-5" data-oid="_csfngj" />
                 </button>
               </div>
             </div>
           </div>
 
           {/* Pago */}
-          <div className="mb-8" data-oid="0ncg-8g">
+          <div className="mb-8" data-oid="y.ltpzr">
             <h2
               className="text-xl font-semibold text-gray-800 mb-4"
-              data-oid=".nnnv:h"
+              data-oid="67:ywuk"
             >
               Pago
             </h2>
 
             <button
               className="w-full border border-gray-300 rounded-md py-3 px-4 text-center flex items-center justify-center hover:bg-gray-50"
-              data-oid="9744w46"
+              data-oid=".mksjoq"
             >
-              <span className="text-gray-700 font-medium" data-oid="1t:8th9">
+              <span className="text-gray-700 font-medium" data-oid="smvbq8a">
                 + Añadir nueva tarjeta
               </span>
             </button>
           </div>
 
           {/* Promociones */}
-          <div className="mb-8" data-oid="x24tx34">
+          <div className="mb-8" data-oid="nk9105w">
             <h2
               className="text-xl font-semibold text-gray-800 mb-4"
-              data-oid="s1d9pr1"
+              data-oid="g5u7ird"
             >
               Promociones
             </h2>
-            <p className="text-gray-600" data-oid="1bdb_1z">
+            <p className="text-gray-600" data-oid=":jv_v-m">
               No hay vales disponibles en su cuenta en este momento.
             </p>
           </div>
 
           {/* Notificaciones */}
-          <div className="mb-8" data-oid="ctc9027">
+          <div className="mb-8" data-oid="patdfwh">
             <h2
               className="text-xl font-semibold text-gray-800 mb-4"
-              data-oid="el0k5u9"
+              data-oid="h0716h:"
             >
               Notificaciones
             </h2>
 
             <div
               className="border border-gray-200 rounded-md overflow-hidden"
-              data-oid="ret6m9e"
+              data-oid="db68q_:"
             >
               {/* Correos de marketing */}
               <div
                 className="flex justify-between items-center p-4 border-b border-gray-200"
-                data-oid="rymqn25"
+                data-oid="0jy2132"
               >
-                <div data-oid="nn3:frd">
+                <div data-oid="ndhc49z">
                   <div
                     className="text-sm text-gray-500 mb-1"
-                    data-oid="_48-sg:"
+                    data-oid="v:hwc:k"
                   >
                     Correos electrónicos de marketing
                   </div>
-                  <div className="font-medium" data-oid="z:mguym">
+                  <div className="font-medium" data-oid="1mb2tl5">
                     On
                   </div>
                 </div>
                 <button
                   className="p-2 text-gray-600 hover:text-black"
                   onClick={() => openModal("marketing")}
-                  data-oid="bzxsd-w"
+                  data-oid="9p8vnj_"
                 >
-                  <Edit className="w-5 h-5" data-oid="n8fol3a" />
+                  <Edit className="w-5 h-5" data-oid="-uqh6--" />
                 </button>
               </div>
 
               {/* Notificaciones de reserva */}
               <div
                 className="flex justify-between items-center p-4"
-                data-oid="my0_y:3"
+                data-oid="eetll48"
               >
-                <div data-oid="05f3742">
+                <div data-oid="3fd3di.">
                   <div
                     className="text-sm text-gray-500 mb-1"
-                    data-oid="-_d1voi"
+                    data-oid="y1cee6l"
                   >
                     Notificaciones de reserva
                   </div>
-                  <div className="font-medium" data-oid="rg7q8oz">
+                  <div className="font-medium" data-oid="yb57wyf">
                     Activado: Correo electrónico y SMS
                   </div>
                 </div>
                 <button
                   className="p-2 text-gray-600 hover:text-black"
                   onClick={() => openModal("notifications")}
-                  data-oid="vufsxyr"
+                  data-oid="hnwp5:p"
                 >
-                  <Edit className="w-5 h-5" data-oid="3xr0usn" />
+                  <Edit className="w-5 h-5" data-oid="jui.yw4" />
                 </button>
               </div>
             </div>
@@ -491,9 +491,9 @@ export default function AccountPage() {
           {/* Borrar cuenta */}
           <button
             className="w-full border border-gray-300 rounded-md py-3 px-4 text-center mb-8 hover:bg-gray-50"
-            data-oid="_r94vey"
+            data-oid="5wdwghf"
           >
-            <span className="text-gray-700 font-medium" data-oid="1_26:sv">
+            <span className="text-gray-700 font-medium" data-oid=".8rt0yp">
               Borrar mi cuenta
             </span>
           </button>
@@ -504,39 +504,39 @@ export default function AccountPage() {
       {activeModal && (
         <div
           className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4"
-          data-oid="cijhqre"
+          data-oid="p568099"
         >
           <div
             className="bg-white rounded-lg shadow-lg max-w-md w-full"
-            data-oid="6qyyoom"
+            data-oid="xq2ctrw"
           >
             {/* Editar Nombre */}
             {activeModal === "name" && (
-              <div data-oid="k_xi:jk">
+              <div data-oid="f3wl5e7">
                 <div
                   className="flex justify-between items-center border-b border-gray-200 p-4"
-                  data-oid="1dgr0rp"
+                  data-oid="vbf-67_"
                 >
-                  <h3 className="text-lg font-semibold" data-oid="ygyeqef">
+                  <h3 className="text-lg font-semibold" data-oid="qppgtoq">
                     Editar nombre
                   </h3>
                   <button
                     onClick={closeModal}
                     className="text-gray-500 hover:text-gray-700"
-                    data-oid=":49sd3y"
+                    data-oid="-di0h6j"
                   >
-                    <X className="w-5 h-5" data-oid="h_v1qvz" />
+                    <X className="w-5 h-5" data-oid="o4fnoy-" />
                   </button>
                 </div>
                 <form
                   onSubmit={saveNameChanges}
                   className="p-6"
-                  data-oid=":qskj2b"
+                  data-oid="j596:pu"
                 >
-                  <div className="mb-4" data-oid="xijo62o">
+                  <div className="mb-4" data-oid="9h9a5_h">
                     <label
                       className="block text-sm font-medium text-gray-700 mb-1"
-                      data-oid="zq_o-go"
+                      data-oid="_1onmh-"
                     >
                       Título
                     </label>
@@ -545,29 +545,29 @@ export default function AccountPage() {
                       value={nameForm.title}
                       onChange={handleNameChange}
                       className="w-full p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                      data-oid="mnvn_8j"
+                      data-oid="w76u9t-"
                     >
-                      <option value="" data-oid="bk:.o90">
+                      <option value="" data-oid="tn9p93_">
                         Seleccionar...
                       </option>
-                      <option value="Sr" data-oid="qzj19i:">
+                      <option value="Sr" data-oid="vplog-f">
                         Sr.
                       </option>
-                      <option value="Sra" data-oid="sgz-ww:">
+                      <option value="Sra" data-oid="btfvhdh">
                         Sra.
                       </option>
-                      <option value="Dr" data-oid="4ozfo-p">
+                      <option value="Dr" data-oid="i8-6ip7">
                         Dr.
                       </option>
-                      <option value="Dra" data-oid="2khgc.u">
+                      <option value="Dra" data-oid="o-cga8y">
                         Dra.
                       </option>
                     </select>
                   </div>
-                  <div className="mb-4" data-oid="t7hkxtr">
+                  <div className="mb-4" data-oid="zt63o2.">
                     <label
                       className="block text-sm font-medium text-gray-700 mb-1"
-                      data-oid="wdqxc0:"
+                      data-oid="o-unsps"
                     >
                       Nombre
                     </label>
@@ -577,13 +577,13 @@ export default function AccountPage() {
                       value={nameForm.first_name}
                       onChange={handleNameChange}
                       className="w-full p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                      data-oid="mqa4ztq"
+                      data-oid="i1v_wh0"
                     />
                   </div>
-                  <div className="mb-6" data-oid="3.bl1-6">
+                  <div className="mb-6" data-oid="9qa-t89">
                     <label
                       className="block text-sm font-medium text-gray-700 mb-1"
-                      data-oid="l7km9q:"
+                      data-oid="l0_qke1"
                     >
                       Apellido
                     </label>
@@ -593,14 +593,14 @@ export default function AccountPage() {
                       value={nameForm.last_name}
                       onChange={handleNameChange}
                       className="w-full p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                      data-oid="x-k790q"
+                      data-oid="939d07b"
                     />
                   </div>
 
                   {saveMessage && (
                     <div
                       className={`p-2 mb-4 rounded-md ${saveMessage.type === "success" ? "bg-gray-200 text-green-700" : "bg-gray-200 text-gray-700"}`}
-                      data-oid="5ar8jrb"
+                      data-oid="h75:pkd"
                     >
                       {saveMessage.text}
                     </div>
@@ -608,20 +608,20 @@ export default function AccountPage() {
 
                   <div
                     className="flex justify-end space-x-2"
-                    data-oid="ve9qbje"
+                    data-oid="g3-l617"
                   >
                     <button
                       type="button"
                       onClick={closeModal}
                       className="px-4 py-2 border border-gray-300 rounded-md text-gray-700 hover:bg-gray-50"
-                      data-oid="mmj41v-"
+                      data-oid="e0-vup0"
                     >
                       Cancelar
                     </button>
                     <button
                       type="submit"
                       className="px-4 py-2 bg-black hover:bg-gray-800 text-white rounded-md transition-all duration-150 ease-in-out"
-                      data-oid="is-kc4a"
+                      data-oid="ppijrib"
                     >
                       Guardar
                     </button>
@@ -632,36 +632,36 @@ export default function AccountPage() {
 
             {/* Editar Email (solo informativo) */}
             {activeModal === "email" && (
-              <div data-oid=".-aap2:">
+              <div data-oid="s67j-qb">
                 <div
                   className="flex justify-between items-center border-b border-gray-200 p-4"
-                  data-oid="ir_jnek"
+                  data-oid="-lchfzg"
                 >
-                  <h3 className="text-lg font-semibold" data-oid="a1tepoh">
+                  <h3 className="text-lg font-semibold" data-oid="nvw2hf-">
                     Correo electrónico
                   </h3>
                   <button
                     onClick={closeModal}
                     className="text-gray-500 hover:text-gray-700"
-                    data-oid="pmgbval"
+                    data-oid="dbtoyj0"
                   >
-                    <X className="w-5 h-5" data-oid="50g5v7x" />
+                    <X className="w-5 h-5" data-oid="z:y21.p" />
                   </button>
                 </div>
-                <div className="p-6" data-oid="2nigyyi">
-                  <p className="text-gray-600 mb-4" data-oid="a7p..x5">
+                <div className="p-6" data-oid="ax.x1j0">
+                  <p className="text-gray-600 mb-4" data-oid="-_m9qvi">
                     No es posible cambiar el correo electrónico asociado a tu
                     cuenta.
                   </p>
-                  <p className="text-gray-600 mb-6" data-oid="nn53xk8">
+                  <p className="text-gray-600 mb-6" data-oid="um5ze:e">
                     Si necesitas usar una dirección diferente, deberás crear una
                     nueva cuenta.
                   </p>
-                  <div className="flex justify-end" data-oid="12i1vy0">
+                  <div className="flex justify-end" data-oid="phz6vb9">
                     <button
                       onClick={closeModal}
                       className="px-4 py-2 border border-gray-300 rounded-md text-gray-700 hover:bg-gray-50"
-                      data-oid="tp.4a0-"
+                      data-oid="a4vkm9x"
                     >
                       Cerrar
                     </button>
@@ -672,31 +672,31 @@ export default function AccountPage() {
 
             {/* Editar Teléfono */}
             {activeModal === "phone" && (
-              <div data-oid="p6pii:3">
+              <div data-oid="ypxdwok">
                 <div
                   className="flex justify-between items-center border-b border-gray-200 p-4"
-                  data-oid="dhx9jez"
+                  data-oid="qajrimc"
                 >
-                  <h3 className="text-lg font-semibold" data-oid="s9o7ltl">
+                  <h3 className="text-lg font-semibold" data-oid="_4q083h">
                     Editar teléfono
                   </h3>
                   <button
                     onClick={closeModal}
                     className="text-gray-500 hover:text-gray-700"
-                    data-oid="0g9unbx"
+                    data-oid="ptuu-n9"
                   >
-                    <X className="w-5 h-5" data-oid="03q0a_g" />
+                    <X className="w-5 h-5" data-oid="9qhi04r" />
                   </button>
                 </div>
                 <form
                   onSubmit={savePhoneChanges}
                   className="p-6"
-                  data-oid="l.49r:n"
+                  data-oid="vuxrso0"
                 >
-                  <div className="mb-4" data-oid="n3:fr1v">
+                  <div className="mb-4" data-oid="gh6f6pk">
                     <label
                       className="block text-sm font-medium text-gray-700 mb-1"
-                      data-oid="m0kjryf"
+                      data-oid="22sjuoj"
                     >
                       Código de país
                     </label>
@@ -707,13 +707,13 @@ export default function AccountPage() {
                       onChange={handlePhoneChange}
                       placeholder="+34"
                       className="w-full p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                      data-oid=".hxyxa1"
+                      data-oid=":haw5ho"
                     />
                   </div>
-                  <div className="mb-6" data-oid="_ad6gdq">
+                  <div className="mb-6" data-oid="6dk1iow">
                     <label
                       className="block text-sm font-medium text-gray-700 mb-1"
-                      data-oid="wg_185f"
+                      data-oid=".4ed8z5"
                     >
                       Número de teléfono
                     </label>
@@ -723,14 +723,14 @@ export default function AccountPage() {
                       value={phoneForm.phone}
                       onChange={handlePhoneChange}
                       className="w-full p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                      data-oid="02g5yk_"
+                      data-oid="0am5x30"
                     />
                   </div>
 
                   {saveMessage && (
                     <div
                       className={`p-2 mb-4 rounded-md ${saveMessage.type === "success" ? "bg-gray-200 text-green-700" : "bg-gray-200 text-gray-700"}`}
-                      data-oid="cpwyybf"
+                      data-oid="67-p2b7"
                     >
                       {saveMessage.text}
                     </div>
@@ -738,20 +738,20 @@ export default function AccountPage() {
 
                   <div
                     className="flex justify-end space-x-2"
-                    data-oid="9yz6uz1"
+                    data-oid="ycao7io"
                   >
                     <button
                       type="button"
                       onClick={closeModal}
                       className="px-4 py-2 border border-gray-300 rounded-md text-gray-700 hover:bg-gray-50"
-                      data-oid="plesy93"
+                      data-oid="n70gd9m"
                     >
                       Cancelar
                     </button>
                     <button
                       type="submit"
                       className="px-4 py-2 bg-black hover:bg-gray-800 text-white rounded-md transition-all duration-150 ease-in-out"
-                      data-oid="k2mvid:"
+                      data-oid="t-c9fz0"
                     >
                       Guardar
                     </button>
@@ -762,31 +762,31 @@ export default function AccountPage() {
 
             {/* Editar Empresa */}
             {activeModal === "company" && (
-              <div data-oid="ed81t2d">
+              <div data-oid="fatb9af">
                 <div
                   className="flex justify-between items-center border-b border-gray-200 p-4"
-                  data-oid="uw:oija"
+                  data-oid="u4x2xiv"
                 >
-                  <h3 className="text-lg font-semibold" data-oid="km1feut">
+                  <h3 className="text-lg font-semibold" data-oid="t7ajd69">
                     Editar empresa
                   </h3>
                   <button
                     onClick={closeModal}
                     className="text-gray-500 hover:text-gray-700"
-                    data-oid="u:k5opf"
+                    data-oid="ppnx3aj"
                   >
-                    <X className="w-5 h-5" data-oid="03jv-p-" />
+                    <X className="w-5 h-5" data-oid="tj:ju-r" />
                   </button>
                 </div>
                 <form
                   onSubmit={saveCompanyChanges}
                   className="p-6"
-                  data-oid="e-ezvhf"
+                  data-oid="faeyd9r"
                 >
-                  <div className="mb-6" data-oid="..f_pdp">
+                  <div className="mb-6" data-oid=".tn5bem">
                     <label
                       className="block text-sm font-medium text-gray-700 mb-1"
-                      data-oid="im3v2z8"
+                      data-oid="t6:4b.4"
                     >
                       Nombre de la empresa
                     </label>
@@ -795,14 +795,14 @@ export default function AccountPage() {
                       value={companyForm.company}
                       onChange={handleCompanyChange}
                       className="w-full p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                      data-oid="z7vs_-j"
+                      data-oid="-3a:53u"
                     />
                   </div>
 
                   {saveMessage && (
                     <div
                       className={`p-2 mb-4 rounded-md ${saveMessage.type === "success" ? "bg-gray-200 text-green-700" : "bg-gray-200 text-gray-700"}`}
-                      data-oid="vpm:rd8"
+                      data-oid="io-tnq4"
                     >
                       {saveMessage.text}
                     </div>
@@ -810,20 +810,20 @@ export default function AccountPage() {
 
                   <div
                     className="flex justify-end space-x-2"
-                    data-oid="bygvs8r"
+                    data-oid="_gfwkky"
                   >
                     <button
                       type="button"
                       onClick={closeModal}
                       className="px-4 py-2 border border-gray-300 rounded-md text-gray-700 hover:bg-gray-50"
-                      data-oid="yq6mgv6"
+                      data-oid="5dalnqi"
                     >
                       Cancelar
                     </button>
                     <button
                       type="submit"
                       className="px-4 py-2 bg-black hover:bg-gray-800 text-white rounded-md transition-all duration-150 ease-in-out"
-                      data-oid="w:pemm."
+                      data-oid="qaptq_c"
                     >
                       Guardar
                     </button>
@@ -834,31 +834,31 @@ export default function AccountPage() {
 
             {/* Editar Dirección */}
             {activeModal === "address" && (
-              <div data-oid="cgke-b3">
+              <div data-oid="io3bm-3">
                 <div
                   className="flex justify-between items-center border-b border-gray-200 p-4"
-                  data-oid="c-qc05y"
+                  data-oid="dobqi5u"
                 >
-                  <h3 className="text-lg font-semibold" data-oid="j3vkuh9">
+                  <h3 className="text-lg font-semibold" data-oid=":ys_fvn">
                     Editar dirección
                   </h3>
                   <button
                     onClick={closeModal}
                     className="text-gray-500 hover:text-gray-700"
-                    data-oid="9mje.46"
+                    data-oid="rcgqvxj"
                   >
-                    <X className="w-5 h-5" data-oid="qbzghr7" />
+                    <X className="w-5 h-5" data-oid="7pa2ejo" />
                   </button>
                 </div>
                 <form
                   onSubmit={saveAddressChanges}
                   className="p-6"
-                  data-oid="jr0zx4p"
+                  data-oid="rx83yqe"
                 >
-                  <div className="mb-6" data-oid="82ause_">
+                  <div className="mb-6" data-oid="9qua5z1">
                     <label
                       className="block text-sm font-medium text-gray-700 mb-1"
-                      data-oid="5oiq22t"
+                      data-oid="hpaiqsx"
                     >
                       Dirección completa
                     </label>
@@ -867,14 +867,14 @@ export default function AccountPage() {
                       onChange={handleAddressChange}
                       rows={3}
                       className="w-full p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                      data-oid="2kssu-t"
+                      data-oid="wqp9e_j"
                     />
                   </div>
 
                   {saveMessage && (
                     <div
                       className={`p-2 mb-4 rounded-md ${saveMessage.type === "success" ? "bg-gray-200 text-green-700" : "bg-gray-200 text-gray-700"}`}
-                      data-oid="-rc2y2-"
+                      data-oid="ui7.khp"
                     >
                       {saveMessage.text}
                     </div>
@@ -882,20 +882,20 @@ export default function AccountPage() {
 
                   <div
                     className="flex justify-end space-x-2"
-                    data-oid="-16yz7y"
+                    data-oid="n7u-y:n"
                   >
                     <button
                       type="button"
                       onClick={closeModal}
                       className="px-4 py-2 border border-gray-300 rounded-md text-gray-700 hover:bg-gray-50"
-                      data-oid="vda_qo1"
+                      data-oid="uopl0fo"
                     >
                       Cancelar
                     </button>
                     <button
                       type="submit"
                       className="px-4 py-2 bg-black hover:bg-gray-800 text-white rounded-md transition-all duration-150 ease-in-out"
-                      data-oid="dcgwf3f"
+                      data-oid="63fmcw6"
                     >
                       Guardar
                     </button>
@@ -906,31 +906,31 @@ export default function AccountPage() {
 
             {/* Otros modales se pueden implementar de manera similar */}
             {activeModal === "password" && (
-              <div data-oid="e:zq0v0">
+              <div data-oid="c:ts_h9">
                 <div
                   className="flex justify-between items-center border-b border-gray-200 p-4"
-                  data-oid="nrq10e3"
+                  data-oid="5o5oqhj"
                 >
-                  <h3 className="text-lg font-semibold" data-oid="yfzp7mb">
+                  <h3 className="text-lg font-semibold" data-oid="lxn4p:w">
                     Cambiar contraseña
                   </h3>
                   <button
                     onClick={closeModal}
                     className="text-gray-500 hover:text-gray-700"
-                    data-oid="p8omyfy"
+                    data-oid="bzp2.wl"
                   >
-                    <X className="w-5 h-5" data-oid="kx7dlg6" />
+                    <X className="w-5 h-5" data-oid="a237p9n" />
                   </button>
                 </div>
-                <div className="p-6" data-oid="jb_ukaz">
-                  <p className="text-gray-600 mb-4" data-oid="dmgqk:2">
+                <div className="p-6" data-oid="gvo2glv">
+                  <p className="text-gray-600 mb-4" data-oid="1glusrs">
                     Esta funcionalidad no está implementada en esta versión.
                   </p>
-                  <div className="flex justify-end" data-oid="r114ihh">
+                  <div className="flex justify-end" data-oid="moqrs_l">
                     <button
                       onClick={closeModal}
                       className="px-4 py-2 border border-gray-300 rounded-md text-gray-700 hover:bg-gray-50"
-                      data-oid=":ig.sp."
+                      data-oid=":a4bp:9"
                     >
                       Cerrar
                     </button>
@@ -941,31 +941,31 @@ export default function AccountPage() {
 
             {(activeModal === "marketing" ||
               activeModal === "notifications") && (
-              <div data-oid="sq.xi5-">
+              <div data-oid="ga87dwx">
                 <div
                   className="flex justify-between items-center border-b border-gray-200 p-4"
-                  data-oid="n_3ldeu"
+                  data-oid="v38jxw3"
                 >
-                  <h3 className="text-lg font-semibold" data-oid=".oijlzs">
+                  <h3 className="text-lg font-semibold" data-oid="4jntcng">
                     Editar preferencias de notificaciones
                   </h3>
                   <button
                     onClick={closeModal}
                     className="text-gray-500 hover:text-gray-700"
-                    data-oid="s8t67_r"
+                    data-oid="3j3.zyv"
                   >
-                    <X className="w-5 h-5" data-oid="mz3e898" />
+                    <X className="w-5 h-5" data-oid="xpfrokp" />
                   </button>
                 </div>
-                <div className="p-6" data-oid="q5-e_:g">
-                  <p className="text-gray-600 mb-4" data-oid="5-gsumk">
+                <div className="p-6" data-oid="pgk2cu2">
+                  <p className="text-gray-600 mb-4" data-oid="v3j32qj">
                     Esta funcionalidad no está implementada en esta versión.
                   </p>
-                  <div className="flex justify-end" data-oid="-vgez-b">
+                  <div className="flex justify-end" data-oid="mv1:f6t">
                     <button
                       onClick={closeModal}
                       className="px-4 py-2 border border-gray-300 rounded-md text-gray-700 hover:bg-gray-50"
-                      data-oid="d4v.t5g"
+                      data-oid="gpbky6w"
                     >
                       Cerrar
                     </button>
@@ -977,7 +977,7 @@ export default function AccountPage() {
         </div>
       )}
 
-      <Footer data-oid="kz5hk8n" />
+      <Footer data-oid="_4.93h_" />
     </div>
   );
 }

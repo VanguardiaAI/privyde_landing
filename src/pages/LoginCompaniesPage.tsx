@@ -62,26 +62,26 @@ export default function LoginCompaniesPage() {
 
   return (
     <>
-      <Navbar data-oid="o9e7_0j" />
-      <div className="w-full bg-gray-50 py-12 md:py-20 px-4" data-oid="jb7reue">
-        <div className="max-w-7xl mx-auto" data-oid="ld0b2rp">
-          <div className="max-w-md mx-auto mb-16" data-oid="08i8tak">
+      <Navbar data-oid="41hjsb7" />
+      <div className="w-full bg-gray-50 py-12 md:py-20 px-4" data-oid="mp34d.w">
+        <div className="max-w-7xl mx-auto" data-oid="fhyl_88">
+          <div className="max-w-md mx-auto mb-16" data-oid="ikl9503">
             <h1
               className="text-3xl font-bold text-center mb-8"
-              data-oid="pqq_ena"
+              data-oid="ys0n0ba"
             >
               Iniciar sesión para Empresas
             </h1>
 
             <Card
               className="w-full shadow-lg bg-white rounded-xl overflow-hidden border-0 relative z-20"
-              data-oid=":373ju4"
+              data-oid="l0j.wcq"
             >
-              <CardContent className="p-6" data-oid="t3df5ei">
+              <CardContent className="p-6" data-oid="so-qkdo">
                 {error && (
                   <div
                     className="bg-gray-100 p-3 rounded border border-gray-200 text-gray-600 text-sm mb-4"
-                    data-oid=".dpcs9:"
+                    data-oid="aeyq4rr"
                   >
                     {error}
                   </div>
@@ -90,21 +90,21 @@ export default function LoginCompaniesPage() {
                 <form
                   className="space-y-4"
                   onSubmit={handleSubmit}
-                  data-oid="f_27:6v"
+                  data-oid="y_-1ky:"
                 >
-                  <div className="relative" data-oid="ohe:eue">
+                  <div className="relative" data-oid="-.8_.13">
                     <Mail
                       className="absolute left-3 top-4 h-5 w-5 text-gray-400"
-                      data-oid="p3z.yq8"
+                      data-oid="woz80u5"
                     />
 
                     <div
                       className="flex flex-col pl-10 pt-1 border rounded-md h-[52px] focus-within:border-black hover:border-gray-400 bg-gray-50"
-                      data-oid="rci7zbp"
+                      data-oid="b25tbyq"
                     >
                       <Label
                         className="mb-0 text-left text-xs"
-                        data-oid="snyxs7r"
+                        data-oid="ol:d4vq"
                       >
                         Email Corporativo
                       </Label>
@@ -115,24 +115,24 @@ export default function LoginCompaniesPage() {
                         required
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
-                        data-oid="i251vl6"
+                        data-oid="ls_vimn"
                       />
                     </div>
                   </div>
 
-                  <div className="relative" data-oid="9rrqix8">
+                  <div className="relative" data-oid="u92s_pq">
                     <Lock
                       className="absolute left-3 top-4 h-5 w-5 text-gray-400"
-                      data-oid="6xvmvw7"
+                      data-oid="ocxvem1"
                     />
 
                     <div
                       className="flex flex-col pl-10 pt-1 border rounded-md h-[52px] focus-within:border-black hover:border-gray-400 bg-gray-50"
-                      data-oid="x3e4jw2"
+                      data-oid="0h2snh7"
                     >
                       <Label
                         className="mb-0 text-left text-xs"
-                        data-oid="_mu35.k"
+                        data-oid="y88y.bb"
                       >
                         Contraseña
                       </Label>
@@ -143,18 +143,18 @@ export default function LoginCompaniesPage() {
                         required
                         value={password}
                         onChange={(e) => setPassword(e.target.value)}
-                        data-oid="dhn0ayj"
+                        data-oid="ltr3k6d"
                       />
                     </div>
                   </div>
 
                   <div
                     className="flex justify-between items-center"
-                    data-oid="-_y:7qi"
+                    data-oid="9oix454"
                   >
                     <div
                       className="flex items-center space-x-2"
-                      data-oid="fzr0vcs"
+                      data-oid=":8rtw6_"
                     >
                       <Checkbox
                         id="remember"
@@ -162,13 +162,13 @@ export default function LoginCompaniesPage() {
                         onCheckedChange={(checked) =>
                           setRememberMe(checked === true)
                         }
-                        data-oid="wsm3:p6"
+                        data-oid="n:20.2d"
                       />
 
                       <label
                         htmlFor="remember"
                         className="text-sm text-gray-500 font-medium"
-                        data-oid="53vw44n"
+                        data-oid="zwi7mf_"
                       >
                         Recordarme
                       </label>
@@ -176,7 +176,7 @@ export default function LoginCompaniesPage() {
                     <a
                       href="#"
                       className="text-sm text-primary underline"
-                      data-oid="o3ab-7a"
+                      data-oid="jrfxioq"
                     >
                       ¿Olvidaste tu contraseña?
                     </a>
@@ -186,19 +186,19 @@ export default function LoginCompaniesPage() {
                     type="submit"
                     className="w-full h-12 bg-primary hover:bg-primary/90 select-button text-base"
                     disabled={isLoading}
-                    data-oid="_l38:wi"
+                    data-oid="r1it5ju"
                   >
                     {isLoading ? "Iniciando sesión..." : "Iniciar sesión"}
                   </Button>
                 </form>
 
-                <div className="mt-4 text-center" data-oid="l4jdgh:">
-                  <p className="text-sm text-gray-600" data-oid="unt:czu">
+                <div className="mt-4 text-center" data-oid="u6i3bg.">
+                  <p className="text-sm text-gray-600" data-oid="._xk:jx">
                     ¿No tienes una cuenta?{" "}
                     <Link
                       to="/register-companies"
                       className="text-primary font-semibold hover:underline"
-                      data-oid="yh1eojn"
+                      data-oid="2of.see"
                     >
                       Registra tu empresa
                     </Link>
@@ -207,24 +207,24 @@ export default function LoginCompaniesPage() {
 
                 <div
                   className="mt-6 p-4 bg-gray-50 rounded-lg border border-gray-100"
-                  data-oid="g-b5.q1"
+                  data-oid="65jrwii"
                 >
-                  <div className="flex items-start" data-oid="6s:fuk-">
+                  <div className="flex items-start" data-oid="fvwo9dz">
                     <Building
                       className="h-5 w-5 text-gray-500 mt-0.5 mr-2 flex-shrink-0"
-                      data-oid="mxd_oy:"
+                      data-oid="8ae3t7y"
                     />
 
-                    <div data-oid="yt0f0k1">
+                    <div data-oid="mgpg46y">
                       <h3
                         className="text-sm font-medium text-gray-800"
-                        data-oid="dsywo6:"
+                        data-oid="s0e1j_m"
                       >
                         Beneficios para empresas
                       </h3>
                       <p
                         className="text-xs text-gray-600 mt-1"
-                        data-oid="yqmz5w_"
+                        data-oid="2_14rcx"
                       >
                         Acceda a tarifas corporativas especiales, facturación
                         centralizada y panel de administración exclusivo para su
@@ -238,7 +238,7 @@ export default function LoginCompaniesPage() {
           </div>
         </div>
       </div>
-      <Footer data-oid="-a2ly8g" />
+      <Footer data-oid="siez-:0" />
     </>
   );
 }

@@ -667,34 +667,34 @@ const BlogSection = () => {
   };
 
   return (
-    <div className="space-y-6" data-oid="ogf.3ti">
+    <div className="space-y-6" data-oid="qzz_gpl">
       <ToastContainer
         position="top-right"
         autoClose={3000}
-        data-oid="7:ccz-7"
+        data-oid="ns.kyb3"
       />
 
-      <div className="flex justify-between items-center" data-oid="nv_qdll">
-        <h1 className="text-2xl font-bold text-gray-800" data-oid="2lzhf-n">
+      <div className="flex justify-between items-center" data-oid="yxwh28_">
+        <h1 className="text-2xl font-bold text-gray-800" data-oid="bn4p1nv">
           Gestión del Blog
         </h1>
-        <div className="flex space-x-2" data-oid="gy4p723">
+        <div className="flex space-x-2" data-oid="7ii9.ro">
           {!showEditor && !showAIGenerator && (
             <>
               <Button
                 onClick={handleOpenAIGenerator}
                 className="flex items-center px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors"
-                data-oid="xnjl6.q"
+                data-oid="5iw1qji"
               >
-                <RefreshCw size={18} className="mr-2" data-oid="i4_ii_s" />
+                <RefreshCw size={18} className="mr-2" data-oid="g-o-fl8" />
                 Generar con IA
               </Button>
               <Button
                 onClick={handleAddPost}
                 className="flex items-center px-4 py-2 bg-black text-white rounded-lg hover:bg-gray-800 transition-colors"
-                data-oid="ty0.q3k"
+                data-oid="hfy6.4g"
               >
-                <Plus size={18} className="mr-2" data-oid="for1bpc" />
+                <Plus size={18} className="mr-2" data-oid="crr6g08" />
                 Nuevo Artículo
               </Button>
             </>
@@ -704,12 +704,12 @@ const BlogSection = () => {
 
       {/* Editor de Artículos */}
       {showEditor && (
-        <div className="bg-white rounded-xl shadow-md p-6" data-oid="c5.0d-5">
+        <div className="bg-white rounded-xl shadow-md p-6" data-oid="u24d34g">
           <div
             className="flex justify-between items-center mb-4"
-            data-oid="s5zf:y-"
+            data-oid="wge.kxv"
           >
-            <h2 className="text-xl font-semibold" data-oid="7cm-uvx">
+            <h2 className="text-xl font-semibold" data-oid="gpcyyub">
               {editingPost ? "Editar Artículo" : "Nuevo Artículo"}
             </h2>
             <Button
@@ -718,18 +718,18 @@ const BlogSection = () => {
                 setEditingPost(null);
               }}
               className="flex items-center px-3 py-2 bg-gray-200 text-gray-800 rounded-lg hover:bg-gray-300 transition-colors"
-              data-oid="9ufbjk7"
+              data-oid="-h45b3f"
             >
-              <ChevronLeft size={18} className="mr-1" data-oid="y9tislt" />
+              <ChevronLeft size={18} className="mr-1" data-oid="kz2yjwa" />
               Volver
             </Button>
           </div>
 
-          <div className="space-y-4" data-oid="nc0va:v">
-            <div data-oid="bjdmncf">
+          <div className="space-y-4" data-oid="i4z.fk5">
+            <div data-oid="int2dfw">
               <label
                 className="block text-sm font-medium text-gray-700 mb-1"
-                data-oid="9r3v:0:"
+                data-oid="jf8zy19"
               >
                 Título
               </label>
@@ -739,14 +739,14 @@ const BlogSection = () => {
                 className="w-full p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-red-500 focus:border-transparent"
                 value={formData.title}
                 onChange={handleInputChange}
-                data-oid="-opetxs"
+                data-oid="awjx1ww"
               />
             </div>
 
-            <div data-oid="ymm5wy0">
+            <div data-oid="yhwk1mh">
               <label
                 className="block text-sm font-medium text-gray-700 mb-1"
-                data-oid="rb_3xqs"
+                data-oid="xoy94pe"
               >
                 Slug (URL amigable)
               </label>
@@ -757,19 +757,19 @@ const BlogSection = () => {
                 value={formData.slug}
                 onChange={handleInputChange}
                 placeholder="Se generará automáticamente si se deja en blanco"
-                data-oid="5mcudl_"
+                data-oid="7_tgvca"
               />
 
-              <p className="text-xs text-gray-500 mt-1" data-oid="36ewi47">
+              <p className="text-xs text-gray-500 mt-1" data-oid="6-hkf_1">
                 Si se deja en blanco, se generará automáticamente a partir del
                 título
               </p>
             </div>
 
-            <div data-oid="0_mjb:4">
+            <div data-oid="y1wng92">
               <label
                 className="block text-sm font-medium text-gray-700 mb-1"
-                data-oid="a5m73jr"
+                data-oid="d8gx6xd"
               >
                 Extracto
               </label>
@@ -778,39 +778,39 @@ const BlogSection = () => {
                 className="w-full p-2 border border-gray-300 rounded-md h-20 focus:ring-2 focus:ring-red-500 focus:border-transparent"
                 value={formData.excerpt}
                 onChange={handleInputChange}
-                data-oid="s2nc:-h"
+                data-oid="vpx2qay"
               />
             </div>
 
-            <div data-oid="oxqyitr">
+            <div data-oid=":e7v1j9">
               <label
                 className="block text-sm font-medium text-gray-700 mb-1"
-                data-oid="cg0z44."
+                data-oid="i8mzsh0"
               >
                 Contenido (Markdown)
               </label>
               <div
                 className="border border-gray-300 rounded-md overflow-hidden"
-                data-oid="29xp2a1"
+                data-oid="_ze3vxb"
               >
                 <MDEditor
                   value={markdownContent}
                   onChange={(value) => setMarkdownContent(value || "")}
                   height={400}
                   preview="edit"
-                  data-oid="c0jb1vr"
+                  data-oid="1x07b28"
                 />
               </div>
             </div>
 
             <div
               className="grid grid-cols-1 md:grid-cols-2 gap-4"
-              data-oid="re4cy53"
+              data-oid="s._6b0h"
             >
-              <div data-oid="owdr90y">
+              <div data-oid="f23nlyq">
                 <label
                   className="block text-sm font-medium text-gray-700 mb-1"
-                  data-oid="shi4i5g"
+                  data-oid="4g1e2en"
                 >
                   Autor
                 </label>
@@ -820,14 +820,14 @@ const BlogSection = () => {
                   className="w-full p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-red-500 focus:border-transparent"
                   value={formData.author}
                   onChange={handleInputChange}
-                  data-oid="t-::pcv"
+                  data-oid="f-9ehgy"
                 />
               </div>
 
-              <div data-oid="rpt:g1v">
+              <div data-oid=".rkso_b">
                 <label
                   className="block text-sm font-medium text-gray-700 mb-1"
-                  data-oid="m7sa3.8"
+                  data-oid="91ln8qk"
                 >
                   Estado
                 </label>
@@ -836,15 +836,15 @@ const BlogSection = () => {
                   className="w-full p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-red-500 focus:border-transparent"
                   value={formData.status}
                   onChange={handleInputChange}
-                  data-oid="wwraihh"
+                  data-oid="wyl9g:q"
                 >
-                  <option value="draft" data-oid="v7z1goe">
+                  <option value="draft" data-oid="54uga.-">
                     Borrador
                   </option>
-                  <option value="published" data-oid="-59swnz">
+                  <option value="published" data-oid="145c:b2">
                     Publicado
                   </option>
-                  <option value="scheduled" data-oid="n0_y1w3">
+                  <option value="scheduled" data-oid="pz7vocb">
                     Programado
                   </option>
                 </select>
@@ -853,12 +853,12 @@ const BlogSection = () => {
 
             <div
               className="grid grid-cols-1 md:grid-cols-2 gap-4"
-              data-oid="-rjeo4z"
+              data-oid="rr-0pk-"
             >
-              <div data-oid="w:w8naq">
+              <div data-oid="m4nqnad">
                 <label
                   className="block text-sm font-medium text-gray-700 mb-1"
-                  data-oid=".yxaiqq"
+                  data-oid="w1yy8pd"
                 >
                   Fecha de publicación
                 </label>
@@ -868,24 +868,24 @@ const BlogSection = () => {
                   className="w-full p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-red-500 focus:border-transparent"
                   value={formData.publishDate}
                   onChange={handleInputChange}
-                  data-oid="pddrzy9"
+                  data-oid="k:b5j-k"
                 />
               </div>
 
-              <div className="flex items-center pt-7" data-oid="f2j05q4">
+              <div className="flex items-center pt-7" data-oid="zrt1x0d">
                 <input
                   type="checkbox"
                   id="featured"
                   className="mr-2 h-4 w-4 text-gray-600 focus:ring-red-500 border-gray-300 rounded"
                   checked={formData.featured}
                   onChange={handleFeaturedChange}
-                  data-oid="3syq6me"
+                  data-oid="0lnqny-"
                 />
 
                 <label
                   htmlFor="featured"
                   className="text-sm font-medium text-gray-700"
-                  data-oid="_hd1s:d"
+                  data-oid="9_82i3c"
                 >
                   Artículo destacado
                 </label>
@@ -894,12 +894,12 @@ const BlogSection = () => {
 
             <div
               className="grid grid-cols-1 md:grid-cols-2 gap-4"
-              data-oid="u1eqq6d"
+              data-oid="ihas_y8"
             >
-              <div data-oid="x8j3246">
+              <div data-oid="xu0_qv3">
                 <label
                   className="block text-sm font-medium text-gray-700 mb-1"
-                  data-oid="20x_kv6"
+                  data-oid="40eob5d"
                 >
                   Categorías (separadas por coma)
                 </label>
@@ -912,18 +912,18 @@ const BlogSection = () => {
                   }
                   onChange={(e) => handleArrayInputChange(e, "categories")}
                   placeholder="Ej: Negocios, Viajes, Transporte"
-                  data-oid="b45t1yt"
+                  data-oid="6:g_re8"
                 />
 
-                <p className="text-xs text-gray-500 mt-1" data-oid="tj7dshn">
+                <p className="text-xs text-gray-500 mt-1" data-oid="_5.pig3">
                   Puedes añadir múltiples categorías separadas por comas
                 </p>
               </div>
 
-              <div data-oid="4flb4i4">
+              <div data-oid="ahtobk8">
                 <label
                   className="block text-sm font-medium text-gray-700 mb-1"
-                  data-oid="8.5.byj"
+                  data-oid="h0g-c5x"
                 >
                   Etiquetas (separadas por coma)
                 </label>
@@ -935,26 +935,26 @@ const BlogSection = () => {
                   }
                   onChange={(e) => handleArrayInputChange(e, "tags")}
                   placeholder="Ej: ejecutivo, limousinas, 2024"
-                  data-oid="izvw2j:"
+                  data-oid="75:s1gt"
                 />
 
-                <p className="text-xs text-gray-500 mt-1" data-oid="9nwpvqx">
+                <p className="text-xs text-gray-500 mt-1" data-oid="ee3_7lk">
                   Puedes añadir múltiples etiquetas separadas por comas
                 </p>
               </div>
             </div>
 
-            <div data-oid="cr34gnb">
+            <div data-oid="9fvp2fz">
               <label
                 className="block text-sm font-medium text-gray-700 mb-3"
-                data-oid="4uo2t.s"
+                data-oid="n26_pu9"
               >
                 Imagen destacada
               </label>
 
               {formData.featuredImage ? (
-                <div className="mb-4" data-oid="-_sdae1">
-                  <div className="relative w-full max-w-md" data-oid="p2wdctg">
+                <div className="mb-4" data-oid="hc9px:y">
+                  <div className="relative w-full max-w-md" data-oid="g27q4je">
                     <img
                       src={getFullImageUrl(formData.featuredImage)}
                       alt="Imagen destacada"
@@ -966,7 +966,7 @@ const BlogSection = () => {
                         );
                         e.currentTarget.src = defaultImage;
                       }}
-                      data-oid="ineog._"
+                      data-oid=":.9tvtf"
                     />
 
                     <button
@@ -974,9 +974,9 @@ const BlogSection = () => {
                         setFormData((prev) => ({ ...prev, featuredImage: "" }))
                       }
                       className="absolute top-2 right-2 bg-black p-1 rounded-full text-white hover:bg-gray-800"
-                      data-oid="owmgsv9"
+                      data-oid="3bt.qnt"
                     >
-                      <Trash2 size={16} data-oid="kvse-ss" />
+                      <Trash2 size={16} data-oid="kg6fet2" />
                     </button>
                   </div>
                 </div>
@@ -984,22 +984,22 @@ const BlogSection = () => {
                 <div
                   {...getRootProps()}
                   className="border-2 border-dashed border-gray-300 rounded-md p-6 text-center cursor-pointer hover:border-gray-500 transition-colors"
-                  data-oid="b0xkmq6"
+                  data-oid="me9sdbt"
                 >
-                  <input {...getInputProps()} data-oid="r-ovus4" />
+                  <input {...getInputProps()} data-oid="wabyqv:" />
                   {uploadingImage ? (
                     <div
                       className="flex flex-col items-center justify-center"
-                      data-oid="380aj2v"
+                      data-oid="bc20lfm"
                     >
                       <RefreshCw
                         className="h-10 w-10 text-gray-400 animate-spin"
-                        data-oid="nx-scjw"
+                        data-oid="vr.kv_."
                       />
 
                       <p
                         className="mt-2 text-sm text-gray-500"
-                        data-oid="bf9uehm"
+                        data-oid="snzf4:-"
                       >
                         Subiendo imagen...
                       </p>
@@ -1007,22 +1007,22 @@ const BlogSection = () => {
                   ) : (
                     <div
                       className="flex flex-col items-center justify-center"
-                      data-oid="2bmwncd"
+                      data-oid="d6:er5s"
                     >
                       <Image
                         className="h-10 w-10 text-gray-400"
-                        data-oid="u-2owlx"
+                        data-oid="30nf9e3"
                       />
 
                       <p
                         className="mt-2 text-sm text-gray-500"
-                        data-oid="q1g73d5"
+                        data-oid="y9pgbbc"
                       >
                         Arrastra una imagen aquí o haz clic para seleccionar una
                       </p>
                       <p
                         className="text-xs text-gray-400 mt-1"
-                        data-oid="p030d2a"
+                        data-oid="hva1:.t"
                       >
                         JPG, PNG, GIF, WebP
                       </p>
@@ -1032,19 +1032,19 @@ const BlogSection = () => {
               )}
             </div>
 
-            <div className="border-t pt-4 mt-4" data-oid="2:vfnan">
+            <div className="border-t pt-4 mt-4" data-oid="va-izc7">
               <h3
                 className="text-md font-medium text-gray-800 mb-2"
-                data-oid="tcqnc55"
+                data-oid="-epm5eh"
               >
                 SEO
               </h3>
 
-              <div className="space-y-4" data-oid="tlqcabs">
-                <div data-oid="ok3-95p">
+              <div className="space-y-4" data-oid="9187w_f">
+                <div data-oid="r_ez:l8">
                   <label
                     className="block text-sm font-medium text-gray-700 mb-1"
-                    data-oid="ie4vc-o"
+                    data-oid="ym336zi"
                   >
                     Meta Título
                   </label>
@@ -1054,14 +1054,14 @@ const BlogSection = () => {
                     className="w-full p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-red-500 focus:border-transparent"
                     value={formData.seoData?.metaTitle || ""}
                     onChange={handleInputChange}
-                    data-oid="gdz7x5n"
+                    data-oid="9j6d3:2"
                   />
                 </div>
 
-                <div data-oid="2j9tiug">
+                <div data-oid="p:0ur4u">
                   <label
                     className="block text-sm font-medium text-gray-700 mb-1"
-                    data-oid="f97je6b"
+                    data-oid="2yacc3e"
                   >
                     Meta Descripción
                   </label>
@@ -1070,14 +1070,14 @@ const BlogSection = () => {
                     className="w-full p-2 border border-gray-300 rounded-md h-20 focus:ring-2 focus:ring-red-500 focus:border-transparent"
                     value={formData.seoData?.metaDescription || ""}
                     onChange={handleInputChange}
-                    data-oid="bxdainf"
+                    data-oid="y839pvo"
                   />
                 </div>
 
-                <div data-oid="71oi1dk">
+                <div data-oid="uks_jhz">
                   <label
                     className="block text-sm font-medium text-gray-700 mb-1"
-                    data-oid="pe3x6wd"
+                    data-oid="krjtp.t"
                   >
                     Palabras clave (separadas por coma)
                   </label>
@@ -1091,31 +1091,31 @@ const BlogSection = () => {
                     }
                     onChange={handleSeoArrayInputChange}
                     placeholder="Ej: transporte ejecutivo, viajes corporativos, servicio premium"
-                    data-oid="3q08ljz"
+                    data-oid="kl.fl5b"
                   />
 
-                  <p className="text-xs text-gray-500 mt-1" data-oid="33x03au">
+                  <p className="text-xs text-gray-500 mt-1" data-oid="ym8o2e7">
                     Puedes añadir múltiples palabras clave separadas por comas
                   </p>
                 </div>
               </div>
             </div>
 
-            <div className="flex justify-end space-x-3 pt-4" data-oid="n.x54o:">
+            <div className="flex justify-end space-x-3 pt-4" data-oid="1-si9cu">
               <Button
                 onClick={() => {
                   setShowEditor(false);
                   setEditingPost(null);
                 }}
                 className="px-4 py-2 bg-gray-200 text-gray-800 rounded-lg hover:bg-gray-300 transition-colors"
-                data-oid="tc7k5mr"
+                data-oid="jz0:lxm"
               >
                 Cancelar
               </Button>
               <Button
                 onClick={handleSubmitPost}
                 className="px-4 py-2 bg-black text-white rounded-lg hover:bg-gray-800 transition-colors"
-                data-oid="i5ytlia"
+                data-oid="vw6f7g7"
               >
                 {editingPost ? "Actualizar" : "Publicar"}
               </Button>
@@ -1126,29 +1126,29 @@ const BlogSection = () => {
 
       {/* Generador de Contenido con IA */}
       {showAIGenerator && (
-        <div className="bg-white rounded-xl shadow-md p-6" data-oid="r8.8q7d">
+        <div className="bg-white rounded-xl shadow-md p-6" data-oid="ndq_qvt">
           <div
             className="flex justify-between items-center mb-4"
-            data-oid="vbfe5ps"
+            data-oid="-zx0:eg"
           >
-            <h2 className="text-xl font-semibold" data-oid="u2-.a.v">
+            <h2 className="text-xl font-semibold" data-oid="tm7e17h">
               Generador de Contenido con IA
             </h2>
             <Button
               onClick={() => setShowAIGenerator(false)}
               className="flex items-center px-3 py-2 bg-gray-200 text-gray-800 rounded-lg hover:bg-gray-300 transition-colors"
-              data-oid="x8cihsb"
+              data-oid=".s8i:u8"
             >
-              <ChevronLeft size={18} className="mr-1" data-oid="mhy2q1-" />
+              <ChevronLeft size={18} className="mr-1" data-oid="y5nmoai" />
               Volver
             </Button>
           </div>
 
-          <div className="space-y-4" data-oid="ci:r4ud">
-            <div data-oid="0mm-:dj">
+          <div className="space-y-4" data-oid="9.mj4mw">
+            <div data-oid="v2a2cyy">
               <label
                 className="block text-sm font-medium text-gray-700 mb-1"
-                data-oid="lbvgr4i"
+                data-oid="y8r5-13"
               >
                 Describe el artículo que deseas generar
               </label>
@@ -1157,20 +1157,20 @@ const BlogSection = () => {
                 placeholder="Ej: Un artículo sobre las ventajas del transporte ejecutivo para eventos corporativos, enfocado en la puntualidad y el servicio personalizado."
                 value={aiPrompt}
                 onChange={(e) => setAIPrompt(e.target.value)}
-                data-oid="g11745v"
+                data-oid="709x.c2"
               />
 
-              <p className="text-xs text-gray-500 mt-1" data-oid="pcm7emg">
+              <p className="text-xs text-gray-500 mt-1" data-oid=":htg21c">
                 Sé específico con los temas, palabras clave y el enfoque que
                 deseas para el artículo.
               </p>
             </div>
 
-            <div className="flex justify-end space-x-3" data-oid="dz4:.-u">
+            <div className="flex justify-end space-x-3" data-oid="q1e2nfb">
               <Button
                 onClick={() => setShowAIGenerator(false)}
                 className="px-4 py-2 bg-gray-200 text-gray-800 rounded-lg hover:bg-gray-300 transition-colors"
-                data-oid="4yx_b97"
+                data-oid=":osd2xq"
               >
                 Cancelar
               </Button>
@@ -1178,20 +1178,20 @@ const BlogSection = () => {
                 onClick={handleGenerateContent}
                 disabled={!aiPrompt.trim() || isGenerating}
                 className={`px-4 py-2 ${isGenerating ? "bg-purple-400" : "bg-purple-600 hover:bg-purple-700"} text-white rounded-lg transition-colors flex items-center`}
-                data-oid="xcoz0t5"
+                data-oid="ifsuo3q"
               >
                 {isGenerating ? (
                   <>
                     <RefreshCw
                       size={18}
                       className="mr-2 animate-spin"
-                      data-oid="pn300un"
+                      data-oid="d80b27g"
                     />
                     Generando...
                   </>
                 ) : (
                   <>
-                    <RefreshCw size={18} className="mr-2" data-oid="sb4_0cl" />
+                    <RefreshCw size={18} className="mr-2" data-oid="2k3ms5i" />
                     Generar
                   </>
                 )}
@@ -1199,26 +1199,26 @@ const BlogSection = () => {
             </div>
 
             {aiGeneratedContent && (
-              <div className="mt-6 border-t pt-4" data-oid="y3p2u.t">
+              <div className="mt-6 border-t pt-4" data-oid="on-mxdb">
                 <h3
                   className="text-md font-medium text-gray-800 mb-2"
-                  data-oid="gm3s0pm"
+                  data-oid="pfyw::p"
                 >
                   Contenido Generado
                 </h3>
-                <div data-color-mode="light" data-oid="t.x65w4">
+                <div data-color-mode="light" data-oid="1xf9b:a">
                   <MDEditor.Markdown
                     source={aiGeneratedContent}
                     className="p-4 bg-gray-50 rounded-md h-60 overflow-y-auto"
-                    data-oid="qp6p:m-"
+                    data-oid="4xeb_hf"
                   />
                 </div>
 
-                <div className="flex justify-end mt-4" data-oid="q-6tmyv">
+                <div className="flex justify-end mt-4" data-oid="srgd5xm">
                   <Button
                     onClick={handleUseGeneratedContent}
                     className="px-4 py-2 bg-black text-white rounded-lg hover:bg-gray-800 transition-colors"
-                    data-oid="o41evvk"
+                    data-oid="txuy86z"
                   >
                     Usar este contenido
                   </Button>
@@ -1234,13 +1234,13 @@ const BlogSection = () => {
         <>
           <div
             className="bg-white rounded-lg shadow p-6 mb-8"
-            data-oid="b6.l9-8"
+            data-oid="diukdhv"
           >
-            <div className="relative" data-oid="9c5vbiw">
+            <div className="relative" data-oid="gd4n9c-">
               <Search
                 className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"
                 size={18}
-                data-oid="v966417"
+                data-oid="dh62ds."
               />
 
               <input
@@ -1249,65 +1249,65 @@ const BlogSection = () => {
                 className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                data-oid="eukpxgx"
+                data-oid="lbshup."
               />
             </div>
           </div>
 
           <div
             className="bg-white rounded-xl shadow-md overflow-hidden mb-8"
-            data-oid="cuofz3q"
+            data-oid="ie53d0-"
           >
             {loading ? (
-              <div className="p-8 text-center" data-oid="dek9asl">
+              <div className="p-8 text-center" data-oid="_ibjpzb">
                 <RefreshCw
                   size={36}
                   className="mx-auto animate-spin text-black"
-                  data-oid="dwdtkpa"
+                  data-oid="iljk9fw"
                 />
 
-                <p className="mt-2 text-gray-600" data-oid="bgcfh9f">
+                <p className="mt-2 text-gray-600" data-oid="mmiyacv">
                   Cargando artículos...
                 </p>
               </div>
             ) : (
-              <div className="overflow-x-auto" data-oid="8:1ag.b">
-                <table className="w-full" data-oid="uqpzy6e">
-                  <thead data-oid="iepk6j_">
-                    <tr className="bg-gray-50" data-oid="ms2qlhk">
+              <div className="overflow-x-auto" data-oid="mzrm8nn">
+                <table className="w-full" data-oid="rw6fd4d">
+                  <thead data-oid="emmngh5">
+                    <tr className="bg-gray-50" data-oid="9a52qho">
                       <th
                         className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                        data-oid="nasicw7"
+                        data-oid="h_258f0"
                       >
                         Título
                       </th>
                       <th
                         className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                        data-oid="ics7dkv"
+                        data-oid="yc3m2-b"
                       >
                         Autor
                       </th>
                       <th
                         className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                        data-oid="sa2x914"
+                        data-oid="g.zvlyi"
                       >
                         Categorías
                       </th>
                       <th
                         className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                        data-oid="d9bf4t."
+                        data-oid="nw2aas5"
                       >
                         Estado
                       </th>
                       <th
                         className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                        data-oid="28sup43"
+                        data-oid="-yb0spv"
                       >
                         Fecha
                       </th>
                       <th
                         className="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider"
-                        data-oid="zbks1j:"
+                        data-oid="qp76571"
                       >
                         Acciones
                       </th>
@@ -1315,16 +1315,16 @@ const BlogSection = () => {
                   </thead>
                   <tbody
                     className="divide-y divide-gray-200"
-                    data-oid="osl:01d"
+                    data-oid="63uq6n5"
                   >
                     {filteredPosts.map((post) => (
                       <tr
                         key={post._id}
                         className="hover:bg-gray-50"
-                        data-oid=":0qekkp"
+                        data-oid="_fmtjy."
                       >
-                        <td className="px-6 py-4" data-oid="7na4c3e">
-                          <div className="flex items-center" data-oid="cfjf:2c">
+                        <td className="px-6 py-4" data-oid="e5c__g.">
+                          <div className="flex items-center" data-oid="0zwor57">
                             {post.featuredImage && (
                               <img
                                 src={getFullImageUrl(post.featuredImage)}
@@ -1337,12 +1337,12 @@ const BlogSection = () => {
                                   );
                                   e.currentTarget.src = defaultImage;
                                 }}
-                                data-oid="k9jbxjr"
+                                data-oid="956glq1"
                               />
                             )}
                             <div
                               className="text-sm font-medium text-gray-900"
-                              data-oid="y-l5a:r"
+                              data-oid="u.lofda"
                             >
                               {post.title}
                             </div>
@@ -1350,27 +1350,27 @@ const BlogSection = () => {
                         </td>
                         <td
                           className="px-6 py-4 text-sm text-gray-500"
-                          data-oid="uios_k6"
+                          data-oid=":lg3bya"
                         >
                           {post.author}
                         </td>
-                        <td className="px-6 py-4" data-oid=".flythv">
+                        <td className="px-6 py-4" data-oid="9l154a4">
                           <div
                             className="flex flex-wrap gap-1"
-                            data-oid="rm4oe6v"
+                            data-oid=".1iwsqk"
                           >
                             {post.categories.map((category, idx) => (
                               <span
                                 key={idx}
                                 className="px-2 py-1 text-xs rounded-full bg-gray-100 text-gray-800"
-                                data-oid="zu:2nx."
+                                data-oid="u5ld-5."
                               >
                                 {category}
                               </span>
                             ))}
                           </div>
                         </td>
-                        <td className="px-6 py-4" data-oid="w-n-dyr">
+                        <td className="px-6 py-4" data-oid="hbjx_mj">
                           <span
                             className={`px-2 py-1 text-xs rounded-full ${
                               post.status === "published"
@@ -1379,7 +1379,7 @@ const BlogSection = () => {
                                   ? "bg-gray-200 text-yellow-800"
                                   : "bg-gray-200 text-blue-800"
                             }`}
-                            data-oid="uobl.ht"
+                            data-oid="p__kelw"
                           >
                             {post.status === "published"
                               ? "Publicado"
@@ -1390,38 +1390,38 @@ const BlogSection = () => {
                         </td>
                         <td
                           className="px-6 py-4 text-sm text-gray-500"
-                          data-oid="-r5xbqk"
+                          data-oid="7o-_rma"
                         >
                           {post.publishDate || "Sin publicar"}
                         </td>
                         <td
                           className="px-6 py-4 text-right text-sm font-medium"
-                          data-oid="4vl9x__"
+                          data-oid="wux-4gt"
                         >
                           <div
                             className="flex justify-end space-x-2"
-                            data-oid="m_pvtif"
+                            data-oid="u._1gr."
                           >
                             <button
                               onClick={() => handleViewPost(post.slug)}
                               className="text-gray-600 hover:text-blue-900"
-                              data-oid="i:6kc2h"
+                              data-oid=".j4qzi-"
                             >
-                              <Eye size={18} data-oid="ct4hr8:" />
+                              <Eye size={18} data-oid="-3lk.vt" />
                             </button>
                             <button
                               onClick={() => handleEditPost(post._id!)}
                               className="text-amber-600 hover:text-amber-900"
-                              data-oid="b_k3sbn"
+                              data-oid="3:.65z."
                             >
-                              <Edit size={18} data-oid="ocmf7oi" />
+                              <Edit size={18} data-oid="3qtuvr3" />
                             </button>
                             <button
                               onClick={() => handleDeletePost(post._id!)}
                               className="text-gray-600 hover:text-red-900"
-                              data-oid="ge7jle8"
+                              data-oid="xt5aqlx"
                             >
-                              <Trash2 size={18} data-oid="j..2x_n" />
+                              <Trash2 size={18} data-oid="8-w0o2a" />
                             </button>
                           </div>
                         </td>
@@ -1429,11 +1429,11 @@ const BlogSection = () => {
                     ))}
 
                     {filteredPosts.length === 0 && (
-                      <tr data-oid="xl10kto">
+                      <tr data-oid="6qqx.m-">
                         <td
                           colSpan={6}
                           className="px-6 py-4 text-center text-sm text-gray-500"
-                          data-oid="l:cetqn"
+                          data-oid=":34tl0d"
                         >
                           No se encontraron artículos
                         </td>
@@ -1447,16 +1447,16 @@ const BlogSection = () => {
             {/* Paginación */}
             <div
               className="px-6 py-4 flex items-center justify-between border-t"
-              data-oid="ogzjk9c"
+              data-oid="0fdyopk"
             >
-              <div className="text-sm text-gray-500" data-oid="22m.ptj">
+              <div className="text-sm text-gray-500" data-oid="pxeh4kh">
                 Mostrando{" "}
-                <span className="font-medium" data-oid="f1zsolv">
+                <span className="font-medium" data-oid="f9ybz_g">
                   {filteredPosts.length}
                 </span>{" "}
                 artículos
               </div>
-              <div className="flex space-x-2" data-oid="q8ed0_7">
+              <div className="flex space-x-2" data-oid="s:wzuoy">
                 <button
                   onClick={() => handlePageChange(currentPage - 1)}
                   disabled={currentPage === 1}
@@ -1465,11 +1465,11 @@ const BlogSection = () => {
                       ? "bg-gray-100 text-gray-400 cursor-not-allowed"
                       : "bg-white hover:bg-gray-50"
                   }`}
-                  data-oid="9rq3byb"
+                  data-oid="v-8y4xw"
                 >
-                  <ChevronLeft size={16} data-oid="igzqrvd" />
+                  <ChevronLeft size={16} data-oid="bfa-tlu" />
                 </button>
-                <span className="px-3 py-1 text-sm" data-oid="prwxi8d">
+                <span className="px-3 py-1 text-sm" data-oid="-.2-srj">
                   Página {currentPage} de {totalPages}
                 </span>
                 <button
@@ -1480,9 +1480,9 @@ const BlogSection = () => {
                       ? "bg-gray-100 text-gray-400 cursor-not-allowed"
                       : "bg-white hover:bg-gray-50"
                   }`}
-                  data-oid="5uqdqh_"
+                  data-oid="5ez_inn"
                 >
-                  <ChevronRight size={16} data-oid="xwpj9m0" />
+                  <ChevronRight size={16} data-oid="q3d.t-9" />
                 </button>
               </div>
             </div>

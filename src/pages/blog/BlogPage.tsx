@@ -69,105 +69,105 @@ const BlogPage = () => {
 
   return (
     <>
-      <header data-oid=".xr_f_e">
-        <title data-oid="b26mg_i">
+      <header data-oid="3sqg78m">
+        <title data-oid="2myz:vr">
           Blog | Privyde - Transporte Ejecutivo y Premium
         </title>
         <meta
           name="description"
           content="Artículos sobre transporte ejecutivo, viajes corporativos y servicios premium de Privyde."
-          data-oid="7-ji:f9"
+          data-oid="o2n6w2o"
         />
       </header>
 
-      <Navbar data-oid="8go8xwn" />
+      <Navbar data-oid="slgqinx" />
 
-      <main data-oid="81gag:8">
+      <main data-oid="4-n3je9">
         {/* Hero Section */}
         <section
           className="relative py-20 overflow-hidden bg-gradient-to-br from-gray-900 via-gray-800 to-black"
-          data-oid="l-j1p8f"
+          data-oid="_25cdx:"
         >
           {/* Decorative elements */}
           <div
             className="absolute inset-0 overflow-hidden opacity-20"
-            data-oid="axpnzeh"
+            data-oid=":n1w-_j"
           >
             <div
               className="absolute -top-24 -right-24 w-96 h-96 bg-gray-1000 rounded-full blur-3xl"
-              data-oid="sbuhwrr"
+              data-oid="6o3ilg3"
             ></div>
             <div
               className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-black to-transparent"
-              data-oid="4yb5p6i"
+              data-oid="gtqxodf"
             ></div>
           </div>
 
           <div
             className="container relative mx-auto px-4 z-10"
-            data-oid="nrkn6qh"
+            data-oid="oborxi9"
           >
-            <div className="max-w-3xl mx-auto" data-oid="s.6wt6j">
+            <div className="max-w-3xl mx-auto" data-oid="uo4y::w">
               <h1
                 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight text-left"
-                data-oid="_ab7bsz"
+                data-oid="05ucd3y"
               >
                 Blog de{" "}
-                <span className="text-black" data-oid="c:3fwo3">
+                <span className="text-black" data-oid="ljt4me:">
                   Privyde
                 </span>
               </h1>
               <p
                 className="text-xl text-white/80 mb-8 text-left max-w-2xl"
-                data-oid="-kzqnaz"
+                data-oid="m59907w"
               >
                 Artículos, guías y tendencias sobre transporte ejecutivo y
                 servicios premium para viajeros y empresas exigentes.
               </p>
 
-              <div className="max-w-xl" data-oid="sw8zbrh">
+              <div className="max-w-xl" data-oid="cx-kfjo">
                 <SearchBlog
                   onSearch={handleSearch}
                   initialQuery={searchQuery}
-                  data-oid="qjvh4yw"
+                  data-oid="okg:hbg"
                 />
               </div>
             </div>
           </div>
         </section>
 
-        <div className="bg-gray-50" data-oid="3z:rs:6">
+        <div className="bg-gray-50" data-oid="ljjee4g">
           {/* Categorías en desktop */}
           <div
             className="container mx-auto px-4 py-6 border-b border-gray-200"
-            data-oid="x:d9cw."
+            data-oid="rk_z2po"
           >
-            <CategoryList categories={categories} data-oid="i9ck_wd" />
+            <CategoryList categories={categories} data-oid="yi1ok6q" />
           </div>
 
-          <div className="container mx-auto px-4 py-12" data-oid=".yckyd1">
+          <div className="container mx-auto px-4 py-12" data-oid="9i6u_4h">
             <div
               className="flex flex-col lg:flex-row gap-12"
-              data-oid="loktfn-"
+              data-oid="hb18u0m"
             >
               {/* Main Content */}
-              <div className="lg:w-2/3" data-oid="u:u.s0l">
+              <div className="lg:w-2/3" data-oid="ge9guk3">
                 {/* Sección de posts destacados */}
                 {featuredPosts.length > 0 && !searchQuery && (
-                  <section className="mb-16" data-oid="am5aafd">
+                  <section className="mb-16" data-oid="3e8ujj0">
                     <h2
                       className="text-2xl font-bold mb-6 text-left border-b border-gray-200 pb-2"
-                      data-oid="l1_48xc"
+                      data-oid="5z2j3h4"
                     >
                       Artículos destacados
                     </h2>
-                    <div className="space-y-8" data-oid="d.iqh0z">
+                    <div className="space-y-8" data-oid="m6g6s.y">
                       {featuredPosts.map((post) => (
                         <BlogCard
                           key={post.id}
                           post={post}
                           variant="featured"
-                          data-oid="cmaabwc"
+                          data-oid="873nb-o"
                         />
                       ))}
                     </div>
@@ -175,10 +175,10 @@ const BlogPage = () => {
                 )}
 
                 {/* Lista de posts */}
-                <section data-oid="vzo4_jq">
+                <section data-oid="wal6931">
                   <h2
                     className="text-2xl font-bold mb-6 text-left border-b border-gray-200 pb-2"
-                    data-oid="0mu7fhk"
+                    data-oid="p0.sf0u"
                   >
                     {searchQuery
                       ? `Resultados para "${searchQuery}" (${posts.length})`
@@ -188,24 +188,24 @@ const BlogPage = () => {
                   {isLoading ? (
                     <div
                       className="flex justify-center py-20"
-                      data-oid="4pj-p.e"
+                      data-oid="-10zp6a"
                     >
                       <div
                         className="animate-spin h-10 w-10 border-4 border-red-600 border-t-transparent rounded-full"
-                        data-oid="s8onqv2"
+                        data-oid="7ub4y3w"
                       ></div>
                     </div>
                   ) : currentPosts.length > 0 ? (
                     <>
                       <div
                         className="grid grid-cols-1 md:grid-cols-2 gap-8"
-                        data-oid="wsg-iik"
+                        data-oid="t25u-_s"
                       >
                         {currentPosts.map((post) => (
                           <BlogCard
                             key={post.id}
                             post={post}
-                            data-oid="3nu9_ay"
+                            data-oid="d7u3cg4"
                           />
                         ))}
                       </div>
@@ -214,15 +214,15 @@ const BlogPage = () => {
                         currentPage={currentPage}
                         totalPages={totalPages}
                         onPageChange={handlePageChange}
-                        data-oid="g:3fyi2"
+                        data-oid="1d6z2e0"
                       />
                     </>
                   ) : (
                     <div
                       className="text-center py-20 bg-white rounded-lg shadow-sm"
-                      data-oid="v0ly-q7"
+                      data-oid="cad:-i5"
                     >
-                      <p className="text-xl text-gray-500" data-oid="y-z1t3.">
+                      <p className="text-xl text-gray-500" data-oid="efnzkff">
                         {searchQuery
                           ? "No se encontraron resultados para tu búsqueda."
                           : "No hay artículos disponibles en este momento."}
@@ -233,9 +233,9 @@ const BlogPage = () => {
               </div>
 
               {/* Sidebar */}
-              <div className="lg:w-1/3 mt-12 lg:mt-0" data-oid="y-ttboh">
-                <div className="sticky top-24 pt-8" data-oid="v63hqc4">
-                  <Sidebar data-oid="_1mhp67" />
+              <div className="lg:w-1/3 mt-12 lg:mt-0" data-oid="g228wh2">
+                <div className="sticky top-24 pt-8" data-oid="cm_rspj">
+                  <Sidebar data-oid="1ap7g09" />
                 </div>
               </div>
             </div>
@@ -243,7 +243,7 @@ const BlogPage = () => {
         </div>
       </main>
 
-      <Footer data-oid="_h:.6:z" />
+      <Footer data-oid="ez4yw0s" />
     </>
   );
 };

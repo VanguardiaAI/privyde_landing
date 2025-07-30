@@ -46,7 +46,7 @@ export default function Image({
       style={imgStyle}
       loading={priority ? "eager" : "lazy"}
       {...props}
-      data-oid="bnm3tjq"
+      data-oid="33y7jjx"
     />
   );
 }

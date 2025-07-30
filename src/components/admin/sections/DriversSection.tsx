@@ -75,31 +75,31 @@ const CustomAlertDialog = (props: {
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center"
-      data-oid="vrml.n4">
+      className="fixed inset-0 z-50 flex items-center justify-center" data-oid="vuh1p6f">
+
 
       <div
         className="fixed inset-0 bg-black/50"
-        onClick={() => onOpenChange(false)}
-        data-oid="69-_mza">
+        onClick={() => onOpenChange(false)} data-oid="hl4-lbm">
+
       </div>
       <div
-        className="relative bg-white p-6 rounded-lg shadow-lg w-full max-w-md"
-        data-oid="oj.yyo:">
+        className="relative bg-white p-6 rounded-lg shadow-lg w-full max-w-md" data-oid="oa1gl.e">
 
-        <div className="mb-4" data-oid="ks1az:3">
-          <h2 className="text-lg font-semibold" data-oid="2-o8wfm">
+
+        <div className="mb-4" data-oid="ps9fvp7">
+          <h2 className="text-lg font-semibold" data-oid="26c5k30">
             {title}
           </h2>
-          <p className="text-gray-500 mt-1" data-oid="5whowp1">
+          <p className="text-gray-500 mt-1" data-oid="ap3okx9">
             {description}
           </p>
         </div>
-        <div className="flex justify-end space-x-2" data-oid="2955xmh">
+        <div className="flex justify-end space-x-2" data-oid="2rhdtp.">
           <Button
             variant="outline"
-            onClick={() => onOpenChange(false)}
-            data-oid="rk.04yt">
+            onClick={() => onOpenChange(false)} data-oid=":ex_uvz">
+
 
             {cancelText}
           </Button>
@@ -108,8 +108,8 @@ const CustomAlertDialog = (props: {
             onClick={() => {
               onConfirm();
               onOpenChange(false);
-            }}
-            data-oid=".q:ppmv">
+            }} data-oid="_jb8q0g">
+
 
             {confirmText}
           </Button>
@@ -505,14 +505,14 @@ const DriversSection = () => {
       if (success) {
 
 
-        // No es necesario hacer nada ya que fetchDrivers() actualizará la lista
-      }}setShowDriverForm(false);
-    setEditingDriver(null);
-  };
 
-  const handleDeleteDriver = (driverId: string, e?: React.MouseEvent) => {
-    if (e) {
-      e.stopPropagation();
+
+
+
+
+
+        // No es necesario hacer nada ya que fetchDrivers() actualizará la lista
+      }}setShowDriverForm(false);setEditingDriver(null);};const handleDeleteDriver = (driverId: string, e?: React.MouseEvent) => {if (e) {e.stopPropagation();
     }
     setSelectedDriverId(driverId);
     setDeleteDialogOpen(true);
@@ -578,8 +578,8 @@ const DriversSection = () => {
       <DriverDetailsView
         driver={selectedDriverDetails}
         onClose={handleCloseDriverDetails}
-        onSave={handleUpdateDriver}
-        data-oid="n-ge5ta" />);
+        onSave={handleUpdateDriver} data-oid="de8v5cv" />);
+
 
 
   }
@@ -587,14 +587,14 @@ const DriversSection = () => {
   if (loading) {
     return (
       <div
-        className="flex flex-col items-center justify-center h-[70vh]"
-        data-oid=".lzo-w1">
+        className="flex flex-col items-center justify-center h-[70vh]" data-oid="zchjzlr">
+
 
         <Loader2
-          className="h-12 w-12 text-black animate-spin mb-4"
-          data-oid="o6pj-q7" />
+          className="h-12 w-12 text-black animate-spin mb-4" data-oid="bamoe77" />
 
-        <h2 className="text-xl font-medium text-gray-600" data-oid="uq6owo1">
+
+        <h2 className="text-xl font-medium text-gray-600" data-oid="fotgl:.">
           Cargando chóferes...
         </h2>
       </div>);
@@ -604,20 +604,20 @@ const DriversSection = () => {
   if (error) {
     return (
       <div
-        className="flex flex-col items-center justify-center h-[70vh]"
-        data-oid="a_qjh_g">
+        className="flex flex-col items-center justify-center h-[70vh]" data-oid=":zg4llr">
+
 
         <AlertTriangle
-          className="h-12 w-12 text-black mb-4"
-          data-oid="kk193r6" />
+          className="h-12 w-12 text-black mb-4" data-oid="m.050oo" />
 
-        <h2 className="text-xl font-medium text-gray-600" data-oid="68rr.9l">
+
+        <h2 className="text-xl font-medium text-gray-600" data-oid="38co7ym">
           {error}
         </h2>
         <Button
           onClick={fetchDrivers}
-          className="mt-4 bg-black hover:bg-gray-800 text-white"
-          data-oid=".8kofcn">
+          className="mt-4 bg-black hover:bg-gray-800 text-white" data-oid="5jj_lqh">
+
 
           Reintentar
         </Button>
@@ -626,105 +626,105 @@ const DriversSection = () => {
   }
 
   return (
-    <div className="space-y-6" data-oid="7lhnf:n">
-      <div className="flex justify-between items-center" data-oid="hpv:dpk">
-        <h1 className="text-2xl font-bold text-gray-800" data-oid="bkotl_w">
+    <div className="space-y-6" data-oid="pish:i_">
+      <div className="flex justify-between items-center" data-oid="ivy-s5b">
+        <h1 className="text-2xl font-bold text-gray-800" data-oid="z:8sd5.">
           Gestión de Chóferes
         </h1>
         {!showDriverForm &&
         <Button
           onClick={handleAddDriver}
-          className="flex items-center px-4 py-2 bg-black text-white rounded-lg hover:bg-gray-800 transition-colors"
-          data-oid="w_yt5io">
+          className="flex items-center px-4 py-2 bg-black text-white rounded-lg hover:bg-gray-800 transition-colors" data-oid="x7liepq">
 
-            <PlusCircle size={18} className="mr-2" data-oid="j5pa6jz" />
+
+            <PlusCircle size={18} className="mr-2" data-oid="dq_od6b" />
             Añadir Chófer
           </Button>
         }
       </div>
 
       {showDriverForm ?
-      <form className="bg-white rounded-lg shadow-md" data-oid="n76:hh.">
-          <div className="p-6 border-b border-gray-200" data-oid="okqv8zy">
-            <h2 className="text-xl font-semibold" data-oid=".k0tej8">
+      <form className="bg-white rounded-lg shadow-md" data-oid="y:gm:-7">
+          <div className="p-6 border-b border-gray-200" data-oid="bejn6.t">
+            <h2 className="text-xl font-semibold" data-oid="j.24v0e">
               {editingDriver ? "Editar Chófer" : "Nuevo Chófer"}
             </h2>
-            <p className="text-sm text-gray-500 mt-1" data-oid="fptkbtz">
+            <p className="text-sm text-gray-500 mt-1" data-oid="hgyitiu">
               {editingDriver ?
             "Modifique los datos del chófer seleccionado" :
             "Complete el formulario para añadir un nuevo chófer al sistema"}
             </p>
           </div>
 
-          <div className="p-6" data-oid="usvu.ya">
+          <div className="p-6" data-oid="bgsw0rg">
             <div
-            className="grid grid-cols-1 md:grid-cols-3 gap-8"
-            data-oid="_g:6q8e">
+            className="grid grid-cols-1 md:grid-cols-3 gap-8" data-oid="yxzyhka">
+
 
               {/* Información Personal */}
-              <div className="space-y-4" data-oid="p9vl98s">
+              <div className="space-y-4" data-oid="2495cf-">
                 <h3
-                className="text-lg font-medium flex items-center"
-                data-oid="t9yadbm">
+                className="text-lg font-medium flex items-center" data-oid=".l2dze6">
 
-                  <UserCircle className="mr-2 h-5 w-5" data-oid="kc.ywba" />
+
+                  <UserCircle className="mr-2 h-5 w-5" data-oid="a53bme8" />
                   Información Personal
                 </h3>
 
-                <div className="space-y-3" data-oid="g6anzq2">
-                  <div data-oid="q:zp-5a">
-                    <Label htmlFor="name" data-oid="ffb6bdv">
+                <div className="space-y-3" data-oid="y.c:gq7">
+                  <div data-oid=":u2mbyy">
+                    <Label htmlFor="name" data-oid="sumq2.-">
                       Nombre completo
                     </Label>
                     <Input
                     id="name"
                     name="name"
-                    defaultValue={editingDriver?.name || ""}
-                    data-oid="0x:fv_g" />
+                    defaultValue={editingDriver?.name || ""} data-oid="vkhl0zq" />
+
 
                   </div>
 
-                  <div data-oid="aaqtc9d">
-                    <Label htmlFor="email" data-oid="dgqp:tc">
+                  <div data-oid="oqai9hi">
+                    <Label htmlFor="email" data-oid="mp3laof">
                       Email
                     </Label>
                     <Input
                     id="email"
                     name="email"
                     type="email"
-                    defaultValue={editingDriver?.email || ""}
-                    data-oid="wr9i74m" />
+                    defaultValue={editingDriver?.email || ""} data-oid="p6_fbb-" />
+
 
                   </div>
 
-                  <div data-oid="np43ke2">
-                    <Label htmlFor="phone" data-oid="p2hd0zy">
+                  <div data-oid="i6f82iz">
+                    <Label htmlFor="phone" data-oid="-othu2:">
                       Teléfono
                     </Label>
                     <Input
                     id="phone"
                     name="phone"
                     type="tel"
-                    defaultValue={editingDriver?.phone || ""}
-                    data-oid="4tqcxij" />
+                    defaultValue={editingDriver?.phone || ""} data-oid="pd9gl.:" />
+
 
                   </div>
 
-                  <div className="pt-2" data-oid="xxcq794">
-                    <Label className="mb-2 block" data-oid="a8aoxdi">
+                  <div className="pt-2" data-oid="rin1fnx">
+                    <Label className="mb-2 block" data-oid="us38y3l">
                       Foto del Chófer
                     </Label>
                     <div
-                    className="border border-dashed border-gray-300 rounded-lg p-4 text-center"
-                    data-oid="hih8hw7">
+                    className="border border-dashed border-gray-300 rounded-lg p-4 text-center" data-oid="6o-cgtf">
+
 
                       {imagePreview ?
-                    <div className="relative" data-oid="5gi2da_">
+                    <div className="relative" data-oid="x88ih9-">
                           <img
                         src={imagePreview}
                         alt="Vista previa"
-                        className="mx-auto h-32 w-32 rounded-full object-cover"
-                        data-oid="sqj4ycm" />
+                        className="mx-auto h-32 w-32 rounded-full object-cover" data-oid="2gw63az" />
+
 
 
                           <button
@@ -732,27 +732,27 @@ const DriversSection = () => {
                         onClick={() => {
                           setImagePreview(null);
                         }}
-                        className="absolute -top-2 -right-2 bg-gray-200 text-gray-600 rounded-full p-1"
-                        data-oid="r5-pz6x">
+                        className="absolute -top-2 -right-2 bg-gray-200 text-gray-600 rounded-full p-1" data-oid="sa-0ebv">
 
-                            <X size={16} data-oid="wk.e0:2" />
+
+                            <X size={16} data-oid="vkmezq1" />
                           </button>
                         </div> :
 
-                    <div data-oid="gtl861l">
+                    <div data-oid="fsen8e_">
                           <div
-                        className="mx-auto h-32 w-32 rounded-full bg-gray-200 text-gray-600 flex items-center justify-center mb-2"
-                        data-oid="ple281t">
+                        className="mx-auto h-32 w-32 rounded-full bg-gray-200 text-gray-600 flex items-center justify-center mb-2" data-oid="fctx8s8">
+
 
                             <UserCircle
-                          className="h-16 w-16"
-                          data-oid="f75njft" />
+                          className="h-16 w-16" data-oid="cw3b00:" />
+
 
                           </div>
                           <label
                         htmlFor="photo-upload"
-                        className="cursor-pointer rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 inline-block"
-                        data-oid="kjv33p1">
+                        className="cursor-pointer rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 inline-block" data-oid="cu1byw:">
+
 
                             Subir foto
                           </label>
@@ -762,13 +762,13 @@ const DriversSection = () => {
                         type="file"
                         className="sr-only"
                         accept="image/*"
-                        onChange={handleImageUpload}
-                        data-oid="uoa7qtn" />
+                        onChange={handleImageUpload} data-oid="a6..mz." />
+
 
 
                           <p
-                        className="mt-2 text-xs text-gray-500"
-                        data-oid="1.kfmcj">
+                        className="mt-2 text-xs text-gray-500" data-oid="ud3dfdr">
+
 
                             PNG, JPG, WEBP hasta 5MB
                           </p>
@@ -777,95 +777,95 @@ const DriversSection = () => {
                     </div>
                   </div>
 
-                  <div data-oid="hgcaghn">
-                    <Label htmlFor="type" data-oid="kkehp18">
+                  <div data-oid="h-1snn5">
+                    <Label htmlFor="type" data-oid="bzxck-5">
                       Tipo
                     </Label>
                     <Select
-                    defaultValue={editingDriver?.type || "private"}
-                    data-oid="9zr4ql.">
+                    defaultValue={editingDriver?.type || "private"} data-oid="b79fpbc">
 
-                      <SelectTrigger id="type" name="type" data-oid="oz49u8g">
+
+                      <SelectTrigger id="type" name="type" data-oid="_5azv60">
                         <SelectValue
-                        placeholder="Seleccionar tipo"
-                        data-oid="z:f0iqm" />
+                        placeholder="Seleccionar tipo" data-oid="3fbs2me" />
+
 
                       </SelectTrigger>
-                      <SelectContent data-oid="6z8_ybw">
-                        <SelectItem value="private" data-oid="cotiw73">
+                      <SelectContent data-oid="b4jw7ls">
+                        <SelectItem value="private" data-oid="3fd5:l1">
                           Chófer Privado
                         </SelectItem>
-                        <SelectItem value="company" data-oid="nj6llgx">
+                        <SelectItem value="company" data-oid="..6tqa_">
                           Pertenece a Empresa
                         </SelectItem>
                       </SelectContent>
                     </Select>
                   </div>
 
-                  <div data-oid="bm2dzmt">
-                    <Label htmlFor="companyName" data-oid="1sd:u5c">
+                  <div data-oid="5-6o99s">
+                    <Label htmlFor="companyName" data-oid="t.doxl8">
                       Empresa (si aplica)
                     </Label>
                     <Input
                     id="companyName"
                     name="companyName"
-                    defaultValue={editingDriver?.companyName || ""}
-                    data-oid="utx5e-7" />
+                    defaultValue={editingDriver?.companyName || ""} data-oid="7tkddik" />
+
 
                   </div>
                 </div>
               </div>
 
               {/* Información Profesional */}
-              <div className="space-y-4" data-oid="mvtjhki">
+              <div className="space-y-4" data-oid="nl02yf5">
                 <h3
-                className="text-lg font-medium flex items-center"
-                data-oid="wsevlm6">
+                className="text-lg font-medium flex items-center" data-oid="7fe1lvx">
 
-                  <FileText className="mr-2 h-5 w-5" data-oid="urz1zkj" />
+
+                  <FileText className="mr-2 h-5 w-5" data-oid="2bt-a_4" />
                   Información Profesional
                 </h3>
 
-                <div className="space-y-3" data-oid="pi42.mh">
-                  <div data-oid="sq4x:.u">
-                    <Label htmlFor="documentId" data-oid="kgz66n5">
+                <div className="space-y-3" data-oid="3vb8hof">
+                  <div data-oid="0g8l.x6">
+                    <Label htmlFor="documentId" data-oid="7j8tve9">
                       Documento ID
                     </Label>
                     <Input
                     id="documentId"
                     name="documentId"
-                    defaultValue={editingDriver?.documentId || ""}
-                    data-oid="ap7-z89" />
+                    defaultValue={editingDriver?.documentId || ""} data-oid=":1:mka4" />
+
 
                   </div>
 
-                  <div data-oid="zln1ubh">
-                    <Label htmlFor="licenseNumber" data-oid="kapc90x">
+                  <div data-oid="nsi2vhc">
+                    <Label htmlFor="licenseNumber" data-oid="y2_e_0d">
                       Número de licencia
                     </Label>
                     <Input
                     id="licenseNumber"
                     name="licenseNumber"
-                    defaultValue={editingDriver?.licenseNumber || ""}
-                    data-oid="_f0g3c7" />
+                    defaultValue={editingDriver?.licenseNumber || ""} data-oid="eq5_9du" />
+
 
                   </div>
 
-                  <div data-oid="9qifpoa">
-                    <Label htmlFor="licenseExpiry" data-oid="kw4l_86">
+                  <div data-oid="dwvrc6f">
+                    <Label htmlFor="licenseExpiry" data-oid="tywiov5">
                       Fecha expiración licencia
                     </Label>
                     <Input
                     id="licenseExpiry"
                     name="licenseExpiry"
                     type="date"
-                    defaultValue={editingDriver?.licenseExpiry || ""}
-                    data-oid="cr37ej0" />
+                    defaultValue={editingDriver?.licenseExpiry || ""} data-oid="4.qz1mw" />
+
 
                   </div>
 
-                  <div data-oid="wy70h8f">
-                    <Label htmlFor="experience" data-oid="_abu3b1">
+                  <div data-oid="11jqtp8">
+                    <Label htmlFor="experience" data-oid="q3kgjvz">
                       Años de experiencia
                     </Label>
                     <Input
@@ -873,128 +873,128 @@ const DriversSection = () => {
                     name="experience"
                     type="number"
                     defaultValue={editingDriver?.experience || ""}
-                    min="0"
-                    data-oid="kjnvfx_" />
+                    min="0" data-oid="c3lthe3" />
+
 
                   </div>
 
-                  <div data-oid="748zg0.">
-                    <Label htmlFor="languages" data-oid="-ilcvjp">
+                  <div data-oid="kdxk2v8">
+                    <Label htmlFor="languages" data-oid="12b-5_s">
                       Idiomas
                     </Label>
                     <Input
                     id="languages"
                     name="languages"
                     defaultValue={editingDriver?.languages?.join(", ") || ""}
-                    placeholder="Español, Inglés, Francés..."
-                    data-oid="1lqgkyb" />
+                    placeholder="Español, Inglés, Francés..." data-oid="k68tl.n" />
+
 
                   </div>
 
-                  <div data-oid="kmdem__">
-                    <Label htmlFor="specialty" data-oid="qx39u.l">
+                  <div data-oid="qtych-y">
+                    <Label htmlFor="specialty" data-oid="vcy._v7">
                       Especialidad
                     </Label>
                     <Input
                     id="specialty"
                     name="specialty"
                     defaultValue={editingDriver?.specialty || ""}
-                    placeholder="Eventos VIP, Traslados aeropuerto..."
-                    data-oid="xhabi71" />
+                    placeholder="Eventos VIP, Traslados aeropuerto..." data-oid="m:j4p.u" />
+
 
                   </div>
                 </div>
               </div>
 
               {/* Ubicación y Estado */}
-              <div className="space-y-4" data-oid="go08.x0">
+              <div className="space-y-4" data-oid="ce8xy.s">
                 <h3
-                className="text-lg font-medium flex items-center"
-                data-oid="9m0p_vn">
+                className="text-lg font-medium flex items-center" data-oid="q5gwe2g">
 
-                  <MapPin className="mr-2 h-5 w-5" data-oid="mp3j9s3" />
+
+                  <MapPin className="mr-2 h-5 w-5" data-oid="zv7n1h9" />
                   Ubicación y Estado
                 </h3>
 
-                <div className="space-y-3" data-oid="g7u9yrf">
-                  <div data-oid="dc:6a:u">
-                    <Label htmlFor="country" data-oid="nbt32id">
+                <div className="space-y-3" data-oid="vke_zz1">
+                  <div data-oid="a2:ivyo">
+                    <Label htmlFor="country" data-oid="c.ih9nq">
                       País
                     </Label>
                     <Input
                     id="country"
                     name="country"
-                    defaultValue={editingDriver?.country || ""}
-                    data-oid="p8z-9qh" />
+                    defaultValue={editingDriver?.country || ""} data-oid="bl8w0:_" />
+
 
                   </div>
 
-                  <div data-oid="3yg7211">
-                    <Label htmlFor="city" data-oid="bk14._j">
+                  <div data-oid="duhysx.">
+                    <Label htmlFor="city" data-oid="o35l7:3">
                       Ciudad
                     </Label>
                     <Input
                     id="city"
                     name="city"
-                    defaultValue={editingDriver?.city || ""}
-                    data-oid="gfv0p6c" />
+                    defaultValue={editingDriver?.city || ""} data-oid="3itc-e_" />
+
 
                   </div>
 
-                  <div data-oid="4gncoom">
-                    <Label htmlFor="address" data-oid="snu9eug">
+                  <div data-oid="qi8y.w4">
+                    <Label htmlFor="address" data-oid="cv.etji">
                       Dirección
                     </Label>
                     <Input
                     id="address"
                     name="address"
-                    defaultValue={editingDriver?.address || ""}
-                    data-oid="_dhehvh" />
+                    defaultValue={editingDriver?.address || ""} data-oid="_r5nj81" />
+
 
                   </div>
 
-                  <div data-oid="husudap">
-                    <Label htmlFor="status" data-oid="x4me9e2">
+                  <div data-oid="4yx-622">
+                    <Label htmlFor="status" data-oid=":e0k8_w">
                       Estado
                     </Label>
                     <Select
-                    defaultValue={editingDriver?.status || "active"}
-                    data-oid="xurq3yr">
+                    defaultValue={editingDriver?.status || "active"} data-oid="-qudv3k">
+
 
                       <SelectTrigger
                       id="status"
-                      name="status"
-                      data-oid=":sxj._z">
+                      name="status" data-oid="rxb1dyl">
+
 
                         <SelectValue
-                        placeholder="Seleccionar estado"
-                        data-oid="we5ay40" />
+                        placeholder="Seleccionar estado" data-oid="8_-gd_:" />
+
 
                       </SelectTrigger>
-                      <SelectContent data-oid="nnqwyw:">
-                        <SelectItem value="active" data-oid="3:gzfny">
+                      <SelectContent data-oid="2xtm3fi">
+                        <SelectItem value="active" data-oid="_xdsey8">
                           Activo
                         </SelectItem>
-                        <SelectItem value="inactive" data-oid="1l0lucr">
+                        <SelectItem value="inactive" data-oid="38o9gn1">
                           Inactivo
                         </SelectItem>
-                        <SelectItem value="pending" data-oid="vtdjuhb">
+                        <SelectItem value="pending" data-oid="zdv.x6k">
                           Pendiente
                         </SelectItem>
                       </SelectContent>
                     </Select>
                   </div>
 
-                  <div className="pt-3" data-oid="i4rn_rq">
-                    <Label htmlFor="notes" data-oid=":bhz7ht">
+                  <div className="pt-3" data-oid="g8-:p31">
+                    <Label htmlFor="notes" data-oid="bvk.s:7">
                       Notas adicionales
                     </Label>
                     <Textarea
                     id="notes"
                     name="notes"
                     className="resize-none h-[105px]"
-                    defaultValue={editingDriver?.notes || ""}
-                    data-oid="w4j436e" />
+                    defaultValue={editingDriver?.notes || ""} data-oid="pod18yw" />
+
 
                   </div>
                 </div>
@@ -1003,18 +1003,18 @@ const DriversSection = () => {
           </div>
 
           <div
-          className="flex justify-end p-6 border-t border-gray-200 bg-gray-50"
-          data-oid="a:d6n74">
+          className="flex justify-end p-6 border-t border-gray-200 bg-gray-50" data-oid="oy:owsb">
 
-            <div className="flex space-x-3" data-oid="z_apnm3">
+
+            <div className="flex space-x-3" data-oid="x7lp-yh">
               <Button
               type="button"
               onClick={() => {
                 setShowDriverForm(false);
                 setEditingDriver(null);
               }}
-              variant="outline"
-              data-oid=".e7yi4g">
+              variant="outline" data-oid="arwaav-">
+
 
                 Cancelar
               </Button>
@@ -1057,8 +1057,8 @@ const DriversSection = () => {
                     "licenseExpiry"
                   ) as HTMLInputElement)?.
                   value || "",
-                  type: (formElements.namedItem("type") as HTMLSelectElement)?.
-                  value as "private" | "company",
+                  type: ((formElements.namedItem("type") as HTMLSelectElement)?.
+                  value || "private") as "private" | "company",
                   companyName:
                   (
                   formElements.namedItem(
@@ -1087,9 +1087,9 @@ const DriversSection = () => {
                   specialty:
                   (formElements.namedItem("specialty") as HTMLInputElement)?.
                   value || "",
-                  status: (
+                  status: ((
                   formElements.namedItem("status") as HTMLSelectElement)?.
-                  value as "active" | "inactive" | "pending",
+                  value || "pending") as "active" | "inactive" | "pending",
                   photo: imagePreview || "",
                   notes:
                   (formElements.namedItem("notes") as HTMLTextAreaElement)?.
@@ -1099,8 +1099,8 @@ const DriversSection = () => {
                 // Enviar datos al backend
                 handleDriverSubmit(driverData);
               }}
-              className="bg-black hover:bg-gray-800"
-              data-oid="0au9u72">
+              className="bg-black hover:bg-gray-800" data-oid="t__8vop">
+
 
                 {editingDriver ? "Actualizar" : "Crear"} Chófer
               </Button>
@@ -1109,130 +1109,130 @@ const DriversSection = () => {
         </form> :
 
       <div
-        className="bg-white rounded-lg shadow-md overflow-hidden"
-        data-oid="btksfm8">
+        className="bg-white rounded-lg shadow-md overflow-hidden" data-oid="iyvr09f">
+
 
           <div
-          className="p-4 sm:p-6 flex justify-between items-center border-b"
-          data-oid="5:q1bce">
+          className="p-4 sm:p-6 flex justify-between items-center border-b" data-oid="ahk13jn">
 
-            <div className="relative" data-oid="gyny1ul">
+
+            <div className="relative" data-oid="blhk-pk">
               <input
               type="text"
               placeholder="Buscar chóferes..."
               className="pl-10 pr-4 py-2 border rounded-lg"
               value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              data-oid="mc8rvgd" />
+              onChange={(e) => setSearchQuery(e.target.value)} data-oid="r2-hi4f" />
+
 
 
               <Search
               className="absolute left-3 top-2.5 text-gray-400"
-              size={18}
-              data-oid="y5dsz0h" />
+              size={18} data-oid="jh8z11r" />
+
 
             </div>
-            <div className="flex space-x-3" data-oid="yrrl839">
+            <div className="flex space-x-3" data-oid="l:.anbk">
               <select
               className="px-3 py-2 border rounded-lg"
               value={statusFilter}
-              onChange={(e) => setStatusFilter(e.target.value)}
-              data-oid="t0q.mn6">
+              onChange={(e) => setStatusFilter(e.target.value)} data-oid="k0:egfy">
 
-                <option value="all" data-oid="if7d6gw">
+
+                <option value="all" data-oid="6cod_t.">
                   Todos los estados
                 </option>
-                <option value="active" data-oid="k8fmytg">
+                <option value="active" data-oid="7_oc3gg">
                   Activos
                 </option>
-                <option value="inactive" data-oid="_2fi8.0">
+                <option value="inactive" data-oid="lhp7xg-">
                   Inactivos
                 </option>
-                <option value="pending" data-oid="cv876ir">
+                <option value="pending" data-oid="5er52xb">
                   Pendientes
                 </option>
               </select>
               <select
               className="px-3 py-2 border rounded-lg"
               value={locationFilter}
-              onChange={(e) => setLocationFilter(e.target.value)}
-              data-oid="kld8cph">
+              onChange={(e) => setLocationFilter(e.target.value)} data-oid="__ls_q7">
 
-                <option value="all" data-oid="5ifmzui">
+
+                <option value="all" data-oid="hn4y6mr">
                   Todas las ubicaciones
                 </option>
                 {uniqueLocations.map((location) =>
-              <option key={location} value={location} data-oid="k0xxs.q">
+              <option key={location} value={location} data-oid="15otlpz">
                     {location}
                   </option>
               )}
               </select>
             </div>
           </div>
-          <div className="overflow-x-auto" data-oid="0rnogz1">
+          <div className="overflow-x-auto" data-oid="_egsrs1">
             <table
-            className="min-w-full divide-y divide-gray-200"
-            data-oid=":si126.">
+            className="min-w-full divide-y divide-gray-200" data-oid="8j:1ka4">
 
-              <thead className="bg-gray-50" data-oid="rub5mnc">
-                <tr data-oid="ny2o3v_">
+
+              <thead className="bg-gray-50" data-oid="632b0qq">
+                <tr data-oid="z3-lyz5">
                   <th
-                  className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                  data-oid="70inqt1">
+                  className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" data-oid="7hh_2f-">
+
 
                     Chófer
                   </th>
                   <th
-                  className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                  data-oid="aio1i6.">
+                  className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" data-oid="6-0lbyk">
+
 
                     Contacto
                   </th>
                   <th
-                  className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                  data-oid="rpfgui1">
+                  className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" data-oid="moch4cg">
+
 
                     Ubicación
                   </th>
                   <th
-                  className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                  data-oid="ol1lb-.">
+                  className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" data-oid="99_f_7m">
+
 
                     Estado
                   </th>
                   <th
-                  className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                  data-oid="m5xi4xh">
+                  className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" data-oid=".nl:h.f">
+
 
                     Experiencia/Rating
                   </th>
                   <th
-                  className="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider"
-                  data-oid="hbq:kw1">
+                  className="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider" data-oid="ja7h4ek">
+
 
                     Acciones
                   </th>
                 </tr>
               </thead>
               <tbody
-              className="bg-white divide-y divide-gray-200"
-              data-oid=".86z1_v">
+              className="bg-white divide-y divide-gray-200" data-oid="f2m-2fj">
+
 
                 {filteredDrivers.map((driver) =>
               <tr
                 key={driver.id}
                 className="hover:bg-gray-50 cursor-pointer"
-                onClick={() => handleViewDriverDetails(driver)}
-                data-oid="vmj8-nc">
+                onClick={() => handleViewDriverDetails(driver)} data-oid="tf77gtr">
+
 
                     <td
-                  className="px-6 py-4 whitespace-nowrap"
-                  data-oid="b6zsk7w">
+                  className="px-6 py-4 whitespace-nowrap" data-oid="8ubo0nc">
 
-                      <div className="flex items-center" data-oid="pioo-vs">
+
+                      <div className="flex items-center" data-oid="xb1ajdz">
                         <div
-                      className="flex-shrink-0 h-10 w-10"
-                      data-oid="x_sua1:">
+                      className="flex-shrink-0 h-10 w-10" data-oid="rixmewz">
+
 
                           {driver.photo ?
                       <img
@@ -1249,35 +1249,35 @@ const DriversSection = () => {
                             ".fallback-avatar"
                           ) as HTMLDivElement;
                           fallback.style.display = "flex";
-                        }}
-                        data-oid="cld21jq" /> :
+                        }} data-oid="ftnq--u" /> :
+
 
 
                       <div
-                        className="h-10 w-10 rounded-full bg-gray-200 text-gray-600 flex items-center justify-center font-medium"
-                        data-oid="1j60xzg">
+                        className="h-10 w-10 rounded-full bg-gray-200 text-gray-600 flex items-center justify-center font-medium" data-oid="78p4s63">
+
 
                               {driver.name.charAt(0).toUpperCase()}
                             </div>
                       }
                           <div
                         className="fallback-avatar h-10 w-10 rounded-full bg-gray-200 text-gray-600 flex items-center justify-center font-medium"
-                        style={{ display: "none" }}
-                        data-oid="im3xh0b">
+                        style={{ display: "none" }} data-oid="ebem15z">
+
 
                             {driver.name.charAt(0).toUpperCase()}
                           </div>
                         </div>
-                        <div className="ml-4" data-oid="j_jy:9s">
+                        <div className="ml-4" data-oid="7o_4etj">
                           <div
-                        className="text-sm font-medium text-gray-900"
-                        data-oid="i3g63v3">
+                        className="text-sm font-medium text-gray-900" data-oid="szvv5vv">
+
 
                             {driver.name}
                           </div>
                           <div
-                        className="text-sm text-gray-500"
-                        data-oid="p0ac279">
+                        className="text-sm text-gray-500" data-oid="tc1eq_2">
+
 
                             {driver.type === "private" ?
                         "Particular" :
@@ -1288,30 +1288,30 @@ const DriversSection = () => {
                       </div>
                     </td>
                     <td
-                  className="px-6 py-4 whitespace-nowrap"
-                  data-oid="cwvqkuw">
+                  className="px-6 py-4 whitespace-nowrap" data-oid="womzcta">
 
-                      <div className="text-sm text-gray-900" data-oid="_jamtfv">
+
+                      <div className="text-sm text-gray-900" data-oid="r9:082b">
                         {driver.phone}
                       </div>
-                      <div className="text-sm text-gray-500" data-oid="zewvq3m">
+                      <div className="text-sm text-gray-500" data-oid="62meqoe">
                         {driver.email}
                       </div>
                     </td>
                     <td
-                  className="px-6 py-4 whitespace-nowrap"
-                  data-oid="n4r9oj5">
+                  className="px-6 py-4 whitespace-nowrap" data-oid="ywo46:r">
 
-                      <div className="text-sm text-gray-900" data-oid="69olpin">
+
+                      <div className="text-sm text-gray-900" data-oid="i-e84zp">
                         {driver.city}
                       </div>
-                      <div className="text-sm text-gray-500" data-oid="vy2w48z">
+                      <div className="text-sm text-gray-500" data-oid="0s3q5up">
                         {driver.country}
                       </div>
                     </td>
                     <td
-                  className="px-6 py-4 whitespace-nowrap"
-                  data-oid="d5_g5v5">
+                  className="px-6 py-4 whitespace-nowrap" data-oid="0v5vf5y">
+
 
                       <span
                     className={`px-2 py-1 inline-flex text-xs leading-5 font-semibold rounded-full ${
@@ -1320,8 +1320,8 @@ const DriversSection = () => {
                     driver.status === "inactive" ?
                     "bg-gray-100 text-gray-800" :
                     "bg-gray-200 text-yellow-800"}`
-                    }
-                    data-oid=".9vntzr">
+                    } data-oid="6dr.ro0">
+
 
                         {driver.status === "active" ?
                     "Activo" :
@@ -1330,20 +1330,20 @@ const DriversSection = () => {
                     "Pendiente"}
                       </span>
                       <div
-                    className="text-sm text-gray-500 mt-1"
-                    data-oid="fo5ojxv">
+                    className="text-sm text-gray-500 mt-1" data-oid="duou9rz">
+
 
                         {driver.available ? "Disponible" : "No disponible"}
                       </div>
                     </td>
                     <td
-                  className="px-6 py-4 whitespace-nowrap"
-                  data-oid="bymqh3g">
+                  className="px-6 py-4 whitespace-nowrap" data-oid="f68zc0h">
 
-                      <div className="text-sm text-gray-900" data-oid="mbg67hm">
+
+                      <div className="text-sm text-gray-900" data-oid="b5zgh7j">
                         {driver.experience} años
                       </div>
-                      <div className="flex text-amber-500" data-oid="d2b3phk">
+                      <div className="flex text-amber-500" data-oid="kz7mc48">
                         {[...Array(5)].map((_, i) =>
                     <span
                       key={i}
@@ -1351,29 +1351,29 @@ const DriversSection = () => {
                       i < Math.round(driver.rating) ?
                       "" :
                       "text-gray-300"
-                      }
-                      data-oid="0vjt75b">
+                      } data-oid="6hn423m">
+
 
                             ★
                           </span>
                     )}
-                        <span className="ml-1 text-gray-500" data-oid="o7jv4h4">
+                        <span className="ml-1 text-gray-500" data-oid="ns:s6rh">
                           ({driver.rating.toFixed(1)})
                         </span>
                       </div>
                     </td>
                     <td
-                  className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium"
-                  data-oid="qb4tos5">
+                  className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium" data-oid="rbnduuw">
+
 
                       <Button
                     variant="outline"
                     size="sm"
                     onClick={(e) => handleDeleteDriver(driver.id, e)}
-                    className="text-gray-600 border-gray-200 hover:bg-gray-100"
-                    data-oid="lz:5evh">
+                    className="text-gray-600 border-gray-200 hover:bg-gray-100" data-oid="x0kh0bu">
 
-                        <Trash2 size={16} data-oid="v9_so_:" />
+
+                        <Trash2 size={16} data-oid="vbm.5kw" />
                       </Button>
                     </td>
                   </tr>
@@ -1382,12 +1382,12 @@ const DriversSection = () => {
             </table>
 
             {filteredDrivers.length === 0 &&
-          <div className="py-10 text-center" data-oid="2v22q39">
+          <div className="py-10 text-center" data-oid="yaui0sx">
                 <AlertTriangle
-              className="h-8 w-8 text-amber-500 mx-auto mb-2"
-              data-oid="dp48ltz" />
+              className="h-8 w-8 text-amber-500 mx-auto mb-2" data-oid="-:.5pah" />
 
-                <p className="text-gray-500" data-oid="65-:sbc">
+
+                <p className="text-gray-500" data-oid="rwbe6.i">
                   No se encontraron chóferes que coincidan con los criterios de
                   búsqueda
                 </p>
@@ -1403,8 +1403,8 @@ const DriversSection = () => {
         onOpenChange={setDeleteDialogOpen}
         onConfirm={confirmDelete}
         title="¿Estás seguro?"
-        description="Esta acción eliminará permanentemente al chófer. Esta acción no se puede deshacer."
-        data-oid="hxd06yb" />
+        description="Esta acción eliminará permanentemente al chófer. Esta acción no se puede deshacer." data-oid="g:dl7d:" />
+
 
     </div>);
 

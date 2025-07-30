@@ -58,8 +58,8 @@ const TagPage = () => {
 
   return (
     <>
-      <header data-oid="qiojh.2">
-        <title data-oid="pw2l.qc">
+      <header data-oid="6vwxaim">
+        <title data-oid=".mw4trv">
           {tagName ? `#${tagName} - Blog Privyde` : "Blog | Privyde"}
         </title>
         <meta
@@ -69,60 +69,60 @@ const TagPage = () => {
               ? `Artículos con etiqueta #${tagName} en el blog de Privyde`
               : "Blog de Privyde"
           }
-          data-oid="mz1o5e8"
+          data-oid="vxzbzq5"
         />
       </header>
 
-      <Navbar data-oid="04k3whz" />
+      <Navbar data-oid="26w9gty" />
 
-      <main data-oid="p1ixd36">
+      <main data-oid="o87-026">
         {/* Hero de tag */}
         <section
           className="relative py-16 bg-gradient-to-r from-gray-800 to-gray-900 overflow-hidden"
-          data-oid="5t0okgt"
+          data-oid="s-nau5n"
         >
           <div
             className="absolute top-0 left-0 w-full h-full opacity-20"
-            data-oid="36cb4-5"
+            data-oid="1jig_qr"
           >
             <div
               className="absolute -top-20 -right-20 w-72 h-72 bg-gray-1000 rounded-full blur-3xl"
-              data-oid="gwlpymg"
+              data-oid="lz0xkwo"
             ></div>
             <div
               className="absolute bottom-10 left-1/4 w-32 h-32 bg-gray-1000 rounded-full blur-3xl"
-              data-oid="b9:t6xl"
+              data-oid="-8o7pkh"
             ></div>
           </div>
           <div
             className="container relative mx-auto px-4 z-10"
-            data-oid="7gr:6hl"
+            data-oid="liteeu5"
           >
-            <div className="max-w-3xl" data-oid=":4od2lj">
-              <div className="flex items-center mb-6" data-oid="fq5-vlf">
+            <div className="max-w-3xl" data-oid="g:81xvr">
+              <div className="flex items-center mb-6" data-oid="aqydf_t">
                 <Link
                   to="/blog"
                   className="text-white/70 hover:text-white transition-colors flex items-center"
-                  data-oid="dl27l.c"
+                  data-oid="vis430w"
                 >
-                  <ArrowLeft size={18} className="mr-2" data-oid="05gt:8w" />
-                  <span data-oid="ai:1-ma">Blog</span>
+                  <ArrowLeft size={18} className="mr-2" data-oid="pyegu.h" />
+                  <span data-oid="exk_xn-">Blog</span>
                 </Link>
-                <span className="mx-3 text-white/50" data-oid="3rv8kik">
+                <span className="mx-3 text-white/50" data-oid="otljjyl">
                   /
                 </span>
-                <span className="text-white" data-oid="z:rytt1">
+                <span className="text-white" data-oid="66u317d">
                   Etiqueta
                 </span>
               </div>
 
-              <div className="flex items-center gap-3 mb-4" data-oid="frga2do">
-                <div className="bg-black p-2.5 rounded-lg" data-oid="bvpnk4f">
-                  <Hash size={22} className="text-white" data-oid="nt0qr79" />
+              <div className="flex items-center gap-3 mb-4" data-oid="_wak2:.">
+                <div className="bg-black p-2.5 rounded-lg" data-oid="1zgy-wc">
+                  <Hash size={22} className="text-white" data-oid="zswi90g" />
                 </div>
                 <h1
                   className="text-3xl md:text-4xl lg:text-5xl font-bold text-white"
-                  data-oid="m:z4ugw"
+                  data-oid="10g2z1y"
                 >
                   {tagName}
                 </h1>
@@ -131,12 +131,12 @@ const TagPage = () => {
               {tag && (
                 <p
                   className="text-xl text-white/80 mb-6 max-w-2xl"
-                  data-oid="5kb__4x"
+                  data-oid="vxf0z25"
                 >
                   Artículos etiquetados como{" "}
                   <span
                     className="text-gray-400 font-medium"
-                    data-oid="223q74v"
+                    data-oid="2iedx69"
                   >
                     #{tagName}
                   </span>{" "}
@@ -148,22 +148,22 @@ const TagPage = () => {
           </div>
         </section>
 
-        <div className="bg-gray-50 py-12" data-oid="zsys242">
-          <div className="container mx-auto px-4" data-oid="d1sj84:">
+        <div className="bg-gray-50 py-12" data-oid="w5tsjxq">
+          <div className="container mx-auto px-4" data-oid="9-llpvz">
             <div
               className="flex flex-col lg:flex-row gap-12"
-              data-oid="ucyk7ii"
+              data-oid="8q_:pjd"
             >
               {/* Main Content */}
-              <div className="lg:w-2/3" data-oid="bx-gcty">
+              <div className="lg:w-2/3" data-oid="f7vv:1b">
                 {tag && (
-                  <div className="mb-8 text-gray-600" data-oid="_awjyr8">
-                    <p data-oid="xhuvb7u">
+                  <div className="mb-8 text-gray-600" data-oid="e0ybwcp">
+                    <p data-oid="ojscnog">
                       Mostrando {posts.length} artículo
                       {posts.length !== 1 ? "s" : ""} con la etiqueta{" "}
                       <span
                         className="font-medium text-gray-900"
-                        data-oid="806-t3-"
+                        data-oid="t55ep.i"
                       >
                         #{tagName}
                       </span>
@@ -173,23 +173,23 @@ const TagPage = () => {
 
                 {/* Lista de posts */}
                 {isLoading ? (
-                  <div className="flex justify-center py-20" data-oid="50l74l_">
+                  <div className="flex justify-center py-20" data-oid=".9b.4te">
                     <div
                       className="animate-spin h-10 w-10 border-4 border-red-600 border-t-transparent rounded-full"
-                      data-oid=".qvg8dh"
+                      data-oid="mc3sjly"
                     ></div>
                   </div>
                 ) : currentPosts.length > 0 ? (
                   <>
                     <div
                       className="grid grid-cols-1 md:grid-cols-2 gap-8"
-                      data-oid="buy:wjf"
+                      data-oid="6-a3xvn"
                     >
                       {currentPosts.map((post) => (
                         <BlogCard
                           key={post.id}
                           post={post}
-                          data-oid="h3q89cm"
+                          data-oid="rn4-6vh"
                         />
                       ))}
                     </div>
@@ -198,35 +198,35 @@ const TagPage = () => {
                       currentPage={currentPage}
                       totalPages={totalPages}
                       onPageChange={handlePageChange}
-                      data-oid="cl1enco"
+                      data-oid="d9d:_w."
                     />
                   </>
                 ) : (
                   <div
                     className="text-center py-16 px-6 bg-white rounded-lg shadow-sm border border-gray-100"
-                    data-oid="w8-6xwe"
+                    data-oid="p9yp86n"
                   >
                     <div
                       className="inline-flex justify-center items-center w-16 h-16 bg-gray-200 rounded-full text-black mb-6"
-                      data-oid="u-0s:e5"
+                      data-oid="enzrw7n"
                     >
-                      <Tag size={28} data-oid="0fy9dyp" />
+                      <Tag size={28} data-oid="mm0wkvm" />
                     </div>
                     <h2
                       className="text-2xl font-bold text-gray-900 mb-2"
-                      data-oid="skk1wer"
+                      data-oid="wix7.1:"
                     >
                       Etiqueta sin contenido
                     </h2>
                     <p
                       className="text-gray-600 mb-8 max-w-md mx-auto"
-                      data-oid="cs0_x3."
+                      data-oid="apsfnem"
                     >
                       No hay artículos disponibles con esta etiqueta. Pronto
                       agregaremos nuevo contenido.
                     </p>
-                    <Button asChild data-oid="hppncn6">
-                      <Link to="/blog" data-oid="93qs3ow">
+                    <Button asChild data-oid="reffhqz">
+                      <Link to="/blog" data-oid="jc3z.l4">
                         Volver al blog
                       </Link>
                     </Button>
@@ -235,9 +235,9 @@ const TagPage = () => {
               </div>
 
               {/* Sidebar */}
-              <div className="lg:w-1/3 mt-12 lg:mt-0" data-oid="pmmhp3:">
-                <div className="sticky top-24 pt-8" data-oid="o_hg_2b">
-                  <Sidebar data-oid="yyr6y39" />
+              <div className="lg:w-1/3 mt-12 lg:mt-0" data-oid="12zby3q">
+                <div className="sticky top-24 pt-8" data-oid="lmpqk4p">
+                  <Sidebar data-oid="1w62rd_" />
                 </div>
               </div>
             </div>
@@ -245,7 +245,7 @@ const TagPage = () => {
         </div>
       </main>
 
-      <Footer data-oid="_-rx2:c" />
+      <Footer data-oid="wf9407m" />
     </>
   );
 };

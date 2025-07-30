@@ -67,8 +67,8 @@ const CategoryPage = () => {
 
   return (
     <>
-      <header data-oid="ldzm128">
-        <title data-oid="zmqhb6p">
+      <header data-oid="luf1i.:">
+        <title data-oid="ln5uipe">
           {categoryName ? `${categoryName} - Blog Privyde` : "Blog | Privyde"}
         </title>
         <meta
@@ -78,60 +78,60 @@ const CategoryPage = () => {
               ? `Artículos sobre ${categoryName} en el blog de Privyde`
               : "Blog de Privyde"
           }
-          data-oid="uyqg3uf"
+          data-oid="glsacbz"
         />
       </header>
 
-      <Navbar data-oid="_g:sfpu" />
+      <Navbar data-oid="x.4rdhp" />
 
-      <main data-oid="10l-qfl">
+      <main data-oid="a9kznbp">
         {/* Hero de categoría */}
         <section
           className="relative py-16 bg-gradient-to-r from-gray-900 to-black overflow-hidden"
-          data-oid="y4:f4:g"
+          data-oid="a.tf46c"
         >
           <div
             className="absolute top-0 left-0 w-full h-full opacity-20"
-            data-oid="0z508me"
+            data-oid="g3elx07"
           >
             <div
               className="absolute -top-20 -left-20 w-72 h-72 bg-gray-1000 rounded-full blur-3xl"
-              data-oid="pei:npv"
+              data-oid="utmlc15"
             ></div>
           </div>
           <div
             className="container relative mx-auto px-4 z-10"
-            data-oid="cgyg2az"
+            data-oid="zbl-nc4"
           >
-            <div className="max-w-3xl" data-oid="jfka1ts">
-              <div className="flex items-center mb-6" data-oid="_p5elm0">
+            <div className="max-w-3xl" data-oid="z04wd6_">
+              <div className="flex items-center mb-6" data-oid="d8_4ir:">
                 <Link
                   to="/blog"
                   className="text-white/70 hover:text-white transition-colors flex items-center"
-                  data-oid="yd7mmw5"
+                  data-oid="ba_hywm"
                 >
-                  <ArrowLeft size={18} className="mr-2" data-oid="mzs0jxn" />
-                  <span data-oid="zk06srw">Blog</span>
+                  <ArrowLeft size={18} className="mr-2" data-oid="bas43md" />
+                  <span data-oid="r.hzszw">Blog</span>
                 </Link>
-                <span className="mx-3 text-white/50" data-oid=":zfb8f.">
+                <span className="mx-3 text-white/50" data-oid="rm73yyx">
                   /
                 </span>
-                <span className="text-white" data-oid="o5w8:lq">
+                <span className="text-white" data-oid="824-ri2">
                   Categoría
                 </span>
               </div>
 
-              <div className="flex items-center gap-3 mb-4" data-oid="reswija">
-                <div className="bg-black p-2.5 rounded-lg" data-oid="ty5mpd.">
+              <div className="flex items-center gap-3 mb-4" data-oid="9t7gob_">
+                <div className="bg-black p-2.5 rounded-lg" data-oid="ujxi3ml">
                   <FolderOpen
                     size={22}
                     className="text-white"
-                    data-oid="fnh.jj5"
+                    data-oid="3sr42yb"
                   />
                 </div>
                 <h1
                   className="text-3xl md:text-4xl lg:text-5xl font-bold text-white"
-                  data-oid="--oub_e"
+                  data-oid="yjgynuy"
                 >
                   {categoryName || "Todas las categorías"}
                 </h1>
@@ -140,12 +140,12 @@ const CategoryPage = () => {
               {category && (
                 <p
                   className="text-xl text-white/80 mb-6 max-w-2xl"
-                  data-oid="0x7_.ps"
+                  data-oid="1g6lu9p"
                 >
                   Explora nuestros artículos sobre{" "}
                   <span
                     className="text-gray-400 font-medium"
-                    data-oid="if.grgi"
+                    data-oid="tm-ebn_"
                   >
                     {categoryName}
                   </span>
@@ -157,34 +157,34 @@ const CategoryPage = () => {
           </div>
         </section>
 
-        <div className="bg-gray-50" data-oid="b554hlt">
+        <div className="bg-gray-50" data-oid="jid361t">
           {/* Lista de categorías */}
           <div
             className="container mx-auto px-4 py-6 border-b border-gray-200"
-            data-oid="wki3toy"
+            data-oid="08aogub"
           >
             <CategoryList
               categories={categories}
               activeCategory={category}
-              data-oid="7ifq7t7"
+              data-oid="1z804ff"
             />
           </div>
 
-          <div className="container mx-auto px-4 py-12" data-oid="hgkx1-0">
+          <div className="container mx-auto px-4 py-12" data-oid="56okau5">
             <div
               className="flex flex-col lg:flex-row gap-12"
-              data-oid="vsy6rvp"
+              data-oid="hojm4u4"
             >
               {/* Main Content */}
-              <div className="lg:w-2/3" data-oid="fb3z8cb">
+              <div className="lg:w-2/3" data-oid="i196ip8">
                 {category && (
-                  <div className="mb-8 text-gray-600" data-oid="buuk62:">
-                    <p data-oid="nas2z-x">
+                  <div className="mb-8 text-gray-600" data-oid="q92-8nq">
+                    <p data-oid=".b-74g4">
                       Mostrando {posts.length} artículo
                       {posts.length !== 1 ? "s" : ""} en la categoría{" "}
                       <span
                         className="font-medium text-gray-900"
-                        data-oid="w6l-qve"
+                        data-oid="ctdg5mo"
                       >
                         "{categoryName}"
                       </span>
@@ -194,23 +194,23 @@ const CategoryPage = () => {
 
                 {/* Lista de posts */}
                 {isLoading ? (
-                  <div className="flex justify-center py-20" data-oid="na8ajez">
+                  <div className="flex justify-center py-20" data-oid="-9z30a8">
                     <div
                       className="animate-spin h-10 w-10 border-4 border-red-600 border-t-transparent rounded-full"
-                      data-oid="_hl-bd_"
+                      data-oid="fhq1h9f"
                     ></div>
                   </div>
                 ) : currentPosts.length > 0 ? (
                   <>
                     <div
                       className="grid grid-cols-1 md:grid-cols-2 gap-8"
-                      data-oid="1ytitr9"
+                      data-oid="4h36x:t"
                     >
                       {currentPosts.map((post) => (
                         <BlogCard
                           key={post.id}
                           post={post}
-                          data-oid="f7yy2t1"
+                          data-oid="kn9scgh"
                         />
                       ))}
                     </div>
@@ -219,35 +219,35 @@ const CategoryPage = () => {
                       currentPage={currentPage}
                       totalPages={totalPages}
                       onPageChange={handlePageChange}
-                      data-oid="9lyd7g1"
+                      data-oid="2vt5k3r"
                     />
                   </>
                 ) : (
                   <div
                     className="text-center py-16 px-6 bg-white rounded-lg shadow-sm border border-gray-100"
-                    data-oid="286i1-."
+                    data-oid=".vb-tl7"
                   >
                     <div
                       className="inline-flex justify-center items-center w-16 h-16 bg-gray-200 rounded-full text-black mb-6"
-                      data-oid="do1f8x7"
+                      data-oid="v70vyv:"
                     >
-                      <FolderOpen size={28} data-oid="4egrwbf" />
+                      <FolderOpen size={28} data-oid="ai0rui:" />
                     </div>
                     <h2
                       className="text-2xl font-bold text-gray-900 mb-2"
-                      data-oid="urikeuv"
+                      data-oid="w76de7y"
                     >
                       Categoría vacía
                     </h2>
                     <p
                       className="text-gray-600 mb-8 max-w-md mx-auto"
-                      data-oid="xbqb410"
+                      data-oid="s8wj570"
                     >
                       No hay artículos disponibles en esta categoría. Pronto
                       agregaremos nuevo contenido.
                     </p>
-                    <Button asChild data-oid="36.5lvs">
-                      <Link to="/blog" data-oid="zw5:std">
+                    <Button asChild data-oid="4fvxde5">
+                      <Link to="/blog" data-oid="j78vw-d">
                         Ver todas las categorías
                       </Link>
                     </Button>
@@ -256,9 +256,9 @@ const CategoryPage = () => {
               </div>
 
               {/* Sidebar */}
-              <div className="lg:w-1/3 mt-12 lg:mt-0" data-oid="niubkyg">
-                <div className="sticky top-24 pt-8" data-oid="nowrjzq">
-                  <Sidebar data-oid="cfl0bgh" />
+              <div className="lg:w-1/3 mt-12 lg:mt-0" data-oid="n5hxc5k">
+                <div className="sticky top-24 pt-8" data-oid="wp5xshx">
+                  <Sidebar data-oid="cul0dm1" />
                 </div>
               </div>
             </div>
@@ -266,7 +266,7 @@ const CategoryPage = () => {
         </div>
       </main>
 
-      <Footer data-oid="n:30o56" />
+      <Footer data-oid=":ky_o2g" />
     </>
   );
 };

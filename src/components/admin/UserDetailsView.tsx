@@ -274,21 +274,21 @@ const UserDetailsView = ({
   };
 
   return (
-    <div className="space-y-6 pb-10 max-w-[1200px] mx-auto" data-oid="9a947m3">
+    <div className="space-y-6 pb-10 max-w-[1200px] mx-auto" data-oid="dapejl.">
       {/* Cabecera mejorada */}
       <div
         className="bg-white border-b shadow-sm py-4 px-6 sticky top-0 z-10"
-        data-oid="7_rlu5x"
+        data-oid="lkb9wla"
       >
-        <div className="flex justify-between items-center" data-oid="r.yk56p">
-          <div className="flex items-center space-x-4" data-oid="aa1n.43">
-            <div className="flex flex-col" data-oid="f4awi38">
+        <div className="flex justify-between items-center" data-oid="qqmloiz">
+          <div className="flex items-center space-x-4" data-oid="vzcdwtx">
+            <div className="flex flex-col" data-oid="4pd6.-l">
               <h2
                 className="text-2xl font-bold text-gray-800"
-                data-oid="y2cg98z"
+                data-oid="9rcyi49"
               >
                 {user.name}
-                <span className="ml-2 text-lg text-gray-500" data-oid="0-iai94">
+                <span className="ml-2 text-lg text-gray-500" data-oid="z6s2uwj">
                   (
                   {user.role === "admin"
                     ? "Administrador"
@@ -298,21 +298,21 @@ const UserDetailsView = ({
                   )
                 </span>
               </h2>
-              <p className="text-gray-500 text-sm" data-oid="9mebxrv">
+              <p className="text-gray-500 text-sm" data-oid="wfui5cj">
                 ID: {user.id}
               </p>
             </div>
           </div>
-          <div className="flex space-x-2" data-oid="hgqceb0">
+          <div className="flex space-x-2" data-oid="l9zloov">
             {!isEditing ? (
               <Button
                 variant="outline"
                 onClick={handleStartEditing}
                 disabled={user.role === "admin"}
                 className="flex items-center hover:bg-gray-100 transition-colors"
-                data-oid="h06z1l_"
+                data-oid="ct5ma4g"
               >
-                <Edit className="h-4 w-4 mr-2" data-oid="4f_wakr" />
+                <Edit className="h-4 w-4 mr-2" data-oid="rzj8jtw" />
                 Editar
               </Button>
             ) : (
@@ -321,9 +321,9 @@ const UserDetailsView = ({
                   variant="outline"
                   onClick={handleCancelEdit}
                   className="flex items-center hover:bg-gray-100 transition-colors"
-                  data-oid="dev9-ru"
+                  data-oid="pspgf.-"
                 >
-                  <X className="h-4 w-4 mr-2" data-oid="pax8mzw" />
+                  <X className="h-4 w-4 mr-2" data-oid="wbvrwwy" />
                   Cancelar
                 </Button>
                 <Button
@@ -331,15 +331,15 @@ const UserDetailsView = ({
                   onClick={handleSaveChanges}
                   disabled={isSaving}
                   className="flex items-center bg-black hover:bg-gray-800 transition-colors"
-                  data-oid="kkgimvt"
+                  data-oid="ruh87mv"
                 >
                   {isSaving ? (
                     <RefreshCw
                       className="h-4 w-4 mr-2 animate-spin"
-                      data-oid="2h7daam"
+                      data-oid="s3e426:"
                     />
                   ) : (
-                    <Save className="h-4 w-4 mr-2" data-oid="7:kzvhg" />
+                    <Save className="h-4 w-4 mr-2" data-oid="cf:cwz8" />
                   )}
                   Guardar
                 </Button>
@@ -350,53 +350,53 @@ const UserDetailsView = ({
               size="icon"
               onClick={onClose}
               className="hover:bg-gray-100 transition-colors"
-              data-oid="37op.it"
+              data-oid="4bjke35"
             >
-              <X className="h-5 w-5" data-oid="jdstfn9" />
+              <X className="h-5 w-5" data-oid="dwvufbp" />
             </Button>
           </div>
         </div>
       </div>
 
       {/* Contenido principal - Vista única sin pestañas */}
-      <div className="px-6 space-y-8" data-oid="mbd8dxg">
+      <div className="px-6 space-y-8" data-oid="h-egbr:">
         {/* Unificar Perfil de Usuario y Datos Personales en un solo contenedor */}
         <Card
           className="shadow-md hover:shadow-lg transition-shadow overflow-hidden"
-          data-oid="wjqg37w"
+          data-oid="dg74bmk"
         >
-          <CardHeader className="bg-gray-50 border-b" data-oid="2tkwwrv">
-            <CardTitle className="flex items-center text-lg" data-oid=":k15co0">
+          <CardHeader className="bg-gray-50 border-b" data-oid="k2ztvsw">
+            <CardTitle className="flex items-center text-lg" data-oid="kyqr84p">
               <UserIcon
                 className="h-5 w-5 mr-2 text-gray-500"
-                data-oid="jb8mbcm"
+                data-oid="30mvup9"
               />
               Información del Usuario
             </CardTitle>
           </CardHeader>
-          <CardContent data-oid="lkus8ph">
+          <CardContent data-oid="a1xynkf">
             <div
               className="grid grid-cols-1 lg:grid-cols-12 gap-6"
-              data-oid="_muotc2"
+              data-oid="xsl4j9j"
             >
               {/* Panel izquierdo - Avatar e información de contacto */}
-              <div className="lg:col-span-4" data-oid="tsufekv">
+              <div className="lg:col-span-4" data-oid="neu0-q.">
                 {/* Avatar y datos básicos */}
                 <div
                   className="flex flex-col items-center space-y-4 mb-6"
-                  data-oid="ahkfiar"
+                  data-oid="zzci-7g"
                 >
                   {user.avatar ? (
                     <img
                       src={user.avatar}
                       alt={user.name}
                       className="h-24 w-24 rounded-full border-4 border-gray-100 shadow-sm"
-                      data-oid="j6vewxp"
+                      data-oid="5:d27yd"
                     />
                   ) : (
                     <div
                       className="h-24 w-24 rounded-full bg-gradient-to-br from-red-100 to-red-200 text-gray-600 flex items-center justify-center text-2xl font-bold border-4 border-gray-100 shadow-sm"
-                      data-oid="qabhpwy"
+                      data-oid="ua7ruw5"
                     >
                       {user.name[0].toUpperCase()}
                     </div>
@@ -406,13 +406,13 @@ const UserDetailsView = ({
                     <>
                       <h3
                         className="text-xl font-medium mt-2"
-                        data-oid="ytpr9wt"
+                        data-oid="5e.5yct"
                       >
                         {user.name}
                       </h3>
                       <div
                         className="flex flex-wrap gap-2 justify-center"
-                        data-oid="5:liplm"
+                        data-oid="tw77ecx"
                       >
                         <Badge
                           className={cn(
@@ -423,7 +423,7 @@ const UserDetailsView = ({
                                 ? "bg-gray-200 text-blue-800 hover:bg-gray-200"
                                 : "bg-gray-100 text-gray-800 hover:bg-gray-100",
                           )}
-                          data-oid="9lnu_4g"
+                          data-oid="9hkplws"
                         >
                           {user.role === "admin"
                             ? "Administrador"
@@ -438,13 +438,13 @@ const UserDetailsView = ({
                               ? "bg-gray-200 text-green-800 hover:bg-gray-200"
                               : "bg-gray-200 text-gray-800 hover:bg-gray-200",
                           )}
-                          data-oid="3iuewhn"
+                          data-oid="bukfyy9"
                         >
                           <span
                             className={`h-2 w-2 rounded-full mr-1.5 ${
                               user.status === "active" ? "bg-black" : "bg-black"
                             }`}
-                            data-oid="ic0179u"
+                            data-oid="lri5vhp"
                           ></span>
                           {user.status === "active" ? "Activo" : "Inactivo"}
                         </Badge>
@@ -452,10 +452,10 @@ const UserDetailsView = ({
                     </>
                   ) : (
                     <>
-                      <div className="w-full space-y-2" data-oid="jqh:a28">
+                      <div className="w-full space-y-2" data-oid="y_-zdm_">
                         <label
                           className="text-sm font-medium text-gray-500"
-                          data-oid="jmx.x61"
+                          data-oid="lx6g9is"
                         >
                           Nombre:
                         </label>
@@ -464,13 +464,13 @@ const UserDetailsView = ({
                           value={formData.name}
                           onChange={handleInputChange}
                           className="border-gray-300 focus:border-gray-300 focus:ring focus:ring-red-200 focus:ring-opacity-50 rounded-md"
-                          data-oid="-cax6m."
+                          data-oid="pehetit"
                         />
                       </div>
-                      <div className="w-full space-y-2" data-oid="mer56eb">
+                      <div className="w-full space-y-2" data-oid="__dpb2t">
                         <label
                           className="text-sm font-medium text-gray-500"
-                          data-oid="3_7432m"
+                          data-oid="lg:ukpa"
                         >
                           Estado:
                         </label>
@@ -480,25 +480,25 @@ const UserDetailsView = ({
                           onValueChange={(value) =>
                             setFormData({ ...formData, status: value })
                           }
-                          data-oid="axm0jop"
+                          data-oid="u7m:52r"
                         >
                           <SelectTrigger
                             className="border-gray-300 focus:border-gray-300 focus:ring focus:ring-red-200 focus:ring-opacity-50 rounded-md"
-                            data-oid="geuzh-b"
+                            data-oid="akbztob"
                           >
                             <SelectValue
                               placeholder="Seleccionar estado"
-                              data-oid="bsk6qjp"
+                              data-oid="jukaq5d"
                             />
                           </SelectTrigger>
-                          <SelectContent data-oid="3k66k9d">
-                            <SelectItem value="active" data-oid="jyb:iis">
+                          <SelectContent data-oid="k:h2hdp">
+                            <SelectItem value="active" data-oid="9b9b.z3">
                               Activo
                             </SelectItem>
-                            <SelectItem value="inactive" data-oid="kspqg9q">
+                            <SelectItem value="inactive" data-oid="eypekvl">
                               Inactivo
                             </SelectItem>
-                            <SelectItem value="blocked" data-oid="ybwkka8">
+                            <SelectItem value="blocked" data-oid="vjwp5q9">
                               Bloqueado
                             </SelectItem>
                           </SelectContent>
@@ -511,15 +511,15 @@ const UserDetailsView = ({
                 {user.profile_completed ? (
                   <div
                     className="mt-4 p-3 bg-green-50 border border-green-200 rounded-md"
-                    data-oid="w1lq_rv"
+                    data-oid="1kezuwj"
                   >
-                    <div className="flex items-center" data-oid="3-8g6sw">
+                    <div className="flex items-center" data-oid=".q3e31.">
                       <CheckCircle
                         className="h-5 w-5 text-gray-600 mr-2 flex-shrink-0"
-                        data-oid=":11lyk5"
+                        data-oid="wh45.9m"
                       />
 
-                      <p className="text-sm text-green-700" data-oid="3zwd_80">
+                      <p className="text-sm text-green-700" data-oid="692pxdf">
                         Perfil completo
                       </p>
                     </div>
@@ -527,15 +527,15 @@ const UserDetailsView = ({
                 ) : (
                   <div
                     className="mt-4 p-3 bg-amber-50 border border-amber-200 rounded-md"
-                    data-oid="db8oqcj"
+                    data-oid="znva-w5"
                   >
-                    <div className="flex items-center" data-oid="ncwhb-2">
+                    <div className="flex items-center" data-oid="124kv87">
                       <AlertTriangle
                         className="h-5 w-5 text-amber-500 mr-2 flex-shrink-0"
-                        data-oid="1ns4pal"
+                        data-oid="ub18pi-"
                       />
 
-                      <p className="text-sm text-amber-700" data-oid="7uo0:jx">
+                      <p className="text-sm text-amber-700" data-oid="vdd8qol">
                         Perfil incompleto
                       </p>
                     </div>
@@ -545,15 +545,15 @@ const UserDetailsView = ({
                 {user.role === "admin" && (
                   <div
                     className="mt-4 p-3 bg-amber-50 border border-amber-200 rounded-md"
-                    data-oid="y9fn.5g"
+                    data-oid="56lnax-"
                   >
-                    <div className="flex items-center" data-oid="n.ehovf">
+                    <div className="flex items-center" data-oid="2:.vdb_">
                       <AlertTriangle
                         className="h-5 w-5 text-amber-500 mr-2 flex-shrink-0"
-                        data-oid="gm1wv4v"
+                        data-oid="vr68f43"
                       />
 
-                      <p className="text-sm text-amber-700" data-oid="x7xjgwl">
+                      <p className="text-sm text-amber-700" data-oid="ffa1yrg">
                         Los administradores no pueden ser editados
                       </p>
                     </div>
@@ -562,19 +562,19 @@ const UserDetailsView = ({
               </div>
 
               {/* Panel derecho - Datos específicos según rol */}
-              <div className="lg:col-span-8" data-oid="pbgfsjp">
+              <div className="lg:col-span-8" data-oid="c4khh:c">
                 {/* Información de contacto */}
                 <div
                   className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6"
-                  data-oid="yt84ce7"
+                  data-oid="_4l1ph3"
                 >
-                  <div className="space-y-1" data-oid="4ry263g">
+                  <div className="space-y-1" data-oid="4z:erk6">
                     <div
                       className="flex items-center text-gray-500"
-                      data-oid="4b44696"
+                      data-oid="xpvngyu"
                     >
-                      <Mail className="h-4 w-4 mr-2" data-oid="5f_eog2" />
-                      <span className="text-sm" data-oid="ltueegp">
+                      <Mail className="h-4 w-4 mr-2" data-oid="k4zvcag" />
+                      <span className="text-sm" data-oid="a6teijb">
                         Email:
                       </span>
                     </div>
@@ -584,37 +584,37 @@ const UserDetailsView = ({
                         value={formData.email}
                         onChange={handleInputChange}
                         className="mt-1 border-gray-300 focus:border-gray-300 focus:ring focus:ring-red-200 focus:ring-opacity-50 rounded-md"
-                        data-oid="otbby91"
+                        data-oid="6-4117j"
                       />
                     ) : (
                       <p
                         className="text-sm font-medium pl-6"
-                        data-oid="s8j9ga6"
+                        data-oid="f5.i.81"
                       >
                         {user.email}
                       </p>
                     )}
                   </div>
 
-                  <div className="space-y-1" data-oid="upegbg-">
+                  <div className="space-y-1" data-oid=":c5cwf3">
                     <div
                       className="flex items-center text-gray-500"
-                      data-oid="r4b:.ok"
+                      data-oid="9tb5v9q"
                     >
-                      <Phone className="h-4 w-4 mr-2" data-oid="g.07zgo" />
-                      <span className="text-sm" data-oid="yj_q_nu">
+                      <Phone className="h-4 w-4 mr-2" data-oid="fs_sl:x" />
+                      <span className="text-sm" data-oid="rb01l8p">
                         Teléfono:
                       </span>
                     </div>
                     {isEditing ? (
-                      <div className="flex pl-6 gap-2" data-oid="vcez846">
+                      <div className="flex pl-6 gap-2" data-oid="teedf7w">
                         <Input
                           name="country_code"
                           value={formData.country_code}
                           onChange={handleInputChange}
                           className="mt-1 w-20 border-gray-300 focus:border-gray-300 focus:ring focus:ring-red-200 focus:ring-opacity-50 rounded-md"
                           placeholder="+52"
-                          data-oid="daqo5hc"
+                          data-oid="4if6d00"
                         />
 
                         <Input
@@ -622,13 +622,13 @@ const UserDetailsView = ({
                           value={formData.phone}
                           onChange={handleInputChange}
                           className="mt-1 flex-1 border-gray-300 focus:border-gray-300 focus:ring focus:ring-red-200 focus:ring-opacity-50 rounded-md"
-                          data-oid="_rkndtt"
+                          data-oid="fitw.6g"
                         />
                       </div>
                     ) : (
                       <p
                         className="text-sm font-medium pl-6"
-                        data-oid="9r:d.tx"
+                        data-oid="onmrrzj"
                       >
                         {user.role === "company"
                           ? user.company_profile &&
@@ -647,14 +647,14 @@ const UserDetailsView = ({
 
                 {user.role === "company" ? (
                   // Datos de empresa
-                  <div data-oid="90ibtx5">
+                  <div data-oid="jqza3am">
                     <h4
                       className="text-base font-medium mb-4 flex items-center border-b border-gray-200 pb-2"
-                      data-oid="xjeg6eb"
+                      data-oid="owdmzq."
                     >
                       <Building
                         className="h-5 w-5 mr-2 text-gray-500"
-                        data-oid="6wi:det"
+                        data-oid="3icz66n"
                       />
                       Datos de la Empresa
                     </h4>
@@ -662,45 +662,45 @@ const UserDetailsView = ({
                     {!isEditing ? (
                       <div
                         className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-3"
-                        data-oid="cdvoax7"
+                        data-oid="6m_z144"
                       >
-                        <div className="md:space-y-2" data-oid="60692y8">
-                          <div className="mb-3" data-oid="6l0lvq:">
+                        <div className="md:space-y-2" data-oid="kqpkqvi">
+                          <div className="mb-3" data-oid="mgm8mn4">
                             <p
                               className="text-sm font-medium text-gray-500"
-                              data-oid="ln_ra12"
+                              data-oid="udf17gb"
                             >
                               Nombre de la empresa
                             </p>
-                            <p className="font-medium" data-oid="t0d2c-m">
+                            <p className="font-medium" data-oid="742.cz3">
                               {user.company_profile &&
                               user.company_profile.companyName
                                 ? user.company_profile.companyName
                                 : "No especificado"}
                             </p>
                           </div>
-                          <div className="mb-3" data-oid="furouov">
+                          <div className="mb-3" data-oid="svhohew">
                             <p
                               className="text-sm font-medium text-gray-500"
-                              data-oid="9a6_7z5"
+                              data-oid="9g5t79p"
                             >
                               Ubicación
                             </p>
-                            <p className="font-medium" data-oid="f4:3sj4">
+                            <p className="font-medium" data-oid="fu0t.ni">
                               {user.company_profile &&
                               user.company_profile.location
                                 ? user.company_profile.location
                                 : "No especificado"}
                             </p>
                           </div>
-                          <div className="mb-3" data-oid="377mfo0">
+                          <div className="mb-3" data-oid="gpm7zl2">
                             <p
                               className="text-sm font-medium text-gray-500"
-                              data-oid="z8j3yff"
+                              data-oid="gnvux_p"
                             >
                               País
                             </p>
-                            <p className="font-medium" data-oid=":vw.2-e">
+                            <p className="font-medium" data-oid="dmc56.z">
                               {user.company_profile &&
                               user.company_profile.country
                                 ? user.company_profile.country
@@ -709,43 +709,43 @@ const UserDetailsView = ({
                           </div>
                         </div>
 
-                        <div className="md:space-y-2" data-oid="h1640ib">
-                          <div className="mb-3" data-oid="zaim28m">
+                        <div className="md:space-y-2" data-oid="glnmacq">
+                          <div className="mb-3" data-oid="a1xb86t">
                             <p
                               className="text-sm font-medium text-gray-500"
-                              data-oid="jyl3y7k"
+                              data-oid="f--xp0n"
                             >
                               Tamaño de la empresa
                             </p>
-                            <p className="font-medium" data-oid="a2pa01x">
+                            <p className="font-medium" data-oid="27pm7-s">
                               {user.company_profile &&
                               user.company_profile.companySize
                                 ? user.company_profile.companySize
                                 : "No especificado"}
                             </p>
                           </div>
-                          <div className="mb-3" data-oid="azno09t">
+                          <div className="mb-3" data-oid="ah3qyf8">
                             <p
                               className="text-sm font-medium text-gray-500"
-                              data-oid="a:-ht:p"
+                              data-oid="1vxrv0v"
                             >
                               ¿Cómo nos conoció?
                             </p>
-                            <p className="font-medium" data-oid="2bd6grc">
+                            <p className="font-medium" data-oid="sdtixc5">
                               {user.company_profile &&
                               user.company_profile.hearAbout
                                 ? user.company_profile.hearAbout
                                 : "No especificado"}
                             </p>
                           </div>
-                          <div className="mb-3" data-oid="ol797n2">
+                          <div className="mb-3" data-oid="1muri84">
                             <p
                               className="text-sm font-medium text-gray-500"
-                              data-oid="_kg0igp"
+                              data-oid="_80s8f0"
                             >
                               Información adicional
                             </p>
-                            <p className="font-medium" data-oid="gd15bz3">
+                            <p className="font-medium" data-oid="eciwi8d">
                               {user.company_profile &&
                               user.company_profile.additionalInfo
                                 ? user.company_profile.additionalInfo
@@ -758,13 +758,13 @@ const UserDetailsView = ({
                       // Modo edición para empresa
                       <div
                         className="grid grid-cols-1 md:grid-cols-2 gap-6"
-                        data-oid="b0nl0io"
+                        data-oid="548nk5c"
                       >
-                        <div className="space-y-4" data-oid="jcfw-r1">
-                          <div data-oid="psip:.x">
+                        <div className="space-y-4" data-oid="kzb8p-q">
+                          <div data-oid="hnf42q_">
                             <label
                               className="text-sm font-medium text-gray-500"
-                              data-oid="ic9dgj:"
+                              data-oid="gfm:x2_"
                             >
                               Nombre de la empresa
                             </label>
@@ -773,13 +773,13 @@ const UserDetailsView = ({
                               value={formData.companyName}
                               onChange={handleInputChange}
                               className="mt-1 border-gray-300 focus:border-gray-300 focus:ring focus:ring-red-200 focus:ring-opacity-50 rounded-md"
-                              data-oid="py69ec-"
+                              data-oid="exr1v65"
                             />
                           </div>
-                          <div data-oid="2j1i4dg">
+                          <div data-oid="h96k9gz">
                             <label
                               className="text-sm font-medium text-gray-500"
-                              data-oid="511208l"
+                              data-oid="aicd5w7"
                             >
                               Ubicación
                             </label>
@@ -788,13 +788,13 @@ const UserDetailsView = ({
                               value={formData.location}
                               onChange={handleInputChange}
                               className="mt-1 border-gray-300 focus:border-gray-300 focus:ring focus:ring-red-200 focus:ring-opacity-50 rounded-md"
-                              data-oid="qssxqk7"
+                              data-oid="3c_zw--"
                             />
                           </div>
-                          <div data-oid="fct6pv9">
+                          <div data-oid="6r:.hsb">
                             <label
                               className="text-sm font-medium text-gray-500"
-                              data-oid="c1gk.1h"
+                              data-oid="pe17vmg"
                             >
                               País
                             </label>
@@ -803,16 +803,16 @@ const UserDetailsView = ({
                               value={formData.country}
                               onChange={handleInputChange}
                               className="mt-1 border-gray-300 focus:border-gray-300 focus:ring focus:ring-red-200 focus:ring-opacity-50 rounded-md"
-                              data-oid="-_cjl49"
+                              data-oid="1n0h.cx"
                             />
                           </div>
                         </div>
 
-                        <div className="space-y-4" data-oid="dwennp:">
-                          <div data-oid="c3xwuon">
+                        <div className="space-y-4" data-oid="x0:l_wy">
+                          <div data-oid="t2qq_u0">
                             <label
                               className="text-sm font-medium text-gray-500"
-                              data-oid="l0oo.dx"
+                              data-oid="9gs28a2"
                             >
                               Tamaño de la empresa
                             </label>
@@ -821,13 +821,13 @@ const UserDetailsView = ({
                               value={formData.companySize}
                               onChange={handleInputChange}
                               className="mt-1 border-gray-300 focus:border-gray-300 focus:ring focus:ring-red-200 focus:ring-opacity-50 rounded-md"
-                              data-oid="ns3_yy5"
+                              data-oid="cbjyqrj"
                             />
                           </div>
-                          <div data-oid="ave8r18">
+                          <div data-oid="qnkg4t6">
                             <label
                               className="text-sm font-medium text-gray-500"
-                              data-oid="1xo9i01"
+                              data-oid="w8y56-2"
                             >
                               ¿Cómo nos conoció?
                             </label>
@@ -836,13 +836,13 @@ const UserDetailsView = ({
                               value={formData.hearAbout}
                               onChange={handleInputChange}
                               className="mt-1 border-gray-300 focus:border-gray-300 focus:ring focus:ring-red-200 focus:ring-opacity-50 rounded-md"
-                              data-oid="iucshl:"
+                              data-oid="ydavd6m"
                             />
                           </div>
-                          <div data-oid="bpaowqd">
+                          <div data-oid="kql8ln5">
                             <label
                               className="text-sm font-medium text-gray-500"
-                              data-oid="urr.uj7"
+                              data-oid="nhim0f."
                             >
                               Información adicional
                             </label>
@@ -852,7 +852,7 @@ const UserDetailsView = ({
                               onChange={handleInputChange}
                               className="mt-1 border-gray-300 focus:border-gray-300 focus:ring focus:ring-red-200 focus:ring-opacity-50 rounded-md"
                               rows={3}
-                              data-oid="7z9y.hp"
+                              data-oid="_dtl_fm"
                             />
                           </div>
                         </div>
@@ -862,15 +862,15 @@ const UserDetailsView = ({
                     {/* Información del representante */}
                     <div
                       className="mt-5 pt-4 border-t border-gray-200"
-                      data-oid="pdy7me:"
+                      data-oid="d_hnj_g"
                     >
                       <h4
                         className="text-base font-medium mb-4 flex items-center"
-                        data-oid="ioebdva"
+                        data-oid=":8gyzsl"
                       >
                         <UserIcon
                           className="h-4 w-4 mr-2 text-gray-500"
-                          data-oid="659.s_c"
+                          data-oid="5-1rh-r"
                         />
                         Información del Representante
                       </h4>
@@ -878,16 +878,16 @@ const UserDetailsView = ({
                       {!isEditing ? (
                         <div
                           className="grid grid-cols-1 md:grid-cols-3 gap-x-6 gap-y-3"
-                          data-oid="2f8dy1n"
+                          data-oid="3dgh9fr"
                         >
-                          <div className="mb-3" data-oid="gf.tdc.">
+                          <div className="mb-3" data-oid="u:obhgw">
                             <p
                               className="text-sm font-medium text-gray-500"
-                              data-oid="hxw4l1u"
+                              data-oid="rrfqvph"
                             >
                               Nombre
                             </p>
-                            <p className="font-medium" data-oid="263p7eh">
+                            <p className="font-medium" data-oid="-p0r95v">
                               {user.company_profile &&
                               user.company_profile.representativeInfo &&
                               user.company_profile.representativeInfo.firstName
@@ -896,14 +896,14 @@ const UserDetailsView = ({
                                 : "No especificado"}
                             </p>
                           </div>
-                          <div className="mb-3" data-oid="i9:rmlr">
+                          <div className="mb-3" data-oid="9p5r20w">
                             <p
                               className="text-sm font-medium text-gray-500"
-                              data-oid="rqe1:qw"
+                              data-oid="hgci.6a"
                             >
                               Apellido
                             </p>
-                            <p className="font-medium" data-oid="e:1fezx">
+                            <p className="font-medium" data-oid="22azg._">
                               {user.company_profile &&
                               user.company_profile.representativeInfo &&
                               user.company_profile.representativeInfo.lastName
@@ -912,14 +912,14 @@ const UserDetailsView = ({
                                 : "No especificado"}
                             </p>
                           </div>
-                          <div className="mb-3" data-oid="c64fszj">
+                          <div className="mb-3" data-oid="1g.fudv">
                             <p
                               className="text-sm font-medium text-gray-500"
-                              data-oid="s927lox"
+                              data-oid="twuzqds"
                             >
                               Email
                             </p>
-                            <p className="font-medium" data-oid="-zldfen">
+                            <p className="font-medium" data-oid="xs1uqdj">
                               {user.company_profile &&
                               user.company_profile.representativeInfo &&
                               user.company_profile.representativeInfo.email
@@ -931,12 +931,12 @@ const UserDetailsView = ({
                       ) : (
                         <div
                           className="grid grid-cols-1 md:grid-cols-3 gap-6"
-                          data-oid="gp981jg"
+                          data-oid="qdnxkyf"
                         >
-                          <div data-oid="j-jbnvf">
+                          <div data-oid="0lb38fr">
                             <label
                               className="text-sm font-medium text-gray-500"
-                              data-oid="xc1o2eb"
+                              data-oid="kl.8bo:"
                             >
                               Nombre
                             </label>
@@ -945,13 +945,13 @@ const UserDetailsView = ({
                               value={formData.representativeFirstName}
                               onChange={handleInputChange}
                               className="mt-1 border-gray-300 focus:border-gray-300 focus:ring focus:ring-red-200 focus:ring-opacity-50 rounded-md"
-                              data-oid=":3mocc:"
+                              data-oid="2ow..o."
                             />
                           </div>
-                          <div data-oid="em8.z:0">
+                          <div data-oid=".8ppsvl">
                             <label
                               className="text-sm font-medium text-gray-500"
-                              data-oid="_iqan1i"
+                              data-oid="w3hwsc-"
                             >
                               Apellido
                             </label>
@@ -960,13 +960,13 @@ const UserDetailsView = ({
                               value={formData.representativeLastName}
                               onChange={handleInputChange}
                               className="mt-1 border-gray-300 focus:border-gray-300 focus:ring focus:ring-red-200 focus:ring-opacity-50 rounded-md"
-                              data-oid="_y422:7"
+                              data-oid="7evkqnd"
                             />
                           </div>
-                          <div data-oid="6viy-kq">
+                          <div data-oid="ijy664b">
                             <label
                               className="text-sm font-medium text-gray-500"
-                              data-oid="w7t-w02"
+                              data-oid="ul7i959"
                             >
                               Email
                             </label>
@@ -975,7 +975,7 @@ const UserDetailsView = ({
                               value={formData.representativeEmail}
                               onChange={handleInputChange}
                               className="mt-1 border-gray-300 focus:border-gray-300 focus:ring focus:ring-red-200 focus:ring-opacity-50 rounded-md"
-                              data-oid="9:na67t"
+                              data-oid="shib4rq"
                             />
                           </div>
                         </div>
@@ -984,14 +984,14 @@ const UserDetailsView = ({
                   </div>
                 ) : (
                   // Datos de usuario regular
-                  <div data-oid="6r5mc5n">
+                  <div data-oid="1896602">
                     <h4
                       className="text-base font-medium mb-4 flex items-center border-b border-gray-200 pb-2"
-                      data-oid="i5:ldju"
+                      data-oid="js.93qi"
                     >
                       <FileText
                         className="h-5 w-5 mr-2 text-gray-500"
-                        data-oid="383c0k5"
+                        data-oid="h7c2-89"
                       />
                       Datos Personales
                     </h4>
@@ -999,55 +999,55 @@ const UserDetailsView = ({
                     {!isEditing ? (
                       <div
                         className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-3"
-                        data-oid="xv.bmgq"
+                        data-oid="q3atb1i"
                       >
-                        <div className="mb-3" data-oid="4ytv7uz">
+                        <div className="mb-3" data-oid="f2v.y0g">
                           <p
                             className="text-sm font-medium text-gray-500"
-                            data-oid="p3r3vur"
+                            data-oid="zf:74.y"
                           >
                             Título
                           </p>
-                          <p className="font-medium" data-oid="2umqrtz">
+                          <p className="font-medium" data-oid="a6h-6rh">
                             {user.profile && user.profile.title
                               ? user.profile.title
                               : "No especificado"}
                           </p>
                         </div>
-                        <div className="mb-3" data-oid="1v8gawx">
+                        <div className="mb-3" data-oid="e::x1p1">
                           <p
                             className="text-sm font-medium text-gray-500"
-                            data-oid="q1sz_gj"
+                            data-oid=".bqaekt"
                           >
                             Nombre
                           </p>
-                          <p className="font-medium" data-oid="cx9b7-l">
+                          <p className="font-medium" data-oid="66_9du6">
                             {user.profile && user.profile.first_name
                               ? user.profile.first_name
                               : "No especificado"}
                           </p>
                         </div>
-                        <div className="mb-3" data-oid="24a3hko">
+                        <div className="mb-3" data-oid="-5mdeum">
                           <p
                             className="text-sm font-medium text-gray-500"
-                            data-oid="fv4ykql"
+                            data-oid="r9cys-h"
                           >
                             Apellido
                           </p>
-                          <p className="font-medium" data-oid="vpgpgbg">
+                          <p className="font-medium" data-oid=":bx584:">
                             {user.profile && user.profile.last_name
                               ? user.profile.last_name
                               : "No especificado"}
                           </p>
                         </div>
-                        <div className="mb-3" data-oid="03a7xfb">
+                        <div className="mb-3" data-oid="25tct5j">
                           <p
                             className="text-sm font-medium text-gray-500"
-                            data-oid="kfh6q5_"
+                            data-oid="cc9fsfo"
                           >
                             Dirección
                           </p>
-                          <p className="font-medium" data-oid="a0pdtk9">
+                          <p className="font-medium" data-oid="e_57y7-">
                             {user.profile && user.profile.address
                               ? user.profile.address
                               : "No especificado"}
@@ -1057,13 +1057,13 @@ const UserDetailsView = ({
                     ) : (
                       <div
                         className="grid grid-cols-1 md:grid-cols-2 gap-6"
-                        data-oid=".2u7ffu"
+                        data-oid="driy-jy"
                       >
-                        <div className="space-y-4" data-oid="teocs0-">
-                          <div data-oid="w0nj0_y">
+                        <div className="space-y-4" data-oid="nim4m71">
+                          <div data-oid="r9csmiv">
                             <label
                               className="text-sm font-medium text-gray-500"
-                              data-oid="bl69xcr"
+                              data-oid="mwh6:cp"
                             >
                               Título
                             </label>
@@ -1073,40 +1073,40 @@ const UserDetailsView = ({
                               onValueChange={(value) =>
                                 setFormData({ ...formData, title: value })
                               }
-                              data-oid="z4p9_17"
+                              data-oid="de-erit"
                             >
                               <SelectTrigger
                                 className="border-gray-300 focus:border-gray-300 focus:ring focus:ring-red-200 focus:ring-opacity-50 rounded-md"
-                                data-oid="q405bn6"
+                                data-oid="f5-hq8u"
                               >
                                 <SelectValue
                                   placeholder="Seleccionar título"
-                                  data-oid="3x5n56h"
+                                  data-oid="bh84ktw"
                                 />
                               </SelectTrigger>
-                              <SelectContent data-oid="du3c6a3">
-                                <SelectItem value="none" data-oid="v8it2js">
+                              <SelectContent data-oid="-y6::vb">
+                                <SelectItem value="none" data-oid="bd_dahb">
                                   Ninguno
                                 </SelectItem>
-                                <SelectItem value="Mr." data-oid="z.5-tlq">
+                                <SelectItem value="Mr." data-oid="o.o8q8-">
                                   Sr.
                                 </SelectItem>
-                                <SelectItem value="Mrs." data-oid="jzyap--">
+                                <SelectItem value="Mrs." data-oid="d16k37q">
                                   Sra.
                                 </SelectItem>
-                                <SelectItem value="Ms." data-oid="-yymkhq">
+                                <SelectItem value="Ms." data-oid="_97n9q_">
                                   Srta.
                                 </SelectItem>
-                                <SelectItem value="Dr." data-oid="in-zhm8">
+                                <SelectItem value="Dr." data-oid="vrzqz1p">
                                   Dr.
                                 </SelectItem>
                               </SelectContent>
                             </Select>
                           </div>
-                          <div data-oid="ux1ndz-">
+                          <div data-oid="jf71t4b">
                             <label
                               className="text-sm font-medium text-gray-500"
-                              data-oid="mhvw5d4"
+                              data-oid="zr.kg:b"
                             >
                               Nombre
                             </label>
@@ -1115,16 +1115,16 @@ const UserDetailsView = ({
                               value={formData.first_name}
                               onChange={handleInputChange}
                               className="mt-1 border-gray-300 focus:border-gray-300 focus:ring focus:ring-red-200 focus:ring-opacity-50 rounded-md"
-                              data-oid="rx07ac8"
+                              data-oid="lc8o-_j"
                             />
                           </div>
                         </div>
 
-                        <div className="space-y-4" data-oid="egpn2qh">
-                          <div data-oid="tkyo77r">
+                        <div className="space-y-4" data-oid="p5--6cr">
+                          <div data-oid="dyq1-sf">
                             <label
                               className="text-sm font-medium text-gray-500"
-                              data-oid="gxk-6lj"
+                              data-oid="6.cq._x"
                             >
                               Apellido
                             </label>
@@ -1133,13 +1133,13 @@ const UserDetailsView = ({
                               value={formData.last_name}
                               onChange={handleInputChange}
                               className="mt-1 border-gray-300 focus:border-gray-300 focus:ring focus:ring-red-200 focus:ring-opacity-50 rounded-md"
-                              data-oid="nm:pues"
+                              data-oid="tax9sm3"
                             />
                           </div>
-                          <div data-oid="4v-3:0e">
+                          <div data-oid="b5c7c_7">
                             <label
                               className="text-sm font-medium text-gray-500"
-                              data-oid="b:lusg."
+                              data-oid="7nh5_u0"
                             >
                               Dirección
                             </label>
@@ -1149,7 +1149,7 @@ const UserDetailsView = ({
                               onChange={handleInputChange}
                               className="mt-1 border-gray-300 focus:border-gray-300 focus:ring focus:ring-red-200 focus:ring-opacity-50 rounded-md"
                               rows={3}
-                              data-oid="qhb5_of"
+                              data-oid="aupld94"
                             />
                           </div>
                         </div>
@@ -1165,86 +1165,86 @@ const UserDetailsView = ({
         {/* Estadísticas y Preferencias */}
         <div
           className="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-6"
-          data-oid=".2k6n9a"
+          data-oid="9.lefeo"
         >
           {/* Estadísticas de actividad */}
           <Card
             className="shadow-md hover:shadow-lg transition-shadow overflow-hidden"
-            data-oid="r_u.nzi"
+            data-oid="k4tru_v"
           >
-            <CardHeader className="bg-gray-50 border-b pb-3" data-oid="fk9px2x">
+            <CardHeader className="bg-gray-50 border-b pb-3" data-oid="k6un3m4">
               <CardTitle
                 className="flex items-center text-lg"
-                data-oid="g9wnoff"
+                data-oid="wj9d9i6"
               >
                 <BarChart
                   className="h-5 w-5 mr-2 text-gray-500"
-                  data-oid="ay936p2"
+                  data-oid="9dqpx3v"
                 />
                 Estadísticas
               </CardTitle>
             </CardHeader>
-            <CardContent className="pt-6 pb-6" data-oid="e9wbh6v">
-              <div className="space-y-4" data-oid="czae0zu">
+            <CardContent className="pt-6 pb-6" data-oid="6wk0djb">
+              <div className="space-y-4" data-oid="qka9itv">
                 <div
                   className="flex items-center justify-between py-2 border-b border-gray-100"
-                  data-oid="a1h5ntf"
+                  data-oid="254q9oi"
                 >
-                  <div className="flex items-center" data-oid="8g-ee_x">
+                  <div className="flex items-center" data-oid="6uol9ye">
                     <CreditCard
                       className="h-4 w-4 mr-3 text-gray-500"
-                      data-oid="jdwcuxv"
+                      data-oid="0b.bjza"
                     />
 
-                    <span className="text-sm text-gray-700" data-oid="g0.7utn">
+                    <span className="text-sm text-gray-700" data-oid="fz4jf7_">
                       Total gastado:
                     </span>
                   </div>
                   <span
                     className="font-medium text-gray-900"
-                    data-oid="1vu3rn4"
+                    data-oid="et2wevm"
                   >
                     {user.totalSpent ? `${user.totalSpent.toFixed(2)}€` : "N/A"}
                   </span>
                 </div>
                 <div
                   className="flex items-center justify-between py-2 border-b border-gray-100"
-                  data-oid="i8u::4t"
+                  data-oid="esi3pjf"
                 >
-                  <div className="flex items-center" data-oid="_91l_0r">
+                  <div className="flex items-center" data-oid="bvig.9o">
                     <BookOpen
                       className="h-4 w-4 mr-3 text-gray-500"
-                      data-oid="vwebaw0"
+                      data-oid="w2wp:6r"
                     />
 
-                    <span className="text-sm text-gray-700" data-oid="sv2ts60">
+                    <span className="text-sm text-gray-700" data-oid="g7botpf">
                       Reservas totales:
                     </span>
                   </div>
                   <span
                     className="font-medium text-gray-900"
-                    data-oid=":.ykvip"
+                    data-oid="c8x-aic"
                   >
                     {user.bookingsCount || 0}
                   </span>
                 </div>
                 <div
                   className="flex items-center justify-between py-2"
-                  data-oid="v-k:vf-"
+                  data-oid="7mxw1-u"
                 >
-                  <div className="flex items-center" data-oid="71gv64f">
+                  <div className="flex items-center" data-oid="urkrs8g">
                     <Clock
                       className="h-4 w-4 mr-3 text-gray-500"
-                      data-oid="4ff225k"
+                      data-oid="wrf157d"
                     />
 
-                    <span className="text-sm text-gray-700" data-oid="x3lvy_s">
+                    <span className="text-sm text-gray-700" data-oid="n2_yigx">
                       Última reserva:
                     </span>
                   </div>
                   <span
                     className="font-medium text-gray-900"
-                    data-oid="p_f010."
+                    data-oid="mjjq0at"
                   >
                     {user.lastBookingDate || "N/A"}
                   </span>
@@ -1256,21 +1256,21 @@ const UserDetailsView = ({
                 user.favoriteDestinations.length > 0 && (
                   <div
                     className="mt-6 pt-4 border-t border-gray-200"
-                    data-oid="mhtm7.3"
+                    data-oid="poqj:4:"
                   >
                     <h4
                       className="text-sm font-semibold uppercase tracking-wider text-gray-500 mb-3"
-                      data-oid="0:76l_:"
+                      data-oid="cppit:r"
                     >
                       Destinos favoritos
                     </h4>
-                    <div className="flex flex-wrap gap-2" data-oid="n.5sgn9">
+                    <div className="flex flex-wrap gap-2" data-oid="tfxgezj">
                       {user.favoriteDestinations.map((destination, index) => (
                         <Badge
                           key={index}
                           variant="secondary"
                           className="px-2 py-1 bg-gray-100 text-blue-700 hover:bg-gray-200"
-                          data-oid="x1e2j27"
+                          data-oid="kqo86g3"
                         >
                           {destination}
                         </Badge>
@@ -1284,61 +1284,61 @@ const UserDetailsView = ({
           {/* Preferencias */}
           <Card
             className="shadow-md hover:shadow-lg transition-shadow overflow-hidden"
-            data-oid="r2b6wmu"
+            data-oid="dm-epbz"
           >
-            <CardHeader className="bg-gray-50 border-b pb-3" data-oid="p6y_msd">
+            <CardHeader className="bg-gray-50 border-b pb-3" data-oid=":bxgn71">
               <CardTitle
                 className="flex items-center text-lg"
-                data-oid="_j:vswy"
+                data-oid="ap:67_q"
               >
                 <Award
                   className="h-5 w-5 mr-2 text-gray-500"
-                  data-oid="eccgn0j"
+                  data-oid="6ds33a9"
                 />
                 Etiquetas y Preferencias
               </CardTitle>
             </CardHeader>
-            <CardContent className="pt-6 pb-6" data-oid="akfyaix">
-              <div className="space-y-4" data-oid="8d1:i28">
+            <CardContent className="pt-6 pb-6" data-oid="68rhg3k">
+              <div className="space-y-4" data-oid="mfye34:">
                 <div
                   className="flex items-center justify-between py-2 border-b border-gray-100"
-                  data-oid="q4ulrnv"
+                  data-oid="6jf4c4a"
                 >
-                  <span className="text-sm text-gray-700" data-oid="1vthbjx">
+                  <span className="text-sm text-gray-700" data-oid="y4nl0xw">
                     Tipo de vehículo:
                   </span>
                   <span
                     className="font-medium text-gray-900"
-                    data-oid="h7y1snt"
+                    data-oid="hh3o1qr"
                   >
                     {user.preferences?.vehicleType || "No especificado"}
                   </span>
                 </div>
                 <div
                   className="flex items-center justify-between py-2 border-b border-gray-100"
-                  data-oid="rcf997i"
+                  data-oid="9jj9.ek"
                 >
-                  <span className="text-sm text-gray-700" data-oid="ajcctpq">
+                  <span className="text-sm text-gray-700" data-oid="7_qb-60">
                     Método de pago:
                   </span>
                   <span
                     className="font-medium text-gray-900"
-                    data-oid="0g6y4zi"
+                    data-oid="b7wemhp"
                   >
                     {user.preferences?.paymentMethod || "No especificado"}
                   </span>
                 </div>
                 <div
                   className="flex items-center justify-between py-2"
-                  data-oid="sxf6:_m"
+                  data-oid="6yybcrq"
                 >
-                  <span className="text-sm text-gray-700" data-oid="ll529bp">
+                  <span className="text-sm text-gray-700" data-oid="mdkc1k9">
                     Notificaciones:
                   </span>
                   <Badge
                     variant="outline"
                     className={`${user.preferences?.notifications ? "bg-green-50 text-green-700 border-green-200" : "bg-gray-100 text-gray-700 border-gray-200"}`}
-                    data-oid="rtqni78"
+                    data-oid="p5y7n_-"
                   >
                     {user.preferences?.notifications
                       ? "Activadas"
@@ -1350,15 +1350,15 @@ const UserDetailsView = ({
               {/* Etiquetas asignadas */}
               <div
                 className="mt-6 pt-4 border-t border-gray-200"
-                data-oid="xj9a.:_"
+                data-oid="c_0j3ru"
               >
                 <h4
                   className="text-sm font-semibold uppercase tracking-wider text-gray-500 mb-3"
-                  data-oid="hlc-:rb"
+                  data-oid=".905gi."
                 >
                   Etiquetas asignadas
                 </h4>
-                <div className="flex flex-wrap gap-2 mb-4" data-oid="5:.ylre">
+                <div className="flex flex-wrap gap-2 mb-4" data-oid="r6q3smf">
                   {user.tags && user.tags.length > 0 ? (
                     user.tags.map((tag, index) => (
                       <Badge
@@ -1366,17 +1366,17 @@ const UserDetailsView = ({
                         variant="outline"
                         className="cursor-pointer group px-3 py-1 border-gray-300 flex items-center"
                         onClick={() => handleRemoveTag(tag)}
-                        data-oid="wm8f.i7"
+                        data-oid="l5.529x"
                       >
                         {tag}
                         <X
                           className="ml-1 h-3 w-3 opacity-60 group-hover:opacity-100"
-                          data-oid="5..-z59"
+                          data-oid="gv7asn8"
                         />
                       </Badge>
                     ))
                   ) : (
-                    <p className="text-sm text-gray-500" data-oid="lokiaxk">
+                    <p className="text-sm text-gray-500" data-oid="g2mflj.">
                       Sin etiquetas asignadas
                     </p>
                   )}
@@ -1384,11 +1384,11 @@ const UserDetailsView = ({
 
                 <h4
                   className="text-sm font-semibold uppercase tracking-wider text-gray-500 mb-3 mt-4"
-                  data-oid="0pyjk5d"
+                  data-oid="pmbzcc_"
                 >
                   Asignar etiquetas
                 </h4>
-                <div className="flex flex-wrap gap-2" data-oid="2dsjetq">
+                <div className="flex flex-wrap gap-2" data-oid="w94svr8">
                   {availableTags
                     .filter((tag) => !user.tags?.includes(tag))
                     .map((tag, index) => (
@@ -1397,7 +1397,7 @@ const UserDetailsView = ({
                         variant="secondary"
                         className="cursor-pointer hover:bg-gray-200 px-3 py-1 flex items-center"
                         onClick={() => handleAddTag(tag)}
-                        data-oid="lny22_d"
+                        data-oid="ow_tci8"
                       >
                         + {tag}
                       </Badge>
@@ -1411,59 +1411,59 @@ const UserDetailsView = ({
         {/* Historial de Reservas */}
         <Card
           className="shadow-md hover:shadow-lg transition-shadow overflow-hidden"
-          data-oid="9ka2fm:"
+          data-oid="jefil57"
         >
-          <CardHeader className="bg-gray-50 border-b pb-3" data-oid="txc34:p">
-            <CardTitle className="flex items-center text-lg" data-oid="q1dz66w">
+          <CardHeader className="bg-gray-50 border-b pb-3" data-oid="5mvae0l">
+            <CardTitle className="flex items-center text-lg" data-oid=".bppw1e">
               <BookOpen
                 className="h-5 w-5 mr-2 text-gray-500"
-                data-oid="g7eu_7c"
+                data-oid="le:jwu2"
               />
               Historial de Reservas
             </CardTitle>
-            <CardDescription data-oid="b_sygft">
+            <CardDescription data-oid="yca62:i">
               Últimas reservas realizadas por el usuario
             </CardDescription>
           </CardHeader>
-          <CardContent className="pt-6 pb-6" data-oid="r4yierq">
+          <CardContent className="pt-6 pb-6" data-oid="owe2eg-">
             {user.bookingsCount && user.bookingsCount > 0 ? (
-              <div className="overflow-x-auto" data-oid="r7.9xcn">
-                <table className="w-full" data-oid="vp4cir3">
-                  <thead data-oid="6c_t:n.">
-                    <tr className="border-b" data-oid="ywph3s7">
+              <div className="overflow-x-auto" data-oid="omyohqx">
+                <table className="w-full" data-oid="jg536vv">
+                  <thead data-oid="z.trlki">
+                    <tr className="border-b" data-oid="75_lv1.">
                       <th
                         className="py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                        data-oid="mlg.xv0"
+                        data-oid="oj4y6:p"
                       >
                         ID
                       </th>
                       <th
                         className="py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                        data-oid="sa6wwg:"
+                        data-oid="m4:r26e"
                       >
                         Destino
                       </th>
                       <th
                         className="py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                        data-oid="vb5u4bf"
+                        data-oid="wjp.k1y"
                       >
                         Fecha
                       </th>
                       <th
                         className="py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                        data-oid="_t1jxj6"
+                        data-oid="131h_9m"
                       >
                         Vehículo
                       </th>
                       <th
                         className="py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                        data-oid="v68rhe6"
+                        data-oid="bvdwetm"
                       >
                         Importe
                       </th>
                       <th
                         className="py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                        data-oid="_yj4wio"
+                        data-oid="_p020d_"
                       >
                         Estado
                       </th>
@@ -1471,45 +1471,45 @@ const UserDetailsView = ({
                   </thead>
                   <tbody
                     className="divide-y divide-gray-200"
-                    data-oid="1qbh5kj"
+                    data-oid="f6z5vep"
                   >
                     {/* Aquí irían los datos de reservas (mockup) */}
-                    <tr className="hover:bg-gray-50" data-oid="7cfbl_i">
+                    <tr className="hover:bg-gray-50" data-oid="0rvu7p6">
                       <td
                         className="py-4 text-sm text-gray-500"
-                        data-oid="m7fxn.f"
+                        data-oid="-a4ik1a"
                       >
                         R-12345
                       </td>
                       <td
                         className="py-4 text-sm text-gray-900"
-                        data-oid="hp46pp:"
+                        data-oid=":5ja_f:"
                       >
                         Madrid - Barcelona
                       </td>
                       <td
                         className="py-4 text-sm text-gray-500"
-                        data-oid="d4:4ptd"
+                        data-oid="mcjelm9"
                       >
                         15/06/2024
                       </td>
                       <td
                         className="py-4 text-sm text-gray-500"
-                        data-oid="7l:nqlq"
+                        data-oid="_g7uyxh"
                       >
                         Mercedes-Benz Clase S
                       </td>
                       <td
                         className="py-4 text-sm text-gray-500"
-                        data-oid="itfq470"
+                        data-oid="z_ap9-d"
                       >
                         450€
                       </td>
-                      <td className="py-4" data-oid="k.n8ott">
+                      <td className="py-4" data-oid="3vl.en7">
                         <Badge
                           variant="secondary"
                           className="bg-gray-200 text-green-800 hover:bg-gray-200"
-                          data-oid="uwsbui3"
+                          data-oid="ysl3xsx"
                         >
                           Completado
                         </Badge>
@@ -1519,14 +1519,14 @@ const UserDetailsView = ({
                 </table>
               </div>
             ) : (
-              <div className="py-10 text-center" data-oid="n3551y-">
-                <div className="mb-4 flex justify-center" data-oid="a:las57">
+              <div className="py-10 text-center" data-oid="jw033n6">
+                <div className="mb-4 flex justify-center" data-oid="nxa.k24">
                   <BookOpen
                     className="h-12 w-12 text-gray-300"
-                    data-oid="ra7dkxi"
+                    data-oid="p-tmbyz"
                   />
                 </div>
-                <p className="text-gray-500" data-oid="d1obejp">
+                <p className="text-gray-500" data-oid="1r24c5y">
                   No hay reservas registradas
                 </p>
               </div>

@@ -321,9 +321,9 @@ const NotificationsMenu: React.FC<NotificationsMenuProps> = ({
         return (
           <div
             className="w-8 h-8 rounded-full bg-gray-200 text-gray-600 flex items-center justify-center"
-            data-oid="lfz_cef"
+            data-oid="nq-r4f2"
           >
-            <span className="text-xs" data-oid="0_9v2qh">
+            <span className="text-xs" data-oid="qdv-c95">
               CS
             </span>
           </div>
@@ -333,9 +333,9 @@ const NotificationsMenu: React.FC<NotificationsMenuProps> = ({
         return (
           <div
             className="w-8 h-8 rounded-full bg-gray-200 text-green-600 flex items-center justify-center"
-            data-oid="znzckv6"
+            data-oid="_bagfpg"
           >
-            <span className="text-xs" data-oid="h2im:.0">
+            <span className="text-xs" data-oid=".:e_ey8">
               NR
             </span>
           </div>
@@ -345,9 +345,9 @@ const NotificationsMenu: React.FC<NotificationsMenuProps> = ({
         return (
           <div
             className="w-8 h-8 rounded-full bg-gray-200 text-gray-600 flex items-center justify-center"
-            data-oid="6:b775_"
+            data-oid="5wu137i"
           >
-            <span className="text-xs" data-oid="s-d.qtw">
+            <span className="text-xs" data-oid=".ou:nwg">
               RC
             </span>
           </div>
@@ -357,9 +357,9 @@ const NotificationsMenu: React.FC<NotificationsMenuProps> = ({
         return (
           <div
             className="w-8 h-8 rounded-full bg-gray-200 text-gray-600 flex items-center justify-center"
-            data-oid="wr9qkvu"
+            data-oid="bg:wbe7"
           >
-            <span className="text-xs" data-oid="lboksgn">
+            <span className="text-xs" data-oid="p5pg7lb">
               PO
             </span>
           </div>
@@ -369,9 +369,9 @@ const NotificationsMenu: React.FC<NotificationsMenuProps> = ({
         return (
           <div
             className="w-8 h-8 rounded-full bg-gray-100 text-gray-600 flex items-center justify-center"
-            data-oid="widwzir"
+            data-oid="v4ov2.o"
           >
-            <span className="text-xs" data-oid="0x__9ln">
+            <span className="text-xs" data-oid="1337qsy">
               SYS
             </span>
           </div>
@@ -380,21 +380,21 @@ const NotificationsMenu: React.FC<NotificationsMenuProps> = ({
   };
 
   return (
-    <div className={`relative ${className}`} ref={menuRef} data-oid="-pz8xo9">
+    <div className={`relative ${className}`} ref={menuRef} data-oid="f1bxxlg">
       {/* Botón de la campana */}
       <button
         className="relative p-2 rounded-full hover:bg-gray-100 focus:outline-none"
         onClick={toggleMenu}
         aria-label="Notificaciones"
-        data-oid="8mh7o6v"
+        data-oid=":9jbbve"
       >
-        <BellIcon className="h-6 w-6 text-gray-600" data-oid="u6r22c6" />
+        <BellIcon className="h-6 w-6 text-gray-600" data-oid="c0wazni" />
 
         {/* Indicador de notificaciones no leídas */}
         {unreadCount > 0 && (
           <span
             className="absolute top-1 right-1 h-5 w-5 flex items-center justify-center text-xs font-semibold text-white bg-gray-1000 rounded-full"
-            data-oid="w:cqf92"
+            data-oid="-sp.3i7"
           >
             {unreadCount > 9 ? "9+" : unreadCount}
           </span>
@@ -405,54 +405,54 @@ const NotificationsMenu: React.FC<NotificationsMenuProps> = ({
       {isOpen && (
         <div
           className="absolute right-0 z-50 mt-2 w-80 bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5 py-1 text-sm"
-          data-oid="oho0btn"
+          data-oid="kt2u45k"
         >
           <div
             className="p-3 flex justify-between items-center border-b"
-            data-oid="vz_m5qm"
+            data-oid="ykoz_pk"
           >
-            <h3 className="font-semibold text-gray-800" data-oid="349oeyf">
+            <h3 className="font-semibold text-gray-800" data-oid="570wao7">
               Notificaciones
             </h3>
-            <div className="flex space-x-2" data-oid="rmt.as9">
+            <div className="flex space-x-2" data-oid=":k1iu0j">
               {unreadCount > 0 && (
                 <button
                   className="text-xs text-gray-600 hover:text-blue-800 flex items-center"
                   onClick={handleMarkAllAsRead}
-                  data-oid="68d4mz:"
+                  data-oid=":bqht5g"
                 >
-                  <CheckIcon className="h-3 w-3 mr-1" data-oid="9q:zcx." />
+                  <CheckIcon className="h-3 w-3 mr-1" data-oid="z9jb_hf" />
                   Marcar todas como leídas
                 </button>
               )}
               <button
                 className="text-gray-500 hover:text-gray-700"
                 onClick={() => setIsOpen(false)}
-                data-oid="uzagr2m"
+                data-oid="8gqos65"
               >
-                <XIcon className="h-4 w-4" data-oid="0a81ju_" />
+                <XIcon className="h-4 w-4" data-oid="-8ya32j" />
               </button>
             </div>
           </div>
 
-          <div className="max-h-96 overflow-y-auto" data-oid="kh4fdul">
+          <div className="max-h-96 overflow-y-auto" data-oid="d.v9bb1">
             {/* Lista de notificaciones */}
             {loading && notifications.length === 0 ? (
               <div
                 className="py-8 text-center text-gray-500"
-                data-oid="twxx9uy"
+                data-oid="vlnvr3p"
               >
-                <p data-oid="ih_0:6x">Cargando notificaciones...</p>
+                <p data-oid="hpyee08">Cargando notificaciones...</p>
               </div>
             ) : notifications.length === 0 ? (
               <div
                 className="py-8 text-center text-gray-500"
-                data-oid="jg67jmj"
+                data-oid="qmljmin"
               >
-                <p data-oid="3.v9f:l">No tienes notificaciones</p>
+                <p data-oid=".lsrl9g">No tienes notificaciones</p>
               </div>
             ) : (
-              <div className="divide-y divide-gray-100" data-oid=":8fior4">
+              <div className="divide-y divide-gray-100" data-oid=":7unw._">
                 {notifications.map((notification) => (
                   <div
                     key={notification.id}
@@ -460,26 +460,26 @@ const NotificationsMenu: React.FC<NotificationsMenuProps> = ({
                       notification.read ? "bg-white" : "bg-gray-100"
                     }`}
                     onClick={() => handleNotificationClick(notification)}
-                    data-oid="eb1teo5"
+                    data-oid="72yf9r-"
                   >
-                    <div className="flex space-x-3" data-oid="cc9a-p7">
+                    <div className="flex space-x-3" data-oid="k5ppsll">
                       {getNotificationIcon(notification.type)}
-                      <div data-oid="yhki9hy">
+                      <div data-oid="lrip_oc">
                         <p
                           className={`text-sm font-medium ${notification.read ? "text-gray-700" : "text-gray-900"}`}
-                          data-oid="x1d4107"
+                          data-oid="_0.058i"
                         >
                           {notification.title}
                         </p>
                         <p
                           className="text-xs text-gray-500 line-clamp-2 mt-0.5"
-                          data-oid="itynmr-"
+                          data-oid="alp8sk0"
                         >
                           {notification.message}
                         </p>
                         <span
                           className="text-xs text-gray-400 mt-1"
-                          data-oid="m269ydl"
+                          data-oid="-fmcpdg"
                         >
                           {formatTimestamp(notification.timestamp)}
                         </span>
@@ -487,7 +487,7 @@ const NotificationsMenu: React.FC<NotificationsMenuProps> = ({
                     </div>
                     <div
                       className="flex flex-col space-y-1 ml-2"
-                      data-oid="ul0p11k"
+                      data-oid="_i5sem6"
                     >
                       {!notification.read && (
                         <button
@@ -497,9 +497,9 @@ const NotificationsMenu: React.FC<NotificationsMenuProps> = ({
                             handleMarkAsRead(notification);
                           }}
                           aria-label="Marcar como leída"
-                          data-oid="rggqsar"
+                          data-oid="d0qmc6:"
                         >
-                          <CheckIcon className="h-4 w-4" data-oid="mmce4an" />
+                          <CheckIcon className="h-4 w-4" data-oid="fw2pcnn" />
                         </button>
                       )}
                       <button
@@ -509,9 +509,9 @@ const NotificationsMenu: React.FC<NotificationsMenuProps> = ({
                           handleDeleteNotification(notification.id);
                         }}
                         aria-label="Eliminar notificación"
-                        data-oid="6i_8m4m"
+                        data-oid="_9qqun3"
                       >
-                        <TrashIcon className="h-4 w-4" data-oid="1qoblag" />
+                        <TrashIcon className="h-4 w-4" data-oid="5ko1v1:" />
                       </button>
                     </div>
                   </div>
@@ -521,12 +521,12 @@ const NotificationsMenu: React.FC<NotificationsMenuProps> = ({
 
             {/* Cargar más */}
             {hasMore && notifications.length > 0 && (
-              <div className="p-2 text-center" data-oid="yepoqt.">
+              <div className="p-2 text-center" data-oid="s2k9amt">
                 <button
                   className="text-sm text-gray-600 hover:text-blue-800"
                   onClick={handleLoadMore}
                   disabled={loading}
-                  data-oid="qay4509"
+                  data-oid="84u5ou9"
                 >
                   {loading ? "Cargando..." : "Cargar más"}
                 </button>
@@ -535,12 +535,12 @@ const NotificationsMenu: React.FC<NotificationsMenuProps> = ({
           </div>
 
           {/* Footer del menú */}
-          <div className="p-2 border-t text-center" data-oid="q5jdzjj">
+          <div className="p-2 border-t text-center" data-oid="wb1z3n7">
             <Link
               to="/admin/notifications"
               className="text-xs text-gray-600 hover:text-blue-800"
               onClick={() => setIsOpen(false)}
-              data-oid="vrvvz00"
+              data-oid="e_7d6me"
             >
               Ver todas las notificaciones
             </Link>

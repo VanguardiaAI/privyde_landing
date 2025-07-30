@@ -564,56 +564,56 @@ const FlexibleZoneForm = ({
   };
 
   return (
-    <div data-oid="9ietgvs">
-      <Card className="shadow-md overflow-hidden" data-oid=":ll.6m_">
-        <CardContent className="p-6" data-oid="euao7hi">
+    <div data-oid="x:drjej">
+      <Card className="shadow-md overflow-hidden" data-oid="onmiz1p">
+        <CardContent className="p-6" data-oid="rzy_t7q">
           <div
             className="flex justify-between items-center mb-6"
-            data-oid="lt-sa13"
+            data-oid="6h_r599"
           >
-            <h2 className="text-2xl font-semibold" data-oid="ytcbm_m">
+            <h2 className="text-2xl font-semibold" data-oid="84dtjrg">
               {editMode ? "Editar Zona Flexible" : "Nueva Zona Flexible"}
             </h2>
-            <div className="flex space-x-2" data-oid="2uyix4-">
+            <div className="flex space-x-2" data-oid="hv5q1cj">
               <Button
                 variant="outline"
                 onClick={onCancel}
                 disabled={loading}
                 className="flex items-center"
-                data-oid="f8fo9t:"
+                data-oid="9rbv9jp"
               >
-                <X className="h-4 w-4 mr-2" data-oid="qnrdsb9" />
+                <X className="h-4 w-4 mr-2" data-oid="l1smfef" />
                 Cancelar
               </Button>
               <Button
                 onClick={handleSubmit}
                 disabled={loading}
                 className="flex items-center bg-black hover:bg-gray-800"
-                data-oid="93yik8q"
+                data-oid="ohm5j5v"
               >
                 {loading ? (
                   <Loader2
                     className="h-4 w-4 mr-2 animate-spin"
-                    data-oid="vyniqtd"
+                    data-oid="d0i9w4t"
                   />
                 ) : (
-                  <Save className="h-4 w-4 mr-2" data-oid=".nt226m" />
+                  <Save className="h-4 w-4 mr-2" data-oid="-b98uzs" />
                 )}
                 {editMode ? "Actualizar" : "Guardar"}
               </Button>
             </div>
           </div>
 
-          <form className="space-y-6" data-oid=".1pz..e">
+          <form className="space-y-6" data-oid="bk30k-r">
             {/* Selección de colaborador */}
-            <div className="mb-6" data-oid="_v0_xe0">
-              <Label className="font-medium text-base" data-oid="h5u4iwd">
+            <div className="mb-6" data-oid="tg5gwud">
+              <Label className="font-medium text-base" data-oid="k_smbnm">
                 Seleccionar Colaborador
               </Label>
-              <div className="relative mt-1" data-oid="d0ffab3">
+              <div className="relative mt-1" data-oid="olhcx56">
                 <Building
                   className="absolute left-3 top-3 h-4 w-4 text-gray-500"
-                  data-oid="zuvfv5x"
+                  data-oid="zc6:o0o"
                 />
 
                 <Select
@@ -623,24 +623,24 @@ const FlexibleZoneForm = ({
                       handleSelectChange("collaboratorId", value);
                     }
                   }}
-                  data-oid="-pxplx-"
+                  data-oid="cgfs3yr"
                 >
-                  <SelectTrigger className="pl-10" data-oid="3wmw67j">
+                  <SelectTrigger className="pl-10" data-oid="38j_n-_">
                     <SelectValue
                       placeholder={
                         loadingCollaborators
                           ? "Cargando colaboradores..."
                           : "Seleccionar colaborador"
                       }
-                      data-oid="9wlqi8e"
+                      data-oid="ydn.7b6"
                     />
                   </SelectTrigger>
-                  <SelectContent data-oid="eu-9oh3">
+                  <SelectContent data-oid="fr2vd-c">
                     {collaborators.map((collaborator) => (
                       <SelectItem
                         key={collaborator.id}
                         value={collaborator.id}
-                        data-oid="p9mvf5-"
+                        data-oid="w5h:po1"
                       >
                         {collaborator.name} ({collaborator.country})
                       </SelectItem>
@@ -651,8 +651,8 @@ const FlexibleZoneForm = ({
             </div>
 
             {/* Nombre de la zona */}
-            <div data-oid="6f5zr9g">
-              <Label htmlFor="name" data-oid=".kt-0_n">
+            <div data-oid="eapzey5">
+              <Label htmlFor="name" data-oid="jhde97k">
                 Nombre de la Zona
               </Label>
               <Input
@@ -662,13 +662,13 @@ const FlexibleZoneForm = ({
                 onChange={handleInputChange}
                 placeholder="El nombre se generará automáticamente"
                 className="mt-1"
-                data-oid="_brw86m"
+                data-oid="-sdlnk3"
               />
             </div>
 
             {/* Ubicación central con Google Places */}
-            <div data-oid="9.2ez5p">
-              <Label htmlFor="center" data-oid="gbr7bo4">
+            <div data-oid="m2-yirk">
+              <Label htmlFor="center" data-oid="d:twf0d">
                 Centro de la Zona
               </Label>
               <GooglePlacesAutocomplete
@@ -678,24 +678,24 @@ const FlexibleZoneForm = ({
                 onChange={handleCenterSelect}
                 onSelect={handleCenterDetails}
                 className="mt-1"
-                data-oid="8b6hlq0"
+                data-oid=".x5wcd4"
               />
             </div>
 
             {/* Radio de cobertura */}
-            <div data-oid="5pp4dyx">
+            <div data-oid="_fxgtoq">
               <div
                 className="flex justify-between items-center"
-                data-oid="m.uj_2h"
+                data-oid="eav7:2g"
               >
-                <Label htmlFor="radius" data-oid="x1mrr0g">
+                <Label htmlFor="radius" data-oid="ak-dse_">
                   Radio de Cobertura:{" "}
-                  <span className="font-semibold" data-oid="lhbn1mw">
+                  <span className="font-semibold" data-oid="1oalyzm">
                     {formValues.radius} km
                   </span>
                 </Label>
               </div>
-              <div className="py-4" data-oid="uxy68ef">
+              <div className="py-4" data-oid="6ufk_14">
                 <Slider
                   value={[formValues.radius]}
                   min={1}
@@ -703,37 +703,37 @@ const FlexibleZoneForm = ({
                   step={1}
                   onValueChange={handleRadiusChange}
                   className="mt-2"
-                  data-oid="6itrz4_"
+                  data-oid="erv-frv"
                 />
 
                 <div
                   className="flex justify-between text-xs text-gray-500 mt-1"
-                  data-oid="qie3hgg"
+                  data-oid="hq60n50"
                 >
-                  <span data-oid="ngr2sc5">1 km</span>
-                  <span data-oid="yw0wymg">25 km</span>
-                  <span data-oid="npao9ad">50 km</span>
+                  <span data-oid="gi.vs02">1 km</span>
+                  <span data-oid="aoc1tjy">25 km</span>
+                  <span data-oid="ulgy4dr">50 km</span>
                 </div>
               </div>
             </div>
 
             {/* Precios */}
-            <div data-oid="x1w1-27">
-              <h3 className="text-lg font-medium mb-3" data-oid="ucn:e4n">
+            <div data-oid="wef821-">
+              <h3 className="text-lg font-medium mb-3" data-oid="67f2:5s">
                 Precios
               </h3>
               <div
                 className="grid grid-cols-1 md:grid-cols-2 gap-6"
-                data-oid="09vo92t"
+                data-oid=":50rwt6"
               >
-                <div data-oid="vuianns">
-                  <Label htmlFor="perKm" data-oid=".sg05oz">
+                <div data-oid="bib4u7k">
+                  <Label htmlFor="perKm" data-oid="ot9uy3x">
                     Precio por Kilómetro
                   </Label>
-                  <div className="relative mt-1" data-oid="harv9-8">
+                  <div className="relative mt-1" data-oid="stfuamb">
                     <DollarSign
                       className="absolute left-3 top-3 h-4 w-4 text-gray-500"
-                      data-oid="ay9ef8f"
+                      data-oid="x2btt99"
                     />
 
                     <Input
@@ -744,18 +744,18 @@ const FlexibleZoneForm = ({
                       onChange={handlePriceChange}
                       placeholder="0"
                       className="pl-10"
-                      data-oid="e44w_uq"
+                      data-oid="mmylgu9"
                     />
                   </div>
                 </div>
-                <div data-oid="wvzvg0m">
-                  <Label htmlFor="minFare" data-oid="vfv9cdj">
+                <div data-oid=":nv1iqo">
+                  <Label htmlFor="minFare" data-oid="-_u1n1_">
                     Tarifa Mínima
                   </Label>
-                  <div className="relative mt-1" data-oid="uvm9n6l">
+                  <div className="relative mt-1" data-oid="ni0qucj">
                     <DollarSign
                       className="absolute left-3 top-3 h-4 w-4 text-gray-500"
-                      data-oid="c_.7q45"
+                      data-oid="3_r-bn4"
                     />
 
                     <Input
@@ -766,15 +766,15 @@ const FlexibleZoneForm = ({
                       onChange={handlePriceChange}
                       placeholder="0"
                       className="pl-10"
-                      data-oid="crtt2qs"
+                      data-oid="1_uci3t"
                     />
                   </div>
                 </div>
-                <div data-oid="-ta0_wn">
-                  <Label htmlFor="nightSurcharge" data-oid="6i-oc92">
+                <div data-oid="t1wfayh">
+                  <Label htmlFor="nightSurcharge" data-oid="motvyj7">
                     Recargo Nocturno (%)
                   </Label>
-                  <div className="relative mt-1" data-oid="nkpmmva">
+                  <div className="relative mt-1" data-oid="cp812zq">
                     <Input
                       id="nightSurcharge"
                       name="nightSurcharge"
@@ -782,15 +782,15 @@ const FlexibleZoneForm = ({
                       value={formValues.pricing.nightSurcharge}
                       onChange={handlePriceChange}
                       placeholder="0"
-                      data-oid="ak:-ygp"
+                      data-oid=".23.qtn"
                     />
                   </div>
                 </div>
-                <div data-oid="abl.vrq">
-                  <Label htmlFor="holidaySurcharge" data-oid="7vwpkno">
+                <div data-oid="s9o.izk">
+                  <Label htmlFor="holidaySurcharge" data-oid="m02r_6t">
                     Recargo Festivo (%)
                   </Label>
-                  <div className="relative mt-1" data-oid="6:e.sp-">
+                  <div className="relative mt-1" data-oid="zvyi9-8">
                     <Input
                       id="holidaySurcharge"
                       name="holidaySurcharge"
@@ -798,13 +798,13 @@ const FlexibleZoneForm = ({
                       value={formValues.pricing.holidaySurcharge}
                       onChange={handlePriceChange}
                       placeholder="0"
-                      data-oid="u9w7yaj"
+                      data-oid="gqu37:h"
                     />
                   </div>
                 </div>
               </div>
-              <div className="mt-3" data-oid="tkf2.8n">
-                <Label htmlFor="currency" data-oid="yigtuwr">
+              <div className="mt-3" data-oid="ytzok7n">
+                <Label htmlFor="currency" data-oid="am.7o_-">
                   Moneda
                 </Label>
                 <Select
@@ -814,22 +814,22 @@ const FlexibleZoneForm = ({
                       handleSelectChange("currency", value);
                     }
                   }}
-                  data-oid="a9l0q5u"
+                  data-oid="0:zo533"
                 >
-                  <SelectTrigger data-oid="a15lnfv">
+                  <SelectTrigger data-oid="o0_.dlp">
                     <SelectValue
                       placeholder="Seleccionar moneda"
-                      data-oid="6jr8bok"
+                      data-oid="8-1l0si"
                     />
                   </SelectTrigger>
-                  <SelectContent data-oid="f_9nlg:">
-                    <SelectItem value="MXN" data-oid="p:klbqk">
+                  <SelectContent data-oid="xqxi.b4">
+                    <SelectItem value="MXN" data-oid="ldytq..">
                       MXN - Peso Mexicano
                     </SelectItem>
-                    <SelectItem value="USD" data-oid="jwoupxa">
+                    <SelectItem value="USD" data-oid="t_m.obm">
                       USD - Dólar Estadounidense
                     </SelectItem>
-                    <SelectItem value="EUR" data-oid=":2nvii-">
+                    <SelectItem value="EUR" data-oid="ozqyazg">
                       EUR - Euro
                     </SelectItem>
                   </SelectContent>
@@ -838,26 +838,26 @@ const FlexibleZoneForm = ({
             </div>
 
             {/* Restricciones de distancia */}
-            <div data-oid="hn9dou3">
+            <div data-oid="ti-jz44">
               <div
                 className="flex items-center justify-between mb-3"
-                data-oid=":ubnulc"
+                data-oid="uk2_wkc"
               >
-                <h3 className="text-lg font-medium" data-oid="u974k:o">
+                <h3 className="text-lg font-medium" data-oid="tmfvbj2">
                   Restricciones de Distancia
                 </h3>
-                <div className="flex items-center space-x-2" data-oid="ct23:nb">
+                <div className="flex items-center space-x-2" data-oid="329rdzs">
                   <Switch
                     checked={enableDistanceRestrictions}
                     onCheckedChange={setEnableDistanceRestrictions}
                     id="enableRestrictions"
-                    data-oid="cq14ryp"
+                    data-oid="d21z7mf"
                   />
 
                   <Label
                     htmlFor="enableRestrictions"
                     className="cursor-pointer"
-                    data-oid="5uczfy:"
+                    data-oid="4zmj:rj"
                   >
                     {enableDistanceRestrictions ? "Activadas" : "Desactivadas"}
                   </Label>
@@ -867,10 +867,10 @@ const FlexibleZoneForm = ({
               {enableDistanceRestrictions && (
                 <div
                   className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-2"
-                  data-oid="an6ax6z"
+                  data-oid="13ne89y"
                 >
-                  <div data-oid="zojul4a">
-                    <Label htmlFor="minDistance" data-oid="rea_mnq">
+                  <div data-oid="4fvh1cg">
+                    <Label htmlFor="minDistance" data-oid="zrz3lxz">
                       Distancia Mínima (km)
                     </Label>
                     <Input
@@ -882,11 +882,11 @@ const FlexibleZoneForm = ({
                       min={0}
                       step={0.5}
                       className="mt-1"
-                      data-oid=".txtd_k"
+                      data-oid="oxtwy6g"
                     />
                   </div>
-                  <div data-oid="4l1mi:c">
-                    <Label htmlFor="maxDistance" data-oid="s39o944">
+                  <div data-oid="vqwipvw">
+                    <Label htmlFor="maxDistance" data-oid="d:gsvdn">
                       Distancia Máxima (km)
                     </Label>
                     <Input
@@ -898,7 +898,7 @@ const FlexibleZoneForm = ({
                       min={0}
                       step={0.5}
                       className="mt-1"
-                      data-oid="0fnnhti"
+                      data-oid="jbl0h37"
                     />
                   </div>
                 </div>
@@ -906,56 +906,56 @@ const FlexibleZoneForm = ({
             </div>
 
             {/* Vehículos disponibles */}
-            <div data-oid="yx:rfy9">
-              <h3 className="text-lg font-medium mb-3" data-oid="whs139.">
+            <div data-oid="yh00rl5">
+              <h3 className="text-lg font-medium mb-3" data-oid="j8:zwdo">
                 Vehículos Disponibles
               </h3>
               {!formValues.collaboratorId ? (
                 <div
                   className="flex items-center justify-center p-4 border border-dashed rounded-md bg-gray-50"
-                  data-oid="_ck:ayv"
+                  data-oid=":b_smoq"
                 >
                   <Info
                     className="h-5 w-5 text-gray-400 mr-2"
-                    data-oid=".zay.hr"
+                    data-oid="l-kcjg_"
                   />
 
-                  <span className="text-gray-500" data-oid="p17r08k">
+                  <span className="text-gray-500" data-oid="9gb0.0h">
                     Seleccione un colaborador para ver vehículos disponibles
                   </span>
                 </div>
               ) : loadingVehicles ? (
                 <div
                   className="flex items-center justify-center p-6"
-                  data-oid="hkbyxwn"
+                  data-oid="ezdazg."
                 >
                   <Loader2
                     className="h-6 w-6 text-black animate-spin"
-                    data-oid="ytrc4rt"
+                    data-oid="34gi845"
                   />
 
-                  <span className="ml-2" data-oid=":68hbqk">
+                  <span className="ml-2" data-oid="lvy__h:">
                     Cargando vehículos...
                   </span>
                 </div>
               ) : vehicles.length === 0 ? (
                 <div
                   className="flex items-center justify-center p-4 border border-dashed rounded-md bg-gray-50"
-                  data-oid="88rymbv"
+                  data-oid="uoohsap"
                 >
                   <Info
                     className="h-5 w-5 text-gray-400 mr-2"
-                    data-oid="hgp_nqs"
+                    data-oid="eg-d-3:"
                   />
 
-                  <span className="text-gray-500" data-oid="3t68s.j">
+                  <span className="text-gray-500" data-oid="sdk4g0h">
                     No hay vehículos disponibles para este colaborador
                   </span>
                 </div>
               ) : (
                 <div
                   className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-2"
-                  data-oid="dsugtv."
+                  data-oid="xqngs8c"
                 >
                   {vehicles.map((vehicle) => (
                     <div
@@ -969,40 +969,40 @@ const FlexibleZoneForm = ({
                         }
                       `}
                       onClick={() => handleVehicleToggle(vehicle.id)}
-                      data-oid="jaawiiz"
+                      data-oid="vtsw5hy"
                     >
-                      <div className="flex-shrink-0" data-oid="ukhbj.0">
+                      <div className="flex-shrink-0" data-oid="v:f-sva">
                         {vehicle.imageUrl ? (
                           <img
                             src={vehicle.imageUrl}
                             alt={vehicle.model}
                             className="h-12 w-12 rounded-md object-cover"
-                            data-oid="tsd1rpz"
+                            data-oid=".naccti"
                           />
                         ) : (
                           <div
                             className="h-12 w-12 rounded-md bg-gray-200 flex items-center justify-center"
-                            data-oid="u9843br"
+                            data-oid="6.n6une"
                           >
                             <Car
                               className="h-6 w-6 text-gray-500"
-                              data-oid="s8p3v4h"
+                              data-oid="0aan-ot"
                             />
                           </div>
                         )}
                       </div>
-                      <div className="ml-3 flex-1" data-oid="30386od">
-                        <div className="font-medium" data-oid="q6nzgg6">
+                      <div className="ml-3 flex-1" data-oid="vv3z8rb">
+                        <div className="font-medium" data-oid="byb6-ne">
                           {vehicle.model}
                         </div>
                         <div
                           className="text-sm text-gray-500"
-                          data-oid="uklkuk4"
+                          data-oid="8st1191"
                         >
                           {vehicle.licensePlate}
                         </div>
                       </div>
-                      <div className="flex-shrink-0 ml-2" data-oid="cqb.xhw">
+                      <div className="flex-shrink-0 ml-2" data-oid="5r67pei">
                         <Checkbox
                           checked={selectedVehicles.includes(vehicle.id)}
                           onCheckedChange={(_checked) => {
@@ -1015,7 +1015,7 @@ const FlexibleZoneForm = ({
                             e.stopPropagation();
                             handleVehicleToggle(vehicle.id);
                           }}
-                          data-oid="x45k7lr"
+                          data-oid=".hv150h"
                         />
                       </div>
                     </div>
@@ -1025,12 +1025,12 @@ const FlexibleZoneForm = ({
             </div>
 
             {/* Estado de la zona */}
-            <div data-oid="4_.nc_4">
-              <h3 className="text-lg font-medium mb-3" data-oid=":9fnwtl">
+            <div data-oid="w:mlwgy">
+              <h3 className="text-lg font-medium mb-3" data-oid="oerw3kb">
                 Estado
               </h3>
-              <div className="flex items-center space-x-4" data-oid="-.4x1gv">
-                <Label htmlFor="status" data-oid="c81x7mk">
+              <div className="flex items-center space-x-4" data-oid="j1w1eo8">
+                <Label htmlFor="status" data-oid="x8qijv4">
                   Estado de la zona:
                 </Label>
                 <Select
@@ -1040,19 +1040,19 @@ const FlexibleZoneForm = ({
                       handleSelectChange("status", value);
                     }
                   }}
-                  data-oid="2rcnfp4"
+                  data-oid="lh9z:gx"
                 >
-                  <SelectTrigger className="w-40" data-oid="oms0ocg">
+                  <SelectTrigger className="w-40" data-oid="f8bwbkv">
                     <SelectValue
                       placeholder="Seleccionar estado"
-                      data-oid=":3-4ldz"
+                      data-oid="g:5at7h"
                     />
                   </SelectTrigger>
-                  <SelectContent data-oid=":29bnhs">
-                    <SelectItem value="active" data-oid="o-e_pae">
+                  <SelectContent data-oid="lgzd-ju">
+                    <SelectItem value="active" data-oid="g1ccjvu">
                       Activa
                     </SelectItem>
-                    <SelectItem value="inactive" data-oid="uhc1g49">
+                    <SelectItem value="inactive" data-oid="yhzlvx:">
                       Inactiva
                     </SelectItem>
                   </SelectContent>
@@ -1061,8 +1061,8 @@ const FlexibleZoneForm = ({
             </div>
 
             {/* Notas o descripción */}
-            <div data-oid=".1823t:">
-              <Label htmlFor="description" data-oid=":f61v43">
+            <div data-oid="otrmq3v">
+              <Label htmlFor="description" data-oid="xitx0i_">
                 Notas o Descripción (opcional)
               </Label>
               <Textarea
@@ -1073,7 +1073,7 @@ const FlexibleZoneForm = ({
                 placeholder="Añade notas o detalles adicionales sobre esta zona..."
                 rows={3}
                 className="mt-1"
-                data-oid="_a7m4o9"
+                data-oid="egyy4mp"
               />
             </div>
           </form>

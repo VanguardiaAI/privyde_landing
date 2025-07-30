@@ -14,15 +14,15 @@ const DetailsTab = ({
   handleNextTab,
 }: DetailsTabProps) => {
   return (
-    <div className="mt-4" data-oid="unccw.q">
+    <div className="mt-4" data-oid="cos2t6.">
       <div
         className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4"
-        data-oid="s:pvn7s"
+        data-oid="8y6qvzs"
       >
-        <div data-oid="rr86jc0">
+        <div data-oid="cb5v8na">
           <label
             className="block text-sm font-medium text-gray-700 mb-1"
-            data-oid="39axuhn"
+            data-oid="8.-twq-"
           >
             Número de pasajeros
           </label>
@@ -39,13 +39,13 @@ const DetailsTab = ({
             }
             placeholder="Número de pasajeros"
             min="1"
-            data-oid="tlm697y"
+            data-oid="8lo.:14"
           />
         </div>
-        <div data-oid="3:95oxa">
+        <div data-oid="l5d2ef2">
           <label
             className="block text-sm font-medium text-gray-700 mb-1"
-            data-oid="drq._wx"
+            data-oid=".59k78k"
           >
             Equipaje (piezas)
           </label>
@@ -58,26 +58,26 @@ const DetailsTab = ({
             }
             placeholder="Cantidad de equipaje"
             min="0"
-            data-oid="8ipzixw"
+            data-oid="ey7bt7."
           />
         </div>
       </div>
 
-      <div className="border-t border-gray-200 pt-4 mb-4" data-oid="g20li4o">
+      <div className="border-t border-gray-200 pt-4 mb-4" data-oid=":d7nr5.">
         <h3
           className="text-sm font-semibold text-gray-700 mb-3"
-          data-oid="wgskqwt"
+          data-oid="avi2q_x"
         >
           Preferencias de vehículo
         </h3>
         <div
           className="grid grid-cols-1 sm:grid-cols-2 gap-4"
-          data-oid="gum020g"
+          data-oid="xe4.ruk"
         >
-          <div data-oid="8mbq-97">
+          <div data-oid="-1w2527">
             <label
               className="block text-sm font-medium text-gray-700 mb-1"
-              data-oid="spsmzz."
+              data-oid="fpu_mzo"
             >
               Categoría
             </label>
@@ -91,38 +91,38 @@ const DetailsTab = ({
                   e.target.value,
                 )
               }
-              data-oid="qprzamr"
+              data-oid="2-ok5g0"
             >
-              <option value="" data-oid="i-y0p5l">
+              <option value="" data-oid="d0rjh62">
                 Sin preferencia
               </option>
-              <option value="economy" data-oid="lgs8on8">
+              <option value="economy" data-oid="zsaielu">
                 Economy
               </option>
-              <option value="business" data-oid="1.hr29p">
+              <option value="business" data-oid="1x3sd62">
                 Business
               </option>
-              <option value="first_class" data-oid="tpac9wv">
+              <option value="first_class" data-oid="3m4sy70">
                 First Class
               </option>
-              <option value="suv" data-oid="s9yytwa">
+              <option value="suv" data-oid="g4gkakd">
                 SUV
               </option>
-              <option value="van" data-oid=":ep0_nc">
+              <option value="van" data-oid="az5p9dp">
                 Van
               </option>
-              <option value="business_van" data-oid="-v.trz4">
+              <option value="business_van" data-oid="ex9l5eq">
                 Business Van
               </option>
-              <option value="armored" data-oid="0kwl3h:">
+              <option value="armored" data-oid="jtdv_u8">
                 Blindado
               </option>
             </select>
           </div>
-          <div data-oid="sud5w8d">
+          <div data-oid="pe4dpoa">
             <label
               className="block text-sm font-medium text-gray-700 mb-1"
-              data-oid="3c3vqaz"
+              data-oid="bg1yu0y"
             >
               Color
             </label>
@@ -136,40 +136,40 @@ const DetailsTab = ({
                   e.target.value,
                 )
               }
-              data-oid="e2x83c_"
+              data-oid="e0k4chr"
             >
-              <option value="" data-oid="9jktf_1">
+              <option value="" data-oid="tu82hg_">
                 Sin preferencia
               </option>
-              <option value="black" data-oid="ipvjf05">
+              <option value="black" data-oid="x.xum9j">
                 Negro
               </option>
-              <option value="white" data-oid="cu9r74y">
+              <option value="white" data-oid="lkqbytr">
                 Blanco
               </option>
-              <option value="silver" data-oid="e.u02l4">
+              <option value="silver" data-oid="37msk7t">
                 Plateado
               </option>
-              <option value="gray" data-oid="l4j2js-">
+              <option value="gray" data-oid="kgi0zg-">
                 Gris
               </option>
-              <option value="blue" data-oid="aqzcqc.">
+              <option value="blue" data-oid="f-7j6r2">
                 Azul
               </option>
             </select>
           </div>
         </div>
-        <div className="mt-3" data-oid="k67t1f-">
+        <div className="mt-3" data-oid="quqa466">
           <label
             className="block text-sm font-medium text-gray-700 mb-1"
-            data-oid="skal.v6"
+            data-oid="mfwxo-5"
           >
             Características adicionales
           </label>
-          <div className="grid grid-cols-2 gap-2" data-oid="0t78u:j">
+          <div className="grid grid-cols-2 gap-2" data-oid="t3gekno">
             <label
               className="inline-flex items-center text-sm"
-              data-oid="zez3rg_"
+              data-oid="7slxyh8"
             >
               <input
                 type="checkbox"
@@ -190,16 +190,16 @@ const DetailsTab = ({
                   }
                   handleFormChange("details", "features" as any, features);
                 }}
-                data-oid="52khjze"
+                data-oid="ikql:1-"
               />
 
-              <span className="ml-2" data-oid="ycn3wjp">
+              <span className="ml-2" data-oid="6gpo_s1">
                 WiFi
               </span>
             </label>
             <label
               className="inline-flex items-center text-sm"
-              data-oid=":cegoan"
+              data-oid=".79bl8_"
             >
               <input
                 type="checkbox"
@@ -220,16 +220,16 @@ const DetailsTab = ({
                   }
                   handleFormChange("details", "features" as any, features);
                 }}
-                data-oid="tkf.dpk"
+                data-oid=":dukn85"
               />
 
-              <span className="ml-2" data-oid="njbcvxe">
+              <span className="ml-2" data-oid="_5ab4x1">
                 Asiento infantil
               </span>
             </label>
             <label
               className="inline-flex items-center text-sm"
-              data-oid="-whb4.o"
+              data-oid="qzs9hy-"
             >
               <input
                 type="checkbox"
@@ -250,16 +250,16 @@ const DetailsTab = ({
                   }
                   handleFormChange("details", "features" as any, features);
                 }}
-                data-oid="p9_y-qp"
+                data-oid="-:xgt.a"
               />
 
-              <span className="ml-2" data-oid="ina.57u">
+              <span className="ml-2" data-oid="k4:cac9">
                 Audio premium
               </span>
             </label>
             <label
               className="inline-flex items-center text-sm"
-              data-oid="k7vipg6"
+              data-oid="4cv_6kk"
             >
               <input
                 type="checkbox"
@@ -280,10 +280,10 @@ const DetailsTab = ({
                   }
                   handleFormChange("details", "features" as any, features);
                 }}
-                data-oid="f08drm-"
+                data-oid="wwynq9m"
               />
 
-              <span className="ml-2" data-oid="y_oczv2">
+              <span className="ml-2" data-oid="61:ifmh">
                 Control de clima
               </span>
             </label>
@@ -291,17 +291,17 @@ const DetailsTab = ({
         </div>
       </div>
 
-      <div className="border-t border-gray-200 pt-4 mb-4" data-oid="nxmvt7m">
+      <div className="border-t border-gray-200 pt-4 mb-4" data-oid="tp2pu1m">
         <h3
           className="text-sm font-semibold text-gray-700 mb-3"
-          data-oid=".q9l9si"
+          data-oid="2fvtq3."
         >
           Notas y peticiones especiales
         </h3>
-        <div data-oid=":xby3e2">
+        <div data-oid="7pvh0-n">
           <label
             className="block text-sm font-medium text-gray-700 mb-1"
-            data-oid="cfxqcw9"
+            data-oid="y1jstsb"
           >
             Notas especiales
           </label>
@@ -313,24 +313,24 @@ const DetailsTab = ({
             }
             placeholder="Instrucciones especiales, peticiones o información adicional"
             rows={4}
-            data-oid="j3p9_4_"
+            data-oid="6czag5q"
           ></textarea>
         </div>
       </div>
 
-      <div className="flex justify-between mt-6" data-oid="-uzyxhc">
+      <div className="flex justify-between mt-6" data-oid="5nl-t0w">
         <Button
           variant="outline"
           onClick={() => setActiveTab("service")}
           className="text-sm"
-          data-oid="ptllx9r"
+          data-oid="nkz9i55"
         >
           Anterior: Servicio
         </Button>
         <Button
           className="bg-black hover:bg-gray-800 text-sm"
           onClick={() => handleNextTab("details")}
-          data-oid="qve1l3j"
+          data-oid="n1-em9w"
         >
           Siguiente: Pago
         </Button>

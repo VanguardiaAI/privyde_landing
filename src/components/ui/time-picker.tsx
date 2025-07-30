@@ -53,8 +53,8 @@ export function TimePicker({ value, onChange, className }: TimePickerProps) {
   const minutesOptions = Array.from({ length: 4 }, (_, i) => i * 15);
 
   return (
-    <Popover data-oid="hj2if-w">
-      <PopoverTrigger asChild data-oid="236otcg">
+    <Popover data-oid="vd3thrr">
+      <PopoverTrigger asChild data-oid=".ib_p0l">
         <Button
           variant="outline"
           className={cn(
@@ -62,45 +62,45 @@ export function TimePicker({ value, onChange, className }: TimePickerProps) {
             !value && "text-muted-foreground",
             className,
           )}
-          data-oid="86ub7bb"
+          data-oid="m29hr0."
         >
-          <div className="flex items-center gap-2" data-oid="igtk5x5">
-            <Clock className="h-5 w-5 text-gray-400" data-oid="fl6ioux" />
-            <div className="flex flex-col" data-oid="criul1:">
-              <span className="text-xs text-gray-500" data-oid="8sff6h5">
+          <div className="flex items-center gap-2" data-oid="7fpi4b6">
+            <Clock className="h-5 w-5 text-gray-400" data-oid="hbaq7o1" />
+            <div className="flex flex-col" data-oid="b87eomc">
+              <span className="text-xs text-gray-500" data-oid="vzoc0ll">
                 Hora
               </span>
-              <span className="text-sm" data-oid="s:.75lt">
+              <span className="text-sm" data-oid="beut:jo">
                 {value || "Seleccionar hora"}
               </span>
             </div>
           </div>
         </Button>
       </PopoverTrigger>
-      <PopoverContent className="w-72 p-4" align="start" data-oid="md8lj4n">
-        <div className="space-y-4" data-oid="7hdqbln">
-          <div className="flex items-center justify-center" data-oid="afdz5:i">
+      <PopoverContent className="w-72 p-4" align="start" data-oid="mo49k7-">
+        <div className="space-y-4" data-oid="ww.:1_1">
+          <div className="flex items-center justify-center" data-oid="d965-oz">
             <div
               className="text-center text-sm font-medium text-gray-500"
-              data-oid="ydsqpnc"
+              data-oid="7oujt-i"
             >
               Seleccionar hora
             </div>
           </div>
-          <div className="grid grid-cols-2 gap-4" data-oid="go1ji77">
-            <div className="space-y-2" data-oid="9vtewet">
-              <div className="text-xs text-gray-500" data-oid="72ua9ks">
+          <div className="grid grid-cols-2 gap-4" data-oid="s7q.-rq">
+            <div className="space-y-2" data-oid="q1rlml1">
+              <div className="text-xs text-gray-500" data-oid="co8.a5x">
                 Hora
               </div>
               <Select
                 value={hours.toString()}
                 onValueChange={handleHourChange}
-                data-oid="12l_f.s"
+                data-oid="66v0:1q"
               >
-                <SelectTrigger className="w-full" data-oid="nqp44wy">
-                  <SelectValue placeholder="Hora" data-oid="br01p54" />
+                <SelectTrigger className="w-full" data-oid="o6.y722">
+                  <SelectValue placeholder="Hora" data-oid="vecf3.:" />
                 </SelectTrigger>
-                <SelectContent className="max-h-72" data-oid="30_of2m">
+                <SelectContent className="max-h-72" data-oid="he6nb-q">
                   {hoursOptions.map((hour) => (
                     <SelectItem
                       key={hour}
@@ -108,7 +108,7 @@ export function TimePicker({ value, onChange, className }: TimePickerProps) {
                       className={
                         hour === hours ? "bg-black text-white font-bold" : ""
                       }
-                      data-oid="9er_fga"
+                      data-oid="s9ipap8"
                     >
                       {hour.toString().padStart(2, "0")}
                     </SelectItem>
@@ -116,19 +116,19 @@ export function TimePicker({ value, onChange, className }: TimePickerProps) {
                 </SelectContent>
               </Select>
             </div>
-            <div className="space-y-2" data-oid="6tm_oxv">
-              <div className="text-xs text-gray-500" data-oid="fa4yr-u">
+            <div className="space-y-2" data-oid="4-aa_7v">
+              <div className="text-xs text-gray-500" data-oid="mcm7kg3">
                 Minutos
               </div>
               <Select
                 value={minutes.toString()}
                 onValueChange={handleMinuteChange}
-                data-oid="1tdojkm"
+                data-oid="5l0ea2:"
               >
-                <SelectTrigger className="w-full" data-oid="hcxzvh_">
-                  <SelectValue placeholder="Minutos" data-oid="21dve2a" />
+                <SelectTrigger className="w-full" data-oid="3uk7:cz">
+                  <SelectValue placeholder="Minutos" data-oid=".cqf81f" />
                 </SelectTrigger>
-                <SelectContent className="max-h-72" data-oid="rl5o8o_">
+                <SelectContent className="max-h-72" data-oid="57w:6qz">
                   {minutesOptions.map((minute) => (
                     <SelectItem
                       key={minute}
@@ -138,7 +138,7 @@ export function TimePicker({ value, onChange, className }: TimePickerProps) {
                           ? "bg-black text-white font-bold"
                           : ""
                       }
-                      data-oid="i1z8_0k"
+                      data-oid="xvz5pxu"
                     >
                       {minute.toString().padStart(2, "0")}
                     </SelectItem>

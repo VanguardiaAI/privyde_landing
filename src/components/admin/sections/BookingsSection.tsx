@@ -191,54 +191,54 @@ const BookingsSection = () => {
   ];
 
   return (
-    <div className="space-y-6" data-oid=".jh4kd.">
+    <div className="space-y-6" data-oid="kc_flia">
       <div
         className="flex justify-between items-center mb-6"
-        data-oid="o-z8s9k"
+        data-oid="pq2gvcy"
       >
-        <h1 className="text-2xl font-bold text-gray-800" data-oid="f-nx44y">
+        <h1 className="text-2xl font-bold text-gray-800" data-oid="ze9s:8n">
           Gestión de Reservas
         </h1>
-        <div className="flex items-center space-x-3" data-oid="lp_27px">
-          <div className="relative" data-oid=".uvpr-y">
+        <div className="flex items-center space-x-3" data-oid="sopr8-h">
+          <div className="relative" data-oid="oupkcen">
             <input
               type="text"
               placeholder="Buscar reserva..."
               className="pl-9 pr-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent"
-              data-oid="w_0xhm:"
+              data-oid="miux1cd"
             />
 
             <Search
               size={18}
               className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"
-              data-oid="6xep0dk"
+              data-oid="pw7v8k2"
             />
           </div>
           <Button
             className="bg-black hover:bg-gray-800"
             onClick={handleOpenNewBookingModal}
-            data-oid="ti9yof2"
+            data-oid="mkf-jvt"
           >
-            <PlusCircle size={18} className="mr-2" data-oid="wikds5x" />
+            <PlusCircle size={18} className="mr-2" data-oid="vd:4mg2" />
             Nueva Reserva
           </Button>
         </div>
       </div>
 
       {/* Filtros y estadísticas rápidas */}
-      <BookingsFilters data-oid="mdoa:7_" />
+      <BookingsFilters data-oid="prudprj" />
 
       {/* Tabla de reservas */}
       <BookingsTable
         bookingsData={bookingsData}
         handleViewBookingDetails={handleViewBookingDetails}
-        data-oid="pi_k5q8"
+        data-oid="o5efpn:"
       />
 
       {/* Panel para seguimiento en tiempo real de servicios en progreso */}
       <div
         className="bg-white rounded-xl shadow-md p-6 mt-6"
-        data-oid="lb4opkj"
+        data-oid=".jrujux"
       >
         {/* ... contenido de seguimiento en tiempo real ... */}
       </div>
@@ -246,7 +246,7 @@ const BookingsSection = () => {
       {/* Panel para incidencias y alertas */}
       <div
         className="bg-white rounded-xl shadow-md p-6 mt-6"
-        data-oid="cj8i4:q"
+        data-oid="t1b::31"
       >
         {/* ... contenido de incidencias y alertas ... */}
       </div>
@@ -256,7 +256,7 @@ const BookingsSection = () => {
         <BookingDetailsModal
           selectedBookingForDetails={selectedBookingForDetails}
           handleCloseBookingDetails={handleCloseBookingDetails}
-          data-oid="y8a:-wb"
+          data-oid="j_cl2me"
         />
       )}
 
@@ -324,7 +324,7 @@ const BookingsSection = () => {
           handleClearVehicleSelection={handleClearVehicleSelection}
           // Función para limpiar precio calculado
           clearCalculatedPrice={clearCalculatedPrice}
-          data-oid="u:ol163"
+          data-oid="_x2:jp5"
         />
       )}
     </div>

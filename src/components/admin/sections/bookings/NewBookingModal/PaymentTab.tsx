@@ -39,54 +39,54 @@ const PaymentTab = ({
   };
 
   return (
-    <div className="space-y-6 mt-4" data-oid="v-otujc">
+    <div className="space-y-6 mt-4" data-oid="35joat7">
       {hasPriceCalculated ? (
-        <div className="border rounded-lg bg-white p-6" data-oid="gd2_:ci">
+        <div className="border rounded-lg bg-white p-6" data-oid="rfzimlr">
           <h3
             className="text-lg font-medium mb-4 flex items-center"
-            data-oid="nmam.e2"
+            data-oid="7n4s6zg"
           >
             <DollarSign
               className="h-5 w-5 mr-2 text-green-600"
-              data-oid="jjg-6k9"
+              data-oid="-cpyp4e"
             />
             Desglose de la Tarifa
           </h3>
 
-          <div className="space-y-4" data-oid="-.5syj5">
+          <div className="space-y-4" data-oid="xlqg_0r">
             {/* Información del viaje */}
-            <div className="bg-gray-50 p-4 rounded-md" data-oid="6jitxct">
+            <div className="bg-gray-50 p-4 rounded-md" data-oid="kpy9ava">
               <h4
                 className="text-sm font-medium text-gray-700 mb-2"
-                data-oid="1aedya-"
+                data-oid="ju1y.b8"
               >
                 Información del viaje
               </h4>
               <div
                 className="grid grid-cols-2 gap-4 text-sm"
-                data-oid="sehglpx"
+                data-oid="nfk_abu"
               >
-                <div data-oid="eftjas8">
-                  <div className="text-gray-500" data-oid="qyq99:4">
+                <div data-oid="doy0abl">
+                  <div className="text-gray-500" data-oid="zw_g6sq">
                     Origen:
                   </div>
-                  <div className="font-medium" data-oid="3ifhk9n">
+                  <div className="font-medium" data-oid="ubdzzod">
                     {newBookingFormData.service.pickup.location}
                   </div>
                 </div>
-                <div data-oid="26ue0s0">
-                  <div className="text-gray-500" data-oid="0iem7ut">
+                <div data-oid="99q-f2g">
+                  <div className="text-gray-500" data-oid="oj501sg">
                     Destino:
                   </div>
-                  <div className="font-medium" data-oid="s.t1m_b">
+                  <div className="font-medium" data-oid="he4_eo9">
                     {newBookingFormData.service.dropoff.location}
                   </div>
                 </div>
-                <div data-oid="j01l.7_">
-                  <div className="text-gray-500" data-oid="8rhdhs.">
+                <div data-oid="l2luzbr">
+                  <div className="text-gray-500" data-oid="rdzoifp">
                     Tipo de servicio:
                   </div>
-                  <div className="font-medium" data-oid="kt.h0jq">
+                  <div className="font-medium" data-oid="m73w64c">
                     {newBookingFormData.service.type === "one_way"
                       ? "Un trayecto"
                       : newBookingFormData.service.type === "round_trip"
@@ -96,11 +96,11 @@ const PaymentTab = ({
                           : "Día completo"}
                   </div>
                 </div>
-                <div data-oid="v1v3cgn">
-                  <div className="text-gray-500" data-oid="tl3l8wx">
+                <div data-oid="ow7nn4q">
+                  <div className="text-gray-500" data-oid="mfemf.y">
                     Distancia:
                   </div>
-                  <div className="font-medium" data-oid="wz.05yw">
+                  <div className="font-medium" data-oid=":cm76t3">
                     {newBookingFormData.payment.priceBreakdown.is_round_trip ? (
                       <>
                         {priceCalculationService.formatDistance(
@@ -109,7 +109,7 @@ const PaymentTab = ({
                         )}
                         <div
                           className="text-xs text-gray-400"
-                          data-oid="n4zg142"
+                          data-oid="iahfcup"
                         >
                           (
                           {priceCalculationService.formatDistance(
@@ -127,17 +127,17 @@ const PaymentTab = ({
                     )}
                   </div>
                 </div>
-                <div data-oid="p3j145b">
-                  <div className="text-gray-500" data-oid="_bxq2f6">
+                <div data-oid="uhholaf">
+                  <div className="text-gray-500" data-oid="nbtxo6_">
                     Tiempo estimado:
                   </div>
-                  <div className="font-medium" data-oid="oquyg82">
+                  <div className="font-medium" data-oid="h7gx7vt">
                     {formatDuration(
                       newBookingFormData.payment.routeInfo.duration,
                     )}
                     {newBookingFormData.payment.priceBreakdown
                       .is_round_trip && (
-                      <div className="text-xs text-gray-400" data-oid="4ogsd_f">
+                      <div className="text-xs text-gray-400" data-oid="tsk.o.3">
                         (Solo ida, vuelta similar)
                       </div>
                     )}
@@ -147,30 +147,30 @@ const PaymentTab = ({
             </div>
 
             {/* Detalles del vehículo */}
-            <div className="bg-gray-50 p-4 rounded-md" data-oid=":ohv.sb">
+            <div className="bg-gray-50 p-4 rounded-md" data-oid="ewcjojn">
               <h4
                 className="text-sm font-medium text-gray-700 mb-2"
-                data-oid="xs:6cpe"
+                data-oid="md_e-dj"
               >
                 Vehículo seleccionado
               </h4>
               <div
                 className="grid grid-cols-2 gap-4 text-sm"
-                data-oid="x_xe-el"
+                data-oid="ptjf0t_"
               >
-                <div data-oid="7fu.b2p">
-                  <div className="text-gray-500" data-oid="4cylru.">
+                <div data-oid="dwjls_j">
+                  <div className="text-gray-500" data-oid="h7df57p">
                     Vehículo:
                   </div>
-                  <div className="font-medium" data-oid="sf6bxu.">
+                  <div className="font-medium" data-oid="xcdjq_i">
                     {newBookingFormData.vehicle.name}
                   </div>
                 </div>
-                <div data-oid="jd7bcvr">
-                  <div className="text-gray-500" data-oid="oj3xqi-">
+                <div data-oid="uk3pes1">
+                  <div className="text-gray-500" data-oid="-9lvj0n">
                     Conductor:
                   </div>
-                  <div className="font-medium" data-oid="x7c4-ei">
+                  <div className="font-medium" data-oid="kanq-m4">
                     {newBookingFormData.driver?.name || "Pendiente de asignar"}
                   </div>
                 </div>
@@ -178,10 +178,10 @@ const PaymentTab = ({
             </div>
 
             {/* Desglose de precios */}
-            <div className="border p-4 rounded-md" data-oid="xevcr5m">
+            <div className="border p-4 rounded-md" data-oid="feq_4rr">
               <h4
                 className="text-sm font-medium text-gray-700 mb-3"
-                data-oid="g7xrs-q"
+                data-oid="ejmo6pe"
               >
                 Desglose de la tarifa
               </h4>
@@ -190,15 +190,15 @@ const PaymentTab = ({
               {newBookingFormData.payment.priceBreakdown.is_round_trip && (
                 <div
                   className="mb-4 p-3 bg-gray-100 rounded border-l-4 border-blue-400 text-sm"
-                  data-oid="5:z_c4_"
+                  data-oid="i8at0vw"
                 >
                   <div
                     className="font-medium text-blue-800 mb-1"
-                    data-oid="bhpcv_6"
+                    data-oid="5c53zum"
                   >
                     Viaje de ida y vuelta
                   </div>
-                  <div className="text-blue-700" data-oid="kq9gk0g">
+                  <div className="text-blue-700" data-oid="213e0wq">
                     El precio incluye tanto el trayecto de ida como el de
                     vuelta. La distancia total calculada es de{" "}
                     {priceCalculationService.formatDistance(
@@ -210,15 +210,15 @@ const PaymentTab = ({
                 </div>
               )}
 
-              <div className="space-y-2 mb-4" data-oid="5iyvz9s">
+              <div className="space-y-2 mb-4" data-oid="kopx98-">
                 <div
                   className="flex justify-between text-sm"
-                  data-oid="x_ulho_"
+                  data-oid="dq4_yum"
                 >
-                  <span className="text-gray-600" data-oid="p805qts">
+                  <span className="text-gray-600" data-oid="oh.6y_n">
                     Tarifa base:
                   </span>
-                  <span data-oid="sz48-rj">
+                  <span data-oid="kxea77r">
                     {priceCalculationService.formatPrice(
                       newBookingFormData.payment.priceBreakdown.base_fare,
                     )}
@@ -226,16 +226,16 @@ const PaymentTab = ({
                 </div>
                 <div
                   className="flex justify-between text-sm"
-                  data-oid=":q1wqcz"
+                  data-oid="tn-2_a2"
                 >
-                  <span className="text-gray-600" data-oid="i0zenn.">
+                  <span className="text-gray-600" data-oid=":lwb051">
                     Cargo por distancia
                     {newBookingFormData.payment.priceBreakdown.is_round_trip &&
                       " (ida y vuelta)"}
                     :
                   </span>
-                  <div className="text-right" data-oid="zfe28s1">
-                    <div data-oid="v786a8q">
+                  <div className="text-right" data-oid="bkehvtk">
+                    <div data-oid=".ufj.0q">
                       {priceCalculationService.formatPrice(
                         newBookingFormData.payment.priceBreakdown
                           .distance_charge,
@@ -243,7 +243,7 @@ const PaymentTab = ({
                     </div>
                     {newBookingFormData.payment.priceBreakdown
                       .is_round_trip && (
-                      <div className="text-xs text-gray-400" data-oid="v.di9ox">
+                      <div className="text-xs text-gray-400" data-oid="s5gs558">
                         {priceCalculationService.formatDistance(
                           newBookingFormData.payment.priceBreakdown
                             .total_distance_km,
@@ -255,10 +255,10 @@ const PaymentTab = ({
                 </div>
                 <div
                   className="flex justify-between text-sm font-medium pt-2 border-t"
-                  data-oid="n3oq3io"
+                  data-oid="0c4d.lx"
                 >
-                  <span data-oid="34qft6d">Subtotal:</span>
-                  <span data-oid="lb955:w">
+                  <span data-oid="1xzta14">Subtotal:</span>
+                  <span data-oid="e.s.544">
                     {priceCalculationService.formatPrice(
                       newBookingFormData.payment.priceBreakdown.subtotal,
                     )}
@@ -266,14 +266,14 @@ const PaymentTab = ({
                 </div>
                 <div
                   className="flex justify-between text-sm"
-                  data-oid="8r88ekv"
+                  data-oid="9dm4o_:"
                 >
-                  <span className="text-gray-600" data-oid=".qefln6">
+                  <span className="text-gray-600" data-oid="yc0ofsm">
                     IVA (
                     {newBookingFormData.payment.priceBreakdown.tax_percentage}
                     %):
                   </span>
-                  <span data-oid="_lls-a3">
+                  <span data-oid="w1g_99.">
                     {priceCalculationService.formatPrice(
                       newBookingFormData.payment.priceBreakdown.tax_amount,
                     )}
@@ -283,14 +283,14 @@ const PaymentTab = ({
 
               <div
                 className="flex justify-between items-center border-t pt-3 mt-2"
-                data-oid=":rrd-1g"
+                data-oid="05s.wid"
               >
-                <span className="font-bold text-lg" data-oid="qy_s05w">
+                <span className="font-bold text-lg" data-oid="qhqa2u2">
                   Total:
                 </span>
                 <span
                   className="font-bold text-lg text-gray-600"
-                  data-oid="tcazn0z"
+                  data-oid="cax:.7l"
                 >
                   {priceCalculationService.formatPrice(
                     newBookingFormData.payment.priceBreakdown.total,
@@ -300,17 +300,17 @@ const PaymentTab = ({
             </div>
 
             {/* Método de pago */}
-            <div data-oid="4hp1zyk">
+            <div data-oid="ad21fir">
               <h4
                 className="text-sm font-medium text-gray-700 mb-3"
-                data-oid="44rzf73"
+                data-oid="l4:b8z9"
               >
                 Método de pago
               </h4>
-              <div className="space-y-3" data-oid="rqiplzp">
+              <div className="space-y-3" data-oid=".95bja5">
                 <label
                   className="flex items-center p-3 border rounded-md cursor-pointer hover:bg-gray-50"
-                  data-oid="q:1ccjr"
+                  data-oid="ctx2oj:"
                 >
                   <input
                     type="radio"
@@ -322,14 +322,14 @@ const PaymentTab = ({
                     onChange={() =>
                       handleFormChange("payment", "method", "credit_card")
                     }
-                    data-oid="tts2f_q"
+                    data-oid="e3uhh-3"
                   />
 
-                  <div className="ml-3" data-oid="7:pxgu3">
-                    <div className="font-medium text-sm" data-oid="1c729pq">
+                  <div className="ml-3" data-oid="mojoa2j">
+                    <div className="font-medium text-sm" data-oid="lbdtjla">
                       Tarjeta de crédito
                     </div>
-                    <div className="text-xs text-gray-500" data-oid="t:2k7y6">
+                    <div className="text-xs text-gray-500" data-oid="2dega7d">
                       El cliente pagará con tarjeta de crédito al finalizar el
                       viaje
                     </div>
@@ -338,7 +338,7 @@ const PaymentTab = ({
 
                 <label
                   className="flex items-center p-3 border rounded-md cursor-pointer hover:bg-gray-50"
-                  data-oid="38pt4q3"
+                  data-oid="1tq09u."
                 >
                   <input
                     type="radio"
@@ -348,14 +348,14 @@ const PaymentTab = ({
                     onChange={() =>
                       handleFormChange("payment", "method", "cash")
                     }
-                    data-oid="sq_e.mv"
+                    data-oid="valnt8f"
                   />
 
-                  <div className="ml-3" data-oid="ezgb1j:">
-                    <div className="font-medium text-sm" data-oid=":329gg7">
+                  <div className="ml-3" data-oid="g7wak:9">
+                    <div className="font-medium text-sm" data-oid="6u0f:_f">
                       Efectivo
                     </div>
-                    <div className="text-xs text-gray-500" data-oid="alz9plj">
+                    <div className="text-xs text-gray-500" data-oid="ys1cm4k">
                       El cliente pagará en efectivo al conductor
                     </div>
                   </div>
@@ -363,7 +363,7 @@ const PaymentTab = ({
 
                 <label
                   className="flex items-center p-3 border rounded-md cursor-pointer hover:bg-gray-50"
-                  data-oid="crrw1de"
+                  data-oid="g_ss3t8"
                 >
                   <input
                     type="radio"
@@ -373,14 +373,14 @@ const PaymentTab = ({
                     onChange={() =>
                       handleFormChange("payment", "method", "invoice")
                     }
-                    data-oid="lj65zd5"
+                    data-oid="ye2sn.r"
                   />
 
-                  <div className="ml-3" data-oid="tc7u5fw">
-                    <div className="font-medium text-sm" data-oid="9413pe-">
+                  <div className="ml-3" data-oid="11zt6xw">
+                    <div className="font-medium text-sm" data-oid="blh4j-.">
                       Facturación
                     </div>
-                    <div className="text-xs text-gray-500" data-oid="yqqkix2">
+                    <div className="text-xs text-gray-500" data-oid="5u-gui4">
                       Se emitirá una factura para pago posterior
                     </div>
                   </div>
@@ -388,7 +388,7 @@ const PaymentTab = ({
 
                 <label
                   className="flex items-center p-3 border rounded-md cursor-pointer hover:bg-gray-50"
-                  data-oid="0_cqk0l"
+                  data-oid="8pflza_"
                 >
                   <input
                     type="radio"
@@ -400,14 +400,14 @@ const PaymentTab = ({
                     onChange={() =>
                       handleFormChange("payment", "method", "corporate_account")
                     }
-                    data-oid="x06vxjx"
+                    data-oid="lffq-er"
                   />
 
-                  <div className="ml-3" data-oid="5_dzyz2">
-                    <div className="font-medium text-sm" data-oid="i339p7b">
+                  <div className="ml-3" data-oid="u-8rllh">
+                    <div className="font-medium text-sm" data-oid="5uy:hpt">
                       Cuenta corporativa
                     </div>
-                    <div className="text-xs text-gray-500" data-oid="7use-_.">
+                    <div className="text-xs text-gray-500" data-oid="ntqrtsr">
                       Cargo a la cuenta corporativa del cliente
                     </div>
                   </div>
@@ -419,19 +419,19 @@ const PaymentTab = ({
       ) : (
         <div
           className="bg-amber-50 p-6 rounded-lg border border-amber-200"
-          data-oid="b.4yo4s"
+          data-oid="diuzupn"
         >
-          <div className="flex items-start" data-oid="3j:yd58">
+          <div className="flex items-start" data-oid="8ty:9_3">
             <AlertCircle
               className="h-6 w-6 text-amber-500 mr-3 mt-0.5"
-              data-oid="wydtuua"
+              data-oid="f.6w-tg"
             />
 
-            <div data-oid="hnbd79:">
-              <h3 className="font-medium text-amber-800" data-oid="g.di._w">
+            <div data-oid="f0aepdz">
+              <h3 className="font-medium text-amber-800" data-oid="fsn8p84">
                 No hay tarifa calculada
               </h3>
-              <p className="text-amber-700 mt-1" data-oid="12nu-fh">
+              <p className="text-amber-700 mt-1" data-oid="fn7_2e9">
                 No se ha calculado ninguna tarifa para este servicio. Por favor,
                 vuelva a la pestaña de Servicio y seleccione un vehículo y un
                 destino para calcular la tarifa.
@@ -440,7 +440,7 @@ const PaymentTab = ({
                 variant="outline"
                 className="mt-3 text-sm"
                 onClick={() => setActiveTab("service")}
-                data-oid="l4tw85w"
+                data-oid="p:y_r5c"
               >
                 Volver a la selección de servicio
               </Button>
@@ -449,12 +449,12 @@ const PaymentTab = ({
         </div>
       )}
 
-      <div className="flex justify-between mt-8" data-oid="rds.ea:">
+      <div className="flex justify-between mt-8" data-oid="t-p7v_k">
         <Button
           variant="outline"
           onClick={() => setActiveTab("details")}
           className="text-sm"
-          data-oid="zwshc-1"
+          data-oid="9-hj8qb"
         >
           Anterior: Detalles
         </Button>
@@ -462,9 +462,9 @@ const PaymentTab = ({
           className="bg-black hover:bg-gray-800 text-sm"
           onClick={handleSubmitNewBooking}
           disabled={!hasPriceCalculated}
-          data-oid="n2bmla."
+          data-oid="xgx46ot"
         >
-          <CreditCard className="h-4 w-4 mr-2" data-oid="kuhxg97" />
+          <CreditCard className="h-4 w-4 mr-2" data-oid="jakw38b" />
           Completar reserva
         </Button>
       </div>

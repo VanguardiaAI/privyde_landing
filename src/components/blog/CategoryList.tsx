@@ -11,12 +11,12 @@ export const CategoryList = ({
   activeCategory,
 }: CategoryListProps) => {
   return (
-    <div className="flex flex-wrap gap-2 my-6" data-oid="hx5m:0k">
-      <Link to="/blog" data-oid="23b2qmh">
+    <div className="flex flex-wrap gap-2 my-6" data-oid="qeb5nag">
+      <Link to="/blog" data-oid=":ogrof3">
         <Badge
           variant={!activeCategory ? "default" : "outline"}
           className={`text-sm px-4 py-2 cursor-pointer ${!activeCategory ? "bg-black hover:bg-gray-800" : "hover:bg-gray-100"}`}
-          data-oid="c62cf34"
+          data-oid="s54x.sd"
         >
           Todos
         </Badge>
@@ -26,7 +26,7 @@ export const CategoryList = ({
         <Link
           key={idx}
           to={`/blog/categoria/${category.toLowerCase()}`}
-          data-oid="brmu_kj"
+          data-oid=":8y3f9y"
         >
           <Badge
             variant={
@@ -37,7 +37,7 @@ export const CategoryList = ({
                 ? "bg-black hover:bg-gray-800"
                 : "hover:bg-gray-100"
             }`}
-            data-oid="ojipfs."
+            data-oid="_n26s2g"
           >
             {category}
           </Badge>

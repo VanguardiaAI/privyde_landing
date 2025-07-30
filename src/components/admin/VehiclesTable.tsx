@@ -80,13 +80,13 @@ const CustomDropdownMenu = ({
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="relative" data-oid="kx81-by">
+    <div className="relative" data-oid="y_fk:lf">
       <div
         onClick={(e) => {
           e.stopPropagation();
           setOpen(!open);
         }}
-        data-oid="o905ml:"
+        data-oid="045a3.8"
       >
         {trigger}
       </div>
@@ -98,18 +98,18 @@ const CustomDropdownMenu = ({
               e.stopPropagation();
               setOpen(false);
             }}
-            data-oid="idmhknh"
+            data-oid="djxh46d"
           />
 
           <div
             className="absolute right-0 z-50 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none"
-            data-oid="_3suqwt"
+            data-oid="c-ygn4w"
           >
             <div
               className="py-1"
               role="menu"
               aria-orientation="vertical"
-              data-oid="peo4m.y"
+              data-oid="fg469ng"
             >
               {React.Children.map(children, (child) => {
                 if (React.isValidElement(child)) {
@@ -157,7 +157,7 @@ const CustomDropdownMenuItem = ({
     className={`w-full text-left block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 ${className}`}
     role="menuitem"
     onClick={onClick}
-    data-oid="irz.-hj"
+    data-oid="pw0c-65"
   >
     {children}
   </button>
@@ -186,31 +186,31 @@ const CustomAlertDialog = ({
   return (
     <div
       className="fixed inset-0 z-[100] flex items-center justify-center"
-      data-oid="tpuztr:"
+      data-oid="je:v.wx"
     >
       <div
         className="fixed inset-0 bg-black/50"
         onClick={() => onOpenChange(false)}
-        data-oid="lrg6dgb"
+        data-oid="imuud6_"
       />
 
       <div
         className="relative bg-white p-6 rounded-lg shadow-lg w-full max-w-md z-[101]"
-        data-oid="hjjca09"
+        data-oid="s:el29r"
       >
-        <div className="mb-4" data-oid="1e7nbb7">
-          <h2 className="text-lg font-semibold" data-oid="-fzu84l">
+        <div className="mb-4" data-oid="8ceodbp">
+          <h2 className="text-lg font-semibold" data-oid="yxxe7de">
             {title}
           </h2>
-          <p className="text-gray-500 mt-1" data-oid="4sesvfa">
+          <p className="text-gray-500 mt-1" data-oid="82e00ln">
             {description}
           </p>
         </div>
-        <div className="flex justify-end space-x-2" data-oid="p.e4y8y">
+        <div className="flex justify-end space-x-2" data-oid=":hc.zsc">
           <Button
             variant="outline"
             onClick={() => onOpenChange(false)}
-            data-oid="uu00hxd"
+            data-oid="93ol45m"
           >
             {cancelText}
           </Button>
@@ -220,7 +220,7 @@ const CustomAlertDialog = ({
               confirmAction();
               onOpenChange(false);
             }}
-            data-oid="651isia"
+            data-oid="-eznuhf"
           >
             {confirmText}
           </Button>
@@ -344,11 +344,11 @@ const VehiclesTable = ({
 
   const ownerTypeIcons = {
     company: (
-      <Briefcase className="mr-1.5 h-4 w-4 text-gray-600" data-oid="-ssbf25" />
+      <Briefcase className="mr-1.5 h-4 w-4 text-gray-600" data-oid="ejahmv1" />
     ),
 
     private_driver: (
-      <UserCircle className="mr-1.5 h-4 w-4 text-gray-600" data-oid="psmth.e" />
+      <UserCircle className="mr-1.5 h-4 w-4 text-gray-600" data-oid="ktbyjle" />
     ),
   };
 
@@ -373,60 +373,60 @@ const VehiclesTable = ({
   };
 
   return (
-    <div className="w-full" data-oid="l_8iun7">
-      <div className="overflow-x-auto rounded-lg border" data-oid="w6skej0">
+    <div className="w-full" data-oid="zttkiys">
+      <div className="overflow-x-auto rounded-lg border" data-oid="c981eli">
         <table
           className="min-w-full divide-y divide-gray-200"
-          data-oid="rymunrv"
+          data-oid="5nvbhq3"
         >
-          <thead className="bg-gray-50" data-oid="u_25aki">
-            <tr data-oid="cpvt:2g">
+          <thead className="bg-gray-50" data-oid="dyk11kz">
+            <tr data-oid="3fy.wug">
               <th
                 scope="col"
                 className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                data-oid="xd7rcii"
+                data-oid="0t4bvyr"
               >
                 Vehículo
               </th>
               <th
                 scope="col"
                 className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                data-oid="-1n81xo"
+                data-oid="od-kpy1"
               >
                 Propietario
               </th>
               <th
                 scope="col"
                 className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                data-oid="5-1.daa"
+                data-oid="j.uesg4"
               >
                 Matrícula
               </th>
               <th
                 scope="col"
                 className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                data-oid="ls1od7t"
+                data-oid="ilu9tky"
               >
                 Disponibilidad
               </th>
               <th
                 scope="col"
                 className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                data-oid="aa9vchc"
+                data-oid="b1.ag1n"
               >
                 Chóferes Asignados
               </th>
               <th
                 scope="col"
                 className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                data-oid="qce3ecg"
+                data-oid="la22zv9"
               >
                 Estado
               </th>
               <th
                 scope="col"
                 className="px-4 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider"
-                data-oid="q2ll0ju"
+                data-oid=":00g23z"
               >
                 Acciones
               </th>
@@ -434,58 +434,58 @@ const VehiclesTable = ({
           </thead>
           <tbody
             className="bg-white divide-y divide-gray-200"
-            data-oid="4q6eouk"
+            data-oid="1h4.7v2"
           >
             {vehicles.map((vehicle) => (
               <tr
                 key={vehicle.id}
                 className="hover:bg-gray-100 cursor-pointer"
                 onClick={() => onViewDetails(vehicle)}
-                data-oid="2g3cyfv"
+                data-oid="k5q4nol"
               >
-                <td className="px-4 py-4 whitespace-nowrap" data-oid="d_wmdpb">
-                  <div className="flex items-center" data-oid="03av0ue">
+                <td className="px-4 py-4 whitespace-nowrap" data-oid="d-dgahq">
+                  <div className="flex items-center" data-oid="yjdnfs5">
                     <div
                       className="h-10 w-10 flex-shrink-0 mr-3"
-                      data-oid="-ln6p.e"
+                      data-oid="ezinv:8"
                     >
                       {vehicle.image ? (
                         <img
                           className="h-10 w-10 rounded-md object-cover"
                           src={vehicle.image}
                           alt={`${vehicle.brand} ${vehicle.model}`}
-                          data-oid="3obz.b8"
+                          data-oid=".ejbq:t"
                         />
                       ) : (
                         <div
                           className={`h-10 w-10 rounded-md ${typeLabels[vehicle.type]?.color || "bg-gray-200"} flex items-center justify-center text-white font-semibold`}
-                          data-oid="190kb-d"
+                          data-oid=".whysyk"
                         >
                           {vehicle.brand.charAt(0)}
                           {vehicle.model.charAt(0)}
                         </div>
                       )}
                     </div>
-                    <div data-oid="4w281mo">
+                    <div data-oid=":iplv8.">
                       <div
                         className="text-sm font-medium text-gray-900"
-                        data-oid="edkub63"
+                        data-oid="r8-bbkl"
                       >
                         {vehicle.brand} {vehicle.model}
                       </div>
-                      <div className="text-xs text-gray-500" data-oid="o5nn_3p">
+                      <div className="text-xs text-gray-500" data-oid="q:7:557">
                         {vehicle.brand} {vehicle.model} ({vehicle.year}) -{" "}
                         {vehicle.color}
                       </div>
                       <span
                         className={`mt-1 inline-flex items-center px-2 py-0.5 rounded text-xs font-medium ${typeLabels[vehicle.type]?.color || "bg-gray-100 text-gray-800"}`}
-                        data-oid="xt05x.o"
+                        data-oid="5-jk2k7"
                       >
                         {typeLabels[vehicle.type]?.label || vehicle.type}
                       </span>
                       <span
                         className={`mt-1 ml-1 inline-flex items-center px-2 py-0.5 rounded text-xs font-medium ${categoryLabels[vehicle.category]?.color || "bg-gray-100 text-gray-800"}`}
-                        data-oid="ovh1akq"
+                        data-oid="q8.fteo"
                       >
                         {categoryLabels[vehicle.category]?.label ||
                           vehicle.category}
@@ -493,19 +493,19 @@ const VehiclesTable = ({
                     </div>
                   </div>
                 </td>
-                <td className="px-4 py-4 whitespace-nowrap" data-oid="v0h_c:e">
+                <td className="px-4 py-4 whitespace-nowrap" data-oid="b4t:fg2">
                   <div
                     className="flex items-center text-sm text-gray-700"
-                    data-oid="znlycew"
+                    data-oid="ijssk09"
                   >
                     {ownerTypeIcons[vehicle.ownerType]}
-                    <div data-oid="h9-exo2">
+                    <div data-oid="gocz4md">
                       {vehicle.ownerName}
                       <div
                         className="text-xs text-gray-500 flex items-center"
-                        data-oid="yeam4_s"
+                        data-oid="m-ffc3u"
                       >
-                        <Globe className="h-3 w-3 mr-1" data-oid="ms.ucda" />{" "}
+                        <Globe className="h-3 w-3 mr-1" data-oid="mzc7ey0" />{" "}
                         {getCountryFlagEmoji(vehicle.ownerCountry)}{" "}
                         {vehicle.ownerCountry}
                       </div>
@@ -514,29 +514,29 @@ const VehiclesTable = ({
                 </td>
                 <td
                   className="px-4 py-4 whitespace-nowrap text-sm text-gray-500 font-mono"
-                  data-oid="7j2:6ck"
+                  data-oid="5xe:b_-"
                 >
                   {vehicle.licensePlate}
                 </td>
                 <td
                   className="px-4 py-4 whitespace-nowrap text-sm text-gray-500"
-                  data-oid="e04urca"
+                  data-oid="7xxnmq:"
                 >
-                  <div className="flex items-center" data-oid="3y67k4y">
+                  <div className="flex items-center" data-oid="w2_vk8j">
                     <Route
                       className="h-4 w-4 mr-1.5 text-gray-400"
-                      data-oid="pqg4l8x"
+                      data-oid="3tdjnd2"
                     />
 
-                    <div data-oid="ekzcu0e">
+                    <div data-oid="-z3cyc9">
                       {vehicle.availabilityType &&
                       vehicle.availabilityType.length > 0 ? (
-                        <div className="flex flex-col gap-1" data-oid="0ddue0b">
+                        <div className="flex flex-col gap-1" data-oid="_m6.:f8">
                           {vehicle.availabilityType.includes("zone") && (
                             <span
                               title={`Zona: ${vehicle.availabilityDetails}`}
                               className="hover:underline cursor-help"
-                              data-oid="cejx2_0"
+                              data-oid="83o5f6q"
                             >
                               Zona:{" "}
                               {vehicle.availabilityDetails.substring(0, 15)}
@@ -549,7 +549,7 @@ const VehiclesTable = ({
                             <span
                               title={`Ruta fija: ${vehicle.availabilityDetails}`}
                               className="hover:underline cursor-help"
-                              data-oid="ff592ao"
+                              data-oid="e2y:lrk"
                             >
                               Ruta fija
                               {vehicle.availabilityDetails &&
@@ -564,7 +564,7 @@ const VehiclesTable = ({
                             <span
                               title={`Ruta flexible: ${vehicle.availabilityDetails}`}
                               className="hover:underline cursor-help"
-                              data-oid="ltkmcvy"
+                              data-oid="gzlmrla"
                             >
                               Ruta flexible
                               {vehicle.availabilityDetails &&
@@ -581,8 +581,8 @@ const VehiclesTable = ({
                     </div>
                   </div>
                 </td>
-                <td className="px-4 py-4" data-oid="cym3xk1">
-                  <div className="flex flex-wrap gap-1" data-oid="mjn:hcm">
+                <td className="px-4 py-4" data-oid="9t.2dsj">
+                  <div className="flex flex-wrap gap-1" data-oid="ooiz-kf">
                     {vehicle.associatedDrivers &&
                     vehicle.associatedDrivers.length > 0 ? (
                       <>
@@ -597,11 +597,11 @@ const VehiclesTable = ({
                                   "py-1 pl-1.5 pr-1.5 flex items-center bg-gray-200 text-gray-700 hover:bg-gray-300",
                                   !driver && "bg-gray-100 text-gray-600",
                                 )}
-                                data-oid="ghid-t9"
+                                data-oid=".6do1ll"
                               >
                                 <User
                                   className="h-3 w-3 mr-1"
-                                  data-oid="prcfrqh"
+                                  data-oid=":-m_rwe"
                                 />
 
                                 {driver ? driver.name : `Chofer ${index + 1}`}
@@ -611,7 +611,7 @@ const VehiclesTable = ({
                         {vehicle.associatedDrivers.length > 3 && (
                           <Badge
                             className="py-1 px-2 bg-gray-100 text-gray-700"
-                            data-oid=":zm113l"
+                            data-oid="3-b1v_3"
                           >
                             +{vehicle.associatedDrivers.length - 3} más
                           </Badge>
@@ -620,7 +620,7 @@ const VehiclesTable = ({
                     ) : (
                       <span
                         className="text-xs text-gray-400"
-                        data-oid="cyb9i8t"
+                        data-oid="td_d1_g"
                       >
                         No asignado
                       </span>
@@ -628,25 +628,25 @@ const VehiclesTable = ({
                     {loadingDrivers && (
                       <span
                         className="text-xs text-gray-400 animate-pulse"
-                        data-oid="6h_csg:"
+                        data-oid="o.l.zd3"
                       >
                         Cargando...
                       </span>
                     )}
                   </div>
                 </td>
-                <td className="px-4 py-4 whitespace-nowrap" data-oid="138qb..">
+                <td className="px-4 py-4 whitespace-nowrap" data-oid=".n3m09r">
                   <Badge
                     variant={vehicle.available ? "default" : "destructive"}
                     className={`${vehicle.available ? "bg-gray-200 text-green-700" : "bg-gray-200 text-gray-700"}`}
-                    data-oid="r_p11mw"
+                    data-oid="iz4flpj"
                   >
                     {vehicle.available ? "Disponible" : "No disponible"}
                   </Badge>
                 </td>
                 <td
                   className="px-4 py-4 whitespace-nowrap text-right text-sm font-medium"
-                  data-oid="wfz6aon"
+                  data-oid="4pz4bkr"
                 >
                   <CustomDropdownMenu
                     trigger={
@@ -654,26 +654,26 @@ const VehiclesTable = ({
                         variant="ghost"
                         size="icon"
                         className="h-8 w-8"
-                        data-oid="-8326_:"
+                        data-oid="0qmb8rx"
                       >
                         <MoreHorizontal
                           className="h-4 w-4"
-                          data-oid="l8yr8xp"
+                          data-oid="3_9jvmq"
                         />
                       </Button>
                     }
-                    data-oid=":rsea28"
+                    data-oid="h9d6vvd"
                   >
                     <CustomDropdownMenuItem
                       onClick={(e) => {
                         e.stopPropagation();
                         onViewDetails(vehicle);
                       }}
-                      data-oid="3le.:6x"
+                      data-oid="a7olr2k"
                     >
-                      <div className="flex items-center" data-oid=":r4y.24">
-                        <Eye className="mr-2 h-4 w-4" data-oid="km2v4:n" />
-                        <span data-oid="f9:0zq5">Ver Detalles</span>
+                      <div className="flex items-center" data-oid="my0w:_d">
+                        <Eye className="mr-2 h-4 w-4" data-oid="ph32usd" />
+                        <span data-oid="d80e3z0">Ver Detalles</span>
                       </div>
                     </CustomDropdownMenuItem>
                     <CustomDropdownMenuItem
@@ -681,11 +681,11 @@ const VehiclesTable = ({
                         e.stopPropagation();
                         onEdit(vehicle);
                       }}
-                      data-oid="0zag9oe"
+                      data-oid="6a300s:"
                     >
-                      <div className="flex items-center" data-oid="xyn1wx3">
-                        <Edit className="mr-2 h-4 w-4" data-oid="l24m3rx" />
-                        <span data-oid="vr567q.">Editar</span>
+                      <div className="flex items-center" data-oid="bkes3l5">
+                        <Edit className="mr-2 h-4 w-4" data-oid="y:1iglv" />
+                        <span data-oid="s9kekse">Editar</span>
                       </div>
                     </CustomDropdownMenuItem>
                     <CustomDropdownMenuItem
@@ -693,15 +693,15 @@ const VehiclesTable = ({
                         e.stopPropagation();
                         onToggleAvailability(vehicle.id, !vehicle.available);
                       }}
-                      data-oid="0.afi5q"
+                      data-oid="dnq-k3k"
                     >
-                      <div className="flex items-center" data-oid="mohqcu.">
+                      <div className="flex items-center" data-oid="tau1z0v">
                         {vehicle.available ? (
-                          <X className="mr-2 h-4 w-4" data-oid="3gxg4hx" />
+                          <X className="mr-2 h-4 w-4" data-oid="e2rxpru" />
                         ) : (
-                          <Check className="mr-2 h-4 w-4" data-oid="1on0ky9" />
+                          <Check className="mr-2 h-4 w-4" data-oid="0x-gab." />
                         )}
-                        <span data-oid="hxc-0bo">
+                        <span data-oid="dw34qm9">
                           {vehicle.available ? "No Disponible" : "Disponible"}
                         </span>
                       </div>
@@ -711,25 +711,25 @@ const VehiclesTable = ({
                         e.stopPropagation();
                         onAssignDriver(vehicle.id);
                       }}
-                      data-oid="6r1yqaf"
+                      data-oid="vl4tlvg"
                     >
-                      <div className="flex items-center" data-oid="pvovwhe">
-                        <MapPin className="mr-2 h-4 w-4" data-oid="6v11oln" />
-                        <span data-oid="9w4k4b6">Asignar Chóferes</span>
+                      <div className="flex items-center" data-oid="eoxaxva">
+                        <MapPin className="mr-2 h-4 w-4" data-oid="kpw7n67" />
+                        <span data-oid="1xcj0br">Asignar Chóferes</span>
                       </div>
                     </CustomDropdownMenuItem>
-                    <div className="border-t my-1" data-oid="h.l4-2r"></div>
+                    <div className="border-t my-1" data-oid="v97ohuk"></div>
                     <CustomDropdownMenuItem
                       onClick={(e) => {
                         e.stopPropagation();
                         handleDelete(vehicle.id);
                       }}
                       className="text-red-600 hover:bg-red-50"
-                      data-oid="wrjgv_y"
+                      data-oid="8_0z2rx"
                     >
-                      <div className="flex items-center" data-oid="tqu_2z1">
-                        <Trash2 className="mr-2 h-4 w-4" data-oid="1z86z4g" />
-                        <span data-oid="_49kl6e">Eliminar Vehículo</span>
+                      <div className="flex items-center" data-oid="pe0wcg0">
+                        <Trash2 className="mr-2 h-4 w-4" data-oid="2b1_zaq" />
+                        <span data-oid="_xu5l4d">Eliminar Vehículo</span>
                       </div>
                     </CustomDropdownMenuItem>
                   </CustomDropdownMenu>
@@ -737,16 +737,16 @@ const VehiclesTable = ({
               </tr>
             ))}
             {vehicles.length === 0 && (
-              <tr data-oid="sf8b0yw">
+              <tr data-oid="wwmfs:c">
                 <td
                   colSpan={7}
                   className="px-6 py-12 text-center"
-                  data-oid="3slpb4v"
+                  data-oid="gyp7zzh"
                 >
-                  <p className="text-gray-500" data-oid="ee_d:ii">
+                  <p className="text-gray-500" data-oid="ojem2s:">
                     No hay vehículos para mostrar.
                   </p>
-                  <p className="text-sm text-gray-400 mt-1" data-oid="f8nq0y-">
+                  <p className="text-sm text-gray-400 mt-1" data-oid="ostsnaf">
                     Agrega vehículos usando el botón "Añadir Vehículo".
                   </p>
                 </td>
@@ -764,7 +764,7 @@ const VehiclesTable = ({
         title="¿Estás seguro?"
         description="Esta acción no se puede deshacer. El vehículo se eliminará permanentemente del sistema."
         confirmAction={confirmDelete}
-        data-oid="sn3lfey"
+        data-oid="cgdf4zl"
       />
     </div>
   );

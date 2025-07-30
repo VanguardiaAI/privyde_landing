@@ -103,7 +103,7 @@ const GoogleZoneMap = ({
     return (
       <div
         className="h-64 w-full bg-gray-100 flex items-center justify-center text-gray-500 text-sm"
-        data-oid="97sugi:"
+        data-oid="t_hf2q5"
       >
         Faltan coordenadas para mostrar el mapa
       </div>
@@ -133,16 +133,16 @@ const GoogleZoneMap = ({
     <>
       <div
         className="w-full h-64 rounded-lg overflow-hidden shadow-sm border relative bg-gray-50"
-        data-oid="627fuae"
+        data-oid="bzihh.x"
       >
         {loading && (
           <div
             className="absolute inset-0 flex items-center justify-center bg-gray-50 z-10"
-            data-oid="xexd_lb"
+            data-oid="yfdqc3t"
           >
             <div
               className="animate-spin rounded-full h-8 w-8 border-b-2 border-red-600"
-              data-oid="9bskok_"
+              data-oid="sk49vbj"
             ></div>
           </div>
         )}
@@ -161,22 +161,22 @@ const GoogleZoneMap = ({
             setError("Error al cargar el mapa");
             setLoading(false);
           }}
-          data-oid="9t616xp"
+          data-oid="7oxb2sg"
         ></iframe>
 
         <div
           className="absolute bottom-2 left-2 right-2 bg-white bg-opacity-90 p-2 rounded-md text-xs flex flex-col"
-          data-oid="i_udjwv"
+          data-oid="v6hm64e"
         >
-          <div className="flex justify-between items-center" data-oid="ufa7-u3">
-            <div data-oid="5_qhmdi">
-              <span className="font-bold" data-oid="w7m-q85">
+          <div className="flex justify-between items-center" data-oid="urvghdd">
+            <div data-oid="v7evcav">
+              <span className="font-bold" data-oid="obdp4mw">
                 Centro:
               </span>{" "}
               {center.name}
             </div>
-            <div data-oid="i8tlp9h">
-              <span className="font-bold" data-oid="9y4qigy">
+            <div data-oid="k8k6sr.">
+              <span className="font-bold" data-oid="14f1eal">
                 Radio:
               </span>{" "}
               {radius} km
@@ -184,24 +184,24 @@ const GoogleZoneMap = ({
           </div>
           <div
             className="mt-1 text-xs text-gray-500 flex justify-between items-center"
-            data-oid="_wgkwsw"
+            data-oid="6w8h_ri"
           >
             {error ? (
-              <span className="text-black" data-oid="qorxi72">
+              <span className="text-black" data-oid="62x0nb4">
                 {error}
               </span>
             ) : (
-              <span data-oid="yupt52l">Google Maps</span>
+              <span data-oid="1r_.uhl">Google Maps</span>
             )}
             <Button
               variant="ghost"
               size="sm"
               className="text-gray-700 hover:text-gray-900"
               onClick={() => setShowFullscreen(true)}
-              data-oid="-euscc-"
+              data-oid="e6jy29n"
             >
-              <Maximize2 className="h-4 w-4" data-oid="d9e7qqt" />
-              <span className="sr-only" data-oid="eth1fzg">
+              <Maximize2 className="h-4 w-4" data-oid="2ft_3bw" />
+              <span className="sr-only" data-oid="y.rh8o4">
                 Ampliar
               </span>
             </Button>
@@ -214,13 +214,13 @@ const GoogleZoneMap = ({
         <Dialog
           open={showFullscreen}
           onOpenChange={setShowFullscreen}
-          data-oid="pf_9hhq"
+          data-oid="5a2kefx"
         >
           <DialogContent
             className="max-w-6xl max-h-[90vh] p-0 overflow-hidden"
-            data-oid="0gev.zh"
+            data-oid="vklnl.y"
           >
-            <div className="relative h-[80vh] w-full" data-oid="ozn45mv">
+            <div className="relative h-[80vh] w-full" data-oid="n8hf6-_">
               <iframe
                 src={googleUrl}
                 width="100%"
@@ -229,51 +229,51 @@ const GoogleZoneMap = ({
                 allowFullScreen={true}
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                data-oid="7i9_2vq"
+                data-oid="05wjg7a"
               ></iframe>
 
               <div
                 className="absolute bottom-4 left-4 right-4 bg-white bg-opacity-90 p-3 rounded-md shadow-md"
-                data-oid="4xo5wpl"
+                data-oid="fyftr4r"
               >
                 <div
                   className="flex justify-between items-center"
-                  data-oid="3u3xggt"
+                  data-oid="e-go18z"
                 >
-                  <div data-oid="v.k2jdv">
-                    <div className="font-bold text-lg mb-1" data-oid="7-ivj5w">
+                  <div data-oid="wrbmt52">
+                    <div className="font-bold text-lg mb-1" data-oid="yvpqspr">
                       Zona Flexible
                     </div>
-                    <div className="flex flex-col" data-oid="o9ucbyc">
-                      <div className="flex items-center" data-oid="kzm58j1">
+                    <div className="flex flex-col" data-oid=":lz7jzp">
+                      <div className="flex items-center" data-oid="bshsnkb">
                         <MapPin
                           className="h-4 w-4 text-black mr-1 flex-shrink-0"
-                          data-oid="uc4fqel"
+                          data-oid="_4hvzxw"
                         />
 
-                        <span className="font-medium" data-oid="u6zc5cj">
+                        <span className="font-medium" data-oid="xuz_rr_">
                           Centro:
                         </span>
-                        <span className="ml-1" data-oid="1.agp:3">
+                        <span className="ml-1" data-oid="c4d6lru">
                           {center.name}
                         </span>
                       </div>
                       <div
                         className="flex items-center mt-1"
-                        data-oid="3h5f8gn"
+                        data-oid="s100hpa"
                       >
-                        <span className="font-medium" data-oid="xso.5q0">
+                        <span className="font-medium" data-oid="47tce3o">
                           Radio de cobertura:
                         </span>
-                        <span className="ml-1" data-oid="r31i67j">
+                        <span className="ml-1" data-oid="6wv3t6m">
                           {radius} km
                         </span>
                       </div>
                       <div
                         className="flex items-center mt-1 text-sm text-gray-600"
-                        data-oid="suwfuv:"
+                        data-oid="0k1jck8"
                       >
-                        <span className="italic" data-oid="vshg-m:">
+                        <span className="italic" data-oid="w2w6f3a">
                           El área sombreada muestra la zona aproximada de
                           cobertura
                         </span>
@@ -284,9 +284,9 @@ const GoogleZoneMap = ({
                     variant="default"
                     className="bg-black hover:bg-gray-800 text-white"
                     onClick={() => setShowFullscreen(false)}
-                    data-oid="8ku_pjn"
+                    data-oid="95qhrym"
                   >
-                    <X className="h-4 w-4 mr-2" data-oid="frf6a7u" />
+                    <X className="h-4 w-4 mr-2" data-oid="pio::zk" />
                     Cerrar
                   </Button>
                 </div>
@@ -460,7 +460,7 @@ const FlexibleRoutesTab = ({
   };
 
   return (
-    <div className="space-y-6" data-oid="_hhopdr">
+    <div className="space-y-6" data-oid="6w_t8zf">
       {showZoneForm ? (
         <FlexibleZoneForm
           editMode={!!editingZone}
@@ -470,53 +470,53 @@ const FlexibleRoutesTab = ({
             setShowZoneForm(false);
             setEditingZone(null);
           }}
-          data-oid="dbhuzde"
+          data-oid="yy-pu.d"
         />
       ) : (
         <>
           <div
             className="flex justify-between items-center bg-white p-4 rounded-lg shadow-sm mb-4"
-            data-oid="1l_9z7b"
+            data-oid="6:bxoj."
           >
-            <div className="relative w-64" data-oid="txgu69q">
+            <div className="relative w-64" data-oid="hzrxf21">
               <input
                 type="text"
                 placeholder="Buscar zonas..."
                 className="pl-10 pr-4 py-2 border rounded-lg w-full"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                data-oid="1ry9ji5"
+                data-oid="3a81_mm"
               />
 
               <Search
                 className="absolute left-3 top-2.5 text-gray-400"
                 size={18}
-                data-oid="bjfx6r4"
+                data-oid="emc8aw:"
               />
             </div>
-            <div className="flex space-x-3" data-oid="uisqcnj">
+            <div className="flex space-x-3" data-oid="_ej6mg3">
               <select
                 className="px-3 py-2 border rounded-lg"
                 value={statusFilter}
                 onChange={(e) => setStatusFilter(e.target.value)}
-                data-oid="lez3xqz"
+                data-oid="6t.k121"
               >
-                <option value="all" data-oid="ik:5ark">
+                <option value="all" data-oid="_3tgcfa">
                   Todos los estados
                 </option>
-                <option value="active" data-oid="807yj2.">
+                <option value="active" data-oid="11p2qo4">
                   Activas
                 </option>
-                <option value="inactive" data-oid="2pdh.ii">
+                <option value="inactive" data-oid="qu__9og">
                   Inactivas
                 </option>
               </select>
               <Button
                 onClick={handleAddZone}
                 className="flex items-center px-4 py-2 bg-black text-white rounded-lg hover:bg-gray-800 transition-colors"
-                data-oid="3p395yv"
+                data-oid="1:snyov"
               >
-                <PlusCircle size={18} className="mr-2" data-oid="oasbz:l" />
+                <PlusCircle size={18} className="mr-2" data-oid="t7l7pb7" />
                 Nueva Zona Flexible
               </Button>
             </div>
@@ -524,54 +524,54 @@ const FlexibleRoutesTab = ({
 
           <div
             className="bg-white rounded-lg shadow-md overflow-hidden"
-            data-oid="x-0d6.0"
+            data-oid="._u2w13"
           >
-            <div className="overflow-x-auto" data-oid="7nfda5w">
+            <div className="overflow-x-auto" data-oid="np_l3ch">
               <table
                 className="min-w-full divide-y divide-gray-200"
-                data-oid="v--h:h0"
+                data-oid=":z4qg1u"
               >
-                <thead className="bg-gray-50" data-oid=":::2b3w">
-                  <tr data-oid="n1ubw5y">
+                <thead className="bg-gray-50" data-oid="n3s2fnk">
+                  <tr data-oid="_gpmu96">
                     <th
                       className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                      data-oid="e2nl6m1"
+                      data-oid="6h:q0y4"
                     >
                       Nombre de Zona
                     </th>
                     <th
                       className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                      data-oid="k._q1yp"
+                      data-oid="5uu0fep"
                     >
                       Centro y Radio
                     </th>
                     <th
                       className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                      data-oid="4h5f2l:"
+                      data-oid="wepup1a"
                     >
                       Colaborador
                     </th>
                     <th
                       className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                      data-oid="-fij_a_"
+                      data-oid="yfuc4o2"
                     >
                       Vehículos Asignados
                     </th>
                     <th
                       className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                      data-oid="nt_p_tx"
+                      data-oid="-xp_x2."
                     >
                       Estado
                     </th>
                     <th
                       className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                      data-oid="0k5pnb6"
+                      data-oid="pn:c9r3"
                     >
                       Tarifas
                     </th>
                     <th
                       className="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider"
-                      data-oid="xnxz8jl"
+                      data-oid="3:vl7jo"
                     >
                       Acciones
                     </th>
@@ -579,49 +579,49 @@ const FlexibleRoutesTab = ({
                 </thead>
                 <tbody
                   className="bg-white divide-y divide-gray-200"
-                  data-oid="69iz6wy"
+                  data-oid="89v2g_3"
                 >
                   {filteredZones.map((zone, index) => (
                     <tr
                       key={`zone-${zone.id || index}`}
                       className="hover:bg-gray-50 cursor-pointer"
                       onClick={(e) => handleViewZoneDetails(zone, e)}
-                      data-oid="fwq4qon"
+                      data-oid="-:cfzv9"
                     >
                       <td
                         className="px-6 py-4 whitespace-nowrap"
-                        data-oid="0ea_3-2"
+                        data-oid="kt6:nm8"
                       >
                         <div
                           className="text-sm font-medium text-gray-900"
-                          data-oid="-2hcgqd"
+                          data-oid="k0r2iga"
                         >
                           {zone.name}
                         </div>
                       </td>
-                      <td className="px-6 py-4" data-oid="d-uz-x-">
+                      <td className="px-6 py-4" data-oid="ah6twh5">
                         <div
                           className="text-sm text-gray-900"
-                          data-oid="tr.xq9o"
+                          data-oid="mx20bs-"
                         >
-                          <div className="flex items-start" data-oid="3mf42u_">
+                          <div className="flex items-start" data-oid="3k2.7z0">
                             <MapPin
                               className="h-4 w-4 text-black mt-0.5 mr-1 flex-shrink-0"
-                              data-oid="8o_yj.j"
+                              data-oid="x8oe:gx"
                             />
 
-                            <span data-oid="0ddbpy:">{zone.center.name}</span>
+                            <span data-oid="7jsid5i">{zone.center.name}</span>
                           </div>
                           <div
                             className="ml-5 mt-1 text-xs text-gray-500"
-                            data-oid="dz5tpj3"
+                            data-oid="zvjc.e-"
                           >
                             Radio: {zone.radius} km
                           </div>
                           {zone.restrictions && (
                             <div
                               className="ml-5 mt-1 text-xs text-gray-500"
-                              data-oid="y9z1ar."
+                              data-oid="-zeoa:z"
                             >
                               {zone.restrictions.minDistance &&
                                 `Mín: ${zone.restrictions.minDistance} km`}
@@ -636,57 +636,57 @@ const FlexibleRoutesTab = ({
                       </td>
                       <td
                         className="px-6 py-4 whitespace-nowrap"
-                        data-oid=".r-s8ab"
+                        data-oid="m2w.46x"
                       >
-                        <div className="flex items-center" data-oid="k..ybfk">
+                        <div className="flex items-center" data-oid="zx-2rp9">
                           <div
                             className="h-8 w-8 rounded-full bg-gray-200 flex items-center justify-center mr-3"
-                            data-oid="n:4pyg3"
+                            data-oid="hukazcd"
                           >
                             <Building
                               className="h-4 w-4 text-gray-600"
-                              data-oid="w:tjga8"
+                              data-oid="cddqlns"
                             />
                           </div>
                           <div
                             className="text-sm text-gray-900"
-                            data-oid="axw-yy1"
+                            data-oid="hh2s330"
                           >
                             {getCollaboratorName(zone.collaboratorId)}
                           </div>
                         </div>
                       </td>
-                      <td className="px-6 py-4" data-oid="ch4tdj6">
+                      <td className="px-6 py-4" data-oid="nstsqq5">
                         <div
                           className="text-sm text-gray-900"
-                          data-oid="2payaky"
+                          data-oid="9dt9bdq"
                         >
                           {zone.vehicles.length > 0 ? (
                             <div
                               className="flex flex-col space-y-2"
-                              data-oid=".2abciw"
+                              data-oid="ghnu6jh"
                             >
                               {zone.vehicles.slice(0, 3).map((vehicle, idx) => (
                                 <div
                                   key={idx}
                                   className="flex items-center"
-                                  data-oid="ifo1m9x"
+                                  data-oid="ldndrbv"
                                 >
                                   <Car
                                     className="h-4 w-4 text-gray-500 mr-2"
-                                    data-oid="smkrydu"
+                                    data-oid="uyfu7n1"
                                   />
 
-                                  <div data-oid="c1ypj79">
+                                  <div data-oid=":8uwcwf">
                                     <span
                                       className="font-medium"
-                                      data-oid="swfar_f"
+                                      data-oid="-766rh7"
                                     >
                                       {vehicle.model}
                                     </span>
                                     <span
                                       className="ml-2 text-xs text-gray-500"
-                                      data-oid="mjnuone"
+                                      data-oid="fn560oc"
                                     >
                                       {vehicle.licensePlate}
                                     </span>
@@ -696,7 +696,7 @@ const FlexibleRoutesTab = ({
                               {zone.vehicles.length > 3 && (
                                 <div
                                   className="text-xs text-gray-600"
-                                  data-oid="gn:doip"
+                                  data-oid="9tsax8b"
                                 >
                                   +{zone.vehicles.length - 3} vehículos más
                                 </div>
@@ -705,7 +705,7 @@ const FlexibleRoutesTab = ({
                           ) : (
                             <span
                               className="text-gray-500 italic"
-                              data-oid="ffq4t_i"
+                              data-oid=":nm_ain"
                             >
                               Sin vehículos asignados
                             </span>
@@ -714,7 +714,7 @@ const FlexibleRoutesTab = ({
                       </td>
                       <td
                         className="px-6 py-4 whitespace-nowrap"
-                        data-oid="h5e-q_s"
+                        data-oid="8y:n4--"
                       >
                         <Badge
                           className={`
@@ -724,38 +724,38 @@ const FlexibleRoutesTab = ({
                               : "bg-gray-100 text-gray-800 hover:bg-gray-100"
                           }
                         `}
-                          data-oid="sruf18g"
+                          data-oid="5m21z82"
                         >
                           {zone.status === "active" ? "Activa" : "Inactiva"}
                         </Badge>
                       </td>
                       <td
                         className="px-6 py-4 whitespace-nowrap"
-                        data-oid="16i3:c9"
+                        data-oid="k0:q_1k"
                       >
-                        <div className="text-sm" data-oid="k.:zp6r">
+                        <div className="text-sm" data-oid="4.yt7e7">
                           <div
                             className="font-medium text-gray-900"
-                            data-oid="wp1y3rh"
+                            data-oid="o28.yap"
                           >
                             {zone.pricing.perKm} {zone.pricing.currency}/km
                           </div>
                           <div
                             className="text-xs text-gray-500 mt-1"
-                            data-oid="h-gb.96"
+                            data-oid=":tipzwo"
                           >
                             Tarifa mínima: {zone.pricing.minFare}{" "}
                             {zone.pricing.currency}
                           </div>
                           <div
                             className="text-xs text-gray-500"
-                            data-oid="bhnjeu9"
+                            data-oid="-d_moj3"
                           >
                             Recargo noche: +{zone.pricing.nightSurcharge}%
                           </div>
                           <div
                             className="text-xs text-gray-500"
-                            data-oid="jlhvd-0"
+                            data-oid="bw7201p"
                           >
                             Recargo festivo: +{zone.pricing.holidaySurcharge}%
                           </div>
@@ -763,7 +763,7 @@ const FlexibleRoutesTab = ({
                       </td>
                       <td
                         className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium space-x-2"
-                        data-oid="4yz7dlm"
+                        data-oid="t.xlj8y"
                       >
                         <Button
                           variant="ghost"
@@ -773,9 +773,9 @@ const FlexibleRoutesTab = ({
                             handleViewZoneDetails(zone, e);
                           }}
                           className="text-gray-600 hover:text-gray-900 hover:bg-gray-100"
-                          data-oid="pcgkkpd"
+                          data-oid="rr74l.-"
                         >
-                          <Eye className="h-4 w-4" data-oid="jkou3kv" />
+                          <Eye className="h-4 w-4" data-oid="4y6:ikw" />
                         </Button>
                         <Button
                           variant="ghost"
@@ -785,17 +785,17 @@ const FlexibleRoutesTab = ({
                             handleToggleStatus(zone.id, e);
                           }}
                           className="text-gray-600 hover:text-gray-900 hover:bg-gray-100"
-                          data-oid="srghtlg"
+                          data-oid="j882:0g"
                         >
                           {zone.status === "active" ? (
                             <ToggleRight
                               className="h-5 w-5 text-gray-600"
-                              data-oid="f:o8q8m"
+                              data-oid="wpc0_7l"
                             />
                           ) : (
                             <ToggleLeft
                               className="h-5 w-5 text-gray-400"
-                              data-oid="mtg3riy"
+                              data-oid="ayh-vk1"
                             />
                           )}
                         </Button>
@@ -807,9 +807,9 @@ const FlexibleRoutesTab = ({
                             handleEditZone(zone);
                           }}
                           className="text-gray-600 hover:text-blue-800 hover:bg-gray-100"
-                          data-oid="c8nbsbq"
+                          data-oid="o9lcc1b"
                         >
-                          <Edit className="h-4 w-4" data-oid="ct0t7ss" />
+                          <Edit className="h-4 w-4" data-oid="y_z8d_q" />
                         </Button>
                         <Button
                           variant="ghost"
@@ -819,9 +819,9 @@ const FlexibleRoutesTab = ({
                             handleDeleteZone(zone.id, e);
                           }}
                           className="text-gray-600 hover:text-gray-800 hover:bg-gray-100"
-                          data-oid="lcv6hsa"
+                          data-oid="r4g418v"
                         >
-                          <Trash2 className="h-4 w-4" data-oid="1sihrpd" />
+                          <Trash2 className="h-4 w-4" data-oid="-no150h" />
                         </Button>
                       </td>
                     </tr>
@@ -830,26 +830,26 @@ const FlexibleRoutesTab = ({
               </table>
 
               {filteredZones.length === 0 && (
-                <div className="py-10 text-center" data-oid="wa_hi_b">
+                <div className="py-10 text-center" data-oid="wch1t3i">
                   <div
                     className="h-20 w-20 mx-auto mb-4 flex items-center justify-center rounded-full bg-gray-100"
-                    data-oid="miy3lox"
+                    data-oid="hagl.:4"
                   >
                     <MapPin
                       className="h-10 w-10 text-gray-400"
-                      data-oid="ku5bx7z"
+                      data-oid=".qeh52."
                     />
                   </div>
-                  <p className="text-gray-500" data-oid="7osworx">
+                  <p className="text-gray-500" data-oid="0j.5.t:">
                     No se encontraron zonas flexibles que coincidan con los
                     criterios de búsqueda
                   </p>
                   <Button
                     onClick={handleAddZone}
                     className="mt-4 flex items-center mx-auto px-4 py-2 bg-black text-white rounded-lg hover:bg-gray-800 transition-colors"
-                    data-oid="03fw24u"
+                    data-oid="8f_bzvj"
                   >
-                    <PlusCircle size={18} className="mr-2" data-oid="m9hqmvk" />
+                    <PlusCircle size={18} className="mr-2" data-oid="ah_w2x4" />
                     Crear Nueva Zona
                   </Button>
                 </div>
@@ -863,16 +863,16 @@ const FlexibleRoutesTab = ({
       <Dialog
         open={showDetailsDialog}
         onOpenChange={setShowDetailsDialog}
-        data-oid="z:2mkq-"
+        data-oid="uf4sd08"
       >
         <DialogContent
           className="max-w-3xl max-h-[90vh] overflow-y-auto"
-          data-oid="e:4pmcn"
+          data-oid="abh5clt"
         >
-          <DialogHeader data-oid="pan5tu0">
+          <DialogHeader data-oid="93ewnyc">
             <DialogTitle
               className="text-xl flex items-center gap-2"
-              data-oid="ygc_et2"
+              data-oid="pbefppu"
             >
               {selectedZone?.name}
               <Badge
@@ -881,12 +881,12 @@ const FlexibleRoutesTab = ({
                     ? "bg-gray-200 text-green-800"
                     : "bg-gray-100 text-gray-800"
                 }`}
-                data-oid="tnip2wp"
+                data-oid="eq36--j"
               >
                 {selectedZone?.status === "active" ? "Activa" : "Inactiva"}
               </Badge>
             </DialogTitle>
-            <DialogDescription data-oid="hcbi61u">
+            <DialogDescription data-oid="_m17co.">
               Detalles de la zona flexible
             </DialogDescription>
           </DialogHeader>
@@ -894,73 +894,73 @@ const FlexibleRoutesTab = ({
           {selectedZone && (
             <div
               className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4"
-              data-oid="19t033a"
+              data-oid="cxqgwoa"
             >
               {/* Información General */}
-              <div className="space-y-4" data-oid="qrvwv6r">
+              <div className="space-y-4" data-oid="_s1y:uk">
                 <h3
                   className="font-medium text-gray-900 text-base mb-2"
-                  data-oid="s4ee-t."
+                  data-oid="fq.1hi5"
                 >
                   Información General
                 </h3>
 
                 <div
                   className="bg-gray-50 p-4 rounded-lg space-y-4"
-                  data-oid="n5318x1"
+                  data-oid="pmxp_7d"
                 >
-                  <div data-oid="rso24b4">
+                  <div data-oid="ppht-b2">
                     <div
                       className="text-sm font-medium text-gray-500"
-                      data-oid="ur5ogv7"
+                      data-oid="ouqisxu"
                     >
                       Centro de la Zona
                     </div>
-                    <div className="flex items-start mt-1" data-oid="s51ofxv">
+                    <div className="flex items-start mt-1" data-oid="4so0h-:">
                       <MapPin
                         className="h-4 w-4 text-black mt-0.5 mr-1 flex-shrink-0"
-                        data-oid="pw8p0_:"
+                        data-oid="kn8a5aj"
                       />
 
-                      <span className="text-base" data-oid="ym93hs4">
+                      <span className="text-base" data-oid="v0wvkuc">
                         {selectedZone.center.name}
                       </span>
                     </div>
                   </div>
 
-                  <div data-oid=".h6uzg9">
+                  <div data-oid="h1hsopk">
                     <div
                       className="text-sm font-medium text-gray-500"
-                      data-oid="b9un2d1"
+                      data-oid="660m540"
                     >
                       Radio de Cobertura
                     </div>
-                    <div className="flex items-start mt-1" data-oid="w65bld1">
-                      <span className="text-base" data-oid="s2rx4rg">
+                    <div className="flex items-start mt-1" data-oid="mya4xn.">
+                      <span className="text-base" data-oid="hmjh4f4">
                         {selectedZone.radius} km
                       </span>
                     </div>
                   </div>
 
                   {selectedZone.restrictions && (
-                    <div className="border-t pt-3" data-oid="5sbc:pl">
+                    <div className="border-t pt-3" data-oid="1w8.:yl">
                       <div
                         className="text-sm font-medium text-gray-500"
-                        data-oid="zvti4dd"
+                        data-oid="1d.45ij"
                       >
                         Restricciones de Distancia
                       </div>
                       <div
                         className="flex gap-3 mt-1 text-sm text-gray-700"
-                        data-oid="gyb3efo"
+                        data-oid="r9:pz0-"
                       >
                         {selectedZone.restrictions.minDistance && (
-                          <div data-oid="oxiguod">
+                          <div data-oid="eu1-_.1">
                             Mínima: {selectedZone.restrictions.minDistance} km
                           </div>
                         )}
                         {selectedZone.restrictions.maxDistance && (
-                          <div data-oid=":dn6r.i">
+                          <div data-oid="z-sa..3">
                             Máxima: {selectedZone.restrictions.maxDistance} km
                           </div>
                         )}
@@ -969,14 +969,14 @@ const FlexibleRoutesTab = ({
                   )}
 
                   {selectedZone.description && (
-                    <div className="border-t pt-3" data-oid="_z5y5me">
+                    <div className="border-t pt-3" data-oid="n26iehf">
                       <div
                         className="text-sm font-medium text-gray-500"
-                        data-oid="dapn862"
+                        data-oid="kbx.zon"
                       >
                         Descripción
                       </div>
-                      <p className="mt-1 text-gray-700" data-oid="s.5zbnz">
+                      <p className="mt-1 text-gray-700" data-oid="i.uxfil">
                         {selectedZone.description}
                       </p>
                     </div>
@@ -984,31 +984,31 @@ const FlexibleRoutesTab = ({
                 </div>
 
                 {/* Colaborador */}
-                <div data-oid="29uz2dc">
+                <div data-oid="bf2coiu">
                   <h3
                     className="font-medium text-gray-900 text-base mb-2"
-                    data-oid="9o7jkqk"
+                    data-oid="blmfdph"
                   >
                     Colaborador
                   </h3>
                   <div
                     className="flex items-center bg-gray-50 p-4 rounded-lg"
-                    data-oid="7cks5l8"
+                    data-oid=".21.q26"
                   >
                     <div
                       className="h-10 w-10 rounded-full bg-gray-200 flex items-center justify-center mr-3"
-                      data-oid="ut3nqqh"
+                      data-oid="mjmbibp"
                     >
                       <Building
                         className="h-5 w-5 text-gray-600"
-                        data-oid="px5rdl2"
+                        data-oid="6vj8pqk"
                       />
                     </div>
-                    <div data-oid="uclx41d">
-                      <div className="font-medium" data-oid=".6d44_a">
+                    <div data-oid="z6it5sw">
+                      <div className="font-medium" data-oid="sdtdjd_">
                         {getCollaboratorName(selectedZone.collaboratorId)}
                       </div>
-                      <div className="text-xs text-gray-500" data-oid="-2ugmzc">
+                      <div className="text-xs text-gray-500" data-oid=".pc9yry">
                         ID: {selectedZone.collaboratorId || "No asignado"}
                       </div>
                     </div>
@@ -1016,72 +1016,72 @@ const FlexibleRoutesTab = ({
                 </div>
 
                 {/* Tarifas */}
-                <div data-oid=":dyydsb">
+                <div data-oid="jgjfqfb">
                   <h3
                     className="font-medium text-gray-900 text-base mb-2"
-                    data-oid="gzin7:o"
+                    data-oid="ejnt0vj"
                   >
                     Tarifas
                   </h3>
                   <div
                     className="bg-gray-50 p-4 rounded-lg space-y-2"
-                    data-oid="9fsu:1l"
+                    data-oid="ey41_21"
                   >
                     <div
                       className="flex justify-between items-center"
-                      data-oid="rd0eg-j"
+                      data-oid="g.-3t5z"
                     >
                       <div
                         className="text-sm font-medium text-gray-500"
-                        data-oid="t9-zh.i"
+                        data-oid="l459_ed"
                       >
                         Por Kilómetro:
                       </div>
-                      <div className="text-lg font-medium" data-oid="9lhzc4r">
+                      <div className="text-lg font-medium" data-oid="uu-o4y.">
                         {selectedZone.pricing.perKm}{" "}
                         {selectedZone.pricing.currency}/km
                       </div>
                     </div>
                     <div
                       className="flex justify-between items-center"
-                      data-oid="4bpz38."
+                      data-oid="9p7rlie"
                     >
                       <div
                         className="text-sm font-medium text-gray-500"
-                        data-oid="pbch6j3"
+                        data-oid="xo9jqse"
                       >
                         Tarifa mínima:
                       </div>
-                      <div data-oid="av6z-rp">
+                      <div data-oid=":qf1_fd">
                         {selectedZone.pricing.minFare}{" "}
                         {selectedZone.pricing.currency}
                       </div>
                     </div>
                     <div
                       className="flex justify-between items-center"
-                      data-oid=".9ix6ou"
+                      data-oid="9b6k937"
                     >
                       <div
                         className="text-sm font-medium text-gray-500"
-                        data-oid="2z5tmzt"
+                        data-oid="qs:r7y2"
                       >
                         Recargo nocturno:
                       </div>
-                      <div data-oid="2kpos94">
+                      <div data-oid="c-:8d7t">
                         +{selectedZone.pricing.nightSurcharge}%
                       </div>
                     </div>
                     <div
                       className="flex justify-between items-center"
-                      data-oid="rigrnfk"
+                      data-oid="j9_sxfg"
                     >
                       <div
                         className="text-sm font-medium text-gray-500"
-                        data-oid="itni8xd"
+                        data-oid="y9.t-1c"
                       >
                         Recargo en festivos:
                       </div>
-                      <div data-oid="fe53_sw">
+                      <div data-oid="2wtzb6r">
                         +{selectedZone.pricing.holidaySurcharge}%
                       </div>
                     </div>
@@ -1090,40 +1090,40 @@ const FlexibleRoutesTab = ({
               </div>
 
               {/* Vehículos y Acciones */}
-              <div className="space-y-4" data-oid=":tc.u2k">
+              <div className="space-y-4" data-oid="2j85b3:">
                 {/* Vehículos */}
-                <div data-oid="rg-bxpx">
+                <div data-oid="bcff.a4">
                   <h3
                     className="font-medium text-gray-900 text-base mb-2"
-                    data-oid="y6_h71y"
+                    data-oid="73h2aea"
                   >
                     Vehículos Asignados ({selectedZone.vehicles.length})
                   </h3>
-                  <div className="bg-gray-50 p-4 rounded-lg" data-oid="tz_dcei">
-                    <div className="space-y-3" data-oid="rvl5w70">
+                  <div className="bg-gray-50 p-4 rounded-lg" data-oid=".ozcyxz">
+                    <div className="space-y-3" data-oid="1yd:-.7">
                       {selectedZone.vehicles.length > 0 ? (
                         selectedZone.vehicles.map((vehicle, idx) => (
                           <div
                             key={idx}
                             className="flex items-center p-2 border-b last:border-b-0"
-                            data-oid="epz38n2"
+                            data-oid="hhs0tqt"
                           >
                             <div
                               className="h-10 w-10 rounded-lg bg-gray-200 flex items-center justify-center"
-                              data-oid="pmfhicl"
+                              data-oid="qvb82:8"
                             >
                               <Car
                                 className="h-6 w-6 text-gray-500"
-                                data-oid="8ikdeot"
+                                data-oid="-6ct70z"
                               />
                             </div>
-                            <div className="ml-3" data-oid="6lkvasl">
-                              <div className="font-medium" data-oid="q9v6rxl">
+                            <div className="ml-3" data-oid="xmrmd_8">
+                              <div className="font-medium" data-oid="tv5sif.">
                                 {vehicle.model}
                               </div>
                               <div
                                 className="text-sm text-gray-600"
-                                data-oid="-:x9k8r"
+                                data-oid="t-2h5_n"
                               >
                                 {vehicle.licensePlate}
                               </div>
@@ -1133,9 +1133,9 @@ const FlexibleRoutesTab = ({
                       ) : (
                         <div
                           className="text-gray-500 italic flex items-center"
-                          data-oid="zvln0m6"
+                          data-oid="gw2ilu-"
                         >
-                          <Info className="h-4 w-4 mr-2" data-oid=":lnw5jz" />
+                          <Info className="h-4 w-4 mr-2" data-oid="ze5w0p6" />
                           Sin vehículos asignados
                         </div>
                       )}
@@ -1144,17 +1144,17 @@ const FlexibleRoutesTab = ({
                 </div>
 
                 {/* Mapa */}
-                <div data-oid="fpzv2p3">
+                <div data-oid="s_8ifc_">
                   <h3
                     className="font-medium text-gray-900 text-base mb-2"
-                    data-oid="zh-6q87"
+                    data-oid="agcu2:h"
                   >
                     Mapa de la Zona
                   </h3>
                   <GoogleZoneMap
                     center={selectedZone.center}
                     radius={selectedZone.radius}
-                    data-oid="qbs4wbf"
+                    data-oid="g:9ko_2"
                   />
                 </div>
               </div>
@@ -1163,14 +1163,14 @@ const FlexibleRoutesTab = ({
 
           <DialogFooter
             className="flex justify-end gap-2 mt-6"
-            data-oid="11us071"
+            data-oid="ku1sqi7"
           >
             <Button
               className="bg-gray-100 text-gray-800 hover:bg-gray-200"
               onClick={() => setShowDetailsDialog(false)}
-              data-oid="2ebwffx"
+              data-oid="53dusgs"
             >
-              <X className="h-4 w-4 mr-2" data-oid="axqjaq0" />
+              <X className="h-4 w-4 mr-2" data-oid="6b0qeu9" />
               Cerrar
             </Button>
             <Button
@@ -1181,9 +1181,9 @@ const FlexibleRoutesTab = ({
                   handleEditZone(selectedZone);
                 }
               }}
-              data-oid="iae.jr9"
+              data-oid="b__sbb_"
             >
-              <Edit className="h-4 w-4 mr-2" data-oid="mqc1e4i" />
+              <Edit className="h-4 w-4 mr-2" data-oid=":lgriue" />
               Editar
             </Button>
           </DialogFooter>
@@ -1193,24 +1193,24 @@ const FlexibleRoutesTab = ({
       <AlertDialog
         open={deleteDialogOpen}
         onOpenChange={setDeleteDialogOpen}
-        data-oid="u4mw68z"
+        data-oid="_y8yktu"
       >
-        <AlertDialogContent data-oid="dodc5ma">
-          <AlertDialogHeader data-oid="xgm8rew">
-            <AlertDialogTitle data-oid="kwl3y6i">
+        <AlertDialogContent data-oid="tymn6w7">
+          <AlertDialogHeader data-oid="4oa71om">
+            <AlertDialogTitle data-oid="0gb5idj">
               ¿Estás seguro?
             </AlertDialogTitle>
-            <AlertDialogDescription data-oid="17-xlja">
+            <AlertDialogDescription data-oid="a9sl15_">
               Esta acción eliminará permanentemente la zona flexible. Esta
               acción no se puede deshacer.
             </AlertDialogDescription>
           </AlertDialogHeader>
-          <AlertDialogFooter data-oid="xccrbr8">
-            <AlertDialogCancel data-oid="o67n9is">Cancelar</AlertDialogCancel>
+          <AlertDialogFooter data-oid="7_bsa62">
+            <AlertDialogCancel data-oid="t9ngpd4">Cancelar</AlertDialogCancel>
             <AlertDialogAction
               onClick={confirmDelete}
               className="bg-black hover:bg-gray-800"
-              data-oid="_.3:l4d"
+              data-oid=":tv-siv"
             >
               Eliminar
             </AlertDialogAction>

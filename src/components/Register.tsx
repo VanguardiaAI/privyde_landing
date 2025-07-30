@@ -40,22 +40,22 @@ function Register() {
   };
 
   return (
-    <Dialog open={open} onOpenChange={handleOpenChange} data-oid="s9vk_01">
-      <DialogTrigger asChild data-oid="p3wr592">
-        <Button data-oid="358meio">Crear cuenta</Button>
+    <Dialog open={open} onOpenChange={handleOpenChange} data-oid="gs3iiqg">
+      <DialogTrigger asChild data-oid="vpbz3n1">
+        <Button data-oid="kli6e8g">Crear cuenta</Button>
       </DialogTrigger>
       <DialogContent
         className="bg-white border-border shadow-lg"
-        data-oid="6qnzg9b"
+        data-oid="ueutk:6"
       >
         <div
           className="flex flex-col items-center gap-4 pb-2"
-          data-oid="xlt9.lt"
+          data-oid="sssj9z4"
         >
           <div
             className="flex size-12 shrink-0 items-center justify-center rounded-full border border-border bg-background"
             aria-hidden="true"
-            data-oid="8i36os0"
+            data-oid="jlq_k6."
           >
             <svg
               className="stroke-primary"
@@ -64,7 +64,7 @@ function Register() {
               height="22"
               viewBox="0 0 32 32"
               aria-hidden="true"
-              data-oid="fp8or6y"
+              data-oid="uur3w-h"
             >
               <path
                 d="M16 4C12.1 4 9 7.1 9 11C9 13.5 10.2 15.6 12 16.9V17C12 17.6 11.6 18 11 18H8C6.4 18 5 19.4 5 21V25C5 25.6 5.4 26 6 26H26C26.6 26 27 25.6 27 25V21C27 19.4 25.6 18 24 18H21C20.4 18 20 17.6 20 17V16.9C21.8 15.6 23 13.5 23 11C23 7.1 19.9 4 16 4Z"
@@ -72,18 +72,18 @@ function Register() {
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                data-oid="vv3q6c6"
+                data-oid="9hkjpvx"
               />
             </svg>
           </div>
-          <DialogHeader className="space-y-2" data-oid="jrvjad:">
+          <DialogHeader className="space-y-2" data-oid="qx5vr0o">
             <DialogTitle
               className="text-center text-xl font-bold"
-              data-oid="75qqxd8"
+              data-oid="pu98vrs"
             >
               Crear una cuenta
             </DialogTitle>
-            <DialogDescription className="text-center" data-oid="3ktoilc">
+            <DialogDescription className="text-center" data-oid="h-mmwqf">
               Completa el formulario para registrarte.
             </DialogDescription>
           </DialogHeader>
@@ -92,7 +92,7 @@ function Register() {
         {error && (
           <div
             className="bg-gray-100 p-2 rounded border border-gray-200 text-gray-600 text-sm mb-4"
-            data-oid="58w7jul"
+            data-oid="hfn-:fx"
           >
             {error}
           </div>
@@ -101,14 +101,14 @@ function Register() {
         <form
           className="space-y-5 py-2"
           onSubmit={handleSubmit}
-          data-oid="sj.:i8q"
+          data-oid="53hgydr"
         >
-          <div className="space-y-4" data-oid="cdpk6e7">
-            <div className="space-y-2" data-oid="pg8e72t">
+          <div className="space-y-4" data-oid="vu.rf-w">
+            <div className="space-y-2" data-oid="es66nz-">
               <Label
                 htmlFor={`${id}-name`}
                 className="text-foreground"
-                data-oid="qtg0o:w"
+                data-oid="wplktkj"
               >
                 Nombre
               </Label>
@@ -119,14 +119,14 @@ function Register() {
                 className="border-input bg-background"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
-                data-oid="2hcgg5z"
+                data-oid="007j179"
               />
             </div>
-            <div className="space-y-2" data-oid="c1:eqwm">
+            <div className="space-y-2" data-oid="4np_dmb">
               <Label
                 htmlFor={`${id}-email`}
                 className="text-foreground"
-                data-oid="s:q1gg7"
+                data-oid="2ngv0hi"
               >
                 Email
               </Label>
@@ -138,14 +138,14 @@ function Register() {
                 className="border-input bg-background"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                data-oid="sx-p96d"
+                data-oid=".k5w7-h"
               />
             </div>
-            <div className="space-y-2" data-oid="q-05gsv">
+            <div className="space-y-2" data-oid="twebgaf">
               <Label
                 htmlFor={`${id}-password`}
                 className="text-foreground"
-                data-oid="1ugob_9"
+                data-oid="n-c:112"
               >
                 Contraseña
               </Label>
@@ -157,7 +157,7 @@ function Register() {
                 className="border-input bg-background"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                data-oid="0u_anqw"
+                data-oid="35gaogs"
               />
             </div>
           </div>
@@ -166,7 +166,7 @@ function Register() {
             type="submit"
             className="w-full bg-primary hover:bg-primary/90"
             disabled={isLoading}
-            data-oid="kk5-msg"
+            data-oid="86vrd3."
           >
             {isLoading ? "Registrando..." : "Crear cuenta"}
           </Button>
@@ -174,14 +174,14 @@ function Register() {
 
         <div
           className="text-center text-sm text-muted-foreground"
-          data-oid="cb4mqpr"
+          data-oid="1-82ci_"
         >
           Al registrarte, aceptas nuestros{" "}
-          <a href="#" className="underline text-primary" data-oid="q:i_pt1">
+          <a href="#" className="underline text-primary" data-oid="ntd9sav">
             términos de servicio
           </a>{" "}
           y{" "}
-          <a href="#" className="underline text-primary" data-oid=":st2cxl">
+          <a href="#" className="underline text-primary" data-oid="0._.q:n">
             política de privacidad
           </a>
           .

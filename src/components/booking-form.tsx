@@ -166,11 +166,11 @@ function CalendarComponent({
   };
 
   return (
-    <div className="calendar" data-oid="uvr9oap">
+    <div className="calendar" data-oid="846dvpo">
       {/* Cabecera del calendario con navegación de meses */}
       <div
         className="flex justify-between items-center mb-4"
-        data-oid="ldx37x2"
+        data-oid="rkkr15z"
       >
         <button
           onClick={prevMonth}
@@ -185,12 +185,12 @@ function CalendarComponent({
               : "text-gray-600 hover:bg-gray-100"
           }`}
           type="button"
-          data-oid="2a0r001"
+          data-oid="siy8bkf"
         >
-          <ChevronLeft className="h-5 w-5" data-oid="x3p3mbc" />
+          <ChevronLeft className="h-5 w-5" data-oid="g9tc4g7" />
         </button>
 
-        <h2 className="text-base font-semibold" data-oid="tq5rwtz">
+        <h2 className="text-base font-semibold" data-oid="5snobm9">
           {monthNames[currentMonth.getMonth()]} {currentMonth.getFullYear()}
         </h2>
 
@@ -198,19 +198,19 @@ function CalendarComponent({
           onClick={nextMonth}
           className="p-1 rounded-full text-gray-600 hover:bg-gray-100"
           type="button"
-          data-oid="b7-.-ok"
+          data-oid="yxlwqlb"
         >
-          <ChevronRight className="h-5 w-5" data-oid="sh49w-n" />
+          <ChevronRight className="h-5 w-5" data-oid="1uzg314" />
         </button>
       </div>
 
       {/* Días de la semana */}
-      <div className="grid grid-cols-7 gap-1 mb-2" data-oid="rrh3emn">
+      <div className="grid grid-cols-7 gap-1 mb-2" data-oid="3fsbrw5">
         {["Lu", "Ma", "Mi", "Ju", "Vi", "Sa", "Do"].map((day) => (
           <div
             key={day}
-            className="text-center text-xs font-semibold text-gray-500 py-1"
-            data-oid="1xk7kth"
+            className="text-center text-sm font-semibold text-gray-500 py-1"
+            data-oid="8wvub91"
           >
             {day}
           </div>
@@ -218,13 +218,13 @@ function CalendarComponent({
       </div>
 
       {/* Días del calendario */}
-      <div className="grid grid-cols-7 gap-1" data-oid="530jo00">
+      <div className="grid grid-cols-7 gap-1" data-oid="nwx_d-v">
         {/* Días del mes anterior */}
         {prevMonthDays.map((day, index) => (
           <div
             key={`prev-${index}`}
             className="text-center py-2 text-sm text-gray-300"
-            data-oid="85jbfr6"
+            data-oid=".t:wmk5"
           >
             {day}
           </div>
@@ -247,7 +247,7 @@ function CalendarComponent({
                     : "hover:bg-gray-100"
               }
             `}
-            data-oid="k8bs.51"
+            data-oid="zdez21p"
           >
             {day}
           </button>
@@ -258,7 +258,7 @@ function CalendarComponent({
           <div
             key={`next-${index}`}
             className="text-center py-2 text-sm text-gray-300"
-            data-oid="y2vj1tj"
+            data-oid="gl2wvni"
           >
             {day}
           </div>
@@ -284,16 +284,16 @@ function DurationSelector({
   };
 
   return (
-    <div className="duration-selector" data-oid="qtxju3z">
+    <div className="duration-selector" data-oid="g2r6r7e">
       {Object.entries(durationCategories).map(([category, durations]) => (
-        <div key={category} className="mb-5 last:mb-0" data-oid="25b94lc">
+        <div key={category} className="mb-5 last:mb-0" data-oid="u3dtcv:">
           <div
             className="text-sm font-medium text-gray-500 mb-2"
-            data-oid="y1di.5m"
+            data-oid="m0oul-h"
           >
             {category}
           </div>
-          <div className="grid grid-cols-1 gap-2" data-oid="pqckop0">
+          <div className="grid grid-cols-1 gap-2" data-oid="9u74jom">
             {durations.map((duration) => (
               <button
                 key={duration}
@@ -307,11 +307,11 @@ function DurationSelector({
                       : "hover:bg-gray-100 border border-gray-200"
                   }
                 `}
-                data-oid="2z4rk1-"
+                data-oid="ns_o8oy"
               >
-                <span data-oid="q1-5ask">{duration}</span>
+                <span data-oid="itoeh.l">{duration}</span>
                 {selectedDuration === duration && (
-                  <span className="text-white" data-oid="n_6a1yb">
+                  <span className="text-white" data-oid="0h61tkh">
                     ✓
                   </span>
                 )}
@@ -324,7 +324,11 @@ function DurationSelector({
   );
 }
 
-export default function BookingForm() {
+interface BookingFormProps {
+  darkMode?: boolean;
+}
+
+export default function BookingForm({ darkMode = false }: BookingFormProps) {
   const [formData, setFormData] = useState<BookingFormData>({
     tripType: "ida",
     from: {
@@ -508,70 +512,70 @@ export default function BookingForm() {
   return (
     <>
       <Card
-        className="w-full max-w-full mx-auto shadow-lg bg-white rounded-xl overflow-hidden border-0 relative z-20 booking-contrast-shadow"
-        data-oid="-0d8xbn"
+        className={`w-full max-w-full mx-auto shadow-lg rounded-xl overflow-hidden border-0 relative z-20 booking-contrast-shadow ${darkMode ? 'bg-black' : 'bg-white'}`}
+        data-oid="s8ju0jq"
       >
         <Tabs
           value={formData.tripType}
           className="w-full"
           onValueChange={(value) => handleTabChange(value as "ida" | "horas")}
-          data-oid="s8munz7"
+          data-oid="c:ig013"
         >
           <TabsList
-            className="grid w-full grid-cols-2 bg-gray-100 p-0 h-12 rounded-none"
-            data-oid="fnx9a1p"
+            className={`grid w-full grid-cols-2 p-0 h-12 rounded-none ${darkMode ? 'bg-gray-900' : 'bg-gray-100'}`}
+            data-oid="y9do.07"
           >
             <TabsTrigger
               value="ida"
-              className="rounded-none data-[state=active]:bg-white data-[state=active]:shadow-none h-full text-base font-semibold"
-              data-oid="pcg2e_h"
+              className={`rounded-none data-[state=active]:shadow-none h-full text-lg font-semibold ${darkMode ? 'data-[state=active]:bg-black data-[state=active]:text-white text-gray-400' : 'data-[state=active]:bg-white'}`}
+              data-oid="i-vtb9o"
             >
               Ida
             </TabsTrigger>
             <TabsTrigger
               value="horas"
-              className="rounded-none data-[state=active]:bg-white data-[state=active]:shadow-none h-full text-base font-semibold"
-              data-oid="0h7bfhv"
+              className={`rounded-none data-[state=active]:shadow-none h-full text-lg font-semibold ${darkMode ? 'data-[state=active]:bg-black data-[state=active]:text-white text-gray-400' : 'data-[state=active]:bg-white'}`}
+              data-oid="z21rf8l"
             >
               Por horas
             </TabsTrigger>
           </TabsList>
 
-          <TabsContent value="ida" className="m-0" data-oid="i1rpg_h">
-            <CardContent className="p-4 sm:p-6" data-oid="2b_fq53">
+          <TabsContent value="ida" className="m-0" data-oid="i32:n4v">
+            <CardContent className="p-4 sm:p-6" data-oid="eu_3rpo">
               <form
                 className="space-y-3"
                 onSubmit={handleSubmit}
-                data-oid="vja7.fq"
+                data-oid="acf9-6q"
               >
                 <div
                   className="relative"
                   ref={fromDropdownRef}
-                  data-oid="k:gk6pa"
+                  data-oid="m.fx_b2"
                 >
                   <MapPin
-                    className="absolute left-3 top-4 h-5 w-5 text-gray-400"
-                    data-oid="1m9hwgn"
+                    className="absolute left-3 top-4 h-6 w-6 text-gray-400"
+                    data-oid="q_qt59w"
                   />
 
                   <div
-                    className="flex flex-col pl-10 pt-1 border rounded-md h-[52px] focus-within:border-gray-400 hover:border-gray-400 bg-gray-50"
-                    data-oid="a:ckkib"
+                    className={`flex flex-col pl-10 pt-1 border rounded-md h-[52px] focus-within:border-gray-400 hover:border-gray-400 ${darkMode ? 'bg-gray-900 border-gray-700' : 'bg-gray-50'}`}
+                    data-oid="6x:ei2j"
                   >
                     <label
-                      className="booking-form-label mb-0 text-left text-xs"
-                      data-oid="gnzx98v"
+                      className={`booking-form-label mb-0 text-left text-sm ${darkMode ? 'text-white' : ''}`}
+                      data-oid="ji0e.10"
                     >
                       De
                     </label>
                     <Input
-                      className="border-0 p-0 h-6 focus-visible:ring-0 focus-visible:ring-offset-0 focus:outline-none placeholder:text-gray-400 booking-form-input bg-gray-50"
+                      className={`border-0 p-0 h-7 text-base focus-visible:ring-0 focus-visible:ring-offset-0 focus:outline-none placeholder:text-gray-400 booking-form-input ${darkMode ? 'bg-gray-900 text-white' : 'bg-gray-50'}`}
                       placeholder="Dirección, aeropuerto, hotel..."
                       value={formData.from.description}
                       onChange={(e) => handleFromSearch(e.target.value)}
                       onFocus={() => setShowFromPredictions(true)}
                       style={{ boxShadow: "none" }}
-                      data-oid="8kdtiqz"
+                      data-oid="kg5uzln"
                     />
                   </div>
 
@@ -579,21 +583,21 @@ export default function BookingForm() {
                   {showFromPredictions && fromPredictions.length > 0 && (
                     <div
                       className="absolute z-10 mt-1 w-full bg-white border rounded-md shadow-lg max-h-60 overflow-auto"
-                      data-oid=".3yzzyo"
+                      data-oid="_pbfonl"
                     >
                       {fromPredictions.map((prediction) => (
                         <div
                           key={prediction.place_id}
                           className="px-4 py-2 cursor-pointer hover:bg-gray-100"
                           onClick={() => handleSelectFrom(prediction)}
-                          data-oid="gz6-696"
+                          data-oid="in3hxdu"
                         >
-                          <div className="font-medium" data-oid="8z-p917">
+                          <div className="font-medium" data-oid="wmvdq..">
                             {prediction.structured_formatting.main_text}
                           </div>
                           <div
-                            className="text-sm text-gray-500"
-                            data-oid="4-xaiwm"
+                            className="text-base text-gray-500"
+                            data-oid="hap_-c9"
                           >
                             {prediction.structured_formatting.secondary_text}
                           </div>
@@ -606,31 +610,31 @@ export default function BookingForm() {
                 <div
                   className="relative"
                   ref={toDropdownRef}
-                  data-oid="l-2_98o"
+                  data-oid="w4vd0x-"
                 >
                   <MapPin
-                    className="absolute left-3 top-4 h-5 w-5 text-gray-400"
-                    data-oid="jmjc_m4"
+                    className="absolute left-3 top-4 h-6 w-6 text-gray-400"
+                    data-oid="xp8:at8"
                   />
 
                   <div
                     className="flex flex-col pl-10 pt-1 border rounded-md h-[52px] focus-within:border-gray-400 hover:border-gray-400 bg-gray-50"
-                    data-oid="yoj2qlo"
+                    data-oid="r3w2xc8"
                   >
                     <label
-                      className="booking-form-label mb-0 text-left text-xs"
-                      data-oid="lkj7kxj"
+                      className="booking-form-label mb-0 text-left text-sm"
+                      data-oid="uuhkuiq"
                     >
                       A
                     </label>
                     <Input
-                      className="border-0 p-0 h-6 focus-visible:ring-0 focus-visible:ring-offset-0 focus:outline-none placeholder:text-gray-400 booking-form-input bg-gray-50"
+                      className="border-0 p-0 h-7 text-base focus-visible:ring-0 focus-visible:ring-offset-0 focus:outline-none placeholder:text-gray-400 booking-form-input bg-gray-50"
                       placeholder="Dirección, aeropuerto, hotel..."
                       value={formData.to?.description || ""}
                       onChange={(e) => handleToSearch(e.target.value)}
                       onFocus={() => setShowToPredictions(true)}
                       style={{ boxShadow: "none" }}
-                      data-oid="ysq-va2"
+                      data-oid="-ncej-e"
                     />
                   </div>
 
@@ -638,21 +642,21 @@ export default function BookingForm() {
                   {showToPredictions && toPredictions.length > 0 && (
                     <div
                       className="absolute z-10 mt-1 w-full bg-white border rounded-md shadow-lg max-h-60 overflow-auto"
-                      data-oid="5monl1s"
+                      data-oid="cp52vce"
                     >
                       {toPredictions.map((prediction) => (
                         <div
                           key={prediction.place_id}
                           className="px-4 py-2 cursor-pointer hover:bg-gray-100"
                           onClick={() => handleSelectTo(prediction)}
-                          data-oid="4x8j0dy"
+                          data-oid="ok7q52o"
                         >
-                          <div className="font-medium" data-oid="k:v_nhr">
+                          <div className="font-medium" data-oid="fjjiiy8">
                             {prediction.structured_formatting.main_text}
                           </div>
                           <div
-                            className="text-sm text-gray-500"
-                            data-oid="s_mlzjw"
+                            className="text-base text-gray-500"
+                            data-oid="86iw-4q"
                           >
                             {prediction.structured_formatting.secondary_text}
                           </div>
@@ -662,75 +666,75 @@ export default function BookingForm() {
                   )}
                 </div>
 
-                <div className="relative" data-oid="hu:a3s.">
+                <div className="relative" data-oid=":hogdva">
                   <CalendarIcon
-                    className="absolute left-3 top-4 h-5 w-5 text-gray-400"
-                    data-oid="k:yi0dq"
+                    className="absolute left-3 top-4 h-6 w-6 text-gray-400"
+                    data-oid="8y7m1cr"
                   />
 
                   <div
                     className="flex flex-col pl-10 pt-1 border rounded-md h-[52px] focus-within:border-gray-400 hover:border-gray-400 bg-gray-50 cursor-pointer"
                     onClick={() => setDateDialogOpen(true)}
-                    data-oid="cy.7bxe"
+                    data-oid="kag:gwp"
                   >
                     <label
-                      className="booking-form-label mb-0 text-left text-xs"
-                      data-oid="w6walkx"
+                      className="booking-form-label mb-0 text-left text-sm"
+                      data-oid="gm0c0-2"
                     >
                       Fecha
                     </label>
                     <div
                       className="flex items-center justify-between pr-3"
-                      data-oid="euil1s9"
+                      data-oid="9fsyftk"
                     >
                       <div
-                        className="booking-form-input h-6 flex items-center focus-visible:ring-0 focus-visible:ring-offset-0 focus:outline-none"
+                        className="booking-form-input h-7 flex items-center focus-visible:ring-0 focus-visible:ring-offset-0 focus:outline-none"
                         style={{ boxShadow: "none" }}
-                        data-oid="-usn0-w"
+                        data-oid="677g:40"
                       >
                         {format(new Date(formData.date), "E, dd MMM yyyy", {
                           locale: es,
                         })}
                       </div>
-                      <ChevronDown className="h-4 w-4" data-oid="v4rb-69" />
+                      <ChevronDown className="h-5 w-5" data-oid="mady5:q" />
                     </div>
                   </div>
                 </div>
 
-                <div className="relative" data-oid="bnsugn8">
+                <div className="relative" data-oid="bf_0t3v">
                   <TimePicker
                     value={formData.time}
                     onChange={handleTimeChange}
-                    data-oid="yk9qira"
+                    data-oid="1osx4c6"
                   />
                 </div>
 
                 <p
-                  className="text-xs text-gray-600 mt-1 mb-1"
-                  data-oid="suwyhif"
+                  className="text-sm text-gray-600 mt-1 mb-1"
+                  data-oid="ooc36ig"
                 >
                   El chófer esperará 15 minutos sin coste adicional.
                 </p>
 
                 <button
                   type="submit"
-                  className="select-button w-full h-10 text-base relative z-20"
+                  className="select-button w-full h-12 text-lg relative z-20"
                   style={{
                     background: "#000000",
                     color: "white",
                     fontWeight: "bold",
                   }}
                   disabled={loading}
-                  data-oid="g5az8w3"
+                  data-oid="2_014aw"
                 >
                   {loading ? (
                     <div
                       className="flex justify-center items-center"
-                      data-oid="-qg8vh3"
+                      data-oid="4thk:gv"
                     >
                       <Loader2
-                        className="mr-2 h-4 w-4 animate-spin"
-                        data-oid="xmw-nfb"
+                        className="mr-2 h-5 w-5 animate-spin"
+                        data-oid="n5hsgc8"
                       />
                       Procesando...
                     </div>
@@ -742,41 +746,41 @@ export default function BookingForm() {
             </CardContent>
           </TabsContent>
 
-          <TabsContent value="horas" className="m-0" data-oid="-1s7k9h">
-            <CardContent className="p-4 sm:p-6" data-oid="_7t21_3">
+          <TabsContent value="horas" className="m-0" data-oid="6.5ui0i">
+            <CardContent className="p-4 sm:p-6" data-oid="as8bp1a">
               <form
                 className="space-y-3"
                 onSubmit={handleSubmit}
-                data-oid="i_a1a4:"
+                data-oid="ltmr9m1"
               >
                 <div
                   className="relative"
                   ref={fromDropdownRef}
-                  data-oid="_cg.ljj"
+                  data-oid=":hqao.j"
                 >
                   <MapPin
-                    className="absolute left-3 top-4 h-5 w-5 text-gray-400"
-                    data-oid="0xkxe.z"
+                    className="absolute left-3 top-4 h-6 w-6 text-gray-400"
+                    data-oid="gmud:nl"
                   />
 
                   <div
                     className="flex flex-col pl-10 pt-1 border rounded-md h-[52px] focus-within:border-gray-400 hover:border-gray-400 bg-gray-50"
-                    data-oid=".g:hczk"
+                    data-oid="frg:h4_"
                   >
                     <label
-                      className="booking-form-label mb-0 text-left text-xs"
-                      data-oid="ea8k7sv"
+                      className="booking-form-label mb-0 text-left text-sm"
+                      data-oid="mbywmn4"
                     >
                       De
                     </label>
                     <Input
-                      className="border-0 p-0 h-6 focus-visible:ring-0 focus-visible:ring-offset-0 focus:outline-none placeholder:text-gray-400 booking-form-input bg-gray-50"
+                      className="border-0 p-0 h-7 text-base focus-visible:ring-0 focus-visible:ring-offset-0 focus:outline-none placeholder:text-gray-400 booking-form-input bg-gray-50"
                       placeholder="Dirección, aeropuerto, hotel..."
                       value={formData.from.description}
                       onChange={(e) => handleFromSearch(e.target.value)}
                       onFocus={() => setShowFromPredictions(true)}
                       style={{ boxShadow: "none" }}
-                      data-oid="zmvvjw."
+                      data-oid="zl54ili"
                     />
                   </div>
 
@@ -784,21 +788,21 @@ export default function BookingForm() {
                   {showFromPredictions && fromPredictions.length > 0 && (
                     <div
                       className="absolute z-10 mt-1 w-full bg-white border rounded-md shadow-lg max-h-60 overflow-auto"
-                      data-oid="75jpvr7"
+                      data-oid="3j261fr"
                     >
                       {fromPredictions.map((prediction) => (
                         <div
                           key={prediction.place_id}
                           className="px-4 py-2 cursor-pointer hover:bg-gray-100"
                           onClick={() => handleSelectFrom(prediction)}
-                          data-oid="fwtk5dt"
+                          data-oid="g26bamg"
                         >
-                          <div className="font-medium" data-oid="i8jcana">
+                          <div className="font-medium" data-oid="7rjrqk7">
                             {prediction.structured_formatting.main_text}
                           </div>
                           <div
-                            className="text-sm text-gray-500"
-                            data-oid="ewbxtux"
+                            className="text-base text-gray-500"
+                            data-oid="jm:qgz1"
                           >
                             {prediction.structured_formatting.secondary_text}
                           </div>
@@ -808,101 +812,101 @@ export default function BookingForm() {
                   )}
                 </div>
 
-                <div className="relative" data-oid="qlkv3ms">
+                <div className="relative" data-oid="_vyb5:a">
                   <Clock
-                    className="absolute left-3 top-4 h-5 w-5 text-gray-400"
-                    data-oid="7wqxjhi"
+                    className="absolute left-3 top-4 h-6 w-6 text-gray-400"
+                    data-oid="qdgfavx"
                   />
 
                   <div
                     className="flex flex-col pl-10 pt-1 border rounded-md h-[52px] focus-within:border-gray-400 hover:border-gray-400 bg-gray-50 cursor-pointer"
                     onClick={() => setDurationDialogOpen(true)}
-                    data-oid="mg34jih"
+                    data-oid="utb295m"
                   >
                     <label
-                      className="booking-form-label mb-0 text-left text-xs"
-                      data-oid="t-4_q7t"
+                      className="booking-form-label mb-0 text-left text-sm"
+                      data-oid="8imk3ng"
                     >
                       Duración
                     </label>
                     <div
                       className="flex items-center justify-between pr-3"
-                      data-oid="si.nytc"
+                      data-oid="-33ov9x"
                     >
                       <div
-                        className="booking-form-input h-6 flex items-center focus-visible:ring-0 focus-visible:ring-offset-0 focus:outline-none"
+                        className="booking-form-input h-7 flex items-center focus-visible:ring-0 focus-visible:ring-offset-0 focus:outline-none"
                         style={{ boxShadow: "none" }}
-                        data-oid="lqpwxb7"
+                        data-oid="lp.6sal"
                       >
                         {formData.duration}
                       </div>
-                      <ChevronDown className="h-4 w-4" data-oid=":.0.82b" />
+                      <ChevronDown className="h-5 w-5" data-oid="y13kays" />
                     </div>
                   </div>
                 </div>
 
-                <div className="relative" data-oid="vns9v1c">
+                <div className="relative" data-oid=":d18phd">
                   <CalendarIcon
-                    className="absolute left-3 top-4 h-5 w-5 text-gray-400"
-                    data-oid="vcedq8e"
+                    className="absolute left-3 top-4 h-6 w-6 text-gray-400"
+                    data-oid="cj51npp"
                   />
 
                   <div
                     className="flex flex-col pl-10 pt-1 border rounded-md h-[52px] focus-within:border-gray-400 hover:border-gray-400 bg-gray-50 cursor-pointer"
                     onClick={() => setDateDialogOpen(true)}
-                    data-oid="eu2sn_5"
+                    data-oid="83mh9sq"
                   >
                     <label
-                      className="booking-form-label mb-0 text-left text-xs"
-                      data-oid="i:4..bg"
+                      className="booking-form-label mb-0 text-left text-sm"
+                      data-oid="acbblag"
                     >
                       Fecha
                     </label>
                     <div
                       className="flex items-center justify-between pr-3"
-                      data-oid="70mc6ra"
+                      data-oid="8zz44rb"
                     >
                       <div
-                        className="booking-form-input h-6 flex items-center focus-visible:ring-0 focus-visible:ring-offset-0 focus:outline-none"
+                        className="booking-form-input h-7 flex items-center focus-visible:ring-0 focus-visible:ring-offset-0 focus:outline-none"
                         style={{ boxShadow: "none" }}
-                        data-oid="_ea_2e8"
+                        data-oid="zh_upfb"
                       >
                         {format(new Date(formData.date), "E, dd MMM yyyy", {
                           locale: es,
                         })}
                       </div>
-                      <ChevronDown className="h-4 w-4" data-oid="tsrcgz5" />
+                      <ChevronDown className="h-5 w-5" data-oid="bo_6ptl" />
                     </div>
                   </div>
                 </div>
 
-                <div className="relative" data-oid="qo4emod">
+                <div className="relative" data-oid="9xwz6_n">
                   <TimePicker
                     value={formData.time}
                     onChange={handleTimeChange}
-                    data-oid="ga77vth"
+                    data-oid="ab958-b"
                   />
                 </div>
 
                 <button
                   type="submit"
-                  className="select-button w-full h-10 text-base relative z-20"
+                  className="select-button w-full h-12 text-lg relative z-20"
                   style={{
                     background: "#000000",
                     color: "white",
                     fontWeight: "bold",
                   }}
                   disabled={loading}
-                  data-oid="839cz2c"
+                  data-oid="rltz:ua"
                 >
                   {loading ? (
                     <div
                       className="flex justify-center items-center"
-                      data-oid="36v:cxx"
+                      data-oid="h-vpgmx"
                     >
                       <Loader2
-                        className="mr-2 h-4 w-4 animate-spin"
-                        data-oid="0u2p0l1"
+                        className="mr-2 h-5 w-5 animate-spin"
+                        data-oid="jg-.wvo"
                       />
                       Procesando...
                     </div>
@@ -920,22 +924,22 @@ export default function BookingForm() {
       <Dialog
         open={dateDialogOpen}
         onOpenChange={setDateDialogOpen}
-        data-oid="gnp21mg"
+        data-oid="o:m8uab"
       >
-        <DialogContent className="sm:max-w-[425px] p-4" data-oid="hsacs.j">
-          <DialogHeader data-oid="oq.1gr:">
+        <DialogContent className="sm:max-w-[425px] p-4" data-oid="rho9zsz">
+          <DialogHeader data-oid="eadpu91">
             <DialogTitle
               className="text-center text-lg font-bold mb-4"
-              data-oid="y75uihx"
+              data-oid="lh_oodj"
             >
               Selecciona una fecha
             </DialogTitle>
           </DialogHeader>
-          <div className="calendar-container p-2" data-oid="zopkckb">
+          <div className="calendar-container p-2" data-oid="mrkkspe">
             <CalendarComponent
               selectedDate={new Date(formData.date)}
               onDateChange={handleDateChange}
-              data-oid="saa.yrx"
+              data-oid="t8xujxr"
             />
           </div>
         </DialogContent>
@@ -945,13 +949,13 @@ export default function BookingForm() {
       <Dialog
         open={durationDialogOpen}
         onOpenChange={setDurationDialogOpen}
-        data-oid="crbg09_"
+        data-oid="5y26i:x"
       >
-        <DialogContent className="sm:max-w-[425px] p-4" data-oid="6obbacj">
-          <DialogHeader data-oid="u2f.jdp">
+        <DialogContent className="sm:max-w-[425px] p-4" data-oid="g6lj5ty">
+          <DialogHeader data-oid="3:cimod">
             <DialogTitle
               className="text-center text-lg font-bold mb-4"
-              data-oid="nja-g4y"
+              data-oid="meufwpq"
             >
               Selecciona la duración
             </DialogTitle>
@@ -959,7 +963,7 @@ export default function BookingForm() {
           <DurationSelector
             selectedDuration={formData.duration || ""}
             onDurationChange={handleDurationChange}
-            data-oid="6p8p8iu"
+            data-oid="-u4:a-y"
           />
         </DialogContent>
       </Dialog>

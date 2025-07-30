@@ -109,7 +109,7 @@ const GoogleRouteMap = ({
     return (
       <div
         className="h-64 w-full bg-gray-100 flex items-center justify-center text-gray-500 text-sm"
-        data-oid="b2dxd:d"
+        data-oid="-vqs7yw"
       >
         Faltan coordenadas para mostrar el mapa
       </div>
@@ -138,16 +138,16 @@ const GoogleRouteMap = ({
     <>
       <div
         className="w-full h-64 rounded-lg overflow-hidden shadow-sm border relative bg-gray-50"
-        data-oid="coisvbc"
+        data-oid="stq.3b6"
       >
         {loading && (
           <div
             className="absolute inset-0 flex items-center justify-center bg-gray-50 z-10"
-            data-oid="vq814nm"
+            data-oid="-c51fft"
           >
             <div
               className="animate-spin rounded-full h-8 w-8 border-b-2 border-red-600"
-              data-oid="1bg3alh"
+              data-oid="bcq1eir"
             ></div>
           </div>
         )}
@@ -166,24 +166,24 @@ const GoogleRouteMap = ({
             setError("Error al cargar el mapa");
             setLoading(false);
           }}
-          data-oid="9:3q3hm"
+          data-oid="bpo-n3r"
         ></iframe>
 
         <div
           className="absolute bottom-2 left-2 right-2 bg-white bg-opacity-90 p-2 rounded-md text-xs flex justify-between items-center"
-          data-oid="8alnqrg"
+          data-oid="y-gl-tc"
         >
-          <span data-oid="52cwl6i">
-            <span className="font-bold" data-oid="dq2fiqi">
+          <span data-oid="ddowks3">
+            <span className="font-bold" data-oid="-8mn8_-">
               Ruta:
             </span>{" "}
             {origin.name} → {destination.name}
           </span>
-          <div className="flex items-center" data-oid="duy7u8e">
+          <div className="flex items-center" data-oid="sqbf8m9">
             {error && (
               <span
                 className="text-xs bg-gray-200 text-gray-600 p-1 rounded mr-2"
-                data-oid="6w_rewm"
+                data-oid="jf.m8i4"
               >
                 {error}
               </span>
@@ -193,10 +193,10 @@ const GoogleRouteMap = ({
               size="sm"
               className="text-gray-700 hover:text-gray-900"
               onClick={() => setShowFullscreen(true)}
-              data-oid="qpwg1o6"
+              data-oid="yicw829"
             >
-              <Maximize2 className="h-4 w-4" data-oid="-pg822v" />
-              <span className="sr-only" data-oid=".hxq66k">
+              <Maximize2 className="h-4 w-4" data-oid="vhavdgt" />
+              <span className="sr-only" data-oid="xaqxm.0">
                 Ampliar
               </span>
             </Button>
@@ -209,13 +209,13 @@ const GoogleRouteMap = ({
         <Dialog
           open={showFullscreen}
           onOpenChange={setShowFullscreen}
-          data-oid="1aec7mh"
+          data-oid="0sb4-ya"
         >
           <DialogContent
             className="max-w-6xl max-h-[90vh] p-0 overflow-hidden"
-            data-oid="3rqaoha"
+            data-oid="o5rpic."
           >
-            <div className="relative h-[80vh] w-full" data-oid=".lycbtu">
+            <div className="relative h-[80vh] w-full" data-oid="ptwujkd">
               <iframe
                 src={googleUrl}
                 width="100%"
@@ -224,44 +224,44 @@ const GoogleRouteMap = ({
                 allowFullScreen={true}
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                data-oid="1ldjp.g"
+                data-oid="b13hzzg"
               ></iframe>
 
               <div
                 className="absolute bottom-4 left-4 right-4 bg-white bg-opacity-90 p-3 rounded-md shadow-md"
-                data-oid="yxu1e55"
+                data-oid="a826don"
               >
                 <div
                   className="flex justify-between items-center"
-                  data-oid="avwbueq"
+                  data-oid="48zjbou"
                 >
-                  <div data-oid="sf.py-4">
-                    <div className="font-bold text-lg mb-1" data-oid="2iuc40a">
+                  <div data-oid=":53xen:">
+                    <div className="font-bold text-lg mb-1" data-oid="8_lnfqw">
                       Ruta
                     </div>
-                    <div className="flex items-start" data-oid="dlfv9_:">
+                    <div className="flex items-start" data-oid="6yletci">
                       <MapPin
                         className="h-4 w-4 text-black mt-0.5 mr-1 flex-shrink-0"
-                        data-oid="zgspcld"
+                        data-oid="07ca2tg"
                       />
 
-                      <span className="font-medium" data-oid="phk930g">
+                      <span className="font-medium" data-oid="gs:9q1o">
                         Origen:
                       </span>
-                      <span className="ml-1" data-oid="n:legne">
+                      <span className="ml-1" data-oid="sa4tc.-">
                         {origin.name}
                       </span>
                     </div>
-                    <div className="flex items-start mt-1" data-oid="16v75tx">
+                    <div className="flex items-start mt-1" data-oid=".9g_g8.">
                       <MapPin
                         className="h-4 w-4 text-black mt-0.5 mr-1 flex-shrink-0"
-                        data-oid="zy1cbi0"
+                        data-oid="u8qvtoo"
                       />
 
-                      <span className="font-medium" data-oid="nme6mno">
+                      <span className="font-medium" data-oid="-c7b23v">
                         Destino:
                       </span>
-                      <span className="ml-1" data-oid="mvf9cnj">
+                      <span className="ml-1" data-oid="8uhsljs">
                         {destination.name}
                       </span>
                     </div>
@@ -270,9 +270,9 @@ const GoogleRouteMap = ({
                     variant="default"
                     className="bg-black hover:bg-gray-800 text-white"
                     onClick={() => setShowFullscreen(false)}
-                    data-oid="xyxhomq"
+                    data-oid="d._87:s"
                   >
-                    <X className="h-4 w-4 mr-2" data-oid="2njefyo" />
+                    <X className="h-4 w-4 mr-2" data-oid="ujqsb4q" />
                     Cerrar
                   </Button>
                 </div>
@@ -517,7 +517,7 @@ const FixedRoutesTab = ({
   };
 
   return (
-    <div className="space-y-6" data-oid="_3w8v90">
+    <div className="space-y-6" data-oid="6yeife-">
       {showRouteForm ? (
         <FixedRouteForm
           editMode={!!editingRoute}
@@ -527,56 +527,56 @@ const FixedRoutesTab = ({
             setShowRouteForm(false);
             setEditingRoute(null);
           }}
-          data-oid="vcj75fc"
+          data-oid="0i7ewm8"
         />
       ) : (
         <>
           <div
             className="flex justify-between items-center bg-white p-4 rounded-lg shadow-sm mb-4"
-            data-oid="3nfpgd7"
+            data-oid="hdd6q-:"
           >
-            <div className="relative w-64" data-oid="c8mcnv6">
+            <div className="relative w-64" data-oid="f2ufe9.">
               <input
                 type="text"
                 placeholder="Buscar rutas..."
                 className="pl-10 pr-4 py-2 border rounded-lg w-full"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                data-oid="s3sut-j"
+                data-oid="kbr1hj3"
               />
 
               <Search
                 className="absolute left-3 top-2.5 text-gray-400"
                 size={18}
-                data-oid="ej:does"
+                data-oid="t-r.o7o"
               />
             </div>
-            <div className="flex space-x-3" data-oid="xgu-4.0">
+            <div className="flex space-x-3" data-oid="qofy749">
               <select
                 className="px-3 py-2 border rounded-lg"
                 value={statusFilter}
                 onChange={(e) => setStatusFilter(e.target.value)}
-                data-oid="rys-9z7"
+                data-oid="5qo.:uv"
               >
-                <option value="all" data-oid=".l:sq1x">
+                <option value="all" data-oid="xks5vzq">
                   Todos los estados
                 </option>
-                <option value="active" data-oid="cdxadf:">
+                <option value="active" data-oid="576_r6i">
                   Activas
                 </option>
-                <option value="inactive" data-oid="h.uq4rs">
+                <option value="inactive" data-oid="0s.21_z">
                   Inactivas
                 </option>
-                <option value="draft" data-oid="dkbgwe.">
+                <option value="draft" data-oid="l28tzee">
                   Borrador
                 </option>
               </select>
               <Button
                 onClick={handleAddRoute}
                 className="flex items-center px-4 py-2 bg-black text-white rounded-lg hover:bg-gray-800 transition-colors"
-                data-oid="1ochodi"
+                data-oid="0o:hoj:"
               >
-                <PlusCircle size={18} className="mr-2" data-oid="pr9xs93" />
+                <PlusCircle size={18} className="mr-2" data-oid="myaem1_" />
                 Nueva Ruta Fija
               </Button>
             </div>
@@ -584,54 +584,54 @@ const FixedRoutesTab = ({
 
           <div
             className="bg-white rounded-lg shadow-md overflow-hidden"
-            data-oid="h5bsq:-"
+            data-oid="8u-ok._"
           >
-            <div className="overflow-x-auto" data-oid="41d3wha">
+            <div className="overflow-x-auto" data-oid="5t1on85">
               <table
                 className="min-w-full divide-y divide-gray-200"
-                data-oid="j-pg7im"
+                data-oid="11y_eo4"
               >
-                <thead className="bg-gray-50" data-oid="3.7vyb3">
-                  <tr data-oid="0w99-up">
+                <thead className="bg-gray-50" data-oid="jqolm06">
+                  <tr data-oid="bmgk4r1">
                     <th
                       className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                      data-oid="x1b57pf"
+                      data-oid="8t.g.f1"
                     >
                       Nombre
                     </th>
                     <th
                       className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                      data-oid="fc4oq6a"
+                      data-oid="7r710ib"
                     >
                       Origen → Destino
                     </th>
                     <th
                       className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                      data-oid="2zb467t"
+                      data-oid="k6p_.to"
                     >
                       Colaborador
                     </th>
                     <th
                       className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                      data-oid="75lnuef"
+                      data-oid="hbw6e77"
                     >
                       Vehículo / Chófer
                     </th>
                     <th
                       className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                      data-oid="7..5fyp"
+                      data-oid="g:.94rq"
                     >
                       Estado
                     </th>
                     <th
                       className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                      data-oid="i92x6iu"
+                      data-oid="de-.t-m"
                     >
                       Tarifas
                     </th>
                     <th
                       className="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider"
-                      data-oid="t47s3ao"
+                      data-oid="w24t4a7"
                     >
                       Acciones
                     </th>
@@ -639,71 +639,71 @@ const FixedRoutesTab = ({
                 </thead>
                 <tbody
                   className="bg-white divide-y divide-gray-200"
-                  data-oid="awtl.cu"
+                  data-oid="hymzuyq"
                 >
                   {filteredRoutes.map((route, index) => (
                     <tr
                       key={`route-${route.id || index}`}
                       className="hover:bg-gray-50 cursor-pointer"
                       onClick={(e) => handleViewRouteDetails(route, e)}
-                      data-oid="q9jidk0"
+                      data-oid="jluqw:p"
                     >
                       <td
                         className="px-6 py-4 whitespace-nowrap"
-                        data-oid="hz4.ivi"
+                        data-oid=".k18po7"
                       >
                         <div
                           className="text-sm font-medium text-gray-900"
-                          data-oid="_13pps6"
+                          data-oid="5k1.zi2"
                         >
                           {route.name}
                         </div>
                         {route.distance && route.estimatedTime && (
                           <div
                             className="text-xs text-gray-500 flex items-center mt-1"
-                            data-oid="0b0u3er"
+                            data-oid="3gm9114"
                           >
                             <Clock
                               className="h-3 w-3 mr-1"
-                              data-oid="n2x8asy"
+                              data-oid="szr0oau"
                             />
                             {route.estimatedTime} min
-                            <span className="mx-1" data-oid="u7ep7_k">
+                            <span className="mx-1" data-oid="b:z93i_">
                               •
                             </span>
                             <MapPin
                               className="h-3 w-3 mr-1"
-                              data-oid="m5ky9zm"
+                              data-oid="388c0is"
                             />
                             {route.distance} km
                           </div>
                         )}
                       </td>
-                      <td className="px-6 py-4" data-oid="d385ogz">
+                      <td className="px-6 py-4" data-oid="yq8ui94">
                         <div
                           className="text-sm text-gray-900 flex flex-col"
-                          data-oid="mj6_mmb"
+                          data-oid="oct573q"
                         >
-                          <div className="flex items-start" data-oid="gk2zda.">
+                          <div className="flex items-start" data-oid="45luro_">
                             <MapPin
                               className="h-4 w-4 text-black mt-0.5 mr-1 flex-shrink-0"
-                              data-oid="u0769za"
+                              data-oid="j9dw1xf"
                             />
 
-                            <span data-oid="b0ytiep">
+                            <span data-oid=":hdut:h">
                               {truncateAddressForTable(route.origin.name)}
                             </span>
                           </div>
                           <div
                             className="flex items-start mt-2"
-                            data-oid="t7c3tkr"
+                            data-oid="u88esvd"
                           >
                             <MapPin
                               className="h-4 w-4 text-black mt-0.5 mr-1 flex-shrink-0"
-                              data-oid="kmk.qsl"
+                              data-oid="335k3kq"
                             />
 
-                            <span data-oid="1fs9eef">
+                            <span data-oid="aafqmb-">
                               {truncateAddressForTable(route.destination.name)}
                             </span>
                           </div>
@@ -711,21 +711,21 @@ const FixedRoutesTab = ({
                       </td>
                       <td
                         className="px-6 py-4 whitespace-nowrap"
-                        data-oid="ho7yo.m"
+                        data-oid="wcvg3mh"
                       >
-                        <div className="flex items-center" data-oid="c.z5acn">
+                        <div className="flex items-center" data-oid="o9rktcp">
                           <div
                             className="h-8 w-8 rounded-full bg-gray-200 flex items-center justify-center mr-3"
-                            data-oid="7jlb5zv"
+                            data-oid="fsuesfe"
                           >
                             <Building
                               className="h-4 w-4 text-gray-600"
-                              data-oid="f8j7cno"
+                              data-oid="q728b7f"
                             />
                           </div>
                           <div
                             className="text-sm text-gray-900"
-                            data-oid="-gfrqjb"
+                            data-oid=":w982l8"
                           >
                             {getCollaboratorName(route.collaboratorId)}
                           </div>
@@ -733,43 +733,43 @@ const FixedRoutesTab = ({
                       </td>
                       <td
                         className="px-6 py-4 whitespace-nowrap"
-                        data-oid="-m6v1nl"
+                        data-oid="txyaz6-"
                       >
                         {route.vehicles && route.vehicles.length > 0 ? (
-                          <div className="space-y-2" data-oid="b5_onqk">
+                          <div className="space-y-2" data-oid="nc1ik61">
                             {/* Mostrar el primer vehículo */}
                             <div
                               className="flex items-center"
-                              data-oid="q8_2w_g"
+                              data-oid=":x38fen"
                             >
                               {route.vehicles[0].imageUrl ? (
                                 <img
                                   src={route.vehicles[0].imageUrl}
                                   alt={route.vehicles[0].model}
                                   className="h-10 w-10 rounded-full object-cover"
-                                  data-oid="ofj2n_k"
+                                  data-oid="sgk8x5s"
                                 />
                               ) : (
                                 <div
                                   className="h-10 w-10 rounded-full bg-gray-200 flex items-center justify-center"
-                                  data-oid="u1sjrvp"
+                                  data-oid="ol70fdy"
                                 >
                                   <Car
                                     className="h-6 w-6 text-gray-500"
-                                    data-oid="vtnri:w"
+                                    data-oid="w_f9kj3"
                                   />
                                 </div>
                               )}
-                              <div className="ml-4" data-oid="zi_xzmz">
+                              <div className="ml-4" data-oid="dj:g6ra">
                                 <div
                                   className="text-sm font-medium text-gray-900"
-                                  data-oid="dcsg.mz"
+                                  data-oid="g-fweit"
                                 >
                                   {route.vehicles[0].model}
                                 </div>
                                 <div
                                   className="text-xs text-gray-500"
-                                  data-oid="53td6x5"
+                                  data-oid="8j88oe3"
                                 >
                                   {route.vehicles[0].licensePlate}
                                 </div>
@@ -780,7 +780,7 @@ const FixedRoutesTab = ({
                             {route.vehicles.length > 1 && (
                               <div
                                 className="ml-2 text-xs text-gray-600"
-                                data-oid="y.1341w"
+                                data-oid="5jt7c.x"
                               >
                                 +{route.vehicles.length - 1} vehículo
                                 {route.vehicles.length - 1 > 1 ? "s" : ""} más
@@ -791,29 +791,29 @@ const FixedRoutesTab = ({
                             {route.drivers && route.drivers.length > 0 ? (
                               <div
                                 className="flex items-center mt-2"
-                                data-oid="ujbi8cx"
+                                data-oid="v_adx3_"
                               >
                                 {route.drivers[0].photo ? (
                                   <img
                                     src={route.drivers[0].photo}
                                     alt={route.drivers[0].name}
                                     className="h-6 w-6 rounded-full object-cover"
-                                    data-oid="lrule:0"
+                                    data-oid="ezlr67d"
                                   />
                                 ) : (
                                   <div
                                     className="h-6 w-6 rounded-full bg-gray-200 flex items-center justify-center"
-                                    data-oid="lgdzs8d"
+                                    data-oid="nnnw-b4"
                                   >
                                     <User
                                       className="h-4 w-4 text-gray-500"
-                                      data-oid="h61zmgn"
+                                      data-oid="l26fq7n"
                                     />
                                   </div>
                                 )}
                                 <span
                                   className="ml-2 text-xs text-gray-500"
-                                  data-oid="-v6dzvx"
+                                  data-oid="cjza5-r"
                                 >
                                   {route.drivers[0].name}
                                   {route.drivers.length > 1 &&
@@ -824,29 +824,29 @@ const FixedRoutesTab = ({
                               route.driver && (
                                 <div
                                   className="flex items-center mt-2"
-                                  data-oid="tq8aqy8"
+                                  data-oid="h17c8x6"
                                 >
                                   {route.driver.photo ? (
                                     <img
                                       src={route.driver.photo}
                                       alt={route.driver.name}
                                       className="h-6 w-6 rounded-full object-cover"
-                                      data-oid="m805tg:"
+                                      data-oid="vtxwf0s"
                                     />
                                   ) : (
                                     <div
                                       className="h-6 w-6 rounded-full bg-gray-200 flex items-center justify-center"
-                                      data-oid="c4k_shg"
+                                      data-oid="1d3b46m"
                                     >
                                       <User
                                         className="h-4 w-4 text-gray-500"
-                                        data-oid="j7lc5u6"
+                                        data-oid="7gbe391"
                                       />
                                     </div>
                                   )}
                                   <span
                                     className="ml-2 text-xs text-gray-500"
-                                    data-oid="bbbzyfa"
+                                    data-oid="ifl-q1s"
                                   >
                                     {route.driver.name}
                                   </span>
@@ -856,39 +856,39 @@ const FixedRoutesTab = ({
                           </div>
                         ) : route.vehicle ? (
                           // Para compatibilidad con versiones anteriores
-                          <div className="flex flex-col" data-oid="mu:q4_t">
+                          <div className="flex flex-col" data-oid="styu7.e">
                             <div
                               className="flex items-center"
-                              data-oid="zr868_:"
+                              data-oid="i0mcapu"
                             >
                               {route.vehicle.imageUrl ? (
                                 <img
                                   src={route.vehicle.imageUrl}
                                   alt={route.vehicle.model}
                                   className="h-10 w-10 rounded-full object-cover"
-                                  data-oid="v77:0rr"
+                                  data-oid="z5m8r_j"
                                 />
                               ) : (
                                 <div
                                   className="h-10 w-10 rounded-full bg-gray-200 flex items-center justify-center"
-                                  data-oid="ik22t.w"
+                                  data-oid="lwonqtc"
                                 >
                                   <Car
                                     className="h-6 w-6 text-gray-500"
-                                    data-oid="ir1ang-"
+                                    data-oid="wgcj3.a"
                                   />
                                 </div>
                               )}
-                              <div className="ml-4" data-oid="5p3e2w8">
+                              <div className="ml-4" data-oid=".iu-fkk">
                                 <div
                                   className="text-sm font-medium text-gray-900"
-                                  data-oid="ckd:58f"
+                                  data-oid="hybpv6t"
                                 >
                                   {route.vehicle.model}
                                 </div>
                                 <div
                                   className="text-xs text-gray-500"
-                                  data-oid=":ge5w2y"
+                                  data-oid="37yi048"
                                 >
                                   {route.vehicle.licensePlate}
                                 </div>
@@ -897,29 +897,29 @@ const FixedRoutesTab = ({
                             {route.driver && (
                               <div
                                 className="flex items-center mt-2"
-                                data-oid="0bppro9"
+                                data-oid="0luq102"
                               >
                                 {route.driver.photo ? (
                                   <img
                                     src={route.driver.photo}
                                     alt={route.driver.name}
                                     className="h-6 w-6 rounded-full object-cover"
-                                    data-oid="onrn4.k"
+                                    data-oid="ylotsoa"
                                   />
                                 ) : (
                                   <div
                                     className="h-6 w-6 rounded-full bg-gray-200 flex items-center justify-center"
-                                    data-oid="tlqvxr5"
+                                    data-oid="oyst92r"
                                   >
                                     <User
                                       className="h-4 w-4 text-gray-500"
-                                      data-oid="x:b4htw"
+                                      data-oid="78p88kt"
                                     />
                                   </div>
                                 )}
                                 <span
                                   className="ml-2 text-xs text-gray-500"
-                                  data-oid="s_s.7z_"
+                                  data-oid="a0ykvcc"
                                 >
                                   {route.driver.name}
                                 </span>
@@ -929,7 +929,7 @@ const FixedRoutesTab = ({
                         ) : (
                           <div
                             className="text-gray-500 italic"
-                            data-oid="s_1-gam"
+                            data-oid="7slqi5f"
                           >
                             Sin vehículos asignados
                           </div>
@@ -937,7 +937,7 @@ const FixedRoutesTab = ({
                       </td>
                       <td
                         className="px-6 py-4 whitespace-nowrap"
-                        data-oid="aakpxtm"
+                        data-oid="aqda5di"
                       >
                         <Badge
                           className={`
@@ -949,7 +949,7 @@ const FixedRoutesTab = ({
                                 : "bg-amber-100 text-amber-800 hover:bg-amber-100"
                           }
                         `}
-                          data-oid="h4l8tkb"
+                          data-oid="57xo_:l"
                         >
                           {route.status === "active"
                             ? "Activa"
@@ -959,16 +959,16 @@ const FixedRoutesTab = ({
                         </Badge>
                         <div
                           className="flex items-center mt-2"
-                          data-oid="45bhfml"
+                          data-oid="h.-8t:g"
                         >
                           <span
                             className="text-xs text-gray-500 mr-2"
-                            data-oid="rb6te5x"
+                            data-oid="ee1b28i"
                           >
                             {route.availability.days.map((day, index) => (
                               <span
                                 key={`${route.id}-day-${index}`}
-                                data-oid="_ahel-3"
+                                data-oid="mgfngve"
                               >
                                 {day}
                                 {index < route.availability.days.length - 1
@@ -980,21 +980,21 @@ const FixedRoutesTab = ({
                         </div>
                         <div
                           className="flex items-center mt-1"
-                          data-oid=":qh8anq"
+                          data-oid="m3pa9h0"
                         >
                           <Clock
                             className="h-3 w-3 text-gray-400 mr-1"
-                            data-oid="mfu1saf"
+                            data-oid="h030_x:"
                           />
 
                           <span
                             className="text-xs text-gray-500"
-                            data-oid="d1l33xh"
+                            data-oid="-_tyjdj"
                           >
                             {route.availability.timeSlots.map((slot, index) => (
                               <span
                                 key={`${route.id}-slot-${index}`}
-                                data-oid="_h1vfrx"
+                                data-oid="e749zhm"
                               >
                                 {slot}
                                 {index < route.availability.timeSlots.length - 1
@@ -1007,25 +1007,25 @@ const FixedRoutesTab = ({
                       </td>
                       <td
                         className="px-6 py-4 whitespace-nowrap"
-                        data-oid="8eoobnm"
+                        data-oid="av::707"
                       >
-                        <div className="text-sm" data-oid="fu.ple3">
+                        <div className="text-sm" data-oid="kln2q_l">
                           <div
                             className="font-medium text-gray-900"
-                            data-oid="dvqu_gc"
+                            data-oid="kbuq74k"
                           >
                             {route.pricing.standard} {route.pricing.currency}
                           </div>
                           <div
                             className="text-xs text-gray-500 mt-1"
-                            data-oid="z3_7r63"
+                            data-oid="htrfg2f"
                           >
                             Noche: {route.pricing.night}{" "}
                             {route.pricing.currency}
                           </div>
                           <div
                             className="text-xs text-gray-500"
-                            data-oid="eoibmf."
+                            data-oid="kk62wkn"
                           >
                             Festivo: {route.pricing.holiday}{" "}
                             {route.pricing.currency}
@@ -1034,7 +1034,7 @@ const FixedRoutesTab = ({
                       </td>
                       <td
                         className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium space-x-2"
-                        data-oid="bip8iyw"
+                        data-oid="umhqu08"
                       >
                         <Button
                           variant="ghost"
@@ -1044,9 +1044,9 @@ const FixedRoutesTab = ({
                             handleViewRouteDetails(route, e);
                           }}
                           className="text-gray-600 hover:text-gray-900 hover:bg-gray-100"
-                          data-oid="p1i5qgg"
+                          data-oid="huryphu"
                         >
-                          <Eye className="h-4 w-4" data-oid="z5okvex" />
+                          <Eye className="h-4 w-4" data-oid="r3v1m-3" />
                         </Button>
                         <Button
                           variant="ghost"
@@ -1056,17 +1056,17 @@ const FixedRoutesTab = ({
                             handleToggleStatus(route.id, e);
                           }}
                           className="text-gray-600 hover:text-gray-900 hover:bg-gray-100"
-                          data-oid="gn5r2_v"
+                          data-oid="ng11273"
                         >
                           {route.status === "active" ? (
                             <ToggleRight
                               className="h-5 w-5 text-gray-600"
-                              data-oid="dfza:ds"
+                              data-oid="lnxo881"
                             />
                           ) : (
                             <ToggleLeft
                               className="h-5 w-5 text-gray-400"
-                              data-oid="4np.jod"
+                              data-oid="r78x2lk"
                             />
                           )}
                         </Button>
@@ -1078,9 +1078,9 @@ const FixedRoutesTab = ({
                             handleEditRoute(route);
                           }}
                           className="text-gray-600 hover:text-blue-800 hover:bg-gray-100"
-                          data-oid="w5p788b"
+                          data-oid="h17fokk"
                         >
-                          <Edit className="h-4 w-4" data-oid="r2afihp" />
+                          <Edit className="h-4 w-4" data-oid="zj1y66s" />
                         </Button>
                         <Button
                           variant="ghost"
@@ -1090,9 +1090,9 @@ const FixedRoutesTab = ({
                             handleDeleteRoute(route.id, e);
                           }}
                           className="text-gray-600 hover:text-gray-800 hover:bg-gray-100"
-                          data-oid="j1.ct_g"
+                          data-oid="sioje2t"
                         >
-                          <Trash2 className="h-4 w-4" data-oid="8tmn4c2" />
+                          <Trash2 className="h-4 w-4" data-oid="gryo-06" />
                         </Button>
                       </td>
                     </tr>
@@ -1101,26 +1101,26 @@ const FixedRoutesTab = ({
               </table>
 
               {filteredRoutes.length === 0 && (
-                <div className="py-10 text-center" data-oid="eh2-_:7">
+                <div className="py-10 text-center" data-oid="8:lnpm3">
                   <div
                     className="h-20 w-20 mx-auto mb-4 flex items-center justify-center rounded-full bg-gray-100"
-                    data-oid="nx31-7w"
+                    data-oid="mne.wqp"
                   >
                     <MapPin
                       className="h-10 w-10 text-gray-400"
-                      data-oid="8z-i8lj"
+                      data-oid="3a9vuam"
                     />
                   </div>
-                  <p className="text-gray-500" data-oid="bt_xa13">
+                  <p className="text-gray-500" data-oid="zsytq62">
                     No se encontraron rutas fijas que coincidan con los
                     criterios de búsqueda
                   </p>
                   <Button
                     onClick={handleAddRoute}
                     className="mt-4 flex items-center mx-auto px-4 py-2 bg-black text-white rounded-lg hover:bg-gray-800 transition-colors"
-                    data-oid="-tw_:wc"
+                    data-oid="zwihrch"
                   >
-                    <PlusCircle size={18} className="mr-2" data-oid="jvznkc3" />
+                    <PlusCircle size={18} className="mr-2" data-oid="gmy004w" />
                     Crear Nueva Ruta
                   </Button>
                 </div>
@@ -1134,16 +1134,16 @@ const FixedRoutesTab = ({
       <Dialog
         open={showDetailsDialog}
         onOpenChange={setShowDetailsDialog}
-        data-oid=":15.f76"
+        data-oid="1qx08zo"
       >
         <DialogContent
           className="max-w-3xl max-h-[90vh] overflow-y-auto"
-          data-oid="miu.trg"
+          data-oid="jie:_t0"
         >
-          <DialogHeader data-oid="u8b1:5v">
+          <DialogHeader data-oid="29.7q5p">
             <DialogTitle
               className="text-xl flex items-center gap-2"
-              data-oid=":4o37um"
+              data-oid="f-jmaz7"
             >
               {selectedRoute?.name}
               <Badge
@@ -1154,7 +1154,7 @@ const FixedRoutesTab = ({
                       ? "bg-gray-100 text-gray-800"
                       : "bg-amber-100 text-amber-800"
                 }`}
-                data-oid="ictogra"
+                data-oid="w-r2di7"
               >
                 {selectedRoute?.status === "active"
                   ? "Activa"
@@ -1163,7 +1163,7 @@ const FixedRoutesTab = ({
                     : "Borrador"}
               </Badge>
             </DialogTitle>
-            <DialogDescription data-oid="8:654qz">
+            <DialogDescription data-oid="c48wmld">
               Detalles de la ruta fija
             </DialogDescription>
           </DialogHeader>
@@ -1171,54 +1171,54 @@ const FixedRoutesTab = ({
           {selectedRoute && (
             <div
               className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4"
-              data-oid="aobib9c"
+              data-oid="z0.6:uq"
             >
               {/* Origen y Destino */}
-              <div className="space-y-4" data-oid="j8ar6n3">
+              <div className="space-y-4" data-oid="wcuvq.n">
                 <h3
                   className="font-medium text-gray-900 text-base mb-2"
-                  data-oid="sjdvh75"
+                  data-oid="nxpmget"
                 >
                   Información General
                 </h3>
 
                 <div
                   className="bg-gray-50 p-4 rounded-lg space-y-4"
-                  data-oid="juc5vbs"
+                  data-oid="hqofyz0"
                 >
-                  <div data-oid="vt6ipds">
+                  <div data-oid="na-j03:">
                     <div
                       className="text-sm font-medium text-gray-500"
-                      data-oid="3p--h9g"
+                      data-oid="ks.p.xn"
                     >
                       Origen
                     </div>
-                    <div className="flex items-start mt-1" data-oid="nwugq7l">
+                    <div className="flex items-start mt-1" data-oid=":933sd3">
                       <MapPin
                         className="h-4 w-4 text-black mt-0.5 mr-1 flex-shrink-0"
-                        data-oid="pwcf1:w"
+                        data-oid="4_91hf:"
                       />
 
-                      <span className="text-base" data-oid="w7qykmr">
+                      <span className="text-base" data-oid="ilg8t7m">
                         {selectedRoute.origin.name}
                       </span>
                     </div>
                   </div>
 
-                  <div data-oid="f6xg0gf">
+                  <div data-oid="z.9.q45">
                     <div
                       className="text-sm font-medium text-gray-500"
-                      data-oid="4yzsad6"
+                      data-oid="54979el"
                     >
                       Destino
                     </div>
-                    <div className="flex items-start mt-1" data-oid="f27g9o9">
+                    <div className="flex items-start mt-1" data-oid="m_x7fc1">
                       <MapPin
                         className="h-4 w-4 text-black mt-0.5 mr-1 flex-shrink-0"
-                        data-oid="cu5zhlt"
+                        data-oid="u907y5n"
                       />
 
-                      <span className="text-base" data-oid="81emp73">
+                      <span className="text-base" data-oid="dfgl0k9">
                         {selectedRoute.destination.name}
                       </span>
                     </div>
@@ -1227,17 +1227,17 @@ const FixedRoutesTab = ({
                   {selectedRoute.distance && selectedRoute.estimatedTime && (
                     <div
                       className="flex items-center gap-3 text-sm text-gray-600 border-t pt-2"
-                      data-oid=".r_v6el"
+                      data-oid="ejqeyqt"
                     >
-                      <div className="flex items-center" data-oid="k9nxp9u">
-                        <MapPin className="h-3 w-3 mr-1" data-oid="jj18u10" />
-                        <span data-oid="k.v1ruf">
+                      <div className="flex items-center" data-oid="1d0a_we">
+                        <MapPin className="h-3 w-3 mr-1" data-oid="mn60.c3" />
+                        <span data-oid="8:xyqy_">
                           {selectedRoute.distance} km
                         </span>
                       </div>
-                      <div className="flex items-center" data-oid="9ev3qxw">
-                        <Clock className="h-3 w-3 mr-1" data-oid="rjz0zvk" />
-                        <span data-oid="3:7v7ec">
+                      <div className="flex items-center" data-oid="3blccu:">
+                        <Clock className="h-3 w-3 mr-1" data-oid="aak3ybm" />
+                        <span data-oid="zygkv87">
                           {selectedRoute.estimatedTime} min
                         </span>
                       </div>
@@ -1246,31 +1246,31 @@ const FixedRoutesTab = ({
                 </div>
 
                 {/* Colaborador */}
-                <div data-oid="hn5d7i_">
+                <div data-oid="ddzb25b">
                   <h3
                     className="font-medium text-gray-900 text-base mb-2"
-                    data-oid="2xa94kt"
+                    data-oid="5lol88b"
                   >
                     Colaborador
                   </h3>
                   <div
                     className="flex items-center bg-gray-50 p-4 rounded-lg"
-                    data-oid="-mtkdz0"
+                    data-oid="t6:c1tv"
                   >
                     <div
                       className="h-10 w-10 rounded-full bg-gray-200 flex items-center justify-center mr-3"
-                      data-oid="7m:fs:k"
+                      data-oid="vuv38:1"
                     >
                       <Building
                         className="h-5 w-5 text-gray-600"
-                        data-oid="c5cfkq3"
+                        data-oid="q2jbcqz"
                       />
                     </div>
-                    <div data-oid="-g16:10">
-                      <div className="font-medium" data-oid="1pv4td6">
+                    <div data-oid="-nc2org">
+                      <div className="font-medium" data-oid="h1xd7s9">
                         {getCollaboratorName(selectedRoute.collaboratorId)}
                       </div>
-                      <div className="text-xs text-gray-500" data-oid="ah-z.3k">
+                      <div className="text-xs text-gray-500" data-oid="zg_c:r7">
                         ID: {selectedRoute.collaboratorId || "No asignado"}
                       </div>
                     </div>
@@ -1278,36 +1278,36 @@ const FixedRoutesTab = ({
                 </div>
 
                 {/* Disponibilidad */}
-                <div data-oid="a679r_.">
+                <div data-oid="8:zw4xg">
                   <h3
                     className="font-medium text-gray-900 text-base mb-2"
-                    data-oid="p-rkepv"
+                    data-oid="8xqx4la"
                   >
                     Disponibilidad
                   </h3>
                   <div
                     className="bg-gray-50 p-4 rounded-lg space-y-3"
-                    data-oid="65t7gx5"
+                    data-oid="f0exx-y"
                   >
-                    <div data-oid="ycy_v.n">
+                    <div data-oid="xbtue.8">
                       <div
                         className="text-sm font-medium text-gray-500"
-                        data-oid="i2yuwnd"
+                        data-oid="m9k07dl"
                       >
                         Días
                       </div>
-                      <div className="mt-1 text-base" data-oid=".h4s.9r">
+                      <div className="mt-1 text-base" data-oid="204f7jw">
                         {selectedRoute.availability.days.join(", ")}
                       </div>
                     </div>
-                    <div data-oid="bvmzl3w">
+                    <div data-oid="85v0m1n">
                       <div
                         className="text-sm font-medium text-gray-500"
-                        data-oid="dra.p-2"
+                        data-oid="g5bq19c"
                       >
                         Horarios
                       </div>
-                      <div className="mt-1 text-base" data-oid="znp9kit">
+                      <div className="mt-1 text-base" data-oid="w.ah2ew">
                         {selectedRoute.availability.timeSlots.join(", ")}
                       </div>
                     </div>
@@ -1316,62 +1316,62 @@ const FixedRoutesTab = ({
               </div>
 
               {/* Vehículo, Tarifas y Acciones */}
-              <div className="space-y-4" data-oid="j3z7f_w">
+              <div className="space-y-4" data-oid="1kik4kq">
                 {/* Vehículo */}
-                <div data-oid="ilunbcq">
+                <div data-oid="8f_4n_y">
                   <h3
                     className="font-medium text-gray-900 text-base mb-2"
-                    data-oid="asdjjor"
+                    data-oid="8wyj.fb"
                   >
                     Vehículos (
                     {selectedRoute.vehicles ? selectedRoute.vehicles.length : 1}
                     )
                   </h3>
-                  <div className="bg-gray-50 p-4 rounded-lg" data-oid="19r:ya3">
+                  <div className="bg-gray-50 p-4 rounded-lg" data-oid="tkhj:km">
                     {selectedRoute.vehicles &&
                     selectedRoute.vehicles.length > 0 ? (
                       // Mostrar todos los vehículos disponibles
-                      <div className="space-y-4" data-oid="5h92b-a">
+                      <div className="space-y-4" data-oid="7ebmv7e">
                         {selectedRoute.vehicles.map((vehicle, idx) => (
                           <div
                             key={idx}
                             className={
                               idx > 0 ? "pt-4 border-t border-gray-200" : ""
                             }
-                            data-oid="hs6pz79"
+                            data-oid="z2-c-43"
                           >
                             <div
                               className="flex items-center"
-                              data-oid="lf7e5l2"
+                              data-oid="b6jdbwz"
                             >
                               {vehicle.imageUrl ? (
                                 <img
                                   src={vehicle.imageUrl}
                                   alt={vehicle.model}
                                   className="h-16 w-16 rounded-lg object-cover"
-                                  data-oid="j819ul4"
+                                  data-oid="hov_c4h"
                                 />
                               ) : (
                                 <div
                                   className="h-16 w-16 rounded-lg bg-gray-200 flex items-center justify-center"
-                                  data-oid="n:oetf6"
+                                  data-oid="jobjkmu"
                                 >
                                   <Car
                                     className="h-8 w-8 text-gray-500"
-                                    data-oid="1jkeufh"
+                                    data-oid="iylu3qr"
                                   />
                                 </div>
                               )}
-                              <div className="ml-4 flex-1" data-oid="tiuhmiu">
+                              <div className="ml-4 flex-1" data-oid="n5j4.30">
                                 <div
                                   className="text-lg font-medium"
-                                  data-oid="80b3hft"
+                                  data-oid="_sxp4h4"
                                 >
                                   {vehicle.model}
                                 </div>
                                 <div
                                   className="text-base text-gray-600"
-                                  data-oid="32rui54"
+                                  data-oid="ylmtakz"
                                 >
                                   {vehicle.licensePlate}
                                 </div>
@@ -1383,36 +1383,36 @@ const FixedRoutesTab = ({
                               selectedRoute.drivers[idx] && (
                                 <div
                                   className="flex items-center mt-2 ml-4"
-                                  data-oid="yic_o27"
+                                  data-oid="q7ezdn-"
                                 >
                                   {selectedRoute.drivers[idx].photo ? (
                                     <img
                                       src={selectedRoute.drivers[idx].photo}
                                       alt={selectedRoute.drivers[idx].name}
                                       className="h-8 w-8 rounded-full object-cover"
-                                      data-oid="-_dsykp"
+                                      data-oid="hp4-z.h"
                                     />
                                   ) : (
                                     <div
                                       className="h-8 w-8 rounded-full bg-gray-200 flex items-center justify-center"
-                                      data-oid="7yao25y"
+                                      data-oid="s7g1ux7"
                                     >
                                       <User
                                         className="h-4 w-4 text-gray-500"
-                                        data-oid="13lwebt"
+                                        data-oid="vprm6qh"
                                       />
                                     </div>
                                   )}
-                                  <div className="ml-2" data-oid="jdvqome">
+                                  <div className="ml-2" data-oid="a27d89v">
                                     <div
                                       className="text-sm font-medium"
-                                      data-oid="e:.zi8_"
+                                      data-oid="9iq1dnj"
                                     >
                                       Conductor
                                     </div>
                                     <div
                                       className="text-sm text-gray-600"
-                                      data-oid="f8kvs5_"
+                                      data-oid="-v:0gg-"
                                     >
                                       {selectedRoute.drivers[idx].name}
                                     </div>
@@ -1424,36 +1424,36 @@ const FixedRoutesTab = ({
                       </div>
                     ) : selectedRoute.vehicle ? (
                       // Compatibilidad con versión anterior
-                      <div data-oid="sywb9up">
-                        <div className="flex items-center" data-oid="kq:rcub">
+                      <div data-oid="suk98fx">
+                        <div className="flex items-center" data-oid="tir3:ni">
                           {selectedRoute.vehicle.imageUrl ? (
                             <img
                               src={selectedRoute.vehicle.imageUrl}
                               alt={selectedRoute.vehicle.model}
                               className="h-16 w-16 rounded-lg object-cover"
-                              data-oid="_zjdma-"
+                              data-oid=".2.hxnh"
                             />
                           ) : (
                             <div
                               className="h-16 w-16 rounded-lg bg-gray-200 flex items-center justify-center"
-                              data-oid="neoyd37"
+                              data-oid="ww_34a1"
                             >
                               <Car
                                 className="h-8 w-8 text-gray-500"
-                                data-oid="u9lenhi"
+                                data-oid="jidavqt"
                               />
                             </div>
                           )}
-                          <div className="ml-4 flex-1" data-oid="9oaiqw-">
+                          <div className="ml-4 flex-1" data-oid="m5ihkan">
                             <div
                               className="text-lg font-medium"
-                              data-oid="nzi:flh"
+                              data-oid="tmkf_rp"
                             >
                               {selectedRoute.vehicle.model}
                             </div>
                             <div
                               className="text-base text-gray-600"
-                              data-oid=".4f6b1y"
+                              data-oid="likagwj"
                             >
                               {selectedRoute.vehicle.licensePlate}
                             </div>
@@ -1463,31 +1463,31 @@ const FixedRoutesTab = ({
                         {selectedRoute.driver && (
                           <div
                             className="flex items-center mt-4 border-t pt-3"
-                            data-oid="wrpberm"
+                            data-oid="6bkc2sd"
                           >
                             {selectedRoute.driver.photo ? (
                               <img
                                 src={selectedRoute.driver.photo}
                                 alt={selectedRoute.driver.name}
                                 className="h-10 w-10 rounded-full object-cover"
-                                data-oid="xn7bdt8"
+                                data-oid="_qn:epa"
                               />
                             ) : (
                               <div
                                 className="h-10 w-10 rounded-full bg-gray-200 flex items-center justify-center"
-                                data-oid="p5q4o_w"
+                                data-oid="9e4-74:"
                               >
                                 <User
                                   className="h-5 w-5 text-gray-500"
-                                  data-oid="zs2sbuj"
+                                  data-oid="jvq-x87"
                                 />
                               </div>
                             )}
-                            <div className="ml-3" data-oid="tqgw8zq">
-                              <div className="font-medium" data-oid="u4i54p7">
+                            <div className="ml-3" data-oid="7f9q1ix">
+                              <div className="font-medium" data-oid="xt1zgi3">
                                 Conductor
                               </div>
-                              <div className="text-gray-600" data-oid="e0s0urw">
+                              <div className="text-gray-600" data-oid="e7zb5cx">
                                 {selectedRoute.driver.name}
                               </div>
                             </div>
@@ -1497,10 +1497,10 @@ const FixedRoutesTab = ({
                     ) : (
                       <div
                         className="flex items-center justify-center p-4 text-gray-500"
-                        data-oid="to.ccnr"
+                        data-oid="n7rrnet"
                       >
-                        <Info className="h-5 w-5 mr-2" data-oid="6_bavzw" />
-                        <span data-oid="l4juhpz">
+                        <Info className="h-5 w-5 mr-2" data-oid="dwkuzcv" />
+                        <span data-oid="l-j1v1e">
                           No hay vehículos asignados
                         </span>
                       </div>
@@ -1509,58 +1509,58 @@ const FixedRoutesTab = ({
                 </div>
 
                 {/* Tarifas */}
-                <div data-oid="8dnkvq0">
+                <div data-oid="wdg4so9">
                   <h3
                     className="font-medium text-gray-900 text-base mb-2"
-                    data-oid=":nojqvw"
+                    data-oid=":h6p4g3"
                   >
                     Tarifas
                   </h3>
                   <div
                     className="bg-gray-50 p-4 rounded-lg space-y-2"
-                    data-oid="2xz994f"
+                    data-oid=":shkgic"
                   >
                     <div
                       className="flex justify-between items-center"
-                      data-oid="rui:qls"
+                      data-oid="0giu774"
                     >
                       <div
                         className="text-sm font-medium text-gray-500"
-                        data-oid="weoxqnm"
+                        data-oid="kqbnatp"
                       >
                         Estándar:
                       </div>
-                      <div className="text-lg font-medium" data-oid="1yks1s7">
+                      <div className="text-lg font-medium" data-oid="g5t13jn">
                         {selectedRoute.pricing.standard}{" "}
                         {selectedRoute.pricing.currency}
                       </div>
                     </div>
                     <div
                       className="flex justify-between items-center"
-                      data-oid="bjk8072"
+                      data-oid="0ke5.1z"
                     >
                       <div
                         className="text-sm font-medium text-gray-500"
-                        data-oid=".emoqvb"
+                        data-oid="k2kf.a:"
                       >
                         Tarifa nocturna:
                       </div>
-                      <div data-oid="j.7_5_p">
+                      <div data-oid="b8jon:l">
                         {selectedRoute.pricing.night}{" "}
                         {selectedRoute.pricing.currency}
                       </div>
                     </div>
                     <div
                       className="flex justify-between items-center"
-                      data-oid="0l4jmh2"
+                      data-oid="j7wr3h8"
                     >
                       <div
                         className="text-sm font-medium text-gray-500"
-                        data-oid="g8.snv2"
+                        data-oid="uuehg0:"
                       >
                         Tarifa en festivos:
                       </div>
-                      <div data-oid="t1c3xyy">
+                      <div data-oid="7.1r4uo">
                         {selectedRoute.pricing.holiday}{" "}
                         {selectedRoute.pricing.currency}
                       </div>
@@ -1569,17 +1569,17 @@ const FixedRoutesTab = ({
                 </div>
 
                 {/* Mapa */}
-                <div data-oid="1gi8kv2">
+                <div data-oid="930j8yy">
                   <h3
                     className="font-medium text-gray-900 text-base mb-2"
-                    data-oid="f.zcs5q"
+                    data-oid="spvo9kc"
                   >
                     Mapa de la Ruta
                   </h3>
                   <GoogleRouteMap
                     origin={selectedRoute.origin}
                     destination={selectedRoute.destination}
-                    data-oid="dye6.g-"
+                    data-oid="5g9txgj"
                   />
                 </div>
               </div>
@@ -1588,14 +1588,14 @@ const FixedRoutesTab = ({
 
           <DialogFooter
             className="flex justify-end gap-2 mt-6"
-            data-oid="jh:a69p"
+            data-oid="2bulwo_"
           >
             <Button
               className="bg-gray-100 text-gray-800 hover:bg-gray-200"
               onClick={() => setShowDetailsDialog(false)}
-              data-oid="4i1vyjc"
+              data-oid="nph3bx_"
             >
-              <X className="h-4 w-4 mr-2" data-oid="i-ie-9m" />
+              <X className="h-4 w-4 mr-2" data-oid="9rk3pfx" />
               Cerrar
             </Button>
             <Button
@@ -1606,9 +1606,9 @@ const FixedRoutesTab = ({
                   handleEditRoute(selectedRoute);
                 }
               }}
-              data-oid="xnm:ntg"
+              data-oid=":eop542"
             >
-              <Edit className="h-4 w-4 mr-2" data-oid=":wl:1.9" />
+              <Edit className="h-4 w-4 mr-2" data-oid="d0kx65w" />
               Editar
             </Button>
           </DialogFooter>
@@ -1618,24 +1618,24 @@ const FixedRoutesTab = ({
       <AlertDialog
         open={deleteDialogOpen}
         onOpenChange={setDeleteDialogOpen}
-        data-oid="_fzg2g:"
+        data-oid=":93k7au"
       >
-        <AlertDialogContent data-oid="pi95pmt">
-          <AlertDialogHeader data-oid="xvioors">
-            <AlertDialogTitle data-oid="f8-iqbi">
+        <AlertDialogContent data-oid="_l3gdbo">
+          <AlertDialogHeader data-oid="x6flu:r">
+            <AlertDialogTitle data-oid="y1ocnvd">
               ¿Estás seguro?
             </AlertDialogTitle>
-            <AlertDialogDescription data-oid="gdlyvtj">
+            <AlertDialogDescription data-oid="idrhyc3">
               Esta acción eliminará permanentemente la ruta fija. Esta acción no
               se puede deshacer.
             </AlertDialogDescription>
           </AlertDialogHeader>
-          <AlertDialogFooter data-oid="0iwu7bu">
-            <AlertDialogCancel data-oid="mjub02x">Cancelar</AlertDialogCancel>
+          <AlertDialogFooter data-oid="bhun_9o">
+            <AlertDialogCancel data-oid="uch3dw2">Cancelar</AlertDialogCancel>
             <AlertDialogAction
               onClick={confirmDelete}
               className="bg-black hover:bg-gray-800"
-              data-oid="jv-th_b"
+              data-oid="vldy8rf"
             >
               Eliminar
             </AlertDialogAction>

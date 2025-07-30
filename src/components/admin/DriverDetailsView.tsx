@@ -545,21 +545,21 @@ const DriverDetailsView = ({
   };
 
   return (
-    <div className="space-y-6 pb-10 max-w-[1200px] mx-auto" data-oid=".z0mkpr">
+    <div className="space-y-6 pb-10 max-w-[1200px] mx-auto" data-oid="98g3sda">
       {/* Cabecera */}
       <div
         className="bg-white border-b shadow-sm py-4 px-6 sticky top-0 z-10"
-        data-oid="aog-mml"
+        data-oid="pme:cr0"
       >
-        <div className="flex justify-between items-center" data-oid="glauxq2">
-          <div className="flex items-center space-x-4" data-oid="cwecsv4">
-            <div className="flex flex-col" data-oid="ruudh9y">
+        <div className="flex justify-between items-center" data-oid="7h:5f9i">
+          <div className="flex items-center space-x-4" data-oid="wqnz9ew">
+            <div className="flex flex-col" data-oid="eroy3jt">
               <h2
                 className="text-2xl font-bold text-gray-800"
-                data-oid="y3ap4ow"
+                data-oid=".qjp146"
               >
                 {driver.name}
-                <span className="ml-2 text-lg text-gray-500" data-oid="81fem:1">
+                <span className="ml-2 text-lg text-gray-500" data-oid="wjact_u">
                   (
                   {driver.type === "private"
                     ? "Chófer Privado"
@@ -567,20 +567,20 @@ const DriverDetailsView = ({
                   )
                 </span>
               </h2>
-              <p className="text-gray-500 text-sm" data-oid="qaxyj3v">
+              <p className="text-gray-500 text-sm" data-oid="hc72cz9">
                 ID: {driver.id}
               </p>
             </div>
           </div>
-          <div className="flex space-x-2" data-oid="o:.e_wn">
+          <div className="flex space-x-2" data-oid="zpvdi3t">
             {!isEditing ? (
               <Button
                 variant="outline"
                 onClick={handleStartEditing}
                 className="flex items-center hover:bg-gray-100 transition-colors"
-                data-oid=".isgdr."
+                data-oid="t-qho7:"
               >
-                <Edit className="h-4 w-4 mr-2" data-oid="5hpaey9" />
+                <Edit className="h-4 w-4 mr-2" data-oid="o67tot9" />
                 Editar
               </Button>
             ) : (
@@ -589,9 +589,9 @@ const DriverDetailsView = ({
                   variant="outline"
                   onClick={handleCancelEdit}
                   className="flex items-center hover:bg-gray-100 transition-colors"
-                  data-oid="yv_wuru"
+                  data-oid="bx0h9zc"
                 >
-                  <X className="h-4 w-4 mr-2" data-oid="rg4mja_" />
+                  <X className="h-4 w-4 mr-2" data-oid="kepowv7" />
                   Cancelar
                 </Button>
                 <Button
@@ -599,15 +599,15 @@ const DriverDetailsView = ({
                   onClick={handleSaveChanges}
                   disabled={isSaving}
                   className="flex items-center bg-black hover:bg-gray-800 transition-colors"
-                  data-oid=".kzldb1"
+                  data-oid="d546m7a"
                 >
                   {isSaving ? (
                     <RefreshCw
                       className="h-4 w-4 mr-2 animate-spin"
-                      data-oid="l0yizr1"
+                      data-oid="stpzm3-"
                     />
                   ) : (
-                    <Save className="h-4 w-4 mr-2" data-oid="bo2df5e" />
+                    <Save className="h-4 w-4 mr-2" data-oid="ie7oz-a" />
                   )}
                   Guardar
                 </Button>
@@ -618,41 +618,41 @@ const DriverDetailsView = ({
               size="icon"
               onClick={onClose}
               className="hover:bg-gray-100 transition-colors"
-              data-oid="ns-ivfl"
+              data-oid="iuc9n3u"
             >
-              <X className="h-5 w-5" data-oid="q7mvwtt" />
+              <X className="h-5 w-5" data-oid="j_dp3-i" />
             </Button>
           </div>
         </div>
       </div>
 
       {/* Contenido principal */}
-      <div className="px-6 space-y-8" data-oid="kfmi7_o">
+      <div className="px-6 space-y-8" data-oid="yn5y9fl">
         {/* Información del Chófer */}
         <Card
           className="shadow-md hover:shadow-lg transition-shadow overflow-hidden"
-          data-oid="axqrc41"
+          data-oid="yaooeyd"
         >
-          <CardHeader className="bg-gray-50 border-b" data-oid="so6y18c">
-            <CardTitle className="flex items-center text-lg" data-oid="ayco5zu">
+          <CardHeader className="bg-gray-50 border-b" data-oid="f12zwo2">
+            <CardTitle className="flex items-center text-lg" data-oid="8bayhbw">
               <UserIcon
                 className="h-5 w-5 mr-2 text-gray-500"
-                data-oid="s36nhco"
+                data-oid="9d1i0im"
               />
               Información del Chófer
             </CardTitle>
           </CardHeader>
-          <CardContent data-oid="q9gzx.s">
+          <CardContent data-oid="fjpfj51">
             <div
               className="grid grid-cols-1 lg:grid-cols-12 gap-6"
-              data-oid="ovpz9p2"
+              data-oid="sjga0zm"
             >
               {/* Panel izquierdo - Avatar e información de contacto */}
-              <div className="lg:col-span-4" data-oid=".5-0fwi">
+              <div className="lg:col-span-4" data-oid="jvvkbxo">
                 {/* Avatar y datos básicos */}
                 <div
                   className="flex flex-col items-center space-y-4 mb-6"
-                  data-oid="kmp9c37"
+                  data-oid="90pu1-4"
                 >
                   {!isEditing ? (
                     <>
@@ -661,12 +661,12 @@ const DriverDetailsView = ({
                           src={driver.photo}
                           alt={driver.name}
                           className="h-24 w-24 rounded-full border-4 border-gray-100 shadow-sm object-cover"
-                          data-oid="dt_8:nz"
+                          data-oid="6.533tt"
                         />
                       ) : (
                         <div
                           className="h-24 w-24 rounded-full bg-gradient-to-br from-red-100 to-red-200 text-gray-600 flex items-center justify-center text-2xl font-bold border-4 border-gray-100 shadow-sm"
-                          data-oid="1ov8zps"
+                          data-oid="l.-4rj2"
                         >
                           {driver.name[0].toUpperCase()}
                         </div>
@@ -675,19 +675,19 @@ const DriverDetailsView = ({
                   ) : (
                     <div
                       className="w-full flex flex-col items-center"
-                      data-oid="ybmmwe:"
+                      data-oid="ax_w7d6"
                     >
                       <div
                         className="border border-dashed border-gray-300 rounded-full p-1 w-32 h-32 flex items-center justify-center relative"
-                        data-oid="._841:r"
+                        data-oid="kx1jq5q"
                       >
                         {imagePreview ? (
-                          <div className="relative" data-oid=".l1p56h">
+                          <div className="relative" data-oid="y-cgta2">
                             <img
                               src={imagePreview}
                               alt="Vista previa"
                               className="w-28 h-28 rounded-full object-cover"
-                              data-oid=":6h.l2p"
+                              data-oid="b36mcq_"
                             />
 
                             <button
@@ -697,22 +697,22 @@ const DriverDetailsView = ({
                                 setFormData({ ...formData, photo: "" });
                               }}
                               className="absolute -top-2 -right-2 bg-gray-200 text-gray-600 rounded-full p-1"
-                              data-oid="9yyndd2"
+                              data-oid="69.d02w"
                             >
-                              <X size={16} data-oid="swg9-:y" />
+                              <X size={16} data-oid="phn-qx:" />
                             </button>
                           </div>
                         ) : (
-                          <div className="text-center" data-oid="w27fgs0">
+                          <div className="text-center" data-oid="c83joyo">
                             <Upload
                               className="h-8 w-8 text-gray-400 mx-auto mb-2"
-                              data-oid="pktc9dq"
+                              data-oid="wpqpird"
                             />
 
                             <label
                               htmlFor="photo-upload"
                               className="cursor-pointer rounded-md bg-white px-2.5 py-1.5 text-xs font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 inline-block"
-                              data-oid="ojxqp92"
+                              data-oid=":3svrtd"
                             >
                               Subir foto
                             </label>
@@ -722,7 +722,7 @@ const DriverDetailsView = ({
                               className="sr-only"
                               accept="image/*"
                               onChange={handleImageUpload}
-                              data-oid="f3y1h-."
+                              data-oid="cssi0jt"
                             />
                           </div>
                         )}
@@ -734,13 +734,13 @@ const DriverDetailsView = ({
                     <>
                       <h3
                         className="text-xl font-medium mt-2"
-                        data-oid=":vt-2:5"
+                        data-oid="6opasex"
                       >
                         {driver.name}
                       </h3>
                       <div
                         className="flex flex-wrap gap-2 justify-center"
-                        data-oid="cn7c5m4"
+                        data-oid="f.c8a2p"
                       >
                         <Badge
                           className={cn(
@@ -749,7 +749,7 @@ const DriverDetailsView = ({
                               ? "bg-gray-200 text-blue-800 hover:bg-gray-200"
                               : "bg-gray-200 text-purple-800 hover:bg-gray-200",
                           )}
-                          data-oid=".6d64_e"
+                          data-oid="y3dumzm"
                         >
                           {driver.type === "private"
                             ? "Chófer Privado"
@@ -764,7 +764,7 @@ const DriverDetailsView = ({
                                 ? "bg-gray-200 text-gray-800 hover:bg-gray-200"
                                 : "bg-gray-200 text-yellow-800 hover:bg-gray-200",
                           )}
-                          data-oid="l4s4wjv"
+                          data-oid="qd:3on2"
                         >
                           <span
                             className={`h-2 w-2 rounded-full mr-1.5 ${
@@ -774,7 +774,7 @@ const DriverDetailsView = ({
                                   ? "bg-black"
                                   : "bg-yellow-600"
                             }`}
-                            data-oid="312uca4"
+                            data-oid="rxn00.t"
                           ></span>
                           {driver.status === "active"
                             ? "Activo"
@@ -786,10 +786,10 @@ const DriverDetailsView = ({
                     </>
                   ) : (
                     <>
-                      <div className="w-full space-y-2" data-oid="6z0pbnz">
+                      <div className="w-full space-y-2" data-oid=":i.ynw_">
                         <label
                           className="text-sm font-medium text-gray-500"
-                          data-oid="luhvqe9"
+                          data-oid="6q980fn"
                         >
                           Nombre:
                         </label>
@@ -798,13 +798,13 @@ const DriverDetailsView = ({
                           value={formData.name}
                           onChange={handleInputChange}
                           className="border-gray-300 focus:border-gray-300 focus:ring focus:ring-red-200 focus:ring-opacity-50 rounded-md"
-                          data-oid="s5ark82"
+                          data-oid="ijeor.l"
                         />
                       </div>
-                      <div className="w-full space-y-2" data-oid="4gck64o">
+                      <div className="w-full space-y-2" data-oid="3-np52l">
                         <label
                           className="text-sm font-medium text-gray-500"
-                          data-oid="h2_nl.z"
+                          data-oid="ct.tccd"
                         >
                           Estado:
                         </label>
@@ -814,34 +814,34 @@ const DriverDetailsView = ({
                           onValueChange={(value) =>
                             setFormData({ ...formData, status: value })
                           }
-                          data-oid="ht5rz9_"
+                          data-oid="x25duka"
                         >
                           <SelectTrigger
                             className="border-gray-300 focus:border-gray-300 focus:ring focus:ring-red-200 focus:ring-opacity-50 rounded-md"
-                            data-oid="jx3ewt."
+                            data-oid="4y3zbq:"
                           >
                             <SelectValue
                               placeholder="Seleccionar estado"
-                              data-oid="98hpns0"
+                              data-oid="_b810_v"
                             />
                           </SelectTrigger>
-                          <SelectContent data-oid="o.w3uev">
-                            <SelectItem value="active" data-oid="f:41-wg">
+                          <SelectContent data-oid=":ww:bml">
+                            <SelectItem value="active" data-oid="7jarpcw">
                               Activo
                             </SelectItem>
-                            <SelectItem value="inactive" data-oid="m3vdvdr">
+                            <SelectItem value="inactive" data-oid="6_yq98p">
                               Inactivo
                             </SelectItem>
-                            <SelectItem value="pending" data-oid="yzqs8dn">
+                            <SelectItem value="pending" data-oid="_6gytor">
                               Pendiente
                             </SelectItem>
                           </SelectContent>
                         </Select>
                       </div>
-                      <div className="w-full space-y-2" data-oid="wy0syw4">
+                      <div className="w-full space-y-2" data-oid="pcr8c31">
                         <label
                           className="text-sm font-medium text-gray-500"
-                          data-oid="rkkus-j"
+                          data-oid="5.6:phv"
                         >
                           Tipo:
                         </label>
@@ -851,22 +851,22 @@ const DriverDetailsView = ({
                           onValueChange={(value) =>
                             setFormData({ ...formData, type: value })
                           }
-                          data-oid="m6:9x9z"
+                          data-oid="j5tnw8_"
                         >
                           <SelectTrigger
                             className="border-gray-300 focus:border-gray-300 focus:ring focus:ring-red-200 focus:ring-opacity-50 rounded-md"
-                            data-oid="cr5ojx8"
+                            data-oid="hqqwfa0"
                           >
                             <SelectValue
                               placeholder="Seleccionar tipo"
-                              data-oid="39:u4qx"
+                              data-oid="e8gt0tu"
                             />
                           </SelectTrigger>
-                          <SelectContent data-oid="00fl.kl">
-                            <SelectItem value="private" data-oid="ofmwd7h">
+                          <SelectContent data-oid=":h2rxj7">
+                            <SelectItem value="private" data-oid="awpbt_g">
                               Chófer Privado
                             </SelectItem>
-                            <SelectItem value="company" data-oid="fswrj.5">
+                            <SelectItem value="company" data-oid="vrwpx66">
                               Chófer de Empresa
                             </SelectItem>
                           </SelectContent>
@@ -883,26 +883,26 @@ const DriverDetailsView = ({
                       ? "bg-green-50 border-green-200"
                       : "bg-amber-50 border-amber-200"
                   }`}
-                  data-oid="nvr2c4:"
+                  data-oid="84lpgtm"
                 >
                   {!isEditing ? (
-                    <div className="flex items-center" data-oid="s8a.of9">
+                    <div className="flex items-center" data-oid="sosbk83">
                       {driver.available ? (
                         <CheckCircle
                           className="h-5 w-5 text-gray-600 mr-2 flex-shrink-0"
-                          data-oid="ejq25.l"
+                          data-oid="m0mkjde"
                         />
                       ) : (
                         <AlertTriangle
                           className="h-5 w-5 text-amber-500 mr-2 flex-shrink-0"
-                          data-oid="-55tzvu"
+                          data-oid="pkr1nwu"
                         />
                       )}
                       <p
                         className={`text-sm ${
                           driver.available ? "text-green-700" : "text-amber-700"
                         }`}
-                        data-oid="lxg1m:y"
+                        data-oid="l4bo:d9"
                       >
                         {driver.available
                           ? "Disponible para servicios"
@@ -910,7 +910,7 @@ const DriverDetailsView = ({
                       </p>
                     </div>
                   ) : (
-                    <div className="flex items-center" data-oid=":d4ef4a">
+                    <div className="flex items-center" data-oid="p7qiv7r">
                       <input
                         type="checkbox"
                         id="available"
@@ -918,13 +918,13 @@ const DriverDetailsView = ({
                         checked={formData.available}
                         onChange={handleCheckboxChange}
                         className="mr-2 h-4 w-4 rounded border-gray-300 text-gray-600 focus:ring-red-500"
-                        data-oid="92z5w.x"
+                        data-oid="0p_pqf1"
                       />
 
                       <label
                         htmlFor="available"
                         className="text-sm font-medium text-gray-700"
-                        data-oid="ki-w332"
+                        data-oid="162-sz8"
                       >
                         Disponible para servicios
                       </label>
@@ -935,52 +935,52 @@ const DriverDetailsView = ({
                 {/* Colaborador asociado */}
                 <div
                   className="mt-4 p-3 border border-gray-200 rounded-md"
-                  data-oid="sdqn:8s"
+                  data-oid="dh_fnkh"
                 >
-                  <div className="flex items-center" data-oid="3l67.4j">
+                  <div className="flex items-center" data-oid="fk9llhl">
                     <Building
                       className="h-5 w-5 text-black mr-2 flex-shrink-0"
-                      data-oid="gjz.:6y"
+                      data-oid="deba0o."
                     />
 
-                    <p className="text-sm text-gray-700" data-oid="sp7von9">
+                    <p className="text-sm text-gray-700" data-oid="ljbrp3.">
                       Colaborador asociado
                     </p>
                   </div>
                   {!isEditing ? (
-                    <div className="mt-1" data-oid="rj0t_e2">
-                      <p className="text-sm font-medium" data-oid="vi-:yp:">
+                    <div className="mt-1" data-oid="ava4jlo">
+                      <p className="text-sm font-medium" data-oid="dlixbxe">
                         {getCollaboratorName()}
                       </p>
                     </div>
                   ) : (
-                    <div className="mt-1" data-oid="fib-f0o">
+                    <div className="mt-1" data-oid="qh0zyyj">
                       <Select
                         name="collaboratorId"
                         value={formData.collaboratorId}
                         onValueChange={(value) =>
                           setFormData({ ...formData, collaboratorId: value })
                         }
-                        data-oid="h-bk:hl"
+                        data-oid="dzpi.6r"
                       >
                         <SelectTrigger
                           className="border-gray-300 focus:border-gray-300 focus:ring focus:ring-red-200 focus:ring-opacity-50 rounded-md"
-                          data-oid="9jst_5v"
+                          data-oid="nqk8xar"
                         >
                           <SelectValue
                             placeholder="Seleccionar colaborador"
-                            data-oid="p2rum-s"
+                            data-oid="lfljupw"
                           />
                         </SelectTrigger>
-                        <SelectContent data-oid="m.b8v0h">
-                          <SelectItem value="none" data-oid="lfyjyo5">
+                        <SelectContent data-oid="r4p:p2p">
+                          <SelectItem value="none" data-oid="c:qhx.:">
                             Sin asociar
                           </SelectItem>
                           {collaborators.map((collab) => (
                             <SelectItem
                               key={collab.id}
                               value={collab.id}
-                              data-oid="1:snok5"
+                              data-oid="b.ghsg:"
                             >
                               {collab.name} (
                               {collab.type === "company"
@@ -998,21 +998,21 @@ const DriverDetailsView = ({
                 {/* Valoración */}
                 <div
                   className="mt-4 p-3 border border-gray-200 rounded-md"
-                  data-oid="_5rca5-"
+                  data-oid="s.me:ac"
                 >
-                  <div className="flex items-center" data-oid="e1cgkac">
+                  <div className="flex items-center" data-oid="g:_yamc">
                     <Star
                       className="h-5 w-5 text-amber-500 mr-2 flex-shrink-0"
-                      data-oid="5ing9tg"
+                      data-oid="i4kir4y"
                     />
 
-                    <p className="text-sm text-gray-700" data-oid="9wtb-f5">
+                    <p className="text-sm text-gray-700" data-oid="lpxdj--">
                       Valoración del chófer
                     </p>
                   </div>
                   {!isEditing ? (
-                    <div className="flex mt-1 items-center" data-oid="--qzqo9">
-                      <div className="flex text-amber-500" data-oid="8z9cpib">
+                    <div className="flex mt-1 items-center" data-oid="t73t2pi">
+                      <div className="flex text-amber-500" data-oid="ihiabr9">
                         {[...Array(5)].map((_, i) => (
                           <span
                             key={i}
@@ -1021,7 +1021,7 @@ const DriverDetailsView = ({
                                 ? ""
                                 : "text-gray-300"
                             }
-                            data-oid="ktpy8.7"
+                            data-oid="lqjlq.8"
                           >
                             ★
                           </span>
@@ -1029,13 +1029,13 @@ const DriverDetailsView = ({
                       </div>
                       <span
                         className="ml-2 text-sm text-gray-500"
-                        data-oid="g5p-zt6"
+                        data-oid="ijtb3zt"
                       >
                         ({driver.rating.toFixed(1)})
                       </span>
                     </div>
                   ) : (
-                    <div className="mt-1" data-oid="w2hg-pa">
+                    <div className="mt-1" data-oid="h14fj3r">
                       <Input
                         type="number"
                         name="rating"
@@ -1045,7 +1045,7 @@ const DriverDetailsView = ({
                         max="5"
                         step="0.1"
                         className="border-gray-300 focus:border-gray-300 focus:ring focus:ring-red-200 focus:ring-opacity-50 rounded-md"
-                        data-oid="-b.lbvj"
+                        data-oid="15dv01_"
                       />
                     </div>
                   )}
@@ -1053,19 +1053,19 @@ const DriverDetailsView = ({
               </div>
 
               {/* Panel derecho - Datos específicos */}
-              <div className="lg:col-span-8" data-oid="d2zkpmb">
+              <div className="lg:col-span-8" data-oid="-k2.jrx">
                 {/* Información de contacto */}
                 <div
                   className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6"
-                  data-oid="v0ch7d_"
+                  data-oid="1c_w2w."
                 >
-                  <div className="space-y-1" data-oid="b:54wp0">
+                  <div className="space-y-1" data-oid="nx0-ipm">
                     <div
                       className="flex items-center text-gray-500"
-                      data-oid="1tw8r9y"
+                      data-oid="qui2qf0"
                     >
-                      <Mail className="h-4 w-4 mr-2" data-oid="n2jt-er" />
-                      <span className="text-sm" data-oid="7jgdzd4">
+                      <Mail className="h-4 w-4 mr-2" data-oid="cqp2.0:" />
+                      <span className="text-sm" data-oid="z2hs.ic">
                         Email:
                       </span>
                     </div>
@@ -1075,25 +1075,25 @@ const DriverDetailsView = ({
                         value={formData.email}
                         onChange={handleInputChange}
                         className="mt-1 border-gray-300 focus:border-gray-300 focus:ring focus:ring-red-200 focus:ring-opacity-50 rounded-md"
-                        data-oid="vn7ue06"
+                        data-oid="tcdx89s"
                       />
                     ) : (
                       <p
                         className="text-sm font-medium pl-6"
-                        data-oid="wr.-.5t"
+                        data-oid="0in9kzk"
                       >
                         {driver.email}
                       </p>
                     )}
                   </div>
 
-                  <div className="space-y-1" data-oid="dzia966">
+                  <div className="space-y-1" data-oid="73_-au.">
                     <div
                       className="flex items-center text-gray-500"
-                      data-oid="_o7lc-r"
+                      data-oid="jd1zvc."
                     >
-                      <Phone className="h-4 w-4 mr-2" data-oid="ltzg.:5" />
-                      <span className="text-sm" data-oid="mj88ox6">
+                      <Phone className="h-4 w-4 mr-2" data-oid="fp6rs51" />
+                      <span className="text-sm" data-oid="a96s9a6">
                         Teléfono:
                       </span>
                     </div>
@@ -1103,12 +1103,12 @@ const DriverDetailsView = ({
                         value={formData.phone}
                         onChange={handleInputChange}
                         className="mt-1 border-gray-300 focus:border-gray-300 focus:ring focus:ring-red-200 focus:ring-opacity-50 rounded-md"
-                        data-oid="e8stef6"
+                        data-oid="getr3gq"
                       />
                     ) : (
                       <p
                         className="text-sm font-medium pl-6"
-                        data-oid="kxuzz:d"
+                        data-oid="228uy_h"
                       >
                         {driver.phone}
                       </p>
@@ -1117,14 +1117,14 @@ const DriverDetailsView = ({
                 </div>
 
                 {/* Datos personales y profesionales */}
-                <div data-oid="h8hzi5f">
+                <div data-oid="tdc4k1.">
                   <h4
                     className="text-base font-medium mb-4 flex items-center border-b border-gray-200 pb-2"
-                    data-oid="u9fq09x"
+                    data-oid="8191bpe"
                   >
                     <FileText
                       className="h-5 w-5 mr-2 text-gray-500"
-                      data-oid="ni1jaj:"
+                      data-oid="g6ay6.h"
                     />
                     Datos Personales y Profesionales
                   </h4>
@@ -1132,118 +1132,118 @@ const DriverDetailsView = ({
                   {!isEditing ? (
                     <div
                       className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-3"
-                      data-oid="ef2cvtl"
+                      data-oid="4maba-m"
                     >
-                      <div className="mb-3" data-oid="rnqnccc">
+                      <div className="mb-3" data-oid="ky:kjs:">
                         <p
                           className="text-sm font-medium text-gray-500"
-                          data-oid="h0e7da7"
+                          data-oid="lmawm_n"
                         >
                           Documento ID
                         </p>
-                        <p className="font-medium" data-oid=":h5ldcb">
+                        <p className="font-medium" data-oid="54nlfx-">
                           {driver.documentId}
                         </p>
                       </div>
-                      <div className="mb-3" data-oid="6we7iuv">
+                      <div className="mb-3" data-oid="l0sk__f">
                         <p
                           className="text-sm font-medium text-gray-500"
-                          data-oid="24nmcei"
+                          data-oid="99xo9:g"
                         >
                           Número de licencia
                         </p>
-                        <p className="font-medium" data-oid="63_:bm8">
+                        <p className="font-medium" data-oid="p_yz91z">
                           {driver.licenseNumber}
                         </p>
                       </div>
-                      <div className="mb-3" data-oid="_kqwy.v">
+                      <div className="mb-3" data-oid="upehzkc">
                         <p
                           className="text-sm font-medium text-gray-500"
-                          data-oid="p6p4oxs"
+                          data-oid="gba-nj:"
                         >
                           Fecha expiración licencia
                         </p>
-                        <p className="font-medium" data-oid="280u4pf">
+                        <p className="font-medium" data-oid="v2f0884">
                           {formatDate(driver.licenseExpiry)}
                         </p>
                       </div>
                       {driver.type === "company" && (
-                        <div className="mb-3" data-oid="h6i6.dk">
+                        <div className="mb-3" data-oid="bu3vh8x">
                           <p
                             className="text-sm font-medium text-gray-500"
-                            data-oid=".288wwu"
+                            data-oid="a1uzih2"
                           >
                             Empresa
                           </p>
-                          <p className="font-medium" data-oid="g538na-">
+                          <p className="font-medium" data-oid=":ty065c">
                             {driver.companyName || "No especificada"}
                           </p>
                         </div>
                       )}
-                      <div className="mb-3" data-oid=":f9kbc-">
+                      <div className="mb-3" data-oid="k9l6rn:">
                         <p
                           className="text-sm font-medium text-gray-500"
-                          data-oid="ug43ydq"
+                          data-oid="eb0u0h0"
                         >
                           Años de experiencia
                         </p>
-                        <p className="font-medium" data-oid="1pjtie8">
+                        <p className="font-medium" data-oid="lsspeec">
                           {driver.experience} años
                         </p>
                       </div>
-                      <div className="mb-3" data-oid="zl5f-69">
+                      <div className="mb-3" data-oid="3zm4zx8">
                         <p
                           className="text-sm font-medium text-gray-500"
-                          data-oid="-2h_8oc"
+                          data-oid=".sp:a7n"
                         >
                           Idiomas
                         </p>
-                        <p className="font-medium" data-oid="i5fjqf2">
+                        <p className="font-medium" data-oid="4dbesxi">
                           {driver.languages.join(", ")}
                         </p>
                       </div>
-                      <div className="mb-3" data-oid="t.rotpg">
+                      <div className="mb-3" data-oid="6vfk8va">
                         <p
                           className="text-sm font-medium text-gray-500"
-                          data-oid="7n57n46"
+                          data-oid="oh.jp4."
                         >
                           País
                         </p>
-                        <p className="font-medium" data-oid="tx:onag">
+                        <p className="font-medium" data-oid="sfo8o_n">
                           {driver.country}
                         </p>
                       </div>
-                      <div className="mb-3" data-oid="8t_3uqk">
+                      <div className="mb-3" data-oid="xqnl:co">
                         <p
                           className="text-sm font-medium text-gray-500"
-                          data-oid="4s8z:ez"
+                          data-oid="3oc5wwu"
                         >
                           Ciudad
                         </p>
-                        <p className="font-medium" data-oid="98894th">
+                        <p className="font-medium" data-oid="78qo7j-">
                           {driver.city}
                         </p>
                       </div>
-                      <div className="mb-3" data-oid="x7:6ijt">
+                      <div className="mb-3" data-oid="e7fgtcr">
                         <p
                           className="text-sm font-medium text-gray-500"
-                          data-oid="oq6m5v6"
+                          data-oid="0ci_jg5"
                         >
                           Especialidad
                         </p>
-                        <p className="font-medium" data-oid="tcenatt">
+                        <p className="font-medium" data-oid="6t40845">
                           {driver.specialty || "No especificada"}
                         </p>
                       </div>
                       {/* Eliminado el campo que mostraba la URL de la foto */}
-                      <div className="mb-3 col-span-2" data-oid="gh_ig3h">
+                      <div className="mb-3 col-span-2" data-oid="7osd7im">
                         <p
                           className="text-sm font-medium text-gray-500"
-                          data-oid="c4djzzg"
+                          data-oid="zy5omqc"
                         >
                           Notas
                         </p>
-                        <p className="font-medium" data-oid="oozs8b9">
+                        <p className="font-medium" data-oid="r0i3ca7">
                           {driver.notes || "Sin notas adicionales"}
                         </p>
                       </div>
@@ -1251,12 +1251,12 @@ const DriverDetailsView = ({
                   ) : (
                     <div
                       className="grid grid-cols-1 md:grid-cols-2 gap-6"
-                      data-oid="l9mce.l"
+                      data-oid="195n1jv"
                     >
-                      <div data-oid="7s_kq_f">
+                      <div data-oid="9w-rb_k">
                         <label
                           className="text-sm font-medium text-gray-500"
-                          data-oid="2deubrn"
+                          data-oid="3iwst4i"
                         >
                           Documento ID
                         </label>
@@ -1265,13 +1265,13 @@ const DriverDetailsView = ({
                           value={formData.documentId}
                           onChange={handleInputChange}
                           className="mt-1 border-gray-300 focus:border-gray-300 focus:ring focus:ring-red-200 focus:ring-opacity-50 rounded-md"
-                          data-oid="ii11k4f"
+                          data-oid="mcwc0uz"
                         />
                       </div>
-                      <div data-oid="bf7n84-">
+                      <div data-oid="i.w9br6">
                         <label
                           className="text-sm font-medium text-gray-500"
-                          data-oid="0gg4o4m"
+                          data-oid="ivgbq22"
                         >
                           Número de licencia
                         </label>
@@ -1280,13 +1280,13 @@ const DriverDetailsView = ({
                           value={formData.licenseNumber}
                           onChange={handleInputChange}
                           className="mt-1 border-gray-300 focus:border-gray-300 focus:ring focus:ring-red-200 focus:ring-opacity-50 rounded-md"
-                          data-oid="mlfe7zo"
+                          data-oid=":j30f24"
                         />
                       </div>
-                      <div data-oid="8k6w4qj">
+                      <div data-oid="2ed7z-k">
                         <label
                           className="text-sm font-medium text-gray-500"
-                          data-oid="ctj206u"
+                          data-oid="scuc.:g"
                         >
                           Fecha expiración licencia
                         </label>
@@ -1296,14 +1296,14 @@ const DriverDetailsView = ({
                           value={formData.licenseExpiry}
                           onChange={handleInputChange}
                           className="mt-1 border-gray-300 focus:border-gray-300 focus:ring focus:ring-red-200 focus:ring-opacity-50 rounded-md"
-                          data-oid="pv.:j_f"
+                          data-oid="nojost4"
                         />
                       </div>
                       {formData.type === "company" && (
-                        <div data-oid="1g2p9.k">
+                        <div data-oid="-mdll35">
                           <label
                             className="text-sm font-medium text-gray-500"
-                            data-oid="01svl29"
+                            data-oid="f_b2wlq"
                           >
                             Empresa
                           </label>
@@ -1312,14 +1312,14 @@ const DriverDetailsView = ({
                             value={formData.companyName}
                             onChange={handleInputChange}
                             className="mt-1 border-gray-300 focus:border-gray-300 focus:ring focus:ring-red-200 focus:ring-opacity-50 rounded-md"
-                            data-oid="8e:t5dz"
+                            data-oid="aaw.4cx"
                           />
                         </div>
                       )}
-                      <div data-oid="--yb9yk">
+                      <div data-oid="zp3sw67">
                         <label
                           className="text-sm font-medium text-gray-500"
-                          data-oid="e_7i-_s"
+                          data-oid="s2sc93b"
                         >
                           Años de experiencia
                         </label>
@@ -1329,13 +1329,13 @@ const DriverDetailsView = ({
                           value={formData.experience}
                           onChange={handleInputChange}
                           className="mt-1 border-gray-300 focus:border-gray-300 focus:ring focus:ring-red-200 focus:ring-opacity-50 rounded-md"
-                          data-oid="t1a72ug"
+                          data-oid="lsndtq-"
                         />
                       </div>
-                      <div data-oid="_9x3e:e">
+                      <div data-oid="a.wov:b">
                         <label
                           className="text-sm font-medium text-gray-500"
-                          data-oid="fpnyfum"
+                          data-oid="xgnxhmp"
                         >
                           Idiomas
                         </label>
@@ -1345,13 +1345,13 @@ const DriverDetailsView = ({
                           onChange={handleInputChange}
                           placeholder="Español, Inglés, Francés..."
                           className="mt-1 border-gray-300 focus:border-gray-300 focus:ring focus:ring-red-200 focus:ring-opacity-50 rounded-md"
-                          data-oid="d1y4vqv"
+                          data-oid="ct96-7e"
                         />
                       </div>
-                      <div data-oid="iy__46l">
+                      <div data-oid="4yin4uy">
                         <label
                           className="text-sm font-medium text-gray-500"
-                          data-oid="5tb_nwe"
+                          data-oid="c_3pwsd"
                         >
                           País
                         </label>
@@ -1360,13 +1360,13 @@ const DriverDetailsView = ({
                           value={formData.country}
                           onChange={handleInputChange}
                           className="mt-1 border-gray-300 focus:border-gray-300 focus:ring focus:ring-red-200 focus:ring-opacity-50 rounded-md"
-                          data-oid="76n4zr3"
+                          data-oid="dmizj8w"
                         />
                       </div>
-                      <div data-oid="jkpvdh.">
+                      <div data-oid="o9jke3m">
                         <label
                           className="text-sm font-medium text-gray-500"
-                          data-oid="36nnl2h"
+                          data-oid="9qv93l4"
                         >
                           Ciudad
                         </label>
@@ -1375,13 +1375,13 @@ const DriverDetailsView = ({
                           value={formData.city}
                           onChange={handleInputChange}
                           className="mt-1 border-gray-300 focus:border-gray-300 focus:ring focus:ring-red-200 focus:ring-opacity-50 rounded-md"
-                          data-oid="ypzifhw"
+                          data-oid="4oy-cza"
                         />
                       </div>
-                      <div data-oid="4k.60zi">
+                      <div data-oid="jv77iv9">
                         <label
                           className="text-sm font-medium text-gray-500"
-                          data-oid="ple9xz:"
+                          data-oid="243u.28"
                         >
                           Especialidad
                         </label>
@@ -1391,14 +1391,14 @@ const DriverDetailsView = ({
                           onChange={handleInputChange}
                           placeholder="Eventos VIP, Traslados aeropuerto..."
                           className="mt-1 border-gray-300 focus:border-gray-300 focus:ring focus:ring-red-200 focus:ring-opacity-50 rounded-md"
-                          data-oid="s5vjtv8"
+                          data-oid="rm8i44q"
                         />
                       </div>
                       {/* Eliminado el campo de URL de foto ya que ahora se maneja con el selector de archivos */}
-                      <div className="col-span-2" data-oid="x:_jbls">
+                      <div className="col-span-2" data-oid="3.n3a-a">
                         <label
                           className="text-sm font-medium text-gray-500"
-                          data-oid="eje7561"
+                          data-oid="antsxl7"
                         >
                           Notas
                         </label>
@@ -1408,7 +1408,7 @@ const DriverDetailsView = ({
                           onChange={handleInputChange}
                           rows={3}
                           className="mt-1 border-gray-300 focus:border-gray-300 focus:ring focus:ring-red-200 focus:ring-opacity-50 rounded-md"
-                          data-oid="dd_-qo6"
+                          data-oid="8wy1:wl"
                         />
                       </div>
                     </div>
@@ -1422,76 +1422,76 @@ const DriverDetailsView = ({
         {/* Sección inferior con dos cards */}
         <div
           className="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-6"
-          data-oid="wh:vy.7"
+          data-oid="ko1yy5r"
         >
           {/* Vehículos asignados */}
           <Card
             className="shadow-md hover:shadow-lg transition-shadow overflow-hidden"
-            data-oid="8zdcb5y"
+            data-oid="v7nc14a"
           >
-            <CardHeader className="bg-gray-50 border-b pb-3" data-oid="ow4uliq">
+            <CardHeader className="bg-gray-50 border-b pb-3" data-oid="x3xw9p:">
               <CardTitle
                 className="flex items-center text-lg"
-                data-oid="3:79kh_"
+                data-oid="55mb.zj"
               >
                 <Car
                   className="h-5 w-5 mr-2 text-gray-500"
-                  data-oid="dw0fvp."
+                  data-oid="uaty50e"
                 />
                 Vehículos Asociados
               </CardTitle>
             </CardHeader>
-            <CardContent className="pt-6 pb-6" data-oid="h5kgf8x">
+            <CardContent className="pt-6 pb-6" data-oid="2dq7r.n">
               {loadingVehicles ? (
-                <div className="py-10 text-center" data-oid="8b42bbj">
+                <div className="py-10 text-center" data-oid="7vidorx">
                   <RefreshCw
                     className="h-8 w-8 text-gray-400 animate-spin mx-auto mb-4"
-                    data-oid="7w_6h3m"
+                    data-oid="aj3x5x0"
                   />
 
-                  <p className="text-gray-500" data-oid="-e-0l:t">
+                  <p className="text-gray-500" data-oid="n7hasdk">
                     Cargando vehículos asociados...
                   </p>
                 </div>
               ) : assignedVehicles && assignedVehicles.length > 0 ? (
-                <ul className="space-y-4" data-oid="ipjh-r2">
+                <ul className="space-y-4" data-oid="1:50w17">
                   {assignedVehicles.map((vehicle, index) => (
                     <li
                       key={index}
                       className="flex items-start py-3 border-b border-gray-100 last:border-b-0"
-                      data-oid="_emc60_"
+                      data-oid="h63.yh1"
                     >
                       <div
                         className="h-16 w-16 rounded-md bg-gray-100 mr-4 overflow-hidden flex-shrink-0"
-                        data-oid="7a5zmpo"
+                        data-oid="qe:ej2_"
                       >
                         {vehicle.image ? (
                           <img
                             src={vehicle.image}
                             alt={vehicle.name}
                             className="h-full w-full object-cover"
-                            data-oid="hb209o3"
+                            data-oid="--3bcv2"
                           />
                         ) : (
                           <div
                             className="h-full w-full flex items-center justify-center"
-                            data-oid="ltnh67l"
+                            data-oid="zmm-lsu"
                           >
                             <Car
                               className="h-8 w-8 text-gray-400"
-                              data-oid="sj6kz:1"
+                              data-oid="6o0c2z-"
                             />
                           </div>
                         )}
                       </div>
-                      <div className="flex-1" data-oid="szrroj_">
+                      <div className="flex-1" data-oid="rqbp55q">
                         <div
                           className="flex justify-between"
-                          data-oid="-4nbvff"
+                          data-oid="39rqlbn"
                         >
                           <p
                             className="font-medium text-gray-900"
-                            data-oid="x2eukp."
+                            data-oid=".36.0zm"
                           >
                             {vehicle.name}
                           </p>
@@ -1501,52 +1501,52 @@ const DriverDetailsView = ({
                                 ? "bg-gray-200 text-green-800 hover:bg-gray-200"
                                 : "bg-amber-100 text-amber-800 hover:bg-amber-100"
                             }`}
-                            data-oid="nrmibmj"
+                            data-oid="js91gic"
                           >
                             {vehicle.available ? "Disponible" : "No disponible"}
                           </Badge>
                         </div>
                         <p
                           className="text-sm text-gray-600 mt-1"
-                          data-oid="m5es6b."
+                          data-oid="rjak5yv"
                         >
                           {vehicle.details.brand} {vehicle.details.model} (
                           {vehicle.details.year})
                         </p>
                         <div
                           className="mt-2 flex items-center text-xs text-gray-500 space-x-3"
-                          data-oid=".lx62o9"
+                          data-oid="_2pbd47"
                         >
                           <span
                             className="flex items-center"
-                            data-oid="95y0v3j"
+                            data-oid="z6q38w:"
                           >
                             <FileText
                               className="h-3 w-3 mr-1"
-                              data-oid="bfb0g5v"
+                              data-oid="f5h9g5_"
                             />
 
                             {vehicle.licensePlate}
                           </span>
                           <span
                             className="flex items-center"
-                            data-oid="93dvcnj"
+                            data-oid="q5eq50t"
                           >
                             <Circle
                               className="h-2 w-2 mr-1"
                               style={{
                                 fill: vehicle.details.color.toLowerCase(),
                               }}
-                              data-oid="u_hjts:"
+                              data-oid="6_w:lh."
                             />
 
                             {vehicle.details.color}
                           </span>
                           <span
                             className="flex items-center capitalize"
-                            data-oid="t00dyh5"
+                            data-oid="yyizzv8"
                           >
-                            <Car className="h-3 w-3 mr-1" data-oid="3dyq.v3" />
+                            <Car className="h-3 w-3 mr-1" data-oid="q2.kkz2" />
                             {vehicle.type}
                           </span>
                         </div>
@@ -1555,14 +1555,14 @@ const DriverDetailsView = ({
                   ))}
                 </ul>
               ) : (
-                <div className="py-10 text-center" data-oid="y:w6mfc">
-                  <div className="mb-4 flex justify-center" data-oid="o3vpc21">
+                <div className="py-10 text-center" data-oid="c5d653a">
+                  <div className="mb-4 flex justify-center" data-oid="p-7zgbo">
                     <Car
                       className="h-12 w-12 text-gray-300"
-                      data-oid="h7v9yo7"
+                      data-oid="j8z5p8r"
                     />
                   </div>
-                  <p className="text-gray-500" data-oid="c836k-t">
+                  <p className="text-gray-500" data-oid="5ltavyw">
                     No hay vehículos asociados
                   </p>
                 </div>
@@ -1573,29 +1573,29 @@ const DriverDetailsView = ({
           {/* Servicios recientes */}
           <Card
             className="shadow-md hover:shadow-lg transition-shadow overflow-hidden"
-            data-oid="h_dzvvo"
+            data-oid="rh5zszz"
           >
-            <CardHeader className="bg-gray-50 border-b pb-3" data-oid="3ic:yjn">
+            <CardHeader className="bg-gray-50 border-b pb-3" data-oid="6-v:qgp">
               <CardTitle
                 className="flex items-center text-lg"
-                data-oid="lupv221"
+                data-oid="uki4298"
               >
                 <BookOpen
                   className="h-5 w-5 mr-2 text-gray-500"
-                  data-oid="t.u1hmn"
+                  data-oid="4hqv:g6"
                 />
                 Servicios Recientes
               </CardTitle>
             </CardHeader>
-            <CardContent className="pt-6 pb-6" data-oid="18v_i32">
-              <div className="py-10 text-center" data-oid="1ty4.rh">
-                <div className="mb-4 flex justify-center" data-oid="jsq-klr">
+            <CardContent className="pt-6 pb-6" data-oid="jbs6b0q">
+              <div className="py-10 text-center" data-oid="zksdndx">
+                <div className="mb-4 flex justify-center" data-oid="q_imcca">
                   <BookOpen
                     className="h-12 w-12 text-gray-300"
-                    data-oid="-d8b70p"
+                    data-oid="llvso3i"
                   />
                 </div>
-                <p className="text-gray-500" data-oid="ses9gmy">
+                <p className="text-gray-500" data-oid="_:_.-5f">
                   No hay servicios recientes
                 </p>
               </div>
@@ -1606,83 +1606,83 @@ const DriverDetailsView = ({
         {/* Documentación y certificaciones */}
         <Card
           className="shadow-md hover:shadow-lg transition-shadow overflow-hidden"
-          data-oid="xitzlbf"
+          data-oid="o0pwop:"
         >
-          <CardHeader className="bg-gray-50 border-b pb-3" data-oid="jnwquv_">
-            <CardTitle className="flex items-center text-lg" data-oid="jvt-a8s">
+          <CardHeader className="bg-gray-50 border-b pb-3" data-oid="a7_cl87">
+            <CardTitle className="flex items-center text-lg" data-oid="4gn_5l:">
               <FileText
                 className="h-5 w-5 mr-2 text-gray-500"
-                data-oid="5u9de1m"
+                data-oid="2c0-.j_"
               />
               Documentación y Certificaciones
             </CardTitle>
-            <CardDescription data-oid="72m0gw1">
+            <CardDescription data-oid="1-7ne2d">
               Licencias y documentos del chófer
             </CardDescription>
           </CardHeader>
-          <CardContent className="pt-6 pb-6" data-oid="io_th6z">
+          <CardContent className="pt-6 pb-6" data-oid="gyp5jw6">
             <div
               className="grid grid-cols-1 md:grid-cols-2 gap-6"
-              data-oid="w8-2ga-"
+              data-oid="b5l5yau"
             >
               <div
                 className="border rounded-md p-4 flex flex-col"
-                data-oid="6-e9ek7"
+                data-oid="d7m0bs2"
               >
-                <div className="flex items-center mb-2" data-oid="aah0k-w">
+                <div className="flex items-center mb-2" data-oid="1_iv31y">
                   <Book
                     className="h-5 w-5 text-gray-600 mr-2"
-                    data-oid="78xdc4s"
+                    data-oid="a-2pmrv"
                   />
 
-                  <h3 className="font-medium" data-oid="u2e6i_k">
+                  <h3 className="font-medium" data-oid="p0911sq">
                     Licencia de conducir
                   </h3>
                 </div>
-                <p className="text-sm text-gray-600 mb-2" data-oid=".mzjb0p">
+                <p className="text-sm text-gray-600 mb-2" data-oid="fr3v8y1">
                   Número: {driver.licenseNumber}
                 </p>
-                <p className="text-sm text-gray-600" data-oid=":0s.uan">
+                <p className="text-sm text-gray-600" data-oid="p7jxb8d">
                   Expiración: {formatDate(driver.licenseExpiry)}
                 </p>
                 <Button
                   variant="ghost"
                   size="sm"
                   className="mt-auto self-start"
-                  data-oid="p8u0-7o"
+                  data-oid="3jq82kp"
                 >
-                  <Bookmark className="h-4 w-4 mr-2" data-oid="-k_r:-l" />
+                  <Bookmark className="h-4 w-4 mr-2" data-oid="cwdcy0:" />
                   Ver documento
                 </Button>
               </div>
 
               <div
                 className="border rounded-md p-4 flex flex-col"
-                data-oid="lfelyxp"
+                data-oid="96zs-al"
               >
-                <div className="flex items-center mb-2" data-oid="qnvx2-4">
+                <div className="flex items-center mb-2" data-oid="pawz4ob">
                   <CreditCard
                     className="h-5 w-5 text-gray-600 mr-2"
-                    data-oid="0rt-0l4"
+                    data-oid="-vkadh1"
                   />
 
-                  <h3 className="font-medium" data-oid="3ug_v8n">
+                  <h3 className="font-medium" data-oid="uoses7e">
                     Documento de identidad
                   </h3>
                 </div>
-                <p className="text-sm text-gray-600 mb-2" data-oid="oub_vk1">
+                <p className="text-sm text-gray-600 mb-2" data-oid="ji83_1e">
                   Número: {driver.documentId}
                 </p>
-                <p className="text-sm text-gray-600" data-oid="856s2bz">
+                <p className="text-sm text-gray-600" data-oid="yu79:3y">
                   País: {driver.country}
                 </p>
                 <Button
                   variant="ghost"
                   size="sm"
                   className="mt-auto self-start"
-                  data-oid="41y200l"
+                  data-oid="cg4b47j"
                 >
-                  <Bookmark className="h-4 w-4 mr-2" data-oid="z5h6916" />
+                  <Bookmark className="h-4 w-4 mr-2" data-oid="1g1gohr" />
                   Ver documento
                 </Button>
               </div>

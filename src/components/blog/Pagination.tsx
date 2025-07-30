@@ -65,16 +65,16 @@ export const Pagination = ({
   };
 
   return (
-    <div className="flex items-center justify-center mt-10" data-oid="_gba:ca">
-      <div className="flex items-center space-x-2" data-oid="ysheo7d">
+    <div className="flex items-center justify-center mt-10" data-oid="yd7n01d">
+      <div className="flex items-center space-x-2" data-oid="8j:8f0c">
         <Button
           variant="outline"
           size="icon"
           onClick={handlePrevious}
           disabled={currentPage === 1}
-          data-oid="bpmy4oi"
+          data-oid="9t-mgfd"
         >
-          <ChevronLeft size={16} data-oid="8:sdmot" />
+          <ChevronLeft size={16} data-oid="znvm.f8" />
         </Button>
 
         {getPageNumbers().map((page, idx) =>
@@ -82,7 +82,7 @@ export const Pagination = ({
             <span
               key={`ellipsis-${idx}`}
               className="px-3 py-2"
-              data-oid="95qf:4n"
+              data-oid="_0x-imz"
             >
               ...
             </span>
@@ -94,7 +94,7 @@ export const Pagination = ({
                 currentPage === page ? "bg-black hover:bg-gray-800" : ""
               }
               onClick={() => typeof page === "number" && onPageChange(page)}
-              data-oid="gsv4f.a"
+              data-oid="4x8oh0j"
             >
               {page}
             </Button>
@@ -106,9 +106,9 @@ export const Pagination = ({
           size="icon"
           onClick={handleNext}
           disabled={currentPage === totalPages}
-          data-oid="li__y9i"
+          data-oid="p0aqfy0"
         >
-          <ChevronRight size={16} data-oid="r2nibns" />
+          <ChevronRight size={16} data-oid="o4ckb0r" />
         </Button>
       </div>
     </div>

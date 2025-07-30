@@ -14,25 +14,25 @@ export function RetroMapGrid({
         className,
       )}
       style={{ "--grid-angle": `${angle}deg` } as React.CSSProperties}
-      data-oid="o8jc2ii"
+      data-oid=":lbw8b9"
     >
       {/* Cuadrícula tipo mapa */}
       <div
         className="absolute inset-0 [transform:rotateX(var(--grid-angle))]"
-        data-oid="v:zldqk"
+        data-oid="0per3ve"
       >
         <div
           className={cn(
             "[background-repeat:repeat] [background-size:80px_80px] [height:300vh] [margin-left:-50%] [width:600vw]",
             "[background-image:linear-gradient(to_right,rgba(255,255,255,0.08)_1px,transparent_0),linear-gradient(to_bottom,rgba(255,255,255,0.08)_1px,transparent_0)]",
           )}
-          data-oid="qktr_vv"
+          data-oid="z2diwfz"
         />
       </div>
       {/* Gradiente oscuro */}
       <div
         className="absolute inset-0 bg-gradient-to-t from-black to-transparent to-90%"
-        data-oid="edeajxk"
+        data-oid="_8ltkqj"
       />
 
       {/* Línea de ruta naranja */}
@@ -40,7 +40,7 @@ export function RetroMapGrid({
         className="absolute inset-0 w-full h-full z-10"
         viewBox="0 0 800 300"
         fill="none"
-        data-oid="vq6.ex."
+        data-oid="73cmoxk"
       >
         <polyline
           points="0,50 300,200 500,100 650,150"
@@ -49,7 +49,7 @@ export function RetroMapGrid({
           fill="none"
           strokeLinejoin="round"
           style={{ filter: "drop-shadow(0 0 10px #000000aa)" }}
-          data-oid="zzta941"
+          data-oid="hyyg.qu"
         />
 
         <circle
@@ -58,10 +58,10 @@ export function RetroMapGrid({
           r="16"
           fill="#000000"
           opacity="0.5"
-          data-oid="by.api1"
+          data-oid="h:4pka1"
         />
 
-        <circle cx="650" cy="150" r="8" fill="#000000" data-oid="bnjj-ht" />
+        <circle cx="650" cy="150" r="8" fill="#000000" data-oid="zhy-nap" />
       </svg>
     </div>
   );

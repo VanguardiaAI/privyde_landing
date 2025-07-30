@@ -27,9 +27,8 @@
 }
 
 body {
-  /* Usar Panton como tipografía secundaria por defecto */
-  font-family: 'Inter', system-ui, -apple-system, sans-serif; /* Temporal hasta tener Panton */
-  /* font-family: 'Panton', system-ui, -apple-system, sans-serif; */
+  /* Usar Panton como tipografía principal por defecto */
+  font-family: 'Panton', system-ui, -apple-system, sans-serif;
   line-height: 1.5;
   font-weight: 400;
   margin: 0;
@@ -43,12 +42,10 @@ body {
 
 /* Clases utilitarias para las tipografías Privyde */
 .font-conthrax {
-  font-family: 'Inter', sans-serif; /* Temporal hasta tener ConthraxSb */
-  /* font-family: 'ConthraxSb', sans-serif; */
+  font-family: 'CONTHRAX-SB', sans-serif;
   font-weight: 600;
 }
 
 .font-panton {
-  font-family: 'Inter', sans-serif; /* Temporal hasta tener Panton */
-  /* font-family: 'Panton', sans-serif; */
+  font-family: 'Panton', sans-serif;
 } 

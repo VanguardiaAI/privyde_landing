@@ -65,11 +65,11 @@ export const BlogCard = ({ post, variant = "default" }: BlogCardProps) => {
     return (
       <Card
         className="overflow-hidden mb-6 border border-gray-200 hover:shadow-md transition-all duration-300 group"
-        data-oid="msg8gk."
+        data-oid="3ca:uch"
       >
-        <div className="flex flex-col lg:flex-row" data-oid="01r4pmh">
+        <div className="flex flex-col lg:flex-row" data-oid="-e58h2y">
           {/* Imagen destacada */}
-          <div className="lg:w-1/2 relative overflow-hidden" data-oid="oslqz7w">
+          <div className="lg:w-1/2 relative overflow-hidden" data-oid="02nxjpw">
             <img
               src={getFullImageUrl(post.featuredImage)}
               alt={post.title}
@@ -78,20 +78,20 @@ export const BlogCard = ({ post, variant = "default" }: BlogCardProps) => {
                 console.error("Error cargando imagen:", post.featuredImage);
                 e.currentTarget.src = defaultImage;
               }}
-              data-oid="5u9bjh."
+              data-oid="f.jq6a2"
             />
           </div>
 
           {/* Contenido */}
-          <div className="lg:w-1/2 p-6 flex flex-col" data-oid="rl6-yaa">
+          <div className="lg:w-1/2 p-6 flex flex-col" data-oid="st0nm6o">
             {/* Categorías */}
-            <div className="flex gap-2 mb-4 flex-wrap" data-oid="2raones">
+            <div className="flex gap-2 mb-4 flex-wrap" data-oid="63kj85i">
               {categories.map((category: string, idx: number) => (
                 <Badge
                   key={idx}
                   variant="outline"
                   className="bg-gray-100 text-gray-800"
-                  data-oid="v._9d2u"
+                  data-oid="oh.bjcu"
                 >
                   {category}
                 </Badge>
@@ -102,11 +102,11 @@ export const BlogCard = ({ post, variant = "default" }: BlogCardProps) => {
             <Link
               to={`/blog/${post.slug}`}
               className="block group-hover:text-gray-600 transition-colors"
-              data-oid="z_4rgxa"
+              data-oid="d1i8u.u"
             >
               <h3
                 className="text-2xl font-bold mb-3 leading-tight"
-                data-oid="2:r0v2s"
+                data-oid="kkd-jd:"
               >
                 {post.title}
               </h3>
@@ -115,7 +115,7 @@ export const BlogCard = ({ post, variant = "default" }: BlogCardProps) => {
             {/* Extracto */}
             <p
               className="text-gray-600 mb-6 leading-relaxed"
-              data-oid="f2_dwfv"
+              data-oid="lw.o.1_"
             >
               {post.excerpt}
             </p>
@@ -123,20 +123,20 @@ export const BlogCard = ({ post, variant = "default" }: BlogCardProps) => {
             {/* Footer */}
             <div
               className="flex items-center justify-between w-full text-sm text-gray-500 mt-auto"
-              data-oid="79v2y:e"
+              data-oid="5y:acdn"
             >
-              <div className="flex items-center gap-2" data-oid="llre-8e">
-                <User size={16} className="text-black" data-oid="2ox3a:r" />
-                <span data-oid="vphaubv">{post.author}</span>
+              <div className="flex items-center gap-2" data-oid="pjmfapb">
+                <User size={16} className="text-black" data-oid="uljmm_i" />
+                <span data-oid="z08t0:1">{post.author}</span>
               </div>
-              <div className="flex items-center gap-2" data-oid="dbtrtqk">
+              <div className="flex items-center gap-2" data-oid="plspcrz">
                 <CalendarIcon
                   size={16}
                   className="text-black"
-                  data-oid="edahpzr"
+                  data-oid="wor8lr7"
                 />
 
-                <span data-oid="r-jhcz_">{formattedDate}</span>
+                <span data-oid="3o0o3p7">{formattedDate}</span>
               </div>
             </div>
           </div>
@@ -149,10 +149,10 @@ export const BlogCard = ({ post, variant = "default" }: BlogCardProps) => {
   return (
     <Card
       className="h-full flex flex-col mb-6 border border-gray-200 hover:shadow-md transition-all duration-300 group overflow-hidden"
-      data-oid="mi4isxz"
+      data-oid="4h451-1"
     >
       {/* Imagen */}
-      <div className="relative overflow-hidden aspect-video" data-oid="h5bi2-b">
+      <div className="relative overflow-hidden aspect-video" data-oid="ua9ax48">
         <img
           src={getFullImageUrl(post.featuredImage)}
           alt={post.title}
@@ -161,20 +161,20 @@ export const BlogCard = ({ post, variant = "default" }: BlogCardProps) => {
             console.error("Error cargando imagen:", post.featuredImage);
             e.currentTarget.src = defaultImage;
           }}
-          data-oid="5tpdu3s"
+          data-oid="8kwgp8x"
         />
       </div>
 
       {/* Contenido */}
-      <div className="p-5 flex-grow flex flex-col" data-oid="00mfiro">
+      <div className="p-5 flex-grow flex flex-col" data-oid="2249ck2">
         {/* Categorías */}
-        <div className="flex flex-wrap gap-1 mb-3" data-oid="_ueb1bz">
+        <div className="flex flex-wrap gap-1 mb-3" data-oid="8qg17dw">
           {categories.slice(0, 2).map((category: string, idx: number) => (
             <Badge
               key={idx}
               variant="outline"
               className="bg-gray-100 text-gray-800 text-xs"
-              data-oid="abf16o1"
+              data-oid="qo:gjp6"
             >
               {category}
             </Badge>
@@ -185,11 +185,11 @@ export const BlogCard = ({ post, variant = "default" }: BlogCardProps) => {
         <Link
           to={`/blog/${post.slug}`}
           className="block group-hover:text-gray-600 transition-colors"
-          data-oid="3-5qn.r"
+          data-oid="70eifho"
         >
           <h3
             className="text-xl font-bold mb-2 leading-tight"
-            data-oid="thdfxgk"
+            data-oid="hjsm5xl"
           >
             {post.title}
           </h3>
@@ -198,31 +198,31 @@ export const BlogCard = ({ post, variant = "default" }: BlogCardProps) => {
         {/* Extracto */}
         <p
           className="text-gray-600 line-clamp-3 text-sm leading-relaxed mb-4"
-          data-oid="zij0-ti"
+          data-oid="k._shdn"
         >
           {post.excerpt}
         </p>
 
         {/* Footer */}
-        <div className="mt-auto" data-oid="yircpht">
+        <div className="mt-auto" data-oid="4hq6_pq">
           <div
             className="flex items-center justify-between w-full text-sm text-gray-500"
-            data-oid="9pocwd1"
+            data-oid="k.bxg0x"
           >
-            <div className="flex items-center gap-1" data-oid="xxg88k-">
-              <User size={14} className="text-black" data-oid="e1_6e9." />
-              <span className="text-xs" data-oid="q:i3qf8">
+            <div className="flex items-center gap-1" data-oid="95xf-yf">
+              <User size={14} className="text-black" data-oid="_zcr7vx" />
+              <span className="text-xs" data-oid=".qls0-x">
                 {post.author}
               </span>
             </div>
-            <div className="flex items-center gap-1" data-oid="v-xmnc7">
+            <div className="flex items-center gap-1" data-oid="zsscv1f">
               <CalendarIcon
                 size={14}
                 className="text-black"
-                data-oid="ktte:o8"
+                data-oid="x74taob"
               />
 
-              <span className="text-xs" data-oid="yea-ggb">
+              <span className="text-xs" data-oid=":2vud.q">
                 {formattedDate}
               </span>
             </div>

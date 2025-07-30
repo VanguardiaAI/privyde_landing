@@ -41,7 +41,7 @@ const SpecialEvents = () => {
     {
       id: "wedding",
       title: "Bodas",
-      icon: <Heart className="h-6 w-6 text-black" data-oid="h_-mox2" />,
+      icon: <Heart className="h-6 w-6 text-black" data-oid="3qb7cm_" />,
       description:
         "El transporte perfecto para tu día perfecto. Nuestro servicio para bodas ofrece elegancia y confort para la pareja y los invitados.",
       benefits: [
@@ -55,7 +55,7 @@ const SpecialEvents = () => {
     {
       id: "graduation",
       title: "Graduaciones",
-      icon: <GraduationCap className="h-6 w-6 text-black" data-oid="6udxr-t" />,
+      icon: <GraduationCap className="h-6 w-6 text-black" data-oid="l57dqt5" />,
       description:
         "Celebre este importante logro académico con un transporte de lujo que haga el día aún más memorable.",
       benefits: [
@@ -69,7 +69,7 @@ const SpecialEvents = () => {
     {
       id: "birthday",
       title: "Cumpleaños",
-      icon: <Wine className="h-6 w-6 text-black" data-oid="lt2m3fg" />,
+      icon: <Wine className="h-6 w-6 text-black" data-oid="g0vt38g" />,
       description:
         "Desde fiestas sorpresa hasta celebraciones de hitos importantes, hacemos que tu cumpleaños sea inolvidable con un servicio de transporte premium.",
       benefits: [
@@ -83,7 +83,7 @@ const SpecialEvents = () => {
     {
       id: "corporate",
       title: "Eventos Corporativos",
-      icon: <Building className="h-6 w-6 text-black" data-oid="9gp.8:d" />,
+      icon: <Building className="h-6 w-6 text-black" data-oid="26bpiig" />,
       description:
         "Impresione a sus clientes y colaboradores con un servicio de chófer exclusivo para sus eventos de empresa más importantes.",
       benefits: [
@@ -97,7 +97,7 @@ const SpecialEvents = () => {
     {
       id: "concert",
       title: "Conciertos y Espectáculos",
-      icon: <Award className="h-6 w-6 text-black" data-oid="3rxc2:u" />,
+      icon: <Award className="h-6 w-6 text-black" data-oid="8am6o_r" />,
       description:
         "Disfrute de sus espectáculos favoritos sin preocupaciones. Llegue cómodamente y regrese a casa con seguridad, sin importar la hora.",
       benefits: [
@@ -115,7 +115,7 @@ const SpecialEvents = () => {
     {
       question: "¿Con cuánta antelación debo reservar para un evento especial?",
       answer: (
-        <p className="text-gray-600" data-oid="g6n1eu.">
+        <p className="text-gray-600" data-oid="82yfo:d">
           Recomendamos realizar la reserva con al menos 2 semanas de antelación
           para eventos estándar. Para eventos de gran magnitud como bodas o
           eventos corporativos importantes, es aconsejable reservar con 1-3
@@ -130,30 +130,30 @@ const SpecialEvents = () => {
     {
       question: "¿Puedo personalizar el servicio para mi evento especial?",
       answer: (
-        <div className="text-gray-600" data-oid="33xz_u6">
-          <p className="mb-2" data-oid="7p1x3zw">
+        <div className="text-gray-600" data-oid="ruoxpls">
+          <p className="mb-2" data-oid="mxai5bq">
             ¡Absolutamente! Ofrecemos múltiples opciones de personalización para
             que su evento sea único:
           </p>
-          <ul className="list-disc pl-5 space-y-1" data-oid="zeg-t46">
-            <li data-oid="lfzf3jb">
+          <ul className="list-disc pl-5 space-y-1" data-oid="89pizfc">
+            <li data-oid="09.o8cn">
               Decoración interior y exterior del vehículo acorde a la temática
               del evento
             </li>
-            <li data-oid="u6.8mal">
+            <li data-oid="_cmqvs0">
               Selección de bebidas y refrigerios a bordo (con cargo adicional)
             </li>
-            <li data-oid="lmks1b7">
+            <li data-oid="lp0evqt">
               Coordinación del itinerario con otros proveedores del evento
             </li>
-            <li data-oid="pw1d:qm">
+            <li data-oid="k:yz1z9">
               Vestimenta específica para los chóferes según el código del evento
             </li>
-            <li data-oid="e5038_.">
+            <li data-oid="tulkdi:">
               Alfombra roja para la llegada en eventos premium
             </li>
           </ul>
-          <p className="mt-2" data-oid="42xha5t">
+          <p className="mt-2" data-oid="prs_k8-">
             Comunique sus necesidades específicas en el campo de "Notas
             especiales" al realizar su reserva o contáctenos directamente para
             un servicio totalmente a medida.
@@ -165,35 +165,35 @@ const SpecialEvents = () => {
       question:
         "¿Qué tipos de vehículos están disponibles para eventos especiales?",
       answer: (
-        <div className="text-gray-600" data-oid="pz7y0qr">
-          <p className="mb-2" data-oid="6b0bu-v">
+        <div className="text-gray-600" data-oid="8:g5p5e">
+          <p className="mb-2" data-oid="wilpqn1">
             Disponemos de una flota exclusiva para satisfacer las necesidades de
             cualquier evento:
           </p>
-          <ul className="list-disc pl-5 space-y-1" data-oid="xnk9y64">
-            <li data-oid="sg752ni">
-              <strong data-oid="urtwgo:">Sedanes de lujo:</strong> Mercedes
+          <ul className="list-disc pl-5 space-y-1" data-oid="uapw5jf">
+            <li data-oid="o:czfeu">
+              <strong data-oid="gsomal9">Sedanes de lujo:</strong> Mercedes
               Clase S, BMW Serie 7, Audi A8 - ideales para parejas o ejecutivos
             </li>
-            <li data-oid=":2.p9c1">
-              <strong data-oid="a1w_:jm">SUVs premium:</strong> Cadillac
+            <li data-oid="7pcrl:9">
+              <strong data-oid="z4lp4fg">SUVs premium:</strong> Cadillac
               Escalade, Mercedes GLS, Range Rover - perfectos para pequeños
               grupos con equipaje
             </li>
-            <li data-oid="ln9xsd3">
-              <strong data-oid="ytai35b">Limusinas:</strong> Limusinas
+            <li data-oid="4ttke9.">
+              <strong data-oid="73gxnaa">Limusinas:</strong> Limusinas
               estiramiento clásicas y modernas - para entradas espectaculares
             </li>
-            <li data-oid="9xadjpu">
-              <strong data-oid="4dmjlcm">Minibuses de lujo:</strong> Mercedes
+            <li data-oid="mzd-zrv">
+              <strong data-oid="jbv_4u-">Minibuses de lujo:</strong> Mercedes
               Sprinter VIP, para grupos de hasta 14 personas
             </li>
-            <li data-oid="ydbr--7">
-              <strong data-oid="h6k:8s8">Vehículos clásicos:</strong> Para bodas
+            <li data-oid="fch0_14">
+              <strong data-oid="paqyv8q">Vehículos clásicos:</strong> Para bodas
               y eventos temáticos (disponibilidad limitada)
             </li>
           </ul>
-          <p className="mt-2" data-oid="0pvr8.j">
+          <p className="mt-2" data-oid="69yut9f">
             Todos nuestros vehículos se mantienen en perfecto estado y se
             presentan impecables para su evento.
           </p>
@@ -203,7 +203,7 @@ const SpecialEvents = () => {
     {
       question: "¿Puedo reservar múltiples vehículos para mi evento?",
       answer: (
-        <p className="text-gray-600" data-oid="oy0:-0b">
+        <p className="text-gray-600" data-oid="lryn7rq">
           Sí, ofrecemos la posibilidad de reservar múltiples vehículos para su
           evento. Esto es especialmente útil para bodas donde se necesita
           transporte para los novios, padres, padrinos e invitados VIP, o para
@@ -219,7 +219,7 @@ const SpecialEvents = () => {
     {
       question: "¿Qué ocurre si mi evento se extiende más de lo previsto?",
       answer: (
-        <p className="text-gray-600" data-oid="lnzgwbs">
+        <p className="text-gray-600" data-oid="hxy7_4f">
           Entendemos que los eventos especiales a veces pueden extenderse más
           allá del horario planificado. Nuestros chóferes están preparados para
           ser flexibles. Si su evento se prolonga, el chófer puede extender el
@@ -235,27 +235,27 @@ const SpecialEvents = () => {
       question:
         "¿Ofrecen servicios para eventos infantiles como fiestas de cumpleaños?",
       answer: (
-        <div className="text-gray-600" data-oid="9ngtwbw">
-          <p className="mb-2" data-oid="g102b7f">
+        <div className="text-gray-600" data-oid="fbm_46r">
+          <p className="mb-2" data-oid="8d_7xho">
             Sí, ofrecemos servicios especiales diseñados para celebraciones
             infantiles y adolescentes, como:
           </p>
-          <ul className="list-disc pl-5 space-y-1" data-oid="k3x.5da">
-            <li data-oid="g0:rdcb">
+          <ul className="list-disc pl-5 space-y-1" data-oid="cg-19ku">
+            <li data-oid="cg3lgx:">
               Paquetes especiales para "sweet sixteen" y quinceañeras
             </li>
-            <li data-oid="_xosuq1">
+            <li data-oid="tj6l2wy">
               Servicios para fiestas temáticas infantiles con decoración
               apropiada
             </li>
-            <li data-oid="2sxzg8t">
+            <li data-oid=":w1lh-8">
               Opciones seguras para el transporte de menores con supervisión
             </li>
-            <li data-oid=".144emn">
+            <li data-oid="t5ur:a1">
               Experiencias tipo "tour de estrella" para cumpleaños especiales
             </li>
           </ul>
-          <p className="mt-2" data-oid="rlrjq0_">
+          <p className="mt-2" data-oid="b_4_dnj">
             Todos nuestros servicios para eventos con menores cumplen con las
             normativas de seguridad más estrictas, incluyendo asientos adaptados
             para niños cuando sea necesario. Nuestros chóferes asignados a estos
@@ -290,25 +290,25 @@ const SpecialEvents = () => {
   ];
 
   return (
-    <div className="bg-white" data-oid="18t8hn3">
+    <div className="bg-white" data-oid="e6_es7h">
       {/* Navigation */}
-      <Navbar data-oid="sskk31t" />
+      <Navbar data-oid="1xe_jg7" />
 
       {/* Hero Section with Full-Width Image */}
-      <div className="flex flex-col w-full" data-oid="w14-a9a">
+      <div className="flex flex-col w-full" data-oid="o47y8dg">
         {/* Title Bar */}
-        <div className="title-bar relative" data-oid="guvp.fa">
-          <div className="container mx-auto px-4" data-oid="ee2iad-">
-            <h1 className="text-3xl font-bold text-black" data-oid="7.32lh.">
+        <div className="title-bar relative" data-oid="k9pt3vi">
+          <div className="container mx-auto px-4" data-oid="4ul372x">
+            <h1 className="text-3xl font-bold text-black" data-oid="migr.uw">
               Servicios para eventos especiales
             </h1>
           </div>
         </div>
 
         {/* Image Container */}
-        <div className="hero-container relative" data-oid="e:yacg9">
+        <div className="hero-container relative" data-oid="bwm43gu">
           {/* Background Image */}
-          <div className="full-size-background" data-oid="czz0wlm">
+          <div className="full-size-background" data-oid="3xu4qtb">
             <Image
               src="/images/wedding-car.jpeg"
               alt="Elegante limusina negra esperando fuera de un evento de gala"
@@ -316,16 +316,16 @@ const SpecialEvents = () => {
               className="object-cover object-center"
               priority
               sizes="100vw"
-              data-oid=":j:4om0"
+              data-oid=":sb3xnz"
             />
           </div>
 
           {/* Booking Widget - Solo visible en pantallas grandes (lg) */}
           <div
             className="booking-widget-container-overlay hidden lg:block"
-            data-oid="by-idli"
+            data-oid="2nhr-6b"
           >
-            <BookingForm data-oid="5yprccl" />
+            <BookingForm data-oid="ekemdx." />
           </div>
         </div>
       </div>
@@ -333,23 +333,23 @@ const SpecialEvents = () => {
       {/* Booking Widget - Solo visible en tablets y móviles (fuera del hero) */}
       <div
         className="lg:hidden mx-auto px-4 mb-8 mt-6 relative z-30"
-        data-oid="yueormi"
+        data-oid="jjdb7i8"
       >
-        <BookingForm data-oid="b9l1948" />
+        <BookingForm data-oid="9hs1q5h" />
       </div>
 
       {/* Moments Banner */}
-      <div className="bg-gray-100 py-12" data-oid="_1yoo6c">
-        <div className="container mx-auto px-4 text-center" data-oid="w39-dvg">
+      <div className="bg-gray-100 py-12" data-oid=":l31f0n">
+        <div className="container mx-auto px-4 text-center" data-oid="ajozysj">
           <h2
             className="text-3xl font-bold text-gray-900 mb-4"
-            data-oid="3e:1izt"
+            data-oid="jpf-.v1"
           >
             Haga que sus momentos especiales sean verdaderamente extraordinarios
           </h2>
           <p
             className="text-lg text-gray-700 max-w-3xl mx-auto"
-            data-oid="_1.v28y"
+            data-oid="s.z8:_2"
           >
             Desde bodas y graduaciones hasta eventos corporativos y
             celebraciones, nuestro servicio de chófer exclusivo añade un toque
@@ -359,30 +359,30 @@ const SpecialEvents = () => {
       </div>
 
       {/* Download Section */}
-      <DownloadSection data-oid="419vz9p" />
+      <DownloadSection data-oid="gfkvkii" />
 
       {/* Main Content */}
       <div
         className="container mx-auto px-4 sm:px-6 lg:px-8 py-20 max-w-6xl"
-        data-oid="y1m3_a-"
+        data-oid="-:e38v."
       >
         {/* Event Types Section */}
-        <section className="mb-20" data-oid="x.ccmxf">
+        <section className="mb-20" data-oid=".sg482.">
           <h2
             className="text-3xl font-bold text-center text-gray-900 mb-12 relative"
-            data-oid="q:m-eo5"
+            data-oid="rftyku6"
           >
             Servicios a medida para cada ocasión especial
             <span
               className="block w-24 h-1 bg-black mx-auto mt-4"
-              data-oid="73t3j55"
+              data-oid="mbzg6ad"
             ></span>
           </h2>
 
           {/* Event Type Selector */}
           <div
             className="flex flex-wrap justify-center mb-12"
-            data-oid="-2.vmfm"
+            data-oid="c68rsku"
           >
             {eventTypes.map((type) => (
               <button
@@ -393,12 +393,12 @@ const SpecialEvents = () => {
                     : "bg-gray-100 text-gray-700 hover:bg-gray-200"
                 }`}
                 onClick={() => setActiveEventType(type.id)}
-                data-oid="io390-9"
+                data-oid="sq6-qz4"
               >
-                <span className="mr-2" data-oid="3s29-yv">
+                <span className="mr-2" data-oid=".a82aa2">
                   {type.icon}
                 </span>
-                <span className="font-medium" data-oid="-60su4y">
+                <span className="font-medium" data-oid="nnq_d.r">
                   {type.title}
                 </span>
               </button>
@@ -414,52 +414,52 @@ const SpecialEvents = () => {
                   ? "block opacity-100"
                   : "hidden opacity-0"
               }`}
-              data-oid="nm-21hi"
+              data-oid="8khrk.0"
             >
               <div
                 className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"
-                data-oid="ypk1egq"
+                data-oid="4l:wwbw"
               >
-                <div data-oid="lxcpxkg">
+                <div data-oid="1ihrcl:">
                   <div
                     className="bg-gray-50 p-8 rounded-xl border border-gray-200 shadow-sm"
-                    data-oid="wr2knmz"
+                    data-oid="xt4oio0"
                   >
-                    <div className="flex items-center mb-6" data-oid="0vj679-">
+                    <div className="flex items-center mb-6" data-oid="dtlj78i">
                       {type.icon}
                       <h3
                         className="text-2xl font-bold text-gray-900 ml-3"
-                        data-oid=":wq3z4q"
+                        data-oid="w67n8hz"
                       >
                         {type.title}
                       </h3>
                     </div>
                     <p
                       className="text-gray-600 mb-8 text-lg"
-                      data-oid="lzlxpd:"
+                      data-oid="j6w2me-"
                     >
                       {type.description}
                     </p>
 
                     <h4
                       className="font-semibold text-gray-900 mb-4"
-                      data-oid="xota1_m"
+                      data-oid="487ua-r"
                     >
                       Beneficios clave:
                     </h4>
-                    <ul className="space-y-3" data-oid="9ard35d">
+                    <ul className="space-y-3" data-oid="f3pjhca">
                       {type.benefits.map((benefit, index) => (
                         <li
                           key={index}
                           className="flex items-start"
-                          data-oid="f90y4-l"
+                          data-oid="jwopkdi"
                         >
                           <Star
                             className="h-5 w-5 text-black mr-2 mt-0.5 flex-shrink-0"
-                            data-oid="937hfbb"
+                            data-oid="ehyvfrn"
                           />
 
-                          <span className="text-gray-700" data-oid="2nbbdti">
+                          <span className="text-gray-700" data-oid="cnmz77d">
                             {benefit}
                           </span>
                         </li>
@@ -470,23 +470,23 @@ const SpecialEvents = () => {
 
                 <div
                   className="relative h-96 rounded-xl overflow-hidden shadow-lg"
-                  data-oid=":sr-1ws"
+                  data-oid="9v-58zm"
                 >
                   <img
                     src={`/images/${type.id === "wedding" ? "elegant-wedding" : type.id === "graduation" ? "graduation-limousine" : type.id === "birthday" ? "birthday-celebration" : type.id === "corporate" ? "corporate-car" : "concert-chauffeur"}.png`}
                     alt={`Servicio para ${type.title}`}
                     className="w-full h-full object-cover"
-                    data-oid="081l2t:"
+                    data-oid="ydd4m:0"
                   />
 
                   <div
                     className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent text-white p-6"
-                    data-oid="z8g0v6j"
+                    data-oid="pp-2ml:"
                   >
-                    <h3 className="text-xl font-bold mb-2" data-oid="z2z2-sd">
+                    <h3 className="text-xl font-bold mb-2" data-oid="sd6x2wq">
                       Servicio exclusivo para {type.title}
                     </h3>
-                    <p className="text-sm opacity-90" data-oid="akpo_t_">
+                    <p className="text-sm opacity-90" data-oid="jbxkjc.">
                       Experiencia personalizada y atención a los detalles
                     </p>
                   </div>
@@ -497,39 +497,39 @@ const SpecialEvents = () => {
         </section>
 
         {/* Why Choose Us */}
-        <section className="mb-20" data-oid="jtxpn:w">
+        <section className="mb-20" data-oid="80ya5v9">
           <h2
             className="text-3xl font-bold text-center text-gray-900 mb-12 relative"
-            data-oid="z8yueau"
+            data-oid="c:lj_qy"
           >
             ¿Por qué elegirnos para su evento especial?
             <span
               className="block w-24 h-1 bg-black mx-auto mt-4"
-              data-oid="j6xlin3"
+              data-oid="24:lj_x"
             ></span>
           </h2>
 
           <div
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
-            data-oid=":80ohu."
+            data-oid="ele:z1l"
           >
             <div
               className="bg-white p-6 rounded-xl border border-gray-200 shadow-sm transition-all duration-300 hover:shadow-lg hover:border-gray-300"
-              data-oid="yqb-yh_"
+              data-oid="_.scpe0"
             >
               <div
                 className="text-black mb-4 bg-gray-100 w-14 h-14 rounded-full flex items-center justify-center"
-                data-oid=".8ogk.0"
+                data-oid="lm8tdy."
               >
-                <Calendar className="h-8 w-8" data-oid=".57tile" />
+                <Calendar className="h-8 w-8" data-oid="42lznnb" />
               </div>
               <h3
                 className="text-xl font-semibold mb-3 text-gray-900"
-                data-oid="myd3l72"
+                data-oid="f1u4y3y"
               >
                 Planificación impecable
               </h3>
-              <p className="text-gray-600 leading-relaxed" data-oid="yby_i49">
+              <p className="text-gray-600 leading-relaxed" data-oid="rqiveu:">
                 Coordinamos cada detalle con precisión, desde horarios hasta
                 rutas y paradas especiales, para que pueda centrarse en
                 disfrutar su evento.
@@ -538,21 +538,21 @@ const SpecialEvents = () => {
 
             <div
               className="bg-white p-6 rounded-xl border border-gray-200 shadow-sm transition-all duration-300 hover:shadow-lg hover:border-gray-300"
-              data-oid="47h7h-4"
+              data-oid="-yu5n0k"
             >
               <div
                 className="text-black mb-4 bg-gray-100 w-14 h-14 rounded-full flex items-center justify-center"
-                data-oid="gap1fd5"
+                data-oid="n1oojob"
               >
-                <Clock className="h-8 w-8" data-oid="ffwel7r" />
+                <Clock className="h-8 w-8" data-oid="-..-sdf" />
               </div>
               <h3
                 className="text-xl font-semibold mb-3 text-gray-900"
-                data-oid="xdl9i8p"
+                data-oid="8sn22zw"
               >
                 Puntualidad garantizada
               </h3>
-              <p className="text-gray-600 leading-relaxed" data-oid="x:z5vm6">
+              <p className="text-gray-600 leading-relaxed" data-oid="k7qiz_r">
                 Llegamos siempre con anticipación y nos adaptamos a cualquier
                 cambio de última hora en su evento, porque entendemos que la
                 puntualidad es esencial.
@@ -561,21 +561,21 @@ const SpecialEvents = () => {
 
             <div
               className="bg-white p-6 rounded-xl border border-gray-200 shadow-sm transition-all duration-300 hover:shadow-lg hover:border-gray-300"
-              data-oid="r_6v_a3"
+              data-oid="3:ms238"
             >
               <div
                 className="text-black mb-4 bg-gray-100 w-14 h-14 rounded-full flex items-center justify-center"
-                data-oid="c-4-0tu"
+                data-oid="uaqa7l7"
               >
-                <UserCheck className="h-8 w-8" data-oid="v_ogr2f" />
+                <UserCheck className="h-8 w-8" data-oid="pytgq-k" />
               </div>
               <h3
                 className="text-xl font-semibold mb-3 text-gray-900"
-                data-oid="_z5r6wq"
+                data-oid="nu25det"
               >
                 Chóferes de élite
               </h3>
-              <p className="text-gray-600 leading-relaxed" data-oid="sedflx6">
+              <p className="text-gray-600 leading-relaxed" data-oid="yd-c3.c">
                 Nuestros chóferes son profesionales con años de experiencia en
                 eventos exclusivos, seleccionados por su discreción, cortesía y
                 conocimiento.
@@ -584,21 +584,21 @@ const SpecialEvents = () => {
 
             <div
               className="bg-white p-6 rounded-xl border border-gray-200 shadow-sm transition-all duration-300 hover:shadow-lg hover:border-gray-300"
-              data-oid="veak852"
+              data-oid="f::stqu"
             >
               <div
                 className="text-black mb-4 bg-gray-100 w-14 h-14 rounded-full flex items-center justify-center"
-                data-oid="if_e:tf"
+                data-oid="6977oyg"
               >
-                <Car className="h-8 w-8" data-oid="6uo:x0w" />
+                <Car className="h-8 w-8" data-oid="2zl-ty7" />
               </div>
               <h3
                 className="text-xl font-semibold mb-3 text-gray-900"
-                data-oid="3the-sv"
+                data-oid="7.h.cei"
               >
                 Flota exclusiva
               </h3>
-              <p className="text-gray-600 leading-relaxed" data-oid="98dk_c3">
+              <p className="text-gray-600 leading-relaxed" data-oid="0_3q:qn">
                 Vehículos de lujo meticulosamente mantenidos, desde elegantes
                 sedanes ejecutivos hasta impresionantes limusinas, para
                 satisfacer sus necesidades específicas.
@@ -608,25 +608,25 @@ const SpecialEvents = () => {
         </section>
 
         {/* Premium Experience */}
-        <section className="mb-20" data-oid="r.2br41">
+        <section className="mb-20" data-oid="k5m2_59">
           <div
             className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center"
-            data-oid="yjr7k.u"
+            data-oid=".isnr1g"
           >
-            <div data-oid="u_j1v7y">
+            <div data-oid="8b:3zt5">
               <h2
                 className="text-3xl font-bold text-gray-900 mb-6"
-                data-oid=":qjx:e8"
+                data-oid="ec6jm77"
               >
                 Una experiencia premium en cada trayecto
               </h2>
-              <p className="text-lg text-gray-600 mb-6" data-oid="5wbsenw">
+              <p className="text-lg text-gray-600 mb-6" data-oid="8col9:u">
                 Entendemos que su evento especial merece un servicio
                 excepcional. Desde el momento en que se pone en contacto con
                 nosotros hasta la última parada de su viaje, nos esforzamos por
                 superar sus expectativas en cada detalle.
               </p>
-              <p className="text-lg text-gray-600 mb-6" data-oid="5ziavff">
+              <p className="text-lg text-gray-600 mb-6" data-oid="_tpfk6d">
                 Nuestro enfoque personalizado significa que adaptamos cada
                 aspecto del servicio a sus necesidades específicas. Ya sea una
                 llegada espectacular a una boda, un transporte discreto para un
@@ -635,15 +635,15 @@ const SpecialEvents = () => {
               </p>
               <div
                 className="bg-gray-50 p-6 rounded-lg border border-gray-200 mb-6"
-                data-oid="jiz8f3m"
+                data-oid="9bk:8:e"
               >
                 <h3
                   className="font-semibold text-xl text-gray-900 mb-3"
-                  data-oid="ve-d0xc"
+                  data-oid="wi_e4xu"
                 >
                   Personalización completa
                 </h3>
-                <p className="text-gray-600" data-oid="9y93n0u">
+                <p className="text-gray-600" data-oid="fb.oejm">
                   Desde la selección del vehículo ideal hasta los pequeños
                   detalles como bebidas preferidas, música ambiental o
                   decoración temática, su servicio se adapta completamente a sus
@@ -652,15 +652,15 @@ const SpecialEvents = () => {
               </div>
               <div
                 className="bg-gray-50 p-6 rounded-lg border border-gray-200"
-                data-oid="uv1bt6f"
+                data-oid="wcai_xo"
               >
                 <h3
                   className="font-semibold text-xl text-gray-900 mb-3"
-                  data-oid="6_7s.9m"
+                  data-oid="yfw7e2o"
                 >
                   Tranquilidad garantizada
                 </h3>
-                <p className="text-gray-600" data-oid="az:nki-">
+                <p className="text-gray-600" data-oid="1q9sflg">
                   Con nuestra garantía de servicio, puede estar seguro de que su
                   evento transcurrirá sin contratiempos, permitiéndole
                   concentrarse en los momentos que realmente importan.
@@ -668,64 +668,64 @@ const SpecialEvents = () => {
               </div>
             </div>
 
-            <div data-oid="9vnagno">
+            <div data-oid="9ec1.y4">
               <img
                 src="/images/wedding2.jpeg"
                 alt="Pareja elegante entrando a un vehículo premium con chófer"
                 className="w-full h-auto rounded-xl shadow-lg object-cover mb-8"
-                data-oid="3sscvyo"
+                data-oid="9y6p:m."
               />
 
               <img
                 src="/images/suv-limo.png"
                 alt="Chófer profesional abriendo la puerta de un vehículo de lujo"
                 className="w-full h-auto rounded-xl shadow-lg object-cover"
-                data-oid="b5-txd7"
+                data-oid="vnm-t4v"
               />
             </div>
           </div>
         </section>
 
         {/* Testimonials */}
-        <section className="mb-20" data-oid="q4fe5v3">
+        <section className="mb-20" data-oid="vyp.yiw">
           <h2
             className="text-3xl font-bold text-center text-gray-900 mb-12 relative"
-            data-oid="--:h0:r"
+            data-oid="09ol02h"
           >
             Lo que dicen nuestros clientes
             <span
               className="block w-24 h-1 bg-black mx-auto mt-4"
-              data-oid="1ev-.7:"
+              data-oid="0btdk_1"
             ></span>
           </h2>
 
           <div
             className="grid grid-cols-1 md:grid-cols-3 gap-8"
-            data-oid="xmikkys"
+            data-oid="5s1lsbu"
           >
             {testimonials.map((testimonial, index) => (
               <div
                 key={index}
                 className="bg-white p-6 rounded-xl border border-gray-200 shadow-sm"
-                data-oid="3o9telv"
+                data-oid="b9nzeiu"
               >
-                <div className="flex items-center mb-4" data-oid="zs1hznr">
+                <div className="flex items-center mb-4" data-oid="myzslq7">
                   {[...Array(testimonial.stars)].map((_, i) => (
                     <Star
                       key={i}
                       className="w-5 h-5 text-gray-400 fill-current"
-                      data-oid="a2wz6k-"
+                      data-oid="qbeq:gu"
                     />
                   ))}
                 </div>
-                <p className="text-gray-600 mb-4 italic" data-oid="hp12c3y">
+                <p className="text-gray-600 mb-4 italic" data-oid="auzu7:d">
                   "{testimonial.text}"
                 </p>
-                <div data-oid="hpzewxb">
-                  <p className="font-semibold text-gray-900" data-oid="5s67yzu">
+                <div data-oid="yuto568">
+                  <p className="font-semibold text-gray-900" data-oid="czw1w91">
                     {testimonial.name}
                   </p>
-                  <p className="text-gray-500 text-sm" data-oid="7cl6ocl">
+                  <p className="text-gray-500 text-sm" data-oid=".3pufoy">
                     {testimonial.event}
                   </p>
                 </div>
@@ -735,44 +735,44 @@ const SpecialEvents = () => {
         </section>
 
         {/* FAQ Section */}
-        <section className="mb-20" data-oid=":5fd421">
+        <section className="mb-20" data-oid="876.:5o">
           <h2
             className="text-3xl font-bold text-center text-gray-900 mb-12 relative"
-            data-oid="emgc9so"
+            data-oid="hmhbvtn"
           >
             Preguntas frecuentes sobre eventos especiales
             <span
               className="block w-24 h-1 bg-black mx-auto mt-4"
-              data-oid="wuchs1g"
+              data-oid="0-i-9am"
             ></span>
           </h2>
 
-          <div className="space-y-4 max-w-4xl mx-auto" data-oid="k7ke_.x">
+          <div className="space-y-4 max-w-4xl mx-auto" data-oid="dn_a.tl">
             {faqData.map((faq, index) => (
               <div
                 key={index}
                 className={`bg-white rounded-xl border ${openFaqIndex === index ? "border-gray-200 shadow-md" : "border-gray-200"} overflow-hidden transition-all duration-300`}
-                data-oid="98in3pv"
+                data-oid="ye2a0ai"
               >
                 <button
                   className="flex justify-between items-center w-full p-6 text-left"
                   onClick={() => toggleFaq(index)}
-                  data-oid="2zrlqbs"
+                  data-oid="nwv:a29"
                 >
                   <h3
                     className={`text-xl font-semibold ${openFaqIndex === index ? "text-gray-600" : "text-gray-900"}`}
-                    data-oid="i9069c5"
+                    data-oid=":0uk416"
                   >
                     {faq.question}
                   </h3>
                   <div
                     className={`${openFaqIndex === index ? "text-black bg-gray-100" : "text-gray-400 bg-gray-50"} rounded-full p-1 transition-colors duration-300`}
-                    data-oid="qkb22._"
+                    data-oid="in_02ud"
                   >
                     {openFaqIndex === index ? (
-                      <ChevronUp className="h-5 w-5" data-oid="gfu09ul" />
+                      <ChevronUp className="h-5 w-5" data-oid="geqdfr9" />
                     ) : (
-                      <ChevronDown className="h-5 w-5" data-oid="g.b:8r:" />
+                      <ChevronDown className="h-5 w-5" data-oid="bqm7e:k" />
                     )}
                   </div>
                 </button>
@@ -782,12 +782,12 @@ const SpecialEvents = () => {
                       ? "max-h-[1000px] opacity-100"
                       : "max-h-0 opacity-0 overflow-hidden"
                   }`}
-                  data-oid="9vi_p2c"
+                  data-oid="dhskeyj"
                 >
-                  <div className="px-6 pb-6 pt-0" data-oid="2p67bx8">
+                  <div className="px-6 pb-6 pt-0" data-oid="k77djlh">
                     <div
                       className="border-t border-gray-200 pt-4 text-left"
-                      data-oid="llz4gtr"
+                      data-oid="b4fza7j"
                     >
                       {faq.answer}
                     </div>
@@ -801,32 +801,32 @@ const SpecialEvents = () => {
         {/* CTA Section */}
         <section
           className="mb-20 bg-gray-900 text-white rounded-xl overflow-hidden"
-          data-oid="i3sxrg5"
+          data-oid="mrcddzc"
         >
-          <div className="grid grid-cols-1 md:grid-cols-2" data-oid="2fs98o.">
+          <div className="grid grid-cols-1 md:grid-cols-2" data-oid="m4imddp">
             <div
               className="p-8 lg:p-12 flex flex-col justify-center"
-              data-oid="d134njk"
+              data-oid="babq.af"
             >
-              <h2 className="text-3xl font-bold mb-6" data-oid="jcsv6fk">
+              <h2 className="text-3xl font-bold mb-6" data-oid="b84p7cy">
                 Haga que su próximo evento sea excepcional
               </h2>
-              <p className="text-lg text-gray-300 mb-8" data-oid="4dl33wp">
+              <p className="text-lg text-gray-300 mb-8" data-oid="i.1q451">
                 Nuestro equipo de especialistas en eventos está listo para
                 ayudarle a planificar el transporte perfecto para su ocasión
                 especial. Reserve ahora o contáctenos para un servicio
                 personalizado.
               </p>
-              <div className="flex flex-wrap gap-4" data-oid="gxjnxjv">
+              <div className="flex flex-wrap gap-4" data-oid="gmnmprp">
                 <button
                   className="bg-gray-1000 hover:bg-black text-white py-3 px-6 rounded-lg font-medium transition-all duration-200"
-                  data-oid="2or2r57"
+                  data-oid="btxtevo"
                 >
                   Reservar ahora
                 </button>
                 <button
                   className="bg-transparent border border-white hover:bg-white hover:text-gray-900 text-white py-3 px-6 rounded-lg font-medium transition-all duration-200"
-                  data-oid="32rxna4"
+                  data-oid="99x4jr7"
                 >
                   Solicitar presupuesto
                 </button>
@@ -834,13 +834,13 @@ const SpecialEvents = () => {
             </div>
             <div
               className="relative min-h-[300px] md:min-h-full"
-              data-oid="bwwms8c"
+              data-oid="h4bdwdx"
             >
               <img
                 src="/images/limo-leds.png"
                 alt="Limusina elegante preparada para un evento especial"
                 className="absolute inset-0 w-full h-full object-cover"
-                data-oid="yxfqvdo"
+                data-oid=".u7wmx_"
               />
             </div>
           </div>
@@ -848,7 +848,7 @@ const SpecialEvents = () => {
       </div>
 
       {/* Footer */}
-      <Footer data-oid="4knam.j" />
+      <Footer data-oid="qzmm:gp" />
     </div>
   );
 };

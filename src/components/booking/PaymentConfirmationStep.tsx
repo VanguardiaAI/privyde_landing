@@ -199,17 +199,17 @@ export default function PaymentConfirmationStep({
   // Verificar que sessionData no sea undefined o null
   if (!initializedData) {
     return (
-      <Card className="max-w-3xl mx-auto shadow-sm" data-oid="gg1w9hw">
-        <CardContent className="p-6 text-center" data-oid="-2ywbvm">
+      <Card className="max-w-3xl mx-auto shadow-sm" data-oid="a5_7h_a">
+        <CardContent className="p-6 text-center" data-oid="r1u4r:t">
           <AlertCircle
             className="h-10 w-10 text-black mx-auto mb-4"
-            data-oid="oft0u36"
+            data-oid="22lyixp"
           />
 
-          <h3 className="font-semibold text-lg mb-2" data-oid="8si7db0">
+          <h3 className="font-semibold text-lg mb-2" data-oid="zrv9mx_">
             Error de datos
           </h3>
-          <p className="text-gray-600 mb-4" data-oid="hb:nj97">
+          <p className="text-gray-600 mb-4" data-oid=":prf9j-">
             No se han podido cargar los datos de la sesión
           </p>
         </CardContent>
@@ -235,20 +235,20 @@ export default function PaymentConfirmationStep({
   // Mostrar indicador de carga mientras se confirma la reserva
   if (confirmingBooking) {
     return (
-      <Card className="max-w-3xl mx-auto shadow-sm" data-oid="fqykbql">
+      <Card className="max-w-3xl mx-auto shadow-sm" data-oid="prb6672">
         <CardContent
           className="p-6 flex flex-col items-center justify-center min-h-[400px]"
-          data-oid="uapas9d"
+          data-oid="g_ieql6"
         >
           <Loader2
             className="h-12 w-12 animate-spin text-primary mb-4"
-            data-oid="f:l2:gi"
+            data-oid="et51bi-"
           />
 
-          <h2 className="text-xl font-semibold mb-2" data-oid="7mie8w5">
+          <h2 className="text-xl font-semibold mb-2" data-oid="jps_m6.">
             Confirmando su reserva
           </h2>
-          <p className="text-gray-500" data-oid=".rfqymh">
+          <p className="text-gray-500" data-oid="q6jcvls">
             Estamos procesando los detalles de su reserva. Por favor, espere un
             momento...
           </p>
@@ -260,33 +260,33 @@ export default function PaymentConfirmationStep({
   // Mostrar mensaje de error si la confirmación falló
   if (error) {
     return (
-      <Card className="max-w-3xl mx-auto shadow-sm" data-oid="4-pf9u1">
+      <Card className="max-w-3xl mx-auto shadow-sm" data-oid="1l8jlci">
         <CardContent
           className="p-6 flex flex-col items-center justify-center min-h-[400px]"
-          data-oid="t2k6xef"
+          data-oid=".wo9a5c"
         >
-          <XCircle className="h-12 w-12 text-black mb-4" data-oid="lj1k4ew" />
-          <h2 className="text-xl font-semibold mb-2" data-oid="usagso3">
+          <XCircle className="h-12 w-12 text-black mb-4" data-oid="-pw4sae" />
+          <h2 className="text-xl font-semibold mb-2" data-oid="yomjkxf">
             Error al confirmar la reserva
           </h2>
-          <p className="text-gray-500 mb-4" data-oid="ns-rp_b">
+          <p className="text-gray-500 mb-4" data-oid="7di6t2i">
             {error}
           </p>
-          <div className="flex gap-4" data-oid="xo09lo:">
+          <div className="flex gap-4" data-oid="rt9jpeb">
             <button
               onClick={handleRetryPayment}
               className="flex items-center justify-center gap-2 bg-primary text-white rounded-md py-2 px-4 hover:bg-primary/90 transition-colors"
-              data-oid="o2.u:py"
+              data-oid="4ghmkbh"
             >
-              <CreditCard className="h-4 w-4" data-oid="psibcux" />
-              <span data-oid="n6pefyu">Reintentar pago</span>
+              <CreditCard className="h-4 w-4" data-oid="z9_g_75" />
+              <span data-oid="0s95qoe">Reintentar pago</span>
             </button>
             <button
               onClick={handleBackToHome}
               className="flex items-center justify-center gap-2 border border-gray-300 rounded-md py-2 px-4 hover:bg-gray-50 transition-colors"
-              data-oid="00h-z.a"
+              data-oid="vm:dkcq"
             >
-              <span data-oid=":8d55.w">Volver al inicio</span>
+              <span data-oid="wb2u7jm">Volver al inicio</span>
             </button>
           </div>
         </CardContent>
@@ -296,94 +296,94 @@ export default function PaymentConfirmationStep({
 
   // Mostrar la confirmación de reserva exitosa
   return (
-    <Card className="max-w-3xl mx-auto shadow-sm" data-oid="0_jqkf-">
-      <CardContent className="p-0" data-oid="hmvy2cx">
+    <Card className="max-w-3xl mx-auto shadow-sm" data-oid="9f649ry">
+      <CardContent className="p-0" data-oid="8q8._.c">
         {/* Cabecera con estado de confirmación */}
         <div
           className="bg-emerald-50 p-6 rounded-t-lg flex flex-col items-center justify-center border-b border-emerald-100"
-          data-oid="f8oyndq"
+          data-oid="5.szy:k"
         >
           <CheckCircle
             className="h-14 w-14 text-emerald-500 mb-4"
-            data-oid="2ywbico"
+            data-oid="t1oulb8"
           />
 
-          <h2 className="text-xl font-semibold mb-1" data-oid="7dp9dsd">
+          <h2 className="text-xl font-semibold mb-1" data-oid="737ckp1">
             ¡Reserva confirmada!
           </h2>
-          <p className="text-emerald-700" data-oid="pv3egoe">
+          <p className="text-emerald-700" data-oid="n6-y3v.">
             Hemos enviado los detalles a su correo electrónico
           </p>
         </div>
 
         {/* Información de la reserva */}
-        <div className="p-6" data-oid="wuin0l1">
-          <div className="mb-6" data-oid="5s0l7gm">
-            <h3 className="text-lg font-semibold mb-3" data-oid="r_ugw9l">
+        <div className="p-6" data-oid="y3ja2d5">
+          <div className="mb-6" data-oid="41a2qc5">
+            <h3 className="text-lg font-semibold mb-3" data-oid="0-fn_:z">
               Información de recogida
             </h3>
 
-            <div className="grid gap-3" data-oid="kq_fhrs">
-              <div className="flex gap-3 items-start" data-oid="zwrw311">
-                <div className="bg-gray-100 p-2 rounded-md" data-oid="f11zu.c">
+            <div className="grid gap-3" data-oid="mw4sxot">
+              <div className="flex gap-3 items-start" data-oid="tszv.2-">
+                <div className="bg-gray-100 p-2 rounded-md" data-oid="vy.d:t4">
                   <CarFront
                     className="h-5 w-5 text-gray-600"
-                    data-oid="yl.smfa"
+                    data-oid="76j0pwu"
                   />
                 </div>
-                <div data-oid="4-:i07f">
-                  <p className="font-medium" data-oid="eb_:7o.">
+                <div data-oid="mac.qgs">
+                  <p className="font-medium" data-oid="awryefo">
                     {vehicleName}
                   </p>
-                  <p className="text-sm text-gray-600" data-oid="0hh9p._">
+                  <p className="text-sm text-gray-600" data-oid="vshhtgc">
                     {bookingReference}
                   </p>
                 </div>
               </div>
 
-              <div className="flex gap-3 items-start" data-oid="naw89b5">
-                <div className="bg-gray-100 p-2 rounded-md" data-oid="3mdkke6">
+              <div className="flex gap-3 items-start" data-oid="cr-z589">
+                <div className="bg-gray-100 p-2 rounded-md" data-oid="dq92785">
                   <CalendarClock
                     className="h-5 w-5 text-gray-600"
-                    data-oid="x4b_9.l"
+                    data-oid="yzl.:j:"
                   />
                 </div>
-                <div data-oid="_8t:4zp">
-                  <p className="font-medium" data-oid="owuyyid">
+                <div data-oid="b1a-9us">
+                  <p className="font-medium" data-oid="_uzov99">
                     {tripDate}
                   </p>
-                  <p className="text-sm text-gray-600" data-oid=":fcr3y7">
+                  <p className="text-sm text-gray-600" data-oid="8a-ziqw">
                     A las {tripTime} (CEST)
                   </p>
                 </div>
               </div>
 
-              <div className="flex gap-3 items-start" data-oid=":.6_x8m">
+              <div className="flex gap-3 items-start" data-oid="y941iju">
                 <div
                   className="bg-gray-100 p-2 rounded-md flex items-center justify-center"
-                  data-oid="3r71q4x"
+                  data-oid="5-ulv44"
                 >
                   <div
                     className="h-5 w-5 flex items-center justify-center font-semibold text-gray-600"
-                    data-oid="xzb0aaf"
+                    data-oid="s0drf5o"
                   >
                     A
                   </div>
                 </div>
-                <div data-oid="eir5bl_">
-                  <p className="font-medium" data-oid="sf:uqft">
+                <div data-oid="rgjl391">
+                  <p className="font-medium" data-oid="x62cljx">
                     {originName}
                   </p>
                   {initializedData.tripType === "ida" && estimatedArrival && (
-                    <div className="flex items-center mt-1" data-oid="exmde4-">
+                    <div className="flex items-center mt-1" data-oid="v3zrky:">
                       <ChevronRight
                         className="h-4 w-4 text-gray-400"
-                        data-oid="a3_0r4o"
+                        data-oid="ha.f0z4"
                       />
 
                       <p
                         className="font-medium text-sm ml-1"
-                        data-oid="481jj1."
+                        data-oid="13hlw.f"
                       >
                         {destinationName}
                       </p>
@@ -392,7 +392,7 @@ export default function PaymentConfirmationStep({
                   {initializedData.tripType === "ida" && estimatedArrival && (
                     <p
                       className="text-xs text-gray-500 mt-1"
-                      data-oid="5-hpm6f"
+                      data-oid="9v.o2:o"
                     >
                       Hora aproximada de llegada a las {estimatedArrival}{" "}
                       (GMT+2) • {distance} km
@@ -405,21 +405,21 @@ export default function PaymentConfirmationStep({
 
           <div
             className="border-t border-gray-200 pt-5 mb-6"
-            data-oid="dh150sl"
+            data-oid="dit.2y:"
           >
-            <h3 className="text-lg font-semibold mb-3" data-oid="1jb5vj3">
+            <h3 className="text-lg font-semibold mb-3" data-oid="0kw:jn0">
               Pasajero
             </h3>
-            <p className="mb-1 font-medium" data-oid="qsyldmr">
+            <p className="mb-1 font-medium" data-oid="viqk1i.">
               {passengerName}
             </p>
             {initializedData.passenger_details?.flight_number && (
-              <p className="text-sm text-gray-600 mb-1" data-oid="ftd6:4-">
+              <p className="text-sm text-gray-600 mb-1" data-oid="lvlmgpw">
                 Vuelo: {initializedData.passenger_details.flight_number}
               </p>
             )}
             {initializedData.passenger_details?.notes && (
-              <p className="text-sm text-gray-600 mb-1" data-oid="j0wilrd">
+              <p className="text-sm text-gray-600 mb-1" data-oid="b5770f-">
                 Comentarios: {initializedData.passenger_details.notes}
               </p>
             )}
@@ -427,48 +427,48 @@ export default function PaymentConfirmationStep({
 
           <div
             className="border-t border-gray-200 pt-5 mb-6"
-            data-oid="bcwaxmk"
+            data-oid="qu0e0hp"
           >
-            <h3 className="text-lg font-semibold mb-3" data-oid="1s.5ue9">
+            <h3 className="text-lg font-semibold mb-3" data-oid="ydcjck4">
               Pago
             </h3>
             <div
               className="flex justify-between items-center mb-2"
-              data-oid="q:dy460"
+              data-oid="k6:zthl"
             >
-              <span className="text-gray-600" data-oid=".3-f:jx">
+              <span className="text-gray-600" data-oid="7tbsxev">
                 Método:
               </span>
-              <div className="flex items-center" data-oid="e1krvff">
-                <span data-oid="f334lvw">
+              <div className="flex items-center" data-oid="hh164pd">
+                <span data-oid="0gt6y3x">
                   Tarjeta que termina en {lastFourDigits}
                 </span>
               </div>
             </div>
             <div
               className="flex justify-between items-center mb-2"
-              data-oid="ggco_t-"
+              data-oid="yjn-61."
             >
-              <span className="text-gray-600" data-oid="cgbq7n8">
+              <span className="text-gray-600" data-oid="17drp0h">
                 Estado:
               </span>
-              <div className="flex items-center" data-oid="3pdv8mg">
+              <div className="flex items-center" data-oid="bz2p178">
                 {paymentStatus === "succeeded" ? (
                   <span
                     className="flex items-center text-emerald-600"
-                    data-oid="2n1.c-_"
+                    data-oid="ves-4pa"
                   >
-                    <CheckCircle className="h-4 w-4 mr-1" data-oid="w43-4-q" />
+                    <CheckCircle className="h-4 w-4 mr-1" data-oid="h2qv82v" />
                     Completado
                   </span>
                 ) : (
                   <span
                     className="flex items-center text-amber-600"
-                    data-oid="19xfkhc"
+                    data-oid="3:-17nq"
                   >
                     <span
                       className="w-2 h-2 rounded-full bg-amber-500 mr-2"
-                      data-oid="5y_6suz"
+                      data-oid="29b:zyh"
                     ></span>
                     Pendiente
                   </span>
@@ -477,73 +477,73 @@ export default function PaymentConfirmationStep({
             </div>
             <div
               className="flex justify-between items-center mb-2"
-              data-oid="04ph-6u"
+              data-oid="sy7d78n"
             >
-              <span className="text-gray-600" data-oid="74y4-_j">
+              <span className="text-gray-600" data-oid="nei97f0">
                 Importe total:
               </span>
-              <span className="font-semibold" data-oid="fjc_zco">
+              <span className="font-semibold" data-oid="4dig6b7">
                 {totalPrice.toFixed(2)} €
               </span>
             </div>
           </div>
 
-          <div className="border-t border-gray-200 pt-5" data-oid="3ln:y57">
-            <div className="flex flex-col gap-3" data-oid="g0py.n1">
+          <div className="border-t border-gray-200 pt-5" data-oid="nz6i54j">
+            <div className="flex flex-col gap-3" data-oid="0m8--f:">
               <button
                 onClick={handleDownloadReceipt}
                 className="flex justify-between items-center w-full bg-gray-50 border border-gray-200 rounded-md py-3 px-4 hover:bg-gray-100 transition-colors"
-                data-oid="_.zu7hy"
+                data-oid=":5lxw57"
               >
-                <div className="flex items-center gap-2" data-oid="qel4r8a">
+                <div className="flex items-center gap-2" data-oid="9.fgh8b">
                   <Download
                     className="h-5 w-5 text-gray-600"
-                    data-oid="4fpe6a:"
+                    data-oid="3ky4-l3"
                   />
 
-                  <span data-oid="s3jzz1g">Descargar recibo</span>
+                  <span data-oid="_ri3gt1">Descargar recibo</span>
                 </div>
                 <ChevronRight
                   className="h-5 w-5 text-gray-400"
-                  data-oid="6jao4f:"
+                  data-oid="1h9n_ni"
                 />
               </button>
 
               <button
                 onClick={handleShare}
                 className="flex justify-between items-center w-full bg-gray-50 border border-gray-200 rounded-md py-3 px-4 hover:bg-gray-100 transition-colors"
-                data-oid="1619upc"
+                data-oid="qmesred"
               >
-                <div className="flex items-center gap-2" data-oid="59sftkf">
+                <div className="flex items-center gap-2" data-oid="vzv1gkt">
                   <Share2
                     className="h-5 w-5 text-gray-600"
-                    data-oid="y3h_z.l"
+                    data-oid="omm62v1"
                   />
 
-                  <span data-oid="9kt-2tv">Compartir detalles</span>
+                  <span data-oid="qx4dljp">Compartir detalles</span>
                 </div>
                 <ChevronRight
                   className="h-5 w-5 text-gray-400"
-                  data-oid="7anc19h"
+                  data-oid="kx4-wzm"
                 />
               </button>
 
               {showShareOptions && (
-                <div className="grid grid-cols-2 gap-3 mt-2" data-oid="vzvti5a">
+                <div className="grid grid-cols-2 gap-3 mt-2" data-oid="vt3i_bz">
                   <button
                     className="flex items-center gap-2 justify-center border border-gray-200 rounded-md py-3 px-4 hover:bg-gray-50 transition-colors"
                     onClick={() => {
                       navigator.clipboard.writeText(window.location.href);
                       alert("Enlace copiado al portapapeles");
                     }}
-                    data-oid=":zsvr5a"
+                    data-oid="r4c2ran"
                   >
                     <Copy
                       className="h-4 w-4 text-gray-600"
-                      data-oid="joydgqw"
+                      data-oid=".2-4bd7"
                     />
 
-                    <span data-oid="xt_q310">Copiar enlace</span>
+                    <span data-oid="wkp1syy">Copiar enlace</span>
                   </button>
 
                   <a
@@ -551,9 +551,9 @@ export default function PaymentConfirmationStep({
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 justify-center bg-[#25D366] text-white rounded-md py-3 px-4 hover:bg-[#128C7E] transition-colors"
-                    data-oid="h05n4vl"
+                    data-oid="8hjwctv"
                   >
-                    <span data-oid="n_gjcpi">WhatsApp</span>
+                    <span data-oid="017-j_0">WhatsApp</span>
                   </a>
                 </div>
               )}
@@ -561,9 +561,9 @@ export default function PaymentConfirmationStep({
               <button
                 onClick={handleBackToHome}
                 className="flex items-center justify-center gap-2 mt-2 w-full bg-primary text-white rounded-md py-3 px-4 hover:bg-primary/90 transition-colors"
-                data-oid=".c-_inq"
+                data-oid="xs:4mqn"
               >
-                <span data-oid="grghj1v">Volver a inicio</span>
+                <span data-oid="gtg69wg">Volver a inicio</span>
               </button>
             </div>
           </div>

@@ -80,23 +80,23 @@ const DetailRow: React.FC<{
   value: React.ReactNode;
   className?: string;
 }> = ({ icon, label, value, className }) => (
-  <div className={cn("flex items-start py-2.5", className)} data-oid="utbcv97">
+  <div className={cn("flex items-start py-2.5", className)} data-oid="pskknfs">
     <span
       className="text-gray-600 mr-2 mt-0.5 flex-shrink-0"
-      data-oid="hlpr1y7"
+      data-oid="fipo-4n"
     >
       {icon}
     </span>
-    <div className="flex-1" data-oid="timglib">
+    <div className="flex-1" data-oid="ttg:tf0">
       <p
         className="text-sm font-medium text-gray-500 text-left"
-        data-oid="5h_yg2u"
+        data-oid="8t9mrcu"
       >
         {label}
       </p>
       <div
         className="text-md text-gray-800 mt-0.5 text-left"
-        data-oid="_on3th8"
+        data-oid="5fxe1ou"
       >
         {value || "-"}
       </div>
@@ -112,18 +112,18 @@ const DetailSection: React.FC<{
 }> = ({ title, icon, children, className }) => (
   <div
     className={cn("border rounded-lg p-5 bg-white shadow-sm", className)}
-    data-oid="l:pa43z"
+    data-oid="otsdu84"
   >
     <h4
       className="text-md font-semibold text-gray-700 mb-4 flex items-center border-b pb-2"
-      data-oid="fikm3u_"
+      data-oid="acenxfe"
     >
       {icon}
-      <span className="ml-2" data-oid="ngt.sh5">
+      <span className="ml-2" data-oid="qlsng8r">
         {title}
       </span>
     </h4>
-    <div className="space-y-1" data-oid="_1-c1_9">
+    <div className="space-y-1" data-oid="zmjd-ay">
       {children}
     </div>
   </div>
@@ -152,13 +152,13 @@ const VehicleDetailsView: React.FC<VehicleDetailsViewProps> = ({
       return "-";
     }
     return (
-      <div className="flex flex-wrap gap-2" data-oid="l3rns1j">
+      <div className="flex flex-wrap gap-2" data-oid="lw52j1f">
         {vehicle.associatedDrivers.map((driver, index) => (
           <Badge
             key={index}
             variant="secondary"
             className="bg-gray-200 text-gray-700"
-            data-oid="x5uvm86"
+            data-oid="z2q6e95"
           >
             {driver} {/* Asumimos que son nombres o IDs legibles */}
           </Badge>
@@ -181,13 +181,13 @@ const VehicleDetailsView: React.FC<VehicleDetailsViewProps> = ({
     };
 
     return (
-      <div className="flex flex-wrap gap-2" data-oid="_dwhnty">
+      <div className="flex flex-wrap gap-2" data-oid="js_fvyl">
         {vehicle.availabilityType.map((type, index) => (
           <Badge
             key={index}
             variant="secondary"
             className="bg-gray-200 text-gray-700"
-            data-oid="xtunbr0"
+            data-oid="f2pjv-3"
           >
             {availabilityLabels[type] ||
               type.charAt(0).toUpperCase() + type.slice(1)}
@@ -202,13 +202,13 @@ const VehicleDetailsView: React.FC<VehicleDetailsViewProps> = ({
       return "-";
     }
     return (
-      <div className="flex flex-wrap gap-2" data-oid="wo1s02n">
+      <div className="flex flex-wrap gap-2" data-oid="u98orap">
         {vehicle.details.features.map((feature, index) => (
           <Badge
             key={index}
             variant="secondary"
             className="bg-gray-200 text-gray-700"
-            data-oid="55:4a_x"
+            data-oid="x7rchen"
           >
             {feature}
           </Badge>
@@ -220,96 +220,96 @@ const VehicleDetailsView: React.FC<VehicleDetailsViewProps> = ({
   return (
     <div
       className="fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center z-50 p-4 overflow-y-auto"
-      data-oid="vz:d:-s"
+      data-oid="hx8n2nw"
     >
       <div
         className="bg-gray-50 rounded-xl shadow-2xl w-full max-w-4xl max-h-[90vh] overflow-y-auto"
-        data-oid="upx0gcc"
+        data-oid="clo9ksh"
       >
         {/* Header */}
         <div
           className="flex justify-between items-center p-5 border-b border-gray-200 bg-white sticky top-0 z-10"
-          data-oid="v_bihy."
+          data-oid="kbx-rfv"
         >
-          <div className="flex items-center" data-oid="2dquy14">
-            <div className="bg-gray-100 p-2 rounded-lg mr-3" data-oid="s6kpck0">
-              <Car size={24} className="text-gray-600" data-oid="5a7z6kt" />
+          <div className="flex items-center" data-oid="vlryf-x">
+            <div className="bg-gray-100 p-2 rounded-lg mr-3" data-oid="6af::f7">
+              <Car size={24} className="text-gray-600" data-oid="2erxcnr" />
             </div>
-            <div data-oid="lau_l-o">
+            <div data-oid="ad5cz8t">
               <h2
                 className="text-xl font-semibold text-gray-800"
-                data-oid="k12y4ff"
+                data-oid="ce8w_09"
               >
                 {vehicle.brand} {vehicle.model}
               </h2>
-              <p className="text-sm text-gray-500" data-oid="p7klzdy">
+              <p className="text-sm text-gray-500" data-oid="z7dz4cg">
                 ID: {vehicle.id.substring(0, 8)}
               </p>
             </div>
           </div>
-          <div className="flex items-center space-x-2" data-oid="6z1wxyo">
+          <div className="flex items-center space-x-2" data-oid="6uz:aan">
             <Button
               variant="outline"
               size="sm"
               onClick={() => onEdit(vehicle)}
               className="flex items-center"
-              data-oid="n034rkn"
+              data-oid="r400eu9"
             >
-              <Edit3 size={16} className="mr-2" data-oid="usc8vqy" /> Editar
+              <Edit3 size={16} className="mr-2" data-oid="23_5i3n" /> Editar
             </Button>
             <Button
               variant="ghost"
               size="icon"
               onClick={onClose}
               className="text-gray-500 hover:text-gray-700"
-              data-oid="i82zxqn"
+              data-oid="l7fgrlg"
             >
-              <X size={24} data-oid="uoaas2e" />
+              <X size={24} data-oid="bhsd3zd" />
             </Button>
           </div>
         </div>
 
         {/* Content */}
-        <div className="px-6 py-5" data-oid="1vtoyq3">
+        <div className="px-6 py-5" data-oid="6ahd:wt">
           {/* Imagen y estado */}
           <div
             className="flex flex-col md:flex-row gap-6 mb-6"
-            data-oid=":8rgcmk"
+            data-oid="8x8ahqw"
           >
             {vehicle.image ? (
               <div
                 className="w-full md:w-1/2 h-48 rounded-lg overflow-hidden bg-white border shadow-sm"
-                data-oid="unb:_.f"
+                data-oid="4o.fl-d"
               >
                 <img
                   src={vehicle.image}
                   alt={`${vehicle.brand} ${vehicle.model}`}
                   className="w-full h-full object-cover"
-                  data-oid="qqqszl."
+                  data-oid="0tdryhk"
                 />
               </div>
             ) : (
               <div
                 className="w-full md:w-1/2 h-48 rounded-lg bg-gray-100 flex items-center justify-center border"
-                data-oid="lpdr_:m"
+                data-oid="o0:9.zy"
               >
-                <Car size={64} className="text-gray-300" data-oid="st9:_dk" />
+                <Car size={64} className="text-gray-300" data-oid="--h0t:w" />
               </div>
             )}
             <div
               className="w-full md:w-1/2 p-5 border rounded-lg bg-white shadow-sm"
-              data-oid="u_kfuvj"
+              data-oid="hji61e5"
             >
               <div
                 className="flex justify-between items-center mb-4"
-                data-oid="shx9q.j"
+                data-oid="s23zzmx"
               >
                 <h3
                   className="text-lg font-semibold text-gray-800"
-                  data-oid="1ke:xgd"
+                  data-oid="d:c_xm."
                 >
                   {vehicle.brand} {vehicle.model}{" "}
-                  <span className="text-gray-500" data-oid="7a-2i.t">
+                  <span className="text-gray-500" data-oid="y3br4f:">
                     ({vehicle.year})
                   </span>
                 </h3>
@@ -320,47 +320,47 @@ const VehicleDetailsView: React.FC<VehicleDetailsViewProps> = ({
                       ? "bg-gray-200 text-green-700"
                       : "bg-gray-200 text-gray-700"
                   }
-                  data-oid="htiisr:"
+                  data-oid="q5dv-jm"
                 >
                   {vehicle.available ? "Disponible" : "No Disponible"}
                 </Badge>
               </div>
-              <div className="grid grid-cols-2 gap-4" data-oid="7v94-:.">
+              <div className="grid grid-cols-2 gap-4" data-oid="cnxd5t2">
                 <DetailRow
-                  icon={<Car size={16} data-oid="6:2pold" />}
+                  icon={<Car size={16} data-oid="kn_t12v" />}
                   label="Matrícula"
                   value={
-                    <span className="font-mono" data-oid="1kcte9n">
+                    <span className="font-mono" data-oid="sflr72l">
                       {vehicle.licensePlate}
                     </span>
                   }
-                  data-oid="xp2cjml"
+                  data-oid="8ua1f.g"
                 />
 
                 <DetailRow
-                  icon={<Tag size={16} data-oid="vj8las0" />}
+                  icon={<Tag size={16} data-oid="vxwe21i" />}
                   label="Tipo"
                   value={
                     vehicle.type.charAt(0).toUpperCase() + vehicle.type.slice(1)
                   }
-                  data-oid="e.2eow7"
+                  data-oid="vj1f4c9"
                 />
 
                 <DetailRow
-                  icon={<Tag size={16} data-oid=".uvtpf3" />}
+                  icon={<Tag size={16} data-oid="w1hft7r" />}
                   label="Categoría"
                   value={
                     vehicle.category.charAt(0).toUpperCase() +
                     vehicle.category.slice(1)
                   }
-                  data-oid="4wrktgl"
+                  data-oid="irytsjj"
                 />
 
                 <DetailRow
-                  icon={<Info size={16} data-oid="ayl7kcf" />}
+                  icon={<Info size={16} data-oid="4l:.qcz" />}
                   label="Color"
                   value={vehicle.color}
-                  data-oid="iz6n10y"
+                  data-oid="c6:lfoi"
                 />
               </div>
             </div>
@@ -371,34 +371,34 @@ const VehicleDetailsView: React.FC<VehicleDetailsViewProps> = ({
             value={activeTab}
             onValueChange={setActiveTab}
             className="w-full"
-            data-oid="v2n54fk"
+            data-oid=".b.b5_1"
           >
-            <TabsList className="grid grid-cols-4 mb-6" data-oid="2amu9t2">
+            <TabsList className="grid grid-cols-4 mb-6" data-oid="73khhel">
               <TabsTrigger
                 value="general"
                 className="bg-white"
-                data-oid="c6qvq9o"
+                data-oid="gsev0tp"
               >
                 Información General
               </TabsTrigger>
               <TabsTrigger
                 value="features"
                 className="bg-white"
-                data-oid="rlb.qc-"
+                data-oid="kyqgejh"
               >
                 Características
               </TabsTrigger>
               <TabsTrigger
                 value="logistics"
                 className="bg-white"
-                data-oid="5-j2cho"
+                data-oid="9h83cto"
               >
                 Logística
               </TabsTrigger>
               <TabsTrigger
                 value="business"
                 className="bg-white"
-                data-oid="7r5493:"
+                data-oid="y-yrzo."
               >
                 Información Comercial
               </TabsTrigger>
@@ -408,11 +408,11 @@ const VehicleDetailsView: React.FC<VehicleDetailsViewProps> = ({
             <TabsContent
               value="general"
               className="space-y-6"
-              data-oid="t_usxm."
+              data-oid="mvi-5il"
             >
               <div
                 className="grid grid-cols-1 md:grid-cols-2 gap-6"
-                data-oid="my5:x27"
+                data-oid="we7z.ka"
               >
                 <DetailSection
                   title="Información Básica"
@@ -420,32 +420,32 @@ const VehicleDetailsView: React.FC<VehicleDetailsViewProps> = ({
                     <Info
                       size={18}
                       className="text-gray-600"
-                      data-oid=":3kyl6f"
+                      data-oid="m5gwq-c"
                     />
                   }
-                  data-oid="ttscga8"
+                  data-oid="3uwt9p0"
                 >
-                  <div className="grid grid-cols-1 gap-y-3" data-oid="cdrj_84">
+                  <div className="grid grid-cols-1 gap-y-3" data-oid="kue1:or">
                     <DetailRow
-                      icon={<Users size={16} data-oid="_c7e:27" />}
+                      icon={<Users size={16} data-oid="5.9f8s5" />}
                       label="Asientos"
                       value={vehicle.seats.toString()}
-                      data-oid="y0zywtu"
+                      data-oid="d::4qs7"
                     />
 
                     <DetailRow
-                      icon={<Briefcase size={16} data-oid="4c8bn9b" />}
+                      icon={<Briefcase size={16} data-oid="ox3o12h" />}
                       label="Cap. Maletas"
                       value={vehicle.luggageCapacity.toString()}
-                      data-oid="ul2g56p"
+                      data-oid="czkvu5_"
                     />
 
                     {(vehicle.description || vehicle.notes) && (
                       <DetailRow
-                        icon={<FileText size={16} data-oid="j5qkiml" />}
+                        icon={<FileText size={16} data-oid="yfjsi45" />}
                         label="Descripción"
                         value={vehicle.description || vehicle.notes}
-                        data-oid="gj6i7-_"
+                        data-oid="485::h_"
                       />
                     )}
                   </div>
@@ -458,57 +458,57 @@ const VehicleDetailsView: React.FC<VehicleDetailsViewProps> = ({
                       <Building
                         size={18}
                         className="text-gray-600"
-                        data-oid="3i7091f"
+                        data-oid="sp-p:zy"
                       />
                     ) : (
                       <UserCircle
                         size={18}
                         className="text-gray-600"
-                        data-oid="i2t89hs"
+                        data-oid="-7q_ba8"
                       />
                     )
                   }
-                  data-oid="3eqh8fe"
+                  data-oid="91k3oo:"
                 >
-                  <div className="grid grid-cols-1 gap-y-3" data-oid="2mqc:m4">
+                  <div className="grid grid-cols-1 gap-y-3" data-oid="f0n9dlc">
                     <DetailRow
-                      icon={<Tag size={16} data-oid="k7nt-07" />}
+                      icon={<Tag size={16} data-oid="m6nhooh" />}
                       label="Tipo de Propietario"
                       value={
                         vehicle.ownerType === "company"
                           ? "Empresa"
                           : "Chófer Privado"
                       }
-                      data-oid="-h0ocx9"
+                      data-oid="phuy0.o"
                     />
 
                     <DetailRow
-                      icon={<Users size={16} data-oid=".3wvbwk" />}
+                      icon={<Users size={16} data-oid="zgyi7:c" />}
                       label="Nombre del Propietario"
                       value={vehicle.ownerName}
-                      data-oid=":umfm.k"
+                      data-oid="bmfx7yh"
                     />
 
                     <DetailRow
-                      icon={<Globe size={16} data-oid="yr55nlo" />}
+                      icon={<Globe size={16} data-oid="5r151z7" />}
                       label="País"
                       value={
-                        <span className="flex items-center" data-oid="nn_.jws">
+                        <span className="flex items-center" data-oid="gg_g9u.">
                           {getCountryFlagEmoji(vehicle.ownerCountry)}{" "}
-                          <span className="ml-1" data-oid="iuaz5c7">
+                          <span className="ml-1" data-oid="fqsf3pm">
                             {vehicle.ownerCountry}
                           </span>
                         </span>
                       }
-                      data-oid="-q9wz8s"
+                      data-oid="tiojj_a"
                     />
 
                     {vehicle.collaboratorId && (
                       <DetailRow
-                        icon={<Building size={16} data-oid="bynotas" />}
+                        icon={<Building size={16} data-oid="q7redmc" />}
                         label="ID de Colaborador"
                         value={vehicle.collaboratorId}
-                        data-oid="wjzwjko"
+                        data-oid="ie2r.g8"
                       />
                     )}
                   </div>
@@ -520,11 +520,11 @@ const VehicleDetailsView: React.FC<VehicleDetailsViewProps> = ({
             <TabsContent
               value="features"
               className="space-y-6"
-              data-oid="ufc5f7."
+              data-oid=":_akndu"
             >
               <div
                 className="grid grid-cols-1 md:grid-cols-2 gap-6"
-                data-oid="3besjno"
+                data-oid="p6nmckv"
               >
                 <DetailSection
                   title="Características"
@@ -532,33 +532,33 @@ const VehicleDetailsView: React.FC<VehicleDetailsViewProps> = ({
                     <Layers
                       size={18}
                       className="text-gray-600"
-                      data-oid="y-z9o6k"
+                      data-oid="hefm-xl"
                     />
                   }
-                  data-oid="libv:cg"
+                  data-oid="k8v33r9"
                 >
                   <DetailRow
-                    icon={<Layers size={16} data-oid=".ptepb:" />}
+                    icon={<Layers size={16} data-oid="r2cbtlq" />}
                     label="Características"
                     value={renderFeatures()}
-                    data-oid="w219r4:"
+                    data-oid="4e8--91"
                   />
 
                   {vehicle.details?.armored && (
                     <>
                       <DetailRow
-                        icon={<Shield size={16} data-oid="g7.u2e-" />}
+                        icon={<Shield size={16} data-oid="c..8ahi" />}
                         label="Blindado"
                         value="Sí"
-                        data-oid="9_6fivk"
+                        data-oid="ptlbnx8"
                       />
 
                       {vehicle.details.armor_level && (
                         <DetailRow
-                          icon={<Shield size={16} data-oid="n26phq0" />}
+                          icon={<Shield size={16} data-oid="mi5xi5-" />}
                           label="Nivel de Blindaje"
                           value={vehicle.details.armor_level}
-                          data-oid="g2w01x5"
+                          data-oid="-ue:ve6"
                         />
                       )}
                     </>
@@ -572,37 +572,37 @@ const VehicleDetailsView: React.FC<VehicleDetailsViewProps> = ({
                       <Compass
                         size={18}
                         className="text-gray-600"
-                        data-oid="we9tcd5"
+                        data-oid="dy23cm5"
                       />
                     }
-                    data-oid="6lkazjr"
+                    data-oid="pkd4:f4"
                   >
                     {vehicle.location.coordinates &&
                       vehicle.location.coordinates.length >= 2 && (
                         <>
                           <DetailRow
-                            icon={<MapPin size={16} data-oid="k4d2.i3" />}
+                            icon={<MapPin size={16} data-oid="7m0ff3j" />}
                             label="Coordenadas"
                             value={
-                              <div data-oid="gnn.rj-">
-                                <p data-oid="ccx4wy_">
+                              <div data-oid="x47jo_4">
+                                <p data-oid="ixkcq26">
                                   Longitud: {vehicle.location.coordinates[0]}
                                 </p>
-                                <p data-oid="finc_v1">
+                                <p data-oid="j7px_ts">
                                   Latitud: {vehicle.location.coordinates[1]}
                                 </p>
                               </div>
                             }
-                            data-oid="00:--c3"
+                            data-oid="xgmh55x"
                           />
                         </>
                       )}
                     {vehicle.availability_radius && (
                       <DetailRow
-                        icon={<Compass size={16} data-oid=".dm9pb-" />}
+                        icon={<Compass size={16} data-oid="l08divq" />}
                         label="Radio de Disponibilidad"
                         value={`${vehicle.availability_radius} km`}
-                        data-oid=":yyc9n5"
+                        data-oid="e1o2q85"
                       />
                     )}
                   </DetailSection>
@@ -614,11 +614,11 @@ const VehicleDetailsView: React.FC<VehicleDetailsViewProps> = ({
             <TabsContent
               value="logistics"
               className="space-y-6"
-              data-oid="qtqd_ez"
+              data-oid="givlhik"
             >
               <div
                 className="grid grid-cols-1 md:grid-cols-2 gap-6"
-                data-oid="_27.zxd"
+                data-oid="pd3ifgs"
               >
                 <DetailSection
                   title="Disponibilidad"
@@ -626,27 +626,27 @@ const VehicleDetailsView: React.FC<VehicleDetailsViewProps> = ({
                     <MapPin
                       size={18}
                       className="text-gray-600"
-                      data-oid="_i7ar6h"
+                      data-oid="fcfdjbf"
                     />
                   }
-                  data-oid="6j1hag7"
+                  data-oid="gz6revz"
                 >
                   <DetailRow
-                    icon={<Tag size={16} data-oid="sgpqe_h" />}
+                    icon={<Tag size={16} data-oid="8os58-h" />}
                     label="Tipo Disponibilidad"
                     value={renderAvailabilityTypes()}
-                    data-oid="81vwtlq"
+                    data-oid="pnjic7a"
                   />
 
                   <DetailRow
-                    icon={<Info size={16} data-oid="f7r_:r3" />}
+                    icon={<Info size={16} data-oid="szvt9wa" />}
                     label="Detalles Disponibilidad"
                     value={
-                      <p className="whitespace-pre-line" data-oid="r4z8d9b">
+                      <p className="whitespace-pre-line" data-oid="y07okrk">
                         {vehicle.availabilityDetails}
                       </p>
                     }
-                    data-oid="osi6rzr"
+                    data-oid="v:2r:vv"
                   />
                 </DetailSection>
 
@@ -656,16 +656,16 @@ const VehicleDetailsView: React.FC<VehicleDetailsViewProps> = ({
                     <Users
                       size={18}
                       className="text-gray-600"
-                      data-oid="7zh_g8s"
+                      data-oid="pz180wk"
                     />
                   }
-                  data-oid="wtb2c7l"
+                  data-oid="slupye:"
                 >
                   <DetailRow
-                    icon={<Users size={16} data-oid="u2zb:ei" />}
+                    icon={<Users size={16} data-oid="4foc14i" />}
                     label="Chófer(es)"
                     value={renderAssociatedDrivers()}
-                    data-oid="mtlaru6"
+                    data-oid="q.yz9f3"
                   />
                 </DetailSection>
               </div>
@@ -676,24 +676,24 @@ const VehicleDetailsView: React.FC<VehicleDetailsViewProps> = ({
                   <FileText
                     size={18}
                     className="text-gray-600"
-                    data-oid="boapvkk"
+                    data-oid="x5tg1e-"
                   />
                 }
-                data-oid="m2bjj6g"
+                data-oid="8vpaz1x"
               >
                 <div
                   className="grid grid-cols-1 md:grid-cols-3 gap-x-4"
-                  data-oid="w:v5-8l"
+                  data-oid="iw4u6ka"
                 >
                   <DetailRow
-                    icon={<Shield size={16} data-oid="adir41." />}
+                    icon={<Shield size={16} data-oid="net2u78" />}
                     label="Nº Póliza de Seguro"
                     value={vehicle.insurancePolicyNumber}
-                    data-oid="8pxoy5-"
+                    data-oid="23mgz25"
                   />
 
                   <DetailRow
-                    icon={<Calendar size={16} data-oid="5v6wa_w" />}
+                    icon={<Calendar size={16} data-oid="gyabfdx" />}
                     label="Último Mantenimiento"
                     value={
                       vehicle.lastMaintenanceDate
@@ -702,18 +702,18 @@ const VehicleDetailsView: React.FC<VehicleDetailsViewProps> = ({
                           ).toLocaleDateString()
                         : "-"
                     }
-                    data-oid="l86cjk4"
+                    data-oid="nu_pzo2"
                   />
 
                   <DetailRow
-                    icon={<Calendar size={16} data-oid="p55uhol" />}
+                    icon={<Calendar size={16} data-oid="u_018_y" />}
                     label="Fin de Contrato"
                     value={
                       vehicle.contractEndDate
                         ? new Date(vehicle.contractEndDate).toLocaleDateString()
                         : "N/A"
                     }
-                    data-oid="fmyov67"
+                    data-oid="y_glybm"
                   />
                 </div>
               </DetailSection>
@@ -723,7 +723,7 @@ const VehicleDetailsView: React.FC<VehicleDetailsViewProps> = ({
             <TabsContent
               value="business"
               className="space-y-6"
-              data-oid="c.my9p:"
+              data-oid="p0e-:0w"
             >
               {vehicle.pricing && (
                 <DetailSection
@@ -732,40 +732,40 @@ const VehicleDetailsView: React.FC<VehicleDetailsViewProps> = ({
                     <DollarSign
                       size={18}
                       className="text-gray-600"
-                      data-oid="109u:xr"
+                      data-oid="4mq:6za"
                     />
                   }
-                  data-oid="as4.b_t"
+                  data-oid="1z-7u3c"
                 >
                   <div
                     className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
-                    data-oid="xr:.gq_"
+                    data-oid="8lefc1l"
                   >
                     <DetailRow
-                      icon={<DollarSign size={16} data-oid="krpdtst" />}
+                      icon={<DollarSign size={16} data-oid="w_xt:e_" />}
                       label="Tarifa Base"
                       value={
-                        <span className="font-semibold" data-oid="9oq5g0p">
+                        <span className="font-semibold" data-oid="ez3q8.i">
                           {vehicle.pricing.base_fare} {vehicle.pricing.currency}
                         </span>
                       }
-                      data-oid="-6biwhz"
+                      data-oid="e1hb1ox"
                     />
 
                     {vehicle.pricing.per_km && (
                       <DetailRow
-                        icon={<MapPin size={16} data-oid="-h:it89" />}
+                        icon={<MapPin size={16} data-oid="wyqg-a9" />}
                         label="Por Km"
                         value={`${vehicle.pricing.per_km} ${vehicle.pricing.currency}`}
-                        data-oid="mnnznyr"
+                        data-oid="tcbzj10"
                       />
                     )}
                     {vehicle.pricing.per_hour && (
                       <DetailRow
-                        icon={<Calendar size={16} data-oid="k3rhrkq" />}
+                        icon={<Calendar size={16} data-oid="77ucqfh" />}
                         label="Por Hora"
                         value={`${vehicle.pricing.per_hour} ${vehicle.pricing.currency}`}
-                        data-oid="9nydjq_"
+                        data-oid="hi4ga6y"
                       />
                     )}
                   </div>
@@ -779,14 +779,14 @@ const VehicleDetailsView: React.FC<VehicleDetailsViewProps> = ({
                     <FileText
                       size={18}
                       className="text-gray-600"
-                      data-oid=":n:jqqg"
+                      data-oid="-ttg7lz"
                     />
                   }
-                  data-oid="6emsi0_"
+                  data-oid=".666r40"
                 >
                   <p
                     className="text-gray-700 whitespace-pre-line p-2"
-                    data-oid="-6inmzr"
+                    data-oid="mvnogby"
                   >
                     {vehicle.notes || vehicle.description}
                   </p>
@@ -799,9 +799,9 @@ const VehicleDetailsView: React.FC<VehicleDetailsViewProps> = ({
         {/* Footer con botón de cerrar */}
         <div
           className="p-5 border-t border-gray-200 bg-white flex justify-end sticky bottom-0"
-          data-oid="6o2ykho"
+          data-oid="ak6nmxi"
         >
-          <Button variant="outline" onClick={onClose} data-oid="tk2md-.">
+          <Button variant="outline" onClick={onClose} data-oid="78br-fo">
             Cerrar
           </Button>
         </div>

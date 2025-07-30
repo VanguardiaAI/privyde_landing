@@ -243,22 +243,22 @@ const AddExtraScheduleModal: React.FC<AddExtraScheduleModalProps> = ({
   return (
     <div
       className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50"
-      data-oid="7ix9jo8"
+      data-oid="f-63k_t"
     >
       <div
         className="bg-white rounded-lg shadow-xl max-w-2xl w-full mx-4 max-h-[90vh] overflow-y-auto"
-        data-oid="7509siv"
+        data-oid="8816.w-"
       >
         {/* Header */}
         <div
           className="flex justify-between items-center p-6 border-b border-gray-200 bg-green-50"
-          data-oid="i9njjv8"
+          data-oid=".057v.v"
         >
-          <div className="flex items-center" data-oid="kzt6ly6">
-            <Plus className="h-6 w-6 text-green-600 mr-2" data-oid="qhule:l" />
+          <div className="flex items-center" data-oid="t0qgcr6">
+            <Plus className="h-6 w-6 text-green-600 mr-2" data-oid="uz4x-um" />
             <h2
               className="text-xl font-semibold text-gray-800"
-              data-oid=":raagy1"
+              data-oid="qe:-an0"
             >
               Agregar Horario Extra
             </h2>
@@ -266,39 +266,39 @@ const AddExtraScheduleModal: React.FC<AddExtraScheduleModalProps> = ({
           <button
             onClick={onClose}
             className="text-gray-400 hover:text-gray-600 transition-colors"
-            data-oid="e:n6yci"
+            data-oid="pzu:hlp"
           >
-            <X className="h-6 w-6" data-oid="q0.0s0p" />
+            <X className="h-6 w-6" data-oid="1mn8pzu" />
           </button>
         </div>
 
         {/* Content */}
-        <div className="p-6 space-y-6" data-oid="4ktej0f">
+        <div className="p-6 space-y-6" data-oid="plj9wsi">
           {/* Vehicle and Driver Info */}
           <div
             className="grid grid-cols-1 md:grid-cols-2 gap-4"
-            data-oid="d78jk9v"
+            data-oid="dn_f4kd"
           >
-            <div className="p-4 bg-gray-100 rounded-lg" data-oid="kn:3v4f">
-              <h3 className="font-medium text-gray-800 mb-2" data-oid="4q45vsz">
+            <div className="p-4 bg-gray-100 rounded-lg" data-oid="i.blghb">
+              <h3 className="font-medium text-gray-800 mb-2" data-oid="ygery6l">
                 Conductor
               </h3>
-              <div className="text-sm space-y-1" data-oid="7xt20lk">
-                <div className="flex items-center" data-oid="fnxf:z7">
-                  <User className="h-4 w-4 mr-2" data-oid="2r8j0lg" />
-                  <span data-oid="dz-3eid">
-                    <strong data-oid=".vj-4yj">Nombre:</strong>{" "}
+              <div className="text-sm space-y-1" data-oid="9qxtd3s">
+                <div className="flex items-center" data-oid="7b_dx46">
+                  <User className="h-4 w-4 mr-2" data-oid=":x4kjf7" />
+                  <span data-oid="oyi3:nn">
+                    <strong data-oid="n2ifv5o">Nombre:</strong>{" "}
                     {vehicle.vehicle_data?.driver?.name ||
                       vehicle.driver_name ||
                       "N/A"}
                   </span>
                 </div>
-                <div data-oid="2d7nr1h">
-                  <strong data-oid="25v_:1-">Vehículo:</strong>{" "}
+                <div data-oid="g41d211">
+                  <strong data-oid="y2j9nkb">Vehículo:</strong>{" "}
                   {vehicle.vehicle_data?.model || vehicle.model || "N/A"}
                 </div>
-                <div data-oid=":tepxas">
-                  <strong data-oid="-pzzc3l">Tipo:</strong>{" "}
+                <div data-oid="r4a2v6r">
+                  <strong data-oid="b7pn844">Tipo:</strong>{" "}
                   {vehicle.availability_type === "fixed_zone"
                     ? "Zona Fija"
                     : "Ruta Flexible"}
@@ -306,29 +306,29 @@ const AddExtraScheduleModal: React.FC<AddExtraScheduleModalProps> = ({
               </div>
             </div>
 
-            <div className="p-4 bg-amber-50 rounded-lg" data-oid="6g1z4ka">
-              <h3 className="font-medium text-gray-800 mb-2" data-oid="r1thm8s">
+            <div className="p-4 bg-amber-50 rounded-lg" data-oid="qi4tpiy">
+              <h3 className="font-medium text-gray-800 mb-2" data-oid="74g9qlv">
                 Solicitud Original
               </h3>
-              <div className="text-sm space-y-1" data-oid="rg_:ude">
-                <div className="flex items-center" data-oid="5g-y:5e">
-                  <Calendar className="h-4 w-4 mr-2" data-oid="0t-ui01" />
-                  <span data-oid="e5-ji1:">
-                    <strong data-oid="45.1y-k">Fecha:</strong>{" "}
+              <div className="text-sm space-y-1" data-oid="amvusms">
+                <div className="flex items-center" data-oid="7nxjpd_">
+                  <Calendar className="h-4 w-4 mr-2" data-oid="z7056rw" />
+                  <span data-oid="gh7sw9_">
+                    <strong data-oid="ibx5him">Fecha:</strong>{" "}
                     {originalPickupDate.split("T")[0]}
                   </span>
                 </div>
-                <div className="flex items-center" data-oid="tfp52lz">
-                  <Clock className="h-4 w-4 mr-2" data-oid="pyqrpit" />
-                  <span data-oid="4d5l.c1">
-                    <strong data-oid="mq2kij4">Hora:</strong>{" "}
+                <div className="flex items-center" data-oid="gc_sx-2">
+                  <Clock className="h-4 w-4 mr-2" data-oid="f33lp1v" />
+                  <span data-oid="9lvsu.1">
+                    <strong data-oid="cdq7uv:">Hora:</strong>{" "}
                     {originalPickupTime}
                   </span>
                 </div>
-                <div className="flex items-center" data-oid=":rwuhp:">
-                  <MapPin className="h-4 w-4 mr-2" data-oid="p8aldx5" />
-                  <span data-oid="00aopqb">
-                    <strong data-oid="pgk87yq">Ubicación:</strong>{" "}
+                <div className="flex items-center" data-oid="7335ad-">
+                  <MapPin className="h-4 w-4 mr-2" data-oid="uxk63zh" />
+                  <span data-oid=":hqy29l">
+                    <strong data-oid="g.8:u8h">Ubicación:</strong>{" "}
                     {pickupLocation}
                   </span>
                 </div>
@@ -339,20 +339,20 @@ const AddExtraScheduleModal: React.FC<AddExtraScheduleModalProps> = ({
           {/* Schedule Details */}
           <div
             className="border border-gray-200 rounded-lg p-4"
-            data-oid="gcdw03m"
+            data-oid=":qqwcw-"
           >
-            <h3 className="font-medium text-gray-800 mb-4" data-oid="z518llj">
+            <h3 className="font-medium text-gray-800 mb-4" data-oid="p3ag:91">
               Configurar Horario Extra
             </h3>
 
             <div
               className="grid grid-cols-1 md:grid-cols-3 gap-4"
-              data-oid=":l-nu2j"
+              data-oid="08-i4tg"
             >
-              <div data-oid="pepqoo1">
+              <div data-oid="vr54gys">
                 <label
                   className="block text-sm font-medium text-gray-700 mb-2"
-                  data-oid="w3kwgr:"
+                  data-oid="9ocfpj0"
                 >
                   Fecha
                 </label>
@@ -361,14 +361,14 @@ const AddExtraScheduleModal: React.FC<AddExtraScheduleModalProps> = ({
                   value={scheduleDate}
                   onChange={(e) => setScheduleDate(e.target.value)}
                   className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
-                  data-oid="kvmfw0c"
+                  data-oid="g7-x_n4"
                 />
               </div>
 
-              <div data-oid="c04mnb4">
+              <div data-oid="dn1.bxh">
                 <label
                   className="block text-sm font-medium text-gray-700 mb-2"
-                  data-oid="2q5hl.:"
+                  data-oid="qq8-f1f"
                 >
                   Hora de inicio
                 </label>
@@ -377,14 +377,14 @@ const AddExtraScheduleModal: React.FC<AddExtraScheduleModalProps> = ({
                   value={startTime}
                   onChange={(e) => handleTimeChange("start", e.target.value)}
                   className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
-                  data-oid="8bwgvr-"
+                  data-oid="_z.gz3a"
                 />
               </div>
 
-              <div data-oid="90xu7kx">
+              <div data-oid="t4cw1tz">
                 <label
                   className="block text-sm font-medium text-gray-700 mb-2"
-                  data-oid="bbm.56z"
+                  data-oid="0-.2_to"
                 >
                   Hora de fin
                 </label>
@@ -393,7 +393,7 @@ const AddExtraScheduleModal: React.FC<AddExtraScheduleModalProps> = ({
                   value={endTime}
                   onChange={(e) => handleTimeChange("end", e.target.value)}
                   className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
-                  data-oid="s_ppi70"
+                  data-oid="0m6w:z9"
                 />
               </div>
             </div>
@@ -402,9 +402,9 @@ const AddExtraScheduleModal: React.FC<AddExtraScheduleModalProps> = ({
             {duration > 0 && (
               <div
                 className="mt-3 p-2 bg-gray-50 rounded text-sm text-gray-600"
-                data-oid="w39hjbt"
+                data-oid="yjx0jpd"
               >
-                <Clock className="h-4 w-4 inline mr-1" data-oid="x:o2:64" />
+                <Clock className="h-4 w-4 inline mr-1" data-oid="1c4e766" />
                 Duración: {Math.floor(duration / 60)}h {duration % 60}m
               </div>
             )}
@@ -413,9 +413,9 @@ const AddExtraScheduleModal: React.FC<AddExtraScheduleModalProps> = ({
             {isCheckingConflicts && (
               <div
                 className="mt-3 p-3 bg-gray-100 rounded-lg text-sm text-blue-800"
-                data-oid="0a6u32u"
+                data-oid="fhy7f0w"
               >
-                <div className="animate-pulse" data-oid="xhvfb5u">
+                <div className="animate-pulse" data-oid="ftha8cm">
                   Verificando conflictos...
                 </div>
               </div>
@@ -428,18 +428,18 @@ const AddExtraScheduleModal: React.FC<AddExtraScheduleModalProps> = ({
                     ? "bg-gray-100 text-gray-800"
                     : "bg-green-50 text-green-800"
                 }`}
-                data-oid=".uu6lyq"
+                data-oid="qutl4er"
               >
-                <div className="flex items-center" data-oid="1mk.4ma">
+                <div className="flex items-center" data-oid="nl2k_:6">
                   {conflictCheck.has_conflict ? (
                     <>
                       <AlertCircle
                         className="h-4 w-4 mr-2"
-                        data-oid="tccr2n4"
+                        data-oid="vi8qexw"
                       />
 
-                      <span data-oid="dmi1-mw">
-                        <strong data-oid="-l:t94z">Conflicto:</strong>{" "}
+                      <span data-oid="cy_r-_6">
+                        <strong data-oid="n9boe3v">Conflicto:</strong>{" "}
                         {conflictCheck.reason}
                       </span>
                     </>
@@ -447,10 +447,10 @@ const AddExtraScheduleModal: React.FC<AddExtraScheduleModalProps> = ({
                     <>
                       <CheckCircle
                         className="h-4 w-4 mr-2"
-                        data-oid="ngs8zhh"
+                        data-oid="07exjuu"
                       />
 
-                      <span data-oid="x3mqye.">
+                      <span data-oid="l93xfwl">
                         ✅ Horario disponible - No hay conflictos
                       </span>
                     </>
@@ -461,10 +461,10 @@ const AddExtraScheduleModal: React.FC<AddExtraScheduleModalProps> = ({
           </div>
 
           {/* Reason */}
-          <div data-oid="282e:hv">
+          <div data-oid=":7tl0u2">
             <label
               className="block text-sm font-medium text-gray-700 mb-2"
-              data-oid="copylfb"
+              data-oid="8uwpjlt"
             >
               Motivo del horario extra
             </label>
@@ -474,15 +474,15 @@ const AddExtraScheduleModal: React.FC<AddExtraScheduleModalProps> = ({
               onChange={(e) => setReason(e.target.value)}
               className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
               placeholder="Ej: Conductor acepta horario especial para cliente VIP"
-              data-oid="likcou5"
+              data-oid="1h4gksx"
             />
           </div>
 
           {/* Notes */}
-          <div data-oid="io6ik90">
+          <div data-oid="pzz9ero">
             <label
               className="block text-sm font-medium text-gray-700 mb-2"
-              data-oid="yzlddjw"
+              data-oid="bupw4m2"
             >
               Notas adicionales (opcional)
             </label>
@@ -492,29 +492,29 @@ const AddExtraScheduleModal: React.FC<AddExtraScheduleModalProps> = ({
               rows={3}
               className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
               placeholder="Agregar detalles sobre el acuerdo con el conductor..."
-              data-oid="3ihr0ev"
+              data-oid="2_n8ckr"
             />
           </div>
 
           {/* Info Box */}
           <div
             className="bg-green-50 border border-green-200 rounded-lg p-4"
-            data-oid="odfvz2d"
+            data-oid="-ohonn3"
           >
-            <h4 className="font-medium text-green-800 mb-2" data-oid="3q3fp0d">
+            <h4 className="font-medium text-green-800 mb-2" data-oid="0u6f_fh">
               ℹ️ Información importante
             </h4>
-            <ul className="text-sm text-green-700 space-y-1" data-oid="mywp-g5">
-              <li data-oid="96:7fq-">
+            <ul className="text-sm text-green-700 space-y-1" data-oid="nhs4-49">
+              <li data-oid="2cy-240">
                 • Este horario se agregará a la agenda del conductor
               </li>
-              <li data-oid="p_enn1_">
+              <li data-oid="p.5luez">
                 • El conductor estará disponible para reservas en este horario
               </li>
-              <li data-oid="b3ebth.">
+              <li data-oid="4hq.umi">
                 • Se verificarán automáticamente los conflictos antes de crear
               </li>
-              <li data-oid="9pw_my1">
+              <li data-oid="ah3g1vo">
                 • Una vez creado, el horario permitirá completar la reserva
                 original
               </li>
@@ -525,12 +525,12 @@ const AddExtraScheduleModal: React.FC<AddExtraScheduleModalProps> = ({
         {/* Footer */}
         <div
           className="flex justify-between items-center p-6 border-t border-gray-200 bg-gray-50"
-          data-oid="l-3teoq"
+          data-oid="e0zhw3d"
         >
           <button
             onClick={onClose}
             className="px-4 py-2 text-gray-600 hover:text-gray-800 transition-colors"
-            data-oid="ca2o4a_"
+            data-oid=":e1a932"
           >
             Cancelar
           </button>
@@ -545,19 +545,19 @@ const AddExtraScheduleModal: React.FC<AddExtraScheduleModalProps> = ({
               !endTime
             }
             className="bg-black hover:bg-gray-800 disabled:opacity-50"
-            data-oid="gk-l2f1"
+            data-oid="n1wznai"
           >
             {isSubmitting ? (
               <>
                 <div
                   className="animate-spin h-4 w-4 mr-2 border-2 border-white border-t-transparent rounded-full"
-                  data-oid="ifymr-i"
+                  data-oid="wtz8x:f"
                 ></div>
                 Creando horario...
               </>
             ) : (
               <>
-                <Plus className="h-4 w-4 mr-2" data-oid="xyqo-j0" />
+                <Plus className="h-4 w-4 mr-2" data-oid="y9whu50" />
                 Crear Horario Extra
               </>
             )}

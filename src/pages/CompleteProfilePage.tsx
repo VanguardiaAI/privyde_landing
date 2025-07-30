@@ -76,113 +76,113 @@ export default function CompleteProfilePage() {
     return (
       <div
         className="flex items-center justify-center h-screen"
-        data-oid="a01prnd"
+        data-oid="krvhtl6"
       >
         <div
           className="animate-spin h-8 w-8 border-4 border-primary border-t-transparent rounded-full"
-          data-oid="86z9h_p"
+          data-oid="jf0zs4j"
         ></div>
       </div>
     );
   }
 
   return (
-    <div className="bg-white min-h-screen" data-oid="vr63cnu">
-      <header className="border-b border-gray-200 py-4 px-4" data-oid="zsqaxj_">
+    <div className="bg-white min-h-screen" data-oid="st_mkj8">
+      <header className="border-b border-gray-200 py-4 px-4" data-oid="530:dyr">
         <div
           className="max-w-7xl mx-auto flex justify-between items-center"
-          data-oid="s0he0jp"
+          data-oid="y6wlyae"
         >
-          <a href="/" className="font-bold text-xl" data-oid="71iju3q">
+          <a href="/" className="font-bold text-xl" data-oid="04maxx4">
             PRIVYDE
           </a>
-          <div className="flex items-center gap-4" data-oid="rvrw.zz">
+          <div className="flex items-center gap-4" data-oid="ujrq4t5">
             <a
               href="/help"
               className="text-sm text-gray-600"
-              data-oid="n.-658c"
+              data-oid="9jzvmme"
             >
               Ayuda
             </a>
             <a
               href="#"
               className="text-sm flex items-center gap-1"
-              data-oid="nr95utf"
+              data-oid="0okfe7q"
             >
               Español
-              <ChevronDown size={16} data-oid="_1vc0a." />
+              <ChevronDown size={16} data-oid="uv810tp" />
             </a>
           </div>
         </div>
       </header>
 
-      <div className="max-w-2xl mx-auto pt-8 pb-16 px-4" data-oid="ryo:9:p">
+      <div className="max-w-2xl mx-auto pt-8 pb-16 px-4" data-oid="yi.e8bx">
         <button
           onClick={() => navigate(-1)}
           className="flex items-center text-gray-600 mb-6 hover:text-black"
-          data-oid="s1ckau9"
+          data-oid="xe01h1k"
         >
-          <ChevronLeft size={20} data-oid="c4ynrus" />
-          <span data-oid="b4277az">Volver</span>
+          <ChevronLeft size={20} data-oid="u86z37h" />
+          <span data-oid="t.x95zl">Volver</span>
         </button>
 
-        <h1 className="text-2xl font-bold mb-2" data-oid="us9vx:t">
+        <h1 className="text-2xl font-bold mb-2" data-oid="fffnadn">
           Añada sus datos personales
         </h1>
-        <p className="text-gray-600 mb-8" data-oid="uw8jj38">
+        <p className="text-gray-600 mb-8" data-oid="ar4gcmp">
           Complete su perfil para mantener su cuenta actualizada y segura.
         </p>
 
         {error && (
           <div
             className="bg-gray-100 p-3 rounded border border-gray-200 text-gray-600 text-sm mb-8"
-            data-oid="t4j70lx"
+            data-oid="jj::0e-"
           >
             {error}
           </div>
         )}
 
-        <form onSubmit={handleSubmit} data-oid="h-4xga2">
-          <div className="space-y-6" data-oid="l1zkk2e">
-            <div data-oid="2wtuq--">
+        <form onSubmit={handleSubmit} data-oid="h7pdt0t">
+          <div className="space-y-6" data-oid="buzs6e_">
+            <div data-oid="q0:4:xa">
               <Label
                 className="block text-sm font-medium text-gray-700 mb-1"
-                data-oid="-drftak"
+                data-oid="6n3-21d"
               >
                 Título
               </Label>
-              <Select value={title} onValueChange={setTitle} data-oid="s2ebyxc">
+              <Select value={title} onValueChange={setTitle} data-oid="b-jm67g">
                 <SelectTrigger
                   className="bg-gray-50 border-gray-300 h-12"
-                  data-oid="4o83c2r"
+                  data-oid="8ox:nzc"
                 >
                   <SelectValue
                     placeholder="Seleccione un título"
-                    data-oid="30:38n7"
+                    data-oid="ou:xd96"
                   />
                 </SelectTrigger>
-                <SelectContent data-oid="_utg52d">
-                  <SelectItem value="Mr." data-oid=":lg:77d">
+                <SelectContent data-oid="79a9fdw">
+                  <SelectItem value="Mr." data-oid="2h78pyj">
                     Sr.
                   </SelectItem>
-                  <SelectItem value="Mrs." data-oid="a1p_0m7">
+                  <SelectItem value="Mrs." data-oid="fi62cx6">
                     Sra.
                   </SelectItem>
-                  <SelectItem value="Ms." data-oid="m67k8g-">
+                  <SelectItem value="Ms." data-oid="amc:33a">
                     Srta.
                   </SelectItem>
-                  <SelectItem value="Dr." data-oid="wmlhh4u">
+                  <SelectItem value="Dr." data-oid="d9pmap2">
                     Dr.
                   </SelectItem>
                 </SelectContent>
               </Select>
             </div>
 
-            <div data-oid="zkll0tr">
+            <div data-oid="-jyxojb">
               <Label
                 htmlFor="firstName"
                 className="block text-sm font-medium text-gray-700 mb-1"
-                data-oid="clrd3dj"
+                data-oid="_jf4xpx"
               >
                 Nombre
               </Label>
@@ -193,15 +193,15 @@ export default function CompleteProfilePage() {
                 required
                 className="bg-gray-50 border-gray-300 h-12"
                 placeholder="Ingrese su nombre"
-                data-oid="u0hrgbf"
+                data-oid="onfkf89"
               />
             </div>
 
-            <div data-oid="brxfbzv">
+            <div data-oid="up87vzu">
               <Label
                 htmlFor="lastName"
                 className="block text-sm font-medium text-gray-700 mb-1"
-                data-oid="-bxcg22"
+                data-oid="bjt0iin"
               >
                 Apellido
               </Label>
@@ -212,44 +212,44 @@ export default function CompleteProfilePage() {
                 required
                 className="bg-gray-50 border-gray-300 h-12"
                 placeholder="Ingrese su apellido"
-                data-oid="ifwuqzv"
+                data-oid="a3y6naf"
               />
             </div>
 
-            <div data-oid="scnmg8:">
+            <div data-oid="ojbbo39">
               <Label
                 htmlFor="phone"
                 className="block text-sm font-medium text-gray-700 mb-1"
-                data-oid="oxkhwuq"
+                data-oid="98er__x"
               >
                 Número de móvil
               </Label>
-              <div className="flex" data-oid="55jjs4c">
+              <div className="flex" data-oid="cctkv-:">
                 <Select
                   value={countryCode}
                   onValueChange={setCountryCode}
-                  data-oid="e850dza"
+                  data-oid="_l4hl4s"
                 >
                   <SelectTrigger
                     className="w-24 bg-gray-50 border-gray-300 h-12 rounded-r-none"
-                    data-oid=":fvm.1-"
+                    data-oid="ntr5de1"
                   >
-                    <SelectValue placeholder="+1" data-oid="9_vn55k" />
+                    <SelectValue placeholder="+1" data-oid="g2mz:4c" />
                   </SelectTrigger>
-                  <SelectContent data-oid="lh1uxdc">
-                    <SelectItem value="+1" data-oid="5aqcing">
+                  <SelectContent data-oid="t6-z4s-">
+                    <SelectItem value="+1" data-oid="cm52yrk">
                       +1
                     </SelectItem>
-                    <SelectItem value="+34" data-oid="x68uhxa">
+                    <SelectItem value="+34" data-oid="kct50tr">
                       +34
                     </SelectItem>
-                    <SelectItem value="+44" data-oid="6n_jfsn">
+                    <SelectItem value="+44" data-oid="3r3k55c">
                       +44
                     </SelectItem>
-                    <SelectItem value="+52" data-oid="2-hf69i">
+                    <SelectItem value="+52" data-oid="zde0nrd">
                       +52
                     </SelectItem>
-                    <SelectItem value="+33" data-oid="zknrqv7">
+                    <SelectItem value="+33" data-oid="i:rk7_m">
                       +33
                     </SelectItem>
                   </SelectContent>
@@ -262,21 +262,21 @@ export default function CompleteProfilePage() {
                   className="flex-1 bg-gray-50 border-gray-300 h-12 rounded-l-none"
                   placeholder="Ingrese su número de teléfono"
                   type="tel"
-                  data-oid="qj6mti2"
+                  data-oid="1ei-d:s"
                 />
               </div>
-              <p className="mt-2 text-sm text-gray-500" data-oid="rvx4hxz">
+              <p className="mt-2 text-sm text-gray-500" data-oid="l3b.p91">
                 Añade tu número de teléfono móvil para recibir notificaciones de
                 los trayectos.
               </p>
             </div>
 
-            <div className="text-sm text-gray-500 mt-8" data-oid="6ocx6_f">
+            <div className="text-sm text-gray-500 mt-8" data-oid="rgh96r_">
               Al añadir sus datos personales, acepta nuestra{" "}
               <a
                 href="#"
                 className="text-gray-600 hover:underline"
-                data-oid="zn2oag5"
+                data-oid=".ei4apv"
               >
                 Política de privacidad
               </a>{" "}
@@ -284,19 +284,19 @@ export default function CompleteProfilePage() {
               <a
                 href="#"
                 className="text-gray-600 hover:underline"
-                data-oid="ef8.n_q"
+                data-oid="kcrf1pv"
               >
                 Condiciones de uso
               </a>
               .
             </div>
 
-            <div className="pt-4" data-oid="c976acb">
+            <div className="pt-4" data-oid="niqp:n0">
               <Button
                 type="submit"
                 className="w-full bg-black hover:bg-gray-800 text-white py-3 px-4 rounded-md transition-colors h-12"
                 disabled={isLoading}
-                data-oid="c721u09"
+                data-oid="k_8rdo_"
               >
                 {isLoading ? "Guardando..." : "Guardar y continuar"}
               </Button>

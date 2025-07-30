@@ -113,7 +113,7 @@ const StatusBadge = ({ status }: { status: string }) => {
   return (
     <span
       className={`px-2 py-1 text-xs rounded-full ${getStatusColor(status)}`}
-      data-oid="c81jbtj"
+      data-oid="a9nerdc"
     >
       {status.replace("_", " ").charAt(0).toUpperCase() +
         status.replace("_", " ").slice(1)}
@@ -141,7 +141,7 @@ const PriorityBadge = ({ priority }: { priority: string }) => {
   return (
     <span
       className={`px-2 py-1 text-xs rounded-full ${getPriorityColor(priority)}`}
-      data-oid="0f2xzoa"
+      data-oid="g5ta5e9"
     >
       {priority.charAt(0).toUpperCase() + priority.slice(1)}
     </span>
@@ -187,7 +187,7 @@ const SourceBadge = ({ source }: { source: string }) => {
   return (
     <span
       className={`px-2 py-1 text-xs rounded-full ${getSourceColor(source)}`}
-      data-oid="4f1qsgp"
+      data-oid="wmq71ft"
     >
       {getSourceLabel(source)}
     </span>
@@ -211,7 +211,7 @@ const UserTypeBadge = ({
           ? "bg-violet-100 text-violet-800"
           : "bg-teal-100 text-teal-800"
       }`}
-      data-oid="a5v4dhf"
+      data-oid="f54cl:7"
     >
       {userType === "company"
         ? `Empresa${companyName ? ": " + companyName : ""}`
@@ -989,13 +989,13 @@ const SupportSection: React.FC<SupportSectionProps> = ({
 
   // Renderizado de la UI
   return (
-    <div className="space-y-6" data-oid="p7q1dt8">
-      <div className="flex justify-between items-center" data-oid="t3i5um-">
-        <div data-oid="8lre3vc">
-          <h1 className="text-2xl font-bold text-gray-800" data-oid="o1kn9nr">
+    <div className="space-y-6" data-oid="x7qo6r2">
+      <div className="flex justify-between items-center" data-oid="4:2bd3.">
+        <div data-oid="5bipmpj">
+          <h1 className="text-2xl font-bold text-gray-800" data-oid="yy5k.ta">
             {activeView === "inbox" ? "Soporte" : selectedConversation?.title}
           </h1>
-          <p className="text-sm text-gray-500 mt-1" data-oid="kgo8b1d">
+          <p className="text-sm text-gray-500 mt-1" data-oid="njlxkqp">
             {activeView === "inbox"
               ? "Gestiona todas las conversaciones de soporte"
               : `Conversación con ${selectedConversation?.participants.find((p) => p.role !== "admin")?.name}`}
@@ -1005,18 +1005,18 @@ const SupportSection: React.FC<SupportSectionProps> = ({
         {activeView === "inbox" ? (
           <Button
             className="flex items-center px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors"
-            data-oid="uoquoe1"
+            data-oid="89zy22u"
           >
-            <PlusCircle size={18} className="mr-2" data-oid="scqjw5d" />
+            <PlusCircle size={18} className="mr-2" data-oid="fjzr6r-" />
             Nueva conversación
           </Button>
         ) : (
-          <div className="flex space-x-2" data-oid="_5h95tc">
+          <div className="flex space-x-2" data-oid="ni4dsm2">
             <Button
               variant="outline"
               onClick={handleBackToInbox}
               className="flex items-center"
-              data-oid="6n6663h"
+              data-oid="27lqwki"
             >
               Volver
             </Button>
@@ -1024,12 +1024,12 @@ const SupportSection: React.FC<SupportSectionProps> = ({
               variant="outline"
               onClick={handleRefreshMessages}
               className="flex items-center"
-              data-oid=":m4jpu3"
+              data-oid="r8hev-p"
             >
               <RefreshCw
                 size={16}
                 className={`mr-1 ${isPolling ? "animate-spin" : ""}`}
-                data-oid="con3sb9"
+                data-oid="xsl8iqk"
               />
               Actualizar
             </Button>
@@ -1046,18 +1046,18 @@ const SupportSection: React.FC<SupportSectionProps> = ({
                     | "closed",
                 )
               }
-              data-oid="rgwq5dt"
+              data-oid="e4:vh1i"
             >
-              <option value="open" data-oid="iuo6y.9">
+              <option value="open" data-oid="devj6dj">
                 Abierto
               </option>
-              <option value="in_progress" data-oid=".m9jbxk">
+              <option value="in_progress" data-oid="jd19ovm">
                 En proceso
               </option>
-              <option value="resolved" data-oid="of0ybu7">
+              <option value="resolved" data-oid="5mgv4pn">
                 Resuelto
               </option>
-              <option value="closed" data-oid="20bxzjl">
+              <option value="closed" data-oid="4t9a62.">
                 Cerrado
               </option>
             </select>
@@ -1068,16 +1068,16 @@ const SupportSection: React.FC<SupportSectionProps> = ({
       {activeView === "inbox" && (
         <>
           {/* Filtros y búsqueda */}
-          <div className="bg-white rounded-lg shadow-sm p-4" data-oid="osqpge5">
-            <div className="flex flex-col md:flex-row gap-4" data-oid="tu0bwkf">
+          <div className="bg-white rounded-lg shadow-sm p-4" data-oid="4:l-dga">
+            <div className="flex flex-col md:flex-row gap-4" data-oid="mctep:b">
               <div
                 className="flex items-center border rounded-lg bg-gray-50 px-3 py-2 flex-1"
-                data-oid="44sppkv"
+                data-oid="sog2c18"
               >
                 <Search
                   size={18}
                   className="text-gray-400 mr-2"
-                  data-oid="b8lhr-1"
+                  data-oid="w87x7-b"
                 />
 
                 <input
@@ -1086,30 +1086,30 @@ const SupportSection: React.FC<SupportSectionProps> = ({
                   className="bg-transparent border-0 flex-1 focus:outline-none text-sm"
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
-                  data-oid="0uc2_vw"
+                  data-oid="d1:u7nd"
                 />
               </div>
 
-              <div className="flex flex-wrap gap-2" data-oid="ka-raj5">
+              <div className="flex flex-wrap gap-2" data-oid=":twg8ej">
                 <select
                   className="px-3 py-2 border border-gray-300 rounded-lg text-sm"
                   value={filterStatus}
                   onChange={(e) => setFilterStatus(e.target.value)}
-                  data-oid="gv8zkyg"
+                  data-oid="341ft-t"
                 >
-                  <option value="all" data-oid="32ftum6">
+                  <option value="all" data-oid="u5ippwl">
                     Todos los estados
                   </option>
-                  <option value="open" data-oid="ja47a9.">
+                  <option value="open" data-oid="gyw.odk">
                     Abierto
                   </option>
-                  <option value="in_progress" data-oid="a2evbar">
+                  <option value="in_progress" data-oid="vzp5v25">
                     En proceso
                   </option>
-                  <option value="resolved" data-oid="z6r0hoz">
+                  <option value="resolved" data-oid="kicz33_">
                     Resuelto
                   </option>
-                  <option value="closed" data-oid="xy6i.t3">
+                  <option value="closed" data-oid="qyh3_6h">
                     Cerrado
                   </option>
                 </select>
@@ -1118,21 +1118,21 @@ const SupportSection: React.FC<SupportSectionProps> = ({
                   className="px-3 py-2 border border-gray-300 rounded-lg text-sm"
                   value={filterPriority}
                   onChange={(e) => setFilterPriority(e.target.value)}
-                  data-oid="_.yhz.4"
+                  data-oid="n7t23un"
                 >
-                  <option value="all" data-oid="_q71sxi">
+                  <option value="all" data-oid="-o7cn7x">
                     Todas las prioridades
                   </option>
-                  <option value="low" data-oid=".7zmvo.">
+                  <option value="low" data-oid="_in7uh2">
                     Baja
                   </option>
-                  <option value="medium" data-oid="cmho_mn">
+                  <option value="medium" data-oid="g14nk7v">
                     Media
                   </option>
-                  <option value="high" data-oid="ffy18d-">
+                  <option value="high" data-oid="yx8rafj">
                     Alta
                   </option>
-                  <option value="urgent" data-oid="xn67xal">
+                  <option value="urgent" data-oid="mdqivs8">
                     Urgente
                   </option>
                 </select>
@@ -1141,33 +1141,33 @@ const SupportSection: React.FC<SupportSectionProps> = ({
                   className="px-3 py-2 border border-gray-300 rounded-lg text-sm"
                   value={filterCategory}
                   onChange={(e) => setFilterCategory(e.target.value)}
-                  data-oid="ej:wzct"
+                  data-oid="dw2zhwh"
                 >
-                  <option value="all" data-oid="o-ogugf">
+                  <option value="all" data-oid=":r60wwj">
                     Todas las categorías
                   </option>
-                  <option value="general" data-oid="-6z597t">
+                  <option value="general" data-oid="wz09513">
                     General
                   </option>
-                  <option value="technical" data-oid="1qhup3s">
+                  <option value="technical" data-oid="8p9xgax">
                     Técnico
                   </option>
-                  <option value="booking" data-oid="a5yphy3">
+                  <option value="booking" data-oid="gdz26m1">
                     Reservas
                   </option>
-                  <option value="payment" data-oid="k285mtj">
+                  <option value="payment" data-oid="q7y5sb6">
                     Pagos
                   </option>
-                  <option value="complaint" data-oid="yixy1hw">
+                  <option value="complaint" data-oid="7m_8mh:">
                     Quejas
                   </option>
-                  <option value="feedback" data-oid="ez4vw0a">
+                  <option value="feedback" data-oid="lj:-vzw">
                     Sugerencias
                   </option>
-                  <option value="driver" data-oid="4e_ikw-">
+                  <option value="driver" data-oid="w::v_.e">
                     Conductor
                   </option>
-                  <option value="other" data-oid="g4dg9n0">
+                  <option value="other" data-oid="c.nwye-">
                     Otros
                   </option>
                 </select>
@@ -1176,24 +1176,24 @@ const SupportSection: React.FC<SupportSectionProps> = ({
                   className="px-3 py-2 border border-gray-300 rounded-lg text-sm"
                   value={filterSource}
                   onChange={(e) => setFilterSource(e.target.value)}
-                  data-oid="mv12d_w"
+                  data-oid="yqjewwq"
                 >
-                  <option value="all" data-oid="i6lfkda">
+                  <option value="all" data-oid=":zci.6_">
                     Todas las fuentes
                   </option>
-                  <option value="web" data-oid="b:ue9ug">
+                  <option value="web" data-oid="apr0heb">
                     Web
                   </option>
-                  <option value="app_client" data-oid="gaaqj89">
+                  <option value="app_client" data-oid="dseo6e4">
                     App Cliente
                   </option>
-                  <option value="app_driver" data-oid="gz:o9ww">
+                  <option value="app_driver" data-oid="0.dzdb1">
                     App Conductor
                   </option>
-                  <option value="email" data-oid="nndjf2t">
+                  <option value="email" data-oid="7sqs0:l">
                     Email
                   </option>
-                  <option value="internal" data-oid="h-0s2pm">
+                  <option value="internal" data-oid="t7vkn2e">
                     Interno
                   </option>
                 </select>
@@ -1202,15 +1202,15 @@ const SupportSection: React.FC<SupportSectionProps> = ({
                   className="px-3 py-2 border border-gray-300 rounded-lg text-sm"
                   value={filterUserType}
                   onChange={(e) => setFilterUserType(e.target.value)}
-                  data-oid="sgj:ori"
+                  data-oid="zv5p0m4"
                 >
-                  <option value="all" data-oid="pkxn9z-">
+                  <option value="all" data-oid="nqp9x1_">
                     Todos los tipos de usuario
                   </option>
-                  <option value="individual" data-oid="_q7wg3q">
+                  <option value="individual" data-oid="_6x8-ov">
                     Particulares
                   </option>
-                  <option value="company" data-oid="bi2-g.g">
+                  <option value="company" data-oid="x0y3xmt">
                     Empresas
                   </option>
                 </select>
@@ -1219,9 +1219,9 @@ const SupportSection: React.FC<SupportSectionProps> = ({
                   variant="outline"
                   size="sm"
                   className="flex items-center"
-                  data-oid="_cr5b2m"
+                  data-oid="t9f6c61"
                 >
-                  <RefreshCw size={16} className="mr-1" data-oid="nadpqa7" />
+                  <RefreshCw size={16} className="mr-1" data-oid="j:a24jx" />
                   Actualizar
                 </Button>
               </div>
@@ -1231,44 +1231,44 @@ const SupportSection: React.FC<SupportSectionProps> = ({
           {/* Lista de conversaciones */}
           <div
             className="bg-white rounded-lg shadow-md overflow-hidden"
-            data-oid="94nscav"
+            data-oid="jvlrqs2"
           >
             {filteredConversations.length === 0 ? (
-              <div className="p-8 text-center" data-oid="9:hhtc7">
+              <div className="p-8 text-center" data-oid="l84jf4n">
                 <MessageSquare
                   size={48}
                   className="mx-auto text-gray-300 mb-4"
-                  data-oid="wac0mi3"
+                  data-oid="x75hh09"
                 />
 
                 <h3
                   className="text-lg font-medium text-gray-800"
-                  data-oid="x5g9hr8"
+                  data-oid="a2i86_4"
                 >
                   No hay conversaciones
                 </h3>
-                <p className="text-gray-500 mt-1" data-oid="kw437vi">
+                <p className="text-gray-500 mt-1" data-oid="r0-62-q">
                   No se encontraron conversaciones con los filtros actuales.
                 </p>
               </div>
             ) : (
-              <div className="divide-y" data-oid="1j:.t11">
+              <div className="divide-y" data-oid="gldyy50">
                 {filteredConversations.map((conversation) => (
                   <div
                     key={conversation.id}
                     onClick={() => handleSelectConversation(conversation)}
                     className={`p-4 hover:bg-gray-50 cursor-pointer transition-colors ${conversation.unreadCount > 0 ? "bg-red-50" : ""}`}
-                    data-oid="gbl:rfi"
+                    data-oid="dr20ir0"
                   >
                     <div
                       className="flex items-center justify-between"
-                      data-oid="8dk4ag8"
+                      data-oid="sov7dyo"
                     >
                       <div
                         className="flex items-center space-x-3"
-                        data-oid="nmb7e4f"
+                        data-oid="61n8112"
                       >
-                        <div className="relative" data-oid=":ec06dc">
+                        <div className="relative" data-oid="pzwhdf9">
                           {conversation.participants.find(
                             (p) => p.role !== "admin",
                           )?.avatar ? (
@@ -1280,21 +1280,21 @@ const SupportSection: React.FC<SupportSectionProps> = ({
                               }
                               alt="Avatar"
                               className="w-10 h-10 rounded-full"
-                              data-oid="qz6uvy5"
+                              data-oid="kkbskah"
                             />
                           ) : (
                             <div
                               className="w-10 h-10 rounded-full bg-gray-200 flex items-center justify-center text-gray-600"
-                              data-oid="uti-fz8"
+                              data-oid="58dvxhw"
                             >
-                              <User size={20} data-oid="uv6o7zb" />
+                              <User size={20} data-oid="jczjd4r" />
                             </div>
                           )}
 
                           {conversation.unreadCount > 0 && (
                             <span
                               className="absolute -top-1 -right-1 w-5 h-5 bg-red-500 text-white rounded-full text-xs flex items-center justify-center"
-                              data-oid="tgv0ida"
+                              data-oid="b61j-wh"
                             >
                               {conversation.unreadCount}
                             </span>
@@ -1312,18 +1312,18 @@ const SupportSection: React.FC<SupportSectionProps> = ({
                                   ? "bg-green-500"
                                   : "bg-purple-500"
                             }`}
-                            data-oid="ca7g4p:"
+                            data-oid="t2vouxo"
                           ></span>
                         </div>
 
-                        <div className="flex-1 min-w-0" data-oid="mzm7pd3">
+                        <div className="flex-1 min-w-0" data-oid="4meldze">
                           <div
                             className="flex justify-between"
-                            data-oid="jh:n1o3"
+                            data-oid="58z1tby"
                           >
                             <h3
                               className="text-sm font-medium text-gray-900 truncate"
-                              data-oid="vj2xy55"
+                              data-oid="g29v1zh"
                             >
                               {
                                 conversation.participants.find(
@@ -1333,7 +1333,7 @@ const SupportSection: React.FC<SupportSectionProps> = ({
                             </h3>
                             <span
                               className="text-xs text-gray-500"
-                              data-oid="vfwon.l"
+                              data-oid="-24m3i8"
                             >
                               {new Date(
                                 conversation.lastMessage.timestamp,
@@ -1342,7 +1342,7 @@ const SupportSection: React.FC<SupportSectionProps> = ({
                           </div>
                           <div
                             className="flex flex-wrap gap-1 my-1"
-                            data-oid="dqf8zgz"
+                            data-oid="wfe_7yr"
                           >
                             <UserTypeBadge
                               userType={
@@ -1355,23 +1355,23 @@ const SupportSection: React.FC<SupportSectionProps> = ({
                                   (p) => p.role !== "admin",
                                 )?.companyName
                               }
-                              data-oid="2e386vg"
+                              data-oid="b.p6w-g"
                             />
 
                             <SourceBadge
                               source={conversation.source}
-                              data-oid="qqq68bd"
+                              data-oid="a00iryg"
                             />
                           </div>
                           <p
                             className="text-xs text-gray-500 truncate"
-                            data-oid="wfe8m_s"
+                            data-oid="1tq:n2p"
                           >
                             {conversation.title}
                           </p>
                           <p
                             className="text-sm text-gray-700 truncate"
-                            data-oid="ukojddm"
+                            data-oid="vlamoic"
                           >
                             {conversation.lastMessage.message}
                           </p>
@@ -1380,16 +1380,16 @@ const SupportSection: React.FC<SupportSectionProps> = ({
 
                       <div
                         className="flex flex-col items-end space-y-2"
-                        data-oid="j1hqgir"
+                        data-oid="misah5c"
                       >
                         <StatusBadge
                           status={conversation.status}
-                          data-oid=":dx285:"
+                          data-oid="2r3mjmq"
                         />
 
                         <PriorityBadge
                           priority={conversation.priority}
-                          data-oid="x3n-lb5"
+                          data-oid=".phs3m9"
                         />
                       </div>
                     </div>
@@ -1404,14 +1404,14 @@ const SupportSection: React.FC<SupportSectionProps> = ({
       {activeView === "conversation" && selectedConversation && (
         <div
           className="bg-white rounded-lg shadow-md overflow-hidden flex flex-col h-[calc(100vh-220px)]"
-          data-oid="s63:i_n"
+          data-oid="f3joavp"
         >
           {/* Información de la conversación */}
           <div
             className="p-4 border-b flex justify-between items-center"
-            data-oid="n5gxh2t"
+            data-oid="pol21rz"
           >
-            <div className="flex items-center space-x-3" data-oid="_p:knf_">
+            <div className="flex items-center space-x-3" data-oid="7jofyjv">
               {selectedConversation.participants.find((p) => p.role !== "admin")
                 ?.avatar ? (
                 <img
@@ -1422,25 +1422,25 @@ const SupportSection: React.FC<SupportSectionProps> = ({
                   }
                   alt="Avatar"
                   className="w-10 h-10 rounded-full"
-                  data-oid="gjpb3k."
+                  data-oid="zpm0d_-"
                 />
               ) : (
                 <div
                   className="w-10 h-10 rounded-full bg-gray-200 flex items-center justify-center text-gray-600"
-                  data-oid="py5rh0o"
+                  data-oid="m9ec88w"
                 >
-                  <User size={20} data-oid="d4b28n3" />
+                  <User size={20} data-oid="4kt7lnp" />
                 </div>
               )}
 
-              <div data-oid="s6973q:">
+              <div data-oid="trwfrv2">
                 <div
                   className="flex items-center flex-wrap gap-1"
-                  data-oid="1doikj8"
+                  data-oid="tee41mw"
                 >
                   <h3
                     className="text-sm font-medium text-gray-900"
-                    data-oid="27m.47u"
+                    data-oid="oen93rv"
                   >
                     {
                       selectedConversation.participants.find(
@@ -1460,11 +1460,11 @@ const SupportSection: React.FC<SupportSectionProps> = ({
                           ? "bg-green-500"
                           : "bg-purple-500"
                     }`}
-                    data-oid="3:c-5r:"
+                    data-oid="s1xk:s8"
                   ></span>
                   <span
                     className="text-xs text-gray-500 ml-2"
-                    data-oid="yc154kw"
+                    data-oid="cfomut5"
                   >
                     {selectedConversation.participants.find(
                       (p) => p.role !== "admin",
@@ -1487,34 +1487,34 @@ const SupportSection: React.FC<SupportSectionProps> = ({
                         (p) => p.role !== "admin",
                       )?.companyName
                     }
-                    data-oid="f:-3fpl"
+                    data-oid=":k0fufe"
                   />
 
                   <SourceBadge
                     source={selectedConversation.source}
-                    data-oid="fgeoqqt"
+                    data-oid="fy5p-tc"
                   />
                 </div>
-                <p className="text-xs text-gray-500" data-oid="p8amb71">
+                <p className="text-xs text-gray-500" data-oid="-.ten34">
                   {selectedConversation.title}
                 </p>
               </div>
             </div>
 
-            <div className="flex items-center space-x-2" data-oid="4h58dip">
+            <div className="flex items-center space-x-2" data-oid="6xqipvt">
               <StatusBadge
                 status={selectedConversation.status}
-                data-oid="o.1b.p6"
+                data-oid="rcwulzg"
               />
 
               <PriorityBadge
                 priority={selectedConversation.priority}
-                data-oid=":db.5a:"
+                data-oid="nbu6qao"
               />
 
               <span
                 className="text-xs px-2 py-1 bg-gray-100 text-gray-800 rounded-full"
-                data-oid="n_833nx"
+                data-oid="yon::z_"
               >
                 {selectedConversation.category.charAt(0).toUpperCase() +
                   selectedConversation.category.slice(1)}
@@ -1525,13 +1525,13 @@ const SupportSection: React.FC<SupportSectionProps> = ({
           {/* Mensajes */}
           <div
             className="flex-1 overflow-y-auto p-4 space-y-4 bg-gray-50"
-            data-oid="nmoqes:"
+            data-oid="019049c"
           >
             {messages[selectedConversation.id]?.map((message) => (
               <div
                 key={message.id}
                 className={`flex ${message.sender.role === "admin" ? "justify-end" : "justify-start"}`}
-                data-oid="nyxdomo"
+                data-oid="pxn53ra"
               >
                 <div
                   className={`max-w-[70%] rounded-lg p-4 ${
@@ -1539,33 +1539,33 @@ const SupportSection: React.FC<SupportSectionProps> = ({
                       ? "bg-red-600 text-white"
                       : "bg-white border border-gray-200"
                   }`}
-                  data-oid="b4vwfa1"
+                  data-oid="ge66d75"
                 >
                   <div
                     className="flex justify-between items-start mb-1"
-                    data-oid="x2ry1cj"
+                    data-oid="jehi0ho"
                   >
                     <span
                       className={`text-sm font-medium ${message.sender.role === "admin" ? "text-white" : "text-gray-900"}`}
-                      data-oid="y6k9799"
+                      data-oid="qv8pd8p"
                     >
                       {message.sender.name}
                     </span>
                     <span
                       className={`text-xs ${message.sender.role === "admin" ? "text-red-100" : "text-gray-500"}`}
-                      data-oid="33hp.ma"
+                      data-oid="3z96ku3"
                     >
                       {new Date(message.timestamp).toLocaleString()}
                     </span>
                   </div>
                   <p
                     className={`text-sm ${message.sender.role === "admin" ? "text-white" : "text-gray-800"}`}
-                    data-oid="fd4wf-."
+                    data-oid="z4.xa69"
                   >
                     {message.message}
                   </p>
                   {message.attachments && message.attachments.length > 0 && (
-                    <div className="mt-2 space-y-1" data-oid="wrowgwj">
+                    <div className="mt-2 space-y-1" data-oid="lxszuq.">
                       {message.attachments.map((attachment, index) => (
                         <div
                           key={index}
@@ -1574,9 +1574,9 @@ const SupportSection: React.FC<SupportSectionProps> = ({
                               ? "bg-red-700 text-white"
                               : "bg-gray-100 text-gray-800"
                           }`}
-                          data-oid="xz78nar"
+                          data-oid="9j-g:u5"
                         >
-                          <span className="truncate" data-oid="desqte-">
+                          <span className="truncate" data-oid="nh4-l9_">
                             {attachment.name}
                           </span>
                         </div>
@@ -1589,25 +1589,25 @@ const SupportSection: React.FC<SupportSectionProps> = ({
           </div>
 
           {/* Campo de entrada de mensajes */}
-          <div className="p-4 border-t" data-oid="9699wf5">
-            <div className="flex items-center space-x-2" data-oid="hzl2lm9">
-              <div className="flex-1" data-oid="i14:ojb">
+          <div className="p-4 border-t" data-oid="38w06yv">
+            <div className="flex items-center space-x-2" data-oid="ud-lqgt">
+              <div className="flex-1" data-oid="j1ltm7j">
                 <textarea
                   placeholder="Escribe tu mensaje aquí..."
                   className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-1 focus:ring-red-500 resize-none"
                   value={newMessage}
                   onChange={(e) => setNewMessage(e.target.value)}
                   rows={3}
-                  data-oid="cis-qzu"
+                  data-oid="5fka_i6"
                 />
               </div>
               <Button
                 onClick={handleSendMessage}
                 disabled={!newMessage.trim()}
                 className="bg-red-600 hover:bg-red-700 text-white h-full"
-                data-oid="oa66ja7"
+                data-oid="444bn2k"
               >
-                <SendHorizonal size={18} data-oid=".gpkigg" />
+                <SendHorizonal size={18} data-oid="us-hqki" />
               </Button>
             </div>
           </div>

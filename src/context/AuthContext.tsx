@@ -298,7 +298,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         updateProfile,
         setError,
       }}
-      data-oid="xbpg5h5"
+      data-oid="4sztk2d"
     >
       {children}
     </AuthContext.Provider>
