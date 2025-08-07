@@ -24,6 +24,7 @@ import TripsPage from "./pages/TripsPage";
 import AccountPage from "./pages/AccountPage";
 import BookingWizard from "./pages/BookingWizard";
 import AdminPage from "./pages/AdminPage";
+import OurServices from "./pages/OurServices";
 // Blog pages
 import BlogPage from "./pages/blog/BlogPage";
 import BlogPostPage from "./pages/blog/BlogPostPage";
@@ -297,6 +298,11 @@ function App() {
                 path="/security-services"
                 element={<SecurityServices data-oid="krrd.nt" />}
                 data-oid="rgsyc90"
+              />
+
+              <Route
+                path="/our-services"
+                element={<OurServices />}
               />
 
               {/* Rutas del Blog */}
