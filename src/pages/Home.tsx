@@ -578,6 +578,16 @@ export default function Home() {
               </div>
             </Link>
           </div>
+          
+          {/* Ver todos los servicios button */}
+          <div className="text-center mt-12">
+            <Link 
+              to="/our-services" 
+              className="inline-block bg-white text-black px-8 py-3 rounded-md hover:bg-gray-200 transition-colors font-semibold uppercase tracking-wide"
+            >
+              Ver todos los servicios
+            </Link>
+          </div>
         </div>
       </section>
 

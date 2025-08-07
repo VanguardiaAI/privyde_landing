@@ -172,7 +172,8 @@ export default function Navbar() {
             onMouseLeave={handleServicesMouseLeave}
             data-oid="22uuywg"
           >
-            <span
+            <Link
+              to="/our-services"
               className="cursor-pointer flex items-center text-white hover:text-blue-400"
               data-oid="4--cin6"
             >
@@ -181,7 +182,7 @@ export default function Navbar() {
                 className={`ml-1 h-4 w-4 transition-transform duration-200 ${isServicesMenuOpen ? "rotate-180" : ""}`}
                 data-oid="ov3tfxd"
               />
-            </span>
+            </Link>
             {isServicesMenuOpen && (
               <div
                 className="absolute left-0 top-full mt-1 w-64 bg-gray-900 shadow-md border border-gray-700 rounded-md z-50"
@@ -441,13 +442,13 @@ export default function Navbar() {
                 onClick={toggleServicesMenu}
                 data-oid="mov.en0"
               >
-                <span className="font-medium text-gray-200" data-oid="p53s.li">
+                <Link to="/our-services" className="font-medium text-gray-200 flex items-center" data-oid="p53s.li">
                   Nuestros servicios
-                </span>
-                <ChevronDown
-                  className={`ml-2 h-4 w-4 transition-transform duration-200 ${isServicesMenuOpen ? "rotate-180" : ""}`}
-                  data-oid="ng17lq."
-                />
+                  <ChevronDown
+                    className={`ml-2 h-4 w-4 transition-transform duration-200 ${isServicesMenuOpen ? "rotate-180" : ""}`}
+                    data-oid="ng17lq."
+                  />
+                </Link>
               </div>
 
               {isServicesMenuOpen && (

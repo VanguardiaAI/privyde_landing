@@ -313,7 +313,7 @@ const OurServices: React.FC = () => {
               
               {/* Title overlay */}
               <div className="absolute inset-0 flex items-end justify-center z-20 pb-20 md:pb-24">
-                <h2 className="text-4xl md:text-6xl font-bold text-white uppercase tracking-wider text-center" style={{ fontFamily: 'CONTHRAX-SB' }}>
+                <h2 className="text-2xl sm:text-3xl md:text-6xl font-bold text-white uppercase tracking-wider text-center px-4" style={{ fontFamily: 'CONTHRAX-SB' }}>
                   ELIGE TU AUTO
                 </h2>
               </div>
