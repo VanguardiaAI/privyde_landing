@@ -197,13 +197,13 @@ const Companies = () => {
       <div className="min-h-screen bg-black">
         <Navbar />
         {/* Hero Section */}
-        <section className="relative h-[50vh] md:h-[70vh] overflow-hidden bg-black">
+        <section className="relative h-[40vh] md:h-[70vh] overflow-hidden bg-black">
         <div className="absolute inset-0 overflow-hidden">
           <img
             src="/images/bussines/Banner_empresas.webp"
             alt="Para empresas"
-            className="w-[115%] h-full object-cover object-left"
-            style={{ backgroundColor: '#000000' }}
+            className="w-full md:w-[115%] h-full object-cover object-center md:object-left"
+            style={{ backgroundColor: '#000000', objectPosition: '45% center' }}
           />
           {/* Gradient overlay at bottom */}
           <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent via-[50%] to-black" />
@@ -211,7 +211,7 @@ const Companies = () => {
           <div className="absolute bottom-0 left-0 right-0 h-32 md:h-40 bg-gradient-to-t from-black via-black/80 to-transparent" />
         </div>
         
-        <div className="relative z-10 h-full flex items-end pb-10 md:pb-16">
+        <div className="relative z-10 h-full flex items-end pb-6 md:pb-16">
           <div className="container mx-auto px-6">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white tracking-wider uppercase text-center" style={{ fontFamily: 'CONTHRAX-SB' }}>
               PARA EMPRESAS
