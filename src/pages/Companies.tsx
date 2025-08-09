@@ -257,17 +257,25 @@ const Companies = () => {
           {/* Horizontal Accordion - Mobile */}
           <div 
             className="md:hidden relative flex h-[350px] overflow-hidden justify-center"
-            style={{ transform: 'translateZ(0)' }}
+            style={{ 
+              transform: 'translate3d(0,0,0)',
+              backfaceVisibility: 'hidden',
+              perspective: 1000
+            }}
             onTouchStart={handleTouchStart}
             onTouchMove={handleTouchMove}
             onTouchEnd={handleTouchEnd}
           >
             {/* Service 1 */}
             <div 
-              className={`relative rounded-xl overflow-hidden transition-[width] duration-300 cursor-pointer will-change-[width] ${
+              className={`relative rounded-xl overflow-hidden cursor-pointer will-change-[width] ${
                 activeMobileAccordionIndex === 0 ? 'w-[calc(100vw-8rem)] max-w-[350px]' : 'w-[60px] sm:w-[80px]'
               }`}
-              style={{ zIndex: 0 > activeMobileAccordionIndex ? 10 : 10 }}
+              style={{ 
+                zIndex: 0 > activeMobileAccordionIndex ? 10 : 10,
+                transition: 'width 200ms cubic-bezier(0.4, 0, 0.2, 1)',
+                transform: 'translate3d(0,0,0)'
+              }}
               onClick={() => setActiveMobileAccordionIndex(0)}
             >
               <div className="absolute inset-0 overflow-hidden">
@@ -279,8 +287,8 @@ const Companies = () => {
               </div>
               <div className="absolute inset-0 flex flex-col justify-between">
                 {/* Content when expanded */}
-                <div className={`flex-1 flex flex-col justify-end items-start px-6 pb-6 transition-opacity duration-300 ${
-                  activeMobileAccordionIndex === 0 ? 'opacity-100' : 'opacity-0 pointer-events-none'
+                <div className={`flex-1 flex flex-col justify-end items-start px-6 pb-6 ${
+                  activeMobileAccordionIndex === 0 ? 'opacity-100 transition-opacity duration-200' : 'opacity-0 pointer-events-none'
                 }`}>
                   <h3 className="text-lg font-bold text-white mb-3 text-left">
                     Viajes de negocios y reuniones
@@ -291,7 +299,7 @@ const Companies = () => {
                 </div>
                 
                 {/* Vertical title when collapsed */}
-                <div className={`absolute bottom-8 left-8 transition-opacity duration-300 ${
+                <div className={`absolute bottom-8 left-8 transition-opacity duration-200 ${
                   activeMobileAccordionIndex === 0 ? 'opacity-0' : 'opacity-100'
                 }`}>
                   <h3 className="text-sm md:text-base font-bold text-white whitespace-nowrap" style={{ transform: 'rotate(-90deg) translateY(-50%)', transformOrigin: '0 50%' }}>
@@ -303,10 +311,14 @@ const Companies = () => {
 
             {/* Service 2 */}
             <div 
-              className={`relative rounded-xl overflow-hidden transition-[width] duration-300 cursor-pointer will-change-[width] -ml-[10px] ${
+              className={`relative rounded-xl overflow-hidden cursor-pointer will-change-[width] -ml-[10px] ${
                 activeMobileAccordionIndex === 1 ? 'w-[calc(100vw-8rem)] max-w-[350px]' : 'w-[60px] sm:w-[80px]'
               }`}
-              style={{ zIndex: 1 > activeMobileAccordionIndex ? 11 : 10 }}
+              style={{ 
+                zIndex: 1 > activeMobileAccordionIndex ? 11 : 10,
+                transition: 'width 200ms cubic-bezier(0.4, 0, 0.2, 1)',
+                transform: 'translate3d(0,0,0)'
+              }}
               onClick={() => setActiveMobileAccordionIndex(1)}
             >
               <div className="absolute inset-0 overflow-hidden">
@@ -318,7 +330,7 @@ const Companies = () => {
               </div>
               <div className="absolute inset-0 flex flex-col justify-between">
                 {/* Content when expanded */}
-                <div className={`flex-1 flex flex-col justify-end items-start px-6 pb-6 transition-opacity duration-300 ${
+                <div className={`flex-1 flex flex-col justify-end items-start px-6 pb-6 ${
                   activeMobileAccordionIndex === 1 ? 'opacity-100' : 'opacity-0 pointer-events-none'
                 }`}>
                   <h3 className="text-lg font-bold text-white mb-3 text-left">
@@ -330,7 +342,7 @@ const Companies = () => {
                 </div>
                 
                 {/* Vertical title when collapsed */}
-                <div className={`absolute bottom-8 left-8 transition-opacity duration-300 ${
+                <div className={`absolute bottom-8 left-8 transition-opacity duration-200 ${
                   activeMobileAccordionIndex === 1 ? 'opacity-0' : 'opacity-100'
                 }`}>
                   <h3 className="text-sm md:text-base font-bold text-white whitespace-nowrap" style={{ transform: 'rotate(-90deg) translateY(-50%)', transformOrigin: '0 50%' }}>
@@ -342,10 +354,14 @@ const Companies = () => {
 
             {/* Service 3 */}
             <div 
-              className={`relative rounded-xl overflow-hidden transition-[width] duration-300 cursor-pointer will-change-[width] -ml-[10px] ${
+              className={`relative rounded-xl overflow-hidden cursor-pointer will-change-[width] -ml-[10px] ${
                 activeMobileAccordionIndex === 2 ? 'w-[calc(100vw-8rem)] max-w-[350px]' : 'w-[60px] sm:w-[80px]'
               }`}
-              style={{ zIndex: 2 > activeMobileAccordionIndex ? 12 : 10 }}
+              style={{ 
+                zIndex: 2 > activeMobileAccordionIndex ? 12 : 10,
+                transition: 'width 200ms cubic-bezier(0.4, 0, 0.2, 1)',
+                transform: 'translate3d(0,0,0)'
+              }}
               onClick={() => setActiveMobileAccordionIndex(2)}
             >
               <div className="absolute inset-0 overflow-hidden">
@@ -357,7 +373,7 @@ const Companies = () => {
               </div>
               <div className="absolute inset-0 flex flex-col justify-between">
                 {/* Content when expanded */}
-                <div className={`flex-1 flex flex-col justify-end items-start px-6 pb-6 transition-opacity duration-300 ${
+                <div className={`flex-1 flex flex-col justify-end items-start px-6 pb-6 ${
                   activeMobileAccordionIndex === 2 ? 'opacity-100' : 'opacity-0 pointer-events-none'
                 }`}>
                   <h3 className="text-lg font-bold text-white mb-3 text-left">
@@ -369,7 +385,7 @@ const Companies = () => {
                 </div>
                 
                 {/* Vertical title when collapsed */}
-                <div className={`absolute bottom-8 left-8 transition-opacity duration-300 ${
+                <div className={`absolute bottom-8 left-8 transition-opacity duration-200 ${
                   activeMobileAccordionIndex === 2 ? 'opacity-0' : 'opacity-100'
                 }`}>
                   <h3 className="text-sm md:text-base font-bold text-white whitespace-nowrap" style={{ transform: 'rotate(-90deg) translateY(-50%)', transformOrigin: '0 50%' }}>
@@ -381,10 +397,14 @@ const Companies = () => {
 
             {/* Service 4 */}
             <div 
-              className={`relative rounded-xl overflow-hidden transition-[width] duration-300 cursor-pointer will-change-[width] -ml-[10px] ${
+              className={`relative rounded-xl overflow-hidden cursor-pointer will-change-[width] -ml-[10px] ${
                 activeMobileAccordionIndex === 3 ? 'w-[calc(100vw-8rem)] max-w-[350px]' : 'w-[60px] sm:w-[80px]'
               }`}
-              style={{ zIndex: 3 > activeMobileAccordionIndex ? 13 : 10 }}
+              style={{ 
+                zIndex: 3 > activeMobileAccordionIndex ? 13 : 10,
+                transition: 'width 200ms cubic-bezier(0.4, 0, 0.2, 1)',
+                transform: 'translate3d(0,0,0)'
+              }}
               onClick={() => setActiveMobileAccordionIndex(3)}
             >
               <div className="absolute inset-0 overflow-hidden">
@@ -396,7 +416,7 @@ const Companies = () => {
               </div>
               <div className="absolute inset-0 flex flex-col justify-between">
                 {/* Content when expanded */}
-                <div className={`flex-1 flex flex-col justify-end items-start px-6 pb-6 transition-opacity duration-300 ${
+                <div className={`flex-1 flex flex-col justify-end items-start px-6 pb-6 ${
                   activeMobileAccordionIndex === 3 ? 'opacity-100' : 'opacity-0 pointer-events-none'
                 }`}>
                   <h3 className="text-lg font-bold text-white mb-3 text-left">
@@ -408,7 +428,7 @@ const Companies = () => {
                 </div>
                 
                 {/* Vertical title when collapsed */}
-                <div className={`absolute bottom-8 left-8 transition-opacity duration-300 ${
+                <div className={`absolute bottom-8 left-8 transition-opacity duration-200 ${
                   activeMobileAccordionIndex === 3 ? 'opacity-0' : 'opacity-100'
                 }`}>
                   <h3 className="text-sm md:text-base font-bold text-white whitespace-nowrap" style={{ transform: 'rotate(-90deg) translateY(-50%)', transformOrigin: '0 50%' }}>
@@ -420,10 +440,14 @@ const Companies = () => {
 
             {/* Service 5 - Default open */}
             <div 
-              className={`relative rounded-xl overflow-hidden transition-[width] duration-300 cursor-pointer will-change-[width] -ml-[10px] ${
+              className={`relative rounded-xl overflow-hidden cursor-pointer will-change-[width] -ml-[10px] ${
                 activeMobileAccordionIndex === 4 ? 'w-[calc(100vw-8rem)] max-w-[350px]' : 'w-[60px] sm:w-[80px]'
               }`}
-              style={{ zIndex: 4 > activeMobileAccordionIndex ? 14 : 10 }}
+              style={{ 
+                zIndex: 4 > activeMobileAccordionIndex ? 14 : 10,
+                transition: 'width 200ms cubic-bezier(0.4, 0, 0.2, 1)',
+                transform: 'translate3d(0,0,0)'
+              }}
               onClick={() => setActiveMobileAccordionIndex(4)}
             >
               <div className="absolute inset-0 overflow-hidden">
@@ -435,7 +459,7 @@ const Companies = () => {
               </div>
               <div className="absolute inset-0 flex flex-col justify-between">
                 {/* Content when expanded */}
-                <div className={`flex-1 flex flex-col justify-end items-start px-6 pb-6 transition-opacity duration-300 ${
+                <div className={`flex-1 flex flex-col justify-end items-start px-6 pb-6 ${
                   activeMobileAccordionIndex === 4 ? 'opacity-100' : 'opacity-0 pointer-events-none'
                 }`}>
                   <h3 className="text-lg font-bold text-white mb-3 text-left">
@@ -447,7 +471,7 @@ const Companies = () => {
                 </div>
                 
                 {/* Vertical title when collapsed */}
-                <div className={`absolute bottom-8 left-8 transition-opacity duration-300 ${
+                <div className={`absolute bottom-8 left-8 transition-opacity duration-200 ${
                   activeMobileAccordionIndex === 4 ? 'opacity-0' : 'opacity-100'
                 }`}>
                   <h3 className="text-sm md:text-base font-bold text-white whitespace-nowrap" style={{ transform: 'rotate(-90deg) translateY(-50%)', transformOrigin: '0 50%' }}>
@@ -911,7 +935,7 @@ const Companies = () => {
                     className="w-20 h-20 md:w-24 md:h-24 cursor-pointer transition-transform hover:scale-110"
                   />
                   {/* Hover dialog */}
-                  <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-10">
+                  <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none z-10">
                     <div className="bg-black text-white p-3 rounded-lg shadow-xl w-64">
                       <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-2">
                         <div className="w-0 h-0 border-l-[8px] border-l-transparent border-r-[8px] border-r-transparent border-b-[8px] border-b-black"></div>
@@ -933,7 +957,7 @@ const Companies = () => {
                     className="w-20 h-20 md:w-24 md:h-24 cursor-pointer transition-transform hover:scale-110"
                   />
                   {/* Hover dialog */}
-                  <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-10">
+                  <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none z-10">
                     <div className="bg-black text-white p-3 rounded-lg shadow-xl w-64">
                       <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-2">
                         <div className="w-0 h-0 border-l-[8px] border-l-transparent border-r-[8px] border-r-transparent border-b-[8px] border-b-black"></div>
@@ -955,7 +979,7 @@ const Companies = () => {
                     className="w-20 h-20 md:w-24 md:h-24 cursor-pointer transition-transform hover:scale-110"
                   />
                   {/* Hover dialog */}
-                  <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-10">
+                  <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none z-10">
                     <div className="bg-black text-white p-3 rounded-lg shadow-xl w-64">
                       <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-2">
                         <div className="w-0 h-0 border-l-[8px] border-l-transparent border-r-[8px] border-r-transparent border-b-[8px] border-b-black"></div>
@@ -977,7 +1001,7 @@ const Companies = () => {
                     className="w-20 h-20 md:w-24 md:h-24 cursor-pointer transition-transform hover:scale-110"
                   />
                   {/* Hover dialog */}
-                  <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-10">
+                  <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none z-10">
                     <div className="bg-black text-white p-3 rounded-lg shadow-xl w-64">
                       <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-2">
                         <div className="w-0 h-0 border-l-[8px] border-l-transparent border-r-[8px] border-r-transparent border-b-[8px] border-b-black"></div>
@@ -999,7 +1023,7 @@ const Companies = () => {
                     className="w-20 h-20 md:w-24 md:h-24 cursor-pointer transition-transform hover:scale-110"
                   />
                   {/* Hover dialog */}
-                  <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-10">
+                  <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none z-10">
                     <div className="bg-black text-white p-3 rounded-lg shadow-xl w-64">
                       <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-2">
                         <div className="w-0 h-0 border-l-[8px] border-l-transparent border-r-[8px] border-r-transparent border-b-[8px] border-b-black"></div>
@@ -1027,7 +1051,7 @@ const Companies = () => {
                     />
                   </button>
                   {/* Dialog that appears on click */}
-                  <div className={`transition-opacity duration-300 ${
+                  <div className={`transition-opacity duration-200 ${
                     clickedBenefit === 0 
                       ? 'max-h-96 opacity-100' 
                       : 'max-h-0 opacity-0 overflow-hidden'
@@ -1057,7 +1081,7 @@ const Companies = () => {
                     />
                   </button>
                   {/* Dialog that appears on click */}
-                  <div className={`transition-opacity duration-300 ${
+                  <div className={`transition-opacity duration-200 ${
                     clickedBenefit === 1 
                       ? 'max-h-96 opacity-100' 
                       : 'max-h-0 opacity-0 overflow-hidden'
@@ -1087,7 +1111,7 @@ const Companies = () => {
                     />
                   </button>
                   {/* Dialog that appears on click */}
-                  <div className={`transition-opacity duration-300 ${
+                  <div className={`transition-opacity duration-200 ${
                     clickedBenefit === 2 
                       ? 'max-h-96 opacity-100' 
                       : 'max-h-0 opacity-0 overflow-hidden'
@@ -1117,7 +1141,7 @@ const Companies = () => {
                     />
                   </button>
                   {/* Dialog that appears on click */}
-                  <div className={`transition-opacity duration-300 ${
+                  <div className={`transition-opacity duration-200 ${
                     clickedBenefit === 3 
                       ? 'max-h-96 opacity-100' 
                       : 'max-h-0 opacity-0 overflow-hidden'
@@ -1147,7 +1171,7 @@ const Companies = () => {
                     />
                   </button>
                   {/* Dialog that appears on click */}
-                  <div className={`transition-opacity duration-300 ${
+                  <div className={`transition-opacity duration-200 ${
                     clickedBenefit === 4 
                       ? 'max-h-96 opacity-100' 
                       : 'max-h-0 opacity-0 overflow-hidden'
