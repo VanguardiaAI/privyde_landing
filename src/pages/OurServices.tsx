@@ -139,21 +139,23 @@ const OurServices: React.FC = () => {
       <Navbar />
       
       {/* Hero Section */}
-      <section className="relative h-screen">
+      <section className="relative h-[50vh] md:h-screen">
         <div className="absolute inset-0">
           <img
             src="/images/our_services/nuestros_servicios_hero.webp"
             alt="Nuestros Servicios"
             className="w-full h-full object-cover"
           />
-          {/* Gradient overlay - left fade and bottom fade */}
+          {/* Gradient overlay - adjusted for mobile */}
           <div className="absolute inset-0 bg-gradient-to-r from-black via-black/50 to-transparent" />
-          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black" />
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent via-[50%] md:via-transparent to-black" />
+          {/* Extra bottom gradient for deeper black */}
+          <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-black via-black/80 to-transparent" />
         </div>
         
-        <div className="relative z-10 h-full flex items-end pb-16 md:pb-20">
+        <div className="relative z-10 h-full flex items-end pb-10 md:pb-20">
           <div className="container mx-auto px-6 md:px-0 md:ml-20">
-            <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold text-white tracking-wider uppercase text-left" style={{ fontFamily: 'CONTHRAX-SB' }}>
+            <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold text-white tracking-wider uppercase text-center md:text-left" style={{ fontFamily: 'CONTHRAX-SB' }}>
               NUESTROS<br />SERVICIOS
             </h1>
           </div>
@@ -161,13 +163,13 @@ const OurServices: React.FC = () => {
       </section>
 
       {/* Services Slider Section - Mobile */}
-      <section className="md:hidden bg-black pt-8">
+      <section className="md:hidden bg-black pt-2">
         <div className="container mx-auto px-6 pb-12">
           <div className="relative">
             {/* Container wrapper for proper spacing */}
-            <div className="relative pt-56">
+            <div className="relative pt-44">
               {/* Slider Image - Positioned to overlap */}
-              <div className="absolute top-16 left-1/2 transform -translate-x-1/2 w-80 z-20">
+              <div className="absolute top-4 left-1/2 transform -translate-x-1/2 w-80 z-20">
                 <img
                   src={currentService.image}
                   alt={currentService.title}
@@ -177,7 +179,7 @@ const OurServices: React.FC = () => {
 
               {/* Content Container */}
               <div className="bg-neutral-800/90 rounded-lg p-6 pt-20 text-white text-left">
-                <h2 className="text-xl font-bold mb-3 uppercase tracking-wide text-left" style={{ fontFamily: 'CONTHRAX-SB' }}>
+                <h2 className="text-xl font-bold mb-3 uppercase tracking-wide text-center" style={{ fontFamily: 'CONTHRAX-SB' }}>
                   {currentService.title}
                 </h2>
                 
@@ -296,12 +298,11 @@ const OurServices: React.FC = () => {
       </section>
 
       {/* Elige tu auto Section */}
-      <div className="bg-white">
-        <section className="relative">
-          {/* Image section - half black, half white */}
-          <div className="relative h-[400px] md:h-[500px]">
-            <div className="absolute inset-0 bg-black h-1/2" />
-            <div className="absolute inset-0 bg-white h-1/2 top-1/2" />
+      <section className="relative">
+        {/* Image section - half black, half white */}
+        <div className="relative h-[400px] md:h-[500px]">
+          <div className="absolute inset-0 bg-black h-1/2" />
+          <div className="absolute inset-0 bg-white h-1/2 top-1/2" />
             
             {/* Image container */}
             <div className="relative h-full flex items-center justify-center">
@@ -321,7 +322,7 @@ const OurServices: React.FC = () => {
           </div>
 
           {/* Icons section */}
-          <div className="py-16 md:py-20">
+          <div className="py-16 md:py-20 bg-white">
             <div className="container mx-auto px-6 md:px-12">
             {/* Icons container - Desktop */}
             <div className="hidden md:flex justify-center items-center gap-4 md:gap-8 mb-12">
@@ -588,7 +589,6 @@ const OurServices: React.FC = () => {
           </div>
         </div>
       </section>
-    </div>
 
       {/* Descubre nuestras clases de servicio Section */}
       <div className="bg-black">
