@@ -16,6 +16,10 @@ const Companies = () => {
   const [activeMobileAccordionIndex, setActiveMobileAccordionIndex] = useState(4);
   const [activePartnershipSlide, setActivePartnershipSlide] = useState(0);
   const navigate = useNavigate();
+  
+  // Estados para el touch/swipe
+  const [touchStartX, setTouchStartX] = useState(0);
+  const [touchEndX, setTouchEndX] = useState(0);
 
   // Estado para el formulario de contacto
   const [formData] = useState({
@@ -72,6 +76,30 @@ const Companies = () => {
     localStorage.setItem("companyContactData", JSON.stringify(formData));
     // Redirigir a la página de registro de empresas
     navigate("/register-companies");
+  };
+  
+  // Funciones para manejar el swipe/touch en móvil
+  const handleTouchStart = (e: React.TouchEvent) => {
+    setTouchStartX(e.targetTouches[0].clientX);
+  };
+
+  const handleTouchMove = (e: React.TouchEvent) => {
+    setTouchEndX(e.targetTouches[0].clientX);
+  };
+
+  const handleTouchEnd = () => {
+    if (!touchStartX || !touchEndX) return;
+    
+    const distance = touchStartX - touchEndX;
+    const isLeftSwipe = distance > 50;
+    const isRightSwipe = distance < -50;
+
+    if (isLeftSwipe && activeMobileAccordionIndex < 4) {
+      setActiveMobileAccordionIndex(activeMobileAccordionIndex + 1);
+    }
+    if (isRightSwipe && activeMobileAccordionIndex > 0) {
+      setActiveMobileAccordionIndex(activeMobileAccordionIndex - 1);
+    }
   };
 
   // Toggle para abrir/cerrar FAQs
@@ -215,7 +243,7 @@ const Companies = () => {
 
         {/* Services Accordion Section */}
         <section className="bg-black py-12 md:py-20">
-          <div className="container mx-auto px-4">
+          <div className="container mx-auto pl-4 pr-0 md:px-4 overflow-x-hidden">
           {/* Title */}
           <h2
             className="text-3xl md:text-4xl font-bold text-center text-white mb-10 md:mb-16"
@@ -225,11 +253,16 @@ const Companies = () => {
           </h2>
 
           {/* Horizontal Accordion - Mobile */}
-          <div className="md:hidden relative flex h-[350px] mx-auto overflow-visible justify-center pl-2 pr-2">
+          <div 
+            className="md:hidden relative flex h-[350px] overflow-hidden justify-start pl-2"
+            onTouchStart={handleTouchStart}
+            onTouchMove={handleTouchMove}
+            onTouchEnd={handleTouchEnd}
+          >
             {/* Service 1 */}
             <div 
               className={`relative rounded-xl overflow-hidden transition-all duration-500 cursor-pointer ${
-                activeMobileAccordionIndex === 0 ? 'w-[85vw] max-w-[400px] z-[10]' : 'w-[80px] z-[1]'
+                activeMobileAccordionIndex === 0 ? 'w-[85vw] max-w-[400px] z-[20]' : 'w-[80px] z-[10]'
               }`}
               onClick={() => setActiveMobileAccordionIndex(0)}
             >
@@ -237,7 +270,7 @@ const Companies = () => {
                 <img
                   src="/images/bussines/Viajes de Ngocios y reuniones.webp"
                   alt="Viajes de negocios y reuniones"
-                  className="absolute top-0 -left-[20%] w-[120%] h-full object-cover scale-x-[-1]"
+                  className="absolute inset-0 w-full h-full object-cover scale-x-[-1]"
                 />
               </div>
               <div className="absolute inset-0 flex flex-col justify-between">
@@ -250,7 +283,7 @@ const Companies = () => {
                   </p>
                 </div>
                 {/* Vertical title at bottom */}
-                <div className="absolute bottom-8 left-6">
+                <div className="absolute bottom-8 left-8">
                   <h3 className="text-sm md:text-base font-bold text-white whitespace-nowrap" style={{ transform: 'rotate(-90deg) translateY(-50%)', transformOrigin: '0 50%' }}>
                     Viajes de negocios y reuniones
                   </h3>
@@ -260,8 +293,8 @@ const Companies = () => {
 
             {/* Service 2 */}
             <div 
-              className={`relative rounded-xl overflow-hidden transition-all duration-500 cursor-pointer -ml-[40px] ${
-                activeMobileAccordionIndex === 1 ? 'w-[85vw] max-w-[400px] z-[10]' : 'w-[80px] z-[2]'
+              className={`relative rounded-xl overflow-hidden transition-all duration-500 cursor-pointer -ml-[10px] ${
+                activeMobileAccordionIndex === 1 ? 'w-[85vw] max-w-[400px] z-[20]' : 'w-[80px] z-[11]'
               }`}
               onClick={() => setActiveMobileAccordionIndex(1)}
             >
@@ -269,7 +302,7 @@ const Companies = () => {
                 <img
                   src="/images/bussines/Traslados interciudad.webp"
                   alt="Traslados interciudad"
-                  className="absolute top-0 -left-[20%] w-[120%] h-full object-cover scale-x-[-1]"
+                  className="absolute inset-0 w-full h-full object-cover scale-x-[-1]"
                 />
               </div>
               <div className="absolute inset-0 flex flex-col justify-between">
@@ -282,7 +315,7 @@ const Companies = () => {
                   </p>
                 </div>
                 {/* Vertical title at bottom */}
-                <div className="absolute bottom-8 left-6">
+                <div className="absolute bottom-8 left-8">
                   <h3 className="text-sm md:text-base font-bold text-white whitespace-nowrap" style={{ transform: 'rotate(-90deg) translateY(-50%)', transformOrigin: '0 50%' }}>
                     Traslados interciudad
                   </h3>
@@ -292,8 +325,8 @@ const Companies = () => {
 
             {/* Service 3 */}
             <div 
-              className={`relative rounded-xl overflow-hidden transition-all duration-500 cursor-pointer -ml-[40px] ${
-                activeMobileAccordionIndex === 2 ? 'w-[85vw] max-w-[400px] z-[10]' : 'w-[80px] z-[3]'
+              className={`relative rounded-xl overflow-hidden transition-all duration-500 cursor-pointer -ml-[10px] ${
+                activeMobileAccordionIndex === 2 ? 'w-[85vw] max-w-[400px] z-[20]' : 'w-[80px] z-[12]'
               }`}
               onClick={() => setActiveMobileAccordionIndex(2)}
             >
@@ -301,7 +334,7 @@ const Companies = () => {
                 <img
                   src="/images/bussines/Aeropuertos en todo el mundo.webp"
                   alt="Aeropuertos en todo el mundo"
-                  className="absolute top-0 -left-[20%] w-[120%] h-full object-cover scale-x-[-1]"
+                  className="absolute inset-0 w-full h-full object-cover scale-x-[-1]"
                 />
               </div>
               <div className="absolute inset-0 flex flex-col justify-between">
@@ -314,7 +347,7 @@ const Companies = () => {
                   </p>
                 </div>
                 {/* Vertical title at bottom */}
-                <div className="absolute bottom-8 left-6">
+                <div className="absolute bottom-8 left-8">
                   <h3 className="text-sm md:text-base font-bold text-white whitespace-nowrap" style={{ transform: 'rotate(-90deg) translateY(-50%)', transformOrigin: '0 50%' }}>
                     Aeropuertos en todo el mundo
                   </h3>
@@ -324,8 +357,8 @@ const Companies = () => {
 
             {/* Service 4 */}
             <div 
-              className={`relative rounded-xl overflow-hidden transition-all duration-500 cursor-pointer -ml-[40px] ${
-                activeMobileAccordionIndex === 3 ? 'w-[85vw] max-w-[400px] z-[10]' : 'w-[80px] z-[4]'
+              className={`relative rounded-xl overflow-hidden transition-all duration-500 cursor-pointer -ml-[10px] ${
+                activeMobileAccordionIndex === 3 ? 'w-[85vw] max-w-[400px] z-[20]' : 'w-[80px] z-[13]'
               }`}
               onClick={() => setActiveMobileAccordionIndex(3)}
             >
@@ -333,7 +366,7 @@ const Companies = () => {
                 <img
                   src="/images/bussines/Transporte para clientes y socios.webp"
                   alt="Transporte para clientes y socios"
-                  className="absolute top-0 -left-[20%] w-[120%] h-full object-cover scale-x-[-1]"
+                  className="absolute inset-0 w-full h-full object-cover scale-x-[-1]"
                 />
               </div>
               <div className="absolute inset-0 flex flex-col justify-between">
@@ -346,7 +379,7 @@ const Companies = () => {
                   </p>
                 </div>
                 {/* Vertical title at bottom */}
-                <div className="absolute bottom-8 left-6">
+                <div className="absolute bottom-8 left-8">
                   <h3 className="text-sm md:text-base font-bold text-white whitespace-nowrap" style={{ transform: 'rotate(-90deg) translateY(-50%)', transformOrigin: '0 50%' }}>
                     Transporte para clientes y socios
                   </h3>
@@ -356,8 +389,8 @@ const Companies = () => {
 
             {/* Service 5 - Default open */}
             <div 
-              className={`relative rounded-xl overflow-hidden transition-all duration-500 cursor-pointer -ml-[40px] ${
-                activeMobileAccordionIndex === 4 ? 'w-[85vw] max-w-[400px] z-[10]' : 'w-[80px] z-[5]'
+              className={`relative rounded-xl overflow-hidden transition-all duration-500 cursor-pointer -ml-[10px] ${
+                activeMobileAccordionIndex === 4 ? 'w-[85vw] max-w-[400px] z-[20]' : 'w-[80px] z-[14]'
               }`}
               onClick={() => setActiveMobileAccordionIndex(4)}
             >
@@ -365,7 +398,7 @@ const Companies = () => {
                 <img
                   src="/images/bussines/Choferes corporativos por hora o dia.webp"
                   alt="Chóferes corporativos por hora o día completo"
-                  className="absolute top-0 -left-[20%] w-[120%] h-full object-cover scale-x-[-1]"
+                  className="absolute inset-0 w-full h-full object-cover scale-x-[-1]"
                 />
               </div>
               <div className="absolute inset-0 flex flex-col justify-between">
@@ -378,7 +411,7 @@ const Companies = () => {
                   </p>
                 </div>
                 {/* Vertical title at bottom */}
-                <div className="absolute bottom-8 left-6">
+                <div className="absolute bottom-8 left-8">
                   <h3 className="text-sm md:text-base font-bold text-white whitespace-nowrap" style={{ transform: 'rotate(-90deg) translateY(-50%)', transformOrigin: '0 50%' }}>
                     Chóferes corporativos por hora o día completo
                   </h3>
