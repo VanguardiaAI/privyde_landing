@@ -215,7 +215,7 @@ const Companies = () => {
         
         <div className="relative z-10 h-full flex items-end pb-6 md:pb-16">
           <div className="container mx-auto px-6">
-            <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold text-white tracking-wider uppercase text-center" style={{ fontFamily: 'CONTHRAX-SB' }}>
+            <h1 className="text-3xl sm:text-3xl md:text-5xl lg:text-6xl font-bold text-white tracking-wider uppercase text-center" style={{ fontFamily: 'CONTHRAX-SB' }}>
               PARA EMPRESAS
             </h1>
           </div>
