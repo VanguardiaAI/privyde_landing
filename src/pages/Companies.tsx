@@ -238,13 +238,13 @@ const Companies = () => {
           </p>
           </div>
           {/* Separator line - same as landing page */}
-          <div className="container mx-auto px-4">
-            <div className="w-full h-0.5 bg-white mt-12"></div>
+          <div className="container mx-auto px-8 md:px-4">
+            <div className="w-full h-0.5 bg-white mt-8 md:mt-12"></div>
           </div>
         </section>
 
         {/* Services Accordion Section */}
-        <section className="bg-black py-12 md:py-20">
+        <section className="bg-black py-8 md:py-20">
           <div className="container mx-auto px-4 md:px-4 overflow-x-hidden">
           {/* Title */}
           <h2
@@ -620,7 +620,7 @@ const Companies = () => {
           </div>
           
           {/* Separator line */}
-          <div className="w-full h-0.5 bg-white mt-20"></div>
+          <div className="w-full h-0.5 bg-white mt-12 md:mt-20 mx-4 md:mx-0"></div>
         </div>
       </section>
 
