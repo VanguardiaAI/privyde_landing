@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { useAuth } from "../context/AuthContext";
 import { Mail, Lock, User } from "lucide-react";
 import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+import BlackFooter from "@/components/BlackFooter";
 import { useNavigate } from "react-router-dom";
 
 export default function RegisterPage() {
@@ -226,7 +226,24 @@ export default function RegisterPage() {
           </Card>
         </div>
       </div>
-      <Footer data-oid="vpjt2:w" />
+      
+      {/* Extra spacing for phone mockup */}
+      <div className="pb-32 md:pb-48"></div>
+
+      {/* Phone Mockup Overlap - Positioned for Footer */}
+      <div className="relative hidden lg:block">
+        <div className="absolute right-0 bottom-0 transform translate-y-2/3 z-30">
+          <div className="relative w-[700px] xl:w-[800px] 2xl:w-[900px]">
+            <img
+              src="/images/smartphone_14_pro_31.webp"
+              alt="Privyde App"
+              className="w-full h-auto"
+            />
+          </div>
+        </div>
+      </div>
+
+      <BlackFooter />
     </>
   );
 }

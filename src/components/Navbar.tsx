@@ -3,59 +3,27 @@ import { Link } from "react-router-dom";
 import { useState, useRef, useEffect } from "react";
 import { useAuth } from "../context/AuthContext";
 
-// Definición de tipos para los servicios (opcional pero buena práctica)
-interface Service {
-  title: string;
-  // description?: string; // La descripción es opcional para algunos elementos del menú
-  // link?: string; // Enlace opcional
-}
 
 export default function Navbar() {
   const { user, logout } = useAuth();
-  const [isServicesMenuOpen, setIsServicesMenuOpen] = useState(false);
   const [isLanguageMenuOpen, setIsLanguageMenuOpen] = useState(false);
-  const [isCompanyMenuOpen, setIsCompanyMenuOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isMobileLanguageOpen, setIsMobileLanguageOpen] = useState(false);
   const [isUserMenuOpen, setIsUserMenuOpen] = useState(false);
 
   // Referencias para los temporizadores
-  const servicesTimeoutRef = useRef<number | null>(null);
-  const companyTimeoutRef = useRef<number | null>(null);
   const languageTimeoutRef = useRef<number | null>(null);
   const userMenuTimeoutRef = useRef<number | null>(null);
 
   // Limpiar los temporizadores al desmontar el componente
   useEffect(() => {
     return () => {
-      if (servicesTimeoutRef.current)
-        window.clearTimeout(servicesTimeoutRef.current);
-      if (companyTimeoutRef.current)
-        window.clearTimeout(companyTimeoutRef.current);
       if (languageTimeoutRef.current)
         window.clearTimeout(languageTimeoutRef.current);
       if (userMenuTimeoutRef.current)
         window.clearTimeout(userMenuTimeoutRef.current);
     };
   }, []);
-
-  const services: Service[] = [
-    { title: "Viajes de ciudad a ciudad" },
-    { title: "Traslados al aeropuerto" },
-    { title: "Alquiler por horas/días" },
-    { title: "Servicios eventos especiales" },
-    { title: "Servicios de limusinas" },
-    { title: "Jets privados" },
-    { title: "Traslados corporativos VIP" },
-    { title: "Servicios de seguridad ejecutiva discreta" },
-  ];
-
-  const companyMenuItems: Service[] = [
-    { title: "Resumen" },
-    { title: "Empresas" },
-    { title: "Agencias de viajes" },
-    { title: "Asociaciones estratégicas" },
-  ];
 
   const languages = [
     { code: "es", name: "Español" },
@@ -67,46 +35,11 @@ export default function Navbar() {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
-  const toggleServicesMenu = () => {
-    if (window.innerWidth < 768) {
-      setIsServicesMenuOpen(!isServicesMenuOpen);
-    }
-  };
-
-  const toggleCompanyMenu = () => {
-    if (window.innerWidth < 768) {
-      setIsCompanyMenuOpen(!isCompanyMenuOpen);
-    }
-  };
 
   const toggleMobileLanguage = () => {
     setIsMobileLanguageOpen(!isMobileLanguageOpen);
   };
 
-  // Funciones para gestionar los menús con retraso
-  const handleServicesMouseEnter = () => {
-    if (servicesTimeoutRef.current)
-      window.clearTimeout(servicesTimeoutRef.current);
-    setIsServicesMenuOpen(true);
-  };
-
-  const handleServicesMouseLeave = () => {
-    servicesTimeoutRef.current = window.setTimeout(() => {
-      setIsServicesMenuOpen(false);
-    }, 300); // 300ms de retraso
-  };
-
-  const handleCompanyMouseEnter = () => {
-    if (companyTimeoutRef.current)
-      window.clearTimeout(companyTimeoutRef.current);
-    setIsCompanyMenuOpen(true);
-  };
-
-  const handleCompanyMouseLeave = () => {
-    companyTimeoutRef.current = window.setTimeout(() => {
-      setIsCompanyMenuOpen(false);
-    }, 300);
-  };
 
   const handleLanguageMouseEnter = () => {
     if (languageTimeoutRef.current)
@@ -165,120 +98,24 @@ export default function Navbar() {
 
         {/* Left side menus - Desktop only */}
         <div className="hidden md:flex nav-menu items-center flex-1">
-          {/* Services dropdown */}
-          <div
-            className="nav-menu-item group relative px-3"
-            onMouseEnter={handleServicesMouseEnter}
-            onMouseLeave={handleServicesMouseLeave}
-            data-oid="22uuywg"
+          {/* Direct link to services */}
+          <Link
+            to="/our-services"
+            className="nav-menu-item px-3 text-white hover:text-blue-400"
+            data-oid="4--cin6"
           >
-            <Link
-              to="/our-services"
-              className="cursor-pointer flex items-center text-white hover:text-blue-400"
-              data-oid="4--cin6"
-            >
-              Nuestros servicios
-              <ChevronDown
-                className={`ml-1 h-4 w-4 transition-transform duration-200 ${isServicesMenuOpen ? "rotate-180" : ""}`}
-                data-oid="ov3tfxd"
-              />
-            </Link>
-            {isServicesMenuOpen && (
-              <div
-                className="absolute left-0 top-full mt-1 w-64 bg-gray-900 shadow-md border border-gray-700 rounded-md z-50"
-                onMouseEnter={handleServicesMouseEnter}
-                onMouseLeave={handleServicesMouseLeave}
-                data-oid="9zlgy76"
-              >
-                {services.map((service, index) => (
-                  <div
-                    key={index}
-                    className="border-b border-gray-700 last:border-b-0"
-                    data-oid="8lzt.6h"
-                  >
-                    <Link
-                      to={
-                        service.title === "Viajes de ciudad a ciudad"
-                          ? "/city-to-city"
-                          : service.title === "Traslados al aeropuerto"
-                            ? "/airport-transfers"
-                            : service.title === "Alquiler por horas/días"
-                              ? "/hourly-hire"
-                              : service.title === "Servicios eventos especiales"
-                                ? "/special-events"
-                                : service.title === "Servicios de limusinas"
-                                  ? "/limousine-service"
-                                  : service.title === "Jets privados"
-                                    ? "/private-jets"
-                                    : service.title ===
-                                        "Traslados corporativos VIP"
-                                      ? "/corporate-transfers"
-                                      : service.title ===
-                                          "Servicios de seguridad ejecutiva discreta"
-                                        ? "/security-services"
-                                        : "#"
-                      }
-                      className="block px-4 py-2 text-sm text-gray-200 hover:bg-gray-800 hover:text-blue-400"
-                      data-oid="uwe3i8v"
-                    >
-                      {service.title}
-                    </Link>
-                  </div>
-                ))}
-              </div>
-            )}
-          </div>
-          <div
-            className="nav-menu-item group relative px-3"
-            onMouseEnter={handleCompanyMouseEnter}
-            onMouseLeave={handleCompanyMouseLeave}
-            data-oid="8p4b51:"
+            Nuestros servicios
+          </Link>
+          
+          {/* Direct link to companies */}
+          <Link
+            to="/companies"
+            className="nav-menu-item px-3 text-white hover:text-blue-400"
+            data-oid="1x.qi:y"
           >
-            <span
-              className="cursor-pointer flex items-center text-white hover:text-blue-400"
-              data-oid="1x.qi:y"
-            >
-              Para empresas
-              <ChevronDown
-                className={`ml-1 h-4 w-4 transition-transform duration-200 ${isCompanyMenuOpen ? "rotate-180" : ""}`}
-                data-oid="6i4itf4"
-              />
-            </span>
-            {isCompanyMenuOpen && (
-              <div
-                className="absolute left-0 top-full mt-1 w-64 bg-gray-900 shadow-md border border-gray-700 rounded-md z-50"
-                onMouseEnter={handleCompanyMouseEnter}
-                onMouseLeave={handleCompanyMouseLeave}
-                data-oid="8zeiu2p"
-              >
-                {companyMenuItems.map((item, index) => (
-                  <div
-                    key={index}
-                    className="border-b border-gray-700 last:border-b-0"
-                    data-oid="_zi5i20"
-                  >
-                    <Link
-                      to={
-                        item.title === "Resumen"
-                          ? "/company-overview"
-                          : item.title === "Empresas"
-                            ? "/companies"
-                            : item.title === "Agencias de viajes"
-                              ? "/travel-agencies"
-                              : item.title === "Asociaciones estratégicas"
-                                ? "/strategic-partnerships"
-                                : "#"
-                      }
-                      className="block px-4 py-2 text-sm text-gray-200 hover:bg-gray-800 hover:text-blue-400"
-                      data-oid="c.asaf:"
-                    >
-                      {item.title}
-                    </Link>
-                  </div>
-                ))}
-              </div>
-            )}
-          </div>
+            Para empresas
+          </Link>
+          
           <Link
             to="/drivers"
             className="nav-menu-item px-3 text-white hover:text-blue-400"
@@ -436,97 +273,21 @@ export default function Navbar() {
           data-oid="o-:80u5"
         >
           <div className="flex flex-col" data-oid="zf8o02n">
-            <div className="border-b border-gray-100" data-oid="szs3n5o">
-              <div
-                className="flex justify-center items-center py-3 px-4"
-                onClick={toggleServicesMenu}
-                data-oid="mov.en0"
-              >
-                <Link to="/our-services" className="font-medium text-gray-200 flex items-center" data-oid="p53s.li">
-                  Nuestros servicios
-                  <ChevronDown
-                    className={`ml-2 h-4 w-4 transition-transform duration-200 ${isServicesMenuOpen ? "rotate-180" : ""}`}
-                    data-oid="ng17lq."
-                  />
-                </Link>
-              </div>
+            <Link
+              to="/our-services"
+              className="py-3 px-4 text-center font-medium text-gray-200 border-b border-gray-700"
+              data-oid="p53s.li"
+            >
+              Nuestros servicios
+            </Link>
 
-              {isServicesMenuOpen && (
-                <div className="bg-gray-800" data-oid="-yo5uci">
-                  {services.map((service, index) => (
-                    <Link
-                      key={index}
-                      to={
-                        service.title === "Viajes de ciudad a ciudad"
-                          ? "/city-to-city"
-                          : service.title === "Traslados al aeropuerto"
-                            ? "/airport-transfers"
-                            : service.title === "Alquiler por horas/días"
-                              ? "/hourly-hire"
-                              : service.title === "Servicios eventos especiales"
-                                ? "/special-events"
-                                : service.title === "Servicios de limusinas"
-                                  ? "/limousine-service"
-                                  : service.title === "Jets privados"
-                                    ? "/private-jets"
-                                    : service.title ===
-                                        "Traslados corporativos VIP"
-                                      ? "/corporate-transfers"
-                                      : service.title ===
-                                          "Servicios de seguridad ejecutiva discreta"
-                                        ? "/security-services"
-                                        : "#"
-                      }
-                      className="block py-3 px-4 text-center text-gray-200 border-b border-gray-700 last:border-b-0"
-                      data-oid="8afpe8d"
-                    >
-                      {service.title}
-                    </Link>
-                  ))}
-                </div>
-              )}
-            </div>
-
-            <div className="border-b border-gray-100" data-oid="nlixkvw">
-              <div
-                className="flex justify-center items-center py-3 px-4"
-                onClick={toggleCompanyMenu}
-                data-oid="ybq7sjc"
-              >
-                <span className="font-medium text-gray-200" data-oid="r:ux6wj">
-                  Para empresas
-                </span>
-                <ChevronDown
-                  className={`ml-2 h-4 w-4 transition-transform duration-200 ${isCompanyMenuOpen ? "rotate-180" : ""}`}
-                  data-oid="53bvo65"
-                />
-              </div>
-
-              {isCompanyMenuOpen && (
-                <div className="bg-gray-800" data-oid="p.y83s8">
-                  {companyMenuItems.map((item, index) => (
-                    <Link
-                      key={index}
-                      to={
-                        item.title === "Resumen"
-                          ? "/company-overview"
-                          : item.title === "Empresas"
-                            ? "/companies"
-                            : item.title === "Agencias de viajes"
-                              ? "/travel-agencies"
-                              : item.title === "Asociaciones estratégicas"
-                                ? "/strategic-partnerships"
-                                : "#"
-                      }
-                      className="block py-3 px-4 text-center text-gray-200 border-b border-gray-700 last:border-b-0"
-                      data-oid="snk23x_"
-                    >
-                      {item.title}
-                    </Link>
-                  ))}
-                </div>
-              )}
-            </div>
+            <Link
+              to="/companies"
+              className="py-3 px-4 text-center font-medium text-gray-200 border-b border-gray-700"
+              data-oid="r:ux6wj"
+            >
+              Para empresas
+            </Link>
 
             <Link
               to="/drivers"

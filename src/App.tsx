@@ -25,6 +25,7 @@ import AccountPage from "./pages/AccountPage";
 import BookingWizard from "./pages/BookingWizard";
 import AdminPage from "./pages/AdminPage";
 import OurServices from "./pages/OurServices";
+import Help from "./pages/Help";
 // Blog pages
 import BlogPage from "./pages/blog/BlogPage";
 import BlogPostPage from "./pages/blog/BlogPostPage";
@@ -303,6 +304,11 @@ function App() {
               <Route
                 path="/our-services"
                 element={<OurServices />}
+              />
+
+              <Route
+                path="/help"
+                element={<Help />}
               />
 
               {/* Rutas del Blog */}
