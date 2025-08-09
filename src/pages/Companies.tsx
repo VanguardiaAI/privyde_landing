@@ -203,7 +203,7 @@ const Companies = () => {
             src="/images/bussines/Banner_empresas.webp"
             alt="Para empresas"
             className="w-full md:w-[115%] h-full object-cover object-center md:object-left"
-            style={{ backgroundColor: '#000000', objectPosition: '45% center' }}
+            style={{ backgroundColor: '#000000', objectPosition: '35% center' }}
           />
           {/* Gradient overlay at bottom */}
           <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent via-[50%] to-black" />
