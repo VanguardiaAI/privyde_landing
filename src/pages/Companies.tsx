@@ -244,11 +244,11 @@ const Companies = () => {
         </section>
 
         {/* Services Accordion Section */}
-        <section className="bg-black py-8 md:py-20">
+        <section className="bg-black py-6 md:py-20">
           <div className="container mx-auto px-4 md:px-4 overflow-x-hidden">
           {/* Title */}
           <h2
-            className="text-3xl md:text-4xl font-bold text-center text-white mb-10 md:mb-16"
+            className="text-2xl md:text-4xl font-bold text-center text-white mb-8 md:mb-16"
             style={{ fontFamily: 'CONTHRAX-SB, sans-serif', textTransform: 'uppercase', letterSpacing: '0.05em' }}
           >
             SERVICIOS EMPRESARIALES<br />PARA CADA NECESIDAD
