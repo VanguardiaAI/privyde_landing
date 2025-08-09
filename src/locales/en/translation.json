@@ -1,0 +1,749 @@
+{
+  "landing": {
+    "hero": {
+      "headline": "Request your ride. You're just one click away from traveling better.",
+      "subtitle": "Privyde is the premium transportation experience that combines professional drivers, personalized protection, and luxury vehicles for those who value much more than just getting there: they seek confidence, style, and excellence in every journey.",
+      "cta": {
+        "requestRide": "Request your ride",
+        "discoverExperience": "Discover the Privyde experience"
+      }
+    },
+    "services": {
+      "title": "Services",
+      "seeAll": "See all services",
+      "longDistance": {
+        "title": "Long-distance car service",
+        "subtitle": "Travel between cities in comfort, privacy, and punctuality.",
+        "description": "Saying goodbye to the stress of public transportation has never been easier. Our long-distance car service is the safest and most elegant way to move from city to city.",
+        "features": [
+          "Door-to-door: no transfers or terminals, leave directly from where you are and arrive at the door of your destination.",
+          "Total flexibility: choose your schedule, change your plans without penalties up to one hour before departure.",
+          "Luxury vehicles: relax in a premium environment with Wi-Fi available and space to work or rest.",
+          "Fixed and competitive rates: no hidden fees, taxes and tolls included.",
+          "Emissions compensation: all our trips are carbon offset."
+        ],
+        "ideal": "Ideal for executives, families, or couples who prefer stress-free travel.",
+        "cardTitle": "Comfortable and safe trips",
+        "cardDescription": "We connect cities with maximum comfort. Professional drivers for long journeys with total peace of mind.",
+        "seeMore": "See more"
+      },
+      "airport": {
+        "title": "Airport transfers",
+        "subtitle": "The most efficient way to get to or from the airport.",
+        "description": "Our airport transfers are designed to eliminate any friction on your arrival or departure:",
+        "features": [
+          "Real-time flight tracking: your driver will wait for you, even if your flight is delayed.",
+          "Meet & Greet service: so you don't waste a minute.",
+          "Space for groups: from sedans to executive vans for up to 5 people with luggage.",
+          "First class on the ground: for those looking to start (or end) their trip in style."
+        ],
+        "ideal": "The perfect solution for business, vacations, or inter-airport connections.",
+        "cardTitle": "Guaranteed punctuality",
+        "cardDescription": "Premium transfer service to and from the airport. Real-time flight monitoring.",
+        "seeMore": "See more"
+      },
+      "hourly": {
+        "title": "Driver rental by the hour or by the day",
+        "subtitle": "Flexibility without compromising on style.",
+        "description": "Our hourly service is designed for those who need a driver to wait for them and accompany them during several stops or full days:",
+        "features": [
+          "Personalized itinerary: go wherever you need to go, without worrying about time or logistics.",
+          "Exclusive vehicle all day: leave your belongings in the car and return to it whenever you want.",
+          "Efficient service for business or pleasure: for meetings, sightseeing, dinners, or shopping.",
+          "Rate per km/hour included: no hidden costs, everything is covered.",
+          "Wi-Fi, air conditioning, and privacy guaranteed."
+        ],
+        "ideal": "It has never been easier to get around without interruptions.",
+        "cardTitle": "Flexibility without losing style",
+        "cardDescription": "Our hourly service is designed for those who need a driver to wait for them and accompany them during several stops or full days.",
+        "seeMore": "See more"
+      },
+      "events": {
+        "title": "Special events",
+        "subtitle": "Because every occasion deserves memorable service.",
+        "description": "From weddings to concerts, our special event services adapt to any need:",
+        "features": [
+          "Weddings: elegant arrival, optional floral decorations, special fleet for the bride and groom and guests.",
+          "Graduations and parties: celebrate without worries, we'll take you there and back.",
+          "Corporate events: executive reception, synchronized fleets, and trained staff.",
+          "Productions or launches: visual impact and attention to detail."
+        ],
+        "ideal": "Perfect coordination with wedding planners, producers, or agencies.",
+        "cardTitle": "Unforgettable moments",
+        "cardDescription": "We make every special event an elegant experience. From weddings to corporate celebrations.",
+        "seeMore": "See more"
+      },
+      "corporate": {
+        "title": "VIP corporate transfers",
+        "subtitle": "Executive mobility for companies that demand more.",
+        "description": "Privyde offers corporate solutions with:",
+        "features": [
+          "Centralized billing and global rates.",
+          "Coordination of transfers for teams or clients.",
+          "Integration with business calendars and 24/7 support.",
+          "Guaranteed connectivity, privacy, and punctuality."
+        ],
+        "ideal": "Whether for meetings, conferences, or ongoing programs, we have the perfect plan.",
+        "cardTitle": "Business efficiency",
+        "cardDescription": "Executive mobility solutions for companies with high standards.",
+        "seeMore": "See more"
+      },
+      "security": {
+        "title": "Discreet executive security",
+        "subtitle": "Protection without compromising elegance.",
+        "description": "Our personalized security service offers three levels of protection:",
+        "features": [
+          "Standard: drivers trained in defensive driving, constant communication, and safe route planning.",
+          "Reinforced: armored vehicles, motorized escorts, and extended surveillance.",
+          "Comprehensive: 360° executive protection for international travel, public figures, or complex environments."
+        ],
+        "ideal": "Your safety is our priority.",
+        "cardTitle": "Maximum security",
+        "cardDescription": "Discreet and professional protection service for those who need more than transportation.",
+        "seeMore": "See more"
+      },
+      "limousine": {
+        "title": "Limousine service",
+        "cardTitle": "Travel with exclusivity",
+        "cardDescription": "Luxury limousines for those seeking an incomparable travel experience.",
+        "seeMore": "See more"
+      },
+      "privateJets": {
+        "title": "Private Jets Connection",
+        "cardTitle": "Seamless connectivity",
+        "cardDescription": "Ground coordination for private aviation with the same standard of excellence.",
+        "seeMore": "See more"
+      }
+    },
+    "benefits": {
+      "title": "Benefits of choosing Privyde",
+      "protection": {
+        "title": "Comprehensive protection at all times",
+        "description": "Travel with the backing of verified drivers, constant monitoring, insurance included, and optional certified private escorts. Real peace of mind, no exceptions."
+      },
+      "attention": {
+        "title": "Personalized attention, no matter where you are",
+        "description": "Drivers who know you, assistance from your doorstep, and human service. We adapt to your needs at all times, with empathy and professionalism."
+      },
+      "fleet": {
+        "title": "Premium fleet for every occasion",
+        "description": "SUVs, executive sedans, luxury vans, or electric cars. We keep every vehicle impeccable, modern, and equipped so that your trip reflects your style."
+      },
+      "technology": {
+        "title": "Intuitive technology, total control",
+        "description": "Request, schedule, and monitor everything from the app. You can choose schedules, locations, complementary services, and receive real-time support."
+      },
+      "international": {
+        "title": "International presence",
+        "description": "Privyde is available in major cities around the world. Travel with the same level of safety and excellence no matter the destination."
+      },
+      "cta": "Request your driver now"
+    },
+    "howItWorks": {
+      "title": "How it works",
+      "subtitle": "Your experience in 4 simple steps:",
+      "steps": {
+        "booking": {
+          "title": "Easy booking",
+          "description": "Select the type of service, date, destination, and whether you want to add private security."
+        },
+        "confirmation": {
+          "title": "Immediate confirmation",
+          "description": "Receive details about the driver, vehicle, estimated time of arrival, and a link for tracking."
+        },
+        "pickup": {
+          "title": "Punctual pick-up",
+          "description": "Your driver will wait for you at the agreed location with visible identification and personalized service."
+        },
+        "enjoy": {
+          "title": "Enjoy the ride",
+          "description": "Relax while we take care of every detail: safety, comfort, punctuality, and silence."
+        }
+      }
+    },
+    "testimonials": {
+      "title": "Customer Experience",
+      "marcelo": {
+        "name": "Marcelo A.",
+        "role": "Regional Director",
+        "text": "With Privyde, I have guaranteed protection and punctuality. The escort option gives me peace of mind on every trip."
+      },
+      "renata": {
+        "name": "Renata V.",
+        "role": "CEO and mother",
+        "text": "My children travel safely, and so do I. Since I started using Privyde, I know they are well taken care of."
+      },
+      "lorenzo": {
+        "name": "Lorenzo D.",
+        "role": "International producer",
+        "text": "On every trip to Europe, Privyde offers me the same level of security and discretion as I have at home."
+      }
+    },
+    "cta": {
+      "requestDriver": "Request your driver now",
+      "travelSafely": "Travel safely, travel with Privyde",
+      "hireEscorts": "Hire professional escorts",
+      "downloadApp": "Download the app and enjoy the experience",
+      "responsibility": "Your mobility, our responsibility"
+    }
+  },
+  "footer": {
+    "contact": {
+      "title": "Contact us",
+      "email": "Email: contacto@privyde.com",
+      "phone": "Phone: +52 (55) 1234 5678"
+    },
+    "support": {
+      "title": "24/7 customer service",
+      "description": "Always available to answer questions, assist you, or help you plan your trip."
+    },
+    "social": {
+      "title": "Follow us:",
+      "instagram": "Instagram",
+      "linkedin": "LinkedIn",
+      "facebook": "Facebook"
+    },
+    "download": {
+      "title": "Download the App:",
+      "appStore": "App Store",
+      "googlePlay": "Google Play"
+    },
+    "legal": {
+      "title": "Privacy and Terms",
+      "privacy": "Privacy Notice",
+      "terms": "Terms and Conditions"
+    }
+  },
+  "common": {
+    "services": "Our services",
+    "companies": "For companies",
+    "drivers": "For drivers",
+    "help": "Help",
+    "login": "Sign in",
+    "register": "Register",
+    "logout": "Sign out",
+    "account": "Account",
+    "trips": "Trips"
+  },
+  "companies": {
+    "title": "FOR BUSINESSES",
+    "hero": {
+      "title": "Efficiency, representation, and protection on every journey.",
+      "description": "Privyde offers comprehensive executive transportation solutions designed for organizations that value punctuality, customer experience, and operational excellence. From corporate transfers to strategic partnerships with hotels, airlines, or agencies, we provide a complete ecosystem of high-level mobility."
+    },
+    "services": {
+      "title": "Business services\nfor every need",
+      "businessTrips": {
+        "title": "Business trips and meetings",
+        "description": "Ensure punctual arrivals and smooth departures for your executives and employees. Professional drivers, a modern fleet, and global coverage to make every meeting a frictionless experience."
+      },
+      "intercityTransfers": {
+        "title": "Intercity transfers",
+        "description": "Work effortlessly while traveling between destinations. Ideal for executives who value their time and productivity on long journeys."
+      },
+      "airportsWorldwide": {
+        "title": "Airports worldwide",
+        "description": "Global airport transfer service. Real-time flight tracking, personalized reception and comprehensive luggage management at more than 500 international airports."
+      },
+      "clientTransport": {
+        "title": "Transportation for clients and partners",
+        "description": "Impress your guests with exceptional service. Personalized attention and premium vehicles to strengthen business relationships from the first moment."
+      },
+      "corporateDrivers": {
+        "title": "Corporate drivers by the hour or full day",
+        "description": "Total flexibility for dynamic schedules. Book a dedicated driver by hours or full days. Ideal for roadshows, corporate events or days with multiple meetings."
+      }
+    },
+    "partnerships": {
+      "title": "Strategic partnerships\nthat add value",
+      "hotels": {
+        "title": "Hotels",
+        "description": "Offer airport transfers and private city tours as part of your premium hospitality experience."
+      },
+      "airlines": {
+        "title": "Airlines and private aviation",
+        "description": "Provide your First Class or private jet passengers with a transfer that matches the standard of their flight. Integration of complimentary or white label services."
+      },
+      "travelAgencies": {
+        "title": "Travel agencies",
+        "description": "Elevate your customers' experience with executive transfers integrated into your offering. Consistent service worldwide."
+      },
+      "financialSector": {
+        "title": "Financial sector",
+        "description": "Exclusive benefits for premium cardholders. Complimentary transfers, personalized service, and support for high-value customers."
+      }
+    },
+    "benefits": {
+      "title": "Benefits for your company",
+      "globalCoverage": {
+        "title": "Global coverage",
+        "description": "Available in over 50 countries with trained, English-speaking local drivers."
+      },
+      "easyBookings": {
+        "title": "Hassle-free bookings",
+        "description": "All-in-one platform with instant confirmation and clear pricing."
+      },
+      "automaticBilling": {
+        "title": "Automatic billing",
+        "description": "Manage multiple trips without administrative hassle."
+      },
+      "support247": {
+        "title": "24/7 multilingual support",
+        "description": "Personalized service for your company, always available."
+      },
+      "centralizedManagement": {
+        "title": "Centralized management",
+        "description": "Business accounts for more than 500 users with exclusive discounts."
+      }
+    },
+    "contact": {
+      "title": "Ready to elevate\nyour company's mobility?",
+      "description": "Contact us to design a customized corporate solution.",
+      "form": {
+        "description": "Complete this form and in the next step you will create your company account to access corporate rates.",
+        "firstName": "First Name",
+        "lastName": "Last Name",
+        "country": "Country",
+        "prefix": "Prefix",
+        "phoneNumber": "Phone Number",
+        "companyName": "Company Name",
+        "location": "Where are you located?",
+        "locationPlaceholder": "City, State/Province",
+        "companySize": "Company size",
+        "hearAbout": "How did you hear about us?",
+        "help": "How can we help you?",
+        "helpPlaceholder": "Tell us more about your company's transportation needs...",
+        "submit": "Continue to registration"
+      }
+    }
+  },
+  "services": {
+    "title": "Our Services",
+    "hero": {
+      "title": "Our\nServices"
+    },
+    "longDistance": {
+      "title": "Long-distance car service",
+      "subtitle": "Travel between cities in comfort, privacy, and punctuality.",
+      "description": "Saying goodbye to the stress of public transportation has never been easier. Our long-distance car service is the safest and most elegant way to move from city to city.",
+      "features": [
+        {
+          "title": "Door-to-door:",
+          "text": "no transfers or terminals, leave directly from where you are and arrive at the door of your destination."
+        },
+        {
+          "title": "Total flexibility:",
+          "text": "choose your schedule, change your plans without penalties up to one hour before departure."
+        },
+        {
+          "title": "Luxury vehicles:",
+          "text": "relax in a premium environment with Wi-Fi available and space to work or rest."
+        },
+        {
+          "title": "Fixed and competitive rates:",
+          "text": "no hidden fees, taxes and tolls included."
+        },
+        {
+          "title": "Emissions compensation:",
+          "text": "all our trips are carbon offset."
+        }
+      ],
+      "footer": "Ideal for executives, families, or couples who prefer stress-free travel."
+    },
+    "airport": {
+      "title": "Airport transfers",
+      "subtitle": "The most efficient way to get to or from the airport.",
+      "description": "Our airport transfers are designed to eliminate any friction on your arrival or departure:",
+      "features": [
+        {
+          "title": "Real-time flight tracking:",
+          "text": "your driver will wait for you, even if your flight is delayed."
+        },
+        {
+          "title": "Meet & Greet service:",
+          "text": "so you don't waste a minute."
+        },
+        {
+          "title": "Space for groups:",
+          "text": "from sedans to executive vans for up to 5 people with luggage."
+        },
+        {
+          "title": "First class on the ground:",
+          "text": "for those looking to start (or end) their trip in style."
+        }
+      ],
+      "footer": "The perfect solution for business, vacations, or inter-airport connections."
+    },
+    "hourly": {
+      "title": "Driver rental by the hour or by the day",
+      "subtitle": "Flexibility without compromising on style.",
+      "description": "Our hourly service is designed for those who need a driver to wait for them and accompany them during several stops or full days:",
+      "features": [
+        {
+          "title": "Personalized itinerary:",
+          "text": "go wherever you need to go, without worrying about time or logistics."
+        },
+        {
+          "title": "Exclusive vehicle all day:",
+          "text": "leave your belongings in the car and return to it whenever you want."
+        },
+        {
+          "title": "Efficient service for business or pleasure:",
+          "text": "for meetings, sightseeing, dinners, or shopping."
+        },
+        {
+          "title": "Rate per km/hour included:",
+          "text": "no hidden costs, everything is covered."
+        },
+        {
+          "title": "Wi-Fi, air conditioning, and privacy guaranteed.",
+          "text": ""
+        }
+      ],
+      "footer": "It has never been easier to get around without interruptions."
+    },
+    "events": {
+      "title": "Special events",
+      "subtitle": "Because every occasion deserves memorable service.",
+      "description": "From weddings to concerts, our special event services adapt to any need:",
+      "features": [
+        {
+          "title": "Weddings:",
+          "text": "elegant arrival, optional floral decorations, special fleet for the bride and groom and guests."
+        },
+        {
+          "title": "Graduations and parties:",
+          "text": "celebrate without worries, we'll take you there and back."
+        },
+        {
+          "title": "Corporate events:",
+          "text": "executive reception, synchronized fleets, and trained staff."
+        },
+        {
+          "title": "Productions or launches:",
+          "text": "visual impact and attention to detail."
+        }
+      ],
+      "footer": "Perfect coordination with wedding planners, producers, or agencies."
+    },
+    "corporate": {
+      "title": "VIP corporate transfers",
+      "subtitle": "Executive mobility for companies that demand more.",
+      "description": "Privyde offers corporate solutions with:",
+      "features": [
+        {
+          "text": "Centralized billing and global rates."
+        },
+        {
+          "text": "Coordination of transfers for teams or clients."
+        },
+        {
+          "text": "Integration with business calendars and 24/7 support."
+        },
+        {
+          "text": "Guaranteed connectivity, privacy, and punctuality."
+        }
+      ],
+      "footer": "Whether for meetings, conferences, or ongoing programs, we have the perfect plan."
+    },
+    "security": {
+      "title": "Discreet executive security",
+      "subtitle": "Protection without compromising elegance.",
+      "description": "Our personalized security service offers three levels of protection:",
+      "features": [
+        {
+          "title": "Standard:",
+          "text": "drivers trained in defensive driving, constant communication, and safe route planning."
+        },
+        {
+          "title": "Reinforced:",
+          "text": "armored vehicles, motorized escorts, and extended surveillance."
+        },
+        {
+          "title": "Comprehensive:",
+          "text": "360° executive protection for international travel, public figures, or complex environments."
+        }
+      ],
+      "footer": "Your safety is our priority."
+    },
+    "chooseYourCar": {
+      "title": "Choose your car",
+      "fleet": {
+        "title": "Premium fleet for every occasion",
+        "description": "SUVs, executive sedans, luxury vans or standard sedans. Impeccable, modern and equipped units so that your trip reflects your style."
+      },
+      "variety": {
+        "title": "SUVs, executive sedans, luxury vans or standard sedans",
+        "description": "Choose the vehicle that best suits your occasion and needs."
+      },
+      "quality": {
+        "title": "Impeccable, modern and equipped units",
+        "description": "So that your trip reflects your style with maximum comfort and elegance."
+      },
+      "booking": {
+        "title": "Start from our app (iOS and Android) or from the web",
+        "description": "Book your trip quickly and easily from any device."
+      },
+      "worldwide": {
+        "title": "Anywhere in the world",
+        "description": "Enjoy the same level of service and quality regardless of your destination."
+      }
+    },
+    "serviceClasses": {
+      "title": "Discover our\nservice classes",
+      "businessClass": {
+        "title": "Business Class",
+        "description": "Mercedes E-Class, BMW 5 Series, Audi A6, Cadillac XTS, or similar",
+        "features": [
+          "Capacity for 3 people",
+          "Capacity for 2 carry-on bags, or 2 standard checked bags, or 1 extra large checked bag",
+          "Available in most of our business districts"
+        ]
+      },
+      "firstClass": {
+        "title": "First Class",
+        "description": "Mercedes S-Class, BMW 7 Series, Audi A8, or similar",
+        "features": [
+          "Capacity for 3 people",
+          "Capacity for 3 standard checked bags",
+          "Maximum luxury and comfort for executive journeys"
+        ]
+      },
+      "suvClass": {
+        "title": "SUV Class",
+        "description": "Cadillac Escalade, Lincoln Navigator, Chevrolet Suburban, or similar",
+        "features": [
+          "Capacity for 6 people",
+          "Ample luggage space",
+          "Ideal for groups and families"
+        ]
+      }
+    },
+    "cta": {
+      "title": "Request your driver now",
+      "downloadApp": "Download the App"
+    }
+  },
+  "drivers": {
+    "title": "FOR DRIVERS",
+    "hero": {
+      "title": "DRIVE WITH\nPRIVYDE",
+      "subtitle": "Elevate your career. Drive with excellence.",
+      "description": "Privyde connects professional drivers with a global network of customers who are looking for more than just a ride: they are looking for safety, elegance, and trust. As a driver partner, you are part of an international ecosystem where your professionalism and time are valued."
+    },
+    "whyDrive": {
+      "title": "WHY DRIVE WITH PRIVYDE?",
+      "fairPayments": {
+        "title": "Fair and\nreliable payments",
+        "hoverTitle": "Fair and reliable payments",
+        "description": "What you see is what you get. Each trip offer shows the minimum guaranteed payment with no hidden fees or unexpected discounts. We deposit directly into your bank account on time every month."
+      },
+      "flexibility": {
+        "title": "You choose when\nand where",
+        "hoverTitle": "You choose when and where",
+        "description": "Control your schedule and your income. Thanks to our reverse auction system, you can select the trips that best suit your availability, location, and vehicle type. From hourly transfers to intercity trips."
+      },
+      "international": {
+        "title": "International presence,\nlocal support",
+        "hoverTitle": "International presence, local support",
+        "description": "You will be part of a global network active in more than 50 countries, serving both business travelers and private customers. You will represent Privyde with your professionalism, but with freedom and independence."
+      }
+    },
+    "requirements": {
+      "title": "Requirements to become a driver partner",
+      "items": [
+        "Valid business registration, licenses, and insurance.",
+        "Clean, undamaged, smoke-free vehicles that comply with regulations.",
+        "Commitment to quality and staying up to date on local regulations and policies."
+      ]
+    },
+    "cta": {
+      "title": "READY TO BE PART\nOF THE WORLD'S MOST\nDISTINGUISHED MOBILITY SERVICE?",
+      "subtitle": "Start your registration as a driver partner today.",
+      "button": "Join Privyde"
+    }
+  },
+  "help": {
+    "title": "HOW CAN WE HELP YOU?",
+    "searchPlaceholder": "Search...",
+    "sections": {
+      "gettingStarted": {
+        "title": "Getting Started",
+        "subtitle": "Everything you need to know before booking your trip"
+      },
+      "bookingManagement": {
+        "title": "Booking Management",
+        "subtitle": "Find your answer about how to change and cancel your trip."
+      },
+      "billingPayment": {
+        "title": "Billing and Payment",
+        "subtitle": "Everything you need to know before booking your trip"
+      },
+      "myAccount": {
+        "title": "My Privyde Account",
+        "subtitle": "Everything you need to know before booking your trip"
+      },
+      "contactDriver": {
+        "title": "How to Contact My Driver?",
+        "subtitle": "Everything you need to know before booking your trip"
+      },
+      "security": {
+        "title": "Security FAQs",
+        "subtitle": "Everything you need to know before booking your trip"
+      }
+    },
+    "faqs": {
+      "gettingStarted": [
+        {
+          "question": "How far in advance should I book my trip?",
+          "answer": "You can book up to 30 days in advance. However, we also offer immediate confirmation if you need an efficient solution right away."
+        },
+        {
+          "question": "Can I request an inter-city transfer with Privyde?",
+          "answer": "Yes. We offer door-to-door transfers with all the amenities. Tell us your departure point, destination, and if you want to include any stops along the way."
+        },
+        {
+          "question": "Can I add stops during my trip?",
+          "answer": "Yes. When booking, you can include as many stops as you need. Our system will calculate the estimated time and your driver will be informed of each stop."
+        },
+        {
+          "question": "What does the airport transfer service with Privyde include?",
+          "answer": "Our airport transfers include free additional waiting time and real-time flight tracking. This way, the driver can adjust their arrival time if your flight is delayed. Upon your arrival, they will assist you with your luggage to make the process quick and comfortable."
+        },
+        {
+          "question": "What happens if my flight is delayed?",
+          "answer": "No need to worry. We monitor your itinerary in real time to adjust the service without you having to do anything. We are there for you from the very first minute."
+        },
+        {
+          "question": "How does the chauffeur service work by the hour or by the day?",
+          "answer": "You will have an exclusive driver for as long as you need, available for every stop or change in your schedule. It is the ideal option if you are looking for flexibility, without losing elegance or continuity."
+        },
+        {
+          "question": "What sets a corporate transfer with Privyde apart?",
+          "answer": "Discretion, punctuality, and personalized attention. Whether for a meeting, an international visit, or a full day, our team and fleet are ready to accompany you with excellence."
+        }
+      ],
+      "bookingManagement": [
+        {
+          "question": "How can I modify or cancel my reservation?",
+          "answer": "You can do this easily from our app. If you need assistance, our customer service team is available at all times and will be happy to help you."
+        },
+        {
+          "question": "How do I schedule a VIP transfer for a client or high-level executive?",
+          "answer": "You can book it directly from our app or, if you prefer, contact us to design a personalized experience. We will coordinate every detail according to your needs."
+        }
+      ],
+      "billingPayment": [],
+      "myAccount": [
+        {
+          "question": "Who can I contact if I have questions before or during my trip?",
+          "answer": "Our team is available 24 hours a day, every day. You can write to us via chat, email, or directly from the app. We will be here for you, with the attention you expect."
+        }
+      ],
+      "contactDriver": [
+        {
+          "question": "How will I know when my driver is at the meeting point?",
+          "answer": "We will notify you as soon as they are on their way and when they have arrived. You will also have access to their location in real time, so you won't waste a single minute."
+        },
+        {
+          "question": "Can your driver help you with any tasks while waiting?",
+          "answer": "Yes, if you have any special requests—such as assistance with luggage or any simple tasks while waiting—you can detail them in your request. We will gladly consider them."
+        }
+      ],
+      "security": [
+        {
+          "question": "Do you need additional security for your trip?",
+          "answer": "We can include a certified executive escort in your service. If you would like this accompaniment, please indicate this when booking or write to us, and we will arrange it discreetly."
+        },
+        {
+          "question": "Can I request a driver with experience in security protocols?",
+          "answer": "Yes. We have drivers trained in defensive driving and high-profile operations. Let us know when you book so we can assign you the most suitable profile."
+        }
+      ]
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Sign In",
+      "email": "Email",
+      "emailPlaceholder": "your@email.com",
+      "password": "Password",
+      "passwordPlaceholder": "Password",
+      "rememberMe": "Remember me",
+      "forgotPassword": "Forgot your password?",
+      "loginButton": "Sign In",
+      "loggingIn": "Signing in...",
+      "or": "OR",
+      "googleError": "Error signing in with Google",
+      "invalidResponse": "Invalid server response",
+      "unknownError": "Unknown error"
+    },
+    "register": {
+      "title": "Administrator Registration",
+      "infoTitle": "This registration is exclusive for administrators. You will be redirected directly to the admin panel.",
+      "name": "Name",
+      "namePlaceholder": "Your name",
+      "email": "Email",
+      "emailPlaceholder": "your@email.com",
+      "password": "Password",
+      "passwordPlaceholder": "Create a secure password",
+      "adminInfo": "This form is exclusive for administrators. Once registered, you will have full access to the administration panel without needing to complete an additional profile.",
+      "registerButton": "Create administrator account",
+      "registering": "Registering..."
+    }
+  },
+  "bookingForm": {
+    "tabs": {
+      "oneWay": "One way",
+      "hourly": "By hours"
+    },
+    "fields": {
+      "from": "From",
+      "to": "To",
+      "date": "Date",
+      "time": "Time",
+      "duration": "Duration",
+      "placeholder": "Address, airport, hotel..."
+    },
+    "durations": {
+      "short": "Short",
+      "medium": "Medium",
+      "long": "Long",
+      "1hour": "1 hour",
+      "2hours": "2 hours",
+      "3hours": "3 hours",
+      "4hours": "4 hours",
+      "5hours": "5 hours",
+      "6hours": "6 hours",
+      "7hours": "7 hours",
+      "8hours": "8 hours",
+      "fullDay": "Full day (10 hours)"
+    },
+    "dialogs": {
+      "selectDate": "Select a date",
+      "selectDuration": "Select duration"
+    },
+    "messages": {
+      "driverWait": "The driver will wait 15 minutes at no additional cost.",
+      "processing": "Processing..."
+    },
+    "buttons": {
+      "select": "Select"
+    },
+    "months": [
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December"
+    ],
+    "daysOfWeek": ["M", "T", "W", "T", "F", "S", "S"]
+  }
+}

@@ -2,10 +2,12 @@ import { ChevronDown, Globe, User, X } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useState, useRef, useEffect } from "react";
 import { useAuth } from "../context/AuthContext";
+import { useTranslation } from "react-i18next";
 
 
 export default function Navbar() {
   const { user, logout } = useAuth();
+  const { t, i18n } = useTranslation();
   const [isLanguageMenuOpen, setIsLanguageMenuOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isMobileLanguageOpen, setIsMobileLanguageOpen] = useState(false);
@@ -28,7 +30,6 @@ export default function Navbar() {
   const languages = [
     { code: "es", name: "Español" },
     { code: "en", name: "English" },
-    { code: "fr", name: "Français" },
   ];
 
   const toggleMobileMenu = () => {
@@ -104,7 +105,7 @@ export default function Navbar() {
             className="nav-menu-item px-3 text-white hover:text-blue-400"
             data-oid="4--cin6"
           >
-            Nuestros servicios
+            {t('common.services')}
           </Link>
           
           {/* Direct link to companies */}
@@ -113,7 +114,7 @@ export default function Navbar() {
             className="nav-menu-item px-3 text-white hover:text-blue-400"
             data-oid="1x.qi:y"
           >
-            Para empresas
+            {t('common.companies')}
           </Link>
           
           <Link
@@ -121,7 +122,7 @@ export default function Navbar() {
             className="nav-menu-item px-3 text-white hover:text-blue-400"
             data-oid="dyjxchr"
           >
-            Para chóferes
+            {t('common.drivers')}
           </Link>
         </div>
         
@@ -148,7 +149,7 @@ export default function Navbar() {
             className="nav-menu-item px-3 text-white hover:text-blue-400 hidden md:block"
             data-oid="i:bliw_"
           >
-            Ayuda
+            {t('common.help')}
           </Link>
           
           {/* Language selector */}
@@ -162,7 +163,7 @@ export default function Navbar() {
               className="cursor-pointer flex items-center text-white hover:text-blue-400"
               data-oid=":9:k7.l"
             >
-              ES
+              {i18n.language.toUpperCase()}
               <ChevronDown
                 className={`ml-1 h-4 w-4 transition-transform duration-200 ${isLanguageMenuOpen ? "rotate-180" : ""}`}
                 data-oid="7g:b8yu"
@@ -175,20 +176,15 @@ export default function Navbar() {
                 onMouseLeave={handleLanguageMouseLeave}
                 data-oid="oejwt0a"
               >
-                <a
-                  href="#"
-                  className="block px-4 py-2 text-sm text-gray-200 hover:bg-gray-800 hover:text-blue-400 border-b border-gray-700"
-                  data-oid="9nr:sx1"
-                >
-                  English
-                </a>
-                <a
-                  href="#"
-                  className="block px-4 py-2 text-sm text-gray-200 hover:bg-gray-800 hover:text-blue-400"
-                  data-oid="u6cswfp"
-                >
-                  Français
-                </a>
+                {languages.filter(lang => lang.code !== i18n.language).map((lang) => (
+                  <button
+                    key={lang.code}
+                    onClick={() => i18n.changeLanguage(lang.code)}
+                    className="block w-full text-left px-4 py-2 text-sm text-gray-200 hover:bg-gray-800 hover:text-blue-400 border-b border-gray-700 last:border-b-0"
+                  >
+                    {lang.name}
+                  </button>
+                ))}
               </div>
             )}
           </div>
@@ -222,21 +218,21 @@ export default function Navbar() {
                     className="block px-4 py-2 text-sm text-center text-gray-200 hover:bg-gray-800 hover:text-blue-400 border-b border-gray-700"
                     data-oid=".0xvcdt"
                   >
-                    Viajes
+                    {t('common.trips')}
                   </Link>
                   <Link
                     to="/account"
                     className="block px-4 py-2 text-sm text-center text-gray-200 hover:bg-gray-800 hover:text-blue-400 border-b border-gray-700"
                     data-oid="-ozvex4"
                   >
-                    Cuenta
+                    {t('common.account')}
                   </Link>
                   <button
                     onClick={handleLogout}
                     className="w-full text-center px-4 py-2 text-sm text-gray-200 hover:bg-gray-800 hover:text-blue-400"
                     data-oid="72pcm1m"
                   >
-                    Salir
+                    {t('common.logout')}
                   </button>
                 </div>
               )}
@@ -249,14 +245,14 @@ export default function Navbar() {
                 className="nav-menu-item text-white hover:text-blue-400 px-3 font-medium md:block hidden"
                 data-oid="u5ocl8d"
               >
-                Iniciar sesión
+                {t('common.login')}
               </Link>
               <Link
                 to="/register"
                 className="bg-white text-black px-4 py-2 rounded-md hover:bg-gray-200 font-medium md:block hidden ml-2"
                 data-oid="register-btn"
               >
-                Registrarse
+                {t('common.register')}
               </Link>
             </>
           )}
@@ -278,7 +274,7 @@ export default function Navbar() {
               className="py-3 px-4 text-center font-medium text-gray-200 border-b border-gray-700"
               data-oid="p53s.li"
             >
-              Nuestros servicios
+              {t('common.services')}
             </Link>
 
             <Link
@@ -286,7 +282,7 @@ export default function Navbar() {
               className="py-3 px-4 text-center font-medium text-gray-200 border-b border-gray-700"
               data-oid="r:ux6wj"
             >
-              Para empresas
+              {t('common.companies')}
             </Link>
 
             <Link
@@ -294,7 +290,7 @@ export default function Navbar() {
               className="py-3 px-4 text-center font-medium text-gray-200 border-b border-gray-700"
               data-oid="uz8y465"
             >
-              Para chóferes
+              {t('common.drivers')}
             </Link>
 
             <Link
@@ -302,7 +298,7 @@ export default function Navbar() {
               className="py-3 px-4 text-center font-medium text-gray-200 border-b border-gray-700"
               data-oid="cjly1h3"
             >
-              Ayuda
+              {t('common.help')}
             </Link>
 
             <div className="border-b border-gray-100" data-oid="y6hv5rp">
@@ -317,7 +313,7 @@ export default function Navbar() {
                 />
 
                 <span className="font-medium text-gray-200" data-oid="sjp-9qr">
-                  Español
+                  {languages.find(l => l.code === i18n.language)?.name || 'Español'}
                 </span>
                 <ChevronDown
                   className={`ml-2 h-4 w-4 transition-transform duration-200 ${isMobileLanguageOpen ? "rotate-180" : ""}`}
@@ -328,16 +324,18 @@ export default function Navbar() {
               {isMobileLanguageOpen && (
                 <div className="bg-gray-800" data-oid="q:_wdqd">
                   {languages
-                    .filter((lang) => lang.code !== "es")
+                    .filter((lang) => lang.code !== i18n.language)
                     .map((lang, index) => (
-                      <a
+                      <button
                         key={index}
-                        href="#"
-                        className="block py-3 px-4 text-center text-gray-200 border-b border-gray-700 last:border-b-0"
-                        data-oid="p7u_gbf"
+                        onClick={() => {
+                          i18n.changeLanguage(lang.code);
+                          setIsMobileLanguageOpen(false);
+                        }}
+                        className="block w-full py-3 px-4 text-center text-gray-200 border-b border-gray-700 last:border-b-0"
                       >
                         {lang.name}
-                      </a>
+                      </button>
                     ))}
                 </div>
               )}
@@ -358,21 +356,21 @@ export default function Navbar() {
                     className="block text-center py-2 mb-2 font-medium text-gray-200 bg-gray-800 rounded-md"
                     data-oid=".w2auv-"
                   >
-                    Viajes
+                    {t('common.trips')}
                   </Link>
                   <Link
                     to="/account"
                     className="block text-center py-2 mb-2 font-medium text-gray-200 bg-gray-800 rounded-md"
                     data-oid="np5yi34"
                   >
-                    Cuenta
+                    {t('common.account')}
                   </Link>
                   <button
                     onClick={handleLogout}
                     className="block text-center py-2 font-medium text-gray-200 bg-gray-800 rounded-md w-full"
                     data-oid="56evtt5"
                   >
-                    Salir
+                    {t('common.logout')}
                   </button>
                 </div>
               ) : (
@@ -382,14 +380,14 @@ export default function Navbar() {
                     className="block text-center py-3 font-medium text-gray-200 bg-gray-800 rounded-md mb-2"
                     data-oid="bildzx:"
                   >
-                    Iniciar sesión
+                    {t('common.login')}
                   </Link>
                   <Link
                     to="/register"
                     className="block text-center py-3 font-medium text-black bg-white rounded-md"
                     data-oid="register-mobile"
                   >
-                    Registrarse
+                    {t('common.register')}
                   </Link>
                 </>
               )}

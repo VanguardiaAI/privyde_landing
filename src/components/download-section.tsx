@@ -1,7 +1,9 @@
 import Image from "@/components/ui/image";
 import { RetroGridWithRoute } from "@/components/ui/retro-grid-with-route";
+import { useTranslation } from "react-i18next";
 
 export default function DownloadSection() {
+  const { t } = useTranslation();
   return (
     <div
       className="relative bg-black text-white py-20 md:py-24 overflow-hidden w-full"
@@ -14,22 +16,20 @@ export default function DownloadSection() {
         <div className="text-center" data-oid="zajr502">
           {/* Texto descriptivo con Panton */}
           <p className="text-base md:text-lg mb-8 leading-relaxed max-w-3xl mx-auto" style={{ fontFamily: 'Panton, sans-serif' }} data-oid="rqbvvdm">
-            <span className="font-bold">Privyde</span> es la experiencia de transporte premium que combina choferes profesionales, 
-            protección personalizada y vehículos de lujo para quienes valoran mucho más que llegar: 
-            Buscan confianza, estilo, y excelencia
+            {t('landing.hero.subtitle')}
           </p>
 
           {/* Título principal con CONTHRAX-SB */}
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 uppercase tracking-wider" 
               style={{ fontFamily: 'CONTHRAX-SB, sans-serif' }} 
               data-oid="mb5nrzf">
-            SOLICITA TU VIAJE
+            {t('landing.hero.cta.requestRide').toUpperCase()}
           </h1>
           
           {/* Subtítulo */}
           <p className="text-xl md:text-2xl mb-12" 
              style={{ fontFamily: 'Panton, sans-serif' }}>
-            Descubre la experiencia privyde
+            {t('landing.hero.cta.discoverExperience')}
           </p>
 
           {/* Botones de descarga centrados */}

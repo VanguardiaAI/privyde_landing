@@ -1,8 +1,10 @@
 import { Linkedin, Instagram, Facebook } from "lucide-react";
 import Image from "@/components/ui/image";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 export default function Footer() {
+  const { t } = useTranslation();
   return (
     <footer className="bg-white text-black relative overflow-hidden" data-oid="ksug5yr">
       <div className="container mx-auto pl-8 pr-0 py-16 max-w-[1400px]" data-oid="e_vgjv:">
@@ -12,23 +14,23 @@ export default function Footer() {
             <div className="space-y-6 text-left">
               {/* Contact Info */}
               <div>
-                <h3 className="text-lg font-bold mb-2">Contáctanos</h3>
-                <p className="text-gray-700 text-sm">Email: contacto@privyde.com</p>
-                <p className="text-gray-700 text-sm">Teléfono: +52 (55) 1234 5678</p>
+                <h3 className="text-lg font-bold mb-2">{t('footer.contact.title')}</h3>
+                <p className="text-gray-700 text-sm">{t('footer.contact.email')}</p>
+                <p className="text-gray-700 text-sm">{t('footer.contact.phone')}</p>
               </div>
 
               {/* 24/7 Availability */}
               <div>
-                <h3 className="text-lg font-bold mb-2">Atención 24/7</h3>
-                <p className="text-gray-700 text-sm leading-relaxed">Siempre disponibles para resolver dudas, asistirte o ayudarte a programar tu trayecto.</p>
+                <h3 className="text-lg font-bold mb-2">{t('footer.support.title')}</h3>
+                <p className="text-gray-700 text-sm leading-relaxed">{t('footer.support.description')}</p>
               </div>
 
               {/* Privacy and Terms */}
               <div>
-                <h3 className="text-lg font-bold mb-2">Privacidad y Términos</h3>
+                <h3 className="text-lg font-bold mb-2">{t('footer.legal.title')}</h3>
                 <div className="space-y-1">
-                  <Link to="/privacy" className="text-gray-700 hover:text-black block text-sm">Aviso de Privacidad</Link>
-                  <Link to="/terms" className="text-gray-700 hover:text-black block text-sm">Términos y Condiciones</Link>
+                  <Link to="/privacy" className="text-gray-700 hover:text-black block text-sm">{t('footer.legal.privacy')}</Link>
+                  <Link to="/terms" className="text-gray-700 hover:text-black block text-sm">{t('footer.legal.terms')}</Link>
                 </div>
               </div>
 
@@ -36,7 +38,7 @@ export default function Footer() {
               <div className="pt-8 flex flex-col items-center space-y-6">
                 {/* Social Media */}
                 <div className="text-center">
-                  <h3 className="text-lg font-bold mb-4">Síguenos</h3>
+                  <h3 className="text-lg font-bold mb-4">{t('footer.social.title')}</h3>
                   <div className="flex space-x-3">
                     <a href="#" className="hover:opacity-80 transition-opacity">
                       <div className="w-10 h-10 bg-black rounded-lg flex items-center justify-center">
@@ -65,7 +67,7 @@ export default function Footer() {
 
                 {/* App Download */}
                 <div className="text-center">
-                  <h3 className="text-lg font-bold mb-4">Descarga la App</h3>
+                  <h3 className="text-lg font-bold mb-4">{t('footer.download.title')}</h3>
                   <div className="flex flex-col sm:flex-row gap-3 justify-center">
                     <a href="#" className="hover:opacity-80 transition-opacity">
                       <Image

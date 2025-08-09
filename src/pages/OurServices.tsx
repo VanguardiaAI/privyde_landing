@@ -3,100 +3,72 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import SupportChat from '../components/SupportChat';
+import { useTranslation } from 'react-i18next';
 import '../styles/privyde.css';
 
-const services = [
-  {
-    id: 1,
-    title: "SERVICIO DE COCHE DE LARGA DISTANCIA",
-    subtitle: "Viaja entre ciudades con comodidad, privacidad y puntualidad.",
-    description: "Despedirse del estrés del transporte público nunca fue tan fácil. Nuestro servicio de coche de larga distancia es la forma más segura y elegante de moverse de ciudad en ciudad.",
-    features: [
-      { title: "Puerta a puerta:", text: "Sin trasbordos ni terminales, sal directamente desde donde estás y llega hasta la puerta de tu destino." },
-      { title: "Flexibilidad total:", text: "Elige tu horario, cambia de planes sin penalizaciones hasta una hora antes." },
-      { title: "Vehículos de lujo:", text: "Relájate en un ambiente premium con Wi-Fi disponible y espacio para trabajar o descansar." },
-      { title: "Tarifas fijas y competitivas:", text: "Sin cargos ocultos, impuestos y peajes incluidos." },
-      { title: "Compensación de emisiones:", text: "Todos nuestros viajes están compensados en carbono." }
-    ],
-    footer: "Ideal para ejecutivos, familias o parejas que prefieren viajar sin estrés.",
-    image: "/images/our_services/servicio_coche_de_larga_distancia.webp"
-  },
-  {
-    id: 2,
-    title: "TRASLADOS EN AEROPUERTOS",
-    subtitle: "La forma más eficiente de llegar o salir del aeropuerto.",
-    description: "Nuestros traslados desde/hacia aeropuertos están diseñados para eliminar cualquier fricción en tu llegada o partida:",
-    features: [
-      { title: "Seguimiento de vuelos en tiempo real:", text: "Tu chofer te esperará, aunque tu vuelo se retrase." },
-      { title: "Recepción con identificación:", text: "Servicio Meet & Greet para que no pierdas ni un minuto." },
-      { title: "Espacio para grupos:", text: "Desde sedanes hasta vans ejecutivas para hasta 5 personas con equipaje." },
-      { title: "Primera clase en tierra:", text: "Para quienes buscan comenzar (o terminar) su viaje con distinción." }
-    ],
-    footer: "La solución perfecta para negocios, vacaciones o conexiones interaeropuerto.",
-    image: "/images/our_services/Traslados en Aeropuertos.webp"
-  },
-  {
-    id: 3,
-    title: "ALQUILER DE CHOFER POR HORAS Y POR DÍAS",
-    subtitle: "Flexibilidad sin perder estilo.",
-    description: "Nuestro servicio por horas está pensado para quienes necesitan un chofer que los espere y acompañe durante varias paradas o jornadas completas:",
-    features: [
-      { title: "Itinerario personalizado:", text: "Ve a donde necesites, sin preocuparte por el tiempo ni la logística." },
-      { title: "Vehículo exclusivo todo el día:", text: "Deja tus pertenencias, regresa al auto cuando quieras." },
-      { title: "Servicio eficiente para negocios o placer:", text: "Para reuniones, turismo, cenas o compras." },
-      { title: "Tarifa por km/hora incluida:", text: "Sin costos ocultos, todo está contemplado." },
-      { title: "Wi-Fi, climatización y privacidad garantizadas.", text: "" }
-    ],
-    footer: "Nunca fue tan fácil moverse sin interrupciones.",
-    image: "/images/our_services/Alquiler de choferes por horas.webp"
-  },
-  {
-    id: 4,
-    title: "EVENTOS ESPECIALES",
-    subtitle: "Porque cada ocasión merece un servicio memorable.",
-    description: "Desde bodas hasta conciertos, nuestros servicios para eventos especiales se adaptan a cualquier necesidad:",
-    features: [
-      { title: "Bodas:", text: "Llegada elegante, decoración floral opcional, flota especial para novios e invitados." },
-      { title: "Graduaciones y fiestas:", text: "Celebra sin preocupaciones, nosotros te llevamos de ida y vuelta." },
-      { title: "Eventos corporativos:", text: "Recepción ejecutiva, flotas sincronizadas y personal capacitado." },
-      { title: "Producciones o lanzamientos:", text: "Impacto visual y atención al detalle." }
-    ],
-    footer: "Coordinación perfecta con wedding planners, productores o agencias.",
-    image: "/images/our_services/Eventos Especiales.webp"
-  },
-  {
-    id: 5,
-    title: "TRASLADOS CORPORATIVOS VIP",
-    subtitle: "Movilidad ejecutiva para empresas que exigen más.",
-    description: "Privyde ofrece soluciones corporativas con:",
-    features: [
-      { text: "Facturación centralizada y tarifas globales." },
-      { text: "Coordinación de traslados para equipos o clientes." },
-      { text: "Integración con agendas empresariales y soporte 24/7." },
-      { text: "Conectividad, privacidad y puntualidad aseguradas." }
-    ],
-    footer: "Ya sea para juntas, congresos o programas continuos, tenemos el plan perfecto.",
-    image: "/images/our_services/Traslados Corporativos VIP.webp"
-  },
-  {
-    id: 6,
-    title: "SEGURIDAD EJECUTIVA DISCRETA",
-    subtitle: "Protección sin perder elegancia.",
-    description: "Nuestro servicio de seguridad personalizada ofrece tres niveles de protección:",
-    features: [
-      { title: "Estándar:", text: "Choferes capacitados en conducción defensiva, comunicación constante y planeación de rutas seguras." },
-      { title: "Reforzado:", text: "Vehículos blindados, escoltas motorizados y vigilancia extendida." },
-      { title: "Integral:", text: "Protección ejecutiva 360°, para viajes internacionales, figuras públicas o entornos complejos." }
-    ],
-    footer: "Tu seguridad, nuestra prioridad.",
-    image: "/images/our_services/Seguridad Ejecutiva.webp"
-  }
-];
-
 const OurServices: React.FC = () => {
+  const { t } = useTranslation();
   const [currentSlide, setCurrentSlide] = useState(0);
   const [currentCarSlide, setCurrentCarSlide] = useState(0);
   const [clickedBenefit, setClickedBenefit] = useState<number | null>(null);
+
+  // Services data with translations
+  const services = [
+    {
+      id: 1,
+      title: t('services.longDistance.title').toUpperCase(),
+      subtitle: t('services.longDistance.subtitle'),
+      description: t('services.longDistance.description'),
+      features: t('services.longDistance.features', { returnObjects: true }) as Array<{title?: string; text: string}>,
+      footer: t('services.longDistance.footer'),
+      image: "/images/our_services/servicio_coche_de_larga_distancia.webp"
+    },
+    {
+      id: 2,
+      title: t('services.airport.title').toUpperCase(),
+      subtitle: t('services.airport.subtitle'),
+      description: t('services.airport.description'),
+      features: t('services.airport.features', { returnObjects: true }) as Array<{title?: string; text: string}>,
+      footer: t('services.airport.footer'),
+      image: "/images/our_services/Traslados en Aeropuertos.webp"
+    },
+    {
+      id: 3,
+      title: t('services.hourly.title').toUpperCase(),
+      subtitle: t('services.hourly.subtitle'),
+      description: t('services.hourly.description'),
+      features: t('services.hourly.features', { returnObjects: true }) as Array<{title?: string; text: string}>,
+      footer: t('services.hourly.footer'),
+      image: "/images/our_services/Alquiler de choferes por horas.webp"
+    },
+    {
+      id: 4,
+      title: t('services.events.title').toUpperCase(),
+      subtitle: t('services.events.subtitle'),
+      description: t('services.events.description'),
+      features: t('services.events.features', { returnObjects: true }) as Array<{title?: string; text: string}>,
+      footer: t('services.events.footer'),
+      image: "/images/our_services/Eventos Especiales.webp"
+    },
+    {
+      id: 5,
+      title: t('services.corporate.title').toUpperCase(),
+      subtitle: t('services.corporate.subtitle'),
+      description: t('services.corporate.description'),
+      features: t('services.corporate.features', { returnObjects: true }) as Array<{title?: string; text: string}>,
+      footer: t('services.corporate.footer'),
+      image: "/images/our_services/Traslados Corporativos VIP.webp"
+    },
+    {
+      id: 6,
+      title: t('services.security.title').toUpperCase(),
+      subtitle: t('services.security.subtitle'),
+      description: t('services.security.description'),
+      features: t('services.security.features', { returnObjects: true }) as Array<{title?: string; text: string}>,
+      footer: t('services.security.footer'),
+      image: "/images/our_services/Seguridad Ejecutiva.webp"
+    }
+  ];
 
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % services.length);
@@ -156,7 +128,12 @@ const OurServices: React.FC = () => {
         <div className="relative z-10 h-full flex items-end pb-10 md:pb-20">
           <div className="container mx-auto px-6 md:px-0 md:ml-20">
             <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold text-white tracking-wider uppercase text-center md:text-left" style={{ fontFamily: 'CONTHRAX-SB' }}>
-              NUESTROS<br />SERVICIOS
+              {t('services.hero.title').split('\n').map((line, index) => (
+                <React.Fragment key={index}>
+                  {line}
+                  {index === 0 && <br />}
+                </React.Fragment>
+              ))}
             </h1>
           </div>
         </div>
@@ -373,7 +350,7 @@ const OurServices: React.FC = () => {
               {/* Title overlay */}
               <div className="absolute inset-0 flex items-end justify-center z-20 pb-20 md:pb-24">
                 <h2 className="text-2xl sm:text-3xl md:text-6xl font-bold text-white uppercase tracking-wider text-center px-4" style={{ fontFamily: 'CONTHRAX-SB' }}>
-                  ELIGE TU AUTO
+                  {t('services.chooseYourCar.title')}
                 </h2>
               </div>
             </div>
@@ -397,8 +374,8 @@ const OurServices: React.FC = () => {
                     <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-2">
                       <div className="w-0 h-0 border-l-[8px] border-l-transparent border-r-[8px] border-r-transparent border-b-[8px] border-b-black"></div>
                     </div>
-                    <h4 className="font-semibold mb-1 text-sm">Flota premium para cada ocasión</h4>
-                    <p className="text-xs leading-relaxed">SUVs, sedanes ejecutivos, vans de lujo o sedanes estándar. Unidades impecables, modernas y equipadas para que tu viaje refleje tu estilo.</p>
+                    <h4 className="font-semibold mb-1 text-sm">{t('services.chooseYourCar.fleet.title')}</h4>
+                    <p className="text-xs leading-relaxed">{t('services.chooseYourCar.fleet.description')}</p>
                   </div>
                 </div>
               </div>
@@ -419,8 +396,8 @@ const OurServices: React.FC = () => {
                     <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-2">
                       <div className="w-0 h-0 border-l-[8px] border-l-transparent border-r-[8px] border-r-transparent border-b-[8px] border-b-black"></div>
                     </div>
-                    <h4 className="font-semibold mb-1 text-sm">SUVs, sedanes ejecutivos, vans de lujo o sedanes estándar</h4>
-                    <p className="text-xs leading-relaxed">Elige el vehículo que mejor se adapte a tu ocasión y necesidades.</p>
+                    <h4 className="font-semibold mb-1 text-sm">{t('services.chooseYourCar.variety.title')}</h4>
+                    <p className="text-xs leading-relaxed">{t('services.chooseYourCar.variety.description')}</p>
                   </div>
                 </div>
               </div>
@@ -441,8 +418,8 @@ const OurServices: React.FC = () => {
                     <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-2">
                       <div className="w-0 h-0 border-l-[8px] border-l-transparent border-r-[8px] border-r-transparent border-b-[8px] border-b-black"></div>
                     </div>
-                    <h4 className="font-semibold mb-1 text-sm">Unidades impecables, modernas y equipadas</h4>
-                    <p className="text-xs leading-relaxed">Para que tu viaje refleje tu estilo con el máximo confort y elegancia.</p>
+                    <h4 className="font-semibold mb-1 text-sm">{t('services.chooseYourCar.quality.title')}</h4>
+                    <p className="text-xs leading-relaxed">{t('services.chooseYourCar.quality.description')}</p>
                   </div>
                 </div>
               </div>
@@ -463,8 +440,8 @@ const OurServices: React.FC = () => {
                     <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-2">
                       <div className="w-0 h-0 border-l-[8px] border-l-transparent border-r-[8px] border-r-transparent border-b-[8px] border-b-black"></div>
                     </div>
-                    <h4 className="font-semibold mb-1 text-sm">Empieza desde nuestra app (iOS y Android) o desde la web</h4>
-                    <p className="text-xs leading-relaxed">Reserva tu viaje de forma rápida y sencilla desde cualquier dispositivo.</p>
+                    <h4 className="font-semibold mb-1 text-sm">{t('services.chooseYourCar.booking.title')}</h4>
+                    <p className="text-xs leading-relaxed">{t('services.chooseYourCar.booking.description')}</p>
                   </div>
                 </div>
               </div>
@@ -485,8 +462,8 @@ const OurServices: React.FC = () => {
                     <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-2">
                       <div className="w-0 h-0 border-l-[8px] border-l-transparent border-r-[8px] border-r-transparent border-b-[8px] border-b-black"></div>
                     </div>
-                    <h4 className="font-semibold mb-1 text-sm">En cualquier parte del mundo</h4>
-                    <p className="text-xs leading-relaxed">Disfruta del mismo nivel de servicio y calidad sin importar tu destino.</p>
+                    <h4 className="font-semibold mb-1 text-sm">{t('services.chooseYourCar.worldwide.title')}</h4>
+                    <p className="text-xs leading-relaxed">{t('services.chooseYourCar.worldwide.description')}</p>
                   </div>
                 </div>
               </div>
@@ -517,8 +494,8 @@ const OurServices: React.FC = () => {
                       <div className="w-0 h-0 border-l-[10px] border-l-transparent border-r-[10px] border-r-transparent border-b-[10px] border-b-black"></div>
                     </div>
                     <div className="bg-black text-white p-4 rounded-lg shadow-xl w-72 mx-auto mt-1">
-                      <h4 className="font-semibold mb-2 text-base">Flota premium para cada ocasión</h4>
-                      <p className="text-sm leading-relaxed">SUVs, sedanes ejecutivos, vans de lujo o sedanes estándar. Unidades impecables, modernas y equipadas para que tu viaje refleje tu estilo.</p>
+                      <h4 className="font-semibold mb-2 text-base">{t('services.chooseYourCar.fleet.title')}</h4>
+                      <p className="text-sm leading-relaxed">{t('services.chooseYourCar.fleet.description')}</p>
                     </div>
                   </div>
                 </div>
@@ -547,8 +524,8 @@ const OurServices: React.FC = () => {
                       <div className="w-0 h-0 border-l-[10px] border-l-transparent border-r-[10px] border-r-transparent border-b-[10px] border-b-black"></div>
                     </div>
                     <div className="bg-black text-white p-4 rounded-lg shadow-xl w-72 mx-auto mt-1">
-                      <h4 className="font-semibold mb-2 text-base">SUVs, sedanes ejecutivos, vans de lujo o sedanes estándar</h4>
-                      <p className="text-sm leading-relaxed">Elige el vehículo que mejor se adapte a tu ocasión y necesidades.</p>
+                      <h4 className="font-semibold mb-2 text-base">{t('services.chooseYourCar.variety.title')}</h4>
+                      <p className="text-sm leading-relaxed">{t('services.chooseYourCar.variety.description')}</p>
                     </div>
                   </div>
                 </div>
@@ -577,8 +554,8 @@ const OurServices: React.FC = () => {
                       <div className="w-0 h-0 border-l-[10px] border-l-transparent border-r-[10px] border-r-transparent border-b-[10px] border-b-black"></div>
                     </div>
                     <div className="bg-black text-white p-4 rounded-lg shadow-xl w-72 mx-auto mt-1">
-                      <h4 className="font-semibold mb-2 text-base">Unidades impecables, modernas y equipadas</h4>
-                      <p className="text-sm leading-relaxed">Para que tu viaje refleje tu estilo con el máximo confort y elegancia.</p>
+                      <h4 className="font-semibold mb-2 text-base">{t('services.chooseYourCar.quality.title')}</h4>
+                      <p className="text-sm leading-relaxed">{t('services.chooseYourCar.quality.description')}</p>
                     </div>
                   </div>
                 </div>
@@ -607,8 +584,8 @@ const OurServices: React.FC = () => {
                       <div className="w-0 h-0 border-l-[10px] border-l-transparent border-r-[10px] border-r-transparent border-b-[10px] border-b-black"></div>
                     </div>
                     <div className="bg-black text-white p-4 rounded-lg shadow-xl w-72 mx-auto mt-1">
-                      <h4 className="font-semibold mb-2 text-base">Empieza desde nuestra app (iOS y Android) o desde la web</h4>
-                      <p className="text-sm leading-relaxed">Reserva tu viaje de forma rápida y sencilla desde cualquier dispositivo.</p>
+                      <h4 className="font-semibold mb-2 text-base">{t('services.chooseYourCar.booking.title')}</h4>
+                      <p className="text-sm leading-relaxed">{t('services.chooseYourCar.booking.description')}</p>
                     </div>
                   </div>
                 </div>
@@ -637,8 +614,8 @@ const OurServices: React.FC = () => {
                       <div className="w-0 h-0 border-l-[10px] border-l-transparent border-r-[10px] border-r-transparent border-b-[10px] border-b-black"></div>
                     </div>
                     <div className="bg-black text-white p-4 rounded-lg shadow-xl w-72 mx-auto mt-1">
-                      <h4 className="font-semibold mb-2 text-base">En cualquier parte del mundo</h4>
-                      <p className="text-sm leading-relaxed">Disfruta del mismo nivel de servicio y calidad sin importar tu destino.</p>
+                      <h4 className="font-semibold mb-2 text-base">{t('services.chooseYourCar.worldwide.title')}</h4>
+                      <p className="text-sm leading-relaxed">{t('services.chooseYourCar.worldwide.description')}</p>
                     </div>
                   </div>
                 </div>
@@ -667,7 +644,12 @@ const OurServices: React.FC = () => {
               {/* Title overlay */}
               <div className="absolute inset-0 flex items-end justify-center z-20 pb-16 md:pb-20">
                 <h2 className="text-3xl md:text-5xl font-bold text-white uppercase tracking-wider text-center px-4" style={{ fontFamily: 'CONTHRAX-SB' }}>
-                  DESCUBRE NUESTRAS<br />CLASES DE SERVICIO
+                  {t('services.serviceClasses.title').split('\n').map((line, index) => (
+                    <React.Fragment key={index}>
+                      {line}
+                      {index === 0 && <br />}
+                    </React.Fragment>
+                  ))}
                 </h2>
               </div>
             </div>
@@ -695,24 +677,18 @@ const OurServices: React.FC = () => {
                       {/* White Container for text only */}
                       <div className="bg-white rounded-xl p-6 md:p-8 pt-24 md:pt-32">
                         <h3 className="text-lg md:text-xl font-bold mb-2 text-center uppercase tracking-wide" style={{ fontFamily: 'CONTHRAX-SB' }}>
-                          BUSINESS CLASS
+                          {t('services.serviceClasses.businessClass.title')}
                         </h3>
                         <p className="text-center text-gray-600 mb-4 text-xs md:text-sm font-medium">
-                          Mercedes E-Class, BMW Serie 5, Audi A6, Cadillac XTS, o similar
+                          {t('services.serviceClasses.businessClass.description')}
                         </p>
                         <div className="space-y-2">
-                          <div className="flex items-start text-xs text-gray-600 text-left">
-                            <span className="mr-2 mt-0.5">•</span>
-                            <span className="leading-relaxed">Capacidad para 3 personas</span>
-                          </div>
-                          <div className="flex items-start text-xs text-gray-600 text-left">
-                            <span className="mr-2 mt-0.5">•</span>
-                            <span className="leading-relaxed">Capacidad para 2 maletas de mano, o 2 maletas estándar de facturación, o 1 maleta extra grande de facturación</span>
-                          </div>
-                          <div className="flex items-start text-xs text-gray-600 text-left">
-                            <span className="mr-2 mt-0.5">•</span>
-                            <span className="leading-relaxed">Disponible en la mayoría de nuestros distritos de negocios</span>
-                          </div>
+                          {(t('services.serviceClasses.businessClass.features', { returnObjects: true }) as string[]).map((feature, index) => (
+                            <div key={index} className="flex items-start text-xs text-gray-600 text-left">
+                              <span className="mr-2 mt-0.5">•</span>
+                              <span className="leading-relaxed">{feature}</span>
+                            </div>
+                          ))}
                         </div>
                       </div>
                     </div>
@@ -733,24 +709,18 @@ const OurServices: React.FC = () => {
                       {/* White Container for text only */}
                       <div className="bg-white rounded-xl p-6 md:p-8 pt-24 md:pt-32">
                         <h3 className="text-lg md:text-xl font-bold mb-2 text-center uppercase tracking-wide" style={{ fontFamily: 'CONTHRAX-SB' }}>
-                          FIRST CLASS
+                          {t('services.serviceClasses.firstClass.title')}
                         </h3>
                         <p className="text-center text-gray-600 mb-4 text-xs md:text-sm font-medium">
-                          Mercedes S-Class, BMW Serie 7, Audi A8, o similar
+                          {t('services.serviceClasses.firstClass.description')}
                         </p>
                         <div className="space-y-2">
-                          <div className="flex items-start text-xs text-gray-600 text-left">
-                            <span className="mr-2 mt-0.5">•</span>
-                            <span className="leading-relaxed">Capacidad para 3 personas</span>
-                          </div>
-                          <div className="flex items-start text-xs text-gray-600 text-left">
-                            <span className="mr-2 mt-0.5">•</span>
-                            <span className="leading-relaxed">Capacidad para 3 maletas estándar de facturación</span>
-                          </div>
-                          <div className="flex items-start text-xs text-gray-600 text-left">
-                            <span className="mr-2 mt-0.5">•</span>
-                            <span className="leading-relaxed">El máximo lujo y confort para trayectos ejecutivos</span>
-                          </div>
+                          {(t('services.serviceClasses.firstClass.features', { returnObjects: true }) as string[]).map((feature, index) => (
+                            <div key={index} className="flex items-start text-xs text-gray-600 text-left">
+                              <span className="mr-2 mt-0.5">•</span>
+                              <span className="leading-relaxed">{feature}</span>
+                            </div>
+                          ))}
                         </div>
                       </div>
                     </div>
@@ -771,24 +741,18 @@ const OurServices: React.FC = () => {
                       {/* White Container for text only */}
                       <div className="bg-white rounded-xl p-6 md:p-8 pt-24 md:pt-32">
                         <h3 className="text-lg md:text-xl font-bold mb-2 text-center uppercase tracking-wide" style={{ fontFamily: 'CONTHRAX-SB' }}>
-                          SUV CLASS
+                          {t('services.serviceClasses.suvClass.title')}
                         </h3>
                         <p className="text-center text-gray-600 mb-4 text-xs md:text-sm font-medium">
-                          Cadillac Escalade, Lincoln Navigator, Chevrolet Suburban, o similar
+                          {t('services.serviceClasses.suvClass.description')}
                         </p>
                         <div className="space-y-2">
-                          <div className="flex items-start text-xs text-gray-600 text-left">
-                            <span className="mr-2 mt-0.5">•</span>
-                            <span className="leading-relaxed">Capacidad para 6 personas</span>
-                          </div>
-                          <div className="flex items-start text-xs text-gray-600 text-left">
-                            <span className="mr-2 mt-0.5">•</span>
-                            <span className="leading-relaxed">Amplio espacio para equipaje</span>
-                          </div>
-                          <div className="flex items-start text-xs text-gray-600 text-left">
-                            <span className="mr-2 mt-0.5">•</span>
-                            <span className="leading-relaxed">Ideal para grupos y familias</span>
-                          </div>
+                          {(t('services.serviceClasses.suvClass.features', { returnObjects: true }) as string[]).map((feature, index) => (
+                            <div key={index} className="flex items-start text-xs text-gray-600 text-left">
+                              <span className="mr-2 mt-0.5">•</span>
+                              <span className="leading-relaxed">{feature}</span>
+                            </div>
+                          ))}
                         </div>
                       </div>
                     </div>
@@ -827,13 +791,13 @@ const OurServices: React.FC = () => {
             {/* Call to Action */}
             <div className="text-center mt-16 md:mt-24">
               <h3 className="text-3xl md:text-4xl font-bold text-white uppercase tracking-wider mb-8" style={{ fontFamily: 'CONTHRAX-SB' }}>
-                SOLICITA TU CHOFER AHORA
+                {t('services.cta.title')}
               </h3>
               
               {/* Download App Section */}
               <div className="mb-8">
                 <p className="text-xl text-white mb-6">
-                  Descarga la App
+                  {t('services.cta.downloadApp')}
                 </p>
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                   <a href="#" className="hover:opacity-80 transition-opacity">

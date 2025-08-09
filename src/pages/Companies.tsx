@@ -1,14 +1,16 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "../App.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SupportChat from "@/components/SupportChat";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { useTranslation } from "react-i18next";
 // import { ChevronDown, ChevronUp, CheckCircle } from "lucide-react";
 // import { motion } from "framer-motion";
 
 const Companies = () => {
+  const { t } = useTranslation();
   // Estado para controlar qué FAQ está abierta
   // const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(null);
   const [clickedBenefit, setClickedBenefit] = useState<number | null>(null);
@@ -216,7 +218,7 @@ const Companies = () => {
         <div className="relative z-10 h-full flex items-end pb-6 md:pb-16">
           <div className="container mx-auto px-6">
             <h1 className="text-3xl sm:text-3xl md:text-5xl lg:text-6xl font-bold text-white tracking-wider uppercase text-center" style={{ fontFamily: 'CONTHRAX-SB' }}>
-              PARA EMPRESAS
+              {t('companies.title')}
             </h1>
           </div>
         </div>
@@ -229,12 +231,10 @@ const Companies = () => {
         <section className="bg-black py-6 md:py-8">
           <div className="container mx-auto px-6 max-w-4xl">
           <h2 className="text-xl md:text-2xl font-semibold text-white mb-4 text-center">
-            Eficiencia, representación y protección en cada trayecto.
+            {t('companies.hero.title')}
           </h2>
           <p className="text-sm md:text-base text-white/80 text-center leading-relaxed">
-            <span className="font-bold">Privyde</span> ofrece soluciones globales de transporte ejecutivo diseñadas para organizaciones que valoran la puntualidad, la
-            experiencia del cliente y la excelencia operativa. Desde traslados corporativos hasta asociaciones estratégicas con hoteles,
-            aerolíneas o agencias, brindamos un ecosistema completo de movilidad de alto nivel.
+            <span className="font-bold">Privyde</span> {t('companies.hero.description')}
           </p>
           </div>
           {/* Separator line - same as landing page */}
@@ -251,7 +251,12 @@ const Companies = () => {
             className="text-xl md:text-4xl font-bold text-center text-white mb-8 md:mb-16"
             style={{ fontFamily: 'CONTHRAX-SB, sans-serif', textTransform: 'uppercase', letterSpacing: '0.05em' }}
           >
-            SERVICIOS EMPRESARIALES<br />PARA CADA NECESIDAD
+{t('companies.services.title').split('\n').map((line, index) => (
+              <React.Fragment key={index}>
+                {line}
+                {index === 0 && <br />}
+              </React.Fragment>
+            ))}
           </h2>
 
           {/* Horizontal Accordion - Mobile */}
@@ -291,10 +296,10 @@ const Companies = () => {
                   activeMobileAccordionIndex === 0 ? 'opacity-100 transition-opacity duration-200' : 'opacity-0 pointer-events-none'
                 }`}>
                   <h3 className="text-lg font-bold text-white mb-3 text-left">
-                    Viajes de negocios y reuniones
+                    {t('companies.services.businessTrips.title')}
                   </h3>
                   <p className="text-sm text-white/90 leading-relaxed text-left">
-                    Garantiza llegadas puntuales y salidas fluidas para sus ejecutivos y colaboradores. Chóferes profesionales, flota moderna y cobertura global para hacer de cada reunión una experiencia sin fricciones.
+                    {t('companies.services.businessTrips.description')}
                   </p>
                 </div>
                 
@@ -303,7 +308,7 @@ const Companies = () => {
                   activeMobileAccordionIndex === 0 ? 'opacity-0' : 'opacity-100'
                 }`}>
                   <h3 className="text-sm md:text-base font-bold text-white whitespace-nowrap" style={{ transform: 'rotate(-90deg) translateY(-50%)', transformOrigin: '0 50%' }}>
-                    Viajes de negocios y reuniones
+                    {t('companies.services.businessTrips.title')}
                   </h3>
                 </div>
               </div>
@@ -334,10 +339,10 @@ const Companies = () => {
                   activeMobileAccordionIndex === 1 ? 'opacity-100' : 'opacity-0 pointer-events-none'
                 }`}>
                   <h3 className="text-lg font-bold text-white mb-3 text-left">
-                    Traslados interciudad
+                    {t('companies.services.intercityTransfers.title')}
                   </h3>
                   <p className="text-sm text-white/90 leading-relaxed text-left">
-                    Conectamos ciudades con el máximo confort. Trabaje sin esfuerzo mientras viaja entre destinos. Ideal para ejecutivos que valoran su tiempo y productividad en trayectos largos.
+                    {t('companies.services.intercityTransfers.description')}
                   </p>
                 </div>
                 
@@ -346,7 +351,7 @@ const Companies = () => {
                   activeMobileAccordionIndex === 1 ? 'opacity-0' : 'opacity-100'
                 }`}>
                   <h3 className="text-sm md:text-base font-bold text-white whitespace-nowrap" style={{ transform: 'rotate(-90deg) translateY(-50%)', transformOrigin: '0 50%' }}>
-                    Traslados interciudad
+                    {t('companies.services.intercityTransfers.title')}
                   </h3>
                 </div>
               </div>
@@ -377,10 +382,10 @@ const Companies = () => {
                   activeMobileAccordionIndex === 2 ? 'opacity-100' : 'opacity-0 pointer-events-none'
                 }`}>
                   <h3 className="text-lg font-bold text-white mb-3 text-left">
-                    Aeropuertos en todo el mundo
+                    {t('companies.services.airportsWorldwide.title')}
                   </h3>
                   <p className="text-sm text-white/90 leading-relaxed text-left">
-                    Servicio global de traslados aeroportuarios. Monitoreo de vuelos en tiempo real, recepción personalizada y gestión integral de equipaje en más de 500 aeropuertos internacionales.
+                    {t('companies.services.airportsWorldwide.description')}
                   </p>
                 </div>
                 
@@ -389,7 +394,7 @@ const Companies = () => {
                   activeMobileAccordionIndex === 2 ? 'opacity-0' : 'opacity-100'
                 }`}>
                   <h3 className="text-sm md:text-base font-bold text-white whitespace-nowrap" style={{ transform: 'rotate(-90deg) translateY(-50%)', transformOrigin: '0 50%' }}>
-                    Aeropuertos en todo el mundo
+                    {t('companies.services.airportsWorldwide.title')}
                   </h3>
                 </div>
               </div>
@@ -420,10 +425,10 @@ const Companies = () => {
                   activeMobileAccordionIndex === 3 ? 'opacity-100' : 'opacity-0 pointer-events-none'
                 }`}>
                   <h3 className="text-lg font-bold text-white mb-3 text-left">
-                    Transporte para clientes y socios
+                    {t('companies.services.clientTransport.title')}
                   </h3>
                   <p className="text-sm text-white/90 leading-relaxed text-left">
-                    Impresione a sus invitados con un servicio excepcional. Atención personalizada y vehículos premium para fortalecer relaciones comerciales desde el primer momento.
+                    {t('companies.services.clientTransport.description')}
                   </p>
                 </div>
                 
@@ -432,7 +437,7 @@ const Companies = () => {
                   activeMobileAccordionIndex === 3 ? 'opacity-0' : 'opacity-100'
                 }`}>
                   <h3 className="text-sm md:text-base font-bold text-white whitespace-nowrap" style={{ transform: 'rotate(-90deg) translateY(-50%)', transformOrigin: '0 50%' }}>
-                    Transporte para clientes y socios
+                    {t('companies.services.clientTransport.title')}
                   </h3>
                 </div>
               </div>
@@ -463,10 +468,10 @@ const Companies = () => {
                   activeMobileAccordionIndex === 4 ? 'opacity-100' : 'opacity-0 pointer-events-none'
                 }`}>
                   <h3 className="text-lg font-bold text-white mb-3 text-left">
-                    Chóferes corporativos por hora o día completo
+                    {t('companies.services.corporateDrivers.title')}
                   </h3>
                   <p className="text-sm text-white/90 leading-relaxed text-left">
-                    Flexibilidad total para agendas dinámicas. Reserve un chófer dedicado por horas o días completos. Ideal para roadshows, eventos corporativos o jornadas con múltiples reuniones.
+                    {t('companies.services.corporateDrivers.description')}
                   </p>
                 </div>
                 
@@ -475,7 +480,7 @@ const Companies = () => {
                   activeMobileAccordionIndex === 4 ? 'opacity-0' : 'opacity-100'
                 }`}>
                   <h3 className="text-sm md:text-base font-bold text-white whitespace-nowrap" style={{ transform: 'rotate(-90deg) translateY(-50%)', transformOrigin: '0 50%' }}>
-                    Chóferes corporativos por hora o día completo
+                    {t('companies.services.corporateDrivers.title')}
                   </h3>
                 </div>
               </div>
@@ -506,12 +511,12 @@ const Companies = () => {
                   <h3 className={`font-bold text-white transition-all duration-300 leading-tight ${
                     activeAccordionIndex === 0 ? 'text-xl mb-3' : 'text-xs'
                   }`}>
-                    Viajes de negocios y reuniones
+{t('companies.services.businessTrips.title')}
                   </h3>
                   <p className={`text-sm text-white/90 transition-all duration-300 overflow-hidden ${
                     activeAccordionIndex === 0 ? 'max-h-40 opacity-100' : 'max-h-0 opacity-0'
                   }`}>
-                    Garantiza llegadas puntuales y salidas fluidas para tus ejecutivos y colaboradores. Chóferes profesionales, flota moderna y cobertura global para hacer de cada reunión una experiencia sin fricciones.
+                    {t('companies.services.businessTrips.description')}
                   </p>
                 </div>
               </div>
@@ -539,12 +544,12 @@ const Companies = () => {
                   <h3 className={`font-bold text-white transition-all duration-300 leading-tight ${
                     activeAccordionIndex === 1 ? 'text-xl mb-3' : 'text-xs'
                   }`}>
-                    Traslados interciudad
+{t('companies.services.intercityTransfers.title')}
                   </h3>
                   <p className={`text-sm text-white/90 transition-all duration-300 overflow-hidden ${
                     activeAccordionIndex === 1 ? 'max-h-40 opacity-100' : 'max-h-0 opacity-0'
                   }`}>
-                    Conectamos ciudades con el máximo confort. Trabaje sin esfuerzo mientras viaja entre destinos. Ideal para ejecutivos que valoran su tiempo y productividad en trayectos largos.
+                    {t('companies.services.intercityTransfers.description')}
                   </p>
                 </div>
               </div>
@@ -572,12 +577,12 @@ const Companies = () => {
                   <h3 className={`font-bold text-white transition-all duration-300 leading-tight ${
                     activeAccordionIndex === 2 ? 'text-xl mb-3' : 'text-xs'
                   }`}>
-                    Aeropuertos en todo el mundo
+{t('companies.services.airportsWorldwide.title')}
                   </h3>
                   <p className={`text-sm text-white/90 transition-all duration-300 overflow-hidden ${
                     activeAccordionIndex === 2 ? 'max-h-40 opacity-100' : 'max-h-0 opacity-0'
                   }`}>
-                    Servicio global de traslados aeroportuarios. Monitoreo de vuelos en tiempo real, recepción personalizada y gestión integral de equipaje en más de 500 aeropuertos internacionales.
+                    {t('companies.services.airportsWorldwide.description')}
                   </p>
                 </div>
               </div>
@@ -605,12 +610,12 @@ const Companies = () => {
                   <h3 className={`font-bold text-white transition-all duration-300 leading-tight ${
                     activeAccordionIndex === 3 ? 'text-xl mb-3' : 'text-xs'
                   }`}>
-                    Transporte para clientes y socios
+{t('companies.services.clientTransport.title')}
                   </h3>
                   <p className={`text-sm text-white/90 transition-all duration-300 overflow-hidden ${
                     activeAccordionIndex === 3 ? 'max-h-40 opacity-100' : 'max-h-0 opacity-0'
                   }`}>
-                    Impresione a sus invitados con un servicio excepcional. Atención personalizada y vehículos premium para fortalecer relaciones comerciales desde el primer momento.
+                    {t('companies.services.clientTransport.description')}
                   </p>
                 </div>
               </div>
@@ -636,12 +641,12 @@ const Companies = () => {
                   <h3 className={`font-bold text-white transition-all duration-300 leading-tight ${
                     activeAccordionIndex === 4 ? 'text-xl mb-3' : 'text-xs'
                   }`}>
-                    Chóferes corporativos por hora o día completo
+{t('companies.services.corporateDrivers.title')}
                   </h3>
                   <p className={`text-sm text-white/90 transition-all duration-300 overflow-hidden ${
                     activeAccordionIndex === 4 ? 'max-h-40 opacity-100' : 'max-h-0 opacity-0'
                   }`}>
-                    Flexibilidad total para agendas dinámicas. Reserve un chófer dedicado por horas o días completos. Ideal para roadshows, eventos corporativos o jornadas con múltiples reuniones.
+                    {t('companies.services.corporateDrivers.description')}
                   </p>
                 </div>
               </div>
@@ -661,7 +666,12 @@ const Companies = () => {
             className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center text-white mb-12 md:mb-16"
             style={{ fontFamily: 'CONTHRAX-SB, sans-serif', textTransform: 'uppercase', letterSpacing: '0.05em' }}
           >
-            ALIANZAS ESTRATÉGICAS<br />QUE AGREGAN VALOR
+{t('companies.partnerships.title').split('\n').map((line, index) => (
+              <React.Fragment key={index}>
+                {line}
+                {index === 0 && <br />}
+              </React.Fragment>
+            ))}
           </h2>
 
           {/* Desktop Grid - Hidden on mobile */}
@@ -682,9 +692,9 @@ const Companies = () => {
               </div>
               {/* Text content below */}
               <div className="text-center px-2">
-                <h3 className="text-lg font-bold text-white mb-2">Hoteles</h3>
+                <h3 className="text-lg font-bold text-white mb-2">{t('companies.partnerships.hotels.title')}</h3>
                 <p className="text-xs text-gray-400 leading-relaxed">
-                  Ofrece traslados al aeropuerto y city tours privados como parte de tu experiencia de hospedaje premium.
+                  {t('companies.partnerships.hotels.description')}
                 </p>
               </div>
             </div>
@@ -705,9 +715,9 @@ const Companies = () => {
               </div>
               {/* Text content below */}
               <div className="text-center px-2">
-                <h3 className="text-lg font-bold text-white mb-2">Aerolíneas y aviación privada</h3>
+                <h3 className="text-lg font-bold text-white mb-2">{t('companies.partnerships.airlines.title')}</h3>
                 <p className="text-xs text-gray-400 leading-relaxed">
-                  Proporcionamos los pasajeros de primera clase y jets privados con servicios de cortesía a marca blanca.
+                  {t('companies.partnerships.airlines.description')}
                 </p>
               </div>
             </div>
@@ -728,9 +738,9 @@ const Companies = () => {
               </div>
               {/* Text content below */}
               <div className="text-center px-2">
-                <h3 className="text-lg font-bold text-white mb-2">Agencias de viaje</h3>
+                <h3 className="text-lg font-bold text-white mb-2">{t('companies.partnerships.travelAgencies.title')}</h3>
                 <p className="text-xs text-gray-400 leading-relaxed">
-                  Eleva la experiencia de tus clientes con transporte de lujo integrado a tu oferta. Servicio coherente en todo el mundo.
+                  {t('companies.partnerships.travelAgencies.description')}
                 </p>
               </div>
             </div>
@@ -751,9 +761,9 @@ const Companies = () => {
               </div>
               {/* Text content below */}
               <div className="text-center px-2">
-                <h3 className="text-lg font-bold text-white mb-2">Sector financiero</h3>
+                <h3 className="text-lg font-bold text-white mb-2">{t('companies.partnerships.financialSector.title')}</h3>
                 <p className="text-xs text-gray-400 leading-relaxed">
-                  Implementa soluciones para clientes de carteras, servicio personalizado y soporte para clientes de alto valor.
+                  {t('companies.partnerships.financialSector.description')}
                 </p>
               </div>
             </div>
@@ -781,9 +791,9 @@ const Companies = () => {
                     </div>
                     {/* Text content below */}
                     <div className="text-center px-2">
-                      <h3 className="text-xl font-bold text-white mb-2">Hoteles</h3>
+                      <h3 className="text-xl font-bold text-white mb-2">{t('companies.partnerships.hotels.title')}</h3>
                       <p className="text-sm text-gray-400 leading-relaxed">
-                        Ofrece traslados al aeropuerto y city tours privados como parte de tu experiencia de hospedaje premium.
+                        {t('companies.partnerships.hotels.description')}
                       </p>
                     </div>
                   </div>
@@ -806,9 +816,9 @@ const Companies = () => {
                     </div>
                     {/* Text content below */}
                     <div className="text-center px-2">
-                      <h3 className="text-xl font-bold text-white mb-2">Aerolíneas y aviación privada</h3>
+                      <h3 className="text-xl font-bold text-white mb-2">{t('companies.partnerships.airlines.title')}</h3>
                       <p className="text-sm text-gray-400 leading-relaxed">
-                        Proporcionamos los pasajeros de primera clase y jets privados con servicios de cortesía a marca blanca.
+                        {t('companies.partnerships.airlines.description')}
                       </p>
                     </div>
                   </div>
@@ -831,9 +841,9 @@ const Companies = () => {
                     </div>
                     {/* Text content below */}
                     <div className="text-center px-2">
-                      <h3 className="text-xl font-bold text-white mb-2">Agencias de viaje</h3>
+                      <h3 className="text-xl font-bold text-white mb-2">{t('companies.partnerships.travelAgencies.title')}</h3>
                       <p className="text-sm text-gray-400 leading-relaxed">
-                        Eleva la experiencia de tus clientes con transporte de lujo integrado a tu oferta. Servicio coherente en todo el mundo.
+                        {t('companies.partnerships.travelAgencies.description')}
                       </p>
                     </div>
                   </div>
@@ -856,9 +866,9 @@ const Companies = () => {
                     </div>
                     {/* Text content below */}
                     <div className="text-center px-2">
-                      <h3 className="text-xl font-bold text-white mb-2">Sector financiero</h3>
+                      <h3 className="text-xl font-bold text-white mb-2">{t('companies.partnerships.financialSector.title')}</h3>
                       <p className="text-sm text-gray-400 leading-relaxed">
-                        Implementa soluciones para clientes de carteras, servicio personalizado y soporte para clientes de alto valor.
+                        {t('companies.partnerships.financialSector.description')}
                       </p>
                     </div>
                   </div>
@@ -921,7 +931,7 @@ const Companies = () => {
               {/* Title overlay */}
               <div className="absolute inset-0 flex items-end justify-center z-20 pb-20 md:pb-24">
                 <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white uppercase tracking-wider text-center px-4" style={{ fontFamily: 'CONTHRAX-SB' }}>
-                  BENEFICIOS PARA TU EMPRESA
+{t('companies.benefits.title')}
                 </h2>
               </div>
             </div>
@@ -945,8 +955,8 @@ const Companies = () => {
                       <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-2">
                         <div className="w-0 h-0 border-l-[8px] border-l-transparent border-r-[8px] border-r-transparent border-b-[8px] border-b-black"></div>
                       </div>
-                      <h4 className="font-semibold mb-1 text-sm">Cobertura global</h4>
-                      <p className="text-xs leading-relaxed">Disponible en más de 50 países con chóferes locales capacitados y de habla inglesa.</p>
+                      <h4 className="font-semibold mb-1 text-sm">{t('companies.benefits.globalCoverage.title')}</h4>
+                      <p className="text-xs leading-relaxed">{t('companies.benefits.globalCoverage.description')}</p>
                     </div>
                   </div>
                 </div>
@@ -967,8 +977,8 @@ const Companies = () => {
                       <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-2">
                         <div className="w-0 h-0 border-l-[8px] border-l-transparent border-r-[8px] border-r-transparent border-b-[8px] border-b-black"></div>
                       </div>
-                      <h4 className="font-semibold mb-1 text-sm">Reservas sin complicaciones</h4>
-                      <p className="text-xs leading-relaxed">Plataforma todo en uno con confirmación instantánea y precios claros.</p>
+                      <h4 className="font-semibold mb-1 text-sm">{t('companies.benefits.easyBookings.title')}</h4>
+                      <p className="text-xs leading-relaxed">{t('companies.benefits.easyBookings.description')}</p>
                     </div>
                   </div>
                 </div>
@@ -989,8 +999,8 @@ const Companies = () => {
                       <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-2">
                         <div className="w-0 h-0 border-l-[8px] border-l-transparent border-r-[8px] border-r-transparent border-b-[8px] border-b-black"></div>
                       </div>
-                      <h4 className="font-semibold mb-1 text-sm">Facturación automática</h4>
-                      <p className="text-xs leading-relaxed">Gestiona múltiples viajes sin complicaciones administrativas.</p>
+                      <h4 className="font-semibold mb-1 text-sm">{t('companies.benefits.automaticBilling.title')}</h4>
+                      <p className="text-xs leading-relaxed">{t('companies.benefits.automaticBilling.description')}</p>
                     </div>
                   </div>
                 </div>
@@ -1011,8 +1021,8 @@ const Companies = () => {
                       <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-2">
                         <div className="w-0 h-0 border-l-[8px] border-l-transparent border-r-[8px] border-r-transparent border-b-[8px] border-b-black"></div>
                       </div>
-                      <h4 className="font-semibold mb-1 text-sm">Soporte 24/7 multilingüe</h4>
-                      <p className="text-xs leading-relaxed">Atención personalizada para tu empresa, siempre disponible.</p>
+                      <h4 className="font-semibold mb-1 text-sm">{t('companies.benefits.support247.title')}</h4>
+                      <p className="text-xs leading-relaxed">{t('companies.benefits.support247.description')}</p>
                     </div>
                   </div>
                 </div>
@@ -1033,8 +1043,8 @@ const Companies = () => {
                       <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-2">
                         <div className="w-0 h-0 border-l-[8px] border-l-transparent border-r-[8px] border-r-transparent border-b-[8px] border-b-black"></div>
                       </div>
-                      <h4 className="font-semibold mb-1 text-sm">Gestión centralizada</h4>
-                      <p className="text-xs leading-relaxed">Cuentas empresariales para más de 500 usuarios con descuentos exclusivos.</p>
+                      <h4 className="font-semibold mb-1 text-sm">{t('companies.benefits.centralizedManagement.title')}</h4>
+                      <p className="text-xs leading-relaxed">{t('companies.benefits.centralizedManagement.description')}</p>
                     </div>
                   </div>
                 </div>
@@ -1066,8 +1076,8 @@ const Companies = () => {
                         <div className="w-0 h-0 border-l-[10px] border-l-transparent border-r-[10px] border-r-transparent border-b-[10px] border-b-black"></div>
                       </div>
                       <div className="bg-black text-white p-4 rounded-lg shadow-xl w-72 mx-auto mt-1">
-                        <h4 className="font-semibold mb-2 text-base">Cobertura global</h4>
-                        <p className="text-sm leading-relaxed">Disponible en más de 50 países con chóferes locales capacitados y de habla inglesa.</p>
+                        <h4 className="font-semibold mb-2 text-base">{t('companies.benefits.globalCoverage.title')}</h4>
+                        <p className="text-sm leading-relaxed">{t('companies.benefits.globalCoverage.description')}</p>
                       </div>
                     </div>
                   </div>
@@ -1096,8 +1106,8 @@ const Companies = () => {
                         <div className="w-0 h-0 border-l-[10px] border-l-transparent border-r-[10px] border-r-transparent border-b-[10px] border-b-black"></div>
                       </div>
                       <div className="bg-black text-white p-4 rounded-lg shadow-xl w-72 mx-auto mt-1">
-                        <h4 className="font-semibold mb-2 text-base">Reservas sin complicaciones</h4>
-                        <p className="text-sm leading-relaxed">Plataforma todo en uno con confirmación instantánea y precios claros.</p>
+                        <h4 className="font-semibold mb-2 text-base">{t('companies.benefits.easyBookings.title')}</h4>
+                        <p className="text-sm leading-relaxed">{t('companies.benefits.easyBookings.description')}</p>
                       </div>
                     </div>
                   </div>
@@ -1126,8 +1136,8 @@ const Companies = () => {
                         <div className="w-0 h-0 border-l-[10px] border-l-transparent border-r-[10px] border-r-transparent border-b-[10px] border-b-black"></div>
                       </div>
                       <div className="bg-black text-white p-4 rounded-lg shadow-xl w-72 mx-auto mt-1">
-                        <h4 className="font-semibold mb-2 text-base">Facturación automática</h4>
-                        <p className="text-sm leading-relaxed">Gestiona múltiples viajes sin complicaciones administrativas.</p>
+                        <h4 className="font-semibold mb-2 text-base">{t('companies.benefits.automaticBilling.title')}</h4>
+                        <p className="text-sm leading-relaxed">{t('companies.benefits.automaticBilling.description')}</p>
                       </div>
                     </div>
                   </div>
@@ -1156,8 +1166,8 @@ const Companies = () => {
                         <div className="w-0 h-0 border-l-[10px] border-l-transparent border-r-[10px] border-r-transparent border-b-[10px] border-b-black"></div>
                       </div>
                       <div className="bg-black text-white p-4 rounded-lg shadow-xl w-72 mx-auto mt-1">
-                        <h4 className="font-semibold mb-2 text-base">Soporte 24/7 multilingüe</h4>
-                        <p className="text-sm leading-relaxed">Atención personalizada para tu empresa, siempre disponible.</p>
+                        <h4 className="font-semibold mb-2 text-base">{t('companies.benefits.support247.title')}</h4>
+                        <p className="text-sm leading-relaxed">{t('companies.benefits.support247.description')}</p>
                       </div>
                     </div>
                   </div>
@@ -1186,8 +1196,8 @@ const Companies = () => {
                         <div className="w-0 h-0 border-l-[10px] border-l-transparent border-r-[10px] border-r-transparent border-b-[10px] border-b-black"></div>
                       </div>
                       <div className="bg-black text-white p-4 rounded-lg shadow-xl w-72 mx-auto mt-1">
-                        <h4 className="font-semibold mb-2 text-base">Gestión centralizada</h4>
-                        <p className="text-sm leading-relaxed">Cuentas empresariales para más de 500 usuarios con descuentos exclusivos.</p>
+                        <h4 className="font-semibold mb-2 text-base">{t('companies.benefits.centralizedManagement.title')}</h4>
+                        <p className="text-sm leading-relaxed">{t('companies.benefits.centralizedManagement.description')}</p>
                       </div>
                     </div>
                   </div>
@@ -1204,17 +1214,21 @@ const Companies = () => {
         <div className="container mx-auto px-4 max-w-4xl">
           {/* Title */}
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center text-white mb-4 uppercase" style={{ fontFamily: 'CONTHRAX-SB' }}>
-            ¿LISTO PARA ELEVAR<br />
-            LA MOVILIDAD DE TU EMPRESA?
+{t('companies.contact.title').split('\n').map((line, index) => (
+              <React.Fragment key={index}>
+                {line}
+                {index === 0 && <br />}
+              </React.Fragment>
+            ))}
           </h2>
           <p className="text-center text-white/80 mb-12 text-lg">
-            Contáctanos para diseñar una solución corporativa a tu medida.
+{t('companies.contact.description')}
           </p>
 
           {/* Form Container */}
           <div className="bg-white rounded-2xl p-8 md:p-12">
             <p className="text-center text-gray-600 mb-8 text-sm">
-              Completa este formulario y en el siguiente paso creará su cuenta de empresa para acceder a tarifas corporativas.
+{t('companies.contact.form.description')}
             </p>
 
             <form className="space-y-6">
@@ -1222,7 +1236,7 @@ const Companies = () => {
               <div className="grid grid-cols-2 gap-4 md:gap-6">
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Nombre
+{t('companies.contact.form.firstName')}
                   </label>
                   <input
                     type="text"
@@ -1232,7 +1246,7 @@ const Companies = () => {
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Apellidos
+{t('companies.contact.form.lastName')}
                   </label>
                   <input
                     type="text"
@@ -1245,7 +1259,7 @@ const Companies = () => {
               {/* Country Row - Mobile Only */}
               <div className="md:hidden">
                 <label className="block text-sm font-medium text-gray-700 mb-2">
-                  País
+                  {t('companies.contact.form.country')}
                 </label>
                 <select
                   className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent appearance-none"
@@ -1264,7 +1278,7 @@ const Companies = () => {
               <div className="grid grid-cols-2 gap-4 md:hidden">
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Prefijo
+{t('companies.contact.form.prefix')}
                   </label>
                   <select
                     className="w-full px-3 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent"
@@ -1280,7 +1294,7 @@ const Companies = () => {
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Número de Teléfono
+{t('companies.contact.form.phoneNumber')}
                   </label>
                   <input
                     type="tel"
@@ -1294,7 +1308,7 @@ const Companies = () => {
               <div className="hidden md:grid grid-cols-3 gap-4">
                 <div className="col-span-1">
                   <label className="block text-sm font-medium text-gray-700 mb-2">
-                    País
+{t('companies.contact.form.country')}
                   </label>
                   <select
                     className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent appearance-none"
@@ -1310,7 +1324,7 @@ const Companies = () => {
                 </div>
                 <div className="col-span-1">
                   <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Prefijo
+{t('companies.contact.form.prefix')}
                   </label>
                   <select
                     className="w-full px-3 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent"
@@ -1326,7 +1340,7 @@ const Companies = () => {
                 </div>
                 <div className="col-span-1">
                   <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Número de Teléfono
+{t('companies.contact.form.phoneNumber')}
                   </label>
                   <input
                     type="tel"
@@ -1339,7 +1353,7 @@ const Companies = () => {
               {/* Company Name */}
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">
-                  Nombre de la Empresa
+{t('companies.contact.form.companyName')}
                 </label>
                 <input
                   type="text"
@@ -1351,12 +1365,12 @@ const Companies = () => {
               {/* Location */}
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">
-                  ¿Dónde está ubicado?
+{t('companies.contact.form.location')}
                 </label>
                 <input
                   type="text"
                   className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent"
-                  placeholder="Ciudad, Estado/Provincia"
+placeholder={t('companies.contact.form.locationPlaceholder')}
                   required
                 />
               </div>
@@ -1364,7 +1378,7 @@ const Companies = () => {
               {/* Company Size - Mobile Full Width */}
               <div className="md:hidden">
                 <label className="block text-sm font-medium text-gray-700 mb-2">
-                  Tamaño de la empresa
+{t('companies.contact.form.companySize')}
                 </label>
                 <select
                   className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent appearance-none"
@@ -1381,7 +1395,7 @@ const Companies = () => {
               {/* How did you hear - Mobile Full Width */}
               <div className="md:hidden">
                 <label className="block text-sm font-medium text-gray-700 mb-2">
-                  ¿Cómo se enteró de nosotros?
+{t('companies.contact.form.hearAbout')}
                 </label>
                 <select
                   className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent appearance-none"
@@ -1399,7 +1413,7 @@ const Companies = () => {
               <div className="hidden md:grid grid-cols-2 gap-6">
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Tamaño de la empresa
+  {t('companies.contact.form.companySize')}
                   </label>
                   <select
                     className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent appearance-none"
@@ -1414,7 +1428,7 @@ const Companies = () => {
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">
-                    ¿Cómo se enteró de nosotros?
+  {t('companies.contact.form.hearAbout')}
                   </label>
                   <select
                     className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent appearance-none"
@@ -1432,12 +1446,12 @@ const Companies = () => {
               {/* Additional help */}
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">
-                  ¿Cómo podemos ayudarte?
+{t('companies.contact.form.help')}
                 </label>
                 <textarea
                   rows={4}
                   className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent resize-none"
-                  placeholder="Cuéntanos más sobre las necesidades de transporte de tu empresa..."
+placeholder={t('companies.contact.form.helpPlaceholder')}
                 />
               </div>
 
@@ -1448,7 +1462,7 @@ const Companies = () => {
                   className="bg-black text-white px-8 py-3 rounded-lg font-medium hover:bg-gray-800 transition-colors"
                   onClick={handleContactSubmit}
                 >
-                  Continuar al registro
+{t('companies.contact.form.submit')}
                 </button>
               </div>
             </form>

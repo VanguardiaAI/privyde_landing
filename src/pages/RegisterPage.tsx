@@ -8,8 +8,10 @@ import { Mail, Lock, User } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import BlackFooter from "@/components/BlackFooter";
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 export default function RegisterPage() {
+  const { t } = useTranslation();
   const { register, error, isLoading, user } = useAuth();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -69,7 +71,7 @@ export default function RegisterPage() {
             className="text-3xl font-bold text-center mb-8"
             data-oid="52xvb6r"
           >
-            Registro de administradores
+            {t('auth.register.title')}
           </h1>
 
           <div
@@ -93,8 +95,7 @@ export default function RegisterPage() {
             </div>
             <div className="ml-3" data-oid="hr7g.m6">
               <p className="text-sm" data-oid="m241mqg">
-                Este registro es exclusivo para administradores. Serás
-                redirigido directamente al panel de administración.
+                {t('auth.register.infoTitle')}
               </p>
             </div>
           </div>
@@ -132,11 +133,11 @@ export default function RegisterPage() {
                       className="mb-0 text-left text-xs"
                       data-oid="w4zreqo"
                     >
-                      Nombre
+                      {t('auth.register.name')}
                     </Label>
                     <Input
                       className="border-0 p-0 h-6 focus:ring-0 placeholder:text-gray-400 bg-gray-50"
-                      placeholder="Tu nombre"
+                      placeholder={t('auth.register.namePlaceholder')}
                       type="text"
                       required
                       value={name}
@@ -160,11 +161,11 @@ export default function RegisterPage() {
                       className="mb-0 text-left text-xs"
                       data-oid="lz:qxlx"
                     >
-                      Email
+                      {t('auth.register.email')}
                     </Label>
                     <Input
                       className="border-0 p-0 h-6 focus:ring-0 placeholder:text-gray-400 bg-gray-50"
-                      placeholder="tu@email.com"
+                      placeholder={t('auth.register.emailPlaceholder')}
                       type="email"
                       required
                       value={email}
@@ -188,11 +189,11 @@ export default function RegisterPage() {
                       className="mb-0 text-left text-xs"
                       data-oid="o-.6bxu"
                     >
-                      Contraseña
+                      {t('auth.register.password')}
                     </Label>
                     <Input
                       className="border-0 p-0 h-6 focus:ring-0 placeholder:text-gray-400 bg-gray-50"
-                      placeholder="Crea una contraseña segura"
+                      placeholder={t('auth.register.passwordPlaceholder')}
                       type="password"
                       required
                       value={password}
@@ -204,10 +205,7 @@ export default function RegisterPage() {
 
                 <div className="text-xs text-gray-500" data-oid="w3uzwb4">
                   <p data-oid="c:dho-i">
-                    Este formulario es exclusivo para administradores. Una vez
-                    registrado, tendrás acceso completo al panel de
-                    administración sin necesidad de completar un perfil
-                    adicional.
+                    {t('auth.register.adminInfo')}
                   </p>
                 </div>
 
@@ -218,8 +216,8 @@ export default function RegisterPage() {
                   data-oid="17cqw8q"
                 >
                   {isLoading
-                    ? "Registrando..."
-                    : "Crear cuenta de administrador"}
+                    ? t('auth.register.registering')
+                    : t('auth.register.registerButton')}
                 </Button>
               </form>
             </CardContent>

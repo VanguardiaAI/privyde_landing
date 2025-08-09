@@ -8,104 +8,185 @@ import SupportChat from "@/components/SupportChat";
 import "../styles/privyde.css";
 import { Link } from "react-router-dom";
 import { useState, useEffect, useRef } from "react";
+import { useTranslation } from "react-i18next";
 
-const servicesData = [
-  {
-    id: 0,
-    title: "Servicio de coche de larga distancia",
-    description:
-      "Conectamos ciudades con el máximo confort. Chóferes profesionales para trayectos largos con total tranquilidad.",
-    imageUrl: "/images/services/Servicio -Coche de larga distancia.webp",
-    linkText: "Más información",
-    linkHref: "/city-to-city",
-  },
-  {
-    id: 1,
-    title: "Traslados en aeropuertos",
-    description:
-      "Servicio de traslado premium desde y hacia el aeropuerto. Monitoreo de vuelos en tiempo real.",
-    imageUrl: "/images/services/Servicio-Traslado en Aeropuertos.webp",
-    linkText: "Más información",
-    linkHref: "/airport-transfers",
-  },
-  {
-    id: 2,
-    title: "Alquiler por horas",
-    description:
-      "Nuestro servicio por horas está pensado para quienes necesitan un chófer que los espere y acompañe durante varias paradas o jornadas completas.",
-    imageUrl: "/images/services/Servicio - Alquiler de Choferes.webp",
-    linkText: "Más información",
-    linkHref: "/hourly-hire",
-  },
-  {
-    id: 3,
-    title: "Eventos especiales",
-    description:
-      "El día de tu boda merece un transporte que esté a la altura. Vehículos de lujo y chóferes que entienden la importancia del momento.",
-    imageUrl: "/images/services/Servicios - Eventos especiales.webp",
-    linkText: "Más información",
-    linkHref: "/special-events",
-  },
-  {
-    id: 4,
-    title: "Traslados corporativos VIP",
-    description:
-      "Transporte ejecutivo diseñado para profesionales que valoran la puntualidad, discreción y comodidad en cada trayecto.",
-    imageUrl: "/images/services/Servicios - Traslados Corporativos VIP.webp",
-    linkText: "Más información",
-    linkHref: "/corporate-transfers",
-  },
-  {
-    id: 5,
-    title: "Seguridad ejecutiva",
-    description:
-      "Protección discreta y profesional. Escoltas capacitados para garantizar tu seguridad sin comprometer tu privacidad.",
-    imageUrl: "/images/services/Servicio - Seguridad Ejecutiva.webp",
-    linkText: "Más información",
-    linkHref: "/security-services",
-  },
-];
+// This will be populated inside the component with translations
 
 
 
 
-const testimonialsData = [
-  {
-    id: 1,
-    name: "Renata V.",
-    image: "https://i.pravatar.cc/150?img=1",
-    text: "Me hizo viajar seguro y sin estrés. Desde que uso Privyde, sé que están bien cuidados.",
-    rating: 5
-  },
-  {
-    id: 2,
-    name: "Marcelo A.",
-    image: "https://i.pravatar.cc/150?img=3",
-    text: "Con Privyde tengo protección y puntualidad garantizadas. La opción de escolta me da tranquilidad en cada traslado.",
-    rating: 5
-  },
-  {
-    id: 3,
-    name: "Lorenzo D.",
-    image: "https://i.pravatar.cc/150?img=8",
-    text: "En cada viaje a Europa, Privyde me ofrece el mismo nivel de seguridad y discreción que en casa.",
-    rating: 5
-  }
-];
+// Testimonials data will be populated inside the component with translations
 
 export default function Home() {
+  const { t } = useTranslation();
   const [currentServiceSlide, setCurrentServiceSlide] = useState(0);
   const [currentTestimonialSlide, setCurrentTestimonialSlide] = useState(0);
   const [visibleBenefit, setVisibleBenefit] = useState<number | null>(null);
   const [clickedBenefit, setClickedBenefit] = useState<number | null>(null);
   const benefitRefs = useRef<(HTMLDivElement | null)[]>([]);
 
+  // Services data with translations - Mobile only shows first 6
+  const mobileServicesData = [
+    {
+      id: 0,
+      title: t('landing.services.longDistance.title'),
+      description: t('landing.services.longDistance.cardDescription'),
+      imageUrl: "/images/services/Servicio -Coche de larga distancia.webp",
+      linkText: t('landing.services.longDistance.seeMore'),
+      linkHref: "/city-to-city",
+    },
+    {
+      id: 1,
+      title: t('landing.services.airport.title'),
+      description: t('landing.services.airport.cardDescription'),
+      imageUrl: "/images/services/Servicio-Traslado en Aeropuertos.webp",
+      linkText: t('landing.services.airport.seeMore'),
+      linkHref: "/airport-transfers",
+    },
+    {
+      id: 2,
+      title: t('landing.services.hourly.title'),
+      description: t('landing.services.hourly.cardDescription'),
+      imageUrl: "/images/services/Servicio - Alquiler de Choferes.webp",
+      linkText: t('landing.services.hourly.seeMore'),
+      linkHref: "/hourly-hire",
+    },
+    {
+      id: 3,
+      title: t('landing.services.events.title'),
+      description: t('landing.services.events.cardDescription'),
+      imageUrl: "/images/services/Servicios - Eventos especiales.webp",
+      linkText: t('landing.services.events.seeMore'),
+      linkHref: "/special-events",
+    },
+    {
+      id: 4,
+      title: t('landing.services.corporate.title'),
+      description: t('landing.services.corporate.cardDescription'),
+      imageUrl: "/images/services/Servicios - Traslados Corporativos VIP.webp",
+      linkText: t('landing.services.corporate.seeMore'),
+      linkHref: "/corporate-transfers",
+    },
+    {
+      id: 5,
+      title: t('landing.services.security.title'),
+      description: t('landing.services.security.cardDescription'),
+      imageUrl: "/images/services/Servicio - Seguridad Ejecutiva.webp",
+      linkText: t('landing.services.security.seeMore'),
+      linkHref: "/security-services",
+    },
+  ];
+
+  // Desktop services include two additional services
+  const desktopServicesData = [
+    {
+      id: 0,
+      title: t('landing.services.longDistance.title'),
+      cardTitle: t('landing.services.longDistance.cardTitle'),
+      description: t('landing.services.longDistance.cardDescription'),
+      imageUrl: "/images/services/Servicio -Coche de larga distancia.webp",
+      linkText: t('landing.services.longDistance.seeMore'),
+      linkHref: "/city-to-city",
+    },
+    {
+      id: 1,
+      title: t('landing.services.airport.title'),
+      cardTitle: t('landing.services.airport.cardTitle'),
+      description: t('landing.services.airport.cardDescription'),
+      imageUrl: "/images/services/Servicio-Traslado en Aeropuertos.webp",
+      linkText: t('landing.services.airport.seeMore'),
+      linkHref: "/airport-transfers",
+    },
+    {
+      id: 2,
+      title: t('landing.services.hourly.title'),
+      cardTitle: t('landing.services.hourly.cardTitle'),
+      description: t('landing.services.hourly.cardDescription'),
+      imageUrl: "/images/services/Servicio - Alquiler de Choferes.webp",
+      linkText: t('landing.services.hourly.seeMore'),
+      linkHref: "/hourly-hire",
+    },
+    {
+      id: 3,
+      title: t('landing.services.events.title'),
+      cardTitle: t('landing.services.events.cardTitle'),
+      description: t('landing.services.events.cardDescription'),
+      imageUrl: "/images/services/Servicios - Eventos especiales.webp",
+      linkText: t('landing.services.events.seeMore'),
+      linkHref: "/special-events",
+    },
+    {
+      id: 4,
+      title: t('landing.services.corporate.title'),
+      cardTitle: t('landing.services.corporate.cardTitle'),
+      description: t('landing.services.corporate.cardDescription'),
+      imageUrl: "/images/services/Servicios - Traslados Corporativos VIP.webp",
+      linkText: t('landing.services.corporate.seeMore'),
+      linkHref: "/corporate-transfers",
+    },
+    {
+      id: 5,
+      title: t('landing.services.security.title'),
+      cardTitle: t('landing.services.security.cardTitle'),
+      description: t('landing.services.security.cardDescription'),
+      imageUrl: "/images/services/Servicio - Seguridad Ejecutiva.webp",
+      linkText: t('landing.services.security.seeMore'),
+      linkHref: "/security-services",
+    },
+    {
+      id: 6,
+      title: t('landing.services.limousine.title'),
+      cardTitle: t('landing.services.limousine.cardTitle'),
+      description: t('landing.services.limousine.cardDescription'),
+      imageUrl: "/images/services/Servicios - Eventos especiales.webp", // Placeholder image
+      linkText: t('landing.services.limousine.seeMore'),
+      linkHref: "/limousine-services",
+    },
+    {
+      id: 7,
+      title: t('landing.services.privateJets.title'),
+      cardTitle: t('landing.services.privateJets.cardTitle'),
+      description: t('landing.services.privateJets.cardDescription'),
+      imageUrl: "/images/services/Servicios - Traslados Corporativos VIP.webp", // Placeholder image
+      linkText: t('landing.services.privateJets.seeMore'),
+      linkHref: "/private-jets",
+    },
+  ];
+
+  // Testimonials data with translations
+  const testimonialsData = [
+    {
+      id: 1,
+      name: t('landing.testimonials.renata.name'),
+      role: t('landing.testimonials.renata.role'),
+      image: "https://i.pravatar.cc/150?img=1",
+      text: t('landing.testimonials.renata.text'),
+      rating: 5
+    },
+    {
+      id: 2,
+      name: t('landing.testimonials.marcelo.name'),
+      role: t('landing.testimonials.marcelo.role'),
+      image: "https://i.pravatar.cc/150?img=3",
+      text: t('landing.testimonials.marcelo.text'),
+      rating: 5
+    },
+    {
+      id: 3,
+      name: t('landing.testimonials.lorenzo.name'),
+      role: t('landing.testimonials.lorenzo.role'),
+      image: "https://i.pravatar.cc/150?img=8",
+      text: t('landing.testimonials.lorenzo.text'),
+      rating: 5
+    }
+  ];
+
   const handleNextService = () => {
-    setCurrentServiceSlide((prev) => (prev + 1) % servicesData.length);
+    setCurrentServiceSlide((prev) => (prev + 1) % mobileServicesData.length);
   };
 
   const handlePrevService = () => {
-    setCurrentServiceSlide((prev) => (prev - 1 + servicesData.length) % servicesData.length);
+    setCurrentServiceSlide((prev) => (prev - 1 + mobileServicesData.length) % mobileServicesData.length);
   };
 
   // Intersection Observer for benefits scroll animation
@@ -196,11 +277,11 @@ export default function Home() {
   // Auto-advance Services slider on mobile
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentServiceSlide((prev) => (prev + 1) % servicesData.length);
+      setCurrentServiceSlide((prev) => (prev + 1) % mobileServicesData.length);
     }, 5000); // Change every 5 seconds
 
     return () => clearInterval(interval);
-  }, []);
+  }, [mobileServicesData.length]);
 
   return (
     <main className="min-h-screen w-full overflow-x-hidden" data-oid="1-ud.ut">
@@ -237,8 +318,8 @@ export default function Home() {
           >
             {/* Título y subtítulo */}
             <div className="booking-title-container">
-              <h1 className="booking-title">SOLICITA TU VIAJE</h1>
-              <p className="booking-subtitle">Estás a un clic de viajar mejor</p>
+              <h1 className="booking-title">{t('landing.hero.cta.requestRide').toUpperCase()}</h1>
+              <p className="booking-subtitle">{t('landing.hero.headline').split('.')[1].trim()}</p>
             </div>
             
             {/* Formulario de reserva */}
@@ -305,16 +386,14 @@ export default function Home() {
       <div className="lg:hidden bg-black text-white pt-4 pb-16 px-6 -mt-px">
         <div className="max-w-3xl mx-auto text-center">
           <p className="text-sm mb-8 leading-relaxed" style={{ fontFamily: 'Panton, sans-serif' }}>
-            <span className="font-bold">Privyde</span> es la experiencia de transporte premium que combina choferes profesionales, 
-            protección personalizada y vehículos de lujo para quienes valoran mucho más que llegar: 
-            Buscan confianza, estilo, y excelencia
+            {t('landing.hero.subtitle')}
           </p>
           <h1 className="text-3xl font-bold mb-3 uppercase tracking-wider" 
               style={{ fontFamily: 'CONTHRAX-SB, sans-serif' }}>
-            SOLICITA TU VIAJE
+            {t('landing.hero.cta.requestRide').toUpperCase()}
           </h1>
           <p className="text-lg mb-10" style={{ fontFamily: 'Panton, sans-serif' }}>
-            Descubre la experiencia privyde
+            {t('landing.hero.cta.discoverExperience')}
           </p>
           {/* White separator line */}
           <div className="w-full h-px bg-white/50 mt-12"></div>
@@ -330,14 +409,14 @@ export default function Home() {
             data-oid="xg-8vm0"
             style={{ fontFamily: 'CONTHRAX-SB, sans-serif', textTransform: 'uppercase', letterSpacing: '0.05em' }}
           >
-            Servicios
+            {t('landing.services.title')}
           </h2>
 
           {/* Mobile Service Slider */}
           <div className="md:hidden relative">
             {/* Services Container with smooth transitions */}
             <div className="relative aspect-[4/5] mx-auto max-w-sm overflow-hidden rounded-2xl">
-              {servicesData.map((service, index) => (
+              {mobileServicesData.map((service, index) => (
                 <div
                   key={service.id}
                   className={`absolute inset-0 transition-opacity duration-1000 ${
@@ -375,7 +454,7 @@ export default function Home() {
 
             {/* Dots Indicator */}
             <div className="flex justify-center gap-2 mt-6">
-              {servicesData.map((_, index) => (
+              {mobileServicesData.map((_, index) => (
                 <button
                   key={index}
                   onClick={() => setCurrentServiceSlide(index)}
@@ -387,196 +466,43 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Desktop Service Cards Grid - 6 square images */}
+          {/* Desktop Service Cards Grid - dynamic rendering */}
           <div
             className="hidden md:grid grid-cols-2 md:grid-cols-3 gap-0"
             data-oid="vstr2vl"
           >
-            {/* Card 1 - Servicio de coche de larga distancia */}
-            <Link
-              to="/city-to-city"
-              className="relative aspect-square overflow-hidden group"
-            >
-              <Image
-                src="/images/services/Servicio -Coche de larga distancia.webp"
-                alt="Servicio de coche de larga distancia"
-                fill
-                className="object-cover transition-transform duration-300 group-hover:scale-110"
-              />
-              <div className="absolute inset-0 bg-black/50 group-hover:bg-black/60 transition-colors duration-300" />
-              <div className="absolute inset-0 flex items-center justify-center p-6">
-                <h3 className="text-white text-xl md:text-2xl font-bold text-center">
-                  Servicio de coche de larga distancia
-                </h3>
-              </div>
-              {/* Hover card with description */}
-              <div className="absolute inset-0 bg-white flex flex-col items-center justify-center p-6 transform translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out">
-                <h3 className="text-black text-xl md:text-2xl font-bold text-center mb-4">
-                  Viajes cómodos y seguros
-                </h3>
-                <p className="text-black text-sm md:text-base text-center mb-6">
-                  Conectamos ciudades con el máximo confort. Chóferes profesionales para trayectos largos con total tranquilidad.
-                </p>
-                <button className="bg-black text-white px-6 py-2 rounded-md hover:bg-gray-800 transition-colors font-medium">
-                  Ver más
-                </button>
-              </div>
-            </Link>
-
-            {/* Card 2 - Traslados en aeropuertos */}
-            <Link
-              to="/airport-transfers"
-              className="relative aspect-square overflow-hidden group"
-            >
-              <Image
-                src="/images/services/Servicio-Traslado en Aeropuertos.webp"
-                alt="Traslados en aeropuertos"
-                fill
-                className="object-cover transition-transform duration-300 group-hover:scale-110"
-              />
-              <div className="absolute inset-0 bg-black/50 group-hover:bg-black/60 transition-colors duration-300" />
-              <div className="absolute inset-0 flex items-center justify-center p-6">
-                <h3 className="text-white text-xl md:text-2xl font-bold text-center">
-                  Traslados en aeropuertos
-                </h3>
-              </div>
-              {/* Hover card with description */}
-              <div className="absolute inset-0 bg-white flex flex-col items-center justify-center p-6 transform translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out">
-                <h3 className="text-black text-xl md:text-2xl font-bold text-center mb-4">
-                  Puntualidad garantizada
-                </h3>
-                <p className="text-black text-sm md:text-base text-center mb-6">
-                  Servicio de traslado premium desde y hacia el aeropuerto. Monitoreo de vuelos en tiempo real.
-                </p>
-                <button className="bg-black text-white px-6 py-2 rounded-md hover:bg-gray-800 transition-colors font-medium">
-                  Ver más
-                </button>
-              </div>
-            </Link>
-
-            {/* Card 3 - Alquiler de chóferes */}
-            <Link
-              to="/hourly-hire"
-              className="relative aspect-square overflow-hidden group"
-            >
-              <Image
-                src="/images/services/Servicio - Alquiler de Choferes.webp"
-                alt="Alquiler de chóferes"
-                fill
-                className="object-cover transition-transform duration-300 group-hover:scale-110"
-              />
-              <div className="absolute inset-0 bg-black/50 group-hover:bg-black/60 transition-colors duration-300" />
-              <div className="absolute inset-0 flex items-center justify-center p-6">
-                <h3 className="text-white text-xl md:text-2xl font-bold text-center">
-                  Alquiler por horas
-                </h3>
-              </div>
-              {/* Hover card with description */}
-              <div className="absolute inset-0 bg-white flex flex-col items-center justify-center p-6 transform translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out">
-                <h3 className="text-black text-xl md:text-2xl font-bold text-center mb-4">
-                  Flexibilidad sin perder estilo
-                </h3>
-                <p className="text-black text-sm md:text-base text-center mb-6">
-                  Nuestro servicio por horas está pensado para quienes necesitan un chófer que los espere y acompañe durante varias paradas o jornadas completas.
-                </p>
-                <button className="bg-black text-white px-6 py-2 rounded-md hover:bg-gray-800 transition-colors font-medium">
-                  Ver más
-                </button>
-              </div>
-            </Link>
-
-            {/* Card 4 - Eventos especiales */}
-            <Link
-              to="/special-events"
-              className="relative aspect-square overflow-hidden group"
-            >
-              <Image
-                src="/images/services/Servicios - Eventos especiales.webp"
-                alt="Eventos especiales"
-                fill
-                className="object-cover transition-transform duration-300 group-hover:scale-110"
-              />
-              <div className="absolute inset-0 bg-black/50 group-hover:bg-black/60 transition-colors duration-300" />
-              <div className="absolute inset-0 flex items-center justify-center p-6">
-                <h3 className="text-white text-xl md:text-2xl font-bold text-center">
-                  Eventos especiales
-                </h3>
-              </div>
-              {/* Hover card with description */}
-              <div className="absolute inset-0 bg-white flex flex-col items-center justify-center p-6 transform translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out">
-                <h3 className="text-black text-xl md:text-2xl font-bold text-center mb-4">
-                  Momentos inolvidables
-                </h3>
-                <p className="text-black text-sm md:text-base text-center mb-6">
-                  Bodas, galas, conciertos. Hacemos de tu evento especial una experiencia de lujo desde el primer momento.
-                </p>
-                <button className="bg-black text-white px-6 py-2 rounded-md hover:bg-gray-800 transition-colors font-medium">
-                  Ver más
-                </button>
-              </div>
-            </Link>
-
-            {/* Card 5 - Traslados corporativos */}
-            <Link
-              to="/corporate-transfers"
-              className="relative aspect-square overflow-hidden group"
-            >
-              <Image
-                src="/images/services/Servicios - Traslados Corporativos VIP.webp"
-                alt="Traslados corporativos VIP"
-                fill
-                className="object-cover transition-transform duration-300 group-hover:scale-110"
-              />
-              <div className="absolute inset-0 bg-black/50 group-hover:bg-black/60 transition-colors duration-300" />
-              <div className="absolute inset-0 flex items-center justify-center p-6">
-                <h3 className="text-white text-xl md:text-2xl font-bold text-center">
-                  Traslados corporativos VIP
-                </h3>
-              </div>
-              {/* Hover card with description */}
-              <div className="absolute inset-0 bg-white flex flex-col items-center justify-center p-6 transform translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out">
-                <h3 className="text-black text-xl md:text-2xl font-bold text-center mb-4">
-                  Imagen profesional
-                </h3>
-                <p className="text-black text-sm md:text-base text-center mb-6">
-                  Servicio ejecutivo para empresas. Discreción, puntualidad y confort para tus reuniones de negocios.
-                </p>
-                <button className="bg-black text-white px-6 py-2 rounded-md hover:bg-gray-800 transition-colors font-medium">
-                  Ver más
-                </button>
-              </div>
-            </Link>
-
-            {/* Card 6 - Seguridad ejecutiva */}
-            <Link
-              to="/security-services"
-              className="relative aspect-square overflow-hidden group"
-            >
-              <Image
-                src="/images/services/Servicio - Seguridad Ejecutiva.webp"
-                alt="Seguridad ejecutiva"
-                fill
-                className="object-cover transition-transform duration-300 group-hover:scale-110"
-              />
-              <div className="absolute inset-0 bg-black/50 group-hover:bg-black/60 transition-colors duration-300" />
-              <div className="absolute inset-0 flex items-center justify-center p-6">
-                <h3 className="text-white text-xl md:text-2xl font-bold text-center">
-                  Seguridad ejecutiva discreta
-                </h3>
-              </div>
-              {/* Hover card with description */}
-              <div className="absolute inset-0 bg-white flex flex-col items-center justify-center p-6 transform translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out">
-                <h3 className="text-black text-xl md:text-2xl font-bold text-center mb-4">
-                  Protección personalizada
-                </h3>
-                <p className="text-black text-sm md:text-base text-center mb-6">
-                  Chóferes con entrenamiento en seguridad. Vehículos blindados disponibles. Tu seguridad es nuestra prioridad.
-                </p>
-                <button className="bg-black text-white px-6 py-2 rounded-md hover:bg-gray-800 transition-colors font-medium">
-                  Ver más
-                </button>
-              </div>
-            </Link>
+            {desktopServicesData.slice(0, 6).map((service) => (
+              <Link
+                key={service.id}
+                to={service.linkHref}
+                className="relative aspect-square overflow-hidden group"
+              >
+                <Image
+                  src={service.imageUrl}
+                  alt={service.title}
+                  fill
+                  className="object-cover transition-transform duration-300 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-black/50 group-hover:bg-black/60 transition-colors duration-300" />
+                <div className="absolute inset-0 flex items-center justify-center p-6">
+                  <h3 className="text-white text-xl md:text-2xl font-bold text-center">
+                    {service.title}
+                  </h3>
+                </div>
+                {/* Hover card with description */}
+                <div className="absolute inset-0 bg-white flex flex-col items-center justify-center p-6 transform translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out">
+                  <h3 className="text-black text-xl md:text-2xl font-bold text-center mb-4">
+                    {service.cardTitle}
+                  </h3>
+                  <p className="text-black text-sm md:text-base text-center mb-6">
+                    {service.description}
+                  </p>
+                  <button className="bg-black text-white px-6 py-2 rounded-md hover:bg-gray-800 transition-colors font-medium">
+                    {service.linkText}
+                  </button>
+                </div>
+              </Link>
+            ))}
           </div>
           
           {/* Ver todos los servicios button */}
@@ -585,7 +511,7 @@ export default function Home() {
               to="/our-services" 
               className="inline-block bg-white text-black px-8 py-3 rounded-md hover:bg-gray-200 transition-colors font-semibold uppercase tracking-wide"
             >
-              Ver todos los servicios
+              {t('landing.services.seeAll') || 'Ver todos los servicios'}
             </Link>
           </div>
         </div>
@@ -608,7 +534,7 @@ export default function Home() {
                 <div className="absolute inset-0 flex items-end justify-center pb-8 md:pb-12">
                   <h2 className="text-3xl md:text-5xl font-bold text-white text-center uppercase tracking-wider"
                       style={{ fontFamily: 'CONTHRAX-SB, sans-serif' }}>
-                    Beneficios de elegir Privyde
+                    {t('landing.benefits.title')}
                   </h2>
                 </div>
               </div>
@@ -757,8 +683,8 @@ export default function Home() {
                     <div className="w-0 h-0 border-l-[10px] border-l-transparent border-r-[10px] border-r-transparent border-b-[10px] border-b-black"></div>
                   </div>
                   <div className="bg-black text-white p-4 rounded-lg shadow-xl w-72 mx-auto mt-1">
-                    <h4 className="font-semibold mb-2 text-base">Protección integral en todo momento</h4>
-                    <p className="text-sm leading-relaxed">Viaja respaldado por choferes verificados, monitoreo constante, seguros incluidos y opcional de escoltas privados certificados.</p>
+                    <h4 className="font-semibold mb-2 text-base">{t('landing.benefits.protection.title')}</h4>
+                    <p className="text-sm leading-relaxed">{t('landing.benefits.protection.description')}</p>
                   </div>
                 </div>
               </div>
@@ -787,8 +713,8 @@ export default function Home() {
                     <div className="w-0 h-0 border-l-[10px] border-l-transparent border-r-[10px] border-r-transparent border-b-[10px] border-b-black"></div>
                   </div>
                   <div className="bg-black text-white p-4 rounded-lg shadow-xl w-72 mx-auto mt-1">
-                    <h4 className="font-semibold mb-2 text-base">Atención personalizada, sin importar el lugar</h4>
-                    <p className="text-sm leading-relaxed">Choferes que te conocen, asistencia desde la puerta y servicio humano. Nos adaptamos a tus necesidades en todo momento.</p>
+                    <h4 className="font-semibold mb-2 text-base">{t('landing.benefits.attention.title')}</h4>
+                    <p className="text-sm leading-relaxed">{t('landing.benefits.attention.description')}</p>
                   </div>
                 </div>
               </div>
@@ -817,8 +743,8 @@ export default function Home() {
                     <div className="w-0 h-0 border-l-[10px] border-l-transparent border-r-[10px] border-r-transparent border-b-[10px] border-b-black"></div>
                   </div>
                   <div className="bg-black text-white p-4 rounded-lg shadow-xl w-72 mx-auto mt-1">
-                    <h4 className="font-semibold mb-2 text-base">Flota premium para cada ocasión</h4>
-                    <p className="text-sm leading-relaxed">SUVs, sedanes ejecutivos, vans de lujo o autos eléctricos. Mantenemos cada unidad impecable, moderna y equipada para que tu viaje refleje tu estilo.</p>
+                    <h4 className="font-semibold mb-2 text-base">{t('landing.benefits.fleet.title')}</h4>
+                    <p className="text-sm leading-relaxed">{t('landing.benefits.fleet.description')}</p>
                   </div>
                 </div>
               </div>
@@ -847,8 +773,8 @@ export default function Home() {
                     <div className="w-0 h-0 border-l-[10px] border-l-transparent border-r-[10px] border-r-transparent border-b-[10px] border-b-black"></div>
                   </div>
                   <div className="bg-black text-white p-4 rounded-lg shadow-xl w-72 mx-auto mt-1">
-                    <h4 className="font-semibold mb-2 text-base">Tecnología intuitiva, control total</h4>
-                    <p className="text-sm leading-relaxed">Solicita, programa y monitorea todo desde la app. Puedes elegir horarios, ubicaciones, servicios complementarios y recibir soporte en tiempo real.</p>
+                    <h4 className="font-semibold mb-2 text-base">{t('landing.benefits.technology.title')}</h4>
+                    <p className="text-sm leading-relaxed">{t('landing.benefits.technology.description')}</p>
                   </div>
                 </div>
               </div>
@@ -877,8 +803,8 @@ export default function Home() {
                     <div className="w-0 h-0 border-l-[10px] border-l-transparent border-r-[10px] border-r-transparent border-b-[10px] border-b-black"></div>
                   </div>
                   <div className="bg-black text-white p-4 rounded-lg shadow-xl w-72 mx-auto mt-1">
-                    <h4 className="font-semibold mb-2 text-base">Presencia internacional</h4>
-                    <p className="text-sm leading-relaxed">Privyde está disponible en las principales ciudades del mundo. Viaja con el mismo nivel de seguridad y excelencia sin importar el destino.</p>
+                    <h4 className="font-semibold mb-2 text-base">{t('landing.benefits.international.title')}</h4>
+                    <p className="text-sm leading-relaxed">{t('landing.benefits.international.description')}</p>
                   </div>
                 </div>
               </div>
@@ -889,7 +815,7 @@ export default function Home() {
           <div className="text-center">
             <h3 className="text-3xl md:text-4xl font-bold uppercase tracking-wider mb-8"
                 style={{ fontFamily: 'CONTHRAX-SB, sans-serif' }}>
-              Solicita tu chofer ahora
+              {t('landing.benefits.cta')}
             </h3>
           </div>
         </div>
@@ -902,10 +828,10 @@ export default function Home() {
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold text-white uppercase tracking-wider mb-4"
                 style={{ fontFamily: 'CONTHRAX-SB, sans-serif' }}>
-              Cómo funciona
+              {t('landing.howItWorks.title')}
             </h2>
             <p className="text-lg text-white/80">
-              Tu experiencia en 4 pasos simples
+              {t('landing.howItWorks.subtitle')}
             </p>
           </div>
 
@@ -920,10 +846,10 @@ export default function Home() {
                 </div>
                 <div className="flex-1">
                   <h3 className="text-lg md:text-xl font-bold text-white mb-1">
-                    Reserva sencilla
+                    {t('landing.howItWorks.steps.booking.title')}
                   </h3>
                   <p className="text-white/60 text-sm">
-                    Selecciona tipo de servicio, fecha, destino y si deseas agregar seguridad privada.
+                    {t('landing.howItWorks.steps.booking.description')}
                   </p>
                 </div>
               </div>
@@ -938,10 +864,10 @@ export default function Home() {
                 </div>
                 <div className="flex-1">
                   <h3 className="text-lg md:text-xl font-bold text-white mb-1">
-                    Confirmación inmediata
+                    {t('landing.howItWorks.steps.confirmation.title')}
                   </h3>
                   <p className="text-white/60 text-sm">
-                    Recibe datos del chofer, vehículo, horario estimado y enlace para seguimiento.
+                    {t('landing.howItWorks.steps.confirmation.description')}
                   </p>
                 </div>
               </div>
@@ -956,10 +882,10 @@ export default function Home() {
                 </div>
                 <div className="flex-1">
                   <h3 className="text-lg md:text-xl font-bold text-white mb-1">
-                    Recepción puntual
+                    {t('landing.howItWorks.steps.pickup.title')}
                   </h3>
                   <p className="text-white/60 text-sm">
-                    Tu chofer te espera en el punto acordado con identificación visible y atención personalizada.
+                    {t('landing.howItWorks.steps.pickup.description')}
                   </p>
                 </div>
               </div>
@@ -974,10 +900,10 @@ export default function Home() {
                 </div>
                 <div className="flex-1">
                   <h3 className="text-lg md:text-xl font-bold text-white mb-1">
-                    Disfruta el trayecto
+                    {t('landing.howItWorks.steps.enjoy.title')}
                   </h3>
                   <p className="text-white/60 text-sm">
-                    Relájate mientras cuidamos cada detalle: seguridad, confort, puntualidad y silencio.
+                    {t('landing.howItWorks.steps.enjoy.description')}
                   </p>
                 </div>
               </div>
@@ -987,7 +913,7 @@ export default function Home() {
           {/* Download CTA */}
           <div className="text-center">
             <p className="text-xl text-white mb-6">
-              Descarga la app y vive la experiencia
+              {t('landing.cta.downloadApp')}
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a href="#" className="hover:opacity-80 transition-opacity">
@@ -1028,7 +954,7 @@ export default function Home() {
                 <div className="absolute inset-0 flex items-end justify-center pb-8 md:pb-12">
                   <h2 className="text-3xl md:text-5xl font-bold text-white text-center uppercase tracking-wider"
                       style={{ fontFamily: 'CONTHRAX-SB, sans-serif' }}>
-                    Experiencia del cliente
+                    {t('landing.testimonials.title')}
                   </h2>
                 </div>
               </div>

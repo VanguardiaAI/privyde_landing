@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar';
 import BlackFooter from '../components/BlackFooter';
 import Image from '../components/ui/image';
 import { Search, ChevronDown, ChevronUp } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 interface FAQItem {
   question: string;
@@ -17,106 +18,54 @@ interface FAQSection {
 }
 
 const Help: React.FC = () => {
+  const { t } = useTranslation();
   const [searchQuery, setSearchQuery] = useState('');
   const [expandedSection, setExpandedSection] = useState<string | null>(null);
+
+  // Get translated FAQs for each section
+  const gettingStartedFaqs = t('help.faqs.gettingStarted', { returnObjects: true }) as FAQItem[];
+  const bookingManagementFaqs = t('help.faqs.bookingManagement', { returnObjects: true }) as FAQItem[];
+  const billingPaymentFaqs = t('help.faqs.billingPayment', { returnObjects: true }) as FAQItem[];
+  const myAccountFaqs = t('help.faqs.myAccount', { returnObjects: true }) as FAQItem[];
+  const contactDriverFaqs = t('help.faqs.contactDriver', { returnObjects: true }) as FAQItem[];
+  const securityFaqs = t('help.faqs.security', { returnObjects: true }) as FAQItem[];
 
   const faqSections: FAQSection[] = [
     {
       id: 'empezando',
-      title: 'Empezando',
+      title: t('help.sections.gettingStarted.title'),
       icon: '/images/help_icons/empezando.svg',
-      faqs: [
-        {
-          question: '¿Con cuánta anticipación debo reservar mi viaje?',
-          answer: 'Puedes reservar hasta con 30 días de anticipación. Sin embargo, también contamos con confirmación inmediata, por si necesitas una solución eficiente en el momento.'
-        },
-        {
-          question: '¿Puedo solicitar un traslado entre ciudades con Privyde?',
-          answer: 'Sí. Ofrecemos traslados puerta a puerta con todas las comodidades. Indícanos el punto de salida, el destino y si deseas incluir alguna parada intermedia.'
-        },
-        {
-          question: '¿Puedo añadir paradas durante mi trayecto?',
-          answer: 'Sí. Al reservar puedes incluir tantas paradas como necesites. Nuestro sistema calculará el tiempo estimado y tu chofer estará informado de cada punto.'
-        },
-        {
-          question: '¿Qué incluye el servicio de traslados al aeropuerto con Privyde?',
-          answer: 'Nuestros traslados al aeropuerto incluyen tiempo adicional de espera gratuito y seguimiento de tu vuelo en tiempo real. De este modo, el chofer ajusta su llegada si tu vuelo se retrasa. A tu arribo, te asistirá con el equipaje para que el proceso sea rápido y cómodo.'
-        },
-        {
-          question: '¿Qué sucede si mi vuelo se retrasa?',
-          answer: 'No tienes que preocuparte. Supervisamos tu itinerario en tiempo real para ajustar el servicio sin que debas hacer nada. Estamos pendientes de ti desde el primer minuto.'
-        },
-        {
-          question: '¿Cómo funciona el servicio de chofer por horas o por días?',
-          answer: 'Tendrás un conductor exclusivo durante el tiempo que necesites, disponible para cada parada o cambio en tu agenda. Es la opción ideal si buscas flexibilidad, sin perder elegancia ni continuidad.'
-        },
-        {
-          question: '¿Qué distingue a un traslado corporativo con Privyde?',
-          answer: 'Discreción, puntualidad y atención personalizada. Ya sea para una reunión, una visita internacional o una jornada completa, nuestro equipo y flota están preparados para acompañarte con excelencia.'
-        }
-      ]
+      faqs: gettingStartedFaqs
     },
     {
       id: 'gestion-reservas',
-      title: 'Gestión de reservas',
+      title: t('help.sections.bookingManagement.title'),
       icon: '/images/help_icons/gestion_de_reservas.svg',
-      faqs: [
-        {
-          question: '¿Cómo puedo modificar o cancelar mi reserva?',
-          answer: 'Puedes hacerlo fácilmente desde nuestra app. Si necesitas asistencia, estaremos encantados de ayudarte a través de nuestro equipo de atención, disponible en todo momento.'
-        },
-        {
-          question: '¿Cómo agendo un traslado VIP para un cliente o ejecutivo de alto nivel?',
-          answer: 'Puedes reservarlo directamente desde nuestra app o, si prefieres, contactarnos para diseñar una experiencia personalizada. Coordinaremos cada detalle según tus necesidades.'
-        }
-      ]
+      faqs: bookingManagementFaqs
     },
     {
       id: 'facturacion-pago',
-      title: 'Facturación y pago',
+      title: t('help.sections.billingPayment.title'),
       icon: '/images/help_icons/facturacion_y_pago.svg',
-      faqs: []
+      faqs: billingPaymentFaqs
     },
     {
       id: 'mi-cuenta',
-      title: 'Mi cuenta de Privyde',
+      title: t('help.sections.myAccount.title'),
       icon: '/images/help_icons/mi_cuenta.svg',
-      faqs: [
-        {
-          question: '¿A quién puedo contactar si tengo dudas antes o durante mi viaje?',
-          answer: 'Nuestro equipo está disponible las 24 horas, todos los días. Puedes escribirnos vía chat, correo o directamente desde la app. Estaremos aquí para ti, con la atención que esperas.'
-        }
-      ]
+      faqs: myAccountFaqs
     },
     {
       id: 'llamada-chofer',
-      title: '¿Cómo llamar a mi chofer?',
+      title: t('help.sections.contactDriver.title'),
       icon: '/images/help_icons/llamada_chofer.svg',
-      faqs: [
-        {
-          question: '¿Cómo sabré que mi chofer ya está en el punto de encuentro?',
-          answer: 'Te notificaremos en cuanto esté en camino y cuando haya llegado. Además, tendrás acceso a su ubicación en tiempo real, para que no pierdas un solo minuto.'
-        },
-        {
-          question: '¿Tu chofer puede ayudarte con alguna tarea mientras espera?',
-          answer: 'Sí, si tienes alguna indicación especial —como asistencia con equipaje o alguna gestión sencilla durante la espera— puedes detallarla en tu solicitud. Con gusto lo consideraremos.'
-        }
-      ]
+      faqs: contactDriverFaqs
     },
     {
       id: 'seguridad',
-      title: 'Preguntas frecuentes sobre seguridad',
+      title: t('help.sections.security.title'),
       icon: '/images/help_icons/seguridad.svg',
-      faqs: [
-        {
-          question: '¿Necesitas seguridad adicional para tu viaje?',
-          answer: 'Podemos incluir un escolta ejecutivo certificado en tu servicio. Si deseas este acompañamiento, indícalo al momento de reservar o escríbenos, y lo gestionaremos con discreción.'
-        },
-        {
-          question: '¿Puedo solicitar un chofer con experiencia en protocolos de seguridad?',
-          answer: 'Sí. Contamos con conductores capacitados en conducción defensiva y operaciones de alto perfil. Infórmanos al reservar para asignarte el perfil más adecuado.'
-        }
-      ]
+      faqs: securityFaqs
     }
   ];
 
@@ -143,7 +92,7 @@ const Help: React.FC = () => {
             className="text-3xl md:text-5xl text-white text-center mb-8 uppercase tracking-wider"
             style={{ fontFamily: 'CONTHRAX-SB' }}
           >
-            ¿CÓMO PODEMOS AYUDARTE?
+            {t('help.title')}
           </h1>
           
           {/* Search Bar */}
@@ -151,7 +100,7 @@ const Help: React.FC = () => {
             <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
             <input
               type="text"
-              placeholder="Buscar..."
+              placeholder={t('help.searchPlaceholder')}
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               className="w-full pl-12 pr-4 py-4 rounded-full bg-white text-black placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-white/50"
@@ -168,11 +117,16 @@ const Help: React.FC = () => {
               const isExpanded = expandedSection === section.id;
               const hasContent = section.faqs.length > 0;
               
-              // Determine subtitle based on section
-              let subtitle = "Todo lo que necesitas saber antes de reservar tu viaje";
-              if (section.id === 'gestion-reservas') {
-                subtitle = "Encuentra su respuesta sobre cómo cambiar y cancelar su viaje.";
-              }
+              // Get the appropriate subtitle for each section
+              const sectionKey = 
+                section.id === 'empezando' ? 'gettingStarted' :
+                section.id === 'gestion-reservas' ? 'bookingManagement' :
+                section.id === 'facturacion-pago' ? 'billingPayment' :
+                section.id === 'mi-cuenta' ? 'myAccount' :
+                section.id === 'llamada-chofer' ? 'contactDriver' :
+                section.id === 'seguridad' ? 'security' : 'gettingStarted';
+              
+              const subtitle = t(`help.sections.${sectionKey}.subtitle`);
               
               return (
                 <div

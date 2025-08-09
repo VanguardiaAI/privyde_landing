@@ -11,8 +11,10 @@ import { Mail, Lock } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import BlackFooter from "@/components/BlackFooter";
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 export default function LoginPage() {
+  const { t } = useTranslation();
   const { login, error, isLoading, setUser, setToken, user } = useAuth();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -53,15 +55,15 @@ export default function LoginPage() {
         setUser(res.data.user);
         setToken(res.data.access_token);
       } else {
-        throw new Error("Respuesta inválida del servidor");
+        throw new Error(t('auth.login.invalidResponse'));
       }
 
       // El efecto useEffect se encargará de redirigir según el estado del perfil
     } catch (err: any) {
       console.error("Error en login con Google:", err);
       alert(
-        "Error al iniciar sesión con Google: " +
-          (err.response?.data?.error || err.message || "Error desconocido"),
+        t('auth.login.googleError') + ": " +
+          (err.response?.data?.error || err.message || t('auth.login.unknownError')),
       );
     }
   };
@@ -79,7 +81,7 @@ export default function LoginPage() {
             className="text-3xl font-bold text-center mb-8"
             data-oid="9:peie4"
           >
-            Iniciar sesión
+            {t('auth.login.title')}
           </h1>
 
           <Card
@@ -115,11 +117,11 @@ export default function LoginPage() {
                       className="mb-0 text-left text-xs"
                       data-oid="f2ysd6g"
                     >
-                      Email
+                      {t('auth.login.email')}
                     </Label>
                     <Input
                       className="border-0 p-0 h-6 focus:ring-0 placeholder:text-gray-400 bg-gray-50"
-                      placeholder="tu@email.com"
+                      placeholder={t('auth.login.emailPlaceholder')}
                       type="email"
                       required
                       value={email}
@@ -143,11 +145,11 @@ export default function LoginPage() {
                       className="mb-0 text-left text-xs"
                       data-oid="2o.euu8"
                     >
-                      Contraseña
+                      {t('auth.login.password')}
                     </Label>
                     <Input
                       className="border-0 p-0 h-6 focus:ring-0 placeholder:text-gray-400 bg-gray-50"
-                      placeholder="Contraseña"
+                      placeholder={t('auth.login.passwordPlaceholder')}
                       type="password"
                       required
                       value={password}
@@ -179,7 +181,7 @@ export default function LoginPage() {
                       className="text-sm text-gray-500 font-medium"
                       data-oid="o6x4mjd"
                     >
-                      Recordarme
+                      {t('auth.login.rememberMe')}
                     </label>
                   </div>
                   <a
@@ -187,7 +189,7 @@ export default function LoginPage() {
                     className="text-sm text-primary underline"
                     data-oid="xiu4n-5"
                   >
-                    ¿Olvidaste tu contraseña?
+                    {t('auth.login.forgotPassword')}
                   </a>
                 </div>
 
@@ -197,7 +199,7 @@ export default function LoginPage() {
                   disabled={isLoading}
                   data-oid="g14w7_t"
                 >
-                  {isLoading ? "Iniciando sesión..." : "Iniciar sesión"}
+                  {isLoading ? t('auth.login.loggingIn') : t('auth.login.loginButton')}
                 </Button>
               </form>
 
@@ -209,14 +211,14 @@ export default function LoginPage() {
                   className="text-xs text-muted-foreground"
                   data-oid="chfl7-."
                 >
-                  O
+                  {t('auth.login.or')}
                 </span>
               </div>
 
               <div className="flex justify-center" data-oid="be80k8y">
                 <GoogleLogin
                   onSuccess={handleGoogleLogin}
-                  onError={() => alert("Error al iniciar sesión con Google")}
+                  onError={() => alert(t('auth.login.googleError'))}
                   data-oid="0y.mzg2"
                 />
               </div>

@@ -2,29 +2,31 @@ import React, { useState } from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const Drivers: React.FC = () => {
+  const { t } = useTranslation();
   const [currentSlide, setCurrentSlide] = useState(0);
   const [activeCard, setActiveCard] = useState<number | null>(null);
 
   const benefits = [
     {
-      title: "Pagos justos\ny confiables",
+      title: t('drivers.whyDrive.fairPayments.title'),
       image: "/images/choffeurs/Pagos Justos y Confiables.webp",
-      hoverTitle: "Pagos justos y confiables",
-      description: "Lo que ves, es lo que recibes. Cada oferta de viaje muestra el pago mínimo garantizado sin comisiones ocultas ni descuentos inesperados. Te depositamos directamente en tu cuenta bancaria de forma puntual cada mes."
+      hoverTitle: t('drivers.whyDrive.fairPayments.hoverTitle'),
+      description: t('drivers.whyDrive.fairPayments.description')
     },
     {
-      title: "Tú eliges cuándo\ny dónde",
+      title: t('drivers.whyDrive.flexibility.title'),
       image: "/images/choffeurs/Tu eliges Cuando y donde.webp",
-      hoverTitle: "Tú eliges cuándo y dónde",
-      description: "Controla tu agenda y tus ingresos. Gracias a nuestro sistema de subasta inversa, puedes seleccionar los viajes que mejor se adapten a tu disponibilidad, ubicación y tipo de vehículo. Desde traslados por hora hasta viajes interciudad."
+      hoverTitle: t('drivers.whyDrive.flexibility.hoverTitle'),
+      description: t('drivers.whyDrive.flexibility.description')
     },
     {
-      title: "Presencia internacional,\nrespaldo local",
+      title: t('drivers.whyDrive.international.title'),
       image: "/images/choffeurs/Presencia Internacional.webp",
-      hoverTitle: "Presencia internacional, respaldo local",
-      description: "Formarás parte de una red global activa en más de 50 países, atendiendo tanto a viajeros de negocios como a clientes particulares. Representarás a Privyde con tu profesionalismo, pero con libertad e independencia."
+      hoverTitle: t('drivers.whyDrive.international.hoverTitle'),
+      description: t('drivers.whyDrive.international.description')
     }
   ];
 
@@ -60,8 +62,12 @@ const Drivers: React.FC = () => {
               className="text-3xl md:text-5xl lg:text-6xl uppercase tracking-wider text-center md:text-right"
               style={{ fontFamily: 'CONTHRAX-SB' }}
             >
-              CONDUCE CON<br />
-              PRIVYDE
+              {t('drivers.hero.title').split('\n').map((line, index) => (
+                <React.Fragment key={index}>
+                  {line}
+                  {index === 0 && <br />}
+                </React.Fragment>
+              ))}
             </h1>
           </div>
         </div>
@@ -75,13 +81,10 @@ const Drivers: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 md:px-16">
           <div className="text-center max-w-4xl mx-auto">
             <h2 className="text-lg md:text-xl font-medium mb-4">
-              Eleva tu carrera. Conduce con excelencia.
+              {t('drivers.hero.subtitle')}
             </h2>
             <p className="text-gray-300 text-sm md:text-base leading-relaxed">
-              Privyde conecta a choferes profesionales con una red global de clientes que buscan
-              más que un traslado: buscan seguridad, elegancia y confianza. Como socio conductor,
-              formas parte de un ecosistema innovador donde la profesionalización y la deman
-              valen.
+              {t('drivers.hero.description')}
             </p>
           </div>
           {/* Separator Line */}
@@ -96,7 +99,7 @@ const Drivers: React.FC = () => {
             className="text-3xl md:text-4xl lg:text-5xl text-center mb-12 uppercase tracking-wider"
             style={{ fontFamily: 'CONTHRAX-SB' }}
           >
-            ¿POR QUÉ CONDUCIR CON PRIVYDE?
+            {t('drivers.whyDrive.title')}
           </h2>
           
           {/* Desktop Grid / Mobile Slider */}
@@ -227,21 +230,15 @@ const Drivers: React.FC = () => {
             {/* White Container */}
             <div className="bg-white text-black p-4 sm:p-6 md:p-10 rounded-lg flex-1 -ml-10 sm:-ml-16 md:-ml-20 pl-12 sm:pl-20 md:pl-28 min-h-[160px] sm:min-h-[200px] md:min-h-[280px] flex flex-col justify-center">
               <h3 className="text-sm sm:text-lg md:text-2xl font-bold mb-2 sm:mb-4 md:mb-6 text-center">
-                Requisitos para ser socio conductor
+                {t('drivers.requirements.title')}
               </h3>
               <ul className="space-y-1 sm:space-y-2 md:space-y-4 text-left">
-                <li className="flex items-start">
-                  <span className="text-gray-600 mr-1 sm:mr-2 text-xs sm:text-sm">•</span>
-                  <span className="text-gray-700 text-xs sm:text-sm md:text-base">Registro de empresa válido, licencias y seguros vigentes.</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-gray-600 mr-1 sm:mr-2 text-xs sm:text-sm">•</span>
-                  <span className="text-gray-700 text-xs sm:text-sm md:text-base">Vehículos limpios, sin daños, libres de humo y en cumplimiento normativo.</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-gray-600 mr-1 sm:mr-2 text-xs sm:text-sm">•</span>
-                  <span className="text-gray-700 text-xs sm:text-sm md:text-base">Compromiso con la calidad y actualización constante sobre regulaciones y políticas locales.</span>
-                </li>
+                {(t('drivers.requirements.items', { returnObjects: true }) as string[]).map((item, index) => (
+                  <li key={index} className="flex items-start">
+                    <span className="text-gray-600 mr-1 sm:mr-2 text-xs sm:text-sm">•</span>
+                    <span className="text-gray-700 text-xs sm:text-sm md:text-base">{item}</span>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>
@@ -255,15 +252,18 @@ const Drivers: React.FC = () => {
             className="text-3xl md:text-4xl lg:text-5xl mb-8 uppercase tracking-wider"
             style={{ fontFamily: 'CONTHRAX-SB' }}
           >
-            ¿LISTO PARA FORMAR PARTE<br />
-            DEL SERVICIO DE MOVILIDAD<br />
-            MÁS DISTINGUIDO DEL MUNDO?
+            {t('drivers.cta.title').split('\n').map((line, index) => (
+              <React.Fragment key={index}>
+                {line}
+                {index < t('drivers.cta.title').split('\n').length - 1 && <br />}
+              </React.Fragment>
+            ))}
           </h2>
           <p className="text-gray-300 text-lg mb-8">
-            Comienza tu registro como socio conductor hoy.
+            {t('drivers.cta.subtitle')}
           </p>
           <button className="bg-white text-black px-8 py-3 rounded-md text-lg font-bold hover:bg-gray-100 transition-colors duration-300">
-            Unirme a Privyde
+            {t('drivers.cta.button')}
           </button>
         </div>
       </section>

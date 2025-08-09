@@ -1,0 +1,749 @@
+{
+  "landing": {
+    "hero": {
+      "headline": "Solicita tu viaje. Estás a un clic de viajar mejor.",
+      "subtitle": "Privyde es la experiencia de transporte premium que combina choferes profesionales, protección personalizada y vehículos de lujo para quienes valoran mucho más que llegar: Buscan confianza, estilo, y excelencia.",
+      "cta": {
+        "requestRide": "Solicita tu viaje",
+        "discoverExperience": "Descubre la experiencia Privyde"
+      }
+    },
+    "services": {
+      "title": "Servicios",
+      "seeAll": "Ver todos los servicios",
+      "longDistance": {
+        "title": "Servicio de coche de larga distancia",
+        "subtitle": "Viaja entre ciudades con comodidad, privacidad y puntualidad.",
+        "description": "Despídase del estrés del transporte público, nunca ha sido tan fácil. Nuestro servicio de coche de larga distancia es la forma más segura y elegante de moverse de ciudad a ciudad.",
+        "features": [
+          "Puerta a puerta: sin transbordos ni terminales, salga directamente desde donde está y llegue a la puerta de su destino.",
+          "Flexibilidad total: elija su horario, cambie sus planes sin penalizaciones hasta una hora antes de la salida.",
+          "Vehículos de lujo: relájese en un ambiente premium con Wi-Fi disponible y espacio para trabajar o descansar.",
+          "Tarifas fijas y competitivas: sin cargos ocultos, impuestos y peajes incluidos.",
+          "Compensación de emisiones: todos nuestros viajes están compensados en carbono."
+        ],
+        "ideal": "Ideal para ejecutivos, familias o parejas que prefieren viajar sin estrés.",
+        "cardTitle": "Viajes cómodos y seguros",
+        "cardDescription": "Conectamos ciudades con el máximo confort. Chóferes profesionales para trayectos largos con total tranquilidad.",
+        "seeMore": "Ver más"
+      },
+      "airport": {
+        "title": "Traslados en aeropuertos",
+        "subtitle": "La forma más eficiente de llegar o salir del aeropuerto.",
+        "description": "Nuestros traslados al aeropuerto están diseñados para eliminar cualquier fricción en tu llegada o salida:",
+        "features": [
+          "Monitoreo de vuelos en tiempo real: tu chofer te esperará, incluso si tu vuelo se retrasa.",
+          "Servicio Meet & Greet: para que no pierdas ni un minuto.",
+          "Espacio para grupos: desde sedanes hasta vans ejecutivas para hasta 5 personas con equipaje.",
+          "Primera clase en tierra: para quienes buscan empezar (o terminar) su viaje con estilo."
+        ],
+        "ideal": "La solución perfecta para negocios, vacaciones o conexiones entre aeropuertos.",
+        "cardTitle": "Puntualidad garantizada",
+        "cardDescription": "Servicio de traslado premium desde y hacia el aeropuerto. Monitoreo de vuelos en tiempo real.",
+        "seeMore": "Ver más"
+      },
+      "hourly": {
+        "title": "Alquiler de chófer por horas o por día",
+        "subtitle": "Flexibilidad sin comprometer el estilo.",
+        "description": "Nuestro servicio por horas está pensado para quienes necesitan un chófer que los espere y acompañe durante varias paradas o jornadas completas:",
+        "features": [
+          "Itinerario personalizado: vaya a donde necesite, sin preocuparse por el tiempo ni la logística.",
+          "Vehículo exclusivo todo el día: deje sus pertenencias en el auto y regrese cuando quiera.",
+          "Servicio eficiente para negocios o placer: para reuniones, turismo, cenas o compras.",
+          "Tarifa por km/hora incluida: sin costos ocultos, todo está cubierto.",
+          "Wi-Fi, aire acondicionado y privacidad garantizada."
+        ],
+        "ideal": "Nunca ha sido tan fácil moverse sin interrupciones.",
+        "cardTitle": "Flexibilidad sin perder estilo",
+        "cardDescription": "Nuestro servicio por horas está pensado para quienes necesitan un chófer que los espere y acompañe durante varias paradas o jornadas completas.",
+        "seeMore": "Ver más"
+      },
+      "events": {
+        "title": "Eventos especiales",
+        "subtitle": "Porque cada ocasión merece un servicio memorable.",
+        "description": "Desde bodas hasta conciertos, nuestros servicios para eventos especiales se adaptan a cualquier necesidad:",
+        "features": [
+          "Bodas: llegada elegante, decoración floral opcional, flota especial para novios e invitados.",
+          "Graduaciones y fiestas: celebra sin preocupaciones, te llevamos y te traemos.",
+          "Eventos corporativos: recepción ejecutiva, flotas sincronizadas y personal capacitado.",
+          "Producciones o lanzamientos: impacto visual y atención al detalle."
+        ],
+        "ideal": "Coordinación perfecta con wedding planners, productores o agencias.",
+        "cardTitle": "Momentos inolvidables",
+        "cardDescription": "Bodas, galas, conciertos. Hacemos de tu evento especial una experiencia de lujo desde el primer momento.",
+        "seeMore": "Ver más"
+      },
+      "corporate": {
+        "title": "Traslados corporativos VIP",
+        "subtitle": "Movilidad ejecutiva para empresas que exigen más.",
+        "description": "Privyde ofrece soluciones corporativas con:",
+        "features": [
+          "Facturación centralizada y tarifas globales.",
+          "Coordinación de traslados para equipos o clientes.",
+          "Integración con calendarios empresariales y soporte 24/7.",
+          "Conectividad, privacidad y puntualidad garantizadas."
+        ],
+        "ideal": "Ya sea para reuniones, conferencias o programas continuos, tenemos el plan perfecto.",
+        "cardTitle": "Imagen profesional",
+        "cardDescription": "Servicio ejecutivo para empresas. Discreción, puntualidad y confort para tus reuniones de negocios.",
+        "seeMore": "Ver más"
+      },
+      "security": {
+        "title": "Seguridad ejecutiva discreta",
+        "subtitle": "Protección sin comprometer la elegancia.",
+        "description": "Nuestro servicio de seguridad personalizada ofrece tres niveles de protección:",
+        "features": [
+          "Estándar: choferes entrenados en manejo defensivo, comunicación constante y planificación de rutas seguras.",
+          "Reforzada: vehículos blindados, escoltas motorizados y vigilancia extendida.",
+          "Integral: protección ejecutiva 360° para viajes internacionales, figuras públicas o ambientes complejos."
+        ],
+        "ideal": "Tu seguridad es nuestra prioridad.",
+        "cardTitle": "Protección personalizada",
+        "cardDescription": "Chóferes con entrenamiento en seguridad. Vehículos blindados disponibles. Tu seguridad es nuestra prioridad.",
+        "seeMore": "Ver más"
+      },
+      "limousine": {
+        "title": "Servicio de limosinas",
+        "cardTitle": "Viaja con exclusividad",
+        "cardDescription": "Limosinas de lujo para quienes buscan una experiencia de viaje incomparable.",
+        "seeMore": "Ver más"
+      },
+      "privateJets": {
+        "title": "Conexión Jets Privados",
+        "cardTitle": "Conectividad sin límites",
+        "cardDescription": "Coordinación terrestre para aviación privada con el mismo estándar de excelencia.",
+        "seeMore": "Ver más"
+      }
+    },
+    "benefits": {
+      "title": "Beneficios de elegir Privyde",
+      "protection": {
+        "title": "Protección integral en todo momento",
+        "description": "Viaja respaldado por choferes verificados, monitoreo constante, seguros incluidos y opcional de escoltas privados certificados. Tranquilidad real, sin excepciones."
+      },
+      "attention": {
+        "title": "Atención personalizada, sin importar el lugar",
+        "description": "Choferes que te conocen, asistencia desde la puerta y servicio humano. Nos adaptamos a tus necesidades en todo momento, con empatía y profesionalismo."
+      },
+      "fleet": {
+        "title": "Flota premium para cada ocasión",
+        "description": "SUVs, sedanes ejecutivos, vans de lujo o autos eléctricos. Mantenemos cada unidad impecable, moderna y equipada para que tu viaje refleje tu estilo."
+      },
+      "technology": {
+        "title": "Tecnología intuitiva, control total",
+        "description": "Solicita, programa y monitorea todo desde la app. Puedes elegir horarios, ubicaciones, servicios complementarios y recibir soporte en tiempo real."
+      },
+      "international": {
+        "title": "Presencia internacional",
+        "description": "Privyde está disponible en las principales ciudades del mundo. Viaja con el mismo nivel de seguridad y excelencia sin importar el destino."
+      },
+      "cta": "Solicita tu chofer ahora"
+    },
+    "howItWorks": {
+      "title": "Cómo funciona",
+      "subtitle": "Tu experiencia en 4 pasos simples:",
+      "steps": {
+        "booking": {
+          "title": "Reserva sencilla",
+          "description": "Selecciona tipo de servicio, fecha, destino y si deseas agregar seguridad privada."
+        },
+        "confirmation": {
+          "title": "Confirmación inmediata",
+          "description": "Recibe datos del chofer, vehículo, horario estimado y enlace para seguimiento."
+        },
+        "pickup": {
+          "title": "Recepción puntual",
+          "description": "Tu chofer te espera en el punto acordado con identificación visible y atención personalizada."
+        },
+        "enjoy": {
+          "title": "Disfruta el trayecto",
+          "description": "Relájate mientras cuidamos cada detalle: seguridad, confort, puntualidad y silencio."
+        }
+      }
+    },
+    "testimonials": {
+      "title": "Experiencia del cliente",
+      "marcelo": {
+        "name": "Marcelo A.",
+        "role": "Director Regional",
+        "text": "Con Privyde tengo protección y puntualidad garantizadas. La opción de escolta me da tranquilidad en cada traslado."
+      },
+      "renata": {
+        "name": "Renata V.",
+        "role": "CEO y madre",
+        "text": "Mis hijos viajan seguros, y yo también. Desde que uso Privyde, sé que están bien cuidados."
+      },
+      "lorenzo": {
+        "name": "Lorenzo D.",
+        "role": "Productor internacional",
+        "text": "En cada viaje a Europa, Privyde me ofrece el mismo nivel de seguridad y discreción que en casa."
+      }
+    },
+    "cta": {
+      "requestDriver": "Solicita tu chofer ahora",
+      "travelSafely": "Viaja seguro, viaja con Privyde",
+      "hireEscorts": "Contratar escoltas profesionales",
+      "downloadApp": "Descarga la app y vive la experiencia",
+      "responsibility": "Tu movilidad, nuestra responsabilidad"
+    }
+  },
+  "footer": {
+    "contact": {
+      "title": "Contáctanos",
+      "email": "Email: contacto@privyde.com",
+      "phone": "Teléfono: +52 (55) 1234 5678"
+    },
+    "support": {
+      "title": "Atención 24/7",
+      "description": "Siempre disponibles para resolver dudas, asistirte o ayudarte a programar tu trayecto."
+    },
+    "social": {
+      "title": "Síguenos:",
+      "instagram": "Instagram",
+      "linkedin": "LinkedIn",
+      "facebook": "Facebook"
+    },
+    "download": {
+      "title": "Descarga la App:",
+      "appStore": "App Store",
+      "googlePlay": "Google Play"
+    },
+    "legal": {
+      "title": "Privacidad y Términos",
+      "privacy": "Aviso de Privacidad",
+      "terms": "Términos y Condiciones"
+    }
+  },
+  "common": {
+    "services": "Nuestros servicios",
+    "companies": "Para empresas",
+    "drivers": "Para chóferes",
+    "help": "Ayuda",
+    "login": "Iniciar sesión",
+    "register": "Registrarse",
+    "logout": "Salir",
+    "account": "Cuenta",
+    "trips": "Viajes"
+  },
+  "companies": {
+    "title": "PARA EMPRESAS",
+    "hero": {
+      "title": "Eficiencia, representación y protección en cada trayecto.",
+      "description": "Privyde ofrece soluciones globales de transporte ejecutivo diseñadas para organizaciones que valoran la puntualidad, la experiencia del cliente y la excelencia operativa. Desde traslados corporativos hasta asociaciones estratégicas con hoteles, aerolíneas o agencias, brindamos un ecosistema completo de movilidad de alto nivel."
+    },
+    "services": {
+      "title": "Servicios empresariales\npara cada necesidad",
+      "businessTrips": {
+        "title": "Viajes de negocios y reuniones",
+        "description": "Garantiza llegadas puntuales y salidas fluidas para tus ejecutivos y colaboradores. Chóferes profesionales, flota moderna y cobertura global para hacer de cada reunión una experiencia sin fricciones."
+      },
+      "intercityTransfers": {
+        "title": "Traslados interciudad",
+        "description": "Conectamos ciudades con el máximo confort. Trabaje sin esfuerzo mientras viaja entre destinos. Ideal para ejecutivos que valoran su tiempo y productividad en trayectos largos."
+      },
+      "airportsWorldwide": {
+        "title": "Aeropuertos en todo el mundo",
+        "description": "Servicio global de traslados aeroportuarios. Monitoreo de vuelos en tiempo real, recepción personalizada y gestión integral de equipaje en más de 500 aeropuertos internacionales."
+      },
+      "clientTransport": {
+        "title": "Transporte para clientes y socios",
+        "description": "Impresione a sus invitados con un servicio excepcional. Atención personalizada y vehículos premium para fortalecer relaciones comerciales desde el primer momento."
+      },
+      "corporateDrivers": {
+        "title": "Chóferes corporativos por hora o día completo",
+        "description": "Flexibilidad total para agendas dinámicas. Reserve un chófer dedicado por horas o días completos. Ideal para roadshows, eventos corporativos o jornadas con múltiples reuniones."
+      }
+    },
+    "partnerships": {
+      "title": "Alianzas estratégicas\nque agregan valor",
+      "hotels": {
+        "title": "Hoteles",
+        "description": "Ofrece traslados al aeropuerto y city tours privados como parte de tu experiencia de hospedaje premium."
+      },
+      "airlines": {
+        "title": "Aerolíneas y aviación privada",
+        "description": "Proporcionamos los pasajeros de primera clase y jets privados con servicios de cortesía a marca blanca."
+      },
+      "travelAgencies": {
+        "title": "Agencias de viaje",
+        "description": "Eleva la experiencia de tus clientes con transporte de lujo integrado a tu oferta. Servicio coherente en todo el mundo."
+      },
+      "financialSector": {
+        "title": "Sector financiero",
+        "description": "Implementa soluciones para clientes de carteras, servicio personalizado y soporte para clientes de alto valor."
+      }
+    },
+    "benefits": {
+      "title": "Beneficios para tu empresa",
+      "globalCoverage": {
+        "title": "Cobertura global",
+        "description": "Disponible en más de 50 países con chóferes locales capacitados y de habla inglesa."
+      },
+      "easyBookings": {
+        "title": "Reservas sin complicaciones",
+        "description": "Plataforma todo en uno con confirmación instantánea y precios claros."
+      },
+      "automaticBilling": {
+        "title": "Facturación automática",
+        "description": "Gestiona múltiples viajes sin complicaciones administrativas."
+      },
+      "support247": {
+        "title": "Soporte 24/7 multilingüe",
+        "description": "Atención personalizada para tu empresa, siempre disponible."
+      },
+      "centralizedManagement": {
+        "title": "Gestión centralizada",
+        "description": "Cuentas empresariales para más de 500 usuarios con descuentos exclusivos."
+      }
+    },
+    "contact": {
+      "title": "¿Listo para elevar\nla movilidad de tu empresa?",
+      "description": "Contáctanos para diseñar una solución corporativa a tu medida.",
+      "form": {
+        "description": "Completa este formulario y en el siguiente paso creará su cuenta de empresa para acceder a tarifas corporativas.",
+        "firstName": "Nombre",
+        "lastName": "Apellidos",
+        "country": "País",
+        "prefix": "Prefijo",
+        "phoneNumber": "Número de Teléfono",
+        "companyName": "Nombre de la Empresa",
+        "location": "¿Dónde está ubicado?",
+        "locationPlaceholder": "Ciudad, Estado/Provincia",
+        "companySize": "Tamaño de la empresa",
+        "hearAbout": "¿Cómo se enteró de nosotros?",
+        "help": "¿Cómo podemos ayudarte?",
+        "helpPlaceholder": "Cuéntanos más sobre las necesidades de transporte de tu empresa...",
+        "submit": "Continuar al registro"
+      }
+    }
+  },
+  "services": {
+    "title": "Nuestros Servicios",
+    "hero": {
+      "title": "Nuestros\nServicios"
+    },
+    "longDistance": {
+      "title": "Servicio de coche de larga distancia",
+      "subtitle": "Viaja entre ciudades con comodidad, privacidad y puntualidad.",
+      "description": "Despedirse del estrés del transporte público nunca fue tan fácil. Nuestro servicio de coche de larga distancia es la forma más segura y elegante de moverse de ciudad en ciudad.",
+      "features": [
+        {
+          "title": "Puerta a puerta:",
+          "text": "Sin trasbordos ni terminales, sal directamente desde donde estás y llega hasta la puerta de tu destino."
+        },
+        {
+          "title": "Flexibilidad total:",
+          "text": "Elige tu horario, cambia de planes sin penalizaciones hasta una hora antes."
+        },
+        {
+          "title": "Vehículos de lujo:",
+          "text": "Relájate en un ambiente premium con Wi-Fi disponible y espacio para trabajar o descansar."
+        },
+        {
+          "title": "Tarifas fijas y competitivas:",
+          "text": "Sin cargos ocultos, impuestos y peajes incluidos."
+        },
+        {
+          "title": "Compensación de emisiones:",
+          "text": "Todos nuestros viajes están compensados en carbono."
+        }
+      ],
+      "footer": "Ideal para ejecutivos, familias o parejas que prefieren viajar sin estrés."
+    },
+    "airport": {
+      "title": "Traslados en aeropuertos",
+      "subtitle": "La forma más eficiente de llegar o salir del aeropuerto.",
+      "description": "Nuestros traslados desde/hacia aeropuertos están diseñados para eliminar cualquier fricción en tu llegada o partida:",
+      "features": [
+        {
+          "title": "Seguimiento de vuelos en tiempo real:",
+          "text": "Tu chofer te esperará, aunque tu vuelo se retrase."
+        },
+        {
+          "title": "Recepción con identificación:",
+          "text": "Servicio Meet & Greet para que no pierdas ni un minuto."
+        },
+        {
+          "title": "Espacio para grupos:",
+          "text": "Desde sedanes hasta vans ejecutivas para hasta 5 personas con equipaje."
+        },
+        {
+          "title": "Primera clase en tierra:",
+          "text": "Para quienes buscan comenzar (o terminar) su viaje con distinción."
+        }
+      ],
+      "footer": "La solución perfecta para negocios, vacaciones o conexiones interaeropuerto."
+    },
+    "hourly": {
+      "title": "Alquiler de chófer por horas y por días",
+      "subtitle": "Flexibilidad sin perder estilo.",
+      "description": "Nuestro servicio por horas está pensado para quienes necesitan un chófer que los espere y acompañe durante varias paradas o jornadas completas:",
+      "features": [
+        {
+          "title": "Itinerario personalizado:",
+          "text": "Ve a donde necesites, sin preocuparte por el tiempo ni la logística."
+        },
+        {
+          "title": "Vehículo exclusivo todo el día:",
+          "text": "Deja tus pertenencias, regresa al auto cuando quieras."
+        },
+        {
+          "title": "Servicio eficiente para negocios o placer:",
+          "text": "Para reuniones, turismo, cenas o compras."
+        },
+        {
+          "title": "Tarifa por km/hora incluida:",
+          "text": "Sin costos ocultos, todo está contemplado."
+        },
+        {
+          "title": "Wi-Fi, climatización y privacidad garantizadas.",
+          "text": ""
+        }
+      ],
+      "footer": "Nunca fue tan fácil moverse sin interrupciones."
+    },
+    "events": {
+      "title": "Eventos especiales",
+      "subtitle": "Porque cada ocasión merece un servicio memorable.",
+      "description": "Desde bodas hasta conciertos, nuestros servicios para eventos especiales se adaptan a cualquier necesidad:",
+      "features": [
+        {
+          "title": "Bodas:",
+          "text": "Llegada elegante, decoración floral opcional, flota especial para novios e invitados."
+        },
+        {
+          "title": "Graduaciones y fiestas:",
+          "text": "Celebra sin preocupaciones, nosotros te llevamos de ida y vuelta."
+        },
+        {
+          "title": "Eventos corporativos:",
+          "text": "Recepción ejecutiva, flotas sincronizadas y personal capacitado."
+        },
+        {
+          "title": "Producciones o lanzamientos:",
+          "text": "Impacto visual y atención al detalle."
+        }
+      ],
+      "footer": "Coordinación perfecta con wedding planners, productores o agencias."
+    },
+    "corporate": {
+      "title": "Traslados corporativos VIP",
+      "subtitle": "Movilidad ejecutiva para empresas que exigen más.",
+      "description": "Privyde ofrece soluciones corporativas con:",
+      "features": [
+        {
+          "text": "Facturación centralizada y tarifas globales."
+        },
+        {
+          "text": "Coordinación de traslados para equipos o clientes."
+        },
+        {
+          "text": "Integración con agendas empresariales y soporte 24/7."
+        },
+        {
+          "text": "Conectividad, privacidad y puntualidad aseguradas."
+        }
+      ],
+      "footer": "Ya sea para juntas, congresos o programas continuos, tenemos el plan perfecto."
+    },
+    "security": {
+      "title": "Seguridad ejecutiva discreta",
+      "subtitle": "Protección sin perder elegancia.",
+      "description": "Nuestro servicio de seguridad personalizada ofrece tres niveles de protección:",
+      "features": [
+        {
+          "title": "Estándar:",
+          "text": "Chóferes capacitados en conducción defensiva, comunicación constante y planeación de rutas seguras."
+        },
+        {
+          "title": "Reforzado:",
+          "text": "Vehículos blindados, escoltas motorizados y vigilancia extendida."
+        },
+        {
+          "title": "Integral:",
+          "text": "Protección ejecutiva 360°, para viajes internacionales, figuras públicas o entornos complejos."
+        }
+      ],
+      "footer": "Tu seguridad, nuestra prioridad."
+    },
+    "chooseYourCar": {
+      "title": "Elige tu auto",
+      "fleet": {
+        "title": "Flota premium para cada ocasión",
+        "description": "SUVs, sedanes ejecutivos, vans de lujo o sedanes estándar. Unidades impecables, modernas y equipadas para que tu viaje refleje tu estilo."
+      },
+      "variety": {
+        "title": "SUVs, sedanes ejecutivos, vans de lujo o sedanes estándar",
+        "description": "Elige el vehículo que mejor se adapte a tu ocasión y necesidades."
+      },
+      "quality": {
+        "title": "Unidades impecables, modernas y equipadas",
+        "description": "Para que tu viaje refleje tu estilo con el máximo confort y elegancia."
+      },
+      "booking": {
+        "title": "Empieza desde nuestra app (iOS y Android) o desde la web",
+        "description": "Reserva tu viaje de forma rápida y sencilla desde cualquier dispositivo."
+      },
+      "worldwide": {
+        "title": "En cualquier parte del mundo",
+        "description": "Disfruta del mismo nivel de servicio y calidad sin importar tu destino."
+      }
+    },
+    "serviceClasses": {
+      "title": "Descubre nuestras\nclases de servicio",
+      "businessClass": {
+        "title": "Business Class",
+        "description": "Mercedes E-Class, BMW Serie 5, Audi A6, Cadillac XTS, o similar",
+        "features": [
+          "Capacidad para 3 personas",
+          "Capacidad para 2 maletas de mano, o 2 maletas estándar de facturación, o 1 maleta extra grande de facturación",
+          "Disponible en la mayoría de nuestros distritos de negocios"
+        ]
+      },
+      "firstClass": {
+        "title": "First Class",
+        "description": "Mercedes S-Class, BMW Serie 7, Audi A8, o similar",
+        "features": [
+          "Capacidad para 3 personas",
+          "Capacidad para 3 maletas estándar de facturación",
+          "El máximo lujo y confort para trayectos ejecutivos"
+        ]
+      },
+      "suvClass": {
+        "title": "SUV Class",
+        "description": "Cadillac Escalade, Lincoln Navigator, Chevrolet Suburban, o similar",
+        "features": [
+          "Capacidad para 6 personas",
+          "Amplio espacio para equipaje",
+          "Ideal para grupos y familias"
+        ]
+      }
+    },
+    "cta": {
+      "title": "Solicita tu chófer ahora",
+      "downloadApp": "Descarga la App"
+    }
+  },
+  "drivers": {
+    "title": "PARA CHÓFERES",
+    "hero": {
+      "title": "CONDUCE CON\nPRIVYDE",
+      "subtitle": "Eleva tu carrera. Conduce con excelencia.",
+      "description": "Privyde conecta a choferes profesionales con una red global de clientes que buscan más que un traslado: buscan seguridad, elegancia y confianza. Como socio conductor, formas parte de un ecosistema innovador donde la profesionalización y la demanda valen."
+    },
+    "whyDrive": {
+      "title": "¿POR QUÉ CONDUCIR CON PRIVYDE?",
+      "fairPayments": {
+        "title": "Pagos justos\ny confiables",
+        "hoverTitle": "Pagos justos y confiables",
+        "description": "Lo que ves, es lo que recibes. Cada oferta de viaje muestra el pago mínimo garantizado sin comisiones ocultas ni descuentos inesperados. Te depositamos directamente en tu cuenta bancaria de forma puntual cada mes."
+      },
+      "flexibility": {
+        "title": "Tú eliges cuándo\ny dónde",
+        "hoverTitle": "Tú eliges cuándo y dónde",
+        "description": "Controla tu agenda y tus ingresos. Gracias a nuestro sistema de subasta inversa, puedes seleccionar los viajes que mejor se adapten a tu disponibilidad, ubicación y tipo de vehículo. Desde traslados por hora hasta viajes interciudad."
+      },
+      "international": {
+        "title": "Presencia internacional,\nrespaldo local",
+        "hoverTitle": "Presencia internacional, respaldo local",
+        "description": "Formarás parte de una red global activa en más de 50 países, atendiendo tanto a viajeros de negocios como a clientes particulares. Representarás a Privyde con tu profesionalismo, pero con libertad e independencia."
+      }
+    },
+    "requirements": {
+      "title": "Requisitos para ser socio conductor",
+      "items": [
+        "Registro de empresa válido, licencias y seguros vigentes.",
+        "Vehículos limpios, sin daños, libres de humo y en cumplimiento normativo.",
+        "Compromiso con la calidad y actualización constante sobre regulaciones y políticas locales."
+      ]
+    },
+    "cta": {
+      "title": "¿LISTO PARA FORMAR PARTE\nDEL SERVICIO DE MOVILIDAD\nMÁS DISTINGUIDO DEL MUNDO?",
+      "subtitle": "Comienza tu registro como socio conductor hoy.",
+      "button": "Unirme a Privyde"
+    }
+  },
+  "help": {
+    "title": "¿CÓMO PODEMOS AYUDARTE?",
+    "searchPlaceholder": "Buscar...",
+    "sections": {
+      "gettingStarted": {
+        "title": "Empezando",
+        "subtitle": "Todo lo que necesitas saber antes de reservar tu viaje"
+      },
+      "bookingManagement": {
+        "title": "Gestión de reservas",
+        "subtitle": "Encuentra su respuesta sobre cómo cambiar y cancelar su viaje."
+      },
+      "billingPayment": {
+        "title": "Facturación y pago",
+        "subtitle": "Todo lo que necesitas saber antes de reservar tu viaje"
+      },
+      "myAccount": {
+        "title": "Mi cuenta de Privyde",
+        "subtitle": "Todo lo que necesitas saber antes de reservar tu viaje"
+      },
+      "contactDriver": {
+        "title": "¿Cómo llamar a mi chofer?",
+        "subtitle": "Todo lo que necesitas saber antes de reservar tu viaje"
+      },
+      "security": {
+        "title": "Preguntas frecuentes sobre seguridad",
+        "subtitle": "Todo lo que necesitas saber antes de reservar tu viaje"
+      }
+    },
+    "faqs": {
+      "gettingStarted": [
+        {
+          "question": "¿Con cuánta anticipación debo reservar mi viaje?",
+          "answer": "Puedes reservar hasta con 30 días de anticipación. Sin embargo, también contamos con confirmación inmediata, por si necesitas una solución eficiente en el momento."
+        },
+        {
+          "question": "¿Puedo solicitar un traslado entre ciudades con Privyde?",
+          "answer": "Sí. Ofrecemos traslados puerta a puerta con todas las comodidades. Indícanos el punto de salida, el destino y si deseas incluir alguna parada intermedia."
+        },
+        {
+          "question": "¿Puedo añadir paradas durante mi trayecto?",
+          "answer": "Sí. Al reservar puedes incluir tantas paradas como necesites. Nuestro sistema calculará el tiempo estimado y tu chofer estará informado de cada punto."
+        },
+        {
+          "question": "¿Qué incluye el servicio de traslados al aeropuerto con Privyde?",
+          "answer": "Nuestros traslados al aeropuerto incluyen tiempo adicional de espera gratuito y seguimiento de tu vuelo en tiempo real. De este modo, el chofer ajusta su llegada si tu vuelo se retrasa. A tu arribo, te asistirá con el equipaje para que el proceso sea rápido y cómodo."
+        },
+        {
+          "question": "¿Qué sucede si mi vuelo se retrasa?",
+          "answer": "No tienes que preocuparte. Supervisamos tu itinerario en tiempo real para ajustar el servicio sin que debas hacer nada. Estamos pendientes de ti desde el primer minuto."
+        },
+        {
+          "question": "¿Cómo funciona el servicio de chofer por horas o por días?",
+          "answer": "Tendrás un conductor exclusivo durante el tiempo que necesites, disponible para cada parada o cambio en tu agenda. Es la opción ideal si buscas flexibilidad, sin perder elegancia ni continuidad."
+        },
+        {
+          "question": "¿Qué distingue a un traslado corporativo con Privyde?",
+          "answer": "Discreción, puntualidad y atención personalizada. Ya sea para una reunión, una visita internacional o una jornada completa, nuestro equipo y flota están preparados para acompañarte con excelencia."
+        }
+      ],
+      "bookingManagement": [
+        {
+          "question": "¿Cómo puedo modificar o cancelar mi reserva?",
+          "answer": "Puedes hacerlo fácilmente desde nuestra app. Si necesitas asistencia, estaremos encantados de ayudarte a través de nuestro equipo de atención, disponible en todo momento."
+        },
+        {
+          "question": "¿Cómo agendo un traslado VIP para un cliente o ejecutivo de alto nivel?",
+          "answer": "Puedes reservarlo directamente desde nuestra app o, si prefieres, contactarnos para diseñar una experiencia personalizada. Coordinaremos cada detalle según tus necesidades."
+        }
+      ],
+      "billingPayment": [],
+      "myAccount": [
+        {
+          "question": "¿A quién puedo contactar si tengo dudas antes o durante mi viaje?",
+          "answer": "Nuestro equipo está disponible las 24 horas, todos los días. Puedes escribirnos vía chat, correo o directamente desde la app. Estaremos aquí para ti, con la atención que esperas."
+        }
+      ],
+      "contactDriver": [
+        {
+          "question": "¿Cómo sabré que mi chofer ya está en el punto de encuentro?",
+          "answer": "Te notificaremos en cuanto esté en camino y cuando haya llegado. Además, tendrás acceso a su ubicación en tiempo real, para que no pierdas un solo minuto."
+        },
+        {
+          "question": "¿Tu chofer puede ayudarte con alguna tarea mientras espera?",
+          "answer": "Sí, si tienes alguna indicación especial —como asistencia con equipaje o alguna gestión sencilla durante la espera— puedes detallarla en tu solicitud. Con gusto lo consideraremos."
+        }
+      ],
+      "security": [
+        {
+          "question": "¿Necesitas seguridad adicional para tu viaje?",
+          "answer": "Podemos incluir un escolta ejecutivo certificado en tu servicio. Si deseas este acompañamiento, indícalo al momento de reservar o escríbenos, y lo gestionaremos con discreción."
+        },
+        {
+          "question": "¿Puedo solicitar un chofer con experiencia en protocolos de seguridad?",
+          "answer": "Sí. Contamos con conductores capacitados en conducción defensiva y operaciones de alto perfil. Infórmanos al reservar para asignarte el perfil más adecuado."
+        }
+      ]
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Iniciar sesión",
+      "email": "Email",
+      "emailPlaceholder": "tu@email.com",
+      "password": "Contraseña",
+      "passwordPlaceholder": "Contraseña",
+      "rememberMe": "Recordarme",
+      "forgotPassword": "¿Olvidaste tu contraseña?",
+      "loginButton": "Iniciar sesión",
+      "loggingIn": "Iniciando sesión...",
+      "or": "O",
+      "googleError": "Error al iniciar sesión con Google",
+      "invalidResponse": "Respuesta inválida del servidor",
+      "unknownError": "Error desconocido"
+    },
+    "register": {
+      "title": "Registro de administradores",
+      "infoTitle": "Este registro es exclusivo para administradores. Serás redirigido directamente al panel de administración.",
+      "name": "Nombre",
+      "namePlaceholder": "Tu nombre",
+      "email": "Email",
+      "emailPlaceholder": "tu@email.com",
+      "password": "Contraseña",
+      "passwordPlaceholder": "Crea una contraseña segura",
+      "adminInfo": "Este formulario es exclusivo para administradores. Una vez registrado, tendrás acceso completo al panel de administración sin necesidad de completar un perfil adicional.",
+      "registerButton": "Crear cuenta de administrador",
+      "registering": "Registrando..."
+    }
+  },
+  "bookingForm": {
+    "tabs": {
+      "oneWay": "Ida",
+      "hourly": "Por horas"
+    },
+    "fields": {
+      "from": "De",
+      "to": "A",
+      "date": "Fecha",
+      "time": "Hora",
+      "duration": "Duración",
+      "placeholder": "Dirección, aeropuerto, hotel..."
+    },
+    "durations": {
+      "short": "Corta",
+      "medium": "Media",
+      "long": "Larga",
+      "1hour": "1 hora",
+      "2hours": "2 horas",
+      "3hours": "3 horas",
+      "4hours": "4 horas",
+      "5hours": "5 horas",
+      "6hours": "6 horas",
+      "7hours": "7 horas",
+      "8hours": "8 horas",
+      "fullDay": "Día completo (10 horas)"
+    },
+    "dialogs": {
+      "selectDate": "Selecciona una fecha",
+      "selectDuration": "Selecciona la duración"
+    },
+    "messages": {
+      "driverWait": "El chófer esperará 15 minutos sin coste adicional.",
+      "processing": "Procesando..."
+    },
+    "buttons": {
+      "select": "Seleccionar"
+    },
+    "months": [
+      "Enero",
+      "Febrero",
+      "Marzo",
+      "Abril",
+      "Mayo",
+      "Junio",
+      "Julio",
+      "Agosto",
+      "Septiembre",
+      "Octubre",
+      "Noviembre",
+      "Diciembre"
+    ],
+    "daysOfWeek": ["L", "M", "X", "J", "V", "S", "D"]
+  }
+}

@@ -22,8 +22,9 @@ import {
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { format } from "date-fns";
-import { es } from "date-fns/locale";
+import { es, enUS } from "date-fns/locale";
 import { TimePicker } from "@/components/ui/time-picker";
+import { useTranslation } from "react-i18next";
 
 // Definición de tipos
 interface PlacePrediction {
@@ -62,6 +63,7 @@ function CalendarComponent({
   selectedDate: Date;
   onDateChange: (date: Date) => void;
 }) {
+  const { t } = useTranslation();
   const [currentMonth, setCurrentMonth] = useState(new Date());
   const today = new Date();
 
@@ -90,21 +92,8 @@ function CalendarComponent({
     );
   };
 
-  // Nombres de los meses en español
-  const monthNames = [
-    "Enero",
-    "Febrero",
-    "Marzo",
-    "Abril",
-    "Mayo",
-    "Junio",
-    "Julio",
-    "Agosto",
-    "Septiembre",
-    "Octubre",
-    "Noviembre",
-    "Diciembre",
-  ];
+  // Nombres de los meses traducidos
+  const monthNames = t('bookingForm.months', { returnObjects: true }) as string[];
 
   // Obtener datos del mes actual
   const firstDayOfMonth = getFirstDayOfMonth(currentMonth);
@@ -206,7 +195,7 @@ function CalendarComponent({
 
       {/* Días de la semana */}
       <div className="grid grid-cols-7 gap-1 mb-2" data-oid="3fsbrw5">
-        {["Lu", "Ma", "Mi", "Ju", "Vi", "Sa", "Do"].map((day) => (
+        {(t('bookingForm.daysOfWeek', { returnObjects: true }) as string[]).map((day) => (
           <div
             key={day}
             className="text-center text-sm font-semibold text-gray-500 py-1"
@@ -276,11 +265,12 @@ function DurationSelector({
   selectedDuration: string;
   onDurationChange: (duration: string) => void;
 }) {
+  const { t } = useTranslation();
   // Categorías de duración
   const durationCategories = {
-    Corta: ["1 hora", "2 horas", "3 horas"],
-    Media: ["4 horas", "5 horas", "6 horas"],
-    Larga: ["7 horas", "8 horas", "Día completo (10 horas)"],
+    [t('bookingForm.durations.short')]: [t('bookingForm.durations.1hour'), t('bookingForm.durations.2hours'), t('bookingForm.durations.3hours')],
+    [t('bookingForm.durations.medium')]: [t('bookingForm.durations.4hours'), t('bookingForm.durations.5hours'), t('bookingForm.durations.6hours')],
+    [t('bookingForm.durations.long')]: [t('bookingForm.durations.7hours'), t('bookingForm.durations.8hours'), t('bookingForm.durations.fullDay')],
   };
 
   return (
@@ -329,6 +319,7 @@ interface BookingFormProps {
 }
 
 export default function BookingForm({ darkMode = false }: BookingFormProps) {
+  const { t, i18n } = useTranslation();
   const [formData, setFormData] = useState<BookingFormData>({
     tripType: "ida",
     from: {
@@ -337,7 +328,7 @@ export default function BookingForm({ darkMode = false }: BookingFormProps) {
     to: {
       description: "",
     },
-    duration: "2 horas",
+    duration: t('bookingForm.durations.2hours'),
     date: format(new Date(), "yyyy-MM-dd"),
     time: "12:00",
   });
@@ -505,7 +496,7 @@ export default function BookingForm({ darkMode = false }: BookingFormProps) {
       ...prev,
       tripType: value,
       to: value === "horas" ? { description: "" } : prev.to,
-      duration: value === "ida" ? "" : prev.duration || "2 horas",
+      duration: value === "ida" ? "" : prev.duration || t('bookingForm.durations.2hours'),
     }));
   };
 
@@ -530,14 +521,14 @@ export default function BookingForm({ darkMode = false }: BookingFormProps) {
               className={`rounded-none data-[state=active]:shadow-none h-full text-lg font-semibold ${darkMode ? 'data-[state=active]:bg-black data-[state=active]:text-white text-gray-400' : 'data-[state=active]:bg-white'}`}
               data-oid="i-vtb9o"
             >
-              Ida
+              {t('bookingForm.tabs.oneWay')}
             </TabsTrigger>
             <TabsTrigger
               value="horas"
               className={`rounded-none data-[state=active]:shadow-none h-full text-lg font-semibold ${darkMode ? 'data-[state=active]:bg-black data-[state=active]:text-white text-gray-400' : 'data-[state=active]:bg-white'}`}
               data-oid="z21rf8l"
             >
-              Por horas
+              {t('bookingForm.tabs.hourly')}
             </TabsTrigger>
           </TabsList>
 
@@ -566,11 +557,11 @@ export default function BookingForm({ darkMode = false }: BookingFormProps) {
                       className={`booking-form-label mb-0 text-left text-sm ${darkMode ? 'text-white' : ''}`}
                       data-oid="ji0e.10"
                     >
-                      De
+                      {t('bookingForm.fields.from')}
                     </label>
                     <Input
                       className={`border-0 p-0 h-7 text-base focus-visible:ring-0 focus-visible:ring-offset-0 focus:outline-none placeholder:text-gray-400 booking-form-input ${darkMode ? 'bg-gray-900 text-white' : 'bg-gray-50'}`}
-                      placeholder="Dirección, aeropuerto, hotel..."
+                      placeholder={t('bookingForm.fields.placeholder')}
                       value={formData.from.description}
                       onChange={(e) => handleFromSearch(e.target.value)}
                       onFocus={() => setShowFromPredictions(true)}
@@ -625,11 +616,11 @@ export default function BookingForm({ darkMode = false }: BookingFormProps) {
                       className="booking-form-label mb-0 text-left text-sm"
                       data-oid="uuhkuiq"
                     >
-                      A
+                      {t('bookingForm.fields.to')}
                     </label>
                     <Input
                       className="border-0 p-0 h-7 text-base focus-visible:ring-0 focus-visible:ring-offset-0 focus:outline-none placeholder:text-gray-400 booking-form-input bg-gray-50"
-                      placeholder="Dirección, aeropuerto, hotel..."
+                      placeholder={t('bookingForm.fields.placeholder')}
                       value={formData.to?.description || ""}
                       onChange={(e) => handleToSearch(e.target.value)}
                       onFocus={() => setShowToPredictions(true)}
@@ -681,7 +672,7 @@ export default function BookingForm({ darkMode = false }: BookingFormProps) {
                       className="booking-form-label mb-0 text-left text-sm"
                       data-oid="gm0c0-2"
                     >
-                      Fecha
+                      {t('bookingForm.fields.date')}
                     </label>
                     <div
                       className="flex items-center justify-between pr-3"
@@ -693,7 +684,7 @@ export default function BookingForm({ darkMode = false }: BookingFormProps) {
                         data-oid="677g:40"
                       >
                         {format(new Date(formData.date), "E, dd MMM yyyy", {
-                          locale: es,
+                          locale: i18n.language === 'es' ? es : enUS,
                         })}
                       </div>
                       <ChevronDown className="h-5 w-5" data-oid="mady5:q" />
@@ -713,7 +704,7 @@ export default function BookingForm({ darkMode = false }: BookingFormProps) {
                   className="text-sm text-gray-600 mt-1 mb-1"
                   data-oid="ooc36ig"
                 >
-                  El chófer esperará 15 minutos sin coste adicional.
+                  {t('bookingForm.messages.driverWait')}
                 </p>
 
                 <button
@@ -736,10 +727,10 @@ export default function BookingForm({ darkMode = false }: BookingFormProps) {
                         className="mr-2 h-5 w-5 animate-spin"
                         data-oid="n5hsgc8"
                       />
-                      Procesando...
+                      {t('bookingForm.messages.processing')}
                     </div>
                   ) : (
-                    "Seleccionar"
+                    t('bookingForm.buttons.select')
                   )}
                 </button>
               </form>
@@ -771,11 +762,11 @@ export default function BookingForm({ darkMode = false }: BookingFormProps) {
                       className="booking-form-label mb-0 text-left text-sm"
                       data-oid="mbywmn4"
                     >
-                      De
+                      {t('bookingForm.fields.from')}
                     </label>
                     <Input
                       className="border-0 p-0 h-7 text-base focus-visible:ring-0 focus-visible:ring-offset-0 focus:outline-none placeholder:text-gray-400 booking-form-input bg-gray-50"
-                      placeholder="Dirección, aeropuerto, hotel..."
+                      placeholder={t('bookingForm.fields.placeholder')}
                       value={formData.from.description}
                       onChange={(e) => handleFromSearch(e.target.value)}
                       onFocus={() => setShowFromPredictions(true)}
@@ -827,7 +818,7 @@ export default function BookingForm({ darkMode = false }: BookingFormProps) {
                       className="booking-form-label mb-0 text-left text-sm"
                       data-oid="8imk3ng"
                     >
-                      Duración
+                      {t('bookingForm.fields.duration')}
                     </label>
                     <div
                       className="flex items-center justify-between pr-3"
@@ -860,7 +851,7 @@ export default function BookingForm({ darkMode = false }: BookingFormProps) {
                       className="booking-form-label mb-0 text-left text-sm"
                       data-oid="acbblag"
                     >
-                      Fecha
+                      {t('bookingForm.fields.date')}
                     </label>
                     <div
                       className="flex items-center justify-between pr-3"
@@ -872,7 +863,7 @@ export default function BookingForm({ darkMode = false }: BookingFormProps) {
                         data-oid="zh_upfb"
                       >
                         {format(new Date(formData.date), "E, dd MMM yyyy", {
-                          locale: es,
+                          locale: i18n.language === 'es' ? es : enUS,
                         })}
                       </div>
                       <ChevronDown className="h-5 w-5" data-oid="bo_6ptl" />
@@ -908,10 +899,10 @@ export default function BookingForm({ darkMode = false }: BookingFormProps) {
                         className="mr-2 h-5 w-5 animate-spin"
                         data-oid="jg-.wvo"
                       />
-                      Procesando...
+                      {t('bookingForm.messages.processing')}
                     </div>
                   ) : (
-                    "Seleccionar"
+                    t('bookingForm.buttons.select')
                   )}
                 </button>
               </form>
@@ -932,7 +923,7 @@ export default function BookingForm({ darkMode = false }: BookingFormProps) {
               className="text-center text-lg font-bold mb-4"
               data-oid="lh_oodj"
             >
-              Selecciona una fecha
+              {t('bookingForm.dialogs.selectDate')}
             </DialogTitle>
           </DialogHeader>
           <div className="calendar-container p-2" data-oid="mrkkspe">
@@ -957,7 +948,7 @@ export default function BookingForm({ darkMode = false }: BookingFormProps) {
               className="text-center text-lg font-bold mb-4"
               data-oid="meufwpq"
             >
-              Selecciona la duración
+              {t('bookingForm.dialogs.selectDuration')}
             </DialogTitle>
           </DialogHeader>
           <DurationSelector
