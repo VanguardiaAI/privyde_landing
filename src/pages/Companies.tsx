@@ -243,7 +243,7 @@ const Companies = () => {
 
         {/* Services Accordion Section */}
         <section className="bg-black py-12 md:py-20">
-          <div className="container mx-auto pl-4 pr-0 md:px-4 overflow-x-hidden">
+          <div className="container mx-auto px-4 md:px-4 overflow-x-hidden">
           {/* Title */}
           <h2
             className="text-3xl md:text-4xl font-bold text-center text-white mb-10 md:mb-16"
@@ -254,7 +254,7 @@ const Companies = () => {
 
           {/* Horizontal Accordion - Mobile */}
           <div 
-            className="md:hidden relative flex h-[350px] overflow-hidden justify-start pl-2"
+            className="md:hidden relative flex h-[350px] overflow-hidden justify-center"
             onTouchStart={handleTouchStart}
             onTouchMove={handleTouchMove}
             onTouchEnd={handleTouchEnd}
@@ -262,7 +262,7 @@ const Companies = () => {
             {/* Service 1 */}
             <div 
               className={`relative rounded-xl overflow-hidden transition-all duration-500 cursor-pointer ${
-                activeMobileAccordionIndex === 0 ? 'w-[85vw] max-w-[400px] z-[20]' : 'w-[80px] z-[10]'
+                activeMobileAccordionIndex === 0 ? 'w-[calc(100vw-8rem)] max-w-[350px] z-[20]' : 'w-[60px] sm:w-[80px] z-[10]'
               }`}
               onClick={() => setActiveMobileAccordionIndex(0)}
             >
@@ -276,7 +276,7 @@ const Companies = () => {
               <div className="absolute inset-0 flex flex-col justify-between">
                 {/* Content */}
                 <div className="flex-1 flex flex-col justify-end text-left px-4 pb-4">
-                  <p className={`text-sm text-white/90 overflow-hidden transition-all duration-500 pl-12 max-w-[80%] ${
+                  <p className={`text-sm text-white/90 overflow-hidden transition-all duration-500 pl-12 pr-4 ${
                     activeMobileAccordionIndex === 0 ? 'max-h-40' : 'max-h-0'
                   }`}>
                     Garantiza llegadas puntuales y salidas fluidas para sus ejecutivos y colaboradores. Chóferes profesionales, flota moderna y cobertura global para hacer de cada reunión una experiencia sin fricciones.
@@ -294,7 +294,7 @@ const Companies = () => {
             {/* Service 2 */}
             <div 
               className={`relative rounded-xl overflow-hidden transition-all duration-500 cursor-pointer -ml-[10px] ${
-                activeMobileAccordionIndex === 1 ? 'w-[85vw] max-w-[400px] z-[20]' : 'w-[80px] z-[11]'
+                activeMobileAccordionIndex === 1 ? 'w-[calc(100vw-8rem)] max-w-[350px] z-[20]' : 'w-[60px] sm:w-[80px] z-[11]'
               }`}
               onClick={() => setActiveMobileAccordionIndex(1)}
             >
@@ -308,7 +308,7 @@ const Companies = () => {
               <div className="absolute inset-0 flex flex-col justify-between">
                 {/* Content */}
                 <div className="flex-1 flex flex-col justify-end text-left px-4 pb-4">
-                  <p className={`text-sm text-white/90 overflow-hidden transition-all duration-500 pl-12 max-w-[80%] ${
+                  <p className={`text-sm text-white/90 overflow-hidden transition-all duration-500 pl-12 pr-4 ${
                     activeMobileAccordionIndex === 1 ? 'max-h-40' : 'max-h-0'
                   }`}>
                     Conectamos ciudades con el máximo confort. Trabaje sin esfuerzo mientras viaja entre destinos. Ideal para ejecutivos que valoran su tiempo y productividad en trayectos largos.
@@ -326,7 +326,7 @@ const Companies = () => {
             {/* Service 3 */}
             <div 
               className={`relative rounded-xl overflow-hidden transition-all duration-500 cursor-pointer -ml-[10px] ${
-                activeMobileAccordionIndex === 2 ? 'w-[85vw] max-w-[400px] z-[20]' : 'w-[80px] z-[12]'
+                activeMobileAccordionIndex === 2 ? 'w-[calc(100vw-8rem)] max-w-[350px] z-[20]' : 'w-[60px] sm:w-[80px] z-[12]'
               }`}
               onClick={() => setActiveMobileAccordionIndex(2)}
             >
@@ -340,7 +340,7 @@ const Companies = () => {
               <div className="absolute inset-0 flex flex-col justify-between">
                 {/* Content */}
                 <div className="flex-1 flex flex-col justify-end text-left px-4 pb-4">
-                  <p className={`text-sm text-white/90 overflow-hidden transition-all duration-500 pl-12 max-w-[80%] ${
+                  <p className={`text-sm text-white/90 overflow-hidden transition-all duration-500 pl-12 pr-4 ${
                     activeMobileAccordionIndex === 2 ? 'max-h-40' : 'max-h-0'
                   }`}>
                     Servicio global de traslados aeroportuarios. Monitoreo de vuelos en tiempo real, recepción personalizada y gestión integral de equipaje en más de 500 aeropuertos internacionales.
@@ -358,7 +358,7 @@ const Companies = () => {
             {/* Service 4 */}
             <div 
               className={`relative rounded-xl overflow-hidden transition-all duration-500 cursor-pointer -ml-[10px] ${
-                activeMobileAccordionIndex === 3 ? 'w-[85vw] max-w-[400px] z-[20]' : 'w-[80px] z-[13]'
+                activeMobileAccordionIndex === 3 ? 'w-[calc(100vw-8rem)] max-w-[350px] z-[20]' : 'w-[60px] sm:w-[80px] z-[13]'
               }`}
               onClick={() => setActiveMobileAccordionIndex(3)}
             >
@@ -372,7 +372,7 @@ const Companies = () => {
               <div className="absolute inset-0 flex flex-col justify-between">
                 {/* Content */}
                 <div className="flex-1 flex flex-col justify-end text-left px-4 pb-4">
-                  <p className={`text-sm text-white/90 overflow-hidden transition-all duration-500 pl-12 max-w-[80%] ${
+                  <p className={`text-sm text-white/90 overflow-hidden transition-all duration-500 pl-12 pr-4 ${
                     activeMobileAccordionIndex === 3 ? 'max-h-40' : 'max-h-0'
                   }`}>
                     Impresione a sus invitados con un servicio excepcional. Atención personalizada y vehículos premium para fortalecer relaciones comerciales desde el primer momento.
@@ -390,7 +390,7 @@ const Companies = () => {
             {/* Service 5 - Default open */}
             <div 
               className={`relative rounded-xl overflow-hidden transition-all duration-500 cursor-pointer -ml-[10px] ${
-                activeMobileAccordionIndex === 4 ? 'w-[85vw] max-w-[400px] z-[20]' : 'w-[80px] z-[14]'
+                activeMobileAccordionIndex === 4 ? 'w-[calc(100vw-8rem)] max-w-[350px] z-[20]' : 'w-[60px] sm:w-[80px] z-[14]'
               }`}
               onClick={() => setActiveMobileAccordionIndex(4)}
             >
@@ -404,7 +404,7 @@ const Companies = () => {
               <div className="absolute inset-0 flex flex-col justify-between">
                 {/* Content */}
                 <div className="flex-1 flex flex-col justify-end text-left px-4 pb-4">
-                  <p className={`text-sm text-white/90 overflow-hidden transition-all duration-500 pl-12 max-w-[80%] ${
+                  <p className={`text-sm text-white/90 overflow-hidden transition-all duration-500 pl-12 pr-4 ${
                     activeMobileAccordionIndex === 4 ? 'max-h-40' : 'max-h-0'
                   }`}>
                     Flexibilidad total para agendas dinámicas. Reserve un chófer dedicado por horas o días completos. Ideal para roadshows, eventos corporativos o jornadas con múltiples reuniones.
