@@ -225,11 +225,11 @@ const Companies = () => {
           </h2>
 
           {/* Horizontal Accordion - Mobile */}
-          <div className="md:hidden relative flex h-[350px] mx-auto overflow-visible justify-center pl-20 pr-4">
+          <div className="md:hidden relative flex h-[350px] mx-auto overflow-visible justify-center pl-2 pr-2">
             {/* Service 1 */}
             <div 
               className={`relative rounded-xl overflow-hidden transition-all duration-500 cursor-pointer ${
-                activeMobileAccordionIndex === 0 ? 'w-[300px] z-[10]' : 'w-[100px] z-[1]'
+                activeMobileAccordionIndex === 0 ? 'w-[85vw] max-w-[400px] z-[10]' : 'w-[80px] z-[1]'
               }`}
               onClick={() => setActiveMobileAccordionIndex(0)}
             >
@@ -260,8 +260,8 @@ const Companies = () => {
 
             {/* Service 2 */}
             <div 
-              className={`relative rounded-xl overflow-hidden transition-all duration-500 cursor-pointer -ml-[50px] ${
-                activeMobileAccordionIndex === 1 ? 'w-[300px] z-[10]' : 'w-[100px] z-[2]'
+              className={`relative rounded-xl overflow-hidden transition-all duration-500 cursor-pointer -ml-[40px] ${
+                activeMobileAccordionIndex === 1 ? 'w-[85vw] max-w-[400px] z-[10]' : 'w-[80px] z-[2]'
               }`}
               onClick={() => setActiveMobileAccordionIndex(1)}
             >
@@ -292,8 +292,8 @@ const Companies = () => {
 
             {/* Service 3 */}
             <div 
-              className={`relative rounded-xl overflow-hidden transition-all duration-500 cursor-pointer -ml-[50px] ${
-                activeMobileAccordionIndex === 2 ? 'w-[300px] z-[10]' : 'w-[100px] z-[3]'
+              className={`relative rounded-xl overflow-hidden transition-all duration-500 cursor-pointer -ml-[40px] ${
+                activeMobileAccordionIndex === 2 ? 'w-[85vw] max-w-[400px] z-[10]' : 'w-[80px] z-[3]'
               }`}
               onClick={() => setActiveMobileAccordionIndex(2)}
             >
@@ -324,8 +324,8 @@ const Companies = () => {
 
             {/* Service 4 */}
             <div 
-              className={`relative rounded-xl overflow-hidden transition-all duration-500 cursor-pointer -ml-[50px] ${
-                activeMobileAccordionIndex === 3 ? 'w-[300px] z-[10]' : 'w-[100px] z-[4]'
+              className={`relative rounded-xl overflow-hidden transition-all duration-500 cursor-pointer -ml-[40px] ${
+                activeMobileAccordionIndex === 3 ? 'w-[85vw] max-w-[400px] z-[10]' : 'w-[80px] z-[4]'
               }`}
               onClick={() => setActiveMobileAccordionIndex(3)}
             >
@@ -356,8 +356,8 @@ const Companies = () => {
 
             {/* Service 5 - Default open */}
             <div 
-              className={`relative rounded-xl overflow-hidden transition-all duration-500 cursor-pointer -ml-[50px] ${
-                activeMobileAccordionIndex === 4 ? 'w-[300px] z-[10]' : 'w-[100px] z-[5]'
+              className={`relative rounded-xl overflow-hidden transition-all duration-500 cursor-pointer -ml-[40px] ${
+                activeMobileAccordionIndex === 4 ? 'w-[85vw] max-w-[400px] z-[10]' : 'w-[80px] z-[5]'
               }`}
               onClick={() => setActiveMobileAccordionIndex(4)}
             >
