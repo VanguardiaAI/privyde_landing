@@ -232,7 +232,7 @@ const Companies = () => {
             Eficiencia, representación y protección en cada trayecto.
           </h2>
           <p className="text-sm md:text-base text-white/80 text-center leading-relaxed">
-            Privyde ofrece soluciones globales de transporte ejecutivo diseñadas para organizaciones que valoran la puntualidad, la
+            <span className="font-bold">Privyde</span> ofrece soluciones globales de transporte ejecutivo diseñadas para organizaciones que valoran la puntualidad, la
             experiencia del cliente y la excelencia operativa. Desde traslados corporativos hasta asociaciones estratégicas con hoteles,
             aerolíneas o agencias, brindamos un ecosistema completo de movilidad de alto nivel.
           </p>
