@@ -167,44 +167,90 @@ const OurServices: React.FC = () => {
         <div className="container mx-auto px-6 pb-12">
           <div className="relative">
             {/* Container wrapper for proper spacing */}
-            <div className="relative pt-44">
-              {/* Slider Image - Positioned to overlap */}
-              <div className="absolute top-4 left-1/2 transform -translate-x-1/2 w-80 z-20">
-                <img
-                  src={currentService.image}
-                  alt={currentService.title}
-                  className="w-full h-auto object-contain rounded-lg shadow-xl"
-                />
+            {currentService.id % 2 === 0 ? (
+              // Layout for services 2, 4, 6 - Image on left, text on right  
+              <div className="bg-neutral-800/90 rounded-lg p-6 text-white">
+                {/* Force left alignment with inline-flex */}
+                <div className="inline-flex items-start">
+                  {/* Image - Fixed width container */}
+                  <div className="w-20 sm:w-24 md:w-28 lg:w-32 flex-shrink-0">
+                    <img
+                      src={currentService.image}
+                      alt={currentService.title}
+                      className="w-full h-auto object-contain rounded-lg shadow-xl"
+                    />
+                  </div>
+                  
+                  {/* Text Content - Fixed width, positioned immediately after image */}
+                  <div className="ml-4 w-64 sm:w-72 md:w-80 lg:w-96">
+                    <h2 className="text-sm sm:text-base md:text-lg font-bold mb-2 uppercase tracking-wide text-left" style={{ fontFamily: 'CONTHRAX-SB' }}>
+                      {currentService.title}
+                    </h2>
+                    
+                    <p className="text-xs sm:text-sm font-semibold mb-2 text-gray-100 text-left">
+                      {currentService.subtitle}
+                    </p>
+                    
+                    <p className="text-xs text-gray-300 mb-3 leading-relaxed text-left">
+                      {currentService.description}
+                    </p>
+                    
+                    <ul className="space-y-1 mb-3 text-left list-disc pl-4">
+                      {currentService.features.map((feature, index) => (
+                        <li key={index} className="text-xs text-gray-300 leading-relaxed text-left">
+                          {'title' in feature && feature.title && <span className="font-semibold text-white">{feature.title} </span>}
+                          {feature.text}
+                        </li>
+                      ))}
+                    </ul>
+                    
+                    <p className="text-xs text-gray-400 italic text-left">
+                      {currentService.footer}
+                    </p>
+                  </div>
+                </div>
               </div>
+            ) : (
+              // Layout for services 1, 3, 5 - Original layout with image on top
+              <div className="relative pt-44">
+                {/* Slider Image - Positioned to overlap */}
+                <div className="absolute top-4 left-1/2 transform -translate-x-1/2 w-80 z-20">
+                  <img
+                    src={currentService.image}
+                    alt={currentService.title}
+                    className="w-full h-auto object-contain rounded-lg shadow-xl"
+                  />
+                </div>
 
-              {/* Content Container */}
-              <div className="bg-neutral-800/90 rounded-lg p-6 pt-20 text-white text-left">
-                <h2 className="text-xl font-bold mb-3 uppercase tracking-wide text-center" style={{ fontFamily: 'CONTHRAX-SB' }}>
-                  {currentService.title}
-                </h2>
-                
-                <p className="text-base font-semibold mb-3 text-gray-100 text-left">
-                  {currentService.subtitle}
-                </p>
-                
-                <p className="text-sm text-gray-300 mb-4 leading-relaxed text-left">
-                  {currentService.description}
-                </p>
-                
-                <ul className="space-y-3 mb-4 text-left list-disc pl-5">
-                  {currentService.features.map((feature, index) => (
-                    <li key={index} className="text-sm text-gray-300 leading-relaxed text-left">
-                      {'title' in feature && feature.title && <span className="font-semibold text-white">{feature.title} </span>}
-                      {feature.text}
-                    </li>
-                  ))}
-                </ul>
-                
-                <p className="text-sm text-gray-400 italic text-left">
-                  {currentService.footer}
-                </p>
+                {/* Content Container */}
+                <div className="bg-neutral-800/90 rounded-lg p-6 pt-20 text-white text-left">
+                  <h2 className="text-xl font-bold mb-3 uppercase tracking-wide text-center" style={{ fontFamily: 'CONTHRAX-SB' }}>
+                    {currentService.title}
+                  </h2>
+                  
+                  <p className="text-base font-semibold mb-3 text-gray-100 text-left">
+                    {currentService.subtitle}
+                  </p>
+                  
+                  <p className="text-sm text-gray-300 mb-4 leading-relaxed text-left">
+                    {currentService.description}
+                  </p>
+                  
+                  <ul className="space-y-3 mb-4 text-left list-disc pl-5">
+                    {currentService.features.map((feature, index) => (
+                      <li key={index} className="text-sm text-gray-300 leading-relaxed text-left">
+                        {'title' in feature && feature.title && <span className="font-semibold text-white">{feature.title} </span>}
+                        {feature.text}
+                      </li>
+                    ))}
+                  </ul>
+                  
+                  <p className="text-sm text-gray-400 italic text-left">
+                    {currentService.footer}
+                  </p>
+                </div>
               </div>
-            </div>
+            )}
 
             {/* Navigation Buttons */}
             <div className="flex justify-between items-center mt-6 px-2">
@@ -250,8 +296,21 @@ const OurServices: React.FC = () => {
               }`}
               style={{ height: '400px' }}
             >
-              <div className={`flex ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'} items-center h-full`}>
-                <div className={`${index % 2 === 0 ? 'w-[75%]' : 'w-[65%]'} py-8 lg:py-10 ${index % 2 === 0 ? 'pl-16 lg:pl-24 pr-12 lg:pr-16' : 'pr-12 lg:pr-16 pl-3'} text-left overflow-hidden flex flex-col justify-center h-full`}>
+              <div className="flex flex-row items-center h-full">
+                {index % 2 !== 0 && (
+                  /* Image for services 2, 4, 6 - positioned on the left */
+                  <div className="absolute left-0 -translate-x-[20%] top-1/2 -translate-y-1/2" style={{ width: '300px' }}>
+                    <div className="relative" style={{ margin: '0.5cm 0' }}>
+                      <img
+                        src={service.image}
+                        alt={service.title}
+                        className="w-full aspect-square object-cover"
+                      />
+                    </div>
+                  </div>
+                )}
+                
+                <div className={`${index % 2 === 0 ? 'w-[75%]' : 'w-[65%]'} py-8 lg:py-10 ${index % 2 === 0 ? 'pl-16 lg:pl-24 pr-12 lg:pr-16' : 'pl-60 lg:pl-72 pr-8'} text-left overflow-hidden flex flex-col justify-center h-full`}>
                   <h2 className="text-base lg:text-xl font-bold mb-2 lg:mb-3 text-white uppercase tracking-normal text-left line-clamp-2" style={{ fontFamily: 'CONTHRAX-SB' }}>
                     {service.title}
                   </h2>
@@ -278,19 +337,18 @@ const OurServices: React.FC = () => {
                   </p>
                 </div>
                 
-                <div className={`absolute top-1/2 -translate-y-1/2 ${
-                  index % 2 === 0 ? 'right-0 translate-x-[20%]' : 'left-0 -translate-x-[20%]'
-                }`}
-                style={{ width: '300px' }}
-                >
-                  <div className="relative" style={{ margin: '0.5cm 0' }}>
-                    <img
-                      src={service.image}
-                      alt={service.title}
-                      className="w-full aspect-square object-cover"
-                    />
+                {index % 2 === 0 && (
+                  /* Image for services 1, 3, 5 - positioned on the right */
+                  <div className="absolute right-0 translate-x-[20%] top-1/2 -translate-y-1/2" style={{ width: '300px' }}>
+                    <div className="relative" style={{ margin: '0.5cm 0' }}>
+                      <img
+                        src={service.image}
+                        alt={service.title}
+                        className="w-full aspect-square object-cover"
+                      />
+                    </div>
                   </div>
-                </div>
+                )}
               </div>
             </div>
           ))}
