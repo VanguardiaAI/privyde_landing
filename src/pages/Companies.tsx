@@ -276,7 +276,7 @@ const Companies = () => {
               <div className="absolute inset-0 flex flex-col justify-between">
                 {/* Content */}
                 <div className="flex-1 flex flex-col justify-end text-left px-4 pb-4">
-                  <p className={`text-sm text-white/90 overflow-hidden transition-all duration-500 pl-6 max-w-[80%] ${
+                  <p className={`text-sm text-white/90 overflow-hidden transition-all duration-500 pl-12 max-w-[80%] ${
                     activeMobileAccordionIndex === 0 ? 'max-h-40' : 'max-h-0'
                   }`}>
                     Garantiza llegadas puntuales y salidas fluidas para sus ejecutivos y colaboradores. Chóferes profesionales, flota moderna y cobertura global para hacer de cada reunión una experiencia sin fricciones.
@@ -308,7 +308,7 @@ const Companies = () => {
               <div className="absolute inset-0 flex flex-col justify-between">
                 {/* Content */}
                 <div className="flex-1 flex flex-col justify-end text-left px-4 pb-4">
-                  <p className={`text-sm text-white/90 overflow-hidden transition-all duration-500 pl-6 max-w-[80%] ${
+                  <p className={`text-sm text-white/90 overflow-hidden transition-all duration-500 pl-12 max-w-[80%] ${
                     activeMobileAccordionIndex === 1 ? 'max-h-40' : 'max-h-0'
                   }`}>
                     Conectamos ciudades con el máximo confort. Trabaje sin esfuerzo mientras viaja entre destinos. Ideal para ejecutivos que valoran su tiempo y productividad en trayectos largos.
@@ -340,7 +340,7 @@ const Companies = () => {
               <div className="absolute inset-0 flex flex-col justify-between">
                 {/* Content */}
                 <div className="flex-1 flex flex-col justify-end text-left px-4 pb-4">
-                  <p className={`text-sm text-white/90 overflow-hidden transition-all duration-500 pl-6 max-w-[80%] ${
+                  <p className={`text-sm text-white/90 overflow-hidden transition-all duration-500 pl-12 max-w-[80%] ${
                     activeMobileAccordionIndex === 2 ? 'max-h-40' : 'max-h-0'
                   }`}>
                     Servicio global de traslados aeroportuarios. Monitoreo de vuelos en tiempo real, recepción personalizada y gestión integral de equipaje en más de 500 aeropuertos internacionales.
@@ -372,7 +372,7 @@ const Companies = () => {
               <div className="absolute inset-0 flex flex-col justify-between">
                 {/* Content */}
                 <div className="flex-1 flex flex-col justify-end text-left px-4 pb-4">
-                  <p className={`text-sm text-white/90 overflow-hidden transition-all duration-500 pl-6 max-w-[80%] ${
+                  <p className={`text-sm text-white/90 overflow-hidden transition-all duration-500 pl-12 max-w-[80%] ${
                     activeMobileAccordionIndex === 3 ? 'max-h-40' : 'max-h-0'
                   }`}>
                     Impresione a sus invitados con un servicio excepcional. Atención personalizada y vehículos premium para fortalecer relaciones comerciales desde el primer momento.
@@ -404,7 +404,7 @@ const Companies = () => {
               <div className="absolute inset-0 flex flex-col justify-between">
                 {/* Content */}
                 <div className="flex-1 flex flex-col justify-end text-left px-4 pb-4">
-                  <p className={`text-sm text-white/90 overflow-hidden transition-all duration-500 pl-6 max-w-[80%] ${
+                  <p className={`text-sm text-white/90 overflow-hidden transition-all duration-500 pl-12 max-w-[80%] ${
                     activeMobileAccordionIndex === 4 ? 'max-h-40' : 'max-h-0'
                   }`}>
                     Flexibilidad total para agendas dinámicas. Reserve un chófer dedicado por horas o días completos. Ideal para roadshows, eventos corporativos o jornadas con múltiples reuniones.
