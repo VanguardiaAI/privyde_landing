@@ -215,7 +215,7 @@ const Companies = () => {
         
         <div className="relative z-10 h-full flex items-end pb-6 md:pb-16">
           <div className="container mx-auto px-6">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white tracking-wider uppercase text-center" style={{ fontFamily: 'CONTHRAX-SB' }}>
+            <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold text-white tracking-wider uppercase text-center" style={{ fontFamily: 'CONTHRAX-SB' }}>
               PARA EMPRESAS
             </h1>
           </div>
@@ -653,7 +653,7 @@ const Companies = () => {
         <div className="container mx-auto px-4">
           {/* Title */}
           <h2
-            className="text-3xl md:text-5xl font-bold text-center text-white mb-16"
+            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center text-white mb-12 md:mb-16"
             style={{ fontFamily: 'CONTHRAX-SB, sans-serif', textTransform: 'uppercase', letterSpacing: '0.05em' }}
           >
             ALIANZAS ESTRATÉGICAS<br />QUE AGREGAN VALOR
@@ -915,7 +915,7 @@ const Companies = () => {
               
               {/* Title overlay */}
               <div className="absolute inset-0 flex items-end justify-center z-20 pb-20 md:pb-24">
-                <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-white uppercase tracking-wider text-center px-4" style={{ fontFamily: 'CONTHRAX-SB' }}>
+                <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white uppercase tracking-wider text-center px-4" style={{ fontFamily: 'CONTHRAX-SB' }}>
                   BENEFICIOS PARA TU EMPRESA
                 </h2>
               </div>
@@ -1198,7 +1198,7 @@ const Companies = () => {
       <section className="bg-black py-16 md:py-24 pb-24 md:pb-32">
         <div className="container mx-auto px-4 max-w-4xl">
           {/* Title */}
-          <h2 className="text-3xl md:text-5xl font-bold text-center text-white mb-4 uppercase" style={{ fontFamily: 'CONTHRAX-SB' }}>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center text-white mb-4 uppercase" style={{ fontFamily: 'CONTHRAX-SB' }}>
             ¿LISTO PARA ELEVAR<br />
             LA MOVILIDAD DE TU EMPRESA?
           </h2>
