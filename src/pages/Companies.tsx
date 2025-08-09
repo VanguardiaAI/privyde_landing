@@ -274,16 +274,22 @@ const Companies = () => {
                 />
               </div>
               <div className="absolute inset-0 flex flex-col justify-between">
-                {/* Content */}
-                <div className="flex-1 flex flex-col justify-end text-left px-4 pb-4">
-                  <p className={`text-sm text-white/90 overflow-hidden transition-all duration-500 pl-12 pr-4 ${
-                    activeMobileAccordionIndex === 0 ? 'max-h-40' : 'max-h-0'
-                  }`}>
+                {/* Content when expanded */}
+                <div className={`flex-1 flex flex-col justify-end items-start px-6 pb-6 transition-all duration-500 ${
+                  activeMobileAccordionIndex === 0 ? 'opacity-100' : 'opacity-0 pointer-events-none'
+                }`}>
+                  <h3 className="text-lg font-bold text-white mb-3 text-left">
+                    Viajes de negocios y reuniones
+                  </h3>
+                  <p className="text-sm text-white/90 leading-relaxed text-left">
                     Garantiza llegadas puntuales y salidas fluidas para sus ejecutivos y colaboradores. Chóferes profesionales, flota moderna y cobertura global para hacer de cada reunión una experiencia sin fricciones.
                   </p>
                 </div>
-                {/* Vertical title at bottom */}
-                <div className="absolute bottom-8 left-8">
+                
+                {/* Vertical title when collapsed */}
+                <div className={`absolute bottom-8 left-8 transition-all duration-500 ${
+                  activeMobileAccordionIndex === 0 ? 'opacity-0' : 'opacity-100'
+                }`}>
                   <h3 className="text-sm md:text-base font-bold text-white whitespace-nowrap" style={{ transform: 'rotate(-90deg) translateY(-50%)', transformOrigin: '0 50%' }}>
                     Viajes de negocios y reuniones
                   </h3>
@@ -306,16 +312,22 @@ const Companies = () => {
                 />
               </div>
               <div className="absolute inset-0 flex flex-col justify-between">
-                {/* Content */}
-                <div className="flex-1 flex flex-col justify-end text-left px-4 pb-4">
-                  <p className={`text-sm text-white/90 overflow-hidden transition-all duration-500 pl-12 pr-4 ${
-                    activeMobileAccordionIndex === 1 ? 'max-h-40' : 'max-h-0'
-                  }`}>
+                {/* Content when expanded */}
+                <div className={`flex-1 flex flex-col justify-end items-start px-6 pb-6 transition-all duration-500 ${
+                  activeMobileAccordionIndex === 1 ? 'opacity-100' : 'opacity-0 pointer-events-none'
+                }`}>
+                  <h3 className="text-lg font-bold text-white mb-3 text-left">
+                    Traslados interciudad
+                  </h3>
+                  <p className="text-sm text-white/90 leading-relaxed text-left">
                     Conectamos ciudades con el máximo confort. Trabaje sin esfuerzo mientras viaja entre destinos. Ideal para ejecutivos que valoran su tiempo y productividad en trayectos largos.
                   </p>
                 </div>
-                {/* Vertical title at bottom */}
-                <div className="absolute bottom-8 left-8">
+                
+                {/* Vertical title when collapsed */}
+                <div className={`absolute bottom-8 left-8 transition-all duration-500 ${
+                  activeMobileAccordionIndex === 1 ? 'opacity-0' : 'opacity-100'
+                }`}>
                   <h3 className="text-sm md:text-base font-bold text-white whitespace-nowrap" style={{ transform: 'rotate(-90deg) translateY(-50%)', transformOrigin: '0 50%' }}>
                     Traslados interciudad
                   </h3>
@@ -338,16 +350,22 @@ const Companies = () => {
                 />
               </div>
               <div className="absolute inset-0 flex flex-col justify-between">
-                {/* Content */}
-                <div className="flex-1 flex flex-col justify-end text-left px-4 pb-4">
-                  <p className={`text-sm text-white/90 overflow-hidden transition-all duration-500 pl-12 pr-4 ${
-                    activeMobileAccordionIndex === 2 ? 'max-h-40' : 'max-h-0'
-                  }`}>
+                {/* Content when expanded */}
+                <div className={`flex-1 flex flex-col justify-end items-start px-6 pb-6 transition-all duration-500 ${
+                  activeMobileAccordionIndex === 2 ? 'opacity-100' : 'opacity-0 pointer-events-none'
+                }`}>
+                  <h3 className="text-lg font-bold text-white mb-3 text-left">
+                    Aeropuertos en todo el mundo
+                  </h3>
+                  <p className="text-sm text-white/90 leading-relaxed text-left">
                     Servicio global de traslados aeroportuarios. Monitoreo de vuelos en tiempo real, recepción personalizada y gestión integral de equipaje en más de 500 aeropuertos internacionales.
                   </p>
                 </div>
-                {/* Vertical title at bottom */}
-                <div className="absolute bottom-8 left-8">
+                
+                {/* Vertical title when collapsed */}
+                <div className={`absolute bottom-8 left-8 transition-all duration-500 ${
+                  activeMobileAccordionIndex === 2 ? 'opacity-0' : 'opacity-100'
+                }`}>
                   <h3 className="text-sm md:text-base font-bold text-white whitespace-nowrap" style={{ transform: 'rotate(-90deg) translateY(-50%)', transformOrigin: '0 50%' }}>
                     Aeropuertos en todo el mundo
                   </h3>
@@ -370,16 +388,22 @@ const Companies = () => {
                 />
               </div>
               <div className="absolute inset-0 flex flex-col justify-between">
-                {/* Content */}
-                <div className="flex-1 flex flex-col justify-end text-left px-4 pb-4">
-                  <p className={`text-sm text-white/90 overflow-hidden transition-all duration-500 pl-12 pr-4 ${
-                    activeMobileAccordionIndex === 3 ? 'max-h-40' : 'max-h-0'
-                  }`}>
+                {/* Content when expanded */}
+                <div className={`flex-1 flex flex-col justify-end items-start px-6 pb-6 transition-all duration-500 ${
+                  activeMobileAccordionIndex === 3 ? 'opacity-100' : 'opacity-0 pointer-events-none'
+                }`}>
+                  <h3 className="text-lg font-bold text-white mb-3 text-left">
+                    Transporte para clientes y socios
+                  </h3>
+                  <p className="text-sm text-white/90 leading-relaxed text-left">
                     Impresione a sus invitados con un servicio excepcional. Atención personalizada y vehículos premium para fortalecer relaciones comerciales desde el primer momento.
                   </p>
                 </div>
-                {/* Vertical title at bottom */}
-                <div className="absolute bottom-8 left-8">
+                
+                {/* Vertical title when collapsed */}
+                <div className={`absolute bottom-8 left-8 transition-all duration-500 ${
+                  activeMobileAccordionIndex === 3 ? 'opacity-0' : 'opacity-100'
+                }`}>
                   <h3 className="text-sm md:text-base font-bold text-white whitespace-nowrap" style={{ transform: 'rotate(-90deg) translateY(-50%)', transformOrigin: '0 50%' }}>
                     Transporte para clientes y socios
                   </h3>
@@ -402,16 +426,22 @@ const Companies = () => {
                 />
               </div>
               <div className="absolute inset-0 flex flex-col justify-between">
-                {/* Content */}
-                <div className="flex-1 flex flex-col justify-end text-left px-4 pb-4">
-                  <p className={`text-sm text-white/90 overflow-hidden transition-all duration-500 pl-12 pr-4 ${
-                    activeMobileAccordionIndex === 4 ? 'max-h-40' : 'max-h-0'
-                  }`}>
+                {/* Content when expanded */}
+                <div className={`flex-1 flex flex-col justify-end items-start px-6 pb-6 transition-all duration-500 ${
+                  activeMobileAccordionIndex === 4 ? 'opacity-100' : 'opacity-0 pointer-events-none'
+                }`}>
+                  <h3 className="text-lg font-bold text-white mb-3 text-left">
+                    Chóferes corporativos por hora o día completo
+                  </h3>
+                  <p className="text-sm text-white/90 leading-relaxed text-left">
                     Flexibilidad total para agendas dinámicas. Reserve un chófer dedicado por horas o días completos. Ideal para roadshows, eventos corporativos o jornadas con múltiples reuniones.
                   </p>
                 </div>
-                {/* Vertical title at bottom */}
-                <div className="absolute bottom-8 left-8">
+                
+                {/* Vertical title when collapsed */}
+                <div className={`absolute bottom-8 left-8 transition-all duration-500 ${
+                  activeMobileAccordionIndex === 4 ? 'opacity-0' : 'opacity-100'
+                }`}>
                   <h3 className="text-sm md:text-base font-bold text-white whitespace-nowrap" style={{ transform: 'rotate(-90deg) translateY(-50%)', transformOrigin: '0 50%' }}>
                     Chóferes corporativos por hora o día completo
                   </h3>
