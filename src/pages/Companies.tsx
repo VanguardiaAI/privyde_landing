@@ -290,10 +290,10 @@ const Companies = () => {
                 <div className={`flex-1 flex flex-col justify-end items-start px-6 pb-6 ${
                   activeMobileAccordionIndex === 0 ? 'opacity-100 transition-opacity duration-200' : 'opacity-0 pointer-events-none'
                 }`}>
-                  <h3 className="text-lg font-bold text-white mb-3 text-left">
+                  <h3 className="text-xl font-bold text-white mb-3 text-left">
                     Viajes de negocios y reuniones
                   </h3>
-                  <p className="text-sm text-white/90 leading-relaxed text-left">
+                  <p className="text-base text-white/90 leading-relaxed text-left">
                     Garantiza llegadas puntuales y salidas fluidas para sus ejecutivos y colaboradores. Chóferes profesionales, flota moderna y cobertura global para hacer de cada reunión una experiencia sin fricciones.
                   </p>
                 </div>
@@ -333,10 +333,10 @@ const Companies = () => {
                 <div className={`flex-1 flex flex-col justify-end items-start px-6 pb-6 ${
                   activeMobileAccordionIndex === 1 ? 'opacity-100' : 'opacity-0 pointer-events-none'
                 }`}>
-                  <h3 className="text-lg font-bold text-white mb-3 text-left">
+                  <h3 className="text-xl font-bold text-white mb-3 text-left">
                     Traslados interciudad
                   </h3>
-                  <p className="text-sm text-white/90 leading-relaxed text-left">
+                  <p className="text-base text-white/90 leading-relaxed text-left">
                     Conectamos ciudades con el máximo confort. Trabaje sin esfuerzo mientras viaja entre destinos. Ideal para ejecutivos que valoran su tiempo y productividad en trayectos largos.
                   </p>
                 </div>
@@ -376,10 +376,10 @@ const Companies = () => {
                 <div className={`flex-1 flex flex-col justify-end items-start px-6 pb-6 ${
                   activeMobileAccordionIndex === 2 ? 'opacity-100' : 'opacity-0 pointer-events-none'
                 }`}>
-                  <h3 className="text-lg font-bold text-white mb-3 text-left">
+                  <h3 className="text-xl font-bold text-white mb-3 text-left">
                     Aeropuertos en todo el mundo
                   </h3>
-                  <p className="text-sm text-white/90 leading-relaxed text-left">
+                  <p className="text-base text-white/90 leading-relaxed text-left">
                     Servicio global de traslados aeroportuarios. Monitoreo de vuelos en tiempo real, recepción personalizada y gestión integral de equipaje en más de 500 aeropuertos internacionales.
                   </p>
                 </div>
@@ -419,10 +419,10 @@ const Companies = () => {
                 <div className={`flex-1 flex flex-col justify-end items-start px-6 pb-6 ${
                   activeMobileAccordionIndex === 3 ? 'opacity-100' : 'opacity-0 pointer-events-none'
                 }`}>
-                  <h3 className="text-lg font-bold text-white mb-3 text-left">
+                  <h3 className="text-xl font-bold text-white mb-3 text-left">
                     Transporte para clientes y socios
                   </h3>
-                  <p className="text-sm text-white/90 leading-relaxed text-left">
+                  <p className="text-base text-white/90 leading-relaxed text-left">
                     Impresione a sus invitados con un servicio excepcional. Atención personalizada y vehículos premium para fortalecer relaciones comerciales desde el primer momento.
                   </p>
                 </div>
@@ -462,10 +462,10 @@ const Companies = () => {
                 <div className={`flex-1 flex flex-col justify-end items-start px-6 pb-6 ${
                   activeMobileAccordionIndex === 4 ? 'opacity-100' : 'opacity-0 pointer-events-none'
                 }`}>
-                  <h3 className="text-lg font-bold text-white mb-3 text-left">
+                  <h3 className="text-xl font-bold text-white mb-3 text-left">
                     Chóferes corporativos por hora o día completo
                   </h3>
-                  <p className="text-sm text-white/90 leading-relaxed text-left">
+                  <p className="text-base text-white/90 leading-relaxed text-left">
                     Flexibilidad total para agendas dinámicas. Reserve un chófer dedicado por horas o días completos. Ideal para roadshows, eventos corporativos o jornadas con múltiples reuniones.
                   </p>
                 </div>
