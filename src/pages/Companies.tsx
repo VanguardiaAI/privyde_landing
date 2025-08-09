@@ -262,8 +262,9 @@ const Companies = () => {
             {/* Service 1 */}
             <div 
               className={`relative rounded-xl overflow-hidden transition-all duration-500 cursor-pointer ${
-                activeMobileAccordionIndex === 0 ? 'w-[calc(100vw-8rem)] max-w-[350px] z-[20]' : 'w-[60px] sm:w-[80px] z-[10]'
+                activeMobileAccordionIndex === 0 ? 'w-[calc(100vw-8rem)] max-w-[350px]' : 'w-[60px] sm:w-[80px]'
               }`}
+              style={{ zIndex: 0 > activeMobileAccordionIndex ? 10 : 10 }}
               onClick={() => setActiveMobileAccordionIndex(0)}
             >
               <div className="absolute inset-0 overflow-hidden">
@@ -300,8 +301,9 @@ const Companies = () => {
             {/* Service 2 */}
             <div 
               className={`relative rounded-xl overflow-hidden transition-all duration-500 cursor-pointer -ml-[10px] ${
-                activeMobileAccordionIndex === 1 ? 'w-[calc(100vw-8rem)] max-w-[350px] z-[20]' : 'w-[60px] sm:w-[80px] z-[11]'
+                activeMobileAccordionIndex === 1 ? 'w-[calc(100vw-8rem)] max-w-[350px]' : 'w-[60px] sm:w-[80px]'
               }`}
+              style={{ zIndex: 1 > activeMobileAccordionIndex ? 11 : 10 }}
               onClick={() => setActiveMobileAccordionIndex(1)}
             >
               <div className="absolute inset-0 overflow-hidden">
@@ -338,8 +340,9 @@ const Companies = () => {
             {/* Service 3 */}
             <div 
               className={`relative rounded-xl overflow-hidden transition-all duration-500 cursor-pointer -ml-[10px] ${
-                activeMobileAccordionIndex === 2 ? 'w-[calc(100vw-8rem)] max-w-[350px] z-[20]' : 'w-[60px] sm:w-[80px] z-[12]'
+                activeMobileAccordionIndex === 2 ? 'w-[calc(100vw-8rem)] max-w-[350px]' : 'w-[60px] sm:w-[80px]'
               }`}
+              style={{ zIndex: 2 > activeMobileAccordionIndex ? 12 : 10 }}
               onClick={() => setActiveMobileAccordionIndex(2)}
             >
               <div className="absolute inset-0 overflow-hidden">
@@ -376,8 +379,9 @@ const Companies = () => {
             {/* Service 4 */}
             <div 
               className={`relative rounded-xl overflow-hidden transition-all duration-500 cursor-pointer -ml-[10px] ${
-                activeMobileAccordionIndex === 3 ? 'w-[calc(100vw-8rem)] max-w-[350px] z-[20]' : 'w-[60px] sm:w-[80px] z-[13]'
+                activeMobileAccordionIndex === 3 ? 'w-[calc(100vw-8rem)] max-w-[350px]' : 'w-[60px] sm:w-[80px]'
               }`}
+              style={{ zIndex: 3 > activeMobileAccordionIndex ? 13 : 10 }}
               onClick={() => setActiveMobileAccordionIndex(3)}
             >
               <div className="absolute inset-0 overflow-hidden">
@@ -414,8 +418,9 @@ const Companies = () => {
             {/* Service 5 - Default open */}
             <div 
               className={`relative rounded-xl overflow-hidden transition-all duration-500 cursor-pointer -ml-[10px] ${
-                activeMobileAccordionIndex === 4 ? 'w-[calc(100vw-8rem)] max-w-[350px] z-[20]' : 'w-[60px] sm:w-[80px] z-[14]'
+                activeMobileAccordionIndex === 4 ? 'w-[calc(100vw-8rem)] max-w-[350px]' : 'w-[60px] sm:w-[80px]'
               }`}
+              style={{ zIndex: 4 > activeMobileAccordionIndex ? 14 : 10 }}
               onClick={() => setActiveMobileAccordionIndex(4)}
             >
               <div className="absolute inset-0 overflow-hidden">
