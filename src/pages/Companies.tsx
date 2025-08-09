@@ -1237,14 +1237,62 @@ const Companies = () => {
                 </div>
               </div>
 
-              {/* Country, Prefix and Phone Row */}
-              <div className="grid grid-cols-3 gap-2 md:gap-4">
+              {/* Country Row - Mobile Only */}
+              <div className="md:hidden">
+                <label className="block text-sm font-medium text-gray-700 mb-2">
+                  País
+                </label>
+                <select
+                  className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent appearance-none"
+                  value="España"
+                >
+                  <option>España</option>
+                  <option>México</option>
+                  <option>Argentina</option>
+                  <option>Colombia</option>
+                  <option>Chile</option>
+                  <option>Perú</option>
+                </select>
+              </div>
+
+              {/* Prefix and Phone Row - Mobile */}
+              <div className="grid grid-cols-2 gap-4 md:hidden">
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                    Prefijo
+                  </label>
+                  <select
+                    className="w-full px-3 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent"
+                    value="+34"
+                  >
+                    <option>+34</option>
+                    <option>+52</option>
+                    <option>+54</option>
+                    <option>+57</option>
+                    <option>+56</option>
+                    <option>+51</option>
+                  </select>
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                    Número de Teléfono
+                  </label>
+                  <input
+                    type="tel"
+                    className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent"
+                    required
+                  />
+                </div>
+              </div>
+
+              {/* Country, Prefix and Phone Row - Desktop Only */}
+              <div className="hidden md:grid grid-cols-3 gap-4">
                 <div className="col-span-1">
-                  <label className="block text-xs md:text-sm font-medium text-gray-700 mb-1 md:mb-2">
+                  <label className="block text-sm font-medium text-gray-700 mb-2">
                     País
                   </label>
                   <select
-                    className="w-full px-2 md:px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent appearance-none text-sm md:text-base"
+                    className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent appearance-none"
                     value="España"
                   >
                     <option>España</option>
@@ -1256,11 +1304,11 @@ const Companies = () => {
                   </select>
                 </div>
                 <div className="col-span-1">
-                  <label className="block text-xs md:text-sm font-medium text-gray-700 mb-1 md:mb-2">
+                  <label className="block text-sm font-medium text-gray-700 mb-2">
                     Prefijo
                   </label>
                   <select
-                    className="w-full px-2 md:px-3 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent text-sm md:text-base"
+                    className="w-full px-3 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent"
                     value="+34"
                   >
                     <option>+34</option>
@@ -1272,12 +1320,12 @@ const Companies = () => {
                   </select>
                 </div>
                 <div className="col-span-1">
-                  <label className="block text-xs md:text-sm font-medium text-gray-700 mb-1 md:mb-2">
+                  <label className="block text-sm font-medium text-gray-700 mb-2">
                     Número de Teléfono
                   </label>
                   <input
                     type="tel"
-                    className="w-full px-2 md:px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent text-sm md:text-base"
+                    className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent"
                     required
                   />
                 </div>
@@ -1308,14 +1356,48 @@ const Companies = () => {
                 />
               </div>
 
-              {/* Company Size and How did you hear */}
-              <div className="grid grid-cols-2 gap-4 md:gap-6">
+              {/* Company Size - Mobile Full Width */}
+              <div className="md:hidden">
+                <label className="block text-sm font-medium text-gray-700 mb-2">
+                  Tamaño de la empresa
+                </label>
+                <select
+                  className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent appearance-none"
+                  value="1-10 empleados"
+                >
+                  <option>1-10 empleados</option>
+                  <option>11-50 empleados</option>
+                  <option>51-200 empleados</option>
+                  <option>201-500 empleados</option>
+                  <option>500+ empleados</option>
+                </select>
+              </div>
+
+              {/* How did you hear - Mobile Full Width */}
+              <div className="md:hidden">
+                <label className="block text-sm font-medium text-gray-700 mb-2">
+                  ¿Cómo se enteró de nosotros?
+                </label>
+                <select
+                  className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent appearance-none"
+                  value="Búsqueda en Google"
+                >
+                  <option>Búsqueda en Google</option>
+                  <option>Redes sociales</option>
+                  <option>Recomendación</option>
+                  <option>Publicidad</option>
+                  <option>Otro</option>
+                </select>
+              </div>
+
+              {/* Company Size and How did you hear - Desktop Only */}
+              <div className="hidden md:grid grid-cols-2 gap-6">
                 <div>
-                  <label className="block text-xs md:text-sm font-medium text-gray-700 mb-1 md:mb-2">
+                  <label className="block text-sm font-medium text-gray-700 mb-2">
                     Tamaño de la empresa
                   </label>
                   <select
-                    className="w-full px-2 md:px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent appearance-none text-sm md:text-base"
+                    className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent appearance-none"
                     value="1-10 empleados"
                   >
                     <option>1-10 empleados</option>
@@ -1326,11 +1408,11 @@ const Companies = () => {
                   </select>
                 </div>
                 <div>
-                  <label className="block text-xs md:text-sm font-medium text-gray-700 mb-1 md:mb-2">
+                  <label className="block text-sm font-medium text-gray-700 mb-2">
                     ¿Cómo se enteró de nosotros?
                   </label>
                   <select
-                    className="w-full px-2 md:px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent appearance-none text-sm md:text-base"
+                    className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent appearance-none"
                     value="Búsqueda en Google"
                   >
                     <option>Búsqueda en Google</option>
