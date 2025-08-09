@@ -197,14 +197,16 @@ const Companies = () => {
       <div className="min-h-screen bg-black">
         <Navbar />
         {/* Hero Section */}
-        <section className="relative h-[40vh] md:h-[70vh] overflow-hidden bg-black">
+        <section className="relative h-[35vh] md:h-[70vh] overflow-hidden bg-black">
         <div className="absolute inset-0 overflow-hidden">
           <img
             src="/images/bussines/Banner_empresas.webp"
             alt="Para empresas"
-            className="w-full md:w-[115%] h-full object-cover object-center md:object-left"
-            style={{ backgroundColor: '#000000', objectPosition: '35% center' }}
+            className="w-full md:w-[115%] h-[120%] md:h-full object-cover object-center md:object-left"
+            style={{ backgroundColor: '#000000', objectPosition: '20% 40%' }}
           />
+          {/* Subtle black filter overlay */}
+          <div className="absolute inset-0 bg-black/20" />
           {/* Gradient overlay at bottom */}
           <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent via-[50%] to-black" />
           {/* Extra bottom gradient for deeper black */}
