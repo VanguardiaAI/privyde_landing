@@ -487,8 +487,9 @@ const Companies = () => {
             {/* Service 1 */}
             <div 
               className={`relative rounded-xl overflow-hidden transition-all duration-700 cursor-pointer flex-shrink-0 ${
-                activeAccordionIndex === 0 ? 'w-[380px] z-10' : 'w-[200px] z-[1]'
+                activeAccordionIndex === 0 ? 'w-[380px]' : 'w-[200px]'
               }`}
+              style={{ zIndex: 1 }}
               onClick={() => setActiveAccordionIndex(0)}
               onMouseEnter={() => setActiveAccordionIndex(0)}
             >
@@ -519,8 +520,9 @@ const Companies = () => {
             {/* Service 2 */}
             <div 
               className={`relative rounded-xl overflow-hidden transition-all duration-700 cursor-pointer flex-shrink-0 -ml-[50px] ${
-                activeAccordionIndex === 1 ? 'w-[380px] z-10' : 'w-[200px] z-[2]'
+                activeAccordionIndex === 1 ? 'w-[380px]' : 'w-[200px]'
               }`}
+              style={{ zIndex: 2 }}
               onClick={() => setActiveAccordionIndex(1)}
               onMouseEnter={() => setActiveAccordionIndex(1)}
             >
@@ -551,8 +553,9 @@ const Companies = () => {
             {/* Service 3 */}
             <div 
               className={`relative rounded-xl overflow-hidden transition-all duration-700 cursor-pointer flex-shrink-0 -ml-[50px] ${
-                activeAccordionIndex === 2 ? 'w-[380px] z-10' : 'w-[200px] z-[3]'
+                activeAccordionIndex === 2 ? 'w-[380px]' : 'w-[200px]'
               }`}
+              style={{ zIndex: 3 }}
               onClick={() => setActiveAccordionIndex(2)}
               onMouseEnter={() => setActiveAccordionIndex(2)}
             >
@@ -583,8 +586,9 @@ const Companies = () => {
             {/* Service 4 */}
             <div 
               className={`relative rounded-xl overflow-hidden transition-all duration-700 cursor-pointer flex-shrink-0 -ml-[50px] ${
-                activeAccordionIndex === 3 ? 'w-[380px] z-10' : 'w-[200px] z-[4]'
+                activeAccordionIndex === 3 ? 'w-[380px]' : 'w-[200px]'
               }`}
+              style={{ zIndex: 4 }}
               onClick={() => setActiveAccordionIndex(3)}
               onMouseEnter={() => setActiveAccordionIndex(3)}
             >
@@ -615,8 +619,9 @@ const Companies = () => {
             {/* Service 5 */}
             <div 
               className={`relative rounded-xl overflow-hidden transition-all duration-700 cursor-pointer flex-shrink-0 -ml-[50px] ${
-                activeAccordionIndex === 4 ? 'w-[380px] z-10' : 'w-[200px] z-[5]'
+                activeAccordionIndex === 4 ? 'w-[380px]' : 'w-[200px]'
               }`}
+              style={{ zIndex: 5 }}
               onClick={() => setActiveAccordionIndex(4)}
               onMouseEnter={() => setActiveAccordionIndex(4)}
             >
