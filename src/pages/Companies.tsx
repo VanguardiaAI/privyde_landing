@@ -226,7 +226,7 @@ const Companies = () => {
         <div className="w-full h-2 bg-black relative z-10" style={{ marginTop: '-2px', marginBottom: '-2px' }}></div>
 
         {/* Description Section */}
-        <section className="bg-black py-12 md:py-16">
+        <section className="bg-black py-6 md:py-8">
           <div className="container mx-auto px-6 max-w-4xl">
           <h2 className="text-xl md:text-2xl font-semibold text-white mb-4 text-center">
             Eficiencia, representación y protección en cada trayecto.
@@ -239,7 +239,7 @@ const Companies = () => {
           </div>
           {/* Separator line - same as landing page */}
           <div className="container mx-auto px-8 md:px-4">
-            <div className="w-full h-0.5 bg-white mt-8 md:mt-12"></div>
+            <div className="w-full h-0.5 bg-white mt-6 md:mt-8"></div>
           </div>
         </section>
 
