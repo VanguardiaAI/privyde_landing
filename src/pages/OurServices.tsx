@@ -827,11 +827,31 @@ const OurServices: React.FC = () => {
       <div className="relative hidden lg:block">
         <div className="absolute right-0 bottom-0 transform translate-y-2/3 z-30">
           <div className="relative w-[700px] xl:w-[800px] 2xl:w-[900px]">
-            <img
-              src="/images/smartphone_14_pro_31.webp"
-              alt="Privyde App"
-              className="w-full h-auto"
-            />
+            <div className="relative">
+              <img
+                src="/images/smartphone_14_pro_31.webp"
+                alt="Privyde App"
+                className="w-full h-auto"
+              />
+              {/* White gradient overlay for bottom-left corner */}
+              <div className="absolute inset-0 pointer-events-none">
+                {/* Radial gradient for corner */}
+                <div 
+                  className="absolute -bottom-20 -left-20 w-96 h-96"
+                  style={{
+                    background: 'radial-gradient(circle at center, white 0%, rgba(255,255,255,0.9) 15%, rgba(255,255,255,0.7) 30%, rgba(255,255,255,0.4) 50%, transparent 70%)',
+                  }}
+                ></div>
+                {/* Linear gradient for bottom edge */}
+                <div 
+                  className="absolute bottom-0 left-0 w-2/3 h-40"
+                  style={{
+                    background: 'linear-gradient(to top, white 0%, rgba(255,255,255,0.8) 30%, transparent 100%)',
+                    transform: 'translateY(50%)'
+                  }}
+                ></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

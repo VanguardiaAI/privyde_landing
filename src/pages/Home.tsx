@@ -3,7 +3,7 @@ import Image from "@/components/ui/image";
 import BookingForm from "@/components/booking-form";
 import DownloadSection from "@/components/download-section";
 import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+import BlackFooter from "@/components/BlackFooter";
 import SupportChat from "@/components/SupportChat";
 import "../styles/privyde.css";
 import { Link } from "react-router-dom";
@@ -333,9 +333,10 @@ export default function Home() {
       {/* Hero Section - Mobile */}
       <div className="lg:hidden flex flex-col w-full">
         {/* Hero Image Container */}
-        <div className="relative w-full bg-black" style={{ height: '70vh', minHeight: '500px', maxHeight: '600px' }}>
+        <div className="relative w-full bg-black" style={{ height: '50vh', minHeight: '360px', maxHeight: '430px' }}>
           <img
-            className="w-full h-full object-cover object-center"
+            className="w-full h-full object-cover"
+            style={{ objectPosition: 'center 25%' }}
             src="/images/Banner inicio.webp"
             alt="Banner inicio.webp"
           />
@@ -345,7 +346,7 @@ export default function Home() {
           <div className="absolute inset-x-0 bottom-0 h-2 bg-black" />
           
           {/* Title Overlay at bottom */}
-          <div className="absolute bottom-0 left-0 right-0 pb-6 px-4">
+          <div className="absolute bottom-0 left-0 right-0 pb-4 px-4">
             <div className="text-center">
               <h1 className="font-bold text-3xl sm:text-4xl mb-1 text-white" 
                   style={{ 
@@ -369,7 +370,7 @@ export default function Home() {
         
         {/* Booking Form Below Image - Black background section */}
         <div className="bg-black w-full -mt-1">
-          <div className="mx-auto px-8 sm:px-12 w-full max-w-4xl pt-10 pb-6">
+          <div className="mx-auto px-8 sm:px-12 w-full max-w-4xl pt-2 pb-6">
             <div className="bg-white rounded-xl overflow-hidden shadow-2xl">
               <BookingForm data-oid="acct:ti" />
             </div>
@@ -395,8 +396,29 @@ export default function Home() {
           <p className="text-lg mb-10" style={{ fontFamily: 'Panton, sans-serif' }}>
             {t('landing.hero.cta.discoverExperience')}
           </p>
+          {/* Download Buttons */}
+          <div className="flex flex-row items-center justify-center gap-3 mb-12">
+            <a href="#" className="hover:opacity-80 transition-opacity">
+              <Image
+                src="/appstore.png"
+                alt="Download on the App Store"
+                width={120}
+                height={40}
+                className="w-[120px] h-[40px]"
+              />
+            </a>
+            <a href="#" className="hover:opacity-80 transition-opacity">
+              <Image
+                src="/googleplay.png"
+                alt="Get it on Google Play"
+                width={120}
+                height={40}
+                className="w-[120px] h-[40px]"
+              />
+            </a>
+          </div>
           {/* White separator line */}
-          <div className="w-full h-px bg-white/50 mt-12"></div>
+          <div className="w-full h-px bg-white/50"></div>
         </div>
       </div>
 
@@ -844,7 +866,7 @@ export default function Home() {
                      style={{ fontFamily: 'Panton, sans-serif', lineHeight: '1' }}>
                   01
                 </div>
-                <div className="flex-1">
+                <div className="flex-1 text-left">
                   <h3 className="text-lg md:text-xl font-bold text-white mb-1">
                     {t('landing.howItWorks.steps.booking.title')}
                   </h3>
@@ -862,7 +884,7 @@ export default function Home() {
                      style={{ fontFamily: 'Panton, sans-serif', lineHeight: '1' }}>
                   02
                 </div>
-                <div className="flex-1">
+                <div className="flex-1 text-left">
                   <h3 className="text-lg md:text-xl font-bold text-white mb-1">
                     {t('landing.howItWorks.steps.confirmation.title')}
                   </h3>
@@ -880,7 +902,7 @@ export default function Home() {
                      style={{ fontFamily: 'Panton, sans-serif', lineHeight: '1' }}>
                   03
                 </div>
-                <div className="flex-1">
+                <div className="flex-1 text-left">
                   <h3 className="text-lg md:text-xl font-bold text-white mb-1">
                     {t('landing.howItWorks.steps.pickup.title')}
                   </h3>
@@ -898,7 +920,7 @@ export default function Home() {
                      style={{ fontFamily: 'Panton, sans-serif', lineHeight: '1' }}>
                   04
                 </div>
-                <div className="flex-1">
+                <div className="flex-1 text-left">
                   <h3 className="text-lg md:text-xl font-bold text-white mb-1">
                     {t('landing.howItWorks.steps.enjoy.title')}
                   </h3>
@@ -1070,19 +1092,39 @@ export default function Home() {
       <div className="relative hidden lg:block">
         <div className="absolute right-0 bottom-0 transform translate-y-2/3 z-30">
           <div className="relative w-[700px] xl:w-[800px] 2xl:w-[900px]">
-            <Image
-              src="/images/smartphone_14_pro_31.webp"
-              alt="Privyde App"
-              width={900}
-              height={1800}
-              className="w-full h-auto"
-            />
+            <div className="relative">
+              <Image
+                src="/images/smartphone_14_pro_31.webp"
+                alt="Privyde App"
+                width={900}
+                height={1800}
+                className="w-full h-auto"
+              />
+              {/* Black gradient overlay for bottom-left corner */}
+              <div className="absolute inset-0 pointer-events-none">
+                {/* Radial gradient for corner - BLACK */}
+                <div 
+                  className="absolute -bottom-20 -left-20 w-96 h-96"
+                  style={{
+                    background: 'radial-gradient(circle at center, black 0%, rgba(0,0,0,0.9) 15%, rgba(0,0,0,0.7) 30%, rgba(0,0,0,0.4) 50%, transparent 70%)',
+                  }}
+                ></div>
+                {/* Linear gradient for bottom edge - BLACK */}
+                <div 
+                  className="absolute bottom-0 left-0 w-2/3 h-40"
+                  style={{
+                    background: 'linear-gradient(to top, black 0%, rgba(0,0,0,0.8) 30%, transparent 100%)',
+                    transform: 'translateY(50%)'
+                  }}
+                ></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
       {/* Footer */}
-      <Footer data-oid="e28.kz1" />
+      <BlackFooter />
 
       {/* Support Chat */}
       <SupportChat data-oid=".lvmbn_" />

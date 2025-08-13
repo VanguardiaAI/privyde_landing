@@ -5,11 +5,11 @@ import { Link } from "react-router-dom";
 export default function BlackFooter() {
   return (
     <footer className="bg-black text-white relative overflow-hidden">
-      <div className="container mx-auto pl-8 pr-0 py-16 max-w-[1400px]">
+      <div className="container mx-auto px-8 lg:pl-8 lg:pr-0 py-16 max-w-[1400px]">
         <div className="flex flex-col lg:flex-row">
           {/* Left Content - All content in one column */}
-          <div className="lg:w-2/3">
-            <div className="space-y-6 text-left">
+          <div className="lg:w-2/3 relative z-50">
+            <div className="space-y-6 text-center lg:text-left relative z-50">
               {/* Contact Info */}
               <div>
                 <h3 className="text-lg font-bold mb-2">Contáctanos</h3>
