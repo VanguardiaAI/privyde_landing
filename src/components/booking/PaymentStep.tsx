@@ -1,19 +1,17 @@
 import { useState, useEffect } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Loader2, AlertCircle } from "lucide-react";
-import axios from "axios";
+import axiosInstance from "@/config/axios";
 import { loadStripe } from "@stripe/stripe-js";
 import { Elements } from "@stripe/react-stripe-js";
 import CheckoutForm from "../stripe/CheckoutForm";
 
 // Obtener variables de entorno de manera segura
-const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000/api";
 const STRIPE_PUBLISHABLE_KEY = import.meta.env.VITE_STRIPE_PUBLISHABLE_KEY;
 
 // Log para diagnóstico - solo se imprime en desarrollo
 if (import.meta.env.DEV) {
   console.log("Variables de entorno en PaymentStep:", {
-    API_URL,
     // Imprime solo una parte de la clave para evitar exponerla completamente
     STRIPE_KEY: STRIPE_PUBLISHABLE_KEY
       ? `${STRIPE_PUBLISHABLE_KEY.substring(0, 10)}...${STRIPE_PUBLISHABLE_KEY.substring(STRIPE_PUBLISHABLE_KEY.length - 4)}`
@@ -75,7 +73,7 @@ export default function PaymentStep({
         initializedData.sessionId || initializedData.session_id,
       );
 
-      const response = await axios.post(`${API_URL}/payment/create-intent`, {
+      const response = await axiosInstance.post(`/api/payment/create-intent`, {
         amount: amount,
         currency: "eur",
         session_id: initializedData.sessionId || initializedData.session_id,
@@ -99,8 +97,8 @@ export default function PaymentStep({
   const fetchVehicleData = async (vehicleId: string) => {
     try {
       // Llamar al API para obtener los detalles del vehículo
-      const response = await axios.get(
-        `${API_URL}/vehicles/details/${vehicleId}`,
+      const response = await axiosInstance.get(
+        `/api/vehicles/details/${vehicleId}`,
       );
 
       // Actualizar los datos de la sesión con la información del vehículo
@@ -204,8 +202,8 @@ export default function PaymentStep({
         };
 
         // Llamar al endpoint para calcular el precio
-        const response = await axios.post(
-          `${API_URL}/booking/calculate-price`,
+        const response = await axiosInstance.post(
+          `/api/booking/calculate-price`,
           priceData,
         );
 

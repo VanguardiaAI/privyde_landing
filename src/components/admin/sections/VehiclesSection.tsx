@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { PlusCircle, Search, Loader2, AlertTriangle } from "lucide-react";
-import axios from "axios";
+import { api } from "@/config/axios";
 import { useToast } from "@/components/ui/use-toast";
 
 // Importar los componentes específicos para vehículos
@@ -34,20 +34,6 @@ const VehiclesSection = () => {
     fetchVehicles();
   }, []);
 
-  // Función para obtener el token de autenticación
-  const getAuthToken = () => {
-    return localStorage.getItem("authToken");
-  };
-
-  // Configurar headers para las peticiones
-  const getAuthHeaders = () => {
-    const token = getAuthToken();
-    return {
-      headers: {
-        Authorization: token ? `Bearer ${token}` : "",
-      },
-    };
-  };
 
   // Función para obtener todos los vehículos
   const fetchVehicles = async () => {
@@ -55,9 +41,8 @@ const VehiclesSection = () => {
       setLoading(true);
       setError(null);
 
-      const response = await axios.get(
+      const response = await api.get(
         "/api/admin/vehicles/list",
-        getAuthHeaders(),
       );
 
       if (response.data && response.data.vehicles) {
@@ -81,9 +66,8 @@ const VehiclesSection = () => {
     try {
       setLoading(true);
 
-      const response = await axios.get(
+      const response = await api.get(
         `/api/admin/vehicles/${vehicleId}`,
-        getAuthHeaders(),
       );
 
       if (response.data && response.data.vehicle) {
@@ -114,10 +98,9 @@ const VehiclesSection = () => {
     driverIds: string[],
   ) => {
     try {
-      const response = await axios.post(
+      const response = await api.post(
         `/api/admin/collaborators/${collaboratorId}/update-associations`,
         { vehicleId, driverIds },
-        getAuthHeaders(),
       );
 
       if (response.status === 200) {
@@ -151,10 +134,9 @@ const VehiclesSection = () => {
     try {
       setLoading(true);
       const apiVehicleData = adaptVehicleToApi(vehicleData);
-      const response = await axios.post(
+      const response = await api.post(
         "/api/admin/vehicles/create",
         apiVehicleData,
-        getAuthHeaders(),
       );
 
       if (response.status === 201) {
@@ -193,10 +175,9 @@ const VehiclesSection = () => {
     try {
       setLoading(true);
       const apiVehicleData = adaptVehicleToApi(vehicleData);
-      const response = await axios.put(
+      const response = await api.put(
         `/api/admin/vehicles/${vehicleId}/update`,
         apiVehicleData,
-        getAuthHeaders(),
       );
 
       if (response.status === 200) {
@@ -234,9 +215,8 @@ const VehiclesSection = () => {
   const deleteVehicle = async (vehicleId: string) => {
     try {
       setLoading(true);
-      const response = await axios.delete(
+      const response = await api.delete(
         `/api/admin/vehicles/${vehicleId}/delete`,
-        getAuthHeaders(),
       );
 
       if (response.status === 200) {
@@ -265,10 +245,9 @@ const VehiclesSection = () => {
   const toggleVehicleAvailability = async (vehicleId: string) => {
     try {
       setLoading(true);
-      const response = await axios.patch(
+      const response = await api.patch(
         `/api/admin/vehicles/${vehicleId}/toggle-availability`,
         {},
-        getAuthHeaders(),
       );
 
       if (response.status === 200) {

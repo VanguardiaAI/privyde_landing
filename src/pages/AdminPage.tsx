@@ -12,7 +12,6 @@ import {
   LogOut,
   Home,
   PlusCircle,
-  Search,
   ChevronDown,
   Menu,
   Pin,
@@ -47,6 +46,9 @@ import SupportSection from "@/components/admin/sections/SupportSection";
 
 // Importar la sección de blog modularizada
 import BlogSection from "@/components/admin/sections/BlogSection";
+
+// Importar la sección de configuración
+import SettingsSection from "@/components/admin/sections/SettingsSection";
 
 // Definir el tipo para las reservas
 export interface Booking {
@@ -393,24 +395,6 @@ export default function AdminPage() {
 
           {/* Right side - Actions */}
           <div className="flex items-center space-x-4" data-oid="p7j:x2t">
-            {/* Search */}
-            <div
-              className="hidden md:flex items-center relative"
-              data-oid="f1kl0u_"
-            >
-              <input
-                type="text"
-                placeholder="Buscar..."
-                className="pl-9 pr-4 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-1 focus:ring-red-500 w-64"
-                data-oid="mm-kd1u"
-              />
-
-              <Search
-                className="w-4 h-4 text-gray-400 absolute left-3"
-                data-oid="m.jvi8a"
-              />
-            </div>
-
             {/* Notifications */}
             <NotificationsMenu
               onSelectSupportConversation={handleSelectSupportConversation}
@@ -777,35 +761,7 @@ export default function AdminPage() {
 
           {activeSection === "blog" && <BlogSection data-oid="0.ihuyg" />}
 
-          {activeSection === "settings" && (
-            <div
-              className="flex flex-col items-center justify-center h-full"
-              data-oid="4oh9yz5"
-            >
-              <div
-                className="bg-white shadow-lg rounded-xl p-8 max-w-xl w-full text-center"
-                data-oid="xlxwgpz"
-              >
-                <h2
-                  className="text-2xl font-bold text-gray-800 mb-4"
-                  data-oid="h-7tbdg"
-                >
-                  Sección {activeSection}
-                </h2>
-                <p className="text-gray-600 mb-6" data-oid="g_ug:m1">
-                  Esta sección está en desarrollo. Aquí se implementará la
-                  gestión de {activeSection}.
-                </p>
-                <button
-                  className="inline-flex items-center px-4 py-2 bg-black text-white rounded-lg hover:bg-gray-800 transition-colors"
-                  data-oid="rilqqyx"
-                >
-                  <PlusCircle size={18} className="mr-2" data-oid="9vymeq-" />
-                  Continuar desarrollo
-                </button>
-              </div>
-            </div>
-          )}
+          {activeSection === "settings" && <SettingsSection />}
         </main>
       </div>
     </div>

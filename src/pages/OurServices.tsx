@@ -111,7 +111,7 @@ const OurServices: React.FC = () => {
       <Navbar />
       
       {/* Hero Section */}
-      <section className="relative h-[50vh] md:h-screen">
+      <section className="relative h-[40vh] md:h-[60vh]">
         <div className="absolute inset-0">
           <img
             src="/images/our_services/nuestros_servicios_hero.webp"
@@ -125,9 +125,9 @@ const OurServices: React.FC = () => {
           <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-black via-black/80 to-transparent" />
         </div>
         
-        <div className="relative z-10 h-full flex items-end pb-10 md:pb-20">
+        <div className="relative z-10 h-full flex items-end pb-8 md:pb-16">
           <div className="container mx-auto px-6 md:px-0 md:ml-20">
-            <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold text-white tracking-wider uppercase text-center md:text-left" style={{ fontFamily: 'CONTHRAX-SB' }}>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white tracking-wider uppercase text-center md:text-left" style={{ fontFamily: 'CONTHRAX-SB' }}>
               {t('services.hero.title').split('\n').map((line, index) => (
                 <React.Fragment key={index}>
                   {line}

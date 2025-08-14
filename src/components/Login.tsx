@@ -12,7 +12,7 @@ import { Input } from "../components/ui/input";
 import { Label } from "../components/ui/label";
 import { useId, useState } from "react";
 import { useAuth } from "../context/AuthContext";
-import axios from "axios";
+import axiosInstance from "@/config/axios";
 import { GoogleLogin } from "@react-oauth/google";
 
 function Login() {
@@ -44,7 +44,7 @@ function Login() {
   // Nueva función para login con Google
   const handleGoogleLogin = async (credentialResponse: any) => {
     try {
-      const res = await axios.post("/api/auth/google", {
+      const res = await axiosInstance.post("/api/auth/google", {
         credential: credentialResponse.credential,
       });
       setUser(res.data.user);

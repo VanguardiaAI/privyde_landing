@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
 import { useAuth } from "../context/AuthContext";
 import { GoogleLogin } from "@react-oauth/google";
-import axios from "axios";
+import axiosInstance from "@/config/axios";
 import { Mail, Lock } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import BlackFooter from "@/components/BlackFooter";
@@ -41,7 +41,7 @@ export default function LoginPage() {
   const handleGoogleLogin = async (credentialResponse: any) => {
     try {
       // Usar la URL completa del backend en lugar de URL relativa
-      const res = await axios.post(
+      const res = await axiosInstance.post(
         `${import.meta.env.VITE_API_URL?.replace(/\/api$/, "") || "http://localhost:5000"}/api/auth/google`,
         {
           credential: credentialResponse.credential,

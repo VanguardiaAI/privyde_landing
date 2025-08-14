@@ -29,7 +29,8 @@ import {
   Building2,
 } from "lucide-react";
 import { useToast } from "@/components/ui/use-toast";
-import axios from "axios";
+import axiosInstance from "@/config/axios";
+import { isAxiosError } from "axios";
 // Importar componente de detalles del usuario
 import UserDetailsView, { UserExtended } from "./UserDetailsView";
 
@@ -215,22 +216,24 @@ const UsersManager = () => {
         return;
       }
 
-      const response = await axios.get("/api/admin/users/list", {
+      // Build params object only with non-empty values
+      const params: any = {};
+      if (roleFilter !== "all") params.role = roleFilter;
+      if (statusFilter !== "all") params.status = statusFilter;
+      if (tagFilter !== "all") params.tag = tagFilter;
+
+      const response = await axiosInstance.get("/api/admin/users/list", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
-        params: {
-          role: roleFilter !== "all" ? roleFilter : "",
-          status: statusFilter !== "all" ? statusFilter : "",
-          tag: tagFilter !== "all" ? tagFilter : "",
-        },
+        params,
       });
 
       setUsers(response.data.users);
       setError(null);
     } catch (err) {
       console.error("Error al obtener usuarios:", err);
-      if (axios.isAxiosError(err) && err.response?.status === 403) {
+      if (isAxiosError(err) && err.response?.status === 403) {
         setError("No tiene permisos de administrador para ver esta página");
       } else {
         setError("Error al cargar los usuarios. Intente nuevamente");
@@ -269,7 +272,7 @@ const UsersManager = () => {
           return;
         }
 
-        await axios.delete(`/api/admin/users/${selectedUserId}/delete`, {
+        await axiosInstance.delete(`/api/admin/users/${selectedUserId}/delete`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -362,7 +365,7 @@ const UsersManager = () => {
 
       if (editingUser) {
         // Actualizar usuario existente
-        const response = await axios.put(
+        const response = await axiosInstance.put(
           `/api/admin/users/${editingUser.id}/update`,
           userData,
           {
@@ -386,7 +389,7 @@ const UsersManager = () => {
         });
       } else {
         // Crear nuevo usuario
-        const response = await axios.post("/api/admin/users/create", userData, {
+        const response = await axiosInstance.post("/api/admin/users/create", userData, {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -411,7 +414,7 @@ const UsersManager = () => {
       toast({
         title: "Error",
         description:
-          axios.isAxiosError(err) && err.response?.data?.error
+          isAxiosError(err) && err.response?.data?.error
             ? err.response.data.error
             : "No se pudo guardar el usuario. Intente nuevamente",
         variant: "destructive",
@@ -436,7 +439,7 @@ const UsersManager = () => {
         return;
       }
 
-      const response = await axios.get(`/api/admin/users/${userId}`, {
+      const response = await axiosInstance.get(`/api/admin/users/${userId}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -469,7 +472,7 @@ const UsersManager = () => {
           return;
         }
 
-        const response = await axios.get("/api/admin/users/list", {
+        const response = await axiosInstance.get("/api/admin/users/list", {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -506,7 +509,7 @@ const UsersManager = () => {
         return;
       }
 
-      const response = await axios.post(
+      const response = await axiosInstance.post(
         `/api/admin/users/${userId}/tags`,
         {
           action: "add",
@@ -565,7 +568,7 @@ const UsersManager = () => {
         return;
       }
 
-      const response = await axios.post(
+      const response = await axiosInstance.post(
         `/api/admin/users/${userId}/tags`,
         {
           action: "remove",

@@ -15,7 +15,7 @@ import {
   Route,
   User,
 } from "lucide-react";
-import axios from "axios";
+import axiosInstance from "@/config/axios";
 import { cn } from "@/lib/utils";
 
 // Tipo Vehicle unificado (basado en VehicleDetailsView.tsx)
@@ -284,9 +284,8 @@ const VehiclesTable = ({
         await Promise.all(
           driverIds.map(async (driverId) => {
             try {
-              const response = await axios.get(
-                `/api/admin/drivers/${driverId}`,
-                getAuthHeaders(),
+              const response = await axiosInstance.get(
+                `/api/admin/drivers/${driverId}`
               );
               if (response.data && response.data.driver) {
                 driversData[driverId] = {

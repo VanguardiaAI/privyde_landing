@@ -1,5 +1,16 @@
 import { Button } from "@/components/ui/button";
-import { Search } from "lucide-react";
+import { Search, UserPlus } from "lucide-react";
+import { useState } from "react";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog";
+import { userService } from "@/services/userService";
+import { useToast } from "@/components/ui/use-toast";
 
 type ClientTabProps = {
   newBookingFormData: any;
@@ -22,6 +33,64 @@ const ClientTab = ({
   isSearchingClient,
   handleNextTab,
 }: ClientTabProps) => {
+  const [showCreateClientModal, setShowCreateClientModal] = useState(false);
+  const [isCreatingClient, setIsCreatingClient] = useState(false);
+  const [newClientData, setNewClientData] = useState({
+    name: '',
+    email: '',
+    phone: ''
+  });
+  const { toast } = useToast();
+  
+  const handleCreateClient = async () => {
+    if (!newClientData.name || !newClientData.email || !newClientData.phone) {
+      toast({
+        title: "Error",
+        description: "Por favor complete todos los campos",
+        variant: "destructive",
+      });
+      return;
+    }
+    
+    setIsCreatingClient(true);
+    try {
+      // Verificar si el email ya existe
+      const emailExists = await userService.checkEmailExists(newClientData.email);
+      if (emailExists) {
+        toast({
+          title: "Error",
+          description: "Ya existe un cliente con ese email",
+          variant: "destructive",
+        });
+        return;
+      }
+      
+      // Crear el cliente
+      const newClient = await userService.createUser(newClientData);
+      
+      // Seleccionar el cliente creado
+      handleSelectClient(newClient);
+      
+      // Cerrar el modal y limpiar
+      setShowCreateClientModal(false);
+      setNewClientData({ name: '', email: '', phone: '' });
+      
+      toast({
+        title: "Cliente creado",
+        description: "El cliente se ha creado correctamente",
+      });
+    } catch (error) {
+      console.error('Error al crear cliente:', error);
+      toast({
+        title: "Error",
+        description: "No se pudo crear el cliente",
+        variant: "destructive",
+      });
+    } finally {
+      setIsCreatingClient(false);
+    }
+  };
+  
   return (
     <div className="mt-4" data-oid="8u0hojq">
       <div className="bg-gray-50 rounded-md p-4 mb-4" data-oid="aywj6dg">
@@ -87,9 +156,21 @@ const ClientTab = ({
             </div>
           )}
         </div>
-        <p className="text-xs text-gray-500 mt-2" data-oid="6mc89os">
-          Busca primero si el cliente ya existe en el sistema
-        </p>
+        <div className="flex items-center justify-between mt-2">
+          <p className="text-xs text-gray-500" data-oid="6mc89os">
+            Busca primero si el cliente ya existe en el sistema
+          </p>
+          <Button
+            type="button"
+            variant="outline"
+            size="sm"
+            onClick={() => setShowCreateClientModal(true)}
+            className="flex items-center gap-1"
+          >
+            <UserPlus size={14} />
+            Crear cliente
+          </Button>
+        </div>
       </div>
 
       <div className="border-t border-gray-200 pt-4 mb-4" data-oid=".ovhlnc">
@@ -187,6 +268,67 @@ const ClientTab = ({
           Siguiente: Servicio
         </Button>
       </div>
+      
+      {/* Modal para crear cliente rápido */}
+      <Dialog open={showCreateClientModal} onOpenChange={setShowCreateClientModal}>
+        <DialogContent className="sm:max-w-[425px]">
+          <DialogHeader>
+            <DialogTitle>Crear nuevo cliente</DialogTitle>
+            <DialogDescription>
+              Complete los datos del nuevo cliente. Se creará una contraseña temporal.
+            </DialogDescription>
+          </DialogHeader>
+          <div className="grid gap-4 py-4">
+            <div>
+              <label className="text-sm font-medium">Nombre completo</label>
+              <input
+                type="text"
+                value={newClientData.name}
+                onChange={(e) => setNewClientData({...newClientData, name: e.target.value})}
+                className="w-full mt-1 px-3 py-2 border border-gray-300 rounded-md"
+                placeholder="Juan Pérez"
+              />
+            </div>
+            <div>
+              <label className="text-sm font-medium">Email</label>
+              <input
+                type="email"
+                value={newClientData.email}
+                onChange={(e) => setNewClientData({...newClientData, email: e.target.value})}
+                className="w-full mt-1 px-3 py-2 border border-gray-300 rounded-md"
+                placeholder="cliente@ejemplo.com"
+              />
+            </div>
+            <div>
+              <label className="text-sm font-medium">Teléfono</label>
+              <input
+                type="tel"
+                value={newClientData.phone}
+                onChange={(e) => setNewClientData({...newClientData, phone: e.target.value})}
+                className="w-full mt-1 px-3 py-2 border border-gray-300 rounded-md"
+                placeholder="+34 612 345 678"
+              />
+            </div>
+          </div>
+          <DialogFooter>
+            <Button
+              type="button"
+              variant="outline"
+              onClick={() => setShowCreateClientModal(false)}
+              disabled={isCreatingClient}
+            >
+              Cancelar
+            </Button>
+            <Button
+              type="button"
+              onClick={handleCreateClient}
+              disabled={isCreatingClient}
+            >
+              {isCreatingClient ? "Creando..." : "Crear cliente"}
+            </Button>
+          </DialogFooter>
+        </DialogContent>
+      </Dialog>
     </div>
   );
 };

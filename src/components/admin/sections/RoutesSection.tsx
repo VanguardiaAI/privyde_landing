@@ -2,8 +2,9 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Loader2, AlertTriangle, Map } from "lucide-react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import axios from "axios";
+import { api } from "@/config/axios";
 import { useToast } from "@/components/ui/use-toast";
+import axios from "axios";
 
 // Componentes para las pestañas
 import FixedRoutesTab from "../routes/FixedRoutesTab";
@@ -132,20 +133,6 @@ const RoutesSection = () => {
     }
   }, [activeTab]);
 
-  // Función para obtener el token de autenticación
-  const getAuthToken = () => {
-    return localStorage.getItem("authToken");
-  };
-
-  // Configurar headers para las peticiones
-  const getAuthHeaders = () => {
-    const token = getAuthToken();
-    return {
-      headers: {
-        Authorization: token ? `Bearer ${token}` : "",
-      },
-    };
-  };
 
   // Función para obtener rutas fijas
   const fetchFixedRoutes = async () => {
@@ -154,9 +141,8 @@ const RoutesSection = () => {
       setError(null);
 
       // Llamada a la API real
-      const response = await axios.get(
+      const response = await api.get(
         "/api/admin/routes/fixed/list",
-        getAuthHeaders(),
       );
 
       if (response.data && response.data.status === "success") {
@@ -227,9 +213,8 @@ const RoutesSection = () => {
       );
 
       // Llamada a la API
-      const response = await axios.get(
+      const response = await api.get(
         `/api/admin/vehicles/by-collaborator/${collaboratorId}`,
-        getAuthHeaders(),
       );
 
       if (response.data && response.data.vehicles) {
@@ -279,9 +264,8 @@ const RoutesSection = () => {
       setError(null);
 
       // Llamada a la API real
-      const response = await axios.get(
+      const response = await api.get(
         "/api/admin/routes/flexible/list",
-        getAuthHeaders(),
       );
 
       if (response.data && response.data.status === "success") {
@@ -370,10 +354,9 @@ const RoutesSection = () => {
       }
 
       // Llamada a la API real
-      const response = await axios.post(
+      const response = await api.post(
         "/api/admin/routes/fixed/create",
         routeData,
-        getAuthHeaders(),
       );
 
       if (response.data && response.data.status === "success") {
@@ -412,10 +395,9 @@ const RoutesSection = () => {
       setLoading(true);
 
       // Llamada a la API real
-      const response = await axios.post(
+      const response = await api.post(
         "/api/admin/routes/flexible/create",
         zoneData,
-        getAuthHeaders(),
       );
 
       if (response.data && response.data.status === "success") {
@@ -584,11 +566,10 @@ const RoutesSection = () => {
         `Enviando petición PUT a: /api/admin/routes/fixed/${routeId}/update`,
       );
       try {
-        const response = await axios.put(
+        const response = await api.put(
           `/api/admin/routes/fixed/${routeId}/update`,
           routeData,
-          getAuthHeaders(),
-        );
+          );
 
         console.log("Respuesta completa de la API:", response);
         console.log("Estado HTTP:", response.status);
@@ -692,10 +673,9 @@ const RoutesSection = () => {
       setLoading(true);
 
       // Llamada a la API real
-      const response = await axios.put(
+      const response = await api.put(
         `/api/admin/routes/flexible/${zoneId}/update`,
         zoneData,
-        getAuthHeaders(),
       );
 
       if (response.data && response.data.status === "success") {
@@ -735,9 +715,8 @@ const RoutesSection = () => {
       setLoading(true);
 
       // Llamada a la API real
-      const response = await axios.delete(
+      const response = await api.delete(
         `/api/admin/routes/fixed/${routeId}/delete`,
-        getAuthHeaders(),
       );
 
       if (response.data && response.data.status === "success") {
@@ -777,9 +756,8 @@ const RoutesSection = () => {
       setLoading(true);
 
       // Llamada a la API real
-      const response = await axios.delete(
+      const response = await api.delete(
         `/api/admin/routes/flexible/${zoneId}/delete`,
-        getAuthHeaders(),
       );
 
       if (response.data && response.data.status === "success") {
@@ -819,10 +797,9 @@ const RoutesSection = () => {
       setLoading(true);
 
       // Llamada a la API real
-      const response = await axios.patch(
+      const response = await api.patch(
         `/api/admin/routes/fixed/${routeId}/toggle-status`,
         {},
-        getAuthHeaders(),
       );
 
       if (response.data && response.data.status === "success") {
@@ -863,10 +840,9 @@ const RoutesSection = () => {
       setLoading(true);
 
       // Llamada a la API real
-      const response = await axios.patch(
+      const response = await api.patch(
         `/api/admin/routes/flexible/${zoneId}/toggle-status`,
         {},
-        getAuthHeaders(),
       );
 
       if (response.data && response.data.status === "success") {

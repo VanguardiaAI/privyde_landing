@@ -1,12 +1,112 @@
+import { useState } from "react";
+import { bookingService } from "@/services/bookingService";
+import { useToast } from "@/components/ui/use-toast";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+import { ChevronDown } from "lucide-react";
+
 type BookingsTableProps = {
   bookingsData: any[];
   handleViewBookingDetails: (booking: any) => void;
+  activeTab?: 'active' | 'history';
+  onTabChange?: (tab: 'active' | 'history') => void;
+  stats?: {
+    active: number;
+    history: number;
+  };
+  onRefresh?: () => void;
 };
 
 const BookingsTable = ({
   bookingsData,
   handleViewBookingDetails,
+  activeTab = 'active',
+  onTabChange,
+  stats,
+  onRefresh
 }: BookingsTableProps) => {
+  const { toast } = useToast();
+  const [updatingStatus, setUpdatingStatus] = useState<string | null>(null);
+
+  const handleStatusChange = async (booking: any, newStatus: string) => {
+    if (updatingStatus) return;
+    
+    try {
+      setUpdatingStatus(booking.id);
+      await bookingService.updateBookingStatus(booking.id, newStatus);
+      
+      toast({
+        title: "Estado actualizado",
+        description: `El estado de la reserva ${booking.id} ha sido actualizado a ${getStatusLabel(newStatus)}.`,
+      });
+      
+      // Refresh the bookings list
+      onRefresh?.();
+    } catch (error) {
+      console.error('Error updating status:', error);
+      toast({
+        title: "Error",
+        description: "No se pudo actualizar el estado de la reserva.",
+        variant: "destructive",
+      });
+    } finally {
+      setUpdatingStatus(null);
+    }
+  };
+
+  const getStatusLabel = (status: string): string => {
+    const statusLabels: { [key: string]: string } = {
+      pending: "Pendiente",
+      confirmed: "Confirmado",
+      in_progress: "En progreso",
+      completed: "Completado",
+      cancelled: "Cancelado",
+      no_show: "No show"
+    };
+    return statusLabels[status] || status;
+  };
+
+  const getStatusColor = (status: string): string => {
+    switch (status) {
+      case "pending":
+        return "bg-yellow-100 text-yellow-800 hover:bg-yellow-200";
+      case "confirmed":
+        return "bg-green-100 text-green-800 hover:bg-green-200";
+      case "in_progress":
+        return "bg-blue-100 text-blue-800 hover:bg-blue-200";
+      case "completed":
+        return "bg-gray-100 text-gray-800 hover:bg-gray-200";
+      case "cancelled":
+        return "bg-red-100 text-red-800 hover:bg-red-200";
+      case "no_show":
+        return "bg-purple-100 text-purple-800 hover:bg-purple-200";
+      default:
+        return "bg-gray-100 text-gray-800 hover:bg-gray-200";
+    }
+  };
+
+  const getAvailableStatusTransitions = (currentStatus: string): string[] => {
+    switch (currentStatus) {
+      case "pending":
+        return ["confirmed", "cancelled"];
+      case "confirmed":
+        return ["in_progress", "cancelled", "no_show"];
+      case "in_progress":
+        return ["completed", "cancelled"];
+      case "completed":
+        return []; // No transitions from completed
+      case "cancelled":
+        return ["confirmed"]; // Can reactivate if needed
+      case "no_show":
+        return ["confirmed"]; // Can reactivate if needed
+      default:
+        return [];
+    }
+  };
   return (
     <div
       className="bg-white rounded-xl shadow-md overflow-hidden"
@@ -15,16 +115,26 @@ const BookingsTable = ({
       <div className="px-6 py-4 border-b border-gray-200" data-oid="nboxx7g">
         <div className="flex space-x-4" data-oid="jdwfp2b">
           <button
-            className="text-sm px-3 py-2 font-medium text-gray-600 border-b-2 border-red-600"
+            className={`text-sm px-3 py-2 font-medium transition-colors ${
+              activeTab === 'active'
+                ? 'text-gray-600 border-b-2 border-red-600'
+                : 'text-gray-500 hover:text-gray-700'
+            }`}
+            onClick={() => onTabChange?.('active')}
             data-oid="58lw8y9"
           >
-            Reservas activas (23)
+            Reservas activas ({stats?.active || 0})
           </button>
           <button
-            className="text-sm px-3 py-2 text-gray-500 hover:text-gray-700"
+            className={`text-sm px-3 py-2 font-medium transition-colors ${
+              activeTab === 'history'
+                ? 'text-gray-600 border-b-2 border-red-600'
+                : 'text-gray-500 hover:text-gray-700'
+            }`}
+            onClick={() => onTabChange?.('history')}
             data-oid="gkrrfis"
           >
-            Historial (152)
+            Historial ({stats?.history || 0})
           </button>
         </div>
       </div>
@@ -148,35 +258,41 @@ const BookingsTable = ({
                   </div>
                 </td>
                 <td className="px-6 py-4 whitespace-nowrap" data-oid="rliar1c">
-                  <span
-                    className={`px-2 py-1 inline-flex text-xs leading-5 font-semibold rounded-full 
-                    ${
-                      booking.status === "pending"
-                        ? "bg-gray-200 text-yellow-800"
-                        : booking.status === "confirmed"
-                          ? "bg-gray-200 text-green-800"
-                          : booking.status === "in_progress"
-                            ? "bg-gray-200 text-blue-800"
-                            : booking.status === "completed"
-                              ? "bg-gray-100 text-gray-800"
-                              : booking.status === "cancelled"
-                                ? "bg-gray-200 text-gray-800"
-                                : "bg-gray-200 text-purple-800"
-                    }`}
-                    data-oid="g94i5pj"
-                  >
-                    {booking.status === "pending"
-                      ? "Pendiente"
-                      : booking.status === "confirmed"
-                        ? "Confirmado"
-                        : booking.status === "in_progress"
-                          ? "En progreso"
-                          : booking.status === "completed"
-                            ? "Completado"
-                            : booking.status === "cancelled"
-                              ? "Cancelado"
-                              : "No show"}
-                  </span>
+                  {getAvailableStatusTransitions(booking.status).length > 0 ? (
+                    <DropdownMenu>
+                      <DropdownMenuTrigger asChild>
+                        <button
+                          className={`px-2 py-1 inline-flex items-center text-xs leading-5 font-semibold rounded-full cursor-pointer transition-colors ${
+                            updatingStatus === booking.id 
+                              ? 'opacity-50 cursor-not-allowed' 
+                              : getStatusColor(booking.status)
+                          }`}
+                          disabled={updatingStatus === booking.id}
+                          data-oid="g94i5pj"
+                        >
+                          {getStatusLabel(booking.status)}
+                          <ChevronDown className="ml-1 h-3 w-3" />
+                        </button>
+                      </DropdownMenuTrigger>
+                      <DropdownMenuContent>
+                        {getAvailableStatusTransitions(booking.status).map((status) => (
+                          <DropdownMenuItem
+                            key={status}
+                            onClick={() => handleStatusChange(booking, status)}
+                          >
+                            Cambiar a {getStatusLabel(status)}
+                          </DropdownMenuItem>
+                        ))}
+                      </DropdownMenuContent>
+                    </DropdownMenu>
+                  ) : (
+                    <span
+                      className={`px-2 py-1 inline-flex text-xs leading-5 font-semibold rounded-full ${getStatusColor(booking.status)}`}
+                      data-oid="g94i5pj"
+                    >
+                      {getStatusLabel(booking.status)}
+                    </span>
+                  )}
                 </td>
                 <td className="px-6 py-4 whitespace-nowrap" data-oid="dqvkm9w">
                   <div
@@ -216,123 +332,6 @@ const BookingsTable = ({
         </table>
       </div>
 
-      {/* Paginación */}
-      <div
-        className="px-6 py-4 flex items-center justify-between border-t border-gray-200"
-        data-oid="w:spy1s"
-      >
-        <div
-          className="flex-1 flex justify-between sm:hidden"
-          data-oid="p_cheqc"
-        >
-          <button
-            className="relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50"
-            data-oid="wr1u_ax"
-          >
-            Anterior
-          </button>
-          <button
-            className="ml-3 relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50"
-            data-oid="w06xfxh"
-          >
-            Siguiente
-          </button>
-        </div>
-        <div
-          className="hidden sm:flex-1 sm:flex sm:items-center sm:justify-between"
-          data-oid="-9f39cr"
-        >
-          <div data-oid="rqyjm4q">
-            <p className="text-sm text-gray-700" data-oid="sjan0jf">
-              Mostrando{" "}
-              <span className="font-medium" data-oid="l53rihi">
-                1
-              </span>{" "}
-              a{" "}
-              <span className="font-medium" data-oid="rt1783s">
-                6
-              </span>{" "}
-              de{" "}
-              <span className="font-medium" data-oid="65w1s:0">
-                23
-              </span>{" "}
-              resultados
-            </p>
-          </div>
-          <div data-oid="wxg-d0b">
-            <nav
-              className="relative z-0 inline-flex rounded-md shadow-sm -space-x-px"
-              aria-label="Pagination"
-              data-oid="tjj60ps"
-            >
-              <button
-                className="relative inline-flex items-center px-2 py-2 rounded-l-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50"
-                data-oid="s2ay.rj"
-              >
-                <span className="sr-only" data-oid="g_y1lpy">
-                  Anterior
-                </span>
-                <svg
-                  className="h-5 w-5"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                  aria-hidden="true"
-                  data-oid="c55l1te"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
-                    clipRule="evenodd"
-                    data-oid="j7tb:q7"
-                  />
-                </svg>
-              </button>
-              <button
-                className="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50"
-                data-oid="_2m_v8x"
-              >
-                1
-              </button>
-              <button
-                className="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50"
-                data-oid="6yzv4xn"
-              >
-                2
-              </button>
-              <button
-                className="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-gray-100 text-sm font-medium text-gray-600 hover:bg-gray-200"
-                data-oid="-oz.bhe"
-              >
-                3
-              </button>
-              <button
-                className="relative inline-flex items-center px-2 py-2 rounded-r-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50"
-                data-oid="wu9afis"
-              >
-                <span className="sr-only" data-oid="_oyaw5a">
-                  Siguiente
-                </span>
-                <svg
-                  className="h-5 w-5"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                  aria-hidden="true"
-                  data-oid="p0qa8l4"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                    clipRule="evenodd"
-                    data-oid="2._h174"
-                  />
-                </svg>
-              </button>
-            </nav>
-          </div>
-        </div>
-      </div>
     </div>
   );
 };

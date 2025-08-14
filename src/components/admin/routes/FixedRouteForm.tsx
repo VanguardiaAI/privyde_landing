@@ -28,7 +28,7 @@ import {
 } from "lucide-react";
 import { FixedRoute } from "@/components/admin/sections/RoutesSection";
 import { useToast } from "@/components/ui/use-toast";
-import axios from "axios";
+import axiosInstance from "@/config/axios";
 import GooglePlacesAutocomplete, {
   PlacePrediction,
   PlaceDetails,
@@ -243,7 +243,7 @@ const FixedRouteForm = ({
       setLoadingCollaborators(true);
 
       // Llamada real a la API
-      const response = await axios.get(
+      const response = await axiosInstance.get(
         "/api/admin/collaborators/list",
         getAuthHeaders(),
       );
@@ -276,7 +276,7 @@ const FixedRouteForm = ({
       setLoadingVehicles(true);
 
       // Llamada real a la API
-      const response = await axios.get(
+      const response = await axiosInstance.get(
         `/api/admin/vehicles/by-collaborator/${collaboratorId}`,
         getAuthHeaders(),
       );

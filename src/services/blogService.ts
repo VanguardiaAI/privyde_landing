@@ -1,9 +1,8 @@
 import { BlogPost } from "../types/blog";
-import axios from "axios";
+import api from "@/config/axios";
 
-// URL base de la API
-const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000/api";
-const BLOG_API_URL = `${API_URL}/blog`;
+// URL base de la API (solo para construir URLs de imágenes)
+const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5001";
 
 // Función para convertir el formato de la API al formato local
 const mapApiPostToLocal = (post: any): BlogPost => {
@@ -130,7 +129,7 @@ export const blogService = {
   generateContent: async (prompt: string): Promise<Partial<BlogPost> | null> => {
     try {
       console.log(`Generando contenido con IA usando prompt: "${prompt}"`);
-      const response = await axios.post(`${BLOG_API_URL}/generate`, { prompt });
+      const response = await api.post('/api/blog/generate', { prompt });
       console.log("Contenido generado:", response.data);
       
       // Convertir la respuesta al formato local
@@ -165,8 +164,8 @@ export const blogService = {
    */
   getAllPosts: async (): Promise<BlogPost[]> => {
     try {
-      console.log(`Fetching posts from: ${BLOG_API_URL}/posts`);
-      const response = await axios.get(`${BLOG_API_URL}/posts`);
+      console.log(`Fetching posts from: /api/blog/posts`);
+      const response = await api.get('/api/blog/posts');
       console.log("Posts API response:", response.data);
       
       // Verificar si la respuesta tiene el formato nuevo (con paginación)
@@ -199,7 +198,7 @@ export const blogService = {
       
       // Si no se encuentra, intentamos con el endpoint específico por slug
       console.log("Post no encontrado en la lista, buscando por slug");
-      const response = await axios.get(`${BLOG_API_URL}/posts`);
+      const response = await api.get('/api/blog/posts');
       const postsData = response.data.posts ? response.data.posts : response.data;
       const foundPost = postsData.find((p: any) => p._id === id || p.id === id);
       
@@ -221,8 +220,8 @@ export const blogService = {
    */
   getPostBySlug: async (slug: string): Promise<BlogPost | null> => {
     try {
-      console.log(`Fetching post with slug ${slug} from: ${BLOG_API_URL}/posts/${slug}`);
-      const response = await axios.get(`${BLOG_API_URL}/posts/${slug}`);
+      console.log(`Fetching post with slug ${slug} from: /api/blog/posts/${slug}`);
+      const response = await api.get(`/api/blog/posts/${slug}`);
       console.log("Post API response:", response.data);
       return mapApiPostToLocal(response.data);
     } catch (error) {
@@ -231,7 +230,7 @@ export const blogService = {
       // Si falla el endpoint específico, intentamos buscar en todos los posts
       try {
         console.log("Intentando encontrar post por slug en la lista completa");
-        const response = await axios.get(`${BLOG_API_URL}/posts`);
+        const response = await api.get('/api/blog/posts');
         const postsData = response.data.posts ? response.data.posts : response.data;
         const post = postsData.find((p: any) => p.slug === slug);
         
@@ -253,8 +252,8 @@ export const blogService = {
    */
   getPostsByCategory: async (category: string): Promise<BlogPost[]> => {
     try {
-      console.log(`Fetching posts for category ${category} from: ${BLOG_API_URL}/posts?category=${category}`);
-      const response = await axios.get(`${BLOG_API_URL}/posts?category=${category}`);
+      console.log(`Fetching posts for category ${category} from: /api/blog/posts?category=${category}`);
+      const response = await api.get(`/api/blog/posts?category=${category}`);
       console.log("Category posts API response:", response.data);
       
       // Verificar si la respuesta tiene el formato nuevo (con paginación)
@@ -272,8 +271,8 @@ export const blogService = {
    */
   getPostsByTag: async (tag: string): Promise<BlogPost[]> => {
     try {
-      console.log(`Fetching posts for tag ${tag} from: ${BLOG_API_URL}/posts?tag=${tag}`);
-      const response = await axios.get(`${BLOG_API_URL}/posts?tag=${tag}`);
+      console.log(`Fetching posts for tag ${tag} from: /api/blog/posts?tag=${tag}`);
+      const response = await api.get(`/api/blog/posts?tag=${tag}`);
       console.log("Tag posts API response:", response.data);
       
       // Verificar si la respuesta tiene el formato nuevo (con paginación)
@@ -291,8 +290,8 @@ export const blogService = {
    */
   searchPosts: async (query: string): Promise<BlogPost[]> => {
     try {
-      console.log(`Searching posts with query ${query} from: ${BLOG_API_URL}/posts?q=${query}`);
-      const response = await axios.get(`${BLOG_API_URL}/posts?q=${query}`);
+      console.log(`Searching posts with query ${query} from: /api/blog/posts?q=${query}`);
+      const response = await api.get(`/api/blog/posts?q=${query}`);
       console.log("Search posts API response:", response.data);
       
       // Verificar si la respuesta tiene el formato nuevo (con paginación)
@@ -310,8 +309,8 @@ export const blogService = {
    */
   getAllCategories: async (): Promise<string[]> => {
     try {
-      console.log(`Fetching categories from: ${BLOG_API_URL}/categories`);
-      const response = await axios.get(`${BLOG_API_URL}/categories`);
+      console.log(`Fetching categories from: /api/blog/categories`);
+      const response = await api.get('/api/blog/categories');
       console.log("Categories API response:", response.data);
       return response.data;
     } catch (error) {
@@ -325,8 +324,8 @@ export const blogService = {
    */
   getAllTags: async (): Promise<string[]> => {
     try {
-      console.log(`Fetching tags from: ${BLOG_API_URL}/tags`);
-      const response = await axios.get(`${BLOG_API_URL}/tags`);
+      console.log(`Fetching tags from: /api/blog/tags`);
+      const response = await api.get('/api/blog/tags');
       console.log("Tags API response:", response.data);
       return response.data;
     } catch (error) {
@@ -340,8 +339,8 @@ export const blogService = {
    */
   getFeaturedPosts: async (): Promise<BlogPost[]> => {
     try {
-      console.log(`Fetching featured posts from: ${BLOG_API_URL}/posts/featured`);
-      const response = await axios.get(`${BLOG_API_URL}/posts/featured`);
+      console.log(`Fetching featured posts from: /api/blog/posts/featured`);
+      const response = await api.get('/api/blog/posts/featured');
       console.log("Featured posts API response:", response.data);
       
       // La ruta de posts destacados podría no tener paginación, pero verificamos por si acaso
@@ -359,13 +358,13 @@ export const blogService = {
    */
   updatePost: async (id: string, postData: Partial<BlogPost>): Promise<BlogPost | null> => {
     try {
-      console.log(`Updating post with ID ${id} at ${BLOG_API_URL}/posts/${id}`);
+      console.log(`Updating post with ID ${id} at /api/blog/posts/${id}`);
       
       // Preparar los datos para la API
       const dataToSend = prepareDataForApi(postData);
       console.log("Data to send:", dataToSend);
       
-      const response = await axios.put(`${BLOG_API_URL}/posts/${id}`, dataToSend);
+      const response = await api.put(`/api/blog/posts/${id}`, dataToSend);
       console.log("Update response:", response.data);
       
       return mapApiPostToLocal(response.data);
@@ -380,13 +379,13 @@ export const blogService = {
    */
   createPost: async (postData: Partial<BlogPost>): Promise<BlogPost | null> => {
     try {
-      console.log(`Creating new post at ${BLOG_API_URL}/posts`);
+      console.log(`Creating new post at /api/blog/posts`);
       
       // Preparar los datos para la API
       const dataToSend = prepareDataForApi(postData);
       console.log("Data to send:", dataToSend);
       
-      const response = await axios.post(`${BLOG_API_URL}/posts`, dataToSend);
+      const response = await api.post('/api/blog/posts', dataToSend);
       console.log("Create response:", response.data);
       
       return mapApiPostToLocal(response.data);
@@ -401,8 +400,8 @@ export const blogService = {
    */
   deletePost: async (id: string): Promise<boolean> => {
     try {
-      console.log(`Deleting post with ID ${id} at ${BLOG_API_URL}/posts/${id}`);
-      await axios.delete(`${BLOG_API_URL}/posts/${id}`);
+      console.log(`Deleting post with ID ${id} at /api/blog/posts/${id}`);
+      await api.delete(`/api/blog/posts/${id}`);
       console.log("Post deleted successfully");
       return true;
     } catch (error) {

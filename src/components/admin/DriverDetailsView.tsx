@@ -38,7 +38,7 @@ import {
   Upload,
   Circle,
 } from "lucide-react";
-import axios from "axios";
+import axiosInstance from "@/config/axios";
 import { useToast } from "@/components/ui/use-toast";
 import { cn } from "@/lib/utils";
 
@@ -153,7 +153,7 @@ const DriverDetailsView = ({
   // Función para obtener detalles actualizados del driver directamente del backend
   const fetchDriverDetails = async () => {
     try {
-      const response = await axios.get(
+      const response = await axiosInstance.get(
         `/api/admin/drivers/${driver.id}`,
         getAuthHeaders(),
       );
@@ -180,7 +180,7 @@ const DriverDetailsView = ({
       console.log("Buscando vehículos asociados al chófer con ID:", driver.id);
 
       // Primero intentamos con el endpoint que filtra en el backend
-      const response = await axios.get(
+      const response = await axiosInstance.get(
         "/api/admin/vehicles/list",
         getAuthHeaders(),
       );
@@ -336,7 +336,7 @@ const DriverDetailsView = ({
   const fetchCollaborators = async () => {
     try {
       setLoadingCollaborators(true);
-      const response = await axios.get(
+      const response = await axiosInstance.get(
         "/api/admin/collaborators/list",
         getAuthHeaders(),
       );
@@ -453,7 +453,7 @@ const DriverDetailsView = ({
       console.log("Enviando datos para actualizar el chófer:", dataToSend);
 
       // Llamada a la API para actualizar el chófer
-      const response = await axios.put(
+      const response = await axiosInstance.put(
         `/api/admin/drivers/${driver.id}/update`,
         dataToSend,
         getAuthHeaders(),

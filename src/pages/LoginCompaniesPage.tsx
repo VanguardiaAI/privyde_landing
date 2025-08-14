@@ -5,7 +5,7 @@ import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
 import { useAuth } from "../context/AuthContext";
-import axios from "axios";
+import axiosInstance from "@/config/axios";
 import { Mail, Lock, Building } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -33,7 +33,7 @@ export default function LoginCompaniesPage() {
     e.preventDefault();
     try {
       // La funciónno acepta directamente el rol, así que usamos un enfoque similar al de Google
-      const response = await axios.post(
+      const response = await axiosInstance.post(
         `${import.meta.env.VITE_API_URL?.replace(/\/api$/, "") || "http://localhost:5000"}/api/auth/`,
         {
           email,

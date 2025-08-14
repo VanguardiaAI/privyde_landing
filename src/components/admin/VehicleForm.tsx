@@ -28,7 +28,7 @@ import {
   Check,
   ChevronsUpDown,
 } from "lucide-react";
-import axios from "axios";
+import axiosInstance from "@/config/axios";
 import {
   Popover,
   PopoverContent,
@@ -294,7 +294,7 @@ const VehicleForm = ({
     const fetchCollaborators = async () => {
       try {
         setLoadingCollaborators(true);
-        const response = await axios.get(
+        const response = await axiosInstance.get(
           "/api/admin/collaborators/list",
           getAuthHeaders(),
         );
@@ -336,7 +336,7 @@ const VehicleForm = ({
 
       try {
         setLoadingDrivers(true);
-        const response = await axios.get(
+        const response = await axiosInstance.get(
           `/api/admin/drivers/by-collaborator/${formData.collaboratorId}`,
           getAuthHeaders(),
         );

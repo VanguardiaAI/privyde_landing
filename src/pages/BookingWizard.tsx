@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import axios from "axios";
+import axiosInstance from "@/config/axios";
 import { Card, CardContent } from "@/components/ui/card";
 import {
   Loader2,
@@ -18,7 +18,6 @@ import PaymentStep from "../components/booking/PaymentStep";
 import PaymentConfirmationStep from "../components/booking/PaymentConfirmationStep";
 // Los demás pasos se implementarán más adelante
 
-const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000/api";
 
 // Definición de tipos
 interface BookingSession {
@@ -101,8 +100,8 @@ export default function BookingWizard() {
         console.log(
           `BookingWizard: Iniciando carga de sesión para sessionId: ${sessionId}`,
         );
-        const response = await axios.get(
-          `${API_URL}/booking/get-session/${sessionId}`,
+        const response = await axiosInstance.get(
+          `/api/booking/get-session/${sessionId}`,
         );
 
         if (!isMounted) return; // Salir si el componente se desmontó
@@ -187,8 +186,8 @@ export default function BookingWizard() {
       };
       console.log("BookingWizard Update: Enviando payload:", payload);
 
-      const response = await axios.put(
-        `${API_URL}/booking/update-session/${sessionId}`,
+      const response = await axiosInstance.put(
+        `/api/booking/update-session/${sessionId}`,
         payload,
       );
 

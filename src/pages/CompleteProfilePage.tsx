@@ -4,7 +4,7 @@ import { Label } from "../components/ui/label";
 import { Button } from "../components/ui/button";
 import { useAuth } from "../context/AuthContext";
 import { ChevronDown, ChevronLeft } from "lucide-react";
-import axios from "axios";
+import axiosInstance from "@/config/axios";
 import { useNavigate } from "react-router-dom";
 import {
   Select,
@@ -41,7 +41,7 @@ export default function CompleteProfilePage() {
 
     try {
       const token = localStorage.getItem("authToken");
-      const response = await axios.post(
+      const response = await axiosInstance.post(
         "/api/profile/complete",
         {
           title,

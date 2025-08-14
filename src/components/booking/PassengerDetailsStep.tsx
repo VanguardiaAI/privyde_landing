@@ -3,9 +3,8 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Loader2, AlertCircle } from "lucide-react";
-import axios from "axios";
+import axiosInstance from "@/config/axios";
 
-const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000/api";
 
 interface PassengerDetailsStepProps {
   sessionData: any;
@@ -65,7 +64,7 @@ export default function PassengerDetailsStep({
 
         // Obtener detalles del origen
         if (initializedData.from.place_id) {
-          const originResponse = await axios.get(`${API_URL}/places/details`, {
+          const originResponse = await axiosInstance.get(`/api/places/details`, {
             params: { place_id: initializedData.from.place_id },
           });
           console.log("Detalles del origen recibidos:", originResponse.data);
@@ -77,7 +76,7 @@ export default function PassengerDetailsStep({
           initializedData.tripType === "ida" &&
           initializedData.to?.place_id
         ) {
-          const destResponse = await axios.get(`${API_URL}/places/details`, {
+          const destResponse = await axiosInstance.get(`/api/places/details`, {
             params: { place_id: initializedData.to.place_id },
           });
           console.log("Detalles del destino recibidos:", destResponse.data);
@@ -101,8 +100,8 @@ export default function PassengerDetailsStep({
             }
 
             // Usar la API de precios que incluye cálculos de distancia
-            const priceResponse = await axios.post(
-              `${API_URL}/booking/calculate-price`,
+            const priceResponse = await axiosInstance.post(
+              `/api/booking/calculate-price`,
               {
                 vehicle_id: initializedData.vehicle.id,
                 trip_type: initializedData.tripType,

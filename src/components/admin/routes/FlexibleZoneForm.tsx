@@ -25,7 +25,7 @@ import {
 } from "lucide-react";
 import { useToast } from "@/components/ui/use-toast";
 import { FlexibleZone } from "@/components/admin/sections/RoutesSection";
-import axios from "axios";
+import axiosInstance from "@/config/axios";
 import GooglePlacesAutocomplete, {
   PlacePrediction,
   PlaceDetails,
@@ -194,7 +194,7 @@ const FlexibleZoneForm = ({
       setLoadingCollaborators(true);
 
       // Llamada real a la API
-      const response = await axios.get(
+      const response = await axiosInstance.get(
         "/api/admin/collaborators/list",
         getAuthHeaders(),
       );
@@ -227,7 +227,7 @@ const FlexibleZoneForm = ({
       setLoadingVehicles(true);
 
       // Llamada real a la API
-      const response = await axios.get(
+      const response = await axiosInstance.get(
         `/api/admin/vehicles/by-collaborator/${collaboratorId}`,
         getAuthHeaders(),
       );

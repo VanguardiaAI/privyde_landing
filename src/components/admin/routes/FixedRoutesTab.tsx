@@ -327,8 +327,13 @@ const FixedRoutesTab = ({
   useEffect(() => {
     const fetchCollaborators = async () => {
       try {
-        const response = await fetch("/api/admin/collaborators/list", {
-          headers: getAuthHeaders().headers,
+        const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:5001';
+        const token = getAuthToken();
+        const response = await fetch(`${apiUrl}/api/admin/collaborators/list`, {
+          headers: {
+            'Authorization': token ? `Bearer ${token}` : '',
+            'Content-Type': 'application/json'
+          },
         });
 
         if (!response.ok) {

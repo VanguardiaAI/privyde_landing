@@ -14,16 +14,14 @@ import {
   AlertCircle,
 } from "lucide-react";
 import { useNavigate, useParams, useSearchParams } from "react-router-dom";
-import axios from "axios";
+import axiosInstance from "@/config/axios";
 
 // Obtener variables de entorno de manera segura
-const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000/api";
 const STRIPE_PUBLISHABLE_KEY = import.meta.env.VITE_STRIPE_PUBLISHABLE_KEY;
 
 // Log para diagnóstico - solo se imprime en desarrollo
 if (import.meta.env.DEV) {
   console.log("Variables de entorno en PaymentConfirmationStep:", {
-    API_URL,
     // Imprime solo una parte de la clave para evitar exponerla completamente
     STRIPE_KEY: STRIPE_PUBLISHABLE_KEY
       ? `${STRIPE_PUBLISHABLE_KEY.substring(0, 10)}...${STRIPE_PUBLISHABLE_KEY.substring(STRIPE_PUBLISHABLE_KEY.length - 4)}`
@@ -77,14 +75,14 @@ export default function PaymentConfirmationStep({
         }
 
         // Verificar el estado del pago con Stripe usando el API del backend
-        await axios.post(`${API_URL}/payment/update-payment-method`, {
+        await axiosInstance.post(`/api/payment/update-payment-method`, {
           payment_intent_id: paymentIntentId,
           payment_method_id:
             initializedData?.payment?.payment_method_details || null,
         });
 
         // Llamar al endpoint para confirmar la reserva
-        const response = await axios.post(`${API_URL}/booking/confirm`, {
+        const response = await axiosInstance.post(`/api/booking/confirm`, {
           session_id: sessionId,
           stripe_payment_intent_id: paymentIntentId,
         });
@@ -101,8 +99,8 @@ export default function PaymentConfirmationStep({
         ) {
           try {
             // Usar el endpoint de cálculo de precios para obtener distancia y tiempo
-            const priceResponse = await axios.post(
-              `${API_URL}/booking/calculate-price`,
+            const priceResponse = await axiosInstance.post(
+              `/api/booking/calculate-price`,
               {
                 vehicle_id: initializedData.vehicle.id,
                 trip_type: initializedData.tripType,

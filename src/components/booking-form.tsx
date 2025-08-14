@@ -19,7 +19,7 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
-import axios from "axios";
+import axiosInstance from "@/config/axios";
 import { useNavigate } from "react-router-dom";
 import { format } from "date-fns";
 import { es, enUS } from "date-fns/locale";
@@ -53,7 +53,6 @@ interface BookingFormData {
   time: string;
 }
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000/api";
 
 // Componente de calendario mejorado
 function CalendarComponent({
@@ -360,7 +359,7 @@ export default function BookingForm({ darkMode = false }: BookingFormProps) {
     }
 
     try {
-      const response = await axios.get(`${API_URL}/places/autocomplete`, {
+      const response = await axiosInstance.get(`/api/places/autocomplete`, {
         params: { query },
       });
       setFromPredictions(response.data);
@@ -384,7 +383,7 @@ export default function BookingForm({ darkMode = false }: BookingFormProps) {
     }
 
     try {
-      const response = await axios.get(`${API_URL}/places/autocomplete`, {
+      const response = await axiosInstance.get(`/api/places/autocomplete`, {
         params: { query },
       });
       setToPredictions(response.data);

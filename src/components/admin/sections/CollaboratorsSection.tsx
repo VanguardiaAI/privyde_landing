@@ -26,7 +26,8 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import axios from "axios";
+import { api } from "@/config/axios";
+import { isAxiosError } from "axios";
 import { useToast } from "@/components/ui/use-toast";
 
 // Definir el tipo para los colaboradores
@@ -132,7 +133,7 @@ const CollaboratorsSection = () => {
         return;
       }
 
-      const response = await axios.get("/api/admin/collaborators/list", {
+      const response = await api.get("/api/admin/collaborators/list", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -151,7 +152,7 @@ const CollaboratorsSection = () => {
       }
     } catch (err) {
       console.error("Error al obtener colaboradores:", err);
-      if (axios.isAxiosError(err) && err.response?.status === 403) {
+      if (err.response?.status === 403) {
         setError("No tiene permisos de administrador para ver esta página");
       } else {
         setError("Error al cargar los colaboradores. Intente nuevamente");
@@ -176,7 +177,7 @@ const CollaboratorsSection = () => {
         return;
       }
 
-      const response = await axios.get(
+      const response = await api.get(
         `/api/admin/drivers/by-collaborator/${collaboratorId}`,
         {
           headers: { Authorization: `Bearer ${token}` },
@@ -211,7 +212,7 @@ const CollaboratorsSection = () => {
         return;
       }
 
-      const response = await axios.get(
+      const response = await api.get(
         `/api/admin/vehicles/by-collaborator/${collaboratorId}`,
         {
           headers: { Authorization: `Bearer ${token}` },
@@ -247,7 +248,7 @@ const CollaboratorsSection = () => {
 
       if (editingCollaborator) {
         // Actualizar un colaborador existente
-        const response = await axios.put(
+        const response = await api.put(
           `/api/admin/collaborators/update/${editingCollaborator.id}`,
           collaboratorData,
           {
@@ -277,8 +278,8 @@ const CollaboratorsSection = () => {
         }
       } else {
         // Crear un nuevo colaborador
-        const response = await axios.post(
-          "/api/admin/collaborators/add",
+        const response = await api.post(
+          "/admin/collaborators/add",
           collaboratorData,
           {
             headers: { Authorization: `Bearer ${token}` },
@@ -311,7 +312,7 @@ const CollaboratorsSection = () => {
       toast({
         title: "Error",
         description:
-          axios.isAxiosError(err) && err.response?.data?.message
+          isAxiosError(err) && err.response?.data?.message
             ? err.response.data.message
             : "Error al procesar la solicitud. Intente nuevamente",
         variant: "destructive",
@@ -359,7 +360,7 @@ const CollaboratorsSection = () => {
 
       if (!confirmar) return;
 
-      const response = await axios.delete(
+      const response = await api.delete(
         `/api/admin/collaborators/delete/${id}`,
         {
           headers: { Authorization: `Bearer ${token}` },
@@ -387,7 +388,7 @@ const CollaboratorsSection = () => {
       toast({
         title: "Error",
         description:
-          axios.isAxiosError(err) && err.response?.data?.message
+          isAxiosError(err) && err.response?.data?.message
             ? err.response.data.message
             : "Error al procesar la solicitud. Intente nuevamente",
         variant: "destructive",
@@ -427,7 +428,7 @@ const CollaboratorsSection = () => {
         return;
       }
 
-      const response = await axios.put(
+      const response = await api.put(
         `/api/admin/collaborators/update/${selectedCollaboratorForDetails.id}`,
         formData,
         {
@@ -467,7 +468,7 @@ const CollaboratorsSection = () => {
       toast({
         title: "Error",
         description:
-          axios.isAxiosError(err) && err.response?.data?.message
+          isAxiosError(err) && err.response?.data?.message
             ? err.response.data.message
             : "Error al procesar la solicitud. Intente nuevamente",
         variant: "destructive",

@@ -11,7 +11,7 @@ import {
   ChevronRight,
   Image,
 } from "lucide-react";
-import axios from "axios";
+import axiosInstance from "@/config/axios";
 import MDEditor from "@uiw/react-md-editor";
 import { useDropzone } from "react-dropzone";
 import { ToastContainer, toast } from "react-toastify";
@@ -19,8 +19,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { blogService } from "@/services/blogService";
 
 // API URL base
-const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000/api";
-const BLOG_API_URL = `${API_URL}/blog`;
+const BLOG_API_URL = `/api/blog`;
 
 // Definir tipos para los artículos del blog
 export interface BlogPost {
@@ -91,7 +90,7 @@ const BlogSection = () => {
       console.log(
         `Realizando petición a: ${BLOG_API_URL}/posts?page=${currentPage}`,
       );
-      const response = await axios.get(
+      const response = await axiosInstance.get(
         `${BLOG_API_URL}/posts?page=${currentPage}`,
       );
       console.log("Respuesta recibida:", response.data);
@@ -377,7 +376,7 @@ const BlogSection = () => {
     try {
       // Si la URL es relativa al servidor, construir la URL completa
       // Eliminar /api del final si existe para acceder correctamente a la ruta de uploads
-      const baseApiUrl = API_URL.replace(/\/api$/, "");
+      const baseApiUrl = (import.meta.env.VITE_API_URL || "http://localhost:5000/api").replace(/\/api$/, "");
 
       // Asegurarnos de que la URL tenga el formato correcto
       let fullUrl = url;
@@ -408,7 +407,7 @@ const BlogSection = () => {
           const formData = new FormData();
           formData.append("image", file);
 
-          const response = await axios.post(
+          const response = await axiosInstance.post(
             `${BLOG_API_URL}/upload`,
             formData,
             {

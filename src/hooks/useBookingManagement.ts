@@ -1,7 +1,10 @@
 import { useState, useEffect, useCallback } from "react";
 import { googleMapsService } from "@/services/googleMapsService";
 import { priceCalculationService, PriceBreakdown, RouteInfo, ServiceType } from "@/services/priceCalculationService";
-import axios from "axios";
+import { userService } from "@/services/userService";
+import api from "@/config/axios";
+import { isAxiosError } from "axios";
+import { useToast } from "@/components/ui/use-toast";
 
 // Tipos para exportación desde el hook
 export type BookingBasic = {
@@ -310,6 +313,8 @@ export interface VehicleAvailabilityResult {
 }
 
 export const useBookingManagement = () => {
+  const { toast } = useToast();
+  
   // Estados para la gestión de reservas
   const [selectedBookingForDetails, setSelectedBookingForDetails] = useState<Booking | null>(null);
   const [isBookingDetailsViewOpen, setIsBookingDetailsViewOpen] = useState(false);
@@ -607,28 +612,22 @@ export const useBookingManagement = () => {
   };
   
   // Función para buscar clientes
-  const handleSearchClient = (query: string) => {
-    // En un entorno real, aquí harías una llamada al backend
+  const handleSearchClient = async (query: string) => {
     setIsSearchingClient(true);
     
-    // Simulamos una búsqueda con datos ficticios
-    setTimeout(() => {
+    try {
       if (query.length > 2) {
-        const results = [
-          { id: 'c1', name: 'María García', email: 'maria.garcia@ejemplo.com', phone: '+34612345678' },
-          { id: 'c2', name: 'Juan Pérez', email: 'juan.perez@ejemplo.com', phone: '+34623456789' },
-          { id: 'c3', name: 'Laura Martínez', email: 'laura.martinez@ejemplo.com', phone: '+34634567890' }
-        ].filter(client => 
-          client.name.toLowerCase().includes(query.toLowerCase()) || 
-          client.email.toLowerCase().includes(query.toLowerCase())
-        );
-        
+        const results = await userService.searchUsers(query);
         setClientSearchResults(results);
       } else {
         setClientSearchResults([]);
       }
+    } catch (error) {
+      console.error('Error al buscar clientes:', error);
+      setClientSearchResults([]);
+    } finally {
       setIsSearchingClient(false);
-    }, 500);
+    }
   };
   
   // Función para seleccionar un cliente de los resultados de búsqueda
@@ -757,40 +756,61 @@ export const useBookingManagement = () => {
       }
       
       // Preparar datos para el backend
-      const bookingData = prepareDataForBackend();
+      let bookingData = prepareDataForBackend();
       console.log('Datos preparados para enviar al servidor:', bookingData);
       
       // Mostrar indicador de carga
       setIsLoading(true);
       
       try {
-        // Llamada API al backend
-        const response = await fetch('/api/admin/reservations', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify(bookingData),
-        });
-        
-        if (!response.ok) {
-          const errorData = await response.json();
-          throw new Error(errorData.error || 'Error al crear la reserva');
+        // Si el método de pago es tarjeta y no es un cliente registrado, procesar con Stripe
+        let paymentIntentId = null;
+        if (newBookingFormData.payment.method === 'credit_card' && newBookingFormData.payment.status === 'pending') {
+          // Aquí se procesaría el pago con Stripe
+          // Por ahora, solo simulamos que el pago se procesa exitosamente
+          console.log('Procesando pago con Stripe...');
+          // TODO: Implementar integración real con Stripe
+          // paymentIntentId = await processStripePayment(bookingData);
         }
         
-        const data = await response.json();
-        console.log('Reserva creada:', data);
+        // Agregar el ID del payment intent si existe
+        if (paymentIntentId) {
+          // Crear un objeto extendido con el payment intent
+          const paymentWithStripe = {
+            ...bookingData.payment,
+            stripe_payment_intent_id: paymentIntentId,
+            status: 'paid' as const
+          };
+          bookingData = {
+            ...bookingData,
+            payment: paymentWithStripe as any
+          };
+        }
+        
+        // Llamada API al backend
+        const response = await api.post(`/api/admin/reservations`, bookingData);
+        
+        console.log('Reserva creada:', response.data);
         
         // Cerrar el modal después de enviarlo
         handleCloseNewBookingModal();
         
         // Mostrar notificación de éxito
-        alert(`Reserva ${data.reservation.code} creada con éxito`);
+        toast({
+          title: "Reserva creada",
+          description: `Reserva ${response.data.reservation.code} creada con éxito`,
+        });
         
-        return data;
-      } catch (error) {
+        return response.data;
+      } catch (error: any) {
         console.error('Error al crear la reserva:', error);
-        alert(error instanceof Error ? error.message : 'Error al crear la reserva');
+        const errorMessage = error.response?.data?.error || error.message || 'Error al crear la reserva';
+        
+        toast({
+          title: "Error",
+          description: errorMessage,
+          variant: "destructive",
+        });
         throw error;
       } finally {
         setIsLoading(false);
@@ -798,7 +818,13 @@ export const useBookingManagement = () => {
     } catch (error) {
       console.error('Error de validación:', error);
       // Mostrar notificación de error
-      alert('Por favor, complete todos los campos requeridos');
+      const errorMessage = 'Por favor, complete todos los campos requeridos';
+      
+      toast({
+        title: "Error de validación",
+        description: errorMessage,
+        variant: "destructive",
+      });
       throw error;
     }
   };
@@ -814,18 +840,12 @@ export const useBookingManagement = () => {
     
     try {
       // Llamada real a la API para buscar rutas fijas
-      const response = await fetch(`/api/admin/routes/fixed/search?q=${encodeURIComponent(query)}`);
+      const response = await api.get(`/api/admin/routes/fixed/search?q=${encodeURIComponent(query)}`);
       
-      if (!response.ok) {
-        throw new Error('Error al buscar rutas fijas');
-      }
-      
-      const data = await response.json();
-      
-      if (data.status === 'success') {
-        setRouteSearchResults(data.routes);
+      if (response.data.status === 'success') {
+        setRouteSearchResults(response.data.routes);
       } else {
-        console.error('Error en la respuesta de la API:', data.message);
+        console.error('Error en la respuesta de la API:', response.data.message);
         setRouteSearchResults([]);
       }
     } catch (error) {
@@ -1179,7 +1199,7 @@ export const useBookingManagement = () => {
       console.log("📤 Datos de la solicitud:", JSON.stringify(requestData));
       
       // Llamar al endpoint para verificar disponibilidad
-      const response = await axios.post(apiUrl, requestData);
+      const response = await api.post(apiUrl, requestData);
       
       console.log("📥 Respuesta de la API:", response);
       
@@ -1223,7 +1243,7 @@ export const useBookingManagement = () => {
       console.error("💥 Error al verificar disponibilidad:", error);
       
       let errorMessage = "Error al verificar disponibilidad";
-      if (axios.isAxiosError(error)) {
+      if (isAxiosError(error)) {
         errorMessage = error.response?.data?.message || error.message;
         console.error("Detalles del error Axios:", {
           status: error.response?.status,

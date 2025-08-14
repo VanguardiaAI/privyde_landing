@@ -1,4 +1,4 @@
-import axios from "axios";
+import api from "@/config/axios";
 import { io, Socket } from "socket.io-client";
 
 // Interfaces para la comunicación con la API
@@ -55,9 +55,7 @@ export interface ConversationVerificationResult {
 export type MessageCallback = (message: SupportSocketMessage) => void;
 export type ConversationCallback = (conversation: SupportSocketConversation) => void;
 
-// URL base de la API
-const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000/api";
-const SUPPORT_API_URL = `${API_URL}/support`;
+// Socket URL para WebSocket
 const SOCKET_URL = import.meta.env.VITE_API_URL?.replace('/api', '') || "http://localhost:5000"; 
 
 // Singleton para socket
@@ -251,7 +249,7 @@ export const supportService = {
   sendMessage: async (messageData: SupportMessageDTO): Promise<any> => {
     try {
       console.log("Enviando mensaje de soporte:", messageData);
-      const response = await axios.post(`${SUPPORT_API_URL}/messages`, messageData);
+      const response = await api.post('/api/support/messages', messageData);
       console.log("Respuesta del servidor:", response.data);
       return response.data;
     } catch (error) {
@@ -266,7 +264,7 @@ export const supportService = {
   startConversation: async (userData: { name: string; email: string }): Promise<any> => {
     try {
       console.log("Iniciando nueva conversación de soporte:", userData);
-      const response = await axios.post(`${SUPPORT_API_URL}/conversations`, userData);
+      const response = await api.post('/api/support/conversations', userData);
       console.log("Conversación iniciada:", response.data);
       return response.data;
     } catch (error) {
@@ -282,11 +280,11 @@ export const supportService = {
     try {
       // Generar una URL única con un parámetro timestamp para evitar caché del navegador si es necesario
       const url = forceRefresh 
-        ? `${SUPPORT_API_URL}/conversations/${conversationId}/messages?t=${Date.now()}` 
-        : `${SUPPORT_API_URL}/conversations/${conversationId}/messages`;
+        ? `/api/support/conversations/${conversationId}/messages?t=${Date.now()}` 
+        : `/api/support/conversations/${conversationId}/messages`;
       
       console.log(`[SupportService] Obteniendo mensajes de conversación ${conversationId}${forceRefresh ? ' (forzando actualización)' : ''}`);
-      const response = await axios.get(url);
+      const response = await api.get(url);
       console.log(`[SupportService] ${response.data.length} mensajes recibidos`);
       return response.data;
     } catch (error) {
@@ -301,9 +299,9 @@ export const supportService = {
   getNewMessages: async (conversationId: string, afterTimestamp: string): Promise<any[]> => {
     try {
       console.log(`[SupportService] Buscando mensajes nuevos después de ${afterTimestamp}`);
-      const url = `${SUPPORT_API_URL}/conversations/${conversationId}/new-messages?since=${encodeURIComponent(afterTimestamp)}&t=${Date.now()}`;
+      const url = `/api/support/conversations/${conversationId}/new-messages?since=${encodeURIComponent(afterTimestamp)}&t=${Date.now()}`;
       
-      const response = await axios.get(url);
+      const response = await api.get(url);
       console.log(`[SupportService] ${response.data.length} mensajes nuevos encontrados`);
       return response.data;
     } catch (error) {
@@ -318,9 +316,9 @@ export const supportService = {
   verifyConversation: async (conversationId: string): Promise<ConversationVerificationResult> => {
     try {
       console.log(`[SupportService] Verificando conversación ${conversationId}`);
-      const url = `${SUPPORT_API_URL}/conversations/${conversationId}/verify`;
+      const url = `/api/support/conversations/${conversationId}/verify`;
       
-      const response = await axios.get(url);
+      const response = await api.get(url);
       console.log(`[SupportService] Verificación de conversación:`, response.data);
       return response.data;
     } catch (error) {

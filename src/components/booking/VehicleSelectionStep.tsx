@@ -1,10 +1,9 @@
 import { useState, useEffect } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Users, Briefcase, Loader2, AlertCircle, Check } from "lucide-react";
-import axios from "axios";
+import axiosInstance from "@/config/axios";
 
 // URL de la API
-const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000/api";
 
 // Tipos
 interface Vehicle {
@@ -78,7 +77,7 @@ export default function VehicleSelectionStep({
   useEffect(() => {
     const fetchVehicles = async () => {
       try {
-        const response = await axios.get(`${API_URL}/booking/vehicle-options`);
+        const response = await axiosInstance.get(`/api/booking/vehicle-options`);
         setVehicles(response.data);
       } catch (error) {
         console.error("Error al cargar opciones de vehículos:", error);

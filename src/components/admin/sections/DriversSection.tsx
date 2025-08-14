@@ -22,7 +22,7 @@ import {
   SelectValue } from
 "@/components/ui/select";
 import DriverDetailsView from "../DriverDetailsView";
-import axios from "axios";
+import { api } from "@/config/axios";
 import { useToast } from "@/components/ui/use-toast";
 
 // Definir el tipo para los chóferes
@@ -143,20 +143,6 @@ const DriversSection = () => {
     fetchDrivers();
   }, []);
 
-  // Función para obtener el token de autenticación
-  const getAuthToken = () => {
-    return localStorage.getItem("authToken");
-  };
-
-  // Configurar headers para las peticiones
-  const getAuthHeaders = () => {
-    const token = getAuthToken();
-    return {
-      headers: {
-        Authorization: token ? `Bearer ${token}` : ""
-      }
-    };
-  };
 
   // Función para obtener todos los chóferes
   const fetchDrivers = async () => {
@@ -164,9 +150,8 @@ const DriversSection = () => {
       setLoading(true);
       setError(null);
 
-      const response = await axios.get(
-        "/api/admin/drivers/list",
-        getAuthHeaders()
+      const response = await api.get(
+        "/api/admin/drivers/list"
       );
 
       if (response.data && response.data.drivers) {
@@ -298,10 +283,8 @@ const DriversSection = () => {
     try {
       setLoading(true);
 
-      const response = await axios.get(
-        `/api/admin/drivers/${driverId}`,
-        getAuthHeaders()
-      );
+      const response = await api.get(
+        `/api/admin/drivers/${driverId}`      );
 
       if (response.data && response.data.driver) {
         return response.data.driver;
@@ -326,11 +309,9 @@ const DriversSection = () => {
     try {
       setLoading(true);
 
-      const response = await axios.post(
-        "/api/admin/drivers/create",
-        driverData,
-        getAuthHeaders()
-      );
+      const response = await api.post(
+        "/admin/drivers/create",
+        driverData      );
 
       if (response.status === 201) {
         toast({
@@ -378,11 +359,9 @@ const DriversSection = () => {
         driverData.experience
       };
 
-      const response = await axios.put(
+      const response = await api.put(
         `/api/admin/drivers/${driverId}/update`,
-        preparedData,
-        getAuthHeaders()
-      );
+        preparedData      );
 
       if (response.status === 200) {
         toast({
@@ -433,10 +412,8 @@ const DriversSection = () => {
     try {
       setLoading(true);
 
-      const response = await axios.delete(
-        `/api/admin/drivers/${driverId}/delete`,
-        getAuthHeaders()
-      );
+      const response = await api.delete(
+        `/api/admin/drivers/${driverId}/delete`      );
 
       if (response.status === 200) {
         toast({

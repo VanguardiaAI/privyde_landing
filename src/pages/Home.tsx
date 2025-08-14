@@ -996,7 +996,7 @@ export default function Home() {
                 <ChevronLeft className="w-8 h-8 text-gray-400 hover:text-gray-600 transition-colors" />
               </button>
 
-              <div className="flex gap-6 overflow-x-auto snap-x snap-mandatory mx-12" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
+              <div className="flex gap-6 overflow-x-auto snap-x snap-mandatory mx-12" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none', minHeight: '320px' }}>
                 {testimonialsData.map((testimonial, index) => (
                   <div key={testimonial.id} className={`${index === 1 ? 'min-w-[340px] md:min-w-[360px] pt-16' : 'min-w-[300px] md:min-w-[320px] pt-14'} snap-center`}>
                     <div className={`relative ${index === 1 ? 'transform scale-105' : ''}`}>
@@ -1007,7 +1007,7 @@ export default function Home() {
                           className="w-full h-full object-cover"
                         />
                       </div>
-                      <div className={`bg-white rounded-3xl ${index === 1 ? 'pt-14 pb-5 px-8' : 'pt-12 pb-4 px-6'} border-2 border-black text-center`}>
+                      <div className={`bg-white rounded-3xl ${index === 1 ? 'pt-14 pb-6 px-8' : 'pt-12 pb-4 px-6'} border-2 border-black text-center`}>
                         <h4 className={`font-bold ${index === 1 ? 'text-xl' : 'text-lg'} mb-1`}>{testimonial.name}</h4>
                         <p className="text-gray-600 text-sm leading-relaxed mb-3">
                           "{testimonial.text}"

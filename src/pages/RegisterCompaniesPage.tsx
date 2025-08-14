@@ -5,7 +5,7 @@ import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
 import { useAuth } from "../context/AuthContext";
-import axios from "axios";
+import axiosInstance from "@/config/axios";
 import { Mail, Lock, Building, User, Phone } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -194,7 +194,7 @@ export default function RegisterCompaniesPage() {
       };
 
       // 4. Enviar los datos de la empresa al backend
-      const companyResponse = await axios.post(
+      const companyResponse = await axiosInstance.post(
         `${import.meta.env.VITE_API_URL?.replace(/\/api$/, "") || "http://localhost:5000"}/api/profile/update-company`,
         companyData,
         {

@@ -35,7 +35,8 @@ import {
   RefreshCw,
   BarChart,
 } from "lucide-react";
-import axios from "axios";
+import axiosInstance from "@/config/axios";
+import { isAxiosError } from "axios";
 import { useToast } from "@/components/ui/use-toast";
 import { cn } from "@/lib/utils";
 
@@ -242,7 +243,7 @@ const UserDetailsView = ({
       console.log("Enviando datos:", dataToSend);
 
       // Enviar los datos al backend
-      await axios.put(`/api/admin/users/${user.id}/update`, dataToSend, {
+      await axiosInstance.put(`/api/admin/users/${user.id}/update`, dataToSend, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -263,7 +264,7 @@ const UserDetailsView = ({
       toast({
         title: "Error",
         description:
-          axios.isAxiosError(err) && err.response?.data?.error
+          isAxiosError(err) && err.response?.data?.error
             ? err.response.data.error
             : "No se pudo actualizar el usuario. Intente nuevamente",
         variant: "destructive",

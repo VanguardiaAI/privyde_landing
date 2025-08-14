@@ -8,7 +8,7 @@ import {
   SendHorizonal,
   RefreshCw,
 } from "lucide-react";
-import axios from "axios";
+import axiosInstance from "@/config/axios";
 import supportService, { SupportMessageDTO } from "@/services/supportService";
 
 // Definir tipos para los mensajes de soporte
@@ -255,7 +255,6 @@ const SupportSection: React.FC<SupportSectionProps> = ({
   const lastPollingTimestampRef = useRef<string | null>(null);
 
   // API URL base
-  const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000/api";
 
   // Inicializar Socket para comunicación en tiempo real
   useEffect(() => {
@@ -281,7 +280,7 @@ const SupportSection: React.FC<SupportSectionProps> = ({
   // Cargar conversaciones al inicio y periódicamente
   const fetchConversations = useCallback(async () => {
     try {
-      const response = await axios.get(`${API_URL}/support/conversations`);
+      const response = await axiosInstance.get(`/api/support/conversations`);
       console.log("Conversaciones obtenidas:", response.data);
 
       // Transformar los datos al formato esperado por el componente
@@ -334,7 +333,7 @@ const SupportSection: React.FC<SupportSectionProps> = ({
         "No se pudieron cargar las conversaciones. Por favor, inténtalo de nuevo.",
       );
     }
-  }, [API_URL]);
+  }, []);
 
   // Seleccionar conversación automáticamente cuando se recibe un ID desde las notificaciones
   useEffect(() => {
@@ -363,8 +362,8 @@ const SupportSection: React.FC<SupportSectionProps> = ({
   const fetchMessagesForConversation = useCallback(
     async (conversationId: string, _refresh = false) => {
       try {
-        const response = await axios.get(
-          `${API_URL}/support/conversations/${conversationId}/messages`,
+        const response = await axiosInstance.get(
+          `/api/support/conversations/${conversationId}/messages`,
         );
         console.log(
           `Mensajes para conversación ${conversationId}:`,
@@ -416,7 +415,7 @@ const SupportSection: React.FC<SupportSectionProps> = ({
         return [];
       }
     },
-    [API_URL],
+    [],
   );
 
   // Función para implementar polling de mensajes como respaldo
@@ -779,8 +778,8 @@ const SupportSection: React.FC<SupportSectionProps> = ({
     if (messages[conversation.id]) {
       try {
         // Llamada al API para marcar como leídos
-        await axios.put(
-          `${API_URL}/support/conversations/${conversation.id}/read`,
+        await axiosInstance.put(
+          `/api/support/conversations/${conversation.id}/read`,
         );
 
         const updatedMessages = messages[conversation.id].map((msg) => ({
@@ -921,8 +920,8 @@ const SupportSection: React.FC<SupportSectionProps> = ({
   ) => {
     try {
       // Llamada al API para actualizar estado
-      await axios.put(
-        `${API_URL}/support/conversations/${conversationId}/status`,
+      await axiosInstance.put(
+        `/api/support/conversations/${conversationId}/status`,
         { status: newStatus },
       );
 

@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { Input } from "@/components/ui/input";
 import { MapPin } from "lucide-react";
-import axios from "axios";
+import axiosInstance from "@/config/axios";
 
 // Tipos
 export interface PlacePrediction {
@@ -49,7 +49,6 @@ const GooglePlacesAutocomplete = ({
   const dropdownRef = useRef<HTMLDivElement>(null);
 
   // API URL desde .env o fallback a localhost
-  const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
 
   // Efecto para manejar clics fuera del dropdown
   useEffect(() => {
@@ -87,7 +86,7 @@ const GooglePlacesAutocomplete = ({
     setLoading(true);
 
     try {
-      const response = await axios.get(`${API_URL}/places/autocomplete`, {
+      const response = await axiosInstance.get(`/api/places/autocomplete`, {
         params: { query: searchQuery },
       });
       setPredictions(response.data);
@@ -109,7 +108,7 @@ const GooglePlacesAutocomplete = ({
     // Si se proporciona onSelect, obtener detalles del lugar
     if (onSelect) {
       try {
-        const response = await axios.get(`${API_URL}/places/details`, {
+        const response = await axiosInstance.get(`/api/places/details`, {
           params: { place_id: prediction.place_id },
         });
 
