@@ -492,7 +492,7 @@ const Companies = () => {
             {/* Service 1 */}
             <div 
               className={`relative rounded-xl overflow-hidden transition-all duration-700 cursor-pointer flex-shrink-0 ${
-                activeAccordionIndex === 0 ? 'w-[380px]' : 'w-[200px]'
+                activeAccordionIndex === 0 ? 'w-[500px]' : 'w-[200px]'
               }`}
               style={{ zIndex: 1 }}
               onClick={() => setActiveAccordionIndex(0)}
@@ -507,7 +507,7 @@ const Companies = () => {
               <div className={`absolute bottom-0 left-0 p-4 text-left ${
                 activeAccordionIndex !== 0 && activeAccordionIndex !== -1 ? 'z-20' : ''
               }`}>
-                <div className={`${activeAccordionIndex === 0 ? 'max-w-[280px]' : 'max-w-[120px]'}`}>
+                <div className={`${activeAccordionIndex === 0 ? 'max-w-[380px]' : 'max-w-[120px]'}`}>
                   <h3 className={`font-bold text-white transition-all duration-300 leading-tight ${
                     activeAccordionIndex === 0 ? 'text-xl mb-3' : 'text-xs'
                   }`}>
@@ -525,7 +525,7 @@ const Companies = () => {
             {/* Service 2 */}
             <div 
               className={`relative rounded-xl overflow-hidden transition-all duration-700 cursor-pointer flex-shrink-0 -ml-[50px] ${
-                activeAccordionIndex === 1 ? 'w-[380px]' : 'w-[200px]'
+                activeAccordionIndex === 1 ? 'w-[500px]' : 'w-[200px]'
               }`}
               style={{ zIndex: 2 }}
               onClick={() => setActiveAccordionIndex(1)}
@@ -540,7 +540,7 @@ const Companies = () => {
               <div className={`absolute bottom-0 left-0 p-4 text-left ${
                 activeAccordionIndex !== 1 && activeAccordionIndex > 0 ? 'z-20' : ''
               }`}>
-                <div className={`${activeAccordionIndex === 1 ? 'max-w-[280px]' : 'max-w-[120px]'}`}>
+                <div className={`${activeAccordionIndex === 1 ? 'max-w-[380px]' : 'max-w-[120px]'}`}>
                   <h3 className={`font-bold text-white transition-all duration-300 leading-tight ${
                     activeAccordionIndex === 1 ? 'text-xl mb-3' : 'text-xs'
                   }`}>
@@ -558,7 +558,7 @@ const Companies = () => {
             {/* Service 3 */}
             <div 
               className={`relative rounded-xl overflow-hidden transition-all duration-700 cursor-pointer flex-shrink-0 -ml-[50px] ${
-                activeAccordionIndex === 2 ? 'w-[380px]' : 'w-[200px]'
+                activeAccordionIndex === 2 ? 'w-[500px]' : 'w-[200px]'
               }`}
               style={{ zIndex: 3 }}
               onClick={() => setActiveAccordionIndex(2)}
@@ -573,7 +573,7 @@ const Companies = () => {
               <div className={`absolute bottom-0 left-0 p-4 text-left ${
                 activeAccordionIndex !== 2 && activeAccordionIndex > 1 ? 'z-20' : ''
               }`}>
-                <div className={`${activeAccordionIndex === 2 ? 'max-w-[280px]' : 'max-w-[120px]'}`}>
+                <div className={`${activeAccordionIndex === 2 ? 'max-w-[380px]' : 'max-w-[120px]'}`}>
                   <h3 className={`font-bold text-white transition-all duration-300 leading-tight ${
                     activeAccordionIndex === 2 ? 'text-xl mb-3' : 'text-xs'
                   }`}>
@@ -591,7 +591,7 @@ const Companies = () => {
             {/* Service 4 */}
             <div 
               className={`relative rounded-xl overflow-hidden transition-all duration-700 cursor-pointer flex-shrink-0 -ml-[50px] ${
-                activeAccordionIndex === 3 ? 'w-[380px]' : 'w-[200px]'
+                activeAccordionIndex === 3 ? 'w-[500px]' : 'w-[200px]'
               }`}
               style={{ zIndex: 4 }}
               onClick={() => setActiveAccordionIndex(3)}
@@ -606,7 +606,7 @@ const Companies = () => {
               <div className={`absolute bottom-0 left-0 p-4 text-left ${
                 activeAccordionIndex !== 3 && activeAccordionIndex > 2 ? 'z-20' : ''
               }`}>
-                <div className={`${activeAccordionIndex === 3 ? 'max-w-[280px]' : 'max-w-[120px]'}`}>
+                <div className={`${activeAccordionIndex === 3 ? 'max-w-[380px]' : 'max-w-[120px]'}`}>
                   <h3 className={`font-bold text-white transition-all duration-300 leading-tight ${
                     activeAccordionIndex === 3 ? 'text-xl mb-3' : 'text-xs'
                   }`}>
@@ -624,7 +624,7 @@ const Companies = () => {
             {/* Service 5 */}
             <div 
               className={`relative rounded-xl overflow-hidden transition-all duration-700 cursor-pointer flex-shrink-0 -ml-[50px] ${
-                activeAccordionIndex === 4 ? 'w-[380px]' : 'w-[200px]'
+                activeAccordionIndex === 4 ? 'w-[500px]' : 'w-[200px]'
               }`}
               style={{ zIndex: 5 }}
               onClick={() => setActiveAccordionIndex(4)}
@@ -637,7 +637,7 @@ const Companies = () => {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
               <div className={`absolute bottom-0 left-0 p-4 text-left`}>
-                <div className={`${activeAccordionIndex === 4 ? 'max-w-[280px]' : 'max-w-[120px]'}`}>
+                <div className={`${activeAccordionIndex === 4 ? 'max-w-[380px]' : 'max-w-[120px]'}`}>
                   <h3 className={`font-bold text-white transition-all duration-300 leading-tight ${
                     activeAccordionIndex === 4 ? 'text-xl mb-3' : 'text-xs'
                   }`}>
