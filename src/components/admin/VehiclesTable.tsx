@@ -257,18 +257,7 @@ const VehiclesTable = ({
   const [driversMap, setDriversMap] = useState<Record<string, Driver>>({});
   const [loadingDrivers, setLoadingDrivers] = useState<boolean>(false);
 
-  const getAuthToken = () => {
-    return localStorage.getItem("authToken");
-  };
 
-  const getAuthHeaders = () => {
-    const token = getAuthToken();
-    return {
-      headers: {
-        Authorization: token ? `Bearer ${token}` : "",
-      },
-    };
-  };
 
   useEffect(() => {
     const fetchDriversData = async () => {

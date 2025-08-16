@@ -150,7 +150,7 @@ const CollaboratorsSection = () => {
       } else {
         setError("Error al cargar los colaboradores: " + response.data.message);
       }
-    } catch (err) {
+    } catch (err: any) {
       console.error("Error al obtener colaboradores:", err);
       if (err.response?.status === 403) {
         setError("No tiene permisos de administrador para ver esta página");
@@ -189,7 +189,7 @@ const CollaboratorsSection = () => {
       } else {
         setAssociatedDrivers([]);
       }
-    } catch (err) {
+    } catch (err: any) {
       console.error("Error al cargar choferes asociados:", err);
       setAssociatedDrivers([]);
     } finally {
@@ -224,7 +224,7 @@ const CollaboratorsSection = () => {
       } else {
         setAssociatedVehicles([]);
       }
-    } catch (err) {
+    } catch (err: any) {
       console.error("Error al cargar vehículos asociados:", err);
       setAssociatedVehicles([]);
     } finally {
@@ -307,7 +307,7 @@ const CollaboratorsSection = () => {
       // Cerrar el formulario
       setShowCollaboratorForm(false);
       setEditingCollaborator(null);
-    } catch (err) {
+    } catch (err: any) {
       console.error("Error al guardar el colaborador:", err);
       toast({
         title: "Error",
@@ -383,7 +383,7 @@ const CollaboratorsSection = () => {
           variant: "destructive",
         });
       }
-    } catch (err) {
+    } catch (err: any) {
       console.error("Error al eliminar el colaborador:", err);
       toast({
         title: "Error",
@@ -463,7 +463,7 @@ const CollaboratorsSection = () => {
       }
 
       setIsEditing(false);
-    } catch (err) {
+    } catch (err: any) {
       console.error("Error al actualizar el colaborador:", err);
       toast({
         title: "Error",

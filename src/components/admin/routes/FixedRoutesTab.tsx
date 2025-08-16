@@ -313,15 +313,6 @@ const FixedRoutesTab = ({
     return localStorage.getItem("authToken");
   };
 
-  // Configurar headers para las peticiones
-  const getAuthHeaders = () => {
-    const token = getAuthToken();
-    return {
-      headers: {
-        Authorization: token ? `Bearer ${token}` : "",
-      },
-    };
-  };
 
   // Cargar la lista de colaboradores al iniciar
   useEffect(() => {

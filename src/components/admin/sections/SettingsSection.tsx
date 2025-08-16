@@ -310,7 +310,7 @@ export default function SettingsSection() {
                             <div className="flex items-center">
                               <User className="w-4 h-4 mr-2 text-gray-400" />
                               {admin.name}
-                              {admin._id === user?._id && (
+                              {admin._id === user?.id && (
                                 <span className="ml-2 text-xs bg-gray-200 px-2 py-1 rounded">Tú</span>
                               )}
                             </div>
@@ -325,7 +325,7 @@ export default function SettingsSection() {
                             {new Date(admin.createdAt).toLocaleDateString()}
                           </td>
                           <td className="py-3 px-4">
-                            {admin._id !== user?._id && (
+                            {admin._id !== user?.id && (
                               <button
                                 onClick={() => handleDeleteAdmin(admin._id)}
                                 disabled={loading}

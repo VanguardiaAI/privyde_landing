@@ -17,7 +17,6 @@ export interface Notification {
 
 // URL base de la API
 const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5001";
-const NOTIFICATIONS_API_URL = `${API_URL}/api/notifications`;
 const SOCKET_URL = API_URL;
 
 // Singleton para socket
